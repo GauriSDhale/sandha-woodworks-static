@@ -123,6 +123,12 @@ export const translations = {
       projects: {
         eyebrow: "Featured Projects",
         title: "Recent work delivered on time, on scope, on budget.",
+        viewProject: "View Project",
+        viewAll: "View all past projects",
+        categories: {
+          Institutional: "Institutional",
+          Retail: "Retail",
+        },
       },
       about: {
         eyebrow: "About Sandha Woodworks",
@@ -315,6 +321,12 @@ export const translations = {
       projects: {
         eyebrow: "Projets en vedette",
         title: "Réalisations récentes livrées à temps, dans la portée et le budget.",
+        viewProject: "Voir le projet",
+        viewAll: "Voir tous les projets",
+        categories: {
+          Institutional: "Institutionnel",
+          Retail: "Commerce de détail",
+        },
       },
       about: {
         eyebrow: "À propos de Sandha Woodworks",

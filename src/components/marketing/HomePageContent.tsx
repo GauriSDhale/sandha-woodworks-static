@@ -3,14 +3,14 @@
 import Link from "next/link";
 import {
   CredibilityStrip,
+  FeaturedProjectsSection,
   HeroIntroSection,
   HeroVideoSection,
   ManufacturingSection,
   SectorsSection,
   TrustedPartnersSection,
 } from "@/components/marketing/home";
-import { featuredProjects as projects } from "@/lib/constants/projects";
-import { pageMedia, projectMedia } from "@/lib/constants/media";
+import { pageMedia } from "@/lib/constants/media";
 import { CtaBanner, SectionLabel } from "@/components/marketing/PageSections";
 import { useLang } from "@/lib/i18n/LanguageProvider";
 
@@ -28,39 +28,7 @@ export function HomePageContent() {
       <TrustedPartnersSection />
       <ManufacturingSection />
       <SectorsSection />
-
-      <section className="bg-muted px-4 py-20 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <SectionLabel>{t.home.projects.eyebrow}</SectionLabel>
-          <h2 className="font-display mt-4 text-3xl font-semibold md:text-5xl">
-            {t.home.projects.title}
-          </h2>
-          <div className="mt-10 grid gap-6 lg:grid-cols-3">
-            {projects.map((project) => (
-              <Link
-                key={project.id}
-                href={project.href}
-                className="group overflow-hidden rounded-2xl border border-border bg-white transition hover:shadow-lg"
-              >
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <img
-                    src={projectMedia[project.imageKey]}
-                    alt={project.name}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                  />
-                  <span className="absolute left-4 top-4 rounded-full bg-black px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
-                    {project.category}
-                  </span>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-lg font-semibold">{project.name}</h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{project.location}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <FeaturedProjectsSection />
 
       <section className="px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center">
