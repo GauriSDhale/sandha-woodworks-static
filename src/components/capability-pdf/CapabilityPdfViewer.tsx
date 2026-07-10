@@ -121,7 +121,7 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
             onClick={handlePrint}
             disabled={!ready}
             className={cn(
-              "inline-flex items-center gap-2 rounded-full border border-cream/25 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-cream transition-colors hover:border-brand hover:text-brand",
+              "inline-flex cursor-pointer items-center gap-2 rounded-full border border-cream/25 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-cream transition-colors hover:border-brand hover:text-brand",
               "disabled:cursor-not-allowed disabled:opacity-40",
             )}
           >
@@ -133,7 +133,7 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
             onClick={handleDownload}
             disabled={!ready}
             className={cn(
-              "inline-flex items-center gap-2 rounded-full bg-brand px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-warm-black transition-colors hover:bg-brand-light",
+              "inline-flex cursor-pointer items-center gap-2 rounded-full bg-brand px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-warm-black transition-colors hover:bg-brand-light",
               "disabled:cursor-not-allowed disabled:opacity-40",
             )}
           >
@@ -143,7 +143,7 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
           <button
             type="button"
             onClick={handleClose}
-            className="inline-flex items-center gap-2 rounded-full border border-cream/25 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-cream transition-colors hover:border-brand hover:text-brand"
+            className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-cream/25 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-cream transition-colors hover:border-brand hover:text-brand"
           >
             <X className="size-3.5" aria-hidden="true" />
             <span className="hidden sm:inline">Close</span>
@@ -179,7 +179,7 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
         ) : (
           <iframe
             title={`${sub.name} capability statement`}
-            src={blobUrl}
+            src={`${blobUrl}#navpanes=0&view=FitH`}
             className="mx-auto h-full min-h-[70vh] w-full max-w-5xl rounded-sm bg-white shadow-2xl"
           />
         )}
