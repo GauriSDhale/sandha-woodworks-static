@@ -5,6 +5,7 @@ import {
   CredibilityStrip,
   HeroIntroSection,
   HeroVideoSection,
+  ManufacturingSection,
   TrustedPartnersSection,
 } from "@/components/marketing/home";
 import { homeSectors } from "@/lib/constants/site";
@@ -13,7 +14,6 @@ import { homeSectorMedia, pageMedia, projectMedia } from "@/lib/constants/media"
 import { CtaBanner, SectionLabel } from "@/components/marketing/PageSections";
 import { useLang } from "@/lib/i18n/LanguageProvider";
 
-const homeStatKeys = ["founded", "facility", "projects"] as const;
 const aboutStatKeys = ["facility", "clients", "services", "sectors"] as const;
 const aboutStatValues = ["40,000", "100+", "21+", "12"] as const;
 
@@ -28,7 +28,6 @@ const sectorNameKeys = {
 
 export function HomePageContent() {
   const { t } = useLang();
-  const homeStatValues = ["2014", "40,000+", "500+"] as const;
 
   return (
     <>
@@ -36,58 +35,7 @@ export function HomePageContent() {
       <HeroIntroSection />
       <CredibilityStrip />
       <TrustedPartnersSection />
-
-      <section className="relative overflow-hidden bg-surface-dark px-4 py-20 text-surface-cream sm:px-6 lg:px-8">
-        <img
-          src={pageMedia.facilityAerial}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover opacity-20"
-          aria-hidden="true"
-        />
-        <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center">
-          <div>
-            <SectionLabel className="text-surface-cream/50">
-              {t.home.manufacturing.eyebrow}
-            </SectionLabel>
-            <h2 className="font-display mt-4 text-3xl font-semibold md:text-5xl">
-              {t.home.manufacturing.title}
-            </h2>
-            <ul className="mt-6 space-y-3 text-sm text-surface-cream/75">
-              {t.home.manufacturing.bullets.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-white/70" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {homeStatKeys.map((key, index) => (
-              <article
-                key={key}
-                className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
-              >
-                <p className="font-display text-4xl font-semibold">{homeStatValues[index]}</p>
-                <p className="mt-2 text-sm font-semibold uppercase tracking-wide">
-                  {t.home.manufacturing.stats[key].label}
-                </p>
-                <p className="mt-2 text-sm text-surface-cream/60">
-                  {t.home.manufacturing.stats[key].description}
-                </p>
-              </article>
-            ))}
-            <article className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm sm:col-span-2">
-              <p className="text-sm font-semibold uppercase tracking-wide">AWMAC</p>
-              <p className="mt-2 text-sm text-surface-cream/60">
-                {t.home.manufacturing.stats.awmac.label}
-              </p>
-              <p className="mt-2 text-sm text-surface-cream/75">
-                {t.home.manufacturing.stats.awmac.description}
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
+      <ManufacturingSection />
 
       <section className="px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">

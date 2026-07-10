@@ -69,23 +69,38 @@ export const translations = {
       },
       manufacturing: {
         eyebrow: "Manufacturing at Scale",
-        title: "Built to deliver major architectural millwork projects.",
+        titleLine1: "Built to deliver",
+        titleLine2: "major architectural",
+        titleAccent: "millwork projects.",
         bullets: [
           "Made in Canada",
           "Engineering → Manufacturing → Installation",
           "Commercial · Healthcare · Hospitality · Education · Retail",
         ],
         stats: {
-          founded: { label: "Founded", description: "Over a decade of architectural millwork" },
+          founded: {
+            value: 2014,
+            suffix: "",
+            label: "Founded",
+            description: "Over a decade of architectural millwork",
+          },
           facility: {
+            value: 40000,
+            suffix: "+",
             label: "Sq Ft Facility",
             description: "Purpose-built manufacturing in Brantford, ON",
+            format: "comma",
           },
           projects: {
+            value: 500,
+            suffix: "+",
             label: "Projects Delivered",
             description: "Commercial · Institutional · Healthcare",
           },
           awmac: {
+            value: null,
+            display: "AWMAC",
+            suffix: "",
             label: "Member",
             description: "Architectural Woodwork Manufacturers Association of Canada",
           },
@@ -245,23 +260,38 @@ export const translations = {
       },
       manufacturing: {
         eyebrow: "Fabrication à grande échelle",
-        title: "Bâti pour livrer de grands projets d'ébénisterie architecturale.",
+        titleLine1: "Bâti pour livrer",
+        titleLine2: "de grands projets",
+        titleAccent: "d'ébénisterie architecturale.",
         bullets: [
           "Fabriqué au Canada",
           "Ingénierie → Fabrication → Installation",
           "Commercial · Santé · Hôtellerie · Éducation · Détail",
         ],
         stats: {
-          founded: { label: "Fondée", description: "Plus d'une décennie d'ébénisterie architecturale" },
+          founded: {
+            value: 2014,
+            suffix: "",
+            label: "Fondée",
+            description: "Plus d'une décennie d'ébénisterie architecturale",
+          },
           facility: {
+            value: 40000,
+            suffix: "+",
             label: "Pi² d'usine",
             description: "Fabrication sur mesure à Brantford, ON",
+            format: "comma",
           },
           projects: {
+            value: 500,
+            suffix: "+",
             label: "Projets livrés",
             description: "Commercial · Institutionnel · Santé",
           },
           awmac: {
+            value: null,
+            display: "AWMAC",
+            suffix: "",
             label: "Membre",
             description: "Association des fabricants de boiseries architecturales du Canada",
           },
