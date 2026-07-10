@@ -108,7 +108,7 @@ export function Header() {
         <div className="hidden items-center gap-3 xl:flex">
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-full p-2 text-current transition-colors hover:text-brand"
+            className="inline-flex items-center cursor-pointer justify-center rounded-full p-2 text-current transition-colors hover:text-brand"
             aria-label="Search the site"
           >
             <Search className="h-4 w-4" />

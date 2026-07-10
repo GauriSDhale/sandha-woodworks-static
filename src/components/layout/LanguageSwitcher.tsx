@@ -26,7 +26,7 @@ export function LanguageSwitcher({ isHome = false, className }: LanguageSwitcher
         onClick={() => setLang("en")}
         aria-pressed={lang === "en"}
         className={cn(
-          "rounded-full px-2.5 py-1 font-semibold transition-colors",
+          "rounded-full px-2.5 py-1 font-semibold transition-colors ",
           lang === "en"
             ? "bg-foreground text-cream"
             : isHome
@@ -41,7 +41,7 @@ export function LanguageSwitcher({ isHome = false, className }: LanguageSwitcher
         onClick={() => setLang("fr")}
         aria-pressed={lang === "fr"}
         className={cn(
-          "rounded-full px-2.5 py-1 font-semibold transition-colors",
+          "rounded-full px-2.5 py-1 font-semibold transition-colors cursor-pointer",
           lang === "fr"
             ? "bg-foreground text-cream"
             : isHome
