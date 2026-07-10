@@ -24,11 +24,9 @@ export const heroMedia = {
 } as const;
 
 export const pageMedia = {
-  aboutHero: media("/assets/about-hero-workshop-C9Oup6mp.jpg"),
-  aboutFacilityInterior: media("/assets/about-facility-interior-BmEbvm-p.jpg"),
-  aboutTeam: media(
-    "/__l5e/assets-v1/e1799c66-1e57-44cc-af7d-fde452f904f9/about-team.webp",
-  ),
+  aboutHero: "/assets/about/about-hero.jpg",
+  aboutFacilityInterior: "/assets/about/facility-interior.jpg",
+  aboutTeam: "/assets/about/team.webp",
   facilityAerial: media("/assets/facility-aerial-FzX6W9yA.jpg"),
   portfolioHero: media(
     "/__l5e/assets-v1/cea20f69-8f54-4090-8c27-09d9a27307a5/portfolio-bg.jpg",
@@ -91,27 +89,13 @@ export const projectMedia = {
 } as const;
 
 export const teamMedia = {
-  chamkaurSandha: media(
-    "/__l5e/assets-v1/a4682b18-7dec-46d4-9dc8-edc3ef375c74/chamkaur-sandha.png",
-  ),
-  gurpreetSingh: media(
-    "/__l5e/assets-v1/33ffa3a1-bc18-49a6-9e58-9b0a0f741ae9/gurpreet-singh.png",
-  ),
-  muhamedMahmutovic: media(
-    "/__l5e/assets-v1/69dfe810-4a97-4987-b2a3-de24764e5a37/muhamed-mahmutovic.png",
-  ),
-  jayantMakkar: media(
-    "/__l5e/assets-v1/d8c3a8cf-567c-41e8-a31d-8249283100f7/jayant-makkar.png",
-  ),
-  trevorGuyatt: media(
-    "/__l5e/assets-v1/2c09362d-68da-4d9f-92e9-53af2d66584b/trevor-guyatt.png",
-  ),
-  manjinderSingh: media(
-    "/__l5e/assets-v1/d579ec4d-f33f-4de3-a7c4-5a58df931fd7/manjinder-singh.png",
-  ),
-  jugrajSingh: media(
-    "/__l5e/assets-v1/2dc1384f-872a-4853-8b45-2bba5c3b0383/jugraj-singh.png",
-  ),
+  chamkaurSandha: "/assets/about/team/chamkaur-sandha.png",
+  gurpreetSingh: "/assets/about/team/gurpreet-singh.png",
+  muhamedMahmutovic: "/assets/about/team/muhamed-mahmutovic.png",
+  jayantMakkar: "/assets/about/team/jayant-makkar.png",
+  trevorGuyatt: "/assets/about/team/trevor-guyatt.png",
+  manjinderSingh: "/assets/about/team/manjinder-singh.png",
+  jugrajSingh: "/assets/about/team/jugraj-singh.png",
 } as const;
 
 export const careersMedia = {

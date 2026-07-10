@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero, CtaBanner, SectionLabel } from "@/components/marketing/PageSections";
+import { YouTubeEmbed } from "@/components/ui/YouTubeEmbed";
 import {
   certifications,
   facilityFeatures,
@@ -61,20 +62,23 @@ export default function AboutUsPage() {
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               Sandha Woodworks was founded in {siteConfig.founded} by Chamkaur Sandha, who came to
-              architectural millwork through years of hands-on carpentry, site installation, and
-              shop floor experience.
+              architectural millwork the long way — through years of hands-on carpentry, site
+              installation, and shop floor experience. That background shaped a very specific belief:
+              great millwork is engineered by people who understand how it gets built, delivered, and
+              installed.
             </p>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               From a small custom shop, Sandha Woodworks has grown into a full-service architectural
               millwork manufacturer serving general contractors, architects, developers, and
-              institutional clients across Canada and into the U.S.
+              institutional clients across Canada and into the U.S. Our team, our processes, and our
+              40,000 sq. ft. facility are all built around one idea: deliver quality work, on time,
+              without surprises.
             </p>
           </div>
           <div className="overflow-hidden rounded-2xl">
-            <img
-              src={pageMedia.aboutFacilityInterior}
-              alt="Inside the Sandha Woodworks Ontario millwork facility"
-              className="h-full w-full object-cover"
+            <YouTubeEmbed
+              videoId="NaiV8PdLmxM"
+              title="Sandha Woodworks — Factory Tour"
             />
           </div>
         </div>
@@ -130,6 +134,21 @@ export default function AboutUsPage() {
         </div>
       </section>
 
+      <section className="overflow-hidden bg-muted">
+        <div className="relative">
+          <img
+            src={pageMedia.aboutFacilityInterior}
+            alt="Inside the Sandha Woodworks Ontario millwork facility — 5-axis CNC router cutting white oak plywood"
+            className="aspect-[21/9] w-full object-cover"
+          />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+          <p className="absolute bottom-4 left-4 max-w-xl text-sm text-white/80 sm:bottom-6 sm:left-6 sm:text-base">
+            Inside the Sandha Woodworks Ontario millwork facility — 5-axis CNC router cutting white
+            oak plywood
+          </p>
+        </div>
+      </section>
+
       <section className="bg-muted px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2">
           <div>
@@ -146,19 +165,29 @@ export default function AboutUsPage() {
               ))}
             </ul>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {whyChooseUs.map((item) => (
-              <article key={item.title} className="rounded-2xl border border-border bg-white p-5">
-                <h3 className="font-semibold">{item.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{item.description}</p>
-              </article>
-            ))}
+          <div>
+            <SectionLabel>Why Choose Us</SectionLabel>
+            <h2 className="font-display mt-4 text-3xl font-semibold md:text-4xl">
+              Single-source accountability from concept to installation.
+            </h2>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              {whyChooseUs.map((item) => (
+                <article key={item.title} className="rounded-2xl border border-border bg-white p-5">
+                  <h3 className="font-semibold">{item.title}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{item.description}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       <section className="bg-muted px-4 py-20 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl overflow-hidden rounded-2xl">
+        <SectionLabel className="text-center">One team, one accountable floor</SectionLabel>
+        <h2 className="font-display mt-4 text-center text-3xl font-semibold md:text-5xl">
+          The people who draw it, build it, finish it and install it.
+        </h2>
+        <div className="mx-auto mt-8 max-w-7xl overflow-hidden rounded-2xl">
           <img
             src={pageMedia.aboutTeam}
             alt="The Sandha Woodworks team"
@@ -184,16 +213,16 @@ export default function AboutUsPage() {
                 key={member.id}
                 className="overflow-hidden rounded-2xl border border-border bg-white"
               >
-                <div className="aspect-[4/3] overflow-hidden bg-muted">
+                <div className="aspect-[4/4] overflow-hidden bg-muted">
                   <img
                     src={teamMedia[member.avatarKey]}
                     alt={member.name}
-                    className="h-full w-full object-cover object-top"
+                    className="h-full w-full object-cover object-top -mt-[100px]"
                   />
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-semibold">{member.name}</h3>
-                  <p className="mt-1 text-sm font-medium text-brand-red">{member.title}</p>
+                  <p className="mt-1 text-sm font-medium text-brand">{member.title}</p>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                     {member.description}
                   </p>
