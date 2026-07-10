@@ -51,17 +51,6 @@ export const homeSectorMedia = {
     "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=85&auto=format&fit=crop",
 } as const;
 
-export const sectorMedia = {
-  healthcare: media("/assets/healthcare-hero.jpg"),
-  education: media("/assets/education-hero.jpg"),
-  commercial: media("/assets/corp-inst-hero.jpg"),
-  hospitality: media("/assets/hospitality-hero.jpg"),
-  retail: media("/assets/retail-millwork-hero.jpg"),
-  residential: media("/assets/multi-res-hero.jpg"),
-  public: media("/assets/sector-library.jpg"),
-  specialty: media("/assets/custom-assembly-hero.jpg"),
-} as const;
-
 /** Legacy single-image project keys used by HomePageContent */
 export const projectMedia = {
   coffeeIsland: "/assets/portfolio/coffee-island.jpg",
