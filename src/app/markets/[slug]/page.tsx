@@ -114,8 +114,6 @@ export default async function MarketDetailPage({
                     {sub.portfolioPdf && (
                       <a
                         href={sub.portfolioPdf}
-                        target="_blank"
-                        rel="noopener noreferrer"
                         className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand transition hover:text-brand-light"
                       >
                         Explore {sub.name} Portfolio <ArrowRight className="h-4 w-4" />
