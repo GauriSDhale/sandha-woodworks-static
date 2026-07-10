@@ -1,3 +1,4 @@
+export { CredibilityStrip } from "./CredibilityStrip";
 export { DisplayHeading, DisplayHeadingAccent } from "./DisplayHeading";
 export { Eyebrow } from "./Eyebrow";
 export { HeroIntroSection } from "./HeroIntroSection";

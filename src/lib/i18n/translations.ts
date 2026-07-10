@@ -15,6 +15,8 @@ export const translations = {
       allSectors: "All sectors",
     },
     credibility: {
+      eyebrow: "Capabilities & Certifications",
+      tagline: "Built on Trust · Driven by Quality",
       items: [
         "40,000 sq. ft. Facility",
         "In-House Engineering",
@@ -182,6 +184,8 @@ export const translations = {
       allSectors: "Tous les secteurs",
     },
     credibility: {
+      eyebrow: "Capacités et certifications",
+      tagline: "Bâti sur la confiance · Guidé par la qualité",
       items: [
         "Atelier de 40 000 pi²",
         "Ingénierie interne",

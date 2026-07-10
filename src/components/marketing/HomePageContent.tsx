@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { HeroIntroSection, HeroVideoSection } from "@/components/marketing/home";
+import { CredibilityStrip, HeroIntroSection, HeroVideoSection } from "@/components/marketing/home";
 import { homeSectors } from "@/lib/constants/site";
 import { featuredProjects as projects } from "@/lib/constants/projects";
 import { homeSectorMedia, pageMedia, projectMedia } from "@/lib/constants/media";
@@ -29,19 +29,7 @@ export function HomePageContent() {
     <>
       <HeroVideoSection />
       <HeroIntroSection />
-
-      <section className="overflow-hidden border-y border-border bg-white py-5">
-        <div className="animate-marquee flex w-max gap-3 px-4">
-          {[...t.credibility.items, ...t.credibility.items].map((pill, index) => (
-            <span
-              key={`${pill}-${index}`}
-              className="whitespace-nowrap rounded-full border border-border bg-muted px-4 py-2 text-xs font-medium uppercase tracking-wide text-foreground/75"
-            >
-              {pill}
-            </span>
-          ))}
-        </div>
-      </section>
+      <CredibilityStrip />
 
       <section className="px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">

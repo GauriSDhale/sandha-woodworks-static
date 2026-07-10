@@ -7,6 +7,7 @@ interface EyebrowProps {
   children: ReactNode;
   className?: string;
   variant?: EyebrowVariant;
+  id?: string;
 }
 
 const variantClasses: Record<EyebrowVariant, string> = {
@@ -16,9 +17,10 @@ const variantClasses: Record<EyebrowVariant, string> = {
   creamMuted: "text-cream/50",
 };
 
-export function Eyebrow({ children, className, variant = "brand" }: EyebrowProps) {
+export function Eyebrow({ children, className, variant = "brand", id }: EyebrowProps) {
   return (
     <p
+      id={id}
       className={cn(
         "text-[10px] font-semibold uppercase tracking-[0.35em] sm:tracking-[0.45em]",
         variantClasses[variant],

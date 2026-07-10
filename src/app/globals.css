@@ -212,11 +212,15 @@ h6 {
 }
 
 .animate-marquee-x {
-  animation: marquee-x 30s linear infinite;
+  animation: marquee-x 35s linear infinite;
+}
+
+.animate-marquee-x-reverse {
+  animation: marquee-x 42s linear infinite reverse;
 }
 
 .animate-marquee {
-  animation: marquee-x 30s linear infinite;
+  animation: marquee-x 35s linear infinite;
 }
 
 .animate-count-rise {
@@ -232,12 +236,14 @@ h6 {
 }
 
 .group\/marquee:hover .animate-marquee-x,
+.group\/marquee:hover .animate-marquee-x-reverse,
 .group\/marquee:hover .animate-marquee {
   animation-play-state: paused;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee-x,
+  .animate-marquee-x-reverse,
   .animate-marquee,
   .animate-count-rise,
   .animate-hero-rise,
