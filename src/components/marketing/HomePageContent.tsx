@@ -46,7 +46,7 @@ export function HomePageContent() {
             <div className="overflow-hidden rounded-2xl">
               <img
                 src={pageMedia.facilityAerial}
-                alt="Sandha Woodworks aerial facility view"
+                alt="Aerial view of the 40,000 sq ft Sandha Woodworks millwork facility"
                 className="aspect-[16/10] w-full object-cover"
               />
             </div>
