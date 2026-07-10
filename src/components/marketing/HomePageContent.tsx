@@ -6,25 +6,16 @@ import {
   HeroIntroSection,
   HeroVideoSection,
   ManufacturingSection,
+  SectorsSection,
   TrustedPartnersSection,
 } from "@/components/marketing/home";
-import { homeSectors } from "@/lib/constants/site";
 import { featuredProjects as projects } from "@/lib/constants/projects";
-import { homeSectorMedia, pageMedia, projectMedia } from "@/lib/constants/media";
+import { pageMedia, projectMedia } from "@/lib/constants/media";
 import { CtaBanner, SectionLabel } from "@/components/marketing/PageSections";
 import { useLang } from "@/lib/i18n/LanguageProvider";
 
 const aboutStatKeys = ["facility", "clients", "services", "sectors"] as const;
 const aboutStatValues = ["40,000", "100+", "21+", "12"] as const;
-
-const sectorNameKeys = {
-  Healthcare: "Healthcare",
-  Retail: "Retail",
-  Hospitality: "Hospitality",
-  Corporate: "Corporate",
-  Education: "Education",
-  Institutional: "Institutional",
-} as const;
 
 export function HomePageContent() {
   const { t } = useLang();
@@ -36,47 +27,7 @@ export function HomePageContent() {
       <CredibilityStrip />
       <TrustedPartnersSection />
       <ManufacturingSection />
-
-      <section className="px-4 py-20 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <SectionLabel>{t.home.sectors.eyebrow}</SectionLabel>
-          <h2 className="font-display mt-4 max-w-3xl text-3xl font-semibold md:text-5xl">
-            {t.home.sectors.title}
-          </h2>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {homeSectors.map((sector) => {
-              const nameKey = sectorNameKeys[sector.label as keyof typeof sectorNameKeys];
-              const label = nameKey ? t.home.sectors.names[nameKey] : sector.label;
-
-              return (
-                <Link
-                  key={sector.href}
-                  href={sector.href}
-                  className="group relative overflow-hidden rounded-2xl"
-                >
-                  <div className="relative aspect-[4/3]">
-                    <img
-                      src={homeSectorMedia[sector.imageKey]}
-                      alt={label}
-                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                    />
-                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                    <span className="pointer-events-none absolute bottom-4 left-4 text-lg font-semibold text-white">
-                      {label}
-                    </span>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-          <Link
-            href="/sectors"
-            className="mt-8 inline-flex items-center gap-2 text-sm font-semibold hover:underline"
-          >
-            {t.home.sectors.explore}
-          </Link>
-        </div>
-      </section>
+      <SectorsSection />
 
       <section className="bg-muted px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">

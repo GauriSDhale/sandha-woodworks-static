@@ -110,6 +110,7 @@ export const translations = {
         eyebrow: "Sectors We Serve",
         title: "Trusted across Canada's most demanding commercial sectors.",
         explore: "Explore All Sectors →",
+        cardExplore: "Explore →",
         names: {
           Healthcare: "Healthcare",
           Retail: "Retail",
@@ -301,6 +302,7 @@ export const translations = {
         eyebrow: "Secteurs desservis",
         title: "La confiance des secteurs commerciaux les plus exigeants du Canada.",
         explore: "Explorer tous les secteurs →",
+        cardExplore: "Explorer →",
         names: {
           Healthcare: "Santé",
           Retail: "Commerce de détail",
