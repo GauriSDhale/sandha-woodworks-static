@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { HeroVideo } from "@/components/marketing/HeroVideo";
+import { HeroIntroSection, HeroVideoSection } from "@/components/marketing/home";
 import { homeSectors } from "@/lib/constants/site";
 import { featuredProjects as projects } from "@/lib/constants/projects";
 import { homeSectorMedia, pageMedia, projectMedia } from "@/lib/constants/media";
@@ -27,12 +27,8 @@ export function HomePageContent() {
 
   return (
     <>
-      <section className="relative h-[100svh] w-full overflow-hidden bg-surface-dark">
-        <HeroVideo />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_35%,rgba(0,0,0,0.55)_100%)]" />
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-[8vh] bg-gradient-to-b from-surface-dark to-transparent" />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[10vh] bg-gradient-to-t from-surface-dark to-transparent" />
-      </section>
+      <HeroVideoSection />
+      <HeroIntroSection />
 
       <section className="overflow-hidden border-y border-border bg-white py-5">
         <div className="animate-marquee flex w-max gap-3 px-4">

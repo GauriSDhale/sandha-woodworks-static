@@ -30,6 +30,25 @@ export const translations = {
       ],
     },
     home: {
+      hero: {
+        tagline: "Sandha Woodworks · Est. Canada",
+        location: "Brantford, ON — CA",
+        headlineLine1: "Precision millwork.",
+        headlineLine2: "Delivered nationwide.",
+        description:
+          "A full-service Canadian architectural millwork manufacturer for general contractors, architects, and developers — from engineered shop drawings to finished install.",
+        viewPortfolio: "View Portfolio",
+        requestQuote: "Request a Quote",
+        reelLabel: "Reel · 00:30 · Sandha Woodworks",
+        scrollHint: "Scroll ↓",
+        footerCraft: "Millwork · Fabrication",
+        capabilities: [
+          "Drawings through install",
+          "In-house engineering",
+          "AWMAC GIS",
+          "Made in Canada",
+        ],
+      },
       trustedPartners: {
         eyebrow: "Trusted Partners",
         title: "Trusted by Canada's Leading Builders, Institutions & Brands",
@@ -178,6 +197,25 @@ export const translations = {
       ],
     },
     home: {
+      hero: {
+        tagline: "Sandha Woodworks · Fondée au Canada",
+        location: "Brantford, ON — CA",
+        headlineLine1: "Ébénisterie de précision.",
+        headlineLine2: "Livrée partout au Canada.",
+        description:
+          "Fabricant canadien d'ébénisterie architecturale clé en main pour entrepreneurs généraux, architectes et promoteurs — des dessins d'atelier à l'installation finale.",
+        viewPortfolio: "Voir le portfolio",
+        requestQuote: "Demander un devis",
+        reelLabel: "Reel · 00:30 · Sandha Woodworks",
+        scrollHint: "Défiler ↓",
+        footerCraft: "Ébénisterie · Fabrication",
+        capabilities: [
+          "Du dessin à l'installation",
+          "Ingénierie interne",
+          "AWMAC GIS",
+          "Fabriqué au Canada",
+        ],
+      },
       trustedPartners: {
         eyebrow: "Partenaires de confiance",
         title: "La confiance des principaux constructeurs, institutions et marques du Canada",

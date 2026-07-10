@@ -169,6 +169,48 @@ h6 {
   }
 }
 
+@keyframes hero-ken-burns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes scroll-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.65;
+  }
+  50% {
+    transform: translateY(6px);
+    opacity: 1;
+  }
+}
+
+.hero-architectural-grid {
+  background-image:
+    linear-gradient(to right, oklch(97.5% 0.006 85 / 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(97.5% 0.006 85 / 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@media (width >= 40rem) {
+  .hero-architectural-grid {
+    background-size: 64px 64px;
+  }
+}
+
+.hero-video-zoom {
+  animation: hero-ken-burns 24s ease-in-out infinite alternate;
+}
+
+.animate-scroll-bounce {
+  animation: scroll-bounce 2.4s ease-in-out infinite;
+}
+
 .animate-marquee-x {
   animation: marquee-x 30s linear infinite;
 }
@@ -199,7 +241,9 @@ h6 {
   .animate-marquee,
   .animate-count-rise,
   .animate-hero-rise,
-  .animate-fade-up {
+  .animate-fade-up,
+  .hero-video-zoom,
+  .animate-scroll-bounce {
     animation: none;
   }
 

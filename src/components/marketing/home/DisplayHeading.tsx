@@ -1,4 +1,4 @@
-import type { ElementType, ReactNode } from "react";
+import type { CSSProperties, ElementType, ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 type HeadingSize = "sm" | "md" | "lg" | "hero";
@@ -10,12 +10,13 @@ interface DisplayHeadingProps {
   className?: string;
   size?: HeadingSize;
   tone?: HeadingTone;
+  style?: CSSProperties;
 }
 
 const sizeClasses: Record<HeadingSize, string> = {
   sm: "text-3xl leading-[1.1] sm:text-4xl md:text-5xl",
   md: "text-3xl leading-[1.05] sm:text-4xl md:text-5xl lg:text-6xl",
-  lg: "text-[13vw] leading-[0.92] sm:text-6xl md:text-7xl lg:text-[7rem]",
+  lg: "text-[clamp(2.5rem,9vw,7rem)] leading-[0.94] sm:leading-[0.92]",
   hero: "text-4xl leading-tight sm:text-5xl md:text-6xl lg:text-7xl",
 };
 
@@ -30,10 +31,12 @@ export function DisplayHeading({
   className,
   size = "md",
   tone = "dark",
+  style,
 }: DisplayHeadingProps) {
   return (
     <Component
       className={cn("font-display font-semibold", sizeClasses[size], toneClasses[tone], className)}
+      style={style}
     >
       {children}
     </Component>
