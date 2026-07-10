@@ -1,16 +1,34 @@
 @import "tailwindcss";
 
+/* ─── Design tokens (aligned with sandhawoodworks.ca) ─── */
 :root {
-  --background: oklch(0.985 0.004 85);
-  --foreground: oklch(0.13 0.008 250);
-  --muted: oklch(0.96 0.006 85);
-  --muted-foreground: oklch(0.45 0.02 250);
-  --surface-dark: oklch(0.13 0.008 250);
-  --surface-cream: oklch(0.975 0.006 85);
-  --cream: oklch(0.975 0.006 85);
-  --brand-red: oklch(0.577 0.245 27.325);
-  --brand: oklch(0.577 0.245 27.325);
-  --border: oklch(0.9 0.01 85);
+  --radius: 0.75rem;
+
+  --brand: oklch(74% 0.08 72);
+  --brand-foreground: oklch(13% 0.008 250);
+  --brand-light: oklch(85% 0.06 78);
+  --brand-dark: oklch(58% 0.09 62);
+
+  --cream: oklch(97.5% 0.006 85);
+  --taupe: oklch(93% 0.006 85);
+  --warm-black: oklch(13% 0.008 250);
+  --wood: oklch(32% 0.015 250);
+  --wood-dark: oklch(19% 0.01 250);
+  --walnut: oklch(28% 0.025 55);
+  --sand: oklch(91% 0.008 75);
+
+  --background: oklch(98.5% 0.004 85);
+  --foreground: oklch(13% 0.008 250);
+  --secondary: var(--taupe);
+  --secondary-foreground: var(--warm-black);
+  --muted: oklch(95.5% 0.005 85);
+  --muted-foreground: oklch(42% 0.008 250);
+  --border: oklch(89% 0.005 85);
+
+  /* Backward-compatible aliases used elsewhere in the app */
+  --surface-dark: var(--warm-black);
+  --surface-cream: var(--cream);
+  --brand-red: var(--brand);
 }
 
 @theme inline {
@@ -18,14 +36,26 @@
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
   --color-surface-dark: var(--surface-dark);
   --color-surface-cream: var(--surface-cream);
   --color-cream: var(--cream);
-  --color-brand-red: var(--brand-red);
+  --color-taupe: var(--taupe);
+  --color-warm-black: var(--warm-black);
+  --color-wood: var(--wood);
+  --color-wood-dark: var(--wood-dark);
+  --color-walnut: var(--walnut);
+  --color-sand: var(--sand);
   --color-brand: var(--brand);
+  --color-brand-light: var(--brand-light);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-brand-red: var(--brand-red);
   --color-border: var(--border);
   --font-sans: var(--font-inter);
   --font-display: var(--font-space-grotesk);
+  --radius-lg: var(--radius);
 }
 
 html {
@@ -38,18 +68,70 @@ body {
   font-family: var(--font-inter), system-ui, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-space-grotesk), var(--font-inter), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
 .font-display {
   font-family: var(--font-space-grotesk), var(--font-inter), system-ui, sans-serif;
 }
 
 .logo-sandha {
   font-family: "Playfair Display", Georgia, serif;
-  color: var(--brand-red);
+  color: var(--brand);
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
-@keyframes marquee {
+/* ─── Layout utilities ─── */
+.container-tight {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.section-padding-lg {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media (width >= 40rem) {
+  .section-padding-lg {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+@media (width >= 48rem) {
+  .section-padding-lg {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
+.image-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ─── Animations ─── */
+@keyframes marquee-x {
   from {
     transform: translateX(0);
   }
@@ -58,6 +140,124 @@ body {
   }
 }
 
+@keyframes count-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-ken-burns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes scroll-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.65;
+  }
+  50% {
+    transform: translateY(6px);
+    opacity: 1;
+  }
+}
+
+.hero-architectural-grid {
+  background-image:
+    linear-gradient(to right, oklch(97.5% 0.006 85 / 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(97.5% 0.006 85 / 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@media (width >= 40rem) {
+  .hero-architectural-grid {
+    background-size: 64px 64px;
+  }
+}
+
+.hero-video-zoom {
+  animation: hero-ken-burns 24s ease-in-out infinite alternate;
+}
+
+.animate-scroll-bounce {
+  animation: scroll-bounce 2.4s ease-in-out infinite;
+}
+
+.animate-marquee-x {
+  animation: marquee-x 35s linear infinite;
+}
+
+.animate-marquee-x-reverse {
+  animation: marquee-x 42s linear infinite reverse;
+}
+
 .animate-marquee {
-  animation: marquee 30s linear infinite;
+  animation: marquee-x 35s linear infinite;
+}
+
+.animate-count-rise {
+  animation: count-rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-hero-rise {
+  animation: hero-rise 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.group\/marquee:hover .animate-marquee-x,
+.group\/marquee:hover .animate-marquee-x-reverse,
+.group\/marquee:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee-x,
+  .animate-marquee-x-reverse,
+  .animate-marquee,
+  .animate-count-rise,
+  .animate-hero-rise,
+  .animate-fade-up,
+  .hero-video-zoom,
+  .animate-scroll-bounce {
+    animation: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
 }
