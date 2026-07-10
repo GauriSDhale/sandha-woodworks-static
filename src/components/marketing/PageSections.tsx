@@ -64,23 +64,21 @@ export function CtaBanner({
   secondaryLabel = "View Portfolio",
 }: CtaBannerProps) {
   return (
-    <section className="bg-surface-dark px-4 py-20 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-4xl text-center">
-        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-surface-cream/55">
-          {eyebrow}
-        </p>
-        <h2 className="font-display mt-4 text-3xl font-semibold text-white md:text-5xl">
+    <section className="bg-cream px-4 py-20 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-3xl text-center">
+        <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">{eyebrow}</p>
+        <h2 className="font-display mt-4 text-3xl font-semibold text-warm-black md:text-5xl">
           {title}
         </h2>
         {description ? (
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-surface-cream/70">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
             {description}
           </p>
         ) : null}
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
           <Link
             href={primaryHref}
-            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold uppercase tracking-wide text-black transition hover:bg-white/90"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-warm-black px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-cream transition-colors hover:bg-brand hover:text-warm-black"
           >
             {primaryLabel}
             <ArrowRight className="h-4 w-4" />
@@ -88,7 +86,7 @@ export function CtaBanner({
           {secondaryHref && secondaryLabel ? (
             <Link
               href={secondaryHref}
-              className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/50"
+              className="inline-flex items-center justify-center rounded-full border border-warm-black/30 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-warm-black transition-colors hover:bg-warm-black hover:text-cream"
             >
               {secondaryLabel}
             </Link>

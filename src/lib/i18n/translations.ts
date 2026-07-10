@@ -15,6 +15,8 @@ export const translations = {
       allSectors: "All sectors",
     },
     credibility: {
+      eyebrow: "Capabilities & Certifications",
+      tagline: "Built on Trust · Driven by Quality",
       items: [
         "40,000 sq. ft. Facility",
         "In-House Engineering",
@@ -30,34 +32,75 @@ export const translations = {
       ],
     },
     home: {
+      hero: {
+        tagline: "Sandha Woodworks · Est. Canada",
+        location: "Brantford, ON — CA",
+        headlineLine1: "Precision millwork.",
+        headlineLine2: "Delivered nationwide.",
+        description:
+          "A full-service Canadian architectural millwork manufacturer for general contractors, architects, and developers — from engineered shop drawings to finished install.",
+        viewPortfolio: "View Portfolio",
+        requestQuote: "Request a Quote",
+        reelLabel: "Reel · 00:30 · Sandha Woodworks",
+        scrollHint: "Scroll ↓",
+        footerCraft: "Millwork · Fabrication",
+        capabilities: [
+          "Drawings through install",
+          "In-house engineering",
+          "AWMAC GIS",
+          "Made in Canada",
+        ],
+      },
       trustedPartners: {
         eyebrow: "Trusted Partners",
         title: "Trusted by Canada's Leading Builders, Institutions & Brands",
         description:
           "For over a decade, Sandha Woodworks has proudly contributed to commercial, institutional, healthcare, hospitality, retail and workplace projects across Canada through direct clients and trusted construction partners.",
+        proof: ["500+ projects", "100+ clients", "12 sectors"],
+        partnerCount: "{count} partners",
         disclaimer:
           "Selected projects completed directly or through General Contractors and Construction Management partners. All trademarks are property of their respective owners.",
-        sectors: ["Retail", "Restaurants & QSR", "Financial", "Education"],
+        categories: {
+          retail: "Retail",
+          restaurants: "Restaurants & QSR",
+          financial: "Financial",
+          education: "Education",
+        },
       },
       manufacturing: {
         eyebrow: "Manufacturing at Scale",
-        title: "Built to deliver major architectural millwork projects.",
+        titleLine1: "Built to deliver",
+        titleLine2: "major architectural",
+        titleAccent: "millwork projects.",
         bullets: [
           "Made in Canada",
           "Engineering → Manufacturing → Installation",
           "Commercial · Healthcare · Hospitality · Education · Retail",
         ],
         stats: {
-          founded: { label: "Founded", description: "Over a decade of architectural millwork" },
+          founded: {
+            value: 2014,
+            suffix: "",
+            label: "Founded",
+            description: "Over a decade of architectural millwork",
+          },
           facility: {
+            value: 40000,
+            suffix: "+",
             label: "Sq Ft Facility",
             description: "Purpose-built manufacturing in Brantford, ON",
+            format: "comma",
           },
           projects: {
+            value: 500,
+            suffix: "+",
             label: "Projects Delivered",
             description: "Commercial · Institutional · Healthcare",
           },
           awmac: {
+            value: null,
+            display: "AWMAC",
+            suffix: "",
             label: "Member",
             description: "Architectural Woodwork Manufacturers Association of Canada",
           },
@@ -67,6 +110,7 @@ export const translations = {
         eyebrow: "Sectors We Serve",
         title: "Trusted across Canada's most demanding commercial sectors.",
         explore: "Explore All Sectors →",
+        cardExplore: "Explore →",
         names: {
           Healthcare: "Healthcare",
           Retail: "Retail",
@@ -79,6 +123,12 @@ export const translations = {
       projects: {
         eyebrow: "Featured Projects",
         title: "Recent work delivered on time, on scope, on budget.",
+        viewProject: "View Project",
+        viewAll: "View all past projects",
+        categories: {
+          Institutional: "Institutional",
+          Retail: "Retail",
+        },
       },
       about: {
         eyebrow: "About Sandha Woodworks",
@@ -163,6 +213,8 @@ export const translations = {
       allSectors: "Tous les secteurs",
     },
     credibility: {
+      eyebrow: "Capacités et certifications",
+      tagline: "Bâti sur la confiance · Guidé par la qualité",
       items: [
         "Atelier de 40 000 pi²",
         "Ingénierie interne",
@@ -178,34 +230,75 @@ export const translations = {
       ],
     },
     home: {
+      hero: {
+        tagline: "Sandha Woodworks · Fondée au Canada",
+        location: "Brantford, ON — CA",
+        headlineLine1: "Ébénisterie de précision.",
+        headlineLine2: "Livrée partout au Canada.",
+        description:
+          "Fabricant canadien d'ébénisterie architecturale clé en main pour entrepreneurs généraux, architectes et promoteurs — des dessins d'atelier à l'installation finale.",
+        viewPortfolio: "Voir le portfolio",
+        requestQuote: "Demander un devis",
+        reelLabel: "Reel · 00:30 · Sandha Woodworks",
+        scrollHint: "Défiler ↓",
+        footerCraft: "Ébénisterie · Fabrication",
+        capabilities: [
+          "Du dessin à l'installation",
+          "Ingénierie interne",
+          "AWMAC GIS",
+          "Fabriqué au Canada",
+        ],
+      },
       trustedPartners: {
         eyebrow: "Partenaires de confiance",
         title: "La confiance des principaux constructeurs, institutions et marques du Canada",
         description:
           "Depuis plus d'une décennie, Sandha Woodworks contribue fièrement à des projets commerciaux, institutionnels, de santé, d'hôtellerie, de détail et de milieu de travail à travers le Canada, pour des clients directs et des partenaires de construction de confiance.",
+        proof: ["500+ projets", "100+ clients", "12 secteurs"],
+        partnerCount: "{count} partenaires",
         disclaimer:
           "Projets sélectionnés réalisés directement ou par l'entremise d'entrepreneurs généraux et de gestionnaires de construction. Toutes les marques appartiennent à leurs propriétaires respectifs.",
-        sectors: ["Commerce de détail", "Restaurants et QSR", "Financier", "Éducation"],
+        categories: {
+          retail: "Commerce de détail",
+          restaurants: "Restaurants et QSR",
+          financial: "Financier",
+          education: "Éducation",
+        },
       },
       manufacturing: {
         eyebrow: "Fabrication à grande échelle",
-        title: "Bâti pour livrer de grands projets d'ébénisterie architecturale.",
+        titleLine1: "Bâti pour livrer",
+        titleLine2: "de grands projets",
+        titleAccent: "d'ébénisterie architecturale.",
         bullets: [
           "Fabriqué au Canada",
           "Ingénierie → Fabrication → Installation",
           "Commercial · Santé · Hôtellerie · Éducation · Détail",
         ],
         stats: {
-          founded: { label: "Fondée", description: "Plus d'une décennie d'ébénisterie architecturale" },
+          founded: {
+            value: 2014,
+            suffix: "",
+            label: "Fondée",
+            description: "Plus d'une décennie d'ébénisterie architecturale",
+          },
           facility: {
+            value: 40000,
+            suffix: "+",
             label: "Pi² d'usine",
             description: "Fabrication sur mesure à Brantford, ON",
+            format: "comma",
           },
           projects: {
+            value: 500,
+            suffix: "+",
             label: "Projets livrés",
             description: "Commercial · Institutionnel · Santé",
           },
           awmac: {
+            value: null,
+            display: "AWMAC",
+            suffix: "",
             label: "Membre",
             description: "Association des fabricants de boiseries architecturales du Canada",
           },
@@ -215,6 +308,7 @@ export const translations = {
         eyebrow: "Secteurs desservis",
         title: "La confiance des secteurs commerciaux les plus exigeants du Canada.",
         explore: "Explorer tous les secteurs →",
+        cardExplore: "Explorer →",
         names: {
           Healthcare: "Santé",
           Retail: "Commerce de détail",
@@ -227,6 +321,12 @@ export const translations = {
       projects: {
         eyebrow: "Projets en vedette",
         title: "Réalisations récentes livrées à temps, dans la portée et le budget.",
+        viewProject: "Voir le projet",
+        viewAll: "Voir tous les projets",
+        categories: {
+          Institutional: "Institutionnel",
+          Retail: "Commerce de détail",
+        },
       },
       about: {
         eyebrow: "À propos de Sandha Woodworks",
