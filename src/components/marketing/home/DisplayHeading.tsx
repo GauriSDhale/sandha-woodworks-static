@@ -11,6 +11,7 @@ interface DisplayHeadingProps {
   size?: HeadingSize;
   tone?: HeadingTone;
   style?: CSSProperties;
+  id?: string;
 }
 
 const sizeClasses: Record<HeadingSize, string> = {
@@ -32,9 +33,11 @@ export function DisplayHeading({
   size = "md",
   tone = "dark",
   style,
+  id,
 }: DisplayHeadingProps) {
   return (
     <Component
+      id={id}
       className={cn("font-display font-semibold", sizeClasses[size], toneClasses[tone], className)}
       style={style}
     >

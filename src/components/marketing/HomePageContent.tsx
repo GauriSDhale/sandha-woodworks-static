@@ -1,7 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { CredibilityStrip, HeroIntroSection, HeroVideoSection } from "@/components/marketing/home";
+import {
+  CredibilityStrip,
+  HeroIntroSection,
+  HeroVideoSection,
+  TrustedPartnersSection,
+} from "@/components/marketing/home";
 import { homeSectors } from "@/lib/constants/site";
 import { featuredProjects as projects } from "@/lib/constants/projects";
 import { homeSectorMedia, pageMedia, projectMedia } from "@/lib/constants/media";
@@ -30,31 +35,7 @@ export function HomePageContent() {
       <HeroVideoSection />
       <HeroIntroSection />
       <CredibilityStrip />
-
-      <section className="px-4 py-20 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <SectionLabel>{t.home.trustedPartners.eyebrow}</SectionLabel>
-          <h2 className="font-display mt-4 max-w-4xl text-3xl font-semibold md:text-5xl">
-            {t.home.trustedPartners.title}
-          </h2>
-          <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground">
-            {t.home.trustedPartners.description}
-          </p>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {t.home.trustedPartners.sectors.map((sector) => (
-              <div
-                key={sector}
-                className="rounded-2xl border border-border bg-muted px-6 py-8 text-center text-sm font-semibold uppercase tracking-wide"
-              >
-                {sector}
-              </div>
-            ))}
-          </div>
-          <p className="mt-6 text-xs leading-relaxed text-muted-foreground">
-            {t.home.trustedPartners.disclaimer}
-          </p>
-        </div>
-      </section>
+      <TrustedPartnersSection />
 
       <section className="relative overflow-hidden bg-surface-dark px-4 py-20 text-surface-cream sm:px-6 lg:px-8">
         <img

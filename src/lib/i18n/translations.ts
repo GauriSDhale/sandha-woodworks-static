@@ -56,9 +56,16 @@ export const translations = {
         title: "Trusted by Canada's Leading Builders, Institutions & Brands",
         description:
           "For over a decade, Sandha Woodworks has proudly contributed to commercial, institutional, healthcare, hospitality, retail and workplace projects across Canada through direct clients and trusted construction partners.",
+        proof: ["500+ projects", "100+ clients", "12 sectors"],
+        partnerCount: "{count} partners",
         disclaimer:
           "Selected projects completed directly or through General Contractors and Construction Management partners. All trademarks are property of their respective owners.",
-        sectors: ["Retail", "Restaurants & QSR", "Financial", "Education"],
+        categories: {
+          retail: "Retail",
+          restaurants: "Restaurants & QSR",
+          financial: "Financial",
+          education: "Education",
+        },
       },
       manufacturing: {
         eyebrow: "Manufacturing at Scale",
@@ -225,9 +232,16 @@ export const translations = {
         title: "La confiance des principaux constructeurs, institutions et marques du Canada",
         description:
           "Depuis plus d'une décennie, Sandha Woodworks contribue fièrement à des projets commerciaux, institutionnels, de santé, d'hôtellerie, de détail et de milieu de travail à travers le Canada, pour des clients directs et des partenaires de construction de confiance.",
+        proof: ["500+ projets", "100+ clients", "12 secteurs"],
+        partnerCount: "{count} partenaires",
         disclaimer:
           "Projets sélectionnés réalisés directement ou par l'entremise d'entrepreneurs généraux et de gestionnaires de construction. Toutes les marques appartiennent à leurs propriétaires respectifs.",
-        sectors: ["Commerce de détail", "Restaurants et QSR", "Financier", "Éducation"],
+        categories: {
+          retail: "Commerce de détail",
+          restaurants: "Restaurants et QSR",
+          financial: "Financier",
+          education: "Éducation",
+        },
       },
       manufacturing: {
         eyebrow: "Fabrication à grande échelle",
