@@ -4,8 +4,7 @@ import Link from "next/link";
 import { useMemo, useState, useRef, useEffect } from "react";
 import { Search, ArrowRight } from "lucide-react";
 import { portfolioFilters, portfolioProjects, type PortfolioProject } from "@/lib/constants/projects";
-import { projectMedia } from "@/lib/constants/media";
-import { GalleryLightbox } from "@/components/ui/GalleryLightbox";
+import { projectGalleries } from "@/lib/constants/media";
 
 function ProjectRow({
   project,
@@ -16,80 +15,69 @@ function ProjectRow({
   index: number;
   inView: boolean;
 }) {
-  const [lightboxOpen, setLightboxOpen] = useState(false);
   const [scopeExpanded, setScopeExpanded] = useState(false);
-  const images = [
-    { src: projectMedia[project.imageKey as keyof typeof projectMedia] || projectMedia.coffeeIsland, alt: project.name },
-  ];
+  const gallery = projectGalleries[project.slug];
 
   return (
-    <>
-      <div
-        className={`transition-all duration-700 ${
-          inView ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
-        }`}
-        style={{ transitionDelay: `${index * 100}ms` }}
-      >
-        <div className="flex flex-col items-center gap-8 md:flex-row">
-          <div className="w-full md:w-1/5">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
-              {project.category}
-            </p>
-            <h2 className="font-display mt-2 text-2xl font-semibold text-foreground">
-              {project.name}
-            </h2>
-            <p className="mt-2 text-sm text-muted-foreground">{project.location}</p>
-            <div className="mt-3">
-              <p
-                className={`text-sm leading-relaxed text-muted-foreground ${
-                  scopeExpanded ? "" : "line-clamp-3"
-                }`}
-              >
-                <span className="font-semibold text-foreground">Scope:</span> {project.scope}
-              </p>
-              <button
-                type="button"
-                onClick={() => setScopeExpanded(!scopeExpanded)}
-                className="mt-1 text-xs font-medium text-brand transition hover:text-brand-light"
-              >
-                {scopeExpanded ? "Show less" : "Read more"}
-              </button>
-            </div>
-            <div className="mt-4 border-b border-border" />
-            <Link
-              href={`/portfolio/${project.slug}`}
-              className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-brand transition hover:text-brand-light"
+    <div
+      className={`transition-all duration-700 ${
+        inView ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
+      }`}
+      style={{ transitionDelay: `${index * 100}ms` }}
+    >
+      <div className="flex flex-col items-center gap-8 md:flex-row">
+        <div className="w-full md:w-1/5">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+            {project.category}
+          </p>
+          <h2 className="font-display mt-2 text-2xl font-semibold text-foreground">
+            {project.name}
+          </h2>
+          <p className="mt-2 text-sm text-muted-foreground">{project.location}</p>
+          {project.client ? (
+            <p className="mt-1 text-xs text-muted-foreground">{project.client}</p>
+          ) : null}
+          <div className="mt-3">
+            <p
+              className={`text-sm leading-relaxed text-muted-foreground ${
+                scopeExpanded ? "" : "line-clamp-3"
+              }`}
             >
-              View Project
-              <ArrowRight className="h-4 w-4" />
-            </Link>
+              <span className="font-semibold text-foreground">Scope:</span> {project.scope}
+            </p>
+            <button
+              type="button"
+              onClick={() => setScopeExpanded(!scopeExpanded)}
+              className="mt-1 text-xs font-medium text-brand transition hover:text-brand-light"
+            >
+              {scopeExpanded ? "Show less" : "Read more"}
+            </button>
           </div>
-          <button
-            type="button"
-            onClick={() => setLightboxOpen(true)}
-            className="group w-full overflow-hidden rounded-2xl md:w-4/5"
+          <div className="mt-4 border-b border-border" />
+          <Link
+            href={`/portfolio/${project.slug}`}
+            className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-brand transition hover:text-brand-light"
           >
-            <div className="relative aspect-[16/9] overflow-hidden bg-warm-black">
+            View Gallery ({project.galleryCount})
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+        <Link
+          href={`/portfolio/${project.slug}`}
+          className="group w-full overflow-hidden rounded-2xl md:w-4/5"
+        >
+          <div className="relative aspect-[16/9] overflow-hidden bg-warm-black">
+            {gallery ? (
               <img
-                src={projectMedia[project.imageKey as keyof typeof projectMedia]}
+                src={gallery.cover}
                 alt={project.name}
                 className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
               />
-            </div>
-          </button>
-        </div>
+            ) : null}
+          </div>
+        </Link>
       </div>
-
-      {lightboxOpen ? (
-        <GalleryLightbox
-          images={images}
-          currentIndex={0}
-          onClose={() => setLightboxOpen(false)}
-          onPrev={() => {}}
-          onNext={() => {}}
-        />
-      ) : null}
-    </>
+    </div>
   );
 }
 

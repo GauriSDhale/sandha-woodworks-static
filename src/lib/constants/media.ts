@@ -62,6 +62,7 @@ export const sectorMedia = {
   specialty: media("/assets/custom-assembly-hero.jpg"),
 } as const;
 
+/** Legacy single-image project keys used by HomePageContent */
 export const projectMedia = {
   coffeeIsland: "/assets/portfolio/coffee-island.jpg",
   niagaraCollege: "/assets/portfolio/niagara-college.webp",
@@ -74,6 +75,122 @@ export const projectMedia = {
   amHair: "/assets/portfolio/am-hair.webp",
   valleyPark: "/assets/portfolio/valley-park.jpg",
 } as const;
+
+/** Full gallery images per project, keyed by live site slug */
+export const projectGalleries: Record<string, { cover: string; gallery: string[] }> = {
+  "coffee-island-toronto": {
+    cover: "/assets/portfolio/coffee-island-toronto/IMG_2890.jpg",
+    gallery: [
+      "/assets/portfolio/coffee-island-toronto/IMG_2890.jpg",
+      "/assets/portfolio/coffee-island-toronto/IMG_2896.jpg",
+      "/assets/portfolio/coffee-island-toronto/IMG_2899.jpg",
+      "/assets/portfolio/coffee-island-toronto/IMG_2900.jpg",
+      "/assets/portfolio/coffee-island-toronto/IMG_2904.jpg",
+      "/assets/portfolio/coffee-island-toronto/IMG_2907.jpg",
+      "/assets/portfolio/coffee-island-toronto/IMG_2909.jpg",
+      "/assets/portfolio/coffee-island-toronto/IMG_2910.jpg",
+      "/assets/portfolio/coffee-island-toronto/IMG_2913.jpg",
+    ],
+  },
+  "niagara-college-marotta": {
+    cover: "/assets/portfolio/niagara-college-marotta/nc-1.webp",
+    gallery: [
+      "/assets/portfolio/niagara-college-marotta/nc-1.webp",
+      "/assets/portfolio/niagara-college-marotta/nc-2.webp",
+      "/assets/portfolio/niagara-college-marotta/nc-3.webp",
+      "/assets/portfolio/niagara-college-marotta/nc-4.webp",
+      "/assets/portfolio/niagara-college-marotta/nc-5.webp",
+      "/assets/portfolio/niagara-college-marotta/nc-6.webp",
+    ],
+  },
+  "university-of-toronto-robarts": {
+    cover: "/assets/portfolio/university-of-toronto-robarts/uoft-2.webp",
+    gallery: [
+      "/assets/portfolio/university-of-toronto-robarts/uoft-1.webp",
+      "/assets/portfolio/university-of-toronto-robarts/uoft-2.webp",
+      "/assets/portfolio/university-of-toronto-robarts/uoft-3.webp",
+      "/assets/portfolio/university-of-toronto-robarts/uoft-4.webp",
+      "/assets/portfolio/university-of-toronto-robarts/uoft-5.webp",
+    ],
+  },
+  "tiffany-hill-primary-school": {
+    cover: "/assets/portfolio/tiffany-hill-primary-school/th-4.jpg",
+    gallery: [
+      "/assets/portfolio/tiffany-hill-primary-school/th-1.jpg",
+      "/assets/portfolio/tiffany-hill-primary-school/th-3.jpg",
+      "/assets/portfolio/tiffany-hill-primary-school/th-4.jpg",
+      "/assets/portfolio/tiffany-hill-primary-school/th-5.jpg",
+      "/assets/portfolio/tiffany-hill-primary-school/th-6.jpg",
+      "/assets/portfolio/tiffany-hill-primary-school/th-9.jpg",
+      "/assets/portfolio/tiffany-hill-primary-school/th-10.jpg",
+      "/assets/portfolio/tiffany-hill-primary-school/th-11.jpg",
+    ],
+  },
+  "tobin-high-school": {
+    cover: "/assets/portfolio/tobin-high-school/tobin-9_2.jpg",
+    gallery: [
+      "/assets/portfolio/tobin-high-school/tobin-1_2.jpg",
+      "/assets/portfolio/tobin-high-school/tobin-2.jpg",
+      "/assets/portfolio/tobin-high-school/tobin-3_2.jpg",
+      "/assets/portfolio/tobin-high-school/tobin-4_2.jpg",
+      "/assets/portfolio/tobin-high-school/tobin-5_2.jpg",
+      "/assets/portfolio/tobin-high-school/tobin-6_2.jpg",
+      "/assets/portfolio/tobin-high-school/tobin-7.jpg",
+      "/assets/portfolio/tobin-high-school/tobin-8.jpg",
+      "/assets/portfolio/tobin-high-school/tobin-9_2.jpg",
+    ],
+  },
+  "scooped-by-demetres": {
+    cover: "/assets/portfolio/scooped-by-demetres/IMG_2820.jpg",
+    gallery: [
+      "/assets/portfolio/scooped-by-demetres/IMG_2820.jpg",
+      "/assets/portfolio/scooped-by-demetres/IMG_2824.jpg",
+      "/assets/portfolio/scooped-by-demetres/IMG_2825.jpg",
+      "/assets/portfolio/scooped-by-demetres/IMG_2828.jpg",
+      "/assets/portfolio/scooped-by-demetres/IMG_2832.jpg",
+      "/assets/portfolio/scooped-by-demetres/IMG_2835.jpg",
+      "/assets/portfolio/scooped-by-demetres/IMG_2837.jpg",
+    ],
+  },
+  "mercato-mississauga": {
+    cover: "/assets/portfolio/mercato-mississauga/mercato-2.jpg",
+    gallery: [
+      "/assets/portfolio/mercato-mississauga/mercato-2.jpg",
+      "/assets/portfolio/mercato-mississauga/mercato-3.jpg",
+      "/assets/portfolio/mercato-mississauga/mercato-6.jpg",
+      "/assets/portfolio/mercato-mississauga/mercato-7.jpg",
+      "/assets/portfolio/mercato-mississauga/mercato-8.jpg",
+      "/assets/portfolio/mercato-mississauga/mercato-9.jpg",
+      "/assets/portfolio/mercato-mississauga/mercato-10.jpg",
+      "/assets/portfolio/mercato-mississauga/mercato-11.jpg",
+      "/assets/portfolio/mercato-mississauga/mercato-12.jpg",
+    ],
+  },
+  "lake-country-coop": {
+    cover: "/assets/portfolio/lake-country-coop/lake-1.jpg",
+    gallery: [
+      "/assets/portfolio/lake-country-coop/lake-1.jpg",
+      "/assets/portfolio/lake-country-coop/lake-2.jpg",
+      "/assets/portfolio/lake-country-coop/lake-3.jpg",
+    ],
+  },
+  "am-hair-beauty": {
+    cover: "/assets/portfolio/am-hair-beauty/am-1.webp",
+    gallery: [
+      "/assets/portfolio/am-hair-beauty/am-1.webp",
+      "/assets/portfolio/am-hair-beauty/am-2.webp",
+      "/assets/portfolio/am-hair-beauty/am-3.webp",
+    ],
+  },
+  "valley-park-library": {
+    cover: "/assets/portfolio/valley-park-library/valley-1.jpg",
+    gallery: [
+      "/assets/portfolio/valley-park-library/valley-1.jpg",
+      "/assets/portfolio/valley-park-library/valley-2.jpg",
+      "/assets/portfolio/valley-park-library/valley-3.jpg",
+    ],
+  },
+};
 
 export const teamMedia = {
   chamkaurSandha: "/assets/about/team/chamkaur-sandha.png",

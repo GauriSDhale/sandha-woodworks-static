@@ -6,8 +6,7 @@ export interface PortfolioProject {
   location: string;
   scope: string;
   galleryCount: number;
-  imageKey: string;
-  videoUrl?: string;
+  client?: string;
   specs: {
     sector: string;
     delivery: string;
@@ -18,45 +17,44 @@ export interface PortfolioProject {
 
 export const featuredProjects = [
   {
-    id: "lake-country",
-    slug: "lake-country",
+    id: "lake-country-coop",
+    slug: "lake-country-coop",
     category: "Institutional",
     name: "Lake Country Co-op Leisure Centre",
     location: "Prince Albert, SK",
-    href: "/portfolio",
+    href: "/portfolio/lake-country-coop",
     imageKey: "lakeCountry" as const,
   },
   {
-    id: "am-hair",
-    slug: "am-hair",
+    id: "am-hair-beauty",
+    slug: "am-hair-beauty",
     category: "Retail",
     name: "AM Hair & Beauty Salon",
     location: "Cambridge, ON",
-    href: "/portfolio",
+    href: "/portfolio/am-hair-beauty",
     imageKey: "amHair" as const,
   },
   {
-    id: "valley-park",
-    slug: "valley-park",
+    id: "valley-park-library",
+    slug: "valley-park-library",
     category: "Institutional",
     name: "Valley Park Library",
     location: "Hamilton, ON",
-    href: "/portfolio",
+    href: "/portfolio/valley-park-library",
     imageKey: "valleyPark" as const,
   },
 ] as const;
 
 export const portfolioProjects: PortfolioProject[] = [
   {
-    id: "coffee-island",
-    slug: "coffee-island",
+    id: "coffee-island-toronto",
+    slug: "coffee-island-toronto",
     category: "Restaurant/QSR",
     name: "Coffee Island Toronto",
     location: "Toronto, ON",
     scope:
       "Full turnkey build-out — kitchen/tech fit-out, custom feature ceilings (yellow bulkhead & lighting), stainless & diamond-plate service counter, back-bar millwork, retail display shelving & merchandising fixtures, banquettes, window counters, storefront graphics, and all interior furniture.",
     galleryCount: 9,
-    imageKey: "coffeeIsland",
     specs: {
       sector: "Restaurant / QSR",
       delivery: "Design through install",
@@ -70,15 +68,14 @@ export const portfolioProjects: PortfolioProject[] = [
     },
   },
   {
-    id: "niagara-college",
-    slug: "niagara-college",
+    id: "niagara-college-marotta",
+    slug: "niagara-college-marotta",
     category: "Education",
     name: "Niagara College — Marotta Family Innovation Complex",
     location: "Welland, ON",
     scope:
       "Institutional interior scope — feature perforated metal ceilings (interior & exterior soffit), signage wall, glass-walled study rooms, common-area casework, and lounge/cafeteria furniture package throughout the innovation complex and athletics wing.",
     galleryCount: 6,
-    imageKey: "niagaraCollege",
     specs: {
       sector: "Education / Institutional",
       delivery: "Design through install",
@@ -92,15 +89,14 @@ export const portfolioProjects: PortfolioProject[] = [
     },
   },
   {
-    id: "robarts-library",
-    slug: "robarts-library",
+    id: "university-of-toronto-robarts",
+    slug: "university-of-toronto-robarts",
     category: "Education",
     name: "University of Toronto — Robarts Library Study Commons",
     location: "Toronto, ON",
     scope:
       "Heritage-sensitive architectural millwork within Robarts Library — white oak column cladding, study carrels & partitions, upholstered banquette pods, individual workstation runs, reception & service casework, integrated task lighting and cable management.",
     galleryCount: 5,
-    imageKey: "robartsLibrary",
     specs: {
       sector: "Education / Library",
       delivery: "Design through install",
@@ -114,15 +110,14 @@ export const portfolioProjects: PortfolioProject[] = [
     },
   },
   {
-    id: "tiffany-hill",
-    slug: "tiffany-hill",
+    id: "tiffany-hill-primary-school",
+    slug: "tiffany-hill-primary-school",
     category: "Education",
     name: "Tiffany Hill Primary School",
     location: "Ancaster, ON",
     scope:
       "K-8 school interior millwork — maple learning-stair bleachers, display cases, tiered wood cladding, reception & administration casework, teacher mail cubbies, classroom cabinetry & cubbies, window benches, recycling stations, and STEAM/music/art zone feature walls.",
     galleryCount: 8,
-    imageKey: "tiffanyHill",
     specs: {
       sector: "Education / K-12",
       delivery: "Design through install",
@@ -136,15 +131,14 @@ export const portfolioProjects: PortfolioProject[] = [
     },
   },
   {
-    id: "tobin-high",
-    slug: "tobin-high",
+    id: "tobin-high-school",
+    slug: "tobin-high-school",
     category: "Education",
     name: "Tobin High School",
     location: "Massachusetts, USA",
     scope:
       "Full high school interior millwork package — auditorium acoustic wood wall panels & curved balcony fascia, science lab casework with epoxy tops and integrated sinks, chemistry classroom cabinetry, teacher prep rooms, student lockers & wardrobe units, main lobby reception desk, corridor slat wood ceilings and glulam feature bulkheads.",
     galleryCount: 9,
-    imageKey: "tobinHigh",
     specs: {
       sector: "Education / High School",
       delivery: "Design through install",
@@ -158,15 +152,14 @@ export const portfolioProjects: PortfolioProject[] = [
     },
   },
   {
-    id: "scooped",
-    slug: "scooped",
+    id: "scooped-by-demetres",
+    slug: "scooped-by-demetres",
     category: "Retail",
     name: "Scooped by Demetres",
     location: "Toronto, ON",
     scope:
       "Complete mall parlour build-out — arched storefront, custom tiled service counter with curved glass gelato display, illuminated signage backing, back-of-house prep, menu boards, pint display freezer surround, and all finish carpentry.",
     galleryCount: 7,
-    imageKey: "scooped",
     specs: {
       sector: "Retail / Food Service",
       delivery: "Design through install",
@@ -180,15 +173,14 @@ export const portfolioProjects: PortfolioProject[] = [
     },
   },
   {
-    id: "mercato",
-    slug: "mercato",
+    id: "mercato-mississauga",
+    slug: "mercato-mississauga",
     category: "Restaurant/QSR",
     name: "Mercato Mississauga",
     location: "Mississauga, ON",
     scope:
       "Complete architectural millwork package — arched wood portals, banquettes, custom bar, cane-panel screens, feature ceilings, wine displays, service stations, and washroom millwork.",
     galleryCount: 9,
-    imageKey: "mercato",
     specs: {
       sector: "Restaurant / QSR",
       delivery: "Design through install",
@@ -202,15 +194,15 @@ export const portfolioProjects: PortfolioProject[] = [
     },
   },
   {
-    id: "lake-country",
-    slug: "lake-country",
+    id: "lake-country-coop",
+    slug: "lake-country-coop",
     category: "Institutional",
     name: "Lake Country Co-op Leisure Centre",
     location: "Prince Albert, SK",
+    client: "Client: Atkar North America",
     scope:
-      "Architectural millwork package, feature walls, casework, reception & public areas. Client: Atkar North America",
+      "Architectural millwork package, feature walls, casework, reception & public areas.",
     galleryCount: 3,
-    imageKey: "lakeCountry",
     specs: {
       sector: "Institutional / Recreation",
       delivery: "Millwork package",
@@ -224,14 +216,13 @@ export const portfolioProjects: PortfolioProject[] = [
     },
   },
   {
-    id: "am-hair",
-    slug: "am-hair",
+    id: "am-hair-beauty",
+    slug: "am-hair-beauty",
     category: "Retail",
     name: "AM Hair And Beauty Salon",
     location: "Cambridge, ON",
     scope: "Retail fixtures, custom stations, reception & display millwork.",
     galleryCount: 3,
-    imageKey: "amHair",
     specs: {
       sector: "Retail / Beauty",
       delivery: "Fixture & millwork package",
@@ -245,15 +236,14 @@ export const portfolioProjects: PortfolioProject[] = [
     },
   },
   {
-    id: "valley-park",
-    slug: "valley-park",
+    id: "valley-park-library",
+    slug: "valley-park-library",
     category: "Institutional",
     name: "Valley Park Library",
     location: "Hamilton, ON",
-    scope:
-      "Library casework, circulation, feature millwork, stack & admin areas. Client: Atkar North America",
+    client: "Client: Atkar North America",
+    scope: "Library casework, circulation, feature millwork, stack & admin areas.",
     galleryCount: 3,
-    imageKey: "valleyPark",
     specs: {
       sector: "Institutional / Library",
       delivery: "Millwork package",
