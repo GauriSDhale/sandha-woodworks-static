@@ -28,9 +28,7 @@ export const pageMedia = {
   aboutFacilityInterior: "/assets/about/facility-interior.jpg",
   aboutTeam: "/assets/about/team.webp",
   facilityAerial: media("/assets/facility-aerial-FzX6W9yA.jpg"),
-  portfolioHero: media(
-    "/__l5e/assets-v1/cea20f69-8f54-4090-8c27-09d9a27307a5/portfolio-bg.jpg",
-  ),
+  portfolioHero: "/assets/portfolio/portfolio-bg.jpg",
   servicesHero: media("/assets/corp-inst-hero.jpg"),
   sectorsHero: media("/assets/corp-inst-hero.jpg"),
   careersHero: media("/assets/about-hero-workshop-C9Oup6mp.jpg"),
@@ -64,28 +62,17 @@ export const sectorMedia = {
   specialty: media("/assets/custom-assembly-hero.jpg"),
 } as const;
 
-const wix = (id: string, ext: "jpg" | "webp", height = 800) =>
-  `https://static.wixstatic.com/media/${id}/v1/fill/w_1200,h_${height},al_c,q_85,enc_avif,quality_auto/${id}`;
-
 export const projectMedia = {
-  coffeeIsland: media(
-    "/__l5e/assets-v1/56b4d086-c5ff-44f8-b5f9-d76f92e932df/IMG_2890.jpg",
-  ),
-  niagaraCollege: media(
-    "/__l5e/assets-v1/54d5458b-2a70-47c1-b4b9-8848a0da6601/nc-1.webp",
-  ),
-  robartsLibrary: media(
-    "/__l5e/assets-v1/124093b1-dbd4-45f2-8a66-74d95f23cd87/uoft-2.webp",
-  ),
-  tiffanyHill: media("/__l5e/assets-v1/0fe602d9-ea1c-43dd-9cbf-2cb8531ea75c/th-4.jpg"),
-  tobinHigh: media(
-    "/__l5e/assets-v1/fa8ad471-1ba7-4fa1-88ef-7d7a5ec94b14/tobin-9_2.jpg",
-  ),
-  scooped: media("/__l5e/assets-v1/47db3c2a-ddc5-4847-b383-bad043b45df6/IMG_2820.jpg"),
-  mercato: media("/__l5e/assets-v1/3a65027f-e096-4b79-912e-ad345559312b/mercato-2.jpg"),
-  lakeCountry: wix("86fc72_fa6d8a586ae641ff993e72bbb9835cc9~mv2.jpg", "jpg"),
-  amHair: wix("86fc72_28f1cf8a0989418ca6b885defc2d6614~mv2.webp", "webp"),
-  valleyPark: wix("86fc72_34201e169b154675b465b969ac93323a~mv2.jpg", "jpg"),
+  coffeeIsland: "/assets/portfolio/coffee-island.jpg",
+  niagaraCollege: "/assets/portfolio/niagara-college.webp",
+  robartsLibrary: "/assets/portfolio/robarts-library.webp",
+  tiffanyHill: "/assets/portfolio/tiffany-hill.jpg",
+  tobinHigh: "/assets/portfolio/tobin-high.jpg",
+  scooped: "/assets/portfolio/scooped.jpg",
+  mercato: "/assets/portfolio/mercato.jpg",
+  lakeCountry: "/assets/portfolio/lake-country.jpg",
+  amHair: "/assets/portfolio/am-hair.webp",
+  valleyPark: "/assets/portfolio/valley-park.jpg",
 } as const;
 
 export const teamMedia = {

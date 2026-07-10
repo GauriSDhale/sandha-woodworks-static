@@ -14,6 +14,8 @@
   --warm-black: oklch(13% 0.008 250);
   --wood: oklch(32% 0.015 250);
   --wood-dark: oklch(19% 0.01 250);
+  --walnut: oklch(28% 0.025 55);
+  --sand: oklch(91% 0.008 75);
 
   --background: oklch(98.5% 0.004 85);
   --foreground: oklch(13% 0.008 250);
@@ -43,6 +45,8 @@
   --color-warm-black: var(--warm-black);
   --color-wood: var(--wood);
   --color-wood-dark: var(--wood-dark);
+  --color-walnut: var(--walnut);
+  --color-sand: var(--sand);
   --color-brand: var(--brand);
   --color-brand-light: var(--brand-light);
   --color-brand-dark: var(--brand-dark);
