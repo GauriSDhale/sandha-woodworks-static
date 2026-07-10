@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Document,
   Page,
@@ -5,8 +7,8 @@ import {
   View,
   Image,
   StyleSheet,
-  type Styles,
-} from "@react-pdf/renderer";
+} from "@react-pdf/renderer/lib/react-pdf.browser";
+import type { Style } from "@react-pdf/types";
 import {
   atAGlance,
   closeOutItems,
@@ -251,7 +253,7 @@ function SafeImage({
   style,
 }: {
   src?: string;
-  style?: Styles[string] | Styles[string][];
+  style?: Style | Style[];
 }) {
   if (!src) return null;
   return <Image src={src} style={style} />;

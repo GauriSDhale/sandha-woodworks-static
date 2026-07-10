@@ -15,37 +15,99 @@ const poolHeroes: Record<string, string> = {
   pharmacy: "/assets/pharmacy-millwork.jpg",
 };
 
-function toAbsolute(path: string, origin: string) {
-  if (path.startsWith("http")) return path;
-  return `${origin}${path}`;
-}
+/** Keep PDF generation fast — @react-pdf embeds every image. */
+export const PDF_IMAGE_SLOT_COUNT = 10;
 
 /**
- * Resolve statement images from local sub-sector galleries
- * (same assets as live `/assets/subsectors/...`).
+ * Resolve unique local image paths for a statement (relative `/assets/...`).
  */
-export function getStatementImages(sub: SubSectorStatement, origin: string) {
-  const gallery = getSubsectorGallery(sub.slug);
+export function getStatementImagePaths(sub: SubSectorStatement): string[] {
+  const gallery = getSubsectorGallery(sub.slug).filter((p) => !p.toLowerCase().endsWith(".webp"));
   const hero = poolHeroes[sub.poolKey];
 
-  let pool = gallery.length > 0 ? [...gallery] : [];
+  let pool = [...gallery];
   if (hero) pool = [hero, ...pool.filter((p) => p !== hero)];
 
-  // Fallback if a slug somehow has no gallery
   if (pool.length === 0) {
     pool = [
       pageMedia.aboutFacilityInterior,
       pageMedia.portfolioHero,
       ...Object.values(projectGalleries).flatMap((g) => g.gallery.slice(0, 3)),
-    ];
+    ].filter((p) => !p.startsWith("http"));
   }
 
-  // Repeat to fill layout slots (live repeats short galleries)
-  const filled: string[] = [];
-  for (let i = 0; i < 30; i++) filled.push(pool[i % pool.length]);
+  // Rotate by poolOffset for variety, then take unique slots
+  const offset = pool.length ? ((sub.poolOffset % pool.length) + pool.length) % pool.length : 0;
+  const rotated = [...pool.slice(offset), ...pool.slice(0, offset)];
 
-  const offset = ((sub.poolOffset % filled.length) + filled.length) % filled.length;
-  const rotated = [...filled.slice(offset), ...filled.slice(0, offset)];
+  const unique: string[] = [];
+  for (const src of rotated) {
+    if (!unique.includes(src)) unique.push(src);
+    if (unique.length >= PDF_IMAGE_SLOT_COUNT) break;
+  }
 
-  return rotated.slice(0, 20).map((src) => toAbsolute(src, origin));
+  // Pad by repeating so layout indexes always resolve
+  const base = unique.length > 0 ? unique : pool;
+  while (unique.length < PDF_IMAGE_SLOT_COUNT && base.length > 0) {
+    unique.push(base[unique.length % base.length]);
+  }
+
+  return unique;
+}
+
+/** @deprecated use getStatementImagePaths + loadImagesAsDataUrls */
+export function getStatementImages(sub: SubSectorStatement, origin: string) {
+  return getStatementImagePaths(sub).map((src) =>
+    src.startsWith("http") ? src : `${origin}${src}`,
+  );
+}
+
+const MAX_EDGE = 1100;
+const JPEG_QUALITY = 0.72;
+
+/**
+ * Fetch local images and convert to resized JPEG data URLs.
+ * Reliable for @react-pdf (no WebP, no CORS, smaller payloads).
+ */
+export async function loadImagesAsDataUrls(paths: string[]): Promise<string[]> {
+  const results = await Promise.all(
+    paths.map(async (path) => {
+      try {
+        return await pathToJpegDataUrl(path);
+      } catch (err) {
+        console.warn("PDF image failed:", path, err);
+        return null;
+      }
+    }),
+  );
+
+  const ok = results.filter((v): v is string => Boolean(v));
+  if (ok.length === 0) {
+    throw new Error("Could not load any images for the capability statement.");
+  }
+
+  // Fill failed slots with the first good image so layout never blanks
+  return results.map((v) => v ?? ok[0]);
+}
+
+async function pathToJpegDataUrl(path: string): Promise<string> {
+  const src = path.startsWith("http") ? path : path;
+  const response = await fetch(src);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  const blob = await response.blob();
+  const bitmap = await createImageBitmap(blob);
+
+  const scale = Math.min(1, MAX_EDGE / Math.max(bitmap.width, bitmap.height));
+  const width = Math.max(1, Math.round(bitmap.width * scale));
+  const height = Math.max(1, Math.round(bitmap.height * scale));
+
+  const canvas = document.createElement("canvas");
+  canvas.width = width;
+  canvas.height = height;
+  const ctx = canvas.getContext("2d");
+  if (!ctx) throw new Error("Canvas unavailable");
+  ctx.drawImage(bitmap, 0, 0, width, height);
+  bitmap.close();
+
+  return canvas.toDataURL("image/jpeg", JPEG_QUALITY);
 }

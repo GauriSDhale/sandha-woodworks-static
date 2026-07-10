@@ -1,4 +1,4 @@
-/** Local capability-PDF photo galleries (downloaded from live). */
+/** Local capability-PDF photo galleries (JPEG/PNG only for @react-pdf). */
 export const subsectorGalleries: Record<string, string[]> = {
   "airports": ["/assets/subsectors/airports/1.jpg", "/assets/subsectors/airports/2.jpg", "/assets/subsectors/airports/3.jpg"],
   "apartments": ["/assets/subsectors/apartments/1.jpg", "/assets/subsectors/apartments/2.jpg", "/assets/subsectors/apartments/3.jpg", "/assets/subsectors/apartments/4.jpg", "/assets/subsectors/apartments/5.jpg", "/assets/subsectors/apartments/6.jpg", "/assets/subsectors/apartments/7.jpg", "/assets/subsectors/apartments/8.jpg", "/assets/subsectors/apartments/9.jpg"],
@@ -6,7 +6,7 @@ export const subsectorGalleries: Record<string, string[]> = {
   "bars": ["/assets/subsectors/bars/1.jpg", "/assets/subsectors/bars/2.jpg", "/assets/subsectors/bars/3.jpg"],
   "cafes": ["/assets/subsectors/cafes/1.jpg", "/assets/subsectors/cafes/2.jpg", "/assets/subsectors/cafes/3.jpg", "/assets/subsectors/cafes/4.jpg", "/assets/subsectors/cafes/5.jpg", "/assets/subsectors/cafes/6.jpg", "/assets/subsectors/cafes/7.jpg", "/assets/subsectors/cafes/8.jpg"],
   "civic-buildings": ["/assets/subsectors/civic-buildings/1.jpg", "/assets/subsectors/civic-buildings/2.jpg", "/assets/subsectors/civic-buildings/3.jpg"],
-  "colleges": ["/assets/subsectors/colleges/1.webp", "/assets/subsectors/colleges/2.webp", "/assets/subsectors/colleges/3.webp", "/assets/subsectors/colleges/4.webp", "/assets/subsectors/colleges/5.webp", "/assets/subsectors/colleges/6.webp"],
+  "colleges": ["/assets/subsectors/colleges/1.jpg", "/assets/subsectors/colleges/2.jpg", "/assets/subsectors/colleges/3.jpg", "/assets/subsectors/colleges/4.jpg", "/assets/subsectors/colleges/5.jpg", "/assets/subsectors/colleges/6.jpg"],
   "commercial-interiors": ["/assets/subsectors/commercial-interiors/1.jpg", "/assets/subsectors/commercial-interiors/2.jpg", "/assets/subsectors/commercial-interiors/3.jpg"],
   "community-centres": ["/assets/subsectors/community-centres/1.jpg", "/assets/subsectors/community-centres/2.jpg", "/assets/subsectors/community-centres/3.jpg"],
   "condominiums": ["/assets/subsectors/condominiums/1.jpg", "/assets/subsectors/condominiums/2.jpg", "/assets/subsectors/condominiums/3.jpg", "/assets/subsectors/condominiums/4.jpg"],
@@ -49,7 +49,7 @@ export const subsectorGalleries: Record<string, string[]> = {
   "student-housing": ["/assets/subsectors/student-housing/1.jpg", "/assets/subsectors/student-housing/2.jpg", "/assets/subsectors/student-housing/3.jpg", "/assets/subsectors/student-housing/4.jpg"],
   "training-facilities": ["/assets/subsectors/training-facilities/1.jpg", "/assets/subsectors/training-facilities/2.jpg", "/assets/subsectors/training-facilities/3.jpg"],
   "transit": ["/assets/subsectors/transit/1.jpg", "/assets/subsectors/transit/2.jpg", "/assets/subsectors/transit/3.jpg"],
-  "universities": ["/assets/subsectors/universities/1.webp", "/assets/subsectors/universities/2.webp", "/assets/subsectors/universities/3.webp", "/assets/subsectors/universities/4.webp", "/assets/subsectors/universities/5.webp"],
+  "universities": ["/assets/subsectors/universities/1.jpg", "/assets/subsectors/universities/2.jpg", "/assets/subsectors/universities/3.jpg", "/assets/subsectors/universities/4.jpg", "/assets/subsectors/universities/5.jpg"],
   "ymca": ["/assets/subsectors/ymca/1.jpg", "/assets/subsectors/ymca/2.jpg", "/assets/subsectors/ymca/3.jpg"],
 };
 

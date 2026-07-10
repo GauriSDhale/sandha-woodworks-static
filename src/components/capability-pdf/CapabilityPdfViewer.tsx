@@ -1,11 +1,10 @@
 "use client";
 
-import { pdf } from "@react-pdf/renderer";
+import { pdf } from "@react-pdf/renderer/lib/react-pdf.browser";
 import { ArrowLeft, Download, Printer, X } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { SubSectorStatementDoc } from "@/components/capability-pdf/SubSectorStatementDoc";
-import { getStatementImages } from "@/lib/capability-pdf/images";
 import type { SubSectorStatement } from "@/lib/constants/sub-sector-statements";
 import { siteConfig } from "@/lib/constants/site";
 import { cn } from "@/lib/utils";
@@ -34,8 +33,13 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
       try {
         setReady(false);
         setError(null);
-        const origin = window.location.origin;
-        const images = getStatementImages(sub, origin);
+        const { getStatementImagePaths, loadImagesAsDataUrls } = await import(
+          "@/lib/capability-pdf/images"
+        );
+        const paths = getStatementImagePaths(sub);
+        const images = await loadImagesAsDataUrls(paths);
+        if (cancelled) return;
+
         const blob = await pdf(
           <SubSectorStatementDoc sub={sub} images={images} />,
         ).toBlob();
@@ -44,9 +48,15 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
         setBlobUrl(objectUrl);
         setReady(true);
       } catch (err) {
-        console.error(err);
+        console.error("Capability PDF generation failed:", err);
         if (!cancelled) {
-          setError(err instanceof Error ? err.message : "PDF generation failed");
+          const message =
+            err instanceof Error
+              ? err.message
+              : typeof err === "string"
+                ? err
+                : "PDF generation failed";
+          setError(message);
         }
       }
     }
@@ -161,7 +171,9 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
               <p className="mt-5 text-[10px] font-semibold uppercase tracking-[0.32em] text-brand">
                 Preparing your capability statement
               </p>
-              <p className="mt-2 text-xs text-cream/60">This takes a few seconds.</p>
+              <p className="mt-2 text-xs text-cream/60">
+                Loading photos and building the PDF — usually a few seconds.
+              </p>
             </div>
           </div>
         ) : (
