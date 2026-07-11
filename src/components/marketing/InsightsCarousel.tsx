@@ -19,8 +19,7 @@ const slides: InsightSlide[] = [
     eyebrow: "Featured insight",
     meta: "LinkedIn article · Mar 31, 2026",
     href: "/linkedin/why-awmac-quietly-becoming-backbone-trust",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4E12AQENSeB19t28aQ/article-cover_image-shrink_720_1280/B4EZ1FUtPSIsAI-/0/1774984553327?e=2147483647&v=beta&t=H4exUij-aET8rruYxDI3R80MLNY9hAx4PaZ9erOSN5Y",
+    image: "/images/projects/mercato/IMG_2596.jpg",
   },
   {
     title: "Division 6 at the Highest Standard: Engineering Architectural Woodwork for a New Era of Construction",
@@ -29,8 +28,7 @@ const slides: InsightSlide[] = [
     eyebrow: "Featured insight",
     meta: "LinkedIn article · Mar 15, 2026",
     href: "/linkedin/division-6-highest-standard-engineering-architectural",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4E12AQGfIBOZTIcwuA/article-cover_image-shrink_720_1280/B4EZzu85.gJ4AI-/0/1773535469941?e=2147483647&v=beta&t=U3CUNOB60lxY8MKrZhAizQscSdGRoFL988U1XjMkFwM",
+    image: "/images/projects/coffee-island/IMG_2890.JPG",
   },
   {
     title: "Canada's Interior Construction Reset",
@@ -39,8 +37,7 @@ const slides: InsightSlide[] = [
     eyebrow: "Featured insight",
     meta: "LinkedIn article · Mar 20, 2026",
     href: "/linkedin/canadas-interior-construction-reset",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4E12AQErRY8w1XDixg/article-cover_image-shrink_720_1280/B4EZ0DTtZ2JEAI-/0/1773876998204?e=2147483647&v=beta&t=rhd2k0NbgndYcI8t_LAHmD9kz-X5ZbjBGkewg8ewOX8",
+    image: "/images/projects/scooped/IMG_2820.JPG",
   },
 ];
 
@@ -97,11 +94,11 @@ export function InsightsCarousel() {
 
       <div className="mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="overflow-hidden rounded-4xl border border-white/10 bg-linear-to-br from-[#1b1b1b] via-[#111111] to-[#0d0d0d] p-4 sm:p-6 lg:p-8 w-full">
-          <div className="overflow-hidden rounded-3xl border border-white/10 bg-cream/5 w-full">
+          <div className="h-64 w-full overflow-hidden rounded-3xl border border-white/10 bg-cream/5 sm:h-80 lg:h-96">
             <img
               src={currentSlide.image}
               alt={currentSlide.title}
-              className="h-64 w-full object-cover sm:h-80 lg:h-96"
+              className="h-full w-full object-cover"
             />
           </div>
           <div className="mt-6 flex flex-wrap items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.3em] text-[#4DA3E8]">
