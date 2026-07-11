@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Wrench, Building2 } from "lucide-react";
 import { PageHero, CtaBanner, SectionLabel } from "@/components/marketing/PageSections";
+import { SectionAnchorNav } from "@/components/marketing/SectionAnchorNav";
 import { serviceCategories, serviceStandards, servicesSectorLinks } from "@/lib/constants/services";
 import { pageMedia } from "@/lib/constants/media";
+import type { ServiceItem } from "@/lib/constants/services";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -47,9 +49,12 @@ function ServiceCard({
   );
 }
 
-import type { ServiceItem } from "@/lib/constants/services";
-
 export default function ServicesPage() {
+  const categoryNavItems = serviceCategories.map((cat) => ({
+    id: cat.id,
+    label: cat.title,
+  }));
+
   return (
     <>
       <PageHero
@@ -119,19 +124,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <nav className="sticky top-20 z-30 border-b border-border bg-background/95 backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl gap-6 overflow-x-auto px-4 py-3 text-sm font-medium sm:px-6 lg:px-8">
-          {serviceCategories.map((cat) => (
-            <a
-              key={cat.id}
-              href={`#${cat.id}`}
-              className="shrink-0 text-muted-foreground transition hover:text-foreground"
-            >
-              {cat.title}
-            </a>
-          ))}
-        </div>
-      </nav>
+      <SectionAnchorNav items={categoryNavItems} label="Service categories" />
 
       <section className="px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl space-y-20">

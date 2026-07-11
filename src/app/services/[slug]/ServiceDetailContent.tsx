@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, ChevronDown } from "lucide-react";
 import type { ServiceItem, ServiceCategory, ServiceDetail } from "@/lib/constants/services";
 import { CtaBanner } from "@/components/marketing/PageSections";
+import { SectionAnchorNav } from "@/components/marketing/SectionAnchorNav";
 
 const defaultProcess = [
   { step: "Estimating", description: "Take-off from your drawings, specs and finish schedule. Line-item quote returned within one business day for most packages." },
@@ -133,19 +134,7 @@ export function ServiceDetailContent({
         </div>
       </section>
 
-      <nav className="sticky top-20 z-30 border-b border-border bg-background/95 backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl gap-6 overflow-x-auto px-4 py-3 text-sm font-medium sm:px-6 lg:px-8">
-          {filteredToc.map((item) => (
-            <a
-              key={item.id}
-              href={`#${item.id}`}
-              className="shrink-0 text-muted-foreground transition hover:text-foreground"
-            >
-              {item.label}
-            </a>
-          ))}
-        </div>
-      </nav>
+      <SectionAnchorNav items={filteredToc} label="Article sections" />
 
       <section id="overview" className="scroll-mt-28 px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
