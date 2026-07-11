@@ -15,7 +15,7 @@ export const timeline = [
     year: "2022",
     title: "Industry memberships",
     description:
-      "Became a member of AWMAC, CKCA, and WMCO.",
+      "Became a member of AWMAC (Architectural Woodwork Manufacturers Association of Canada), CKCA (Canadian Kitchen Cabinet Association), and WMCO (Wood Manufacturing Cluster of Ontario).",
   },
   {
     year: "2023",
@@ -150,7 +150,7 @@ export const teamMembers = [
     name: "Muhamed Mahmutovic",
     title: "Director of Business Development",
     description:
-      "Muhamed brings over 10 years of experience in project and site management, with a strong background in project execution, contract management, and strategic growth.",
+      "Muhamed brings over 10 years of experience in project and site management, with a strong background in project execution, contract management, and strategic growth. He focuses on identifying opportunities and supporting successful project delivery.",
     avatarKey: "muhamedMahmutovic" as const,
   },
   {

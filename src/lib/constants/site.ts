@@ -48,6 +48,7 @@ export const footerCompanyLinks = [
 export const footerExploreLinks = [
   { href: "/services", label: "Services" },
   { href: "/sectors", label: "Sectors" },
+  { href: "/store", label: "Cabinet Store" },
   { href: "/portfolio", label: "Portfolio" },
 ] as const;
 

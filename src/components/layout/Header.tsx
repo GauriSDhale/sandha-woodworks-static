@@ -2,13 +2,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { ChevronDown, Menu, Search, X } from "lucide-react";
 import { navSectorLinks } from "@/lib/constants/sectors";
 import { navLinks, siteConfig } from "@/lib/constants/site";
 import { brandMedia } from "@/lib/constants/media";
 import { HashLink } from "@/components/ui/HashLink";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
+import { SiteSearch, useSiteSearchHotkey } from "@/components/layout/SiteSearch";
 import { getNavLabel, getSectorLabel } from "@/lib/i18n/nav";
 import { useLang } from "@/lib/i18n/LanguageProvider";
 import { cn } from "@/lib/utils";
@@ -33,14 +34,22 @@ export function Header() {
   const { t } = useLang();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileSectorsOpen, setMobileSectorsOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const isHome = pathname === "/";
 
+  const openSearch = useCallback(() => {
+    setMobileOpen(false);
+    setSearchOpen(true);
+  }, []);
+
+  useSiteSearchHotkey(openSearch);
+
   useEffect(() => {
-    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    document.body.style.overflow = mobileOpen || searchOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
-  }, [mobileOpen]);
+  }, [mobileOpen, searchOpen]);
 
   useEffect(() => {
     if (!mobileOpen) setMobileSectorsOpen(false);
@@ -108,7 +117,8 @@ export function Header() {
         <div className="hidden items-center gap-3 xl:flex">
           <button
             type="button"
-            className="inline-flex items-center cursor-pointer justify-center rounded-full p-2 text-current transition-colors hover:text-brand"
+            onClick={openSearch}
+            className="inline-flex cursor-pointer items-center justify-center rounded-full p-2 text-current transition-colors hover:text-brand"
             aria-label="Search the site"
           >
             <Search className="h-4 w-4" />
@@ -125,15 +135,25 @@ export function Header() {
           </Link>
         </div>
 
-        <button
-          type="button"
-          className="rounded-full p-2 text-current xl:hidden"
-          onClick={() => setMobileOpen((open) => !open)}
-          aria-expanded={mobileOpen}
-          aria-label={mobileOpen ? "Close menu" : "Open menu"}
-        >
-          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
+        <div className="flex items-center gap-1 xl:hidden">
+          <button
+            type="button"
+            onClick={openSearch}
+            className="inline-flex cursor-pointer items-center justify-center rounded-full p-2 text-current"
+            aria-label="Search the site"
+          >
+            <Search className="h-5 w-5" />
+          </button>
+          <button
+            type="button"
+            className="rounded-full p-2 text-current"
+            onClick={() => setMobileOpen((open) => !open)}
+            aria-expanded={mobileOpen}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          >
+            {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
       </div>
 
       {mobileOpen ? (
@@ -242,6 +262,8 @@ export function Header() {
           </nav>
         </div>
       ) : null}
+
+      <SiteSearch open={searchOpen} onOpenChange={setSearchOpen} />
     </header>
   );
 }
