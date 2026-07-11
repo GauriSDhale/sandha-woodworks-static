@@ -1,0 +1,81 @@
+"use client";
+
+import { useMemo, useState } from "react";
+import { useParams } from "next/navigation";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { getCategoryById } from "@/store/data/categories";
+import { getProductsByCategory } from "@/store/data/products";
+import { applyFilters } from "@/store/utils/filters";
+import { useAppSelector } from "@/store/hooks";
+import { selectFilters } from "@/store/slices/productsSlice";
+import { ProductGrid } from "@/components/store/ProductGrid";
+import { ProductFilters } from "@/components/store/ProductFilters";
+import { Pagination } from "@/components/store/Pagination";
+import { Breadcrumb } from "@/components/store/Breadcrumb";
+
+const PAGE_SIZE = 12;
+
+export function CategoryContent({ categorySlug }: { categorySlug: string }) {
+  const filters = useAppSelector(selectFilters);
+  const [page, setPage] = useState(1);
+
+  const category = getCategoryById(categorySlug);
+  const categoryProducts = useMemo(
+    () => getProductsByCategory(categorySlug),
+    [categorySlug],
+  );
+
+  const filtered = useMemo(
+    () => applyFilters(categoryProducts, { ...filters, category: null }),
+    [categoryProducts, filters],
+  );
+
+  const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
+  const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+
+  if (!category) {
+    return (
+      <div className="flex flex-col items-center justify-center gap-4 py-20 text-center">
+        <p className="font-display text-xl font-semibold">Category not found</p>
+        <Link href="/store/categories" className="rounded-full bg-foreground px-5 py-2 text-sm font-semibold text-cream hover:bg-brand-red">
+          View All Categories
+        </Link>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-6">
+      <Breadcrumb
+        items={[
+          { label: "Categories", href: "/store/categories" },
+          { label: category.label },
+        ]}
+      />
+
+      {/* Hero */}
+      <motion.div
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="relative overflow-hidden rounded-3xl bg-surface-dark px-8 py-10 text-cream"
+      >
+        <h1 className="font-display text-3xl font-bold">{category.label}</h1>
+        <p className="mt-2 max-w-lg text-cream/70 text-sm">{category.description}</p>
+        <p className="mt-3 text-xs text-cream/50">{categoryProducts.length} products</p>
+        <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full bg-brand-red/20 blur-3xl" />
+      </motion.div>
+
+      <div className="flex gap-8">
+        <ProductFilters className="w-56 shrink-0 space-y-5" />
+        <div className="flex-1 min-w-0 space-y-5">
+          <p className="text-sm text-muted-foreground">
+            <span className="font-semibold text-foreground">{filtered.length}</span> products
+          </p>
+          <ProductGrid products={paginated} />
+          <Pagination currentPage={page} totalPages={totalPages} onPageChange={setPage} />
+        </div>
+      </div>
+    </div>
+  );
+}
