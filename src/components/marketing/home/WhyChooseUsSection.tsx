@@ -15,7 +15,7 @@ const statKeys = ["facility", "clients", "services", "sectors"] as const;
 export function WhyChooseUsSection() {
   const { t } = useLang();
   const reducedMotion = useReducedMotion();
-  const [sectionRef, inView] = useInView<HTMLElement>({ threshold: 0.1, once: true });
+  const [sectionRef, inView] = useInView<HTMLElement>({ threshold: 0.1, triggerOnce: true });
   const copy = t.home.whyChooseUs;
   const slides = getRecentProjectSlides(8);
   const [activeIndex, setActiveIndex] = useState(0);
