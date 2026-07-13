@@ -39,7 +39,7 @@ export function WhyChooseUsSection() {
       aria-labelledby="why-choose-us-heading"
     >
       {/* Stats + copy — Archmill-inspired clean split */}
-      <div className="mx-auto grid max-w-7xl gap-12 px-4 py-8 sm:px-6 sm:py-10 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-12">
+      <div className="mx-auto grid max-w-7xl gap-12 px-4 pt-8 sm:px-6 sm:pt-10 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:pt-12">
         <div
           className={cn(
             "flex flex-col justify-center gap-8 sm:gap-10",
@@ -108,22 +108,24 @@ export function WhyChooseUsSection() {
               </li>
             ))}
           </ul>
-
-          <Link
-            href="/contact"
-            className="mt-10 inline-flex w-fit cursor-pointer items-center gap-3 rounded-full bg-foreground px-6 py-3 text-sm font-semibold text-cream transition hover:bg-warm-black"
-          >
-            {copy.cta}
-            <span className="inline-flex size-7 items-center justify-center rounded-full bg-white text-foreground">
-              <ArrowRight className="size-3.5" aria-hidden="true" />
-            </span>
-          </Link>
         </div>
+      </div>
+
+      <div className="flex justify-center px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
+        <Link
+          href="/contact"
+          className="inline-flex w-fit cursor-pointer items-center gap-3 rounded-full bg-foreground px-6 py-3 text-sm font-semibold text-cream transition hover:bg-warm-black"
+        >
+          {copy.cta}
+          <span className="inline-flex size-7 items-center justify-center rounded-full bg-white text-foreground">
+            <ArrowRight className="size-3.5" aria-hidden="true" />
+          </span>
+        </Link>
       </div>
 
       {/* Inset recent projects carousel — side padding like Archmill */}
       {hasSlides && current ? (
-        <div className="bg-white px-4 pb-8 sm:px-6 sm:pb-10 lg:px-8 lg:pb-24">
+        <div className="bg-white px-4 pb-8 sm:px-6 sm:pb-10 lg:px-8 lg:pb-12">
           <div className="relative mx-auto max-w-7xl overflow-hidden rounded-2xl bg-warm-black shadow-sm sm:rounded-3xl">
             <div className="relative aspect-[16/10] w-full overflow-hidden sm:aspect-[21/9]">
               {slides.map((slide, index) => (
