@@ -510,17 +510,21 @@ export function ContactForm() {
           {isSubmitting ? "Submitting…" : "Submit Request"}
         </button>
 
-        <div className="rounded-lg border border-brand/30 bg-brand/5 p-4 text-sm text-foreground/80">
+        <div className="rounded-md border border-brand/30 bg-brand/5 p-4 text-sm text-foreground/80">
           <p className="font-semibold text-foreground">Having trouble uploading drawings?</p>
-          <p className="mt-1 leading-relaxed">
-            Large or multi-file drawing sets can occasionally get stuck in the uploader. 
-            If that happens — or if you&apos;d simply prefer to send them directly — please email
-            your project files to 
-            <a href="mailto:estimating@sandhawoodworks.ca?subject=Project%20Drawings" 
-              className="font-semibold text-brand underline underline-offset-2 hover:text-foreground">
-              estimating@sandhawoodworks.ca 
-            </a> after submitting this form. Include your project name so our team can match it to your request.
-            </p>
+          <p className="mt-1 break-words leading-relaxed">
+            Large or multi-file drawing sets can occasionally get stuck in the uploader. If that
+            happens — or if you&apos;d simply prefer to send them directly — please email your
+            project files to{" "}
+            <a
+              href="mailto:estimating@sandhawoodworks.ca?subject=Project%20Drawings"
+              className="font-semibold break-all text-brand underline underline-offset-2 hover:text-foreground"
+            >
+              estimating@sandhawoodworks.ca
+            </a>{" "}
+            after submitting this form. Include your project name so our team can match it to your
+            request.
+          </p>
         </div>
           </>
         )}
