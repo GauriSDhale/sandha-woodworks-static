@@ -5,10 +5,14 @@ import enCommon from "@/locales/en/common.json";
 import enHome from "@/locales/en/home.json";
 import enAbout from "@/locales/en/about.json";
 import enContact from "@/locales/en/contact.json";
+import enServices from "@/locales/en/services.json";
+import enServiceDetails from "@/locales/en/serviceDetails.json";
 import frCommon from "@/locales/fr/common.json";
 import frHome from "@/locales/fr/home.json";
 import frAbout from "@/locales/fr/about.json";
 import frContact from "@/locales/fr/contact.json";
+import frServices from "@/locales/fr/services.json";
+import frServiceDetails from "@/locales/fr/serviceDetails.json";
 
 export const LANG_STORAGE_KEY = "sandha-lang";
 export const supportedLngs = ["en", "fr"] as const;
@@ -21,12 +25,16 @@ export const resources = {
     home: enHome,
     about: enAbout,
     contact: enContact,
+    services: enServices,
+    serviceDetails: enServiceDetails,
   },
   fr: {
     common: frCommon,
     home: frHome,
     about: frAbout,
     contact: frContact,
+    services: frServices,
+    serviceDetails: frServiceDetails,
   },
 } as const;
 
@@ -48,7 +56,7 @@ if (!i18n.isInitialized) {
     fallbackLng: "en",
     supportedLngs: [...supportedLngs],
     defaultNS,
-    ns: ["common", "home", "about", "contact"],
+    ns: ["common", "home", "about", "contact", "services", "serviceDetails"],
     interpolation: {
       escapeValue: false,
     },

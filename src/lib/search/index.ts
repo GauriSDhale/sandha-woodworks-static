@@ -1,5 +1,7 @@
 import { portfolioProjects } from "@/lib/constants/projects";
-import { serviceCategories, serviceDetails } from "@/lib/constants/services";
+import { serviceCategories } from "@/lib/constants/services";
+import enServices from "@/locales/en/services.json";
+import enServiceDetails from "@/locales/en/serviceDetails.json";
 import { sectorDetails } from "@/lib/constants/sector-details";
 import { siteConfig } from "@/lib/constants/site";
 
@@ -100,17 +102,28 @@ const pages: SearchItem[] = [
 function buildServiceItems(): SearchItem[] {
   return serviceCategories.flatMap((category) =>
     category.services.map((service) => {
-      const detail = serviceDetails[service.slug];
+      const item = enServices.items[service.slug as keyof typeof enServices.items];
+      const detail =
+        enServiceDetails.details[service.slug as keyof typeof enServiceDetails.details] as
+          | {
+              overview?: string;
+              bestFor?: string[];
+              deliverables?: string[];
+              materials?: string;
+            }
+          | undefined;
+      const categoryTitle =
+        enServices.categories[category.id as keyof typeof enServices.categories]?.title;
       return {
         id: `service-${service.slug}`,
         kind: "Service" as const,
-        title: service.name,
-        description: service.description,
+        title: item?.name ?? service.slug,
+        description: item?.description ?? "",
         url: `/services/${service.slug}`,
         keywords: normalize(
-          service.name,
-          service.description,
-          category.title,
+          item?.name,
+          item?.description,
+          categoryTitle,
           detail?.overview,
           detail?.bestFor?.join(" "),
           detail?.materials,
