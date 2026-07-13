@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "title": "Legal Centre",
+    "description": "Legal and compliance documents for Sandha Woodworks Service Ltd."
+  },
+  "hero": {
+    "eyebrow": "Legal & Compliance",
+    "title": "Legal Centre",
+    "description": "Policies, terms, and compliance documents governing use of this website and our services."
+  },
+  "placeholder": "This is a static placeholder for legal content. In production, this page would contain the full policy or terms document for the selected legal page.",
+  "docs": {
+    "general-terms": {
+      "title": "General Terms & Conditions"
+    },
+    "canada-terms": {
+      "title": "Canada Ts & Cs"
+    },
+    "usa-terms": {
+      "title": "USA Ts & Cs"
+    },
+    "code-of-conduct": {
+      "title": "Code of Conduct"
+    },
+    "privacy": {
+      "title": "Privacy Policy"
+    },
+    "accessibility": {
+      "title": "Accessibility"
+    },
+    "website-terms": {
+      "title": "Website Terms of Use"
+    }
+  }
+}

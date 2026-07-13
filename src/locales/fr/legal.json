@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "title": "Centre juridique",
+    "description": "Documents juridiques et de conformité pour Sandha Woodworks Service Ltd."
+  },
+  "hero": {
+    "eyebrow": "Juridique et conformité",
+    "title": "Centre juridique",
+    "description": "Politiques, conditions et documents de conformité régissant l'utilisation de ce site Web et de nos services."
+  },
+  "placeholder": "Ceci est un contenu juridique temporaire. En production, cette page contiendrait le texte intégral de la politique ou des conditions pour le document sélectionné.",
+  "docs": {
+    "general-terms": {
+      "title": "Conditions générales"
+    },
+    "canada-terms": {
+      "title": "Conditions — Canada"
+    },
+    "usa-terms": {
+      "title": "Conditions — É.-U."
+    },
+    "code-of-conduct": {
+      "title": "Code de conduite"
+    },
+    "privacy": {
+      "title": "Politique de confidentialité"
+    },
+    "accessibility": {
+      "title": "Accessibilité"
+    },
+    "website-terms": {
+      "title": "Conditions d'utilisation du site Web"
+    }
+  }
+}
