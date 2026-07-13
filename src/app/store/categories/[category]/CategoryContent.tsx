@@ -27,7 +27,7 @@ export function CategoryContent({ categorySlug }: { categorySlug: string }) {
   );
 
   const filtered = useMemo(
-    () => applyFilters(categoryProducts, { ...filters, category: null }),
+    () => applyFilters(categoryProducts, { ...filters, category: null, searchQuery: "" }),
     [categoryProducts, filters],
   );
 
