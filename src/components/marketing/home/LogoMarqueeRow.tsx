@@ -42,7 +42,7 @@ function PartnerLogoMark({
         aria-label={logo.name}
         tabIndex={ariaHidden ? -1 : 0}
         className={cn(
-          "inline-flex h-10 max-w-[180px] items-center justify-center whitespace-nowrap rounded-md border border-warm-black/10 bg-white/70 px-3 text-xs font-semibold uppercase tracking-[0.12em] text-warm-black/55 transition-all duration-300 sm:h-12 md:h-14",
+          "inline-flex h-8 max-w-[140px] items-center justify-center whitespace-nowrap rounded-md border border-warm-black/10 bg-white/70 px-3 text-[10px] font-semibold uppercase tracking-[0.12em] text-warm-black/55 transition-all duration-300 sm:h-9 md:h-10",
           isActive && "border-brand/30 bg-white text-warm-black",
         )}
         {...interactionProps}
@@ -59,7 +59,7 @@ function PartnerLogoMark({
       aria-label={logo.name}
       tabIndex={ariaHidden ? -1 : 0}
       className={cn(
-        "group/logo relative inline-flex h-10 items-center justify-center rounded-md px-1 transition-transform duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-cream sm:h-12 md:h-14",
+        "group/logo relative inline-flex h-8 items-center justify-center rounded-md px-1 transition-transform duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white sm:h-9 md:h-10",
         isActive && "scale-105",
       )}
       {...interactionProps}
@@ -72,10 +72,10 @@ function PartnerLogoMark({
         draggable={false}
         onError={() => setFailed(true)}
         className={cn(
-          "h-full w-auto max-w-[160px] object-contain opacity-70 grayscale transition-all duration-500 md:max-w-[180px]",
+          "h-full w-auto max-w-[120px] object-contain opacity-90 transition-all duration-500 md:max-w-[140px]",
           isActive
-            ? "scale-105 opacity-100 grayscale-0"
-            : "group-hover/logo:scale-105 group-hover/logo:opacity-100 group-hover/logo:grayscale-0",
+            ? "scale-105 opacity-100"
+            : "group-hover/logo:scale-105 group-hover/logo:opacity-100",
         )}
       />
     </button>
@@ -89,22 +89,27 @@ export function LogoMarqueeRow({
   className,
 }: LogoMarqueeRowProps) {
   const [activeLogo, setActiveLogo] = useState<PartnerLogo | null>(null);
-  const track = [...logos, ...logos];
+
+  // Enough even copies so half the track is always wider than the viewport; -50% then loops seamlessly.
+  const copies = Math.max(6, Math.ceil(24 / Math.max(logos.length, 1)));
+  const evenCopies = copies % 2 === 0 ? copies : copies + 1;
+  const track = Array.from({ length: evenCopies }, () => logos).flat();
+  const half = track.length / 2;
 
   return (
     <div className={cn("relative", className)}>
       <div className="group/marquee relative overflow-hidden py-2">
         <div
-          className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-cream to-transparent sm:w-28 md:w-40"
+          className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-white to-transparent sm:w-28 md:w-40"
           aria-hidden="true"
         />
         <div
-          className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-cream to-transparent sm:w-28 md:w-40"
+          className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-white to-transparent sm:w-28 md:w-40"
           aria-hidden="true"
         />
         <div
           className={cn(
-            "flex w-max items-center gap-16 px-4 sm:gap-24 md:gap-32",
+            "flex w-max items-center gap-8 px-4 will-change-transform sm:gap-10 md:gap-12",
             reverse ? "animate-marquee-x-reverse" : "animate-marquee-x",
           )}
           style={{ animationDuration: `${durationSec}s` }}
@@ -113,7 +118,7 @@ export function LogoMarqueeRow({
             <PartnerLogoMark
               key={`${logo.file}-${index}`}
               logo={logo}
-              ariaHidden={index >= logos.length}
+              ariaHidden={index >= half}
               isActive={activeLogo?.file === logo.file}
               onActivate={setActiveLogo}
               onDeactivate={() => setActiveLogo(null)}
@@ -123,12 +128,12 @@ export function LogoMarqueeRow({
       </div>
 
       <div
-        className="mt-3 flex min-h-[1.25rem] items-center justify-center"
+        className="mt-3 flex min-h-[1.5rem] items-center justify-center"
         aria-live="polite"
       >
         <p
           className={cn(
-            "text-[11px] font-semibold uppercase tracking-[0.28em] text-warm-black/55 transition-all duration-300",
+            "text-sm font-bold uppercase tracking-[0.2em] text-warm-black/60 transition-all duration-300",
             activeLogo
               ? "translate-y-0 opacity-100"
               : "pointer-events-none translate-y-1 opacity-0",
@@ -164,12 +169,12 @@ export function StaticLogoGrid({ logos, className }: StaticLogoGridProps) {
         ))}
       </ul>
       <div
-        className="mt-4 flex min-h-[1.25rem] items-center justify-center"
+        className="mt-4 flex min-h-[1.5rem] items-center justify-center"
         aria-live="polite"
       >
         <p
           className={cn(
-            "text-[11px] font-semibold uppercase tracking-[0.28em] text-warm-black/55 transition-all duration-300",
+            "text-sm font-bold uppercase tracking-[0.2em] text-warm-black/60 transition-all duration-300",
             activeLogo
               ? "translate-y-0 opacity-100"
               : "pointer-events-none translate-y-1 opacity-0",

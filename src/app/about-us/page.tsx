@@ -28,7 +28,7 @@ export default function AboutUsPage() {
         image={pageMedia.aboutHero}
       />
 
-      <section className="px-4 py-20 sm:px-6 lg:px-8">
+      <section className="px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionLabel>Our Journey</SectionLabel>
           <h2 className="font-display mt-4 text-3xl font-semibold md:text-5xl">Timeline</h2>
@@ -53,7 +53,7 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      <section className="bg-muted px-4 py-20 sm:px-6 lg:px-8">
+      <section className="bg-muted px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center">
           <div>
             <SectionLabel>Our Story</SectionLabel>
@@ -84,7 +84,7 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      <section className="px-4 py-20 sm:px-6 lg:px-8">
+      <section className="px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionLabel>Memberships & Certifications</SectionLabel>
           <h2 className="font-display mt-4 text-3xl font-semibold md:text-5xl">
@@ -104,7 +104,7 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      <section className="bg-surface-dark px-4 py-20 text-surface-cream sm:px-6 lg:px-8">
+      <section className="bg-surface-dark px-4 py-10 text-surface-cream sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-3">
           {missionVision.map((item) => (
             <article key={item.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
@@ -115,7 +115,7 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      <section className="px-4 py-20 sm:px-6 lg:px-8">
+      <section className="px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionLabel>Our Values</SectionLabel>
           <h2 className="font-display mt-4 text-3xl font-semibold md:text-5xl">
@@ -149,7 +149,7 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      <section className="bg-muted px-4 py-20 sm:px-6 lg:px-8">
+      <section className="bg-muted px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2">
           <div>
             <SectionLabel>Facility Overview</SectionLabel>
@@ -182,7 +182,7 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      <section className="bg-muted px-4 py-20 sm:px-6 lg:px-8">
+      <section className="bg-muted px-4 py-10 sm:px-6 lg:px-8">
         <SectionLabel className="text-center">One team, one accountable floor</SectionLabel>
         <h2 className="font-display mt-4 text-center text-3xl font-semibold md:text-5xl">
           The people who draw it, build it, finish it and install it.
@@ -196,7 +196,7 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      <section className="px-4 py-20 sm:px-6 lg:px-8">
+      <section className="px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionLabel>Meet Our Leadership Team</SectionLabel>
           <h2 className="font-display mt-4 text-3xl font-semibold md:text-5xl">

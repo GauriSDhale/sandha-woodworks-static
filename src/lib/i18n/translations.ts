@@ -78,6 +78,38 @@ export const translations = {
         description:
           "A true turnkey millwork partner — design assist through fabrication and install, kept in-house for speed, quality, and accountability.",
         cta: "Start a project",
+        projectsEyebrow: "Latest projects",
+        viewProject: "View project",
+        viewAllProjects: "View all past projects",
+        emptyProjects:
+          "We’re adding featured project photography here. Browse the full portfolio for completed millwork across every sector.",
+        stats: {
+          facility: {
+            value: 40000,
+            suffix: "",
+            label: "Sq Ft Facility",
+            description: "Purpose-built manufacturing in Brantford, ON",
+            format: "comma",
+          },
+          clients: {
+            value: 100,
+            suffix: "+",
+            label: "Active Clients",
+            description: "Trusted by leading builders across Canada",
+          },
+          services: {
+            value: 21,
+            suffix: "+",
+            label: "Service Lines",
+            description: "From design assist to final installation",
+          },
+          sectors: {
+            value: 12,
+            suffix: "",
+            label: "Sectors Served",
+            description: "Commercial, institutional, healthcare and more",
+          },
+        },
         reasons: [
           {
             title: "Drawings through install",
@@ -158,6 +190,24 @@ export const translations = {
           Institutional: "Institutional",
           Retail: "Retail",
         },
+      },
+      testimonials: {
+        eyebrow: "Testimonials",
+        title: "Trusted by industry leaders",
+        items: [
+          {
+            quote:
+              "Sandha Woodworks delivered exceptional millwork on a complex multi-unit timeline. Their team was responsive and precise.",
+            name: "Project Director",
+            role: "General Contractor Partner",
+          },
+          {
+            quote:
+              "From shop drawings to installation, the quality and professionalism exceeded our expectations.",
+            name: "Design Manager",
+            role: "Architectural Firm",
+          },
+        ],
       },
       about: {
         eyebrow: "About Sandha Woodworks",
@@ -305,6 +355,38 @@ export const translations = {
         description:
           "Un partenaire clé en main — de l'assistance à la conception à la fabrication et l'installation, le tout en interne pour la vitesse, la qualité et la responsabilité.",
         cta: "Démarrer un projet",
+        projectsEyebrow: "Projets récents",
+        viewProject: "Voir le projet",
+        viewAllProjects: "Voir tous les projets",
+        emptyProjects:
+          "Nous ajoutons ici la photographie de projets. Consultez le portfolio complet pour le travail réalisé dans tous les secteurs.",
+        stats: {
+          facility: {
+            value: 40000,
+            suffix: "",
+            label: "Pi² d'usine",
+            description: "Fabrication sur mesure à Brantford, ON",
+            format: "comma",
+          },
+          clients: {
+            value: 100,
+            suffix: "+",
+            label: "Clients actifs",
+            description: "Approuvé par les grands constructeurs du Canada",
+          },
+          services: {
+            value: 21,
+            suffix: "+",
+            label: "Gammes de services",
+            description: "De l'assistance à la conception à l'installation",
+          },
+          sectors: {
+            value: 12,
+            suffix: "",
+            label: "Secteurs desservis",
+            description: "Commercial, institutionnel, santé et plus",
+          },
+        },
         reasons: [
           {
             title: "Du dessin à l'installation",
@@ -385,6 +467,24 @@ export const translations = {
           Institutional: "Institutionnel",
           Retail: "Commerce de détail",
         },
+      },
+      testimonials: {
+        eyebrow: "Témoignages",
+        title: "La confiance des leaders de l'industrie",
+        items: [
+          {
+            quote:
+              "Sandha Woodworks a livré une menuiserie exceptionnelle dans un délai complexe multi-unités. Leur équipe a été réactive et précise.",
+            name: "Directeur de projet",
+            role: "Partenaire entrepreneur général",
+          },
+          {
+            quote:
+              "Des dessins d'atelier à l'installation, la qualité et le professionnalisme ont dépassé nos attentes.",
+            name: "Directeur de design",
+            role: "Cabinet d'architecture",
+          },
+        ],
       },
       about: {
         eyebrow: "À propos de Sandha Woodworks",

@@ -110,7 +110,7 @@ export function PortfolioPageContent() {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-warm-black px-6 py-24 text-cream md:py-32">
+      <section className="relative overflow-hidden bg-warm-black px-6 py-12 text-cream md:py-16">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(201,162,39,0.12),transparent_50%)]" />
         <div
           ref={heroRef}
@@ -131,7 +131,7 @@ export function PortfolioPageContent() {
         </div>
       </section>
 
-      <section className="px-6 py-12 md:py-16">
+      <section className="px-6 py-6 md:py-8">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <div className="flex flex-wrap gap-2">
@@ -176,7 +176,7 @@ export function PortfolioPageContent() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden px-6 py-24">
+      <section className="relative overflow-hidden px-6 py-12">
         <div className="absolute inset-0 bg-gradient-to-br from-walnut via-warm-black to-warm-black" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(201,162,39,0.2),transparent_50%)]" />
         <div className="relative mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 md:flex-row md:items-center">

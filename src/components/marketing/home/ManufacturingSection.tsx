@@ -23,7 +23,7 @@ export function ManufacturingSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-warm-black py-20 text-cream sm:py-28 lg:py-32"
+      className="relative overflow-hidden bg-warm-black py-10 text-cream sm:py-14 lg:py-16"
       aria-labelledby="manufacturing-heading"
     >
       <img

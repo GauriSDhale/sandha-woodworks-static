@@ -19,7 +19,7 @@ export default function CareersPage() {
         image={pageMedia.careersHero}
       />
 
-      <section className="px-4 py-20 sm:px-6 lg:px-8">
+      <section className="px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <div className="rounded-3xl border border-border bg-white p-5 shadow-sm">
             <div className="aspect-4/5 overflow-hidden rounded-2xl bg-muted">
@@ -54,7 +54,7 @@ export default function CareersPage() {
         </div>
       </section>
 
-      <section className="bg-muted px-4 py-20 sm:px-6 lg:px-8">
+      <section className="bg-muted px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionLabel>Our Culture</SectionLabel>
           <h2 className="font-display mt-4 text-3xl font-semibold md:text-5xl">
@@ -71,7 +71,7 @@ export default function CareersPage() {
         </div>
       </section>
 
-      <section className="px-4 py-20 sm:px-6 lg:px-8">
+      <section className="px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionLabel>Open Positions</SectionLabel>
           <h2 className="font-display mt-4 text-3xl font-semibold md:text-5xl">

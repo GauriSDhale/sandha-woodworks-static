@@ -46,7 +46,7 @@ export function HeroIntroSection() {
       <div className="pointer-events-none absolute inset-x-0 -top-16 h-16 bg-gradient-to-b from-transparent to-warm-black sm:-top-24 sm:h-24" />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cream/20 to-transparent" />
 
-      <div className="container-full pb-20 pt-8 sm:pb-28 sm:pt-12">
+      <div className="container-full pb-10 pt-8 sm:pb-14 sm:pt-6">
         <HeroReveal delayMs={80} reducedMotion={reducedMotion}>
           <div className="flex items-start justify-between text-[10px] font-semibold uppercase tracking-[0.4em] text-cream/60">
             <span>{t.home.hero.tagline}</span>

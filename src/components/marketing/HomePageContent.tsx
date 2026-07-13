@@ -4,6 +4,7 @@ import {
   FeaturedProjectsSection,
   HeroVideoSection,
   SectorsSection,
+  TestimonialsSection,
   TrustedPartnersSection,
   WhyChooseUsSection,
 } from "@/components/marketing/home";
@@ -18,6 +19,7 @@ export function HomePageContent() {
       <SectorsSection />
       <TrustedPartnersSection />
       <FeaturedProjectsSection />
+      <TestimonialsSection />
     </>
   );
 }

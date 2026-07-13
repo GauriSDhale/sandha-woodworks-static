@@ -43,7 +43,7 @@ export default function InsightPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden bg-[#111111] pt-32 pb-20 text-cream sm:pt-40 sm:pb-28">
+      <section className="relative overflow-hidden bg-[#111111] pt-32 pb-10 text-cream sm:pt-40 sm:pb-14">
         <div className="pointer-events-none absolute inset-0 opacity-30 [background:radial-gradient(circle_at_20%_20%,#0A66C2_0%,transparent_45%),radial-gradient(circle_at_80%_60%,#0A66C2_0%,transparent_55%)]" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.4em] text-[#4DA3E8]">
@@ -81,7 +81,7 @@ export default function InsightPage() {
       </section>
 
       {/* ── Straight from LinkedIn — Header + Embed ── */}
-      <section className="py-16 bg-muted sm:py-24">
+      <section className="py-8 bg-muted sm:py-12">
         <div className="w-full sm:mx-auto sm:max-w-7xl sm:px-6">
           <div className="px-4 sm:px-0">
             <div className="mx-auto max-w-3xl text-center">
@@ -106,7 +106,7 @@ export default function InsightPage() {
       </section>
 
       {/* ── Stay in the Loop CTA ── */}
-      <section className="py-20 bg-[#111111] text-cream sm:py-28">
+      <section className="py-10 bg-[#111111] text-cream sm:py-14">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-[#4DA3E8]">
             Stay in the loop
@@ -127,7 +127,7 @@ export default function InsightPage() {
       </section>
 
       {/* ── Why Follow ── */}
-      <section className="py-16 bg-cream sm:py-24">
+      <section className="py-8 bg-cream sm:py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-brand">

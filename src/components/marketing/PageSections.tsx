@@ -27,7 +27,7 @@ export function PageHero({
           dark ? "bg-gradient-to-t from-black/85 via-black/55 to-black/30" : "bg-black/40",
         )}
       />
-      <div className="relative mx-auto w-full max-w-7xl px-4 pb-16 pt-20 sm:px-6 lg:px-8">
+      <div className="relative mx-auto w-full max-w-7xl px-4 pb-8 pt-10 sm:px-6 lg:px-8">
         {eyebrow ? (
           <p className="text-xs font-semibold tracking-wide text-white/70 sm:text-sm">
             {eyebrow}
@@ -64,7 +64,7 @@ export function CtaBanner({
   secondaryLabel = "View Portfolio",
 }: CtaBannerProps) {
   return (
-    <section className="bg-cream px-4 py-20 sm:px-6 lg:px-8">
+    <section className="bg-cream px-4 py-10 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-3xl text-center">
         <p className="text-xs font-semibold tracking-wide text-brand sm:text-sm">{eyebrow}</p>
         <h2 className="font-display mt-4 text-3xl font-semibold text-warm-black md:text-5xl">

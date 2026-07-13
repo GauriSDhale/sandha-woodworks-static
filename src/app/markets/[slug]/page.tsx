@@ -4,7 +4,9 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { notFound } from "next/navigation";
 import { sectors, marketDetails } from "@/lib/constants/sectors";
 import { sectorDetails } from "@/lib/constants/sector-details";
+import { getMarketProjectSlides } from "@/lib/markets/project-gallery";
 import { CtaBanner } from "@/components/marketing/PageSections";
+import { MarketProjectCarousel } from "@/components/marketing/MarketProjectCarousel";
 
 export function generateStaticParams() {
   return sectors.map((sector) => ({ slug: sector.id }));
@@ -35,6 +37,7 @@ export default async function MarketDetailPage({
 
   const detail = marketDetails[slug];
   const otherMarkets = sectors.filter((s) => s.id !== slug);
+  const projectSlides = getMarketProjectSlides(slug);
 
   return (
     <>
@@ -45,7 +48,7 @@ export default async function MarketDetailPage({
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/30" />
-        <div className="relative mx-auto w-full max-w-7xl px-4 pb-16 pt-20 sm:px-6 lg:px-8">
+        <div className="relative mx-auto w-full max-w-7xl px-4 pb-8 pt-10 sm:px-6 lg:px-8">
           <Link
             href="/sectors"
             className="inline-flex items-center gap-1 text-sm font-medium text-white/70 transition hover:text-white"
@@ -66,7 +69,7 @@ export default async function MarketDetailPage({
 
       {detail && (
         <>
-          <section className="scroll-mt-28 border-b border-border bg-muted px-4 py-16 sm:px-6 lg:px-8">
+          <section className="scroll-mt-28 border-b border-border bg-muted px-4 py-8 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-7xl">
               <div className="mx-auto max-w-3xl">
                 <h2 className="font-display text-2xl font-semibold">About this market</h2>
@@ -88,7 +91,7 @@ export default async function MarketDetailPage({
             </div>
           </section>
 
-          <section className="px-4 py-20 sm:px-6 lg:px-8">
+          <section className="px-4 py-10 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-7xl">
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-muted-foreground">
                 Sub-sector capability statements
@@ -125,8 +128,13 @@ export default async function MarketDetailPage({
             </div>
           </section>
 
+          <MarketProjectCarousel
+            marketTitle={sector.title}
+            slides={projectSlides}
+          />
+
           {detail.relatedSectors.length > 0 && (
-            <section className="border-t border-border bg-muted px-4 py-20 sm:px-6 lg:px-8">
+            <section className="border-t border-border bg-muted px-4 py-10 sm:px-6 lg:px-8">
               <div className="mx-auto max-w-7xl">
                 <p className="text-xs font-semibold uppercase tracking-[0.28em] text-muted-foreground">
                   Detailed sector pages
@@ -171,7 +179,7 @@ export default async function MarketDetailPage({
       )}
 
       {otherMarkets.length > 0 && (
-        <section className="border-t border-border px-4 py-20 sm:px-6 lg:px-8">
+        <section className="border-t border-border px-4 py-10 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-muted-foreground">
               Other markets

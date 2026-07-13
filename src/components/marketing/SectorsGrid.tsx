@@ -3,7 +3,7 @@ import { sectors } from "@/lib/constants/sectors";
 
 export function SectorsGrid() {
   return (
-    <section className="relative z-10 px-4 pb-24 pt-20 sm:px-6 lg:px-8">
+    <section className="relative z-10 px-4 pb-12 pt-10 sm:px-6 lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-3 md:grid-cols-2">
         {sectors.map((sector) => (
           <Link

@@ -32,7 +32,7 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
           />
         ) : null}
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/30" />
-        <div className="relative mx-auto w-full max-w-7xl px-4 pb-16 pt-20 sm:px-6 lg:px-8">
+        <div className="relative mx-auto w-full max-w-7xl px-4 pb-8 pt-10 sm:px-6 lg:px-8">
           <Link
             href="/portfolio"
             className="mb-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/70 transition hover:text-brand"
@@ -50,7 +50,7 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
         </div>
       </section>
 
-      <section className="px-6 py-20">
+      <section className="px-6 py-10">
         <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[1.3fr_1fr]">
           <div>
             <h2 className="font-display text-3xl font-semibold">Project Overview</h2>
@@ -125,7 +125,7 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
       </section>
 
       {gallery && gallery.gallery.length > 0 ? (
-        <section className="border-t border-border px-6 py-16">
+        <section className="border-t border-border px-6 py-8">
           <div className="mx-auto max-w-7xl">
             <h2 className="font-display text-2xl font-semibold">Gallery</h2>
             <div className="mt-8 grid gap-6 sm:grid-cols-2">
@@ -202,7 +202,7 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
         </div>
       </section>
 
-      <section className="relative overflow-hidden px-6 py-24">
+      <section className="relative overflow-hidden px-6 py-12">
         <div className="absolute inset-0 bg-gradient-to-br from-walnut via-warm-black to-warm-black" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(201,162,39,0.2),transparent_50%)]" />
         <div className="relative mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 md:flex-row md:items-center">

@@ -22,7 +22,7 @@ export default function SectorsPage() {
         image={pageMedia.sectorsHero}
       />
 
-      <section className="border-b border-border bg-muted px-4 py-16 sm:px-6 lg:px-8">
+      <section className="border-b border-border bg-muted px-4 py-8 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionLabel>Markets vs. Services</SectionLabel>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
