@@ -5,14 +5,18 @@ import { DisplayHeading } from "@/components/marketing/home/DisplayHeading";
 import { Eyebrow } from "@/components/marketing/home/Eyebrow";
 import { useInView } from "@/lib/hooks/useInView";
 import { useReducedMotion } from "@/lib/hooks/useReducedMotion";
-import { useLang } from "@/lib/i18n/LanguageProvider";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 
 export function TestimonialsSection() {
-  const { t } = useLang();
+  const { t } = useTranslation("home");
   const reducedMotion = useReducedMotion();
   const [sectionRef, inView] = useInView<HTMLElement>({ threshold: 0.12, triggerOnce: true });
-  const p = t.home.testimonials;
+  const p = t("testimonials", { returnObjects: true }) as {
+    eyebrow: string;
+    title: string;
+    items: Array<{ quote: string; name: string; role: string }>;
+  };
 
   return (
     <section

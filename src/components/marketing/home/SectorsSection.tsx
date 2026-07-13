@@ -8,7 +8,7 @@ import { homeSectorMedia } from "@/lib/constants/media";
 import { homeSectors } from "@/lib/constants/site";
 import { useInView } from "@/lib/hooks/useInView";
 import { useReducedMotion } from "@/lib/hooks/useReducedMotion";
-import { useLang } from "@/lib/i18n/LanguageProvider";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 
 const sectorNameKeys = {
@@ -21,11 +21,17 @@ const sectorNameKeys = {
 } as const;
 
 export function SectorsSection() {
-  const { t } = useLang();
+  const { t } = useTranslation("home");
   const reducedMotion = useReducedMotion();
   const [sectionRef, inView] = useInView<HTMLElement>({ threshold: 0.15, triggerOnce: true });
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const s = t.home.sectors;
+  const s = t("sectors", { returnObjects: true }) as {
+    eyebrow: string;
+    title: string;
+    explore: string;
+    cardExplore: string;
+    names: Record<string, string>;
+  };
 
   return (
     <section

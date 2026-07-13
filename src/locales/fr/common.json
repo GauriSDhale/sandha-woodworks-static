@@ -1,0 +1,69 @@
+{
+  "intro": {
+    "tagline": "Ébénisterie architecturale · Canada",
+    "loading": "Préparation de votre expérience"
+  },
+  "nav": {
+    "about": "À propos",
+    "services": "Services",
+    "sectors": "Secteurs",
+    "portfolio": "Réalisations",
+    "store": "Boutique",
+    "insight": "Perspectives",
+    "careers": "Carrières",
+    "contact": "Contact",
+    "requestQuote": "Demander un devis",
+    "viewAllSectors": "Voir tous les secteurs →",
+    "allSectors": "Tous les secteurs"
+  },
+  "sectors": {
+    "healthcare": "Santé",
+    "education": "Éducation",
+    "commercial": "Commercial",
+    "hospitality": "Hôtellerie",
+    "retail": "Commerce de détail",
+    "residential": "Résidentiel",
+    "public": "Public et institutionnel",
+    "specialty": "Spécialisé"
+  },
+  "footer": {
+    "tagline": "Bâti sur la confiance. Guidé par la qualité.",
+    "description": "Ébénisterie architecturale de précision, mobilier commercial et fabrication sur mesure pour entrepreneurs généraux, architectes et promoteurs à travers le Canada.",
+    "company": "Entreprise",
+    "explore": "Explorer",
+    "legal": "Juridique et conformité",
+    "about": "À propos",
+    "careers": "Carrières",
+    "contact": "Contact",
+    "services": "Nos services",
+    "sectors": "Secteurs",
+    "portfolio": "Réalisations",
+    "visit": "Siège social",
+    "contactLabel": "Contact",
+    "hours": "Heures",
+    "hoursValue": "Lundi – Vendredi",
+    "hoursTime": "8 h 00 – 17 h 00 HE",
+    "rights": "Tous droits réservés.",
+    "followUs": "Suivez-nous",
+    "legalCentre": "Centre juridique",
+    "generalTerms": "Conditions générales",
+    "canadaTerms": "Conditions Canada",
+    "usaTerms": "Conditions É.-U.",
+    "codeOfConduct": "Code de conduite",
+    "privacy": "Politique de confidentialité",
+    "accessibility": "Accessibilité",
+    "websiteTerms": "Conditions d'utilisation du site",
+    "store": "Boutique",
+    "taglineAlt": "Bâti sur la confiance · Guidé par la qualité",
+    "madeInCanada": "Fabriqué au Canada",
+    "madeInCanadaAria": "Sandha Woodworks — Fabriqué au Canada, au service du Canada et des États-Unis",
+    "language": "Langue"
+  },
+  "cookies": {
+    "title": "Nous respectons votre vie privée",
+    "description": "Nous utilisons des témoins pour améliorer votre expérience, analyser le trafic et optimiser nos services. Vous pouvez tout accepter, refuser les témoins non essentiels ou personnaliser vos préférences.",
+    "customize": "Personnaliser",
+    "reject": "Tout refuser",
+    "accept": "Tout accepter"
+  }
+}

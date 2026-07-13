@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useLang } from "@/lib/i18n/LanguageProvider";
+import { useTranslation } from "react-i18next";
 import { useReducedMotion } from "@/lib/hooks/useReducedMotion";
 
 const INTRO_SEEN_KEY = "sandha-intro-seen";
@@ -173,7 +173,7 @@ function IntroPanel({
 }
 
 export function SandhaIntroSplash() {
-  const { t } = useLang();
+  const { t } = useTranslation("common");
   const reducedMotion = useReducedMotion();
   const [active, setActive] = useState(false);
   const [done, setDone] = useState(false);
@@ -218,8 +218,8 @@ export function SandhaIntroSplash() {
 
   if (!active || done) return null;
 
-  const tagline = t.intro.tagline;
-  const loading = t.intro.loading;
+  const tagline = t("intro.tagline");
+  const loading = t("intro.loading");
 
   return (
     <div className="fixed inset-0 z-[100] overflow-hidden" aria-hidden="true">

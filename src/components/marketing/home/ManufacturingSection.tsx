@@ -9,16 +9,28 @@ import { Eyebrow } from "@/components/marketing/home/Eyebrow";
 import { pageMedia } from "@/lib/constants/media";
 import { useInView } from "@/lib/hooks/useInView";
 import { useReducedMotion } from "@/lib/hooks/useReducedMotion";
-import { useLang } from "@/lib/i18n/LanguageProvider";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 
 const numericStatKeys = ["founded", "facility", "projects"] as const;
 
 export function ManufacturingSection() {
-  const { t } = useLang();
+  const { t } = useTranslation("home");
   const reducedMotion = useReducedMotion();
   const [sectionRef, inView] = useInView<HTMLElement>({ threshold: 0.2, triggerOnce: true });
-  const m = t.home.manufacturing;
+  const m = t("manufacturing", { returnObjects: true }) as {
+    eyebrow: string;
+    titleLine1: string;
+    titleLine2: string;
+    titleAccent: string;
+    bullets: string[];
+    stats: {
+      founded: { value: number; suffix: string; label: string; description: string };
+      facility: { value: number; suffix: string; label: string; description: string; format?: "comma" };
+      projects: { value: number; suffix: string; label: string; description: string };
+      awmac: { value: null; display: string; suffix: string; label: string; description: string };
+    };
+  };
 
   return (
     <section
