@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import type { PortfolioProject } from "@/lib/constants/projects";
 import { projectGalleries } from "@/lib/constants/media";
 import { GalleryLightbox } from "@/components/ui/GalleryLightbox";
@@ -13,13 +14,25 @@ interface Props {
   nextProject: PortfolioProject | null;
 }
 
+function asStringArray(value: unknown): string[] {
+  return Array.isArray(value) ? value.filter((v): v is string => typeof v === "string") : [];
+}
+
 export function ProjectDetailContent({ project, prevProject, nextProject }: Props) {
+  const { t } = useTranslation("portfolio");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const gallery = projectGalleries[project.slug];
   const images = gallery
-    ? gallery.gallery.map((src) => ({ src, alt: project.name }))
+    ? gallery.gallery.map((src, i) => ({
+        src,
+        alt: t("detail.galleryAlt", { name: project.name, index: i + 1 }),
+      }))
     : [];
+
+  const materials = asStringArray(
+    t(`projects.${project.slug}.specs.materials`, { returnObjects: true }),
+  );
 
   return (
     <>
@@ -38,10 +51,10 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
             className="mb-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/70 transition hover:text-brand"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
-            All Projects
+            {t("detail.back")}
           </Link>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
-            {project.category}
+            {t(`filters.${project.category}`, { defaultValue: project.category })}
           </p>
           <h1 className="font-display mt-3 max-w-4xl text-4xl font-semibold leading-tight text-white md:text-6xl">
             {project.name}
@@ -53,10 +66,14 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
       <section className="px-6 py-10">
         <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[1.3fr_1fr]">
           <div>
-            <h2 className="font-display text-3xl font-semibold">Project Overview</h2>
-            <p className="mt-6 text-base leading-relaxed text-muted-foreground">{project.scope}</p>
-            {project.client ? (
-              <p className="mt-4 text-sm text-muted-foreground">{project.client}</p>
+            <h2 className="font-display text-3xl font-semibold">{t("detail.overview")}</h2>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              {t(`projects.${project.slug}.scope`)}
+            </p>
+            {project.clientPartner ? (
+              <p className="mt-4 text-sm text-muted-foreground">
+                {t("detail.client", { name: project.clientPartner })}
+              </p>
             ) : null}
             {gallery && gallery.gallery.length > 0 ? (
               <div className="mt-10 grid gap-4 sm:grid-cols-3">
@@ -70,7 +87,7 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
                     <div className="aspect-[4/3] overflow-hidden bg-muted">
                       <img
                         src={src}
-                        alt={`${project.name} ${i + 1}`}
+                        alt={t("detail.galleryAlt", { name: project.name, index: i + 1 })}
                         className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                       />
                     </div>
@@ -82,35 +99,44 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
           <div>
             <div className="rounded-2xl border border-border bg-muted p-8">
               <h3 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
-                Project Specs
+                {t("detail.specs")}
               </h3>
               <dl className="mt-6 space-y-6">
                 <div>
                   <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    Sector
+                    {t("detail.sector")}
                   </dt>
-                  <dd className="mt-1.5 text-sm font-medium">{project.specs.sector}</dd>
+                  <dd className="mt-1.5 text-sm font-medium">
+                    {t(`projects.${project.slug}.specs.sector`)}
+                  </dd>
                 </div>
                 <div>
                   <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    Delivery
+                    {t("detail.delivery")}
                   </dt>
-                  <dd className="mt-1.5 text-sm font-medium">{project.specs.delivery}</dd>
+                  <dd className="mt-1.5 text-sm font-medium">
+                    {t(`projects.${project.slug}.specs.delivery`)}
+                  </dd>
                 </div>
                 <div>
                   <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    Finish
+                    {t("detail.finish")}
                   </dt>
-                  <dd className="mt-1.5 text-sm font-medium">{project.specs.finish}</dd>
+                  <dd className="mt-1.5 text-sm font-medium">
+                    {t(`projects.${project.slug}.specs.finish`)}
+                  </dd>
                 </div>
                 <div>
                   <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    Materials
+                    {t("detail.materials")}
                   </dt>
                   <dd className="mt-1.5">
                     <ul className="space-y-2">
-                      {project.specs.materials.map((material) => (
-                        <li key={material} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      {materials.map((material) => (
+                        <li
+                          key={material}
+                          className="flex items-start gap-2 text-sm text-muted-foreground"
+                        >
                           <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-brand" />
                           {material}
                         </li>
@@ -127,7 +153,7 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
       {gallery && gallery.gallery.length > 0 ? (
         <section className="border-t border-border px-6 py-8">
           <div className="mx-auto max-w-7xl">
-            <h2 className="font-display text-2xl font-semibold">Gallery</h2>
+            <h2 className="font-display text-2xl font-semibold">{t("detail.gallery")}</h2>
             <div className="mt-8 grid gap-6 sm:grid-cols-2">
               {gallery.gallery.map((src, i) => (
                 <button
@@ -139,7 +165,7 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
                   <div className="aspect-[4/3] overflow-hidden bg-muted">
                     <img
                       src={src}
-                      alt={`${project.name} ${i + 1}`}
+                      alt={t("detail.galleryAlt", { name: project.name, index: i + 1 })}
                       className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                       loading={i < 4 ? "eager" : "lazy"}
                     />
@@ -162,9 +188,7 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
             )
           }
           onNext={() =>
-            setLightboxIndex((prev) =>
-              prev !== null ? (prev + 1) % images.length : 0,
-            )
+            setLightboxIndex((prev) => (prev !== null ? (prev + 1) % images.length : 0))
           }
         />
       ) : null}
@@ -178,7 +202,7 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
             >
               <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-0.5" />
               <div className="text-left">
-                <p className="text-xs text-muted-foreground">Previous</p>
+                <p className="text-xs text-muted-foreground">{t("detail.previous")}</p>
                 <p className="font-medium">{prevProject.name}</p>
               </div>
             </Link>
@@ -191,7 +215,7 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
               className="group flex items-center gap-3 text-right text-sm font-medium transition hover:text-brand"
             >
               <div>
-                <p className="text-xs text-muted-foreground">Next</p>
+                <p className="text-xs text-muted-foreground">{t("detail.next")}</p>
                 <p className="font-medium">{nextProject.name}</p>
               </div>
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
@@ -208,17 +232,17 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
         <div className="relative mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-brand">
-              Inspired by this project?
+              {t("detail.ctaEyebrow")}
             </p>
             <h2 className="font-display mt-3 max-w-xl text-3xl font-semibold text-cream md:text-4xl">
-              Let&apos;s bring the same craftsmanship to your next build.
+              {t("detail.ctaTitle")}
             </h2>
           </div>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 rounded-full bg-foreground px-8 py-3.5 text-sm font-semibold text-cream transition hover:bg-warm-black"
           >
-            Request a Quote
+            {t("detail.requestQuote")}
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

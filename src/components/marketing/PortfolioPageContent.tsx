@@ -3,7 +3,12 @@
 import Link from "next/link";
 import { useMemo, useState, useRef, useEffect } from "react";
 import { Search, ArrowRight } from "lucide-react";
-import { portfolioFilters, portfolioProjects, type PortfolioProject } from "@/lib/constants/projects";
+import { useTranslation } from "react-i18next";
+import {
+  portfolioFilters,
+  portfolioProjects,
+  type PortfolioProject,
+} from "@/lib/constants/projects";
 import { projectGalleries } from "@/lib/constants/media";
 
 function ProjectRow({
@@ -15,6 +20,7 @@ function ProjectRow({
   index: number;
   inView: boolean;
 }) {
+  const { t } = useTranslation("portfolio");
   const [scopeExpanded, setScopeExpanded] = useState(false);
   const gallery = projectGalleries[project.slug];
 
@@ -28,14 +34,16 @@ function ProjectRow({
       <div className="flex flex-col items-center gap-8 md:flex-row">
         <div className="w-full md:w-1/5">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
-            {project.category}
+            {t(`filters.${project.category}`, { defaultValue: project.category })}
           </p>
           <h2 className="font-display mt-2 text-2xl font-semibold text-foreground">
             {project.name}
           </h2>
           <p className="mt-2 text-sm text-muted-foreground">{project.location}</p>
-          {project.client ? (
-            <p className="mt-1 text-xs text-muted-foreground">{project.client}</p>
+          {project.clientPartner ? (
+            <p className="mt-1 text-xs text-muted-foreground">
+              {t("detail.client", { name: project.clientPartner })}
+            </p>
           ) : null}
           <div className="mt-3">
             <p
@@ -43,14 +51,15 @@ function ProjectRow({
                 scopeExpanded ? "" : "line-clamp-3"
               }`}
             >
-              <span className="font-semibold text-foreground">Scope:</span> {project.scope}
+              <span className="font-semibold text-foreground">{t("scopeLabel")}</span>{" "}
+              {t(`projects.${project.slug}.scope`)}
             </p>
             <button
               type="button"
               onClick={() => setScopeExpanded(!scopeExpanded)}
               className="mt-1 text-xs font-medium text-brand transition hover:text-brand-light"
             >
-              {scopeExpanded ? "Show less" : "Read more"}
+              {scopeExpanded ? t("showLess") : t("readMore")}
             </button>
           </div>
           <div className="mt-4 border-b border-border" />
@@ -58,7 +67,7 @@ function ProjectRow({
             href={`/portfolio/${project.slug}`}
             className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-brand transition hover:text-brand-light"
           >
-            View Gallery ({project.galleryCount})
+            {t("viewGallery", { count: project.galleryCount })}
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
@@ -82,10 +91,10 @@ function ProjectRow({
 }
 
 export function PortfolioPageContent() {
+  const { t } = useTranslation("portfolio");
   const [activeFilter, setActiveFilter] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState("");
   const [heroInView, setHeroInView] = useState(false);
-  const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setHeroInView(true);
@@ -98,35 +107,38 @@ export function PortfolioPageContent() {
     }
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase();
-      list = list.filter(
-        (project) =>
+      list = list.filter((project) => {
+        const categoryLabel = t(`filters.${project.category}`, {
+          defaultValue: project.category,
+        }).toLowerCase();
+        return (
           project.name.toLowerCase().includes(q) ||
           project.location.toLowerCase().includes(q) ||
-          project.category.toLowerCase().includes(q),
-      );
+          project.category.toLowerCase().includes(q) ||
+          categoryLabel.includes(q)
+        );
+      });
     }
     return list;
-  }, [activeFilter, searchQuery]);
+  }, [activeFilter, searchQuery, t]);
 
   return (
     <>
       <section className="relative overflow-hidden bg-warm-black px-6 py-12 text-cream md:py-16">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(201,162,39,0.12),transparent_50%)]" />
         <div
-          ref={heroRef}
           className={`relative z-10 mx-auto max-w-7xl transition-all duration-700 ${
             heroInView ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
           }`}
         >
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-brand">
-            Portfolio
+            {t("hero.eyebrow")}
           </p>
           <h1 className="font-display mt-4 max-w-4xl text-4xl font-semibold md:text-6xl">
-            Projects that define excellence
+            {t("hero.title")}
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-cream/70">
-            Explore our recent millwork installations across commercial, retail, healthcare, and
-            institutional environments.
+            {t("hero.description")}
           </p>
         </div>
       </section>
@@ -146,7 +158,7 @@ export function PortfolioPageContent() {
                       : "border border-muted-foreground/20 bg-white text-muted-foreground hover:border-foreground hover:text-foreground"
                   }`}
                 >
-                  {filter}
+                  {t(`filters.${filter}`)}
                 </button>
               ))}
             </div>
@@ -154,7 +166,7 @@ export function PortfolioPageContent() {
               <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <input
                 type="search"
-                placeholder="Search projects..."
+                placeholder={t("searchPlaceholder")}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full rounded-full border border-muted-foreground/20 bg-white py-2.5 pl-11 pr-4 text-sm outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/20"
@@ -168,9 +180,7 @@ export function PortfolioPageContent() {
                 <ProjectRowContainer key={project.id} project={project} index={index} />
               ))
             ) : (
-              <p className="py-20 text-center text-muted-foreground">
-                No projects found matching your criteria.
-              </p>
+              <p className="py-20 text-center text-muted-foreground">{t("empty")}</p>
             )}
           </div>
         </div>
@@ -182,21 +192,18 @@ export function PortfolioPageContent() {
         <div className="relative mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-brand">
-              Let&apos;s build together
+              {t("cta.eyebrow")}
             </p>
             <h2 className="font-display mt-3 max-w-xl text-3xl font-semibold text-cream md:text-4xl">
-              Have a project in mind?
+              {t("cta.title")}
             </h2>
-            <p className="mt-4 max-w-lg text-sm leading-7 text-cream/70">
-              Let&apos;s discuss how Sandha Woodworks can deliver precision millwork for your next
-              build.
-            </p>
+            <p className="mt-4 max-w-lg text-sm leading-7 text-cream/70">{t("cta.body")}</p>
           </div>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 rounded-full bg-foreground px-8 py-3.5 text-sm font-semibold text-cream transition hover:bg-warm-black"
           >
-            Request a Quote
+            {t("cta.primary")}
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
@@ -205,7 +212,13 @@ export function PortfolioPageContent() {
   );
 }
 
-function ProjectRowContainer({ project, index }: { project: PortfolioProject; index: number }) {
+function ProjectRowContainer({
+  project,
+  index,
+}: {
+  project: PortfolioProject;
+  index: number;
+}) {
   const ref = useRef<HTMLDivElement>(null);
   const [inView, setInView] = useState(false);
 

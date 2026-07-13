@@ -3,6 +3,7 @@ import { serviceCategories } from "@/lib/constants/services";
 import enServices from "@/locales/en/services.json";
 import enServiceDetails from "@/locales/en/serviceDetails.json";
 import enSectorDetails from "@/locales/en/sectorDetails.json";
+import enPortfolio from "@/locales/en/portfolio.json";
 import { sectorDetails } from "@/lib/constants/sector-details";
 import { siteConfig } from "@/lib/constants/site";
 
@@ -166,23 +167,32 @@ function buildSectorItems(): SearchItem[] {
 }
 
 function buildProjectItems(): SearchItem[] {
-  return portfolioProjects.map((project) => ({
-    id: `project-${project.slug}`,
-    kind: "Project" as const,
-    title: project.name,
-    description: `${project.location} · ${project.category}`,
-    url: `/portfolio/${project.slug}`,
-    keywords: normalize(
-      project.name,
-      project.location,
-      project.category,
-      project.scope,
-      project.client,
-      project.specs.sector,
-      project.specs.finish,
-      project.specs.materials.join(" "),
-    ),
-  }));
+  return portfolioProjects.map((project) => {
+    const copy = enPortfolio.projects[project.slug as keyof typeof enPortfolio.projects] as
+      | {
+          scope?: string;
+          clientPartner?: string;
+          specs?: { sector?: string; finish?: string; materials?: string[] };
+        }
+      | undefined;
+    return {
+      id: `project-${project.slug}`,
+      kind: "Project" as const,
+      title: project.name,
+      description: `${project.location} · ${project.category}`,
+      url: `/portfolio/${project.slug}`,
+      keywords: normalize(
+        project.name,
+        project.location,
+        project.category,
+        copy?.scope,
+        project.clientPartner ?? copy?.clientPartner,
+        copy?.specs?.sector,
+        copy?.specs?.finish,
+        copy?.specs?.materials?.join(" "),
+      ),
+    };
+  });
 }
 
 let cachedIndex: SearchItem[] | null = null;

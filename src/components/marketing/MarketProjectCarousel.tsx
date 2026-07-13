@@ -18,6 +18,7 @@ export function MarketProjectCarousel({
   slides,
 }: MarketProjectCarouselProps) {
   const { t } = useTranslation("sectors");
+  const { t: tp } = useTranslation("portfolio");
   const reducedMotion = useReducedMotion();
   const [activeIndex, setActiveIndex] = useState(0);
   const hasSlides = slides.length > 0;
@@ -94,7 +95,7 @@ export function MarketProjectCarousel({
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-5 sm:p-8">
                 <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-brand">
-                  {current.category}
+                  {tp(`filters.${current.category}`, { defaultValue: current.category })}
                 </p>
                 <h3 className="font-display mt-2 text-2xl font-semibold text-white sm:text-3xl">
                   {current.name}
