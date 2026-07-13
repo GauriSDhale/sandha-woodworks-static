@@ -30,7 +30,7 @@ export function SectorsSection() {
   return (
     <section
       ref={sectionRef}
-      className="section-padding-lg bg-secondary"
+      className="section-padding scroll-mt-24 bg-secondary"
       aria-labelledby="sectors-heading"
     >
       <div className="container-full">
