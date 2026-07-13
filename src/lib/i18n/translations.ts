@@ -78,6 +78,33 @@ export const translations = {
         description:
           "A true turnkey millwork partner — design assist through fabrication and install, kept in-house for speed, quality, and accountability.",
         cta: "Start a project",
+        stats: {
+          facility: {
+            value: 40000,
+            suffix: "",
+            label: "Sq Ft Facility",
+            description: "Purpose-built manufacturing in Brantford, ON",
+            format: "comma",
+          },
+          clients: {
+            value: 100,
+            suffix: "+",
+            label: "Active Clients",
+            description: "Trusted by leading builders across Canada",
+          },
+          services: {
+            value: 21,
+            suffix: "+",
+            label: "Service Lines",
+            description: "From design assist to final installation",
+          },
+          sectors: {
+            value: 12,
+            suffix: "",
+            label: "Sectors Served",
+            description: "Commercial, institutional, healthcare and more",
+          },
+        },
         reasons: [
           {
             title: "Drawings through install",
@@ -305,6 +332,33 @@ export const translations = {
         description:
           "Un partenaire clé en main — de l'assistance à la conception à la fabrication et l'installation, le tout en interne pour la vitesse, la qualité et la responsabilité.",
         cta: "Démarrer un projet",
+        stats: {
+          facility: {
+            value: 40000,
+            suffix: "",
+            label: "Pi² d'usine",
+            description: "Fabrication sur mesure à Brantford, ON",
+            format: "comma",
+          },
+          clients: {
+            value: 100,
+            suffix: "+",
+            label: "Clients actifs",
+            description: "Approuvé par les grands constructeurs du Canada",
+          },
+          services: {
+            value: 21,
+            suffix: "+",
+            label: "Gammes de services",
+            description: "De l'assistance à la conception à l'installation",
+          },
+          sectors: {
+            value: 12,
+            suffix: "",
+            label: "Secteurs desservis",
+            description: "Commercial, institutionnel, santé et plus",
+          },
+        },
         reasons: [
           {
             title: "Du dessin à l'installation",
