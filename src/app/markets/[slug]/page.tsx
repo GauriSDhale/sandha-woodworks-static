@@ -4,7 +4,9 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { notFound } from "next/navigation";
 import { sectors, marketDetails } from "@/lib/constants/sectors";
 import { sectorDetails } from "@/lib/constants/sector-details";
+import { getMarketProjectSlides } from "@/lib/markets/project-gallery";
 import { CtaBanner } from "@/components/marketing/PageSections";
+import { MarketProjectCarousel } from "@/components/marketing/MarketProjectCarousel";
 
 export function generateStaticParams() {
   return sectors.map((sector) => ({ slug: sector.id }));
@@ -35,6 +37,7 @@ export default async function MarketDetailPage({
 
   const detail = marketDetails[slug];
   const otherMarkets = sectors.filter((s) => s.id !== slug);
+  const projectSlides = getMarketProjectSlides(slug);
 
   return (
     <>
@@ -124,6 +127,11 @@ export default async function MarketDetailPage({
               </div>
             </div>
           </section>
+
+          <MarketProjectCarousel
+            marketTitle={sector.title}
+            slides={projectSlides}
+          />
 
           {detail.relatedSectors.length > 0 && (
             <section className="border-t border-border bg-muted px-4 py-20 sm:px-6 lg:px-8">
