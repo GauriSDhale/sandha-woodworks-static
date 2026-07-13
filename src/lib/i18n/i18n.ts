@@ -3,8 +3,10 @@ import { initReactI18next } from "react-i18next";
 
 import enCommon from "@/locales/en/common.json";
 import enHome from "@/locales/en/home.json";
+import enAbout from "@/locales/en/about.json";
 import frCommon from "@/locales/fr/common.json";
 import frHome from "@/locales/fr/home.json";
+import frAbout from "@/locales/fr/about.json";
 
 export const LANG_STORAGE_KEY = "sandha-lang";
 export const supportedLngs = ["en", "fr"] as const;
@@ -15,10 +17,12 @@ export const resources = {
   en: {
     common: enCommon,
     home: enHome,
+    about: enAbout,
   },
   fr: {
     common: frCommon,
     home: frHome,
+    about: frAbout,
   },
 } as const;
 
@@ -40,7 +44,7 @@ if (!i18n.isInitialized) {
     fallbackLng: "en",
     supportedLngs: [...supportedLngs],
     defaultNS,
-    ns: ["common", "home"],
+    ns: ["common", "home", "about"],
     interpolation: {
       escapeValue: false,
     },
