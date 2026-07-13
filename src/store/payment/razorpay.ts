@@ -71,6 +71,17 @@ export const razorpayProvider: PaymentProvider = {
   name: "razorpay",
 
   async initiatePayment(payload: CreateOrderPayload): Promise<PaymentResult> {
+    if (RAZORPAY_KEY_ID === "rzp_test_placeholder") {
+      // Demo mode: simulate a successful payment without backend APIs.
+      await new Promise((resolve) => setTimeout(resolve, 600));
+      return {
+        success: true,
+        paymentId: `test_payment_${payload.orderId}`,
+        orderId: payload.orderId,
+        signature: "test_signature",
+      };
+    }
+
     const loaded = await loadRazorpayScript();
     if (!loaded) {
       return { success: false, error: "Failed to load payment gateway." };
