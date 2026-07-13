@@ -206,6 +206,9 @@ function PaymentStep() {
         />
       ))}
       <PaymentSecurityBadge />
+      <div className="rounded-2xl border border-border bg-background/70 px-4 py-3 text-sm text-muted-foreground">
+        Demo card for successful payment: <span className="font-semibold text-foreground">4111 1111 1111 1111</span> | Expiry <span className="font-semibold text-foreground">12/34</span> | CVC <span className="font-semibold text-foreground">123</span>
+      </div>
       <div className="flex gap-3 pt-2">
         <button type="button" onClick={() => dispatch(prevStep())}
           className="flex-1 rounded-full border border-border py-3 font-medium transition hover:bg-muted">
