@@ -1,11 +1,12 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useForm, useWatch } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { CheckCircle2, Upload, X } from "lucide-react";
 import { openPositions } from "@/lib/constants/about";
+import { sendEmail } from "@/lib/email";
 
 const roleOptions = openPositions.map((position) => position.title);
 const experienceOptions = ["0–1 year", "1–3 years", "3–5 years", "5+ years"];
@@ -98,6 +99,8 @@ function formatBytes(bytes: number) {
 export function CareersApplicationForm() {
   const resumeInputRef = useRef<HTMLInputElement | null>(null);
   const docsInputRef = useRef<HTMLInputElement | null>(null);
+  const [sent, setSent] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const {
     register,
@@ -105,7 +108,7 @@ export function CareersApplicationForm() {
     control,
     setValue,
     reset,
-    formState: { errors, isSubmitting, isSubmitSuccessful },
+    formState: { errors, isSubmitting },
   } = useForm<CareersFormValues>({
     resolver: zodResolver(careersSchema),
     mode: "onBlur",
@@ -142,40 +145,48 @@ export function CareersApplicationForm() {
     setValue("supportingDocuments", undefined, { shouldValidate: true });
   }
 
-  function onSubmit(values: CareersFormValues) {
-    const toFileInfo = (list: FileList | undefined) =>
-      list
-        ? Array.from(list).map((file) => ({
-            name: file.name,
-            type: file.type,
-            size: file.size,
-            sizeReadable: formatBytes(file.size),
-          }))
-        : [];
+  async function onSubmit(values: CareersFormValues) {
+    setSubmitError(null);
 
-    const payload = {
-      fullName: values.fullName,
-      email: values.email,
-      phone: values.phone,
-      location: values.location,
-      position: values.position,
-      experience: values.experience,
-      currentRole: values.currentRole,
-      currentCompany: values.currentCompany || null,
-      linkedin: values.linkedin || null,
-      portfolio: values.portfolio || null,
-      workAuthorization: values.workAuthorization,
-      startDate: values.startDate || null,
-      coverNote: values.coverNote || null,
-      resume: toFileInfo(values.resume as FileList | undefined)[0] ?? null,
-      supportingDocuments: toFileInfo(values.supportingDocuments as FileList | undefined),
-    };
+    const fd = new FormData();
+    fd.append("from_name", "Sandha Woodworks Careers");
+    fd.append("subject", `New Career Application — ${values.fullName} (${values.position})`);
+    fd.append("replyto", values.email);
 
-    // TODO: send `payload` (and the raw files) to the backend.
-    console.log("Careers application submission:", payload);
+    fd.append("Full Name", values.fullName);
+    fd.append("Email", values.email);
+    fd.append("Phone", values.phone);
+    fd.append("City / Province", values.location);
+    fd.append("Position Applying For", values.position);
+    fd.append("Years of Experience", values.experience);
+    fd.append("Current / Recent Role", values.currentRole);
+    if (values.currentCompany) fd.append("Current / Recent Company", values.currentCompany);
+    if (values.linkedin) fd.append("LinkedIn", values.linkedin);
+    if (values.portfolio) fd.append("Portfolio", values.portfolio);
+    fd.append("Work Authorization", values.workAuthorization);
+    if (values.startDate) fd.append("Preferred Start Date", values.startDate);
+    if (values.coverNote) fd.append("Cover Note", values.coverNote);
+
+    const resume = values.resume as FileList | undefined;
+    if (resume?.[0]) fd.append("Resume", resume[0], resume[0].name);
+
+    const docs = values.supportingDocuments as FileList | undefined;
+    if (docs) {
+      Array.from(docs).forEach((file, index) =>
+        fd.append(`Supporting Document ${index + 1}`, file, file.name),
+      );
+    }
+
+    const result = await sendEmail(fd);
+    if (result.success) {
+      setSent(true);
+      reset();
+    } else {
+      setSubmitError(result.message ?? "Something went wrong. Please try again.");
+    }
   }
 
-  if (isSubmitSuccessful) {
+  if (sent) {
     return (
       <div className="rounded-3xl border border-border bg-muted p-8 text-center shadow-sm">
         <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand/10 text-brand">
@@ -188,7 +199,7 @@ export function CareersApplicationForm() {
         </p>
         <button
           type="button"
-          onClick={() => reset()}
+          onClick={() => setSent(false)}
           className="mt-6 rounded-full border border-border px-5 py-2 text-sm font-medium transition hover:bg-background"
         >
           Submit another application
@@ -396,6 +407,12 @@ export function CareersApplicationForm() {
           By submitting this form, you consent to our team reviewing your application. We will be in
           touch if your experience aligns with an opening.
         </div>
+
+        {submitError ? (
+          <p className="rounded-xl border border-brand-red/40 bg-brand-red/5 px-4 py-3 text-sm text-brand-red">
+            {submitError}
+          </p>
+        ) : null}
 
         <button
           type="submit"

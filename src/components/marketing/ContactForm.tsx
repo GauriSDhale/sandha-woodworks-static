@@ -1,11 +1,12 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useForm, useWatch, type Resolver } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Upload, X } from "lucide-react";
 import { contactSectors } from "@/lib/constants/about";
+import { sendEmail } from "@/lib/email";
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10 MB
 const ACCEPTED_EXTENSIONS = [".pdf", ".dwg", ".png", ".jpg", ".jpeg"];
@@ -117,6 +118,8 @@ function formatBytes(bytes: number) {
 
 export function ContactForm() {
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const [sent, setSent] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const {
     register,
@@ -125,7 +128,7 @@ export function ContactForm() {
     setValue,
     reset,
     clearErrors,
-    formState: { errors, isSubmitting, isSubmitSuccessful },
+    formState: { errors, isSubmitting },
   } = useForm<ContactFormValues>({
     resolver: contactResolver,
     mode: "onBlur",
@@ -155,43 +158,50 @@ export function ContactForm() {
     setValue("files", undefined, { shouldValidate: true });
   }
 
-  function onSubmit(values: ContactFormValues) {
+  async function onSubmit(values: ContactFormValues) {
+    setSubmitError(null);
     const country = countryCodes.find((c) => c.code === values.country);
-    const files = values.files
-      ? Array.from(values.files as FileList).map((file) => ({
-          name: file.name,
-          type: file.type,
-          size: file.size,
-          sizeReadable: formatBytes(file.size),
-        }))
-      : [];
+    const isInquiry = values.formType === "inquiry";
 
-    const payload = {
-      formType: values.formType,
-      fullName: values.fullName,
-      company: values.company || null,
-      email: values.email,
-      phone: {
-        country: country?.code,
-        dialCode: country?.dial,
-        number: values.phone,
-        e164: `${country?.dial}${values.phone}`,
-      },
-      projectName: values.projectName || null,
-      projectLocation: values.projectLocation || null,
-      sector: values.sector,
-      timeline: values.timeline || null,
-      budget: values.budget || null,
-      message: values.message || null,
-      files,
-    };
+    const fd = new FormData();
+    fd.append("from_name", "Sandha Woodworks Website");
+    fd.append(
+      "subject",
+      isInquiry
+        ? `New General Inquiry — ${values.fullName}`
+        : `New Quote Request — ${values.fullName}${values.sector ? ` (${values.sector})` : ""}`,
+    );
+    fd.append("replyto", values.email);
 
-    // TODO: send `payload` (and the raw files) to the backend.
-    console.log("Contact form submission:", payload);
-    console.log("Attached files:", files);
+    fd.append("Form Type", isInquiry ? "General Inquiry" : "Request a Quote");
+    fd.append("Full Name", values.fullName);
+    fd.append("Email", values.email);
+    fd.append("Phone", `${country?.dial ?? ""} ${values.phone}`.trim());
+    if (values.company) fd.append("Company", values.company);
+    if (values.projectName) fd.append("Project Name", values.projectName);
+    if (values.projectLocation) fd.append("Project Location", values.projectLocation);
+    if (values.sector) fd.append("Sector", values.sector);
+    if (values.timeline) fd.append("Timeline", values.timeline);
+    if (values.budget) fd.append("Budget", values.budget);
+    if (values.message) fd.append("Message", values.message);
+
+    const files = values.files as FileList | undefined;
+    if (files) {
+      Array.from(files).forEach((file, index) =>
+        fd.append(`Attachment ${index + 1}`, file, file.name),
+      );
+    }
+
+    const result = await sendEmail(fd);
+    if (result.success) {
+      setSent(true);
+      reset();
+    } else {
+      setSubmitError(result.message ?? "Something went wrong. Please try again.");
+    }
   }
 
-  if (isSubmitSuccessful) {
+  if (sent) {
     return (
       <div className="rounded-2xl border border-border bg-muted p-8 text-center">
         <p className="text-lg font-semibold">Thank you for your request.</p>
@@ -200,7 +210,7 @@ export function ContactForm() {
         </p>
         <button
           type="button"
-          onClick={() => reset()}
+          onClick={() => setSent(false)}
           className="mt-6 rounded-full border border-border px-5 py-2 text-sm font-medium transition hover:bg-background"
         >
           Submit another request
@@ -235,6 +245,11 @@ export function ContactForm() {
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
+        {submitError ? (
+          <p className="rounded-xl border border-brand-red/40 bg-brand-red/5 px-4 py-3 text-sm text-brand-red">
+            {submitError}
+          </p>
+        ) : null}
         {formType === "inquiry" ? (
           <>
             <div className="grid gap-5 sm:grid-cols-2">
@@ -495,17 +510,21 @@ export function ContactForm() {
           {isSubmitting ? "Submitting…" : "Submit Request"}
         </button>
 
-        <div className="rounded-lg border border-brand/30 bg-brand/5 p-4 text-sm text-foreground/80">
+        <div className="rounded-md border border-brand/30 bg-brand/5 p-4 text-sm text-foreground/80">
           <p className="font-semibold text-foreground">Having trouble uploading drawings?</p>
-          <p className="mt-1 leading-relaxed">
-            Large or multi-file drawing sets can occasionally get stuck in the uploader. 
-            If that happens — or if you&apos;d simply prefer to send them directly — please email
-            your project files to 
-            <a href="mailto:estimating@sandhawoodworks.ca?subject=Project%20Drawings" 
-              className="font-semibold text-brand underline underline-offset-2 hover:text-foreground">
-              estimating@sandhawoodworks.ca 
-            </a> after submitting this form. Include your project name so our team can match it to your request.
-            </p>
+          <p className="mt-1 break-words leading-relaxed">
+            Large or multi-file drawing sets can occasionally get stuck in the uploader. If that
+            happens — or if you&apos;d simply prefer to send them directly — please email your
+            project files to{" "}
+            <a
+              href="mailto:estimating@sandhawoodworks.ca?subject=Project%20Drawings"
+              className="font-semibold break-all text-brand underline underline-offset-2 hover:text-foreground"
+            >
+              estimating@sandhawoodworks.ca
+            </a>{" "}
+            after submitting this form. Include your project name so our team can match it to your
+            request.
+          </p>
         </div>
           </>
         )}
