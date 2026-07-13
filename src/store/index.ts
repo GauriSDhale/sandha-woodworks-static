@@ -30,7 +30,7 @@ const persistConfig = {
   key: "sandha-store",
   version: 1,
   storage,
-  whitelist: ["cart", "wishlist", "user", "orders"],
+  whitelist: ["cart", "wishlist", "user", "orders", "products"],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

@@ -83,7 +83,7 @@ const productsSlice = createSlice({
       state.searchHistory = [
         q,
         ...state.searchHistory.filter((h) => h !== q),
-      ].slice(0, 8);
+      ].slice(0, 10);
     },
     clearSearchHistory(state) {
       state.searchHistory = [];

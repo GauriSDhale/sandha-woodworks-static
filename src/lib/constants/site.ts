@@ -65,13 +65,13 @@ export const footerLegalLinks = [
 ] as const;
 
 export const socialLinks = [
-  { href: "https://www.linkedin.com", label: "LinkedIn" },
-  { href: "https://www.instagram.com", label: "Instagram" },
-  { href: "https://www.facebook.com", label: "Facebook" },
-  { href: "https://www.youtube.com", label: "YouTube" },
-  { href: "https://x.com", label: "X" },
-  { href: "https://www.pinterest.com", label: "Pinterest" },
-  { href: "https://www.reddit.com", label: "Reddit" },
+  { href: "https://www.linkedin.com/company/sandhawoodworks", label: "LinkedIn" },
+  { href: "https://www.instagram.com/sandhawoodworks", label: "Instagram" },
+  { href: "https://www.facebook.com/sandhawoodworks", label: "Facebook" },
+  { href: "https://www.youtube.com/@sandhawoodworks", label: "YouTube" },
+  { href: "https://x.com/sandhawoodworks", label: "X" },
+  { href: "https://ca.pinterest.com/sandalwoodwoodworks/", label: "Pinterest" },
+  { href: "https://www.reddit.com/user/sandhawoodworks/", label: "Reddit" },
 ] as const;
 
 export const capabilityPills = [

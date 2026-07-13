@@ -23,6 +23,7 @@ export function SearchBar() {
   const router = useRouter();
   const isOpen = useAppSelector(selectIsSearchOpen);
   const history = useAppSelector(selectSearchHistory);
+  const recentSearches = history.slice(0, 10);
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState<Product[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -63,7 +64,7 @@ export function SearchBar() {
         type="button"
         onClick={() => dispatch(openSearch())}
         aria-label="Open search"
-        className="flex items-center gap-2 rounded-full border border-border bg-muted/40 px-3 py-2 text-sm text-muted-foreground transition hover:border-foreground/30 hover:text-foreground"
+        className="flex min-w-[280px] items-center gap-2 rounded-full border border-border bg-muted/40 px-4 py-2.5 text-sm text-muted-foreground transition hover:border-foreground/30 hover:text-foreground"
       >
         <Search className="h-4 w-4" />
         <span className="hidden sm:inline">Search products…</span>
@@ -90,7 +91,7 @@ export function SearchBar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -16 }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-x-4 top-4 z-50 mx-auto max-w-2xl overflow-hidden rounded-2xl bg-background shadow-2xl"
+              className="fixed inset-x-4 top-4 z-50 mx-auto max-w-3xl overflow-hidden rounded-2xl bg-background shadow-2xl"
               role="search"
             >
               {/* Input row */}
@@ -131,7 +132,7 @@ export function SearchBar() {
               </div>
 
               {/* Body */}
-              <div className="max-h-[60vh] overflow-y-auto p-4 space-y-4">
+              <div className="max-h-[75vh] overflow-y-auto p-4 space-y-4">
                 {/* Suggestions */}
                 {suggestions.length > 0 && (
                   <section>
@@ -187,7 +188,7 @@ export function SearchBar() {
                           </button>
                         </div>
                         <ul>
-                          {history.map((h) => (
+                          {recentSearches.map((h) => (
                             <li key={h}>
                               <button
                                 type="button"
