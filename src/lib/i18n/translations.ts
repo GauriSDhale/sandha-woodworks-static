@@ -78,6 +78,11 @@ export const translations = {
         description:
           "A true turnkey millwork partner — design assist through fabrication and install, kept in-house for speed, quality, and accountability.",
         cta: "Start a project",
+        projectsEyebrow: "Latest projects",
+        viewProject: "View project",
+        viewAllProjects: "View all past projects",
+        emptyProjects:
+          "We’re adding featured project photography here. Browse the full portfolio for completed millwork across every sector.",
         stats: {
           facility: {
             value: 40000,
@@ -332,6 +337,11 @@ export const translations = {
         description:
           "Un partenaire clé en main — de l'assistance à la conception à la fabrication et l'installation, le tout en interne pour la vitesse, la qualité et la responsabilité.",
         cta: "Démarrer un projet",
+        projectsEyebrow: "Projets récents",
+        viewProject: "Voir le projet",
+        viewAllProjects: "Voir tous les projets",
+        emptyProjects:
+          "Nous ajoutons ici la photographie de projets. Consultez le portfolio complet pour le travail réalisé dans tous les secteurs.",
         stats: {
           facility: {
             value: 40000,
