@@ -142,8 +142,8 @@ export function PortfolioPageContent() {
                   onClick={() => setActiveFilter(filter)}
                   className={`rounded-full px-5 py-2 text-sm font-medium transition ${
                     activeFilter === filter
-                      ? "bg-brand text-brand-foreground"
-                      : "border border-muted-foreground/20 bg-white text-muted-foreground hover:border-brand hover:text-foreground"
+                      ? "bg-foreground text-cream"
+                      : "border border-muted-foreground/20 bg-white text-muted-foreground hover:border-foreground hover:text-foreground"
                   }`}
                 >
                   {filter}
@@ -194,7 +194,7 @@ export function PortfolioPageContent() {
           </div>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-brand px-8 py-3.5 text-sm font-semibold text-brand-foreground transition hover:bg-brand-light"
+            className="inline-flex items-center gap-2 rounded-full bg-foreground px-8 py-3.5 text-sm font-semibold text-cream transition hover:bg-warm-black"
           >
             Request a Quote
             <ArrowRight className="h-4 w-4" />

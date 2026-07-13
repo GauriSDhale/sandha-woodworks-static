@@ -5,6 +5,7 @@ const navHrefKeys: Record<string, keyof Translations["nav"]> = {
   "/services": "services",
   "/sectors": "sectors",
   "/portfolio": "portfolio",
+  "/store": "store",
   "/linkedin": "insight",
   "/careers": "careers",
   "/contact": "contact",

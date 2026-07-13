@@ -36,7 +36,7 @@ export function ProductDetailContent({ slug }: { slug: string }) {
     return (
       <div className="flex flex-col items-center justify-center gap-4 py-24 text-center">
         <p className="font-display text-xl font-semibold">Product not found</p>
-        <Link href="/store" className="rounded-full bg-foreground px-5 py-2 text-sm font-semibold text-cream transition hover:bg-brand-red">
+        <Link href="/store" className="rounded-full bg-foreground px-5 py-2 text-sm font-semibold text-cream transition hover:bg-warm-black">
           Back to Store
         </Link>
       </div>
@@ -153,11 +153,11 @@ export function ProductDetailContent({ slug }: { slug: string }) {
             </div>
             <div className="flex flex-col gap-2 sm:flex-row">
               <button type="button" onClick={handleAddToCart}
-                className="flex flex-1 items-center justify-center gap-2 rounded-full bg-foreground py-3 font-semibold text-cream transition hover:bg-brand-red">
+                className="flex flex-1 items-center justify-center gap-2 rounded-full bg-foreground py-3 font-semibold text-cream transition hover:bg-warm-black">
                 <ShoppingCart className="h-4 w-4" />Add to Cart
               </button>
               <button type="button" onClick={handleBuyNow}
-                className="flex flex-1 items-center justify-center gap-2 rounded-full border-2 border-foreground py-3 font-semibold text-foreground transition hover:border-brand-red hover:text-brand-red">
+                className="flex flex-1 items-center justify-center gap-2 rounded-full border-2 border-foreground py-3 font-semibold text-foreground transition hover:bg-foreground hover:text-cream">
                 Buy Now
               </button>
             </div>

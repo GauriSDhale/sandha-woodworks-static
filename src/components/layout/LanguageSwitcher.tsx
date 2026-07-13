@@ -14,8 +14,8 @@ export function LanguageSwitcher({ isHome = false, className }: LanguageSwitcher
   return (
     <div
       className={cn(
-        "inline-flex items-center rounded-full border p-0.5 text-[10px] font-semibold uppercase tracking-[0.2em]",
-        isHome ? "border-white/25" : "border-border",
+        "inline-flex h-8 shrink-0 items-center rounded-full border p-0.5 text-[10px] font-semibold uppercase tracking-[0.2em]",
+        isHome ? "border-white/30" : "border-border",
         className,
       )}
       role="group"
@@ -26,11 +26,11 @@ export function LanguageSwitcher({ isHome = false, className }: LanguageSwitcher
         onClick={() => setLang("en")}
         aria-pressed={lang === "en"}
         className={cn(
-          "rounded-full px-2.5 py-1 font-semibold transition-colors ",
+          "inline-flex h-7 min-w-[2.25rem] cursor-pointer items-center justify-center rounded-full px-2.5 transition-colors",
           lang === "en"
             ? "bg-foreground text-cream"
             : isHome
-              ? "text-cream/60 hover:text-cream"
+              ? "text-white/60 hover:text-white"
               : "text-foreground/60 hover:text-foreground",
         )}
       >
@@ -41,11 +41,11 @@ export function LanguageSwitcher({ isHome = false, className }: LanguageSwitcher
         onClick={() => setLang("fr")}
         aria-pressed={lang === "fr"}
         className={cn(
-          "rounded-full px-2.5 py-1 font-semibold transition-colors cursor-pointer",
+          "inline-flex h-7 min-w-[2.25rem] cursor-pointer items-center justify-center rounded-full px-2.5 transition-colors",
           lang === "fr"
             ? "bg-foreground text-cream"
             : isHome
-              ? "text-cream/60 hover:text-cream"
+              ? "text-white/60 hover:text-white"
               : "text-foreground/60 hover:text-foreground",
         )}
       >

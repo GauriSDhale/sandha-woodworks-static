@@ -7,7 +7,7 @@ export const categories: Category[] = [
     slug: "kitchen-cabinets",
     description:
       "Premium custom kitchen cabinetry crafted in our Brantford facility. Designed for Canadian homes with precision engineering.",
-    image: "/assets/products/kitchen/category-kitchen.jpg",
+    image: "/assets/subsectors/condominiums/2.jpg",
   },
   {
     id: "base-cabinets",
@@ -15,7 +15,7 @@ export const categories: Category[] = [
     slug: "base-cabinets",
     description: "Sturdy base cabinets that form the foundation of your kitchen.",
     parent: "kitchen-cabinets",
-    image: "/assets/products/kitchen/category-base.jpg",
+    image: "/assets/subsectors/apartments/2.jpg",
   },
   {
     id: "wall-cabinets",
@@ -23,7 +23,7 @@ export const categories: Category[] = [
     slug: "wall-cabinets",
     description: "Space-saving wall-mounted cabinets to maximize kitchen storage.",
     parent: "kitchen-cabinets",
-    image: "/assets/products/kitchen/category-wall.jpg",
+    image: "/assets/subsectors/apartments/3.jpg",
   },
   {
     id: "corner-cabinets",
@@ -31,7 +31,8 @@ export const categories: Category[] = [
     slug: "corner-cabinets",
     description: "Intelligent corner cabinet solutions that eliminate wasted space.",
     parent: "kitchen-cabinets",
-    image: "/assets/products/kitchen/category-corner.jpg",
+    image:
+      "/images/products/yl-wer2442_wall_easy_reach_corner_cabinet_24w_x_42h_2.webp",
   },
   {
     id: "tall-cabinets",
@@ -39,7 +40,7 @@ export const categories: Category[] = [
     slug: "tall-cabinets",
     description: "Full-height cabinets for maximum vertical storage.",
     parent: "kitchen-cabinets",
-    image: "/assets/products/kitchen/category-tall.jpg",
+    image: "/images/products/28a212d6927e5c195147d5f32cfdb842.jpg",
   },
   {
     id: "pantry-cabinets",
@@ -47,7 +48,7 @@ export const categories: Category[] = [
     slug: "pantry-cabinets",
     description: "Dedicated pantry storage systems for organized kitchens.",
     parent: "kitchen-cabinets",
-    image: "/assets/products/kitchen/category-pantry.jpg",
+    image: "/images/products/81eu5pSon5L.jpg",
   },
   {
     id: "bathroom-vanities",
@@ -55,35 +56,35 @@ export const categories: Category[] = [
     slug: "bathroom-vanities",
     description:
       "Elegant bathroom vanity cabinets combining function with luxury aesthetics.",
-    image: "/assets/products/vanity/category-vanity.jpg",
+    image: "/assets/subsectors/hotels/3.jpg",
   },
   {
     id: "closets",
     label: "Closets & Wardrobes",
     slug: "closets",
     description: "Custom closet and wardrobe systems tailored to your space.",
-    image: "/assets/products/closets/category-closets.jpg",
+    image: "/assets/subsectors/hotels/2.jpg",
   },
   {
     id: "tv-units",
     label: "TV Units",
     slug: "tv-units",
     description: "Modern entertainment and TV unit solutions for living spaces.",
-    image: "/assets/products/tv-units/category-tv.jpg",
+    image: "/assets/subsectors/hotels/4.jpg",
   },
   {
     id: "office-cabinets",
     label: "Office Cabinets",
     slug: "office-cabinets",
     description: "Professional office cabinet systems for productive work environments.",
-    image: "/assets/products/office/category-office.jpg",
+    image: "/assets/subsectors/professional-offices/1.jpg",
   },
   {
     id: "laundry-cabinets",
     label: "Laundry Cabinets",
     slug: "laundry-cabinets",
     description: "Durable, moisture-resistant laundry room cabinet solutions.",
-    image: "/assets/products/laundry/category-laundry.jpg",
+    image: "/assets/subsectors/apartments/4.jpg",
   },
 ];
 

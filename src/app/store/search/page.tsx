@@ -19,8 +19,7 @@ function SearchResults() {
   );
 
   return (
-    <div className="min-h-screen bg-[var(--background)]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="space-y-6">
         <Breadcrumb
           items={[
             { label: "Store", href: "/store" },
@@ -28,7 +27,7 @@ function SearchResults() {
           ]}
         />
 
-        <div className="mt-6 mb-8">
+        <div className="mb-2">
           <h1 className="font-display text-3xl font-bold text-[var(--foreground)]">
             {query ? (
               <>
@@ -89,7 +88,6 @@ function SearchResults() {
         )}
 
         {query && results.length > 0 && <ProductGrid products={results} />}
-      </div>
     </div>
   );
 }

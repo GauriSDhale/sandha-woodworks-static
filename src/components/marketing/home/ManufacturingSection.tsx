@@ -23,7 +23,7 @@ export function ManufacturingSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-warm-black px-4 py-20 text-cream sm:px-6 sm:py-28 lg:px-8 lg:py-32"
+      className="relative overflow-hidden bg-warm-black py-20 text-cream sm:py-28 lg:py-32"
       aria-labelledby="manufacturing-heading"
     >
       <img
@@ -36,14 +36,14 @@ export function ManufacturingSection() {
       <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-warm-black to-transparent" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-warm-black to-transparent" />
 
-      <div className="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
+      <div className="container-full relative grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
         <div
           className={cn(
             !reducedMotion && "transition-all duration-700",
             inView || reducedMotion ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0",
           )}
         >
-          <Eyebrow variant="brand" className="tracking-[0.45em]">
+          <Eyebrow variant="brand">
             {m.eyebrow}
           </Eyebrow>
           <DisplayHeading

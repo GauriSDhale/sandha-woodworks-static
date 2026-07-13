@@ -102,7 +102,7 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
     <div className="fixed inset-0 z-[200] flex h-screen w-screen flex-col bg-warm-black text-cream">
       <header className="flex flex-wrap items-center justify-between gap-3 border-b border-cream/10 bg-warm-black/95 px-4 py-3 sm:px-6">
         <div className="flex min-w-0 items-center gap-3">
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand text-warm-black">
+          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-foreground text-cream">
             <span className="font-display text-sm font-bold">S</span>
           </div>
           <div className="min-w-0">
@@ -133,7 +133,7 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
             onClick={handleDownload}
             disabled={!ready}
             className={cn(
-              "inline-flex cursor-pointer items-center gap-2 rounded-full bg-brand px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-warm-black transition-colors hover:bg-brand-light",
+              "inline-flex cursor-pointer items-center gap-2 rounded-full bg-foreground px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-cream transition-colors hover:bg-warm-black",
               "disabled:cursor-not-allowed disabled:opacity-40",
             )}
           >

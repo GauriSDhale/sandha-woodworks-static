@@ -43,6 +43,15 @@ export const featuredProjects = [
     href: "/portfolio/valley-park-library",
     imageKey: "valleyPark" as const,
   },
+  {
+    id: "coffee-island-toronto",
+    slug: "coffee-island-toronto",
+    category: "Retail",
+    name: "Coffee Island Toronto",
+    location: "Toronto, ON",
+    href: "/portfolio/coffee-island-toronto",
+    imageKey: "coffeeIsland" as const,
+  },
 ] as const;
 
 export const portfolioProjects: PortfolioProject[] = [

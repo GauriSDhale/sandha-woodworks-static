@@ -85,7 +85,7 @@ export function CartDrawer() {
                   <Link
                     href="/store"
                     onClick={() => dispatch(closeDrawer())}
-                    className="mt-2 rounded-full bg-foreground px-5 py-2 text-sm font-semibold text-cream transition hover:bg-brand-red"
+                    className="mt-2 rounded-full bg-foreground px-5 py-2 text-sm font-semibold text-cream transition hover:bg-warm-black"
                   >
                     Browse Products
                   </Link>
@@ -114,7 +114,7 @@ export function CartDrawer() {
                 <Link
                   href="/store/checkout"
                   onClick={() => dispatch(closeDrawer())}
-                  className="flex w-full items-center justify-center gap-2 rounded-full bg-foreground py-3 font-semibold text-cream transition hover:bg-brand-red"
+                  className="flex w-full items-center justify-center gap-2 rounded-full bg-foreground py-3 font-semibold text-cream transition hover:bg-warm-black"
                 >
                   Proceed to Checkout
                   <ArrowRight className="h-4 w-4" />

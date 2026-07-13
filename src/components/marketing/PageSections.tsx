@@ -29,7 +29,7 @@ export function PageHero({
       />
       <div className="relative mx-auto w-full max-w-7xl px-4 pb-16 pt-20 sm:px-6 lg:px-8">
         {eyebrow ? (
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/70">
+          <p className="text-xs font-semibold tracking-wide text-white/70 sm:text-sm">
             {eyebrow}
           </p>
         ) : null}
@@ -66,7 +66,7 @@ export function CtaBanner({
   return (
     <section className="bg-cream px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-3xl text-center">
-        <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">{eyebrow}</p>
+        <p className="text-xs font-semibold tracking-wide text-brand sm:text-sm">{eyebrow}</p>
         <h2 className="font-display mt-4 text-3xl font-semibold text-warm-black md:text-5xl">
           {title}
         </h2>
@@ -78,7 +78,7 @@ export function CtaBanner({
         <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
           <Link
             href={primaryHref}
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-warm-black px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-cream transition-colors hover:bg-brand hover:text-warm-black"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-cream transition-colors hover:bg-warm-black"
           >
             {primaryLabel}
             <ArrowRight className="h-4 w-4" />
@@ -86,7 +86,7 @@ export function CtaBanner({
           {secondaryHref && secondaryLabel ? (
             <Link
               href={secondaryHref}
-              className="inline-flex items-center justify-center rounded-full border border-warm-black/30 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-warm-black transition-colors hover:bg-warm-black hover:text-cream"
+              className="inline-flex items-center justify-center rounded-full border border-warm-black/30 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-warm-black transition-colors hover:bg-foreground hover:text-cream"
             >
               {secondaryLabel}
             </Link>
@@ -107,7 +107,7 @@ export function SectionLabel({
   return (
     <p
       className={cn(
-        "text-xs font-semibold uppercase tracking-[0.28em] text-muted-foreground",
+        "text-xs font-semibold tracking-wide text-muted-foreground sm:text-sm",
         className,
       )}
     >

@@ -33,7 +33,7 @@ export function SectorsSection() {
       className="section-padding-lg bg-secondary"
       aria-labelledby="sectors-heading"
     >
-      <div className="container-tight">
+      <div className="container-full">
         <div
           className={cn(
             !reducedMotion && "transition-all duration-700",

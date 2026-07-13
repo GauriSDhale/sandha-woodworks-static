@@ -26,10 +26,10 @@ export function FeaturedProjectsSection() {
   return (
     <section
       ref={sectionRef}
-      className="section-padding-lg bg-warm-black text-cream"
+      className="section-padding scroll-mt-24 bg-white text-foreground"
       aria-labelledby="featured-projects-heading"
     >
-      <div className="container-tight">
+      <div className="container-full">
         <div
           className={cn(
             !reducedMotion && "transition-all duration-700",
@@ -40,8 +40,8 @@ export function FeaturedProjectsSection() {
           <DisplayHeading
             id="featured-projects-heading"
             size="sm"
-            tone="light"
-            className="mt-4 max-w-3xl"
+            tone="dark"
+            className="mt-3 max-w-2xl tracking-tight"
           >
             {p.title}
           </DisplayHeading>
@@ -49,7 +49,7 @@ export function FeaturedProjectsSection() {
 
         <div
           className={cn(
-            "mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8",
+            "mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12",
             !reducedMotion && "transition-all duration-700 delay-150",
             inView || reducedMotion ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0",
           )}
@@ -61,31 +61,30 @@ export function FeaturedProjectsSection() {
               <Link
                 key={project.id}
                 href={project.href}
-                className="group flex flex-col overflow-hidden rounded-3xl border border-brand/10 bg-wood/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-warm-black"
+                className="group flex flex-col overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
               >
-                <div className="relative aspect-[16/9] overflow-hidden bg-warm-black">
+                <div className="relative aspect-[16/10] overflow-hidden bg-muted">
                   <img
                     src={projectImage(project.slug, project.imageKey)}
                     alt={project.name}
                     className={cn(
                       "h-full w-full object-cover",
-                      !reducedMotion && "transition-transform duration-700 ease-out group-hover:scale-105",
+                      !reducedMotion &&
+                        "transition-transform duration-700 ease-out group-hover:scale-105",
                     )}
                   />
                 </div>
 
-                <div className="flex flex-1 flex-col justify-between p-6">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
-                      {category}
-                    </p>
-                    <h3 className="font-display mt-2 text-2xl font-semibold text-cream transition-colors group-hover:text-brand">
-                      {project.name}
-                    </h3>
-                    <p className="mt-2 text-sm text-cream/60">{project.location}</p>
-                  </div>
+                <div className="flex flex-1 flex-col pt-5">
+                  <p className="text-xs font-semibold tracking-wide text-brand">
+                    {category}
+                  </p>
+                  <h3 className="font-display mt-2 text-2xl font-bold text-foreground transition-colors group-hover:text-brand sm:text-3xl">
+                    {project.name}
+                  </h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{project.location}</p>
 
-                  <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-brand transition-colors group-hover:text-cream">
+                  <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand">
                     {p.viewProject}
                     <ArrowRight className="size-4" aria-hidden="true" />
                   </span>
@@ -104,10 +103,12 @@ export function FeaturedProjectsSection() {
         >
           <Link
             href="/portfolio"
-            className="inline-flex items-center gap-2 rounded-full border border-brand/30 px-7 py-3.5 text-sm font-semibold text-cream transition-colors hover:border-brand hover:text-brand"
+            className="inline-flex items-center gap-3 rounded-full bg-foreground px-7 py-3.5 text-sm font-semibold text-cream transition hover:bg-warm-black"
           >
             {p.viewAll}
-            <ArrowRight className="size-4" aria-hidden="true" />
+            <span className="inline-flex size-8 items-center justify-center rounded-full bg-white text-foreground">
+              <ArrowRight className="size-4" aria-hidden="true" />
+            </span>
           </Link>
         </div>
       </div>

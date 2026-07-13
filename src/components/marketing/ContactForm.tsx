@@ -110,7 +110,7 @@ export function ContactForm() {
 
         <button
           type="submit"
-          className="rounded-full bg-black px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-black/85"
+          className="rounded-full bg-foreground px-6 py-3 text-sm font-bold uppercase tracking-wide text-cream transition hover:bg-warm-black"
         >
           Submit Request
         </button>

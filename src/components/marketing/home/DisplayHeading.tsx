@@ -15,10 +15,10 @@ interface DisplayHeadingProps {
 }
 
 const sizeClasses: Record<HeadingSize, string> = {
-  sm: "text-3xl leading-[1.1] sm:text-4xl md:text-5xl",
-  md: "text-3xl leading-[1.05] sm:text-4xl md:text-5xl lg:text-6xl",
-  lg: "text-[clamp(2.5rem,9vw,7rem)] leading-[0.94] sm:leading-[0.92]",
-  hero: "text-4xl leading-tight sm:text-5xl md:text-6xl lg:text-7xl",
+  sm: "text-3xl font-bold leading-[1.1] sm:text-4xl md:text-5xl",
+  md: "text-3xl font-bold leading-[1.05] sm:text-4xl md:text-5xl lg:text-6xl",
+  lg: "text-[clamp(2.5rem,9vw,7rem)] font-bold leading-[0.94] sm:leading-[0.92]",
+  hero: "text-4xl font-bold leading-tight sm:text-5xl md:text-6xl lg:text-7xl",
 };
 
 const toneClasses: Record<HeadingTone, string> = {
@@ -38,7 +38,7 @@ export function DisplayHeading({
   return (
     <Component
       id={id}
-      className={cn("font-display font-semibold", sizeClasses[size], toneClasses[tone], className)}
+      className={cn("font-display", sizeClasses[size], toneClasses[tone], className)}
       style={style}
     >
       {children}

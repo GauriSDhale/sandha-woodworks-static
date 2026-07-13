@@ -122,7 +122,7 @@ export default function OrderSuccessPage() {
         </Link>
         <Link
           href="/store"
-          className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 font-semibold text-cream transition hover:bg-brand-red"
+          className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 font-semibold text-cream transition hover:bg-warm-black"
         >
           Continue Shopping
           <ArrowRight className="h-4 w-4" />

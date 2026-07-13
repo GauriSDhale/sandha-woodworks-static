@@ -120,13 +120,13 @@ export function ServiceDetailContent({
           <div className="mt-6 flex flex-wrap items-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold uppercase tracking-wide text-black transition hover:bg-white/90"
+              className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-bold uppercase tracking-wide text-cream transition hover:bg-warm-black"
             >
               Request a Quote <ArrowRight className="h-4 w-4" />
             </Link>
             <a
               href="#overview"
-              className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/50"
+              className="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-foreground"
             >
               Read the article <ChevronDown className="h-4 w-4" />
             </a>

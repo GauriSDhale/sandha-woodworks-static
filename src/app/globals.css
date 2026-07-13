@@ -1,29 +1,34 @@
 @import "tailwindcss";
 
-/* ─── Design tokens (aligned with sandhawoodworks.ca) ─── */
+/* ─── Design tokens (Arch Mill House–inspired) ─── */
 :root {
-  --radius: 0.75rem;
+  --radius: 9999px;
 
-  --brand: oklch(74% 0.08 72);
-  --brand-foreground: oklch(13% 0.008 250);
-  --brand-light: oklch(85% 0.06 78);
-  --brand-dark: oklch(58% 0.09 62);
+  /* Primary accent — Arch Mill blue CTAs */
+  --brand: #2f6fed;
+  --brand-foreground: #ffffff;
+  --brand-light: #5b8ff5;
+  --brand-dark: #1d4ed8;
 
-  --cream: oklch(97.5% 0.006 85);
-  --taupe: oklch(93% 0.006 85);
-  --warm-black: oklch(13% 0.008 250);
-  --wood: oklch(32% 0.015 250);
-  --wood-dark: oklch(19% 0.01 250);
-  --walnut: oklch(28% 0.025 55);
-  --sand: oklch(91% 0.008 75);
+  /* Secondary accent — orange rule under hero branding */
+  --accent: #ff6a00;
+  --accent-foreground: #ffffff;
 
-  --background: oklch(98.5% 0.004 85);
-  --foreground: oklch(13% 0.008 250);
+  --cream: #f7f8fa;
+  --taupe: #eef1f5;
+  --warm-black: #0b1220;
+  --wood: #151c2c;
+  --wood-dark: #080d16;
+  --walnut: #1a2233;
+  --sand: #e8ecf2;
+
+  --background: #ffffff;
+  --foreground: #0b1220;
   --secondary: var(--taupe);
   --secondary-foreground: var(--warm-black);
-  --muted: oklch(95.5% 0.005 85);
-  --muted-foreground: oklch(42% 0.008 250);
-  --border: oklch(89% 0.005 85);
+  --muted: #f3f5f8;
+  --muted-foreground: #5b6577;
+  --border: #e2e6ee;
 
   /* Backward-compatible aliases used elsewhere in the app */
   --surface-dark: var(--warm-black);
@@ -52,6 +57,8 @@
   --color-brand-dark: var(--brand-dark);
   --color-brand-foreground: var(--brand-foreground);
   --color-brand-red: var(--brand-red);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
   --color-border: var(--border);
   --font-sans: var(--font-inter);
   --font-display: var(--font-space-grotesk);
@@ -75,8 +82,8 @@ h4,
 h5,
 h6 {
   font-family: var(--font-space-grotesk), var(--font-inter), system-ui, sans-serif;
-  letter-spacing: -0.02em;
-  font-weight: 600;
+  letter-spacing: -0.03em;
+  font-weight: 700;
 }
 
 .font-display {
@@ -98,6 +105,39 @@ h6 {
   margin-right: auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+/* Full-bleed homepage layout — full viewport width, light side inset only */
+.container-full {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (width >= 40rem) {
+  .container-full {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (width >= 64rem) {
+  .container-full {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.container-edge {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .section-padding {
@@ -191,6 +231,83 @@ h6 {
   50% {
     transform: translateY(6px);
     opacity: 1;
+  }
+}
+
+@keyframes intro-char {
+  0% {
+    opacity: 0;
+    transform: translateY(110%) rotate(6deg);
+  }
+  60% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes intro-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(120%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes intro-line-x {
+  0% {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes intro-loader {
+  0% {
+    transform: translate(-100%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes intro-grid-drift {
+  0% {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-40px, -40px);
+  }
+}
+
+@keyframes intro-sweep {
+  0% {
+    opacity: 0;
+    transform: rotate(-18deg) translate(-120%);
+  }
+  30% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: rotate(-18deg) translate(220%);
+  }
+}
+
+@keyframes intro-count {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

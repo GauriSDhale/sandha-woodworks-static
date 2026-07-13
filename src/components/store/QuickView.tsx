@@ -104,7 +104,7 @@ export function QuickView({ product, onClose }: QuickViewProps) {
               <button
                 type="button"
                 onClick={handleAddToCart}
-                className="flex items-center justify-center gap-2 rounded-full bg-foreground px-5 py-3 font-semibold text-cream transition hover:bg-brand-red"
+                className="flex items-center justify-center gap-2 rounded-full bg-foreground px-5 py-3 font-semibold text-cream transition hover:bg-warm-black"
               >
                 <ShoppingCart className="h-4 w-4" />
                 Add to Cart

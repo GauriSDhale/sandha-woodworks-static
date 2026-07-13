@@ -10,3 +10,4 @@ export { ManufacturingSection } from "./ManufacturingSection";
 export { SectionContainer } from "./SectionContainer";
 export { SectorsSection } from "./SectorsSection";
 export { TrustedPartnersSection } from "./TrustedPartnersSection";
+export { WhyChooseUsSection } from "./WhyChooseUsSection";

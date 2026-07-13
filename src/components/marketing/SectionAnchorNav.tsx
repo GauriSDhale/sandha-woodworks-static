@@ -66,7 +66,7 @@ export function SectionAnchorNav({
                 "inline-flex shrink-0 cursor-pointer items-center rounded-full px-4 py-2 text-sm font-medium transition-all duration-200",
                 "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40 focus-visible:ring-offset-2",
                 isActive
-                  ? "bg-brand text-brand-foreground shadow-sm"
+                  ? "bg-foreground text-cream shadow-sm"
                   : "border border-border bg-white text-muted-foreground hover:border-brand/40 hover:bg-brand/5 hover:text-foreground active:scale-[0.97]",
               )}
             >

@@ -71,7 +71,7 @@ export function Footer() {
             <p className="text-xs uppercase tracking-[0.3em] text-cream/50">
               {siteConfig.tagline}
             </p>
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-cream/70">
                 {t.footer.followUs}
               </span>
