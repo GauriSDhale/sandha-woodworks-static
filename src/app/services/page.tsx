@@ -64,7 +64,7 @@ export default function ServicesPage() {
         image={pageMedia.servicesHero}
       />
 
-      <section className="border-b border-border bg-muted px-4 py-16 sm:px-6 lg:px-8">
+      <section className="border-b border-border bg-muted px-4 py-8 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionLabel>Services vs. Sectors</SectionLabel>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
@@ -126,7 +126,7 @@ export default function ServicesPage() {
 
       <SectionAnchorNav items={categoryNavItems} label="Service categories" />
 
-      <section className="px-4 py-20 sm:px-6 lg:px-8">
+      <section className="px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl space-y-20">
           {serviceCategories.map((category) => (
             <article key={category.id} id={category.id} className="scroll-mt-28">
@@ -147,7 +147,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="bg-muted px-4 py-20 sm:px-6 lg:px-8">
+      <section className="bg-muted px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionLabel>Where we apply these capabilities</SectionLabel>
           <h2 className="font-display mt-4 text-3xl font-semibold md:text-5xl">15 sectors served.</h2>

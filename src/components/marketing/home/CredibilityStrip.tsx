@@ -74,7 +74,7 @@ export function CredibilityStrip() {
   return (
     <section
       ref={sectionRef}
-      className="border-y border-border/60 bg-cream py-10 sm:py-12"
+      className="border-y border-border/60 bg-cream py-5 sm:py-6"
       aria-labelledby="credibility-heading"
     >
       <div className="container-full">

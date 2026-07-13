@@ -104,7 +104,7 @@ export function ServiceDetailContent({
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/30" />
-        <div className="relative mx-auto w-full max-w-7xl px-4 pb-16 pt-20 sm:px-6 lg:px-8">
+        <div className="relative mx-auto w-full max-w-7xl px-4 pb-8 pt-10 sm:px-6 lg:px-8">
           <Link
             href="/services"
             className="inline-flex items-center gap-1 text-sm font-medium text-white/70 transition hover:text-white"
@@ -136,7 +136,7 @@ export function ServiceDetailContent({
 
       <SectionAnchorNav items={filteredToc} label="Article sections" />
 
-      <section id="overview" className="scroll-mt-28 px-4 py-20 sm:px-6 lg:px-8">
+      <section id="overview" className="scroll-mt-28 px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl">
             <h2 className="font-display text-3xl font-semibold">Overview</h2>
@@ -148,7 +148,7 @@ export function ServiceDetailContent({
       </section>
 
       {detail?.bestFor && detail.bestFor.length > 0 && (
-        <section id="best-for" className="scroll-mt-28 border-t border-border bg-muted px-4 py-20 sm:px-6 lg:px-8">
+        <section id="best-for" className="scroll-mt-28 border-t border-border bg-muted px-4 py-10 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <div className="mx-auto max-w-3xl">
               <h2 className="font-display text-3xl font-semibold">Best for</h2>
@@ -165,7 +165,7 @@ export function ServiceDetailContent({
         </section>
       )}
 
-      <section id="process" className="scroll-mt-28 border-t border-border px-4 py-20 sm:px-6 lg:px-8">
+      <section id="process" className="scroll-mt-28 border-t border-border px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl">
             <h2 className="font-display text-3xl font-semibold">Process — award to install</h2>
@@ -189,7 +189,7 @@ export function ServiceDetailContent({
       </section>
 
       {detail?.deliverables && detail.deliverables.length > 0 && (
-        <section id="deliverables" className="scroll-mt-28 border-t border-border bg-muted px-4 py-20 sm:px-6 lg:px-8">
+        <section id="deliverables" className="scroll-mt-28 border-t border-border bg-muted px-4 py-10 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <div className="mx-auto max-w-3xl">
               <h2 className="font-display text-3xl font-semibold">What you receive</h2>
@@ -207,7 +207,7 @@ export function ServiceDetailContent({
       )}
 
       {detail?.gallery && detail.gallery.length > 0 && (
-        <section id="gallery" className="scroll-mt-28 border-t border-border px-4 py-20 sm:px-6 lg:px-8">
+        <section id="gallery" className="scroll-mt-28 border-t border-border px-4 py-10 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <h2 className="font-display text-3xl font-semibold">Gallery</h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -227,7 +227,7 @@ export function ServiceDetailContent({
       )}
 
       {detail?.faqs && detail.faqs.length > 0 && (
-        <section id="faqs" className="scroll-mt-28 border-t border-border bg-muted px-4 py-20 sm:px-6 lg:px-8">
+        <section id="faqs" className="scroll-mt-28 border-t border-border bg-muted px-4 py-10 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <div className="mx-auto max-w-3xl">
               <h2 className="font-display text-3xl font-semibold">FAQs</h2>
@@ -240,7 +240,7 @@ export function ServiceDetailContent({
       )}
 
       {related.length > 0 && (
-        <section className="border-t border-border px-4 py-20 sm:px-6 lg:px-8">
+        <section className="border-t border-border px-4 py-10 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <h2 className="font-display text-3xl font-semibold">
               Explore more {category.title.toLowerCase()}

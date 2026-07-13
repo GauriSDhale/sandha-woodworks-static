@@ -20,7 +20,7 @@ export default function ContactPage() {
         image={pageMedia.contactHero}
       />
 
-      <section className="px-4 py-20 sm:px-6 lg:px-8">
+      <section className="px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[1fr_1.1fr]">
           <div>
             <ContactForm />

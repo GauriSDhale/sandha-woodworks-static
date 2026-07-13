@@ -56,7 +56,7 @@ export function InsightsCarousel() {
   const currentSlide = slides[activeIndex];
 
   return (
-    <section className="border-y border-border/70 bg-background py-16 sm:py-20">
+    <section className="border-y border-border/70 bg-background py-8 sm:py-10">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 px-4 sm:px-6 lg:flex-row lg:items-end lg:justify-between lg:px-8">
         <div className="max-w-3xl">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-brand">

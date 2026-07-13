@@ -16,7 +16,7 @@ export default function LegalPage() {
         title="Legal Centre"
         description="Policies, terms, and compliance documents governing use of this website and our services."
       />
-      <section className="px-4 py-20 sm:px-6 lg:px-8">
+      <section className="px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl space-y-4">
           {footerLegalLinks.map((link) => (
             <Link

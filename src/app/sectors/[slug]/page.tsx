@@ -45,7 +45,7 @@ export default async function SectorDetailPage({
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/30" />
-        <div className="relative mx-auto w-full max-w-7xl px-4 pb-16 pt-20 sm:px-6 lg:px-8">
+        <div className="relative mx-auto w-full max-w-7xl px-4 pb-8 pt-10 sm:px-6 lg:px-8">
           <Link
             href="/sectors"
             className="inline-flex items-center gap-1 text-sm font-medium text-white/70 transition hover:text-white"
@@ -61,7 +61,7 @@ export default async function SectorDetailPage({
         </div>
       </section>
 
-      <section className="border-b border-border bg-muted px-4 py-16 sm:px-6 lg:px-8">
+      <section className="border-b border-border bg-muted px-4 py-8 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl">
             <h2 className="font-display text-2xl font-semibold">About this sector</h2>
@@ -75,7 +75,7 @@ export default async function SectorDetailPage({
       </section>
 
       {detail.standards.length > 0 && (
-        <section className="border-b border-border px-4 py-16 sm:px-6 lg:px-8">
+        <section className="border-b border-border px-4 py-8 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <div className="mx-auto max-w-3xl">
               <h3 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
@@ -95,7 +95,7 @@ export default async function SectorDetailPage({
       )}
 
       {detail.features.length > 0 && (
-        <section className="border-b border-border bg-muted px-4 py-16 sm:px-6 lg:px-8">
+        <section className="border-b border-border bg-muted px-4 py-8 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <div className="mx-auto max-w-3xl">
               <h2 className="font-display text-2xl font-semibold">What we build</h2>
@@ -113,7 +113,7 @@ export default async function SectorDetailPage({
       )}
 
       {detail.whyChoose.length > 0 && (
-        <section className="border-b border-border px-4 py-20 sm:px-6 lg:px-8">
+        <section className="border-b border-border px-4 py-10 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-muted-foreground">
               Why choose Sandha
@@ -141,7 +141,7 @@ export default async function SectorDetailPage({
       )}
 
       {detail.services.length > 0 && (
-        <section className="border-t border-border bg-muted px-4 py-20 sm:px-6 lg:px-8">
+        <section className="border-t border-border bg-muted px-4 py-10 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-muted-foreground">
               Services applied
@@ -183,7 +183,7 @@ export default async function SectorDetailPage({
       />
 
       {otherSectors.length > 0 && (
-        <section className="border-t border-border px-4 py-20 sm:px-6 lg:px-8">
+        <section className="border-t border-border px-4 py-10 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-muted-foreground">
               Other sectors

@@ -22,7 +22,7 @@ export default async function LegalDocumentPage({
   return (
     <>
       <PageHero eyebrow="Legal & Compliance" title={title} />
-      <section className="px-4 py-20 sm:px-6 lg:px-8">
+      <section className="px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-muted-foreground">
           <p>
             This is a static placeholder for legal content. In production, this page would contain

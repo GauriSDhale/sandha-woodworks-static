@@ -32,7 +32,7 @@ export function MarketProjectCarousel({
   }, [hasSlides, reducedMotion, slides.length]);
 
   return (
-    <section className="border-t border-border bg-background px-4 py-20 sm:px-6 lg:px-8">
+    <section className="border-t border-border bg-background px-4 py-10 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-3xl">

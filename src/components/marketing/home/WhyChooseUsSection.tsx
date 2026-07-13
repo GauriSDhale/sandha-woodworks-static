@@ -39,7 +39,7 @@ export function WhyChooseUsSection() {
       aria-labelledby="why-choose-us-heading"
     >
       {/* Stats + copy — Archmill-inspired clean split */}
-      <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-24">
+      <div className="mx-auto grid max-w-7xl gap-12 px-4 py-8 sm:px-6 sm:py-10 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-12">
         <div
           className={cn(
             "flex flex-col justify-center gap-8 sm:gap-10",
@@ -123,7 +123,7 @@ export function WhyChooseUsSection() {
 
       {/* Inset recent projects carousel — side padding like Archmill */}
       {hasSlides && current ? (
-        <div className="bg-white px-4 pb-16 sm:px-6 sm:pb-20 lg:px-8 lg:pb-24">
+        <div className="bg-white px-4 pb-8 sm:px-6 sm:pb-10 lg:px-8 lg:pb-24">
           <div className="relative mx-auto max-w-7xl overflow-hidden rounded-2xl bg-warm-black shadow-sm sm:rounded-3xl">
             <div className="relative aspect-[16/10] w-full overflow-hidden sm:aspect-[21/9]">
               {slides.map((slide, index) => (
@@ -229,7 +229,7 @@ export function WhyChooseUsSection() {
           </div>
         </div>
       ) : (
-        <div className="border-t border-border bg-muted/40 px-4 py-16 text-center sm:px-6 lg:px-8">
+        <div className="border-t border-border bg-muted/40 px-4 py-8 text-center sm:px-6 lg:px-8">
           <p className="mx-auto max-w-xl text-sm leading-relaxed text-muted-foreground">
             {copy.emptyProjects}
           </p>
