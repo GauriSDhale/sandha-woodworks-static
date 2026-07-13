@@ -131,9 +131,11 @@ function ShippingStep() {
         <InputField label="Postal Code" required placeholder="K1A 0A1" error={errors.postalCode?.message} {...register("postalCode")} />
         <InputField label="Phone" required placeholder="+1 226 381 0023" error={errors.phone?.message} {...register("phone")} />
       </div>
-      <button type="submit" className="w-full rounded-full bg-foreground py-3 font-semibold text-cream transition hover:bg-warm-black">
-        Continue to Delivery →
-      </button>
+      <div className="flex justify-center">
+        <button type="submit" className="w-fit rounded-full bg-foreground px-6 py-3 font-semibold text-cream transition hover:bg-warm-black">
+          Continue to Delivery →
+        </button>
+      </div>
     </form>
   );
 }
