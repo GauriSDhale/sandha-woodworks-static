@@ -73,8 +73,8 @@ const pages: SearchItem[] = [
     kind: "Page",
     title: "Insight",
     description: "Articles and updates from Sandha Woodworks.",
-    url: "/insight",
-    keywords: normalize("insight", "blog", "articles", "news"),
+    url: "/linkedin",
+    keywords: normalize("insight", "blog", "articles", "news", "linkedin"),
   },
   {
     id: "page-careers",
