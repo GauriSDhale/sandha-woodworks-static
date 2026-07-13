@@ -2,6 +2,7 @@ import { portfolioProjects } from "@/lib/constants/projects";
 import { serviceCategories } from "@/lib/constants/services";
 import enServices from "@/locales/en/services.json";
 import enServiceDetails from "@/locales/en/serviceDetails.json";
+import enSectorDetails from "@/locales/en/sectorDetails.json";
 import { sectorDetails } from "@/lib/constants/sector-details";
 import { siteConfig } from "@/lib/constants/site";
 
@@ -135,21 +136,33 @@ function buildServiceItems(): SearchItem[] {
 }
 
 function buildSectorItems(): SearchItem[] {
-  return Object.entries(sectorDetails).map(([slug, detail]) => ({
-    id: `sector-${slug}`,
-    kind: "Sector" as const,
-    title: detail.heading.replace(/\s+Millwork$/i, "") || detail.heading,
-    description: detail.description,
-    url: `/sectors/${slug}`,
-    keywords: normalize(
-      detail.heading,
-      detail.description,
-      detail.about,
-      detail.features.join(" "),
-      detail.standards.join(" "),
-      slug.replace(/-/g, " "),
-    ),
-  }));
+  return Object.keys(sectorDetails).map((slug) => {
+    const detail = enSectorDetails.details[slug as keyof typeof enSectorDetails.details] as
+      | {
+          heading?: string;
+          description?: string;
+          about?: string;
+          features?: string[];
+          standards?: string[];
+        }
+      | undefined;
+    const heading = detail?.heading ?? slug;
+    return {
+      id: `sector-${slug}`,
+      kind: "Sector" as const,
+      title: heading.replace(/\s+Millwork$/i, "") || heading,
+      description: detail?.description ?? "",
+      url: `/sectors/${slug}`,
+      keywords: normalize(
+        detail?.heading,
+        detail?.description,
+        detail?.about,
+        detail?.features?.join(" "),
+        detail?.standards?.join(" "),
+        slug.replace(/-/g, " "),
+      ),
+    };
+  });
 }
 
 function buildProjectItems(): SearchItem[] {

@@ -1,0 +1,575 @@
+{
+  "details": {
+    "healthcare": {
+      "heading": "Ébénisterie pour la santé",
+      "description": "Ébénisterie de grade hospitalier conçue pour le contrôle des infections, la résistance à l'eau et une installation à faible perturbation dans des environnements patients en activité.",
+      "about": "Sandha Woodworks livre des ensembles d'ébénisterie pour l'hôpital entier — de la réception du hall principal et des murs d'orientation aux postes d'infirmières, salles d'examen, salles de médicaments et d'utilité, préparation pharmaceutique, chambres de patients, salons du personnel, cafétérias et traitement stérile.\n\nChaque substrat, chant, charnière et finition est conçu selon les exigences ICRA / IPAC du projet, la liste de chimie désinfectante et le profil d'exposition à l'humidité — et chaque installation est planifiée autour des tournées de médicaments, des rondes et des cycles de sommeil des patients.",
+      "standards": [
+        "CSA Z8000 · CSA Z317.13 · CSA Z317.2",
+        "FGI Guidelines · USP <797> / <800>",
+        "PIDAC / Public Health Ontario IPAC",
+        "ULC S102 / ASTM E84 Class A on public-corridor paneling",
+        "AWMAC Premium grade on all veneer"
+      ],
+      "features": [
+        "Réception du hall, murs d'orientation et lambris de bois public",
+        "Postes d'infirmières, alcôves de charting des médecins et comptoirs de triage des urgences",
+        "Mobilier pour salles d'examen, imagerie et baies préopératoires",
+        "Salles de médicaments, utilité propre/sale, stérile central",
+        "Salles de préparation pharmaceutique USP <797>/<800>",
+        "Garde-robes de chevet, murs TV et vanités intégrées en chambre de patient",
+        "Salons du personnel, vestiaires, service de cafétéria",
+        "Chapelle, salles de réflexion et bureaux de fondation hospitalière"
+      ],
+      "whyChoose": [
+        {
+          "title": "Programme bois sécuritaire pour la désinfection",
+          "description": "Placage AWMAC Premium scellé en polyuréthane catalysé de grade hospitalier, testé pour quat, AHP, javel (1:10), IPA et nettoyage phénolique. Livré avec une fiche de compatibilité chimique et une carte de protocole d'entretien ménager."
+        },
+        {
+          "title": "Programme d'installation sur site en activité",
+          "description": "Équipes hors heures, barrières anti-poussière ICRA Class III/IV, HEPA et enceintes à air négatif, installation à fixations silencieuses, et signature de dégagement IPAC selon CSA Z317.13."
+        },
+        {
+          "title": "Construction résistante à l'eau",
+          "description": "Âme MR-MDF ou phénolique NAUF, scellée sur six faces, chant PVC/ABS continu 3 mm, comptoirs scellés au silicone, surface solide thermoformée à bol intégré — aucun joint pour l'eau ou le biofilm."
+        },
+        {
+          "title": "Portée pour l'hôpital entier",
+          "description": "Un seul fabricant responsable pour le bois public + HPL/surface solide clinique + inox BOH — aucune rupture entre les métiers."
+        }
+      ],
+      "cta": {
+        "heading": "Prêts à chiffrer un ensemble santé?",
+        "description": "Envoyez-nous vos dessins. Nous vous retournerons un devis détaillé en un jour ouvrable."
+      }
+    },
+    "senior-living": {
+      "heading": "Ébénisterie pour résidences pour aînés",
+      "description": "Ébénisterie pour retraite, vie assistée et soins de longue durée — chaleur hôtelière avec durabilité de grade santé.",
+      "about": "Ébénisterie pour aînés conçue pour une nettoyabilité de grade hospitalier et l'accessibilité AODA / ADA, finie avec une chaleur résidentielle — salles à manger, salons, salles de mieux-être, suites de soins de la mémoire et mobilier de chambres de résidents.\n\nNous coordonnons les dégagements d'accessibilité, les bandes de contraste et le blocage pour barres d'appui directement sur les dessins d'atelier.",
+      "standards": [
+        "AWMAC Custom to Premium grade",
+        "CSA B651 / AODA / ADA — public and resident-room accessibility",
+        "CSA Z8000 / FGI guidelines for care areas"
+      ],
+      "features": [
+        "Lambris d'accent pour halls et salons",
+        "Service de salle à manger, buffet, stations du personnel de service",
+        "Ébénisterie pour bistro, café et salon de coiffure",
+        "Mobilier pour salle de mieux-être et clinique",
+        "Vanités, garde-robes et cuisinette en chambre de résident",
+        "Lambris d'orientation pour soins de la mémoire",
+        "Chapelle et salles de réflexion"
+      ],
+      "whyChoose": [
+        {
+          "title": "Hybride santé + hôtellerie",
+          "description": "Nous combinons notre construction clinique sensibilisée IPAC avec une finition de placage de grade hôtelier."
+        },
+        {
+          "title": "Accessibilité AODA / ADA intégrée",
+          "description": "Dégagement pour orteils, plages d'atteinte, bandes de contraste et blocage pour barres d'appui coordonnés à l'étape des dessins d'atelier."
+        },
+        {
+          "title": "Installation en établissement en activité",
+          "description": "Installation hors heures et phasée afin que les résidents ne soient jamais déplacés."
+        }
+      ],
+      "cta": {
+        "heading": "Prêts à chiffrer un ensemble résidences pour aînés?",
+        "description": "Envoyez-nous vos dessins. Nous vous retournerons un devis détaillé en un jour ouvrable."
+      }
+    },
+    "education": {
+      "heading": "Ébénisterie pour l'éducation",
+      "description": "Mobilier et ébénisterie pour universités, écoles primaires et secondaires, laboratoires, bibliothèques et administration.",
+      "about": "Des écoles primaires aux universités de recherche, Sandha livre une ébénisterie conçue pour le cycle d'usure d'un édifice éducatif public — quincaillerie de 30 ans, chants résistants aux impacts et finitions nettoyables selon les régimes d'entretien des conseils scolaires.\n\nNous sommes approuvés sur les principales listes de fournisseurs des conseils scolaires de l'Ontario et avons livré des ensembles K-12 et postsecondaires partout au Canada et aux É.-U.",
+      "standards": [
+        "OBC / NBC · CSA B651 · AODA / ADA",
+        "AWMAC Custom to Premium grade (NAAWS 4.0)",
+        "ANSI/BHMA A156 Grade 1 hardware on classroom cabinetry",
+        "CARB Phase 2 / TSCA Title VI panels"
+      ],
+      "features": [
+        "Armoires de salle de classe, casiers, unités murales pour enseignants",
+        "Mobilier de laboratoire scientifique avec dessus époxy et éviers intégrés",
+        "Comptoirs de circulation de bibliothèque, rayonnages, carrels d'étude",
+        "Panneaux muraux acoustiques en bois pour auditoriums et fascia de balcon",
+        "Escaliers d'apprentissage, revêtement de bois en gradins, caissons d'accent",
+        "Mobilier de réception, administration et suite de direction",
+        "Casiers étudiants, garde-robes, bancs de corridor",
+        "Murs d'accent pour STEAM, musique, art et maker-spaces"
+      ],
+      "whyChoose": [
+        {
+          "title": "Approuvés fournisseurs",
+          "description": "Inscrits sur les listes d'ébénisterie préqualifiées des conseils scolaires et collèges de l'Ontario."
+        },
+        {
+          "title": "Livraison en fenêtre estivale",
+          "description": "Nous construisons l'échéancier autour de la fermeture estivale de 8 semaines, avec livraison phasée et installation en espaces de bascule."
+        },
+        {
+          "title": "Durabilité pour espaces publics",
+          "description": "Quincaillerie BHMA Grade 1, chants résistants aux impacts, HPL nettoyable et placage teintable — spécifiés pour un cycle de vie de 20 ans et plus."
+        },
+        {
+          "title": "Dossier de projets réel",
+          "description": "Travaux K-12 et postsecondaires récents en Ontario et au Massachusetts — Robarts Library, Niagara College Marotta, Tiffany Hill, Tobin High School."
+        }
+      ],
+      "cta": {
+        "heading": "Prêts à chiffrer un ensemble éducation?",
+        "description": "Envoyez-nous vos dessins. Nous vous retournerons un devis détaillé en un jour ouvrable."
+      }
+    },
+    "libraries": {
+      "heading": "Ébénisterie pour bibliothèques",
+      "description": "Ébénisterie pour bibliothèques publiques, universitaires et scolaires — comptoirs de circulation, rayonnages, carrels d'étude, salles de programmes.",
+      "about": "Ébénisterie de bibliothèque conçue pour 30 ans d'usage public — comptoirs de circulation avec RFID intégré, panneaux d'extrémité de rayonnages, carrels d'étude silencieuse, pods d'étude en groupe, ébénisterie pour zone enfants et mobilier de salles de programmes.\n\nNous coordonnons avec les fournisseurs de technologies de bibliothèque pour les préinstallations de pads RFID et les kiosques d'autopréêt.",
+      "standards": [
+        "AWMAC Custom to Premium grade",
+        "CSA B651 / AODA / ADA counters and study spaces",
+        "ULC S102 Class A on public paneling"
+      ],
+      "features": [
+        "Comptoirs de circulation avec intégration de pads RFID",
+        "Panneaux d'extrémité de rayonnages et lambris de salles de lecture",
+        "Carrels d'étude individuels et pods d'étude en groupe",
+        "Comptoirs de référence et de services aux lecteurs",
+        "Ébénisterie pour zone enfants et gradins pour heure du conte",
+        "Mobilier pour salles de programmes et maker-spaces",
+        "Mobilier administratif et de salles de travail du personnel"
+      ],
+      "whyChoose": [
+        {
+          "title": "Coordination techno-bibliothèque",
+          "description": "Préinstallations RFID, autopréêt et portiques de sécurité coordonnées sur les dessins d'atelier."
+        },
+        {
+          "title": "Intégration sensible au patrimoine",
+          "description": "Travaux récents à U of T Robarts et Valley Park Library — assortis à l'ébénisterie existante."
+        },
+        {
+          "title": "Durabilité de grade public",
+          "description": "Quincaillerie Grade 1, chants résistants aux impacts, finitions nettoyables."
+        }
+      ],
+      "cta": {
+        "heading": "Prêts à chiffrer un ensemble bibliothèques?",
+        "description": "Envoyez-nous vos dessins. Nous vous retournerons un devis détaillé en un jour ouvrable."
+      }
+    },
+    "corporate-offices": {
+      "heading": "Ébénisterie pour bureaux corporatifs",
+      "description": "Ébénisterie pour réception, salle de conseil, milieu de travail et suites exécutives pour aménagements de sièges sociaux et améliorations locatives.",
+      "about": "Ébénisterie pour sièges sociaux et améliorations locatives conçue pour projeter la marque du client — murs d'accent en placage séquencé, comptoirs de réception flottants, salles de conseil avec crédences AV intégrées et mobilier de suites exécutives.\n\nNous coordonnons directement avec le designer d'intérieur, l'EG et l'intégrateur AV afin que ce qui est expédié soit ce qui s'installe.",
+      "standards": [
+        "AWMAC Custom to Premium grade",
+        "ADA / CSA B651 / AODA reception and touchdown compliance",
+        "CARB Phase 2 / TSCA Title VI · WELL Building Standard v2 X07"
+      ],
+      "features": [
+        "Comptoirs de réception et murs d'accent de hall",
+        "Lambris de salle de conseil en placage séquencé",
+        "Aménagements intégrés et crédences pour bureaux exécutifs",
+        "Ébénisterie pour café / touchdown / cabines téléphoniques",
+        "Ébénisterie pour salle de mieux-être, salle des mères, salle de prière",
+        "Mobilier pour reprographie et salles de travail",
+        "Murs d'accent intégrés à la signalisation"
+      ],
+      "whyChoose": [
+        {
+          "title": "Assistance à la conception dès le schéma",
+          "description": "Nous joignons à 50 % DC pour optimiser la valeur des murs d'accent avant qu'ils n'entrent dans l'ensemble DC."
+        },
+        {
+          "title": "Coordination AV et TI",
+          "description": "Parcours de câbles, découpes de boîtes de plancher et blocage pour moniteurs coordonnés sur les dessins d'atelier."
+        },
+        {
+          "title": "Installation en locataire occupé",
+          "description": "Installation hors heures pour les étages occupés — une norme Sandha, pas un supplément."
+        }
+      ],
+      "cta": {
+        "heading": "Prêts à chiffrer un ensemble bureaux corporatifs?",
+        "description": "Envoyez-nous vos dessins. Nous vous retournerons un devis détaillé en un jour ouvrable."
+      }
+    },
+    "commercial-interiors": {
+      "heading": "Ébénisterie pour intérieurs commerciaux",
+      "description": "Ensembles d'ébénisterie clé en main pour améliorations locatives, programmes de design d'intérieur et équipes conception-construction.",
+      "about": "Ensembles d'ébénisterie pour intérieurs commerciaux clé en main — réception, salles de réunion, café, mieux-être et lambris d'accent — livrés pour designers d'intérieur, équipes conception-construction et EG selon les échéanciers d'améliorations locatives.\n\nUn seul partenaire d'ébénisterie responsable, de la conception schématique jusqu'à la visite de garantie de 12 mois.",
+      "standards": [
+        "AWMAC Custom to Premium grade",
+        "ADA / AODA / CSA B651",
+        "WELL Building Standard v2 X07 · LEED v4/v4.1 MR/EQ"
+      ],
+      "features": [
+        "Comptoirs de réception et lambris de hall",
+        "Salles de réunion et crédences de salle de conseil",
+        "Ébénisterie pour café, cuisinette et touchdown",
+        "Mobilier pour cabines téléphoniques et salles de huddle",
+        "Ébénisterie pour mieux-être et salle des mères",
+        "Murs d'accent intégrés à la signalisation",
+        "Mobilier pour reprographie et salles de travail"
+      ],
+      "whyChoose": [
+        {
+          "title": "Adapté aux designers",
+          "description": "Nous parlons le langage des ensembles DI, pas seulement des dessins d'atelier — échantillons, élévations, storyboards sur demande."
+        },
+        {
+          "title": "Assistance à la conception disponible",
+          "description": "Ingénierie de la valeur à 50 % DC pour respecter le budget sans perdre l'intention de design."
+        },
+        {
+          "title": "Responsabilité d'un seul GP",
+          "description": "GP nommé à l'attribution, un seul numéro de téléphone, un seul registre de déficits jusqu'à la clôture."
+        }
+      ],
+      "cta": {
+        "heading": "Prêts à chiffrer un ensemble intérieurs commerciaux?",
+        "description": "Envoyez-nous vos dessins. Nous vous retournerons un devis détaillé en un jour ouvrable."
+      }
+    },
+    "financial-institutions": {
+      "heading": "Ébénisterie pour institutions financières",
+      "description": "Succursales bancaires, caisses populaires, suites de banque privée et aménagements de services financiers.",
+      "about": "Ébénisterie pour succursales et banque privée conçue selon les normes de marque nationales de l'institution financière — comptoirs de caissiers avec plateaux à espèces intégrés, cabines de banque privée, entourages de GAB et mobilier d'arrière-boutique coordonné avec la sécurité.\n\nNous coordonnons directement avec les intégrateurs de sécurité pour la manutention d'espèces, le dégrossissement d'alarme et le câblage vidéo.",
+      "standards": [
+        "AWMAC Custom to Premium grade",
+        "AODA / ADA teller-counter compliance",
+        "ULC S102 / ASTM E84 Class A on public-area finishes"
+      ],
+      "features": [
+        "Comptoirs de caissiers avec plateaux à espèces intégrés et écrans d'intimité",
+        "Cabines de banque privée et salles de consultation",
+        "Entourages de GAB et ébénisterie de vestibule",
+        "Comptoirs de réception, d'accueil et de conciergerie",
+        "Suites exécutives, lambris de salle de conseil",
+        "Murs d'accent intégrés à la signalisation",
+        "Mobilier sécurisé de salle d'espèces BOH"
+      ],
+      "whyChoose": [
+        {
+          "title": "Répétabilité selon la norme de marque",
+          "description": "Accessoires identiques déployés dans des dizaines de succursales, palettisés et codés QR par emplacement."
+        },
+        {
+          "title": "Coordination avec intégrateurs de sécurité",
+          "description": "Dégrossissement de plateaux à espèces, alarme, caméras et biométrie coordonné sur les dessins d'atelier."
+        },
+        {
+          "title": "Finition de grade financier",
+          "description": "Placage AWMAC Premium avec polyuréthane catalysé pour le nettoyage quotidien."
+        }
+      ],
+      "cta": {
+        "heading": "Prêts à chiffrer un ensemble institutions financières?",
+        "description": "Envoyez-nous vos dessins. Nous vous retournerons un devis détaillé en un jour ouvrable."
+      }
+    },
+    "government-public-buildings": {
+      "heading": "Ébénisterie pour édifices gouvernementaux et publics",
+      "description": "Palais de justice, pôles de transport, édifices municipaux et fédéraux — ébénisterie civique de longue durée.",
+      "about": "Ébénisterie de longue durée conçue pour les édifices fédéraux, provinciaux et municipaux — bancs judiciaires, ébénisterie de stations de transport, longs comptoirs de service et lambris de corridors publics construits selon les codes de grade civique et des spécifications de durabilité de 30 ans.\n\nNous sommes admissibles aux travaux du Programme des marchandises contrôlées (CGP) et respectons les exigences documentaires d'approvisionnement civique.",
+      "standards": [
+        "AWMAC Premium grade (NAAWS 4.0)",
+        "NBC / OBC / CSA B651 / AODA / ADA",
+        "Controlled Goods Program (CGP)",
+        "ULC S102 Class A on public paneling"
+      ],
+      "features": [
+        "Bancs judiciaires, boxes de jury, lambris de salles d'audience",
+        "Comptoirs de service et orientation pour stations de transport",
+        "Comptoirs de service municipaux et guichets de permis",
+        "Ébénisterie de salle du conseil et estrade",
+        "Lambris de bois pour corridors publics",
+        "Mobilier sécurisé pour dossiers et preuves"
+      ],
+      "whyChoose": [
+        {
+          "title": "Admissible CGP",
+          "description": "Enregistrés au Programme des marchandises contrôlées — aptes à traiter les travaux fédéraux à portée sécurisée."
+        },
+        {
+          "title": "Durabilité de grade civique",
+          "description": "Grade AWMAC Custom+, quincaillerie Grade 1, spécification de cycle de vie de 20 ans et plus."
+        },
+        {
+          "title": "Conformité complète à l'approvisionnement",
+          "description": "Documentation prête pour appels d'offres MERX / BuyandSell, contrats CCDC, cautionnement disponible."
+        }
+      ],
+      "cta": {
+        "heading": "Prêts à chiffrer un ensemble édifices gouvernementaux et publics?",
+        "description": "Envoyez-nous vos dessins. Nous vous retournerons un devis détaillé en un jour ouvrable."
+      }
+    },
+    "hospitality": {
+      "heading": "Ébénisterie pour l'hôtellerie",
+      "description": "Ébénisterie hôtelière cinq étoiles : avant-scène, chambres, F&B, salle de bal, spa et arrière-scène.",
+      "about": "Ébénisterie pour l'hôtel entier, conçue du hall à l'arrière-scène — murs en placage séquencé et assorti au grain, plafonds à caissons, têtes de lit et garde-robes de chambres, minibars, ébénisterie de lounge exécutif, lambris de salle de bal et pantries BOH.\n\nNous travaillons avec des chaînes hôtelières internationales et offrons des programmes d'entretien à long terme qui maintiennent l'ébénisterie conforme à la marque entre les cycles PIP.",
+      "standards": [
+        "AWMAC Premium finish grade on public-facing veneer",
+        "ULC S102 / ASTM E84 Class A on lobby and corridor paneling",
+        "Hotel-chain PIP (Product Improvement Plan) compliance"
+      ],
+      "features": [
+        "Ébénisterie de réception du hall, porte-cochère et conciergerie",
+        "Murs en placage séquencé, plafonds à caissons",
+        "Têtes de lit, garde-robes, minibars et bureaux de chambres",
+        "Vanités de salle de bain, ébénisterie de zones humides",
+        "Stands d'hôtes F&B, back bars, banquettes de restaurant",
+        "Lambris de salle de bal, salles de réunion et lounge exécutif",
+        "Ébénisterie pour spa, conditionnement et vestiaires",
+        "Pantries BOH, stations de service, administration"
+      ],
+      "whyChoose": [
+        {
+          "title": "Finition selon norme PIP",
+          "description": "Finition AWMAC Premium sur tout le placage face au public, teintures et stratifiés selon la norme de marque du PIP de la chaîne hôtelière."
+        },
+        {
+          "title": "Intégration de chaîne d'approvisionnement certifiée",
+          "description": "Portes coupe-feu et autres portées spécialisées fournies par des partenaires certifiés audités, tandis que Sandha détient AWMAC, CKCA, WMCO et ISO 9001 en interne."
+        },
+        {
+          "title": "Programme d'entretien à long terme",
+          "description": "Inspections planifiées, retouches et remise à neuf de cycle PIP disponibles sur chaque ensemble hôtelier."
+        }
+      ],
+      "cta": {
+        "heading": "Prêts à chiffrer un ensemble hôtellerie?",
+        "description": "Envoyez-nous vos dessins. Nous vous retournerons un devis détaillé en un jour ouvrable."
+      }
+    },
+    "restaurants-qsr": {
+      "heading": "Ébénisterie pour restaurants et QSR",
+      "description": "Ensembles d'accessoires FOH, BOH et selon norme de marque pour chaînes de restaurants et indépendants.",
+      "about": "Aménagements complets clé en main pour restaurants et QSR — plafonds d'accent, bars sur mesure, banquettes, écrans en panneaux de canne, expositions de vins, stations de service, entourages POS et mobilier de préparation BOH.\n\nNous gérons l'ensemble restaurant sous un seul GP, de l'ébénisterie à l'intégration inox jusqu'à l'installation.",
+      "standards": [
+        "AWMAC Custom to Premium grade",
+        "NSF ANSI 2 & 51 on food-contact surfaces where applicable",
+        "OBC food-service millwork provisions"
+      ],
+      "features": [
+        "Bars, back-bars, murs à vins",
+        "Banquettes, cabines, portails arqués",
+        "Plafonds d'accent, caissons, écrans en panneaux de canne",
+        "Stands d'hôtes, entourages POS",
+        "Tableaux de menus, supports de signalisation illuminée",
+        "Accessoires de merchandising de détail",
+        "Comptoirs de préparation BOH, stations de service",
+        "Vanités et stalles de toilettes"
+      ],
+      "whyChoose": [
+        {
+          "title": "Aménagement clé en main",
+          "description": "Ébénisterie + inox + comptoir de service + support de signalisation + banquettes + préparation BOH sous un seul contrat."
+        },
+        {
+          "title": "Capacité de déploiement rapide",
+          "description": "Modèle prototype-à-multi-emplacements éprouvé avec des chaînes QSR."
+        },
+        {
+          "title": "Dossier restaurant récent",
+          "description": "Mercato, Coffee Island, Scooped by Demetres — voir le portefeuille."
+        }
+      ],
+      "cta": {
+        "heading": "Prêts à chiffrer un ensemble restaurants et QSR?",
+        "description": "Envoyez-nous vos dessins. Nous vous retournerons un devis détaillé en un jour ouvrable."
+      }
+    },
+    "retail": {
+      "heading": "Ébénisterie pour le commerce de détail",
+      "description": "Accessoires et aménagements de magasins conformes à la marque, fabriqués pour déploiements nationaux et multi-sites.",
+      "about": "Des magasins phares aux déploiements nationaux, nous fabriquons une ébénisterie de détail qui reproduit la norme de marque magasin après magasin — systèmes muraux, gondoles, cash wraps, mobilier d'exposition et plafonds d'accent.\n\nLes déploiements multi-sites sont palettisés magasin par magasin avec manifeste et trousse d'installation codée QR.",
+      "standards": [
+        "AWMAC Custom grade or Brand Standard package",
+        "ULC S102 / ASTM E84 Class A on public-area finishes",
+        "Grade 1 BHMA hardware on high-touch fixtures"
+      ],
+      "features": [
+        "Ébénisterie de devanture et de portail",
+        "Comptoirs cash-wrap, entourages POS",
+        "Systèmes muraux, gondoles, parcours de slat-wall",
+        "Vitrines d'exposition sur mesure, vitrines de bijoux",
+        "Murs à chaussures, accessoires pour vêtements, tables denim",
+        "Plafonds d'accent et caissons",
+        "Cabines d'essayage et mobilier BOH"
+      ],
+      "whyChoose": [
+        {
+          "title": "Fabrication prête pour le déploiement",
+          "description": "Notre atelier CNC et de finition est dimensionné pour la répétabilité d'accessoires identiques sur des dizaines de magasins."
+        },
+        {
+          "title": "Programme prototype-à-déploiement",
+          "description": "Un magasin prototype, fiches de tolérance, puis livraison répétable selon le PIP de la marque."
+        },
+        {
+          "title": "Logistique transfrontalière",
+          "description": "Expéditions CUSMA courantes vers les emplacements aux É.-U."
+        }
+      ],
+      "cta": {
+        "heading": "Prêts à chiffrer un ensemble commerce de détail?",
+        "description": "Envoyez-nous vos dessins. Nous vous retournerons un devis détaillé en un jour ouvrable."
+      }
+    },
+    "multi-residential": {
+      "heading": "Ébénisterie multirésidentielle",
+      "description": "Ébénisterie pour tours de condo et locatif en hauteur : halls du rez-de-chaussée, étages d'agrément et chaque unité.",
+      "about": "Ébénisterie pour l'ensemble du bâtiment résidentiel en hauteur — halls du rez-de-chaussée, comptoirs de conciergerie, salles de courrier, vestibules d'ascenseur, étages d'agrément (cuisines de fête, coworking, cinéma, conditionnement, spa pour animaux), lambris de corridor et chaque cuisine, vanité, garde-robe et mur média en unité.\n\nUn seul fabricant responsable pour les EG et promoteurs — aucune rupture entre les agréments du rez-de-chaussée et l'ébénisterie au volume d'unités.",
+      "standards": [
+        "AWMAC Custom grade on in-suite, Premium on main-floor",
+        "OBC / NBC · Tarion / condo warranty coordination",
+        "ULC S102 Class A on corridor paneling",
+        "CARB Phase 2 / TSCA Title VI panels"
+      ],
+      "features": [
+        "Hall du rez-de-chaussée, conciergerie, salle de courrier",
+        "Vestibules d'ascenseur et lambris de corridor",
+        "Étages d'agrément : cuisines, bars, coworking, cinéma, spa pour animaux, conditionnement",
+        "Bars de terrasse sur toit et ébénisterie extérieure",
+        "Cuisines, îlots et pantries en unité",
+        "Vanités de salle de bain et tours de linge",
+        "Garde-robes de chambre, walk-ins, buanderie",
+        "Murs média, bancs d'entrée, aménagements intégrés de den"
+      ],
+      "whyChoose": [
+        {
+          "title": "Portée pour l'ensemble du bâtiment",
+          "description": "Agréments publics + corridor + chaque unité sous un seul fournisseur — une seule norme AQ du hall au penthouse."
+        },
+        {
+          "title": "Programmes d'améliorations pour acheteurs",
+          "description": "Nous gérons des portails d'améliorations pour acheteurs — quartz, armoires, améliorations de garde-robes chiffrés et livrés par unité."
+        },
+        {
+          "title": "Fabrication au volume d'unités",
+          "description": "Notre capacité CNC et de placage des chants est dimensionnée pour des séries de cuisines et vanités à l'échelle d'une tour selon le calendrier de livraison du promoteur."
+        }
+      ],
+      "cta": {
+        "heading": "Prêts à chiffrer un ensemble multirésidentiel?",
+        "description": "Envoyez-nous vos dessins. Nous vous retournerons un devis détaillé en un jour ouvrable."
+      }
+    },
+    "community-recreation": {
+      "heading": "Ébénisterie pour centres communautaires et de loisirs",
+      "description": "Centres de loisirs, YMCA, arénas et installations communautaires — ébénisterie durable pour usage civique à fort trafic.",
+      "about": "Ébénisterie pour centres communautaires et de loisirs conçue pour survivre à un environnement civique humide, chloré et multi-quarts — réception du hall, murs d'orientation, casiers de vestiaire, mobilier d'installations aquatiques, ébénisterie de comptoirs de conditionnement et aménagements intégrés de salles polyvalentes.\n\nLivrée selon les échéanciers d'appels d'offres municipaux avec conformité complète à l'approvisionnement.",
+      "standards": [
+        "AWMAC Custom grade (NAAWS 4.0)",
+        "NBC / OBC / CSA B651 / AODA",
+        "Marine-grade construction in wet zones",
+        "ULC S102 Class A on public paneling"
+      ],
+      "features": [
+        "Réception du hall, murs d'orientation, ébénisterie de café",
+        "Casiers de vestiaire et bancs (classés humides)",
+        "Comptoirs de service d'installations aquatiques",
+        "Comptoirs fitness/PT et mobilier de salles de programmes",
+        "Aménagements intégrés de salles polyvalentes et jupes de scène",
+        "Stands de concession et BOH d'aréna"
+      ],
+      "whyChoose": [
+        {
+          "title": "Construction classée humide",
+          "description": "Contreplaqué de grade marin et âme phénolique dans les zones aquatiques, scellés sur six faces avec chant continu."
+        },
+        {
+          "title": "Prêt pour appels d'offres civiques",
+          "description": "Documentation d'approvisionnement MERX / municipal, contrats CCDC, cautionnement disponible."
+        },
+        {
+          "title": "Dossier civique récent",
+          "description": "Lake Country Co-op Leisure Centre et d'autres projets municipaux."
+        }
+      ],
+      "cta": {
+        "heading": "Prêts à chiffrer un ensemble centres communautaires et de loisirs?",
+        "description": "Envoyez-nous vos dessins. Nous vous retournerons un devis détaillé en un jour ouvrable."
+      }
+    },
+    "cultural-civic": {
+      "heading": "Ébénisterie pour édifices culturels et civiques",
+      "description": "Musées, galeries, arts de la scène et édifices civiques — ébénisterie d'accent pour projets emblématiques.",
+      "about": "Ébénisterie d'accent pour landmarks culturels — mobilier de musée et murs de galerie, lambris de hall pour arts de la scène, loges et billetteries d'arrière-scène, et murs de donateurs et ébénisterie cérémonielle pour édifices civiques.\n\nNous travaillons directement avec les designers d'expositions et les consultants en éclairage spécialisé.",
+      "standards": [
+        "AWMAC Premium grade (NAAWS 4.0)",
+        "Museum-conservator lighting/humidity specs",
+        "ULC S102 Class A on public paneling"
+      ],
+      "features": [
+        "Mobilier d'exposition et vitrines de musée",
+        "Systèmes muraux de galerie et piédestaux",
+        "Lambris de hall pour arts de la scène et billetterie",
+        "Loges et mobilier d'arrière-scène",
+        "Murs de donateurs et ébénisterie cérémonielle",
+        "Plafonds d'accent et panneaux acoustiques"
+      ],
+      "whyChoose": [
+        {
+          "title": "Coordination avec designers d'expositions",
+          "description": "Nous fabriquons selon les spécifications d'éclairage et d'humidité des conservateurs de musée."
+        },
+        {
+          "title": "Capacité de placage de grade premium",
+          "description": "Murs en placage séquencé et assorti au grain — la norme pour les édifices culturels emblématiques."
+        },
+        {
+          "title": "Intégration acoustique",
+          "description": "Panneaux de bois à lattes et perforés avec support acoustique coordonnés avec le consultant."
+        }
+      ],
+      "cta": {
+        "heading": "Prêts à chiffrer un ensemble culturels et civiques?",
+        "description": "Envoyez-nous vos dessins. Nous vous retournerons un devis détaillé en un jour ouvrable."
+      }
+    },
+    "industrial-manufacturing": {
+      "heading": "Ébénisterie pour l'industriel et la fabrication",
+      "description": "Aménagements de bureaux industriels, salles de contrôle, postes de travail d'usine et ébénisterie pour transformation alimentaire/pharma.",
+      "about": "Ébénisterie pour installations industrielles et de fabrication — aménagements de bureaux d'usine, mobilier de laboratoire qualité, consoles de salle de contrôle, postes de travail d'atelier, cafétérias et ébénisterie pour transformation alimentaire/pharma.\n\nConstruite selon la spécification de finition et de durabilité de l'environnement industriel, de l'inox BOH aux dessus de laboratoire phénoliques.",
+      "standards": [
+        "AWMAC Custom grade",
+        "NSF ANSI 2 / 51 where food-contact",
+        "OBC / NBC industrial-use provisions"
+      ],
+      "features": [
+        "Ébénisterie de bureaux d'usine et d'administration",
+        "Mobilier de laboratoire AQ/CQ avec dessus phénoliques",
+        "Consoles courbes et murs d'écrans pour salles de contrôle",
+        "Postes de travail de superviseurs d'atelier",
+        "Ébénisterie de cafétéria et vestiaires pour employés",
+        "Ébénisterie pour transformation alimentaire (NSF au besoin)",
+        "Mobilier adjacent aux salles blanches"
+      ],
+      "whyChoose": [
+        {
+          "title": "Spécification intensive",
+          "description": "Stratifié résistant aux produits chimiques, dessus phénoliques, inox au besoin, quincaillerie Grade 1 — conçus pour un usage en quarts continus."
+        },
+        {
+          "title": "Installation en fenêtres d'arrêt",
+          "description": "Installations de fin de semaine et en fenêtres d'arrêt coordonnées autour de la production."
+        },
+        {
+          "title": "Un seul partenaire d'ébénisterie pour toute l'usine",
+          "description": "Bureaux + laboratoire + cafétéria + BOH sous un seul atelier."
+        }
+      ],
+      "cta": {
+        "heading": "Prêts à chiffrer un ensemble industriel et fabrication?",
+        "description": "Envoyez-nous vos dessins. Nous vous retournerons un devis détaillé en un jour ouvrable."
+      }
+    }
+  }
+}

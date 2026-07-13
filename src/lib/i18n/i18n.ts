@@ -7,12 +7,16 @@ import enAbout from "@/locales/en/about.json";
 import enContact from "@/locales/en/contact.json";
 import enServices from "@/locales/en/services.json";
 import enServiceDetails from "@/locales/en/serviceDetails.json";
+import enSectors from "@/locales/en/sectors.json";
+import enSectorDetails from "@/locales/en/sectorDetails.json";
 import frCommon from "@/locales/fr/common.json";
 import frHome from "@/locales/fr/home.json";
 import frAbout from "@/locales/fr/about.json";
 import frContact from "@/locales/fr/contact.json";
 import frServices from "@/locales/fr/services.json";
 import frServiceDetails from "@/locales/fr/serviceDetails.json";
+import frSectors from "@/locales/fr/sectors.json";
+import frSectorDetails from "@/locales/fr/sectorDetails.json";
 
 export const LANG_STORAGE_KEY = "sandha-lang";
 export const supportedLngs = ["en", "fr"] as const;
@@ -27,6 +31,8 @@ export const resources = {
     contact: enContact,
     services: enServices,
     serviceDetails: enServiceDetails,
+    sectors: enSectors,
+    sectorDetails: enSectorDetails,
   },
   fr: {
     common: frCommon,
@@ -35,6 +41,8 @@ export const resources = {
     contact: frContact,
     services: frServices,
     serviceDetails: frServiceDetails,
+    sectors: frSectors,
+    sectorDetails: frSectorDetails,
   },
 } as const;
 
@@ -56,7 +64,16 @@ if (!i18n.isInitialized) {
     fallbackLng: "en",
     supportedLngs: [...supportedLngs],
     defaultNS,
-    ns: ["common", "home", "about", "contact", "services", "serviceDetails"],
+    ns: [
+      "common",
+      "home",
+      "about",
+      "contact",
+      "services",
+      "serviceDetails",
+      "sectors",
+      "sectorDetails",
+    ],
     interpolation: {
       escapeValue: false,
     },

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import type { MarketProjectSlide } from "@/lib/markets/project-gallery";
 import { useReducedMotion } from "@/lib/hooks/useReducedMotion";
 import { cn } from "@/lib/utils";
@@ -16,6 +17,7 @@ export function MarketProjectCarousel({
   marketTitle,
   slides,
 }: MarketProjectCarouselProps) {
+  const { t } = useTranslation("sectors");
   const reducedMotion = useReducedMotion();
   const [activeIndex, setActiveIndex] = useState(0);
   const hasSlides = slides.length > 0;
@@ -37,15 +39,15 @@ export function MarketProjectCarousel({
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-muted-foreground">
-              Project gallery
+              {t("carousel.label")}
             </p>
             <h2 className="font-display mt-3 text-3xl font-semibold">
-              Work from our {marketTitle} projects.
+              {t("carousel.title", { market: marketTitle })}
             </h2>
             <p className="mt-3 max-w-2xl text-muted-foreground">
               {hasSlides
-                ? "Selected portfolio projects from this market — open any slide for the full case study and gallery."
-                : `No featured ${marketTitle} projects in the portfolio yet. Browse the full portfolio for related millwork work.`}
+                ? t("carousel.body")
+                : t("carousel.emptyBody", { market: marketTitle })}
             </p>
           </div>
 
@@ -60,7 +62,7 @@ export function MarketProjectCarousel({
                   )
                 }
                 className="inline-flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border border-border text-foreground transition-colors hover:bg-foreground hover:text-cream"
-                aria-label="Show previous project"
+                aria-label={t("carousel.prev")}
               >
                 <ArrowLeft className="h-4 w-4" />
               </button>
@@ -70,7 +72,7 @@ export function MarketProjectCarousel({
                   setActiveIndex((currentIndex) => (currentIndex + 1) % slides.length)
                 }
                 className="inline-flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border border-border text-foreground transition-colors hover:bg-foreground hover:text-cream"
-                aria-label="Show next project"
+                aria-label={t("carousel.next")}
               >
                 <ArrowRight className="h-4 w-4" />
               </button>
@@ -99,7 +101,7 @@ export function MarketProjectCarousel({
                 </h3>
                 <p className="mt-1 text-sm text-white/70">{current.location}</p>
                 <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-brand transition group-hover:text-brand-light">
-                  View project <ArrowRight className="h-4 w-4" />
+                  {t("carousel.viewProject")} <ArrowRight className="h-4 w-4" />
                 </span>
               </div>
             </Link>
@@ -121,7 +123,7 @@ export function MarketProjectCarousel({
                           ? "w-8 bg-brand"
                           : "w-2.5 bg-muted-foreground/25 hover:bg-muted-foreground/40",
                       )}
-                      aria-label={`Show ${slide.name}`}
+                      aria-label={t("carousel.showSlide", { name: slide.name })}
                       aria-current={index === activeIndex ? "true" : undefined}
                     />
                   ))}
@@ -132,14 +134,13 @@ export function MarketProjectCarousel({
         ) : (
           <div className="mt-10 rounded-2xl border border-dashed border-border bg-muted/40 px-6 py-12 text-center sm:px-10">
             <p className="mx-auto max-w-xl text-sm leading-relaxed text-muted-foreground">
-              We’re expanding the featured {marketTitle.toLowerCase()} gallery. In the
-              meantime, explore completed work across all markets in the portfolio.
+              {t("carousel.emptyExpanding", { market: marketTitle.toLowerCase() })}
             </p>
             <Link
               href="/portfolio"
               className="mt-6 inline-flex cursor-pointer items-center gap-2 rounded-full bg-warm-black px-6 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-cream transition-colors hover:bg-brand hover:text-warm-black"
             >
-              View portfolio <ArrowRight className="h-4 w-4" />
+              {t("carousel.viewPortfolio")} <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         )}
