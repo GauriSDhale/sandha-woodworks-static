@@ -191,6 +191,24 @@ export const translations = {
           Retail: "Retail",
         },
       },
+      testimonials: {
+        eyebrow: "Testimonials",
+        title: "Trusted by industry leaders",
+        items: [
+          {
+            quote:
+              "Sandha Woodworks delivered exceptional millwork on a complex multi-unit timeline. Their team was responsive and precise.",
+            name: "Project Director",
+            role: "General Contractor Partner",
+          },
+          {
+            quote:
+              "From shop drawings to installation, the quality and professionalism exceeded our expectations.",
+            name: "Design Manager",
+            role: "Architectural Firm",
+          },
+        ],
+      },
       about: {
         eyebrow: "About Sandha Woodworks",
         title: "A Canadian millwork manufacturer built for scale and accountability.",
@@ -449,6 +467,24 @@ export const translations = {
           Institutional: "Institutionnel",
           Retail: "Commerce de détail",
         },
+      },
+      testimonials: {
+        eyebrow: "Témoignages",
+        title: "La confiance des leaders de l'industrie",
+        items: [
+          {
+            quote:
+              "Sandha Woodworks a livré une menuiserie exceptionnelle dans un délai complexe multi-unités. Leur équipe a été réactive et précise.",
+            name: "Directeur de projet",
+            role: "Partenaire entrepreneur général",
+          },
+          {
+            quote:
+              "Des dessins d'atelier à l'installation, la qualité et le professionnalisme ont dépassé nos attentes.",
+            name: "Directeur de design",
+            role: "Cabinet d'architecture",
+          },
+        ],
       },
       about: {
         eyebrow: "À propos de Sandha Woodworks",

@@ -9,5 +9,6 @@ export { LogoMarqueeRow, StaticLogoGrid } from "./LogoMarqueeRow";
 export { ManufacturingSection } from "./ManufacturingSection";
 export { SectionContainer } from "./SectionContainer";
 export { SectorsSection } from "./SectorsSection";
+export { TestimonialsSection } from "./TestimonialsSection";
 export { TrustedPartnersSection } from "./TrustedPartnersSection";
 export { WhyChooseUsSection } from "./WhyChooseUsSection";
