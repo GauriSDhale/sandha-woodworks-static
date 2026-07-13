@@ -16,7 +16,7 @@ import { useLang } from "@/lib/i18n/LanguageProvider";
 import { cn } from "@/lib/utils";
 
 const navLinkBase =
-  "relative inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-base font-semibold tracking-wide transition-colors duration-200 ease-out hover:bg-brand/10 active:scale-[0.98] active:bg-brand/25";
+  "relative inline-flex items-center gap-1 rounded-full px-3 py-2 text-base font-semibold tracking-wide transition-colors duration-200 ease-out hover:bg-brand/10 active:scale-[0.98] active:bg-brand/25";
 
 function navLinkClasses(lightOnDark: boolean, active: boolean) {
   return cn(
@@ -27,22 +27,7 @@ function navLinkClasses(lightOnDark: boolean, active: boolean) {
   );
 }
 
-/** Reserve width for the longer EN/FR label so language switches don't shift the bar. */
-function StableNavLabel({ href, label }: { href: string; label: string }) {
-  const en = getNavLabel(href, translations.en);
-  const fr = getNavLabel(href, translations.fr);
-  const wider = fr.length >= en.length ? fr : en;
-
-  return (
-    <span className="inline-grid justify-items-center">
-      <span className="invisible col-start-1 row-start-1 whitespace-nowrap" aria-hidden="true">
-        {wider}
-      </span>
-      <span className="col-start-1 row-start-1 whitespace-nowrap">{label}</span>
-    </span>
-  );
-}
-
+/** Keep CTA width stable across EN/FR so the quote button doesn't jump. */
 function StableCtaLabel({ label }: { label: string }) {
   const en = translations.en.nav.requestQuote;
   const fr = translations.fr.nav.requestQuote;
@@ -116,7 +101,7 @@ export function Header() {
         </Link>
 
         <div className="flex shrink-0 items-center gap-2 sm:gap-3">
-          <nav className="hidden items-center gap-0.5 xl:flex" aria-label="Main navigation">
+          <nav className="hidden items-center gap-2 xl:flex" aria-label="Main navigation">
             {navLinks.map((link) => {
               const active = pathname === link.href || pathname.startsWith(`${link.href}/`);
               const isSectors = link.href === "/sectors";
@@ -125,7 +110,7 @@ export function Header() {
                 return (
                   <div key={link.href} className="group relative">
                     <Link href={link.href} className={navLinkClasses(lightOnDark, active)}>
-                      <StableNavLabel href={link.href} label={getNavLabel(link.href, t)} />
+                      <span className="whitespace-nowrap">{getNavLabel(link.href, t)}</span>
                       <ChevronDown className="h-3.5 w-3.5 shrink-0 opacity-70 transition-transform group-hover:rotate-180" />
                     </Link>
                     <div className="absolute right-0 top-full z-50 hidden w-72 pt-2 group-hover:block">
@@ -155,7 +140,7 @@ export function Header() {
 
               return (
                 <Link key={link.href} href={link.href} className={navLinkClasses(lightOnDark, active)}>
-                  <StableNavLabel href={link.href} label={getNavLabel(link.href, t)} />
+                  <span className="whitespace-nowrap">{getNavLabel(link.href, t)}</span>
                 </Link>
               );
             })}
