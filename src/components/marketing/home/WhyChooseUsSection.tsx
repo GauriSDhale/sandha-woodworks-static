@@ -68,7 +68,7 @@ export function WhyChooseUsSection() {
                   description={stat.description}
                   delayMs={index * 120}
                   active={inView}
-                  className="[&_p:first-child]:text-5xl [&_p:first-child]:font-semibold [&_p:first-child]:tracking-tight [&_p:first-child]:text-brand sm:[&_p:first-child]:text-6xl lg:[&_p:first-child]:text-7xl [&_p:first-child]:group-hover/stat:text-brand-dark [&_p:first-child]:group-focus-visible/stat:text-brand-dark [&_p:nth-child(2)]:mt-3 [&_p:nth-child(2)]:text-[11px] [&_p:nth-child(2)]:font-medium [&_p:nth-child(2)]:normal-case [&_p:nth-child(2)]:tracking-normal [&_p:nth-child(2)]:text-foreground/80 [&_p:nth-child(2)]:no-underline [&_p:last-child]:mt-1 [&_p:last-child]:text-sm [&_p:last-child]:text-muted-foreground"
+                  className="[&_p:first-child]:font-display [&_p:first-child]:text-3xl [&_p:first-child]:font-semibold [&_p:first-child]:tracking-tight [&_p:first-child]:text-foreground sm:[&_p:first-child]:text-4xl lg:[&_p:first-child]:text-[2.75rem] lg:[&_p:first-child]:leading-[1.15] [&_p:nth-child(2)]:mt-3 [&_p:nth-child(2)]:text-[11px] [&_p:nth-child(2)]:font-medium [&_p:nth-child(2)]:normal-case [&_p:nth-child(2)]:tracking-normal [&_p:nth-child(2)]:text-foreground/80 [&_p:nth-child(2)]:no-underline [&_p:last-child]:mt-1 [&_p:last-child]:text-sm [&_p:last-child]:text-muted-foreground"
                 />
                 <div className="mt-5 h-px w-full max-w-md bg-border" aria-hidden="true" />
               </div>

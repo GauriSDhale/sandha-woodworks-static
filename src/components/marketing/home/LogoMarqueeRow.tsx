@@ -128,12 +128,12 @@ export function LogoMarqueeRow({
       </div>
 
       <div
-        className="mt-3 flex min-h-[1.25rem] items-center justify-center"
+        className="mt-3 flex min-h-[1.5rem] items-center justify-center"
         aria-live="polite"
       >
         <p
           className={cn(
-            "text-[11px] font-semibold uppercase tracking-[0.28em] text-warm-black/55 transition-all duration-300",
+            "text-sm font-bold uppercase tracking-[0.2em] text-warm-black/60 transition-all duration-300",
             activeLogo
               ? "translate-y-0 opacity-100"
               : "pointer-events-none translate-y-1 opacity-0",
@@ -169,12 +169,12 @@ export function StaticLogoGrid({ logos, className }: StaticLogoGridProps) {
         ))}
       </ul>
       <div
-        className="mt-4 flex min-h-[1.25rem] items-center justify-center"
+        className="mt-4 flex min-h-[1.5rem] items-center justify-center"
         aria-live="polite"
       >
         <p
           className={cn(
-            "text-[11px] font-semibold uppercase tracking-[0.28em] text-warm-black/55 transition-all duration-300",
+            "text-sm font-bold uppercase tracking-[0.2em] text-warm-black/60 transition-all duration-300",
             activeLogo
               ? "translate-y-0 opacity-100"
               : "pointer-events-none translate-y-1 opacity-0",
