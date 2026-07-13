@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "title": "Contact",
+    "description": "Let's talk about your next project. Request a quote or send a general inquiry."
+  },
+  "hero": {
+    "eyebrow": "Contact",
+    "title": "Let's talk about your next project.",
+    "description": "Whether you're a general contractor, architect, developer, or commercial client — our estimating team is ready to help."
+  },
+  "details": {
+    "title": "Contact Details",
+    "address": "ADDRESS",
+    "phone": "PHONE",
+    "email": "EMAIL",
+    "hours": "HOURS",
+    "hoursValue": "Monday – Friday\n8:00 am – 5:00 pm ET",
+    "social": "SOCIAL",
+    "socialOpens": "{{network}} (opens in new tab)",
+    "mapTitle": "Sandha Woodworks location map",
+    "bidTitle": "For GCs, Architects & Developers",
+    "bidBody": "Add us to your bid list — we'd love to quote your next project."
+  },
+  "form": {
+    "tabs": {
+      "quote": "Request a Quote",
+      "inquiry": "General Inquiry"
+    },
+    "fields": {
+      "fullName": "Full Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "countryDial": "Country dial code",
+      "projectName": "Project Name",
+      "projectLocation": "Project Location",
+      "sector": "Sector",
+      "sectorPlaceholder": "Select a sector",
+      "timeline": "Timeline",
+      "budget": "Budget (Optional)",
+      "message": "Message",
+      "files": "Project Drawings / Files",
+      "filesHint": "(PDF, DWG, images — up to 10 MB each)"
+    },
+    "placeholders": {
+      "fullName": "Jane Doe",
+      "email": "jane@company.com",
+      "phone": "555 123 4567",
+      "phoneDigits": "5551234567",
+      "company": "Company Inc.",
+      "inquiryMessage": "How can we help?",
+      "budget": "e.g. $50,000–$100,000",
+      "quoteMessage": "Scope, sector, key milestones, or anything else we should know."
+    },
+    "upload": {
+      "click": "Click to upload drawings",
+      "hint": "Attach shop drawings, RFPs, spec sheets, or reference images",
+      "removeAll": "Remove all files"
+    },
+    "actions": {
+      "sendMessage": "Send Message",
+      "sending": "Sending…",
+      "submitRequest": "Submit Request",
+      "submitting": "Submitting…",
+      "submitAnother": "Submit another request"
+    },
+    "success": {
+      "title": "Thank you for your request.",
+      "body": "Our estimating team will follow up within one business day."
+    },
+    "uploadTip": {
+      "title": "Having trouble uploading drawings?",
+      "bodyBefore": "Large or multi-file drawing sets can occasionally get stuck in the uploader. If that happens — or if you'd simply prefer to send them directly — please email your project files to",
+      "bodyAfter": "after submitting this form. Include your project name so our team can match it to your request."
+    },
+    "errors": {
+      "fullNameMin": "Full name must be at least 3 characters",
+      "fullNameMax": "Full name must be 50 characters or fewer",
+      "fullNameRequired": "Full name is required",
+      "emailInvalid": "Enter a valid email address",
+      "phoneRequired": "Phone number is required",
+      "phoneInvalid": "Enter a valid phone number (7–15 digits)",
+      "sectorRequired": "Please select a sector",
+      "timelineInvalid": "Enter a valid date",
+      "timelinePast": "Timeline can't be in the past",
+      "messageRequired": "Message is required",
+      "fileType": "{{name}}: unsupported file type (PDF, DWG or images only)",
+      "fileSize": "{{name}} is larger than 10 MB",
+      "generic": "Something went wrong. Please try again."
+    },
+    "sectors": {
+      "healthcare": "Healthcare",
+      "education": "Education",
+      "retail": "Retail",
+      "hospitality": "Hospitality",
+      "corporate": "Corporate",
+      "multiResidential": "Multi-Residential",
+      "government": "Government",
+      "institutional": "Institutional",
+      "restaurantQsr": "Restaurant / QSR",
+      "pharmacyClinic": "Pharmacy / Clinic",
+      "commercialInteriors": "Commercial Interiors",
+      "other": "Other"
+    },
+    "countries": {
+      "CA": "Canada",
+      "US": "United States",
+      "GB": "United Kingdom",
+      "IN": "India",
+      "AU": "Australia",
+      "AE": "United Arab Emirates",
+      "DE": "Germany",
+      "FR": "France",
+      "MX": "Mexico",
+      "SG": "Singapore"
+    }
+  }
+}

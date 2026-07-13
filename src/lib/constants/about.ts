@@ -123,17 +123,20 @@ export const openPositions = [
   },
 ] as const;
 
-export const contactSectors = [
-  "Healthcare",
-  "Education",
-  "Retail",
-  "Hospitality",
-  "Corporate",
-  "Multi-Residential",
-  "Government",
-  "Institutional",
-  "Restaurant / QSR",
-  "Pharmacy / Clinic",
-  "Commercial Interiors",
-  "Other",
+/** Sector option IDs for the contact form. Labels live in contact.json. */
+export const contactSectorIds = [
+  "healthcare",
+  "education",
+  "retail",
+  "hospitality",
+  "corporate",
+  "multiResidential",
+  "government",
+  "institutional",
+  "restaurantQsr",
+  "pharmacyClinic",
+  "commercialInteriors",
+  "other",
 ] as const;
+
+export type ContactSectorId = (typeof contactSectorIds)[number];
