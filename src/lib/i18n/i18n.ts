@@ -10,6 +10,7 @@ import enServiceDetails from "@/locales/en/serviceDetails.json";
 import enSectors from "@/locales/en/sectors.json";
 import enSectorDetails from "@/locales/en/sectorDetails.json";
 import enPortfolio from "@/locales/en/portfolio.json";
+import enCareers from "@/locales/en/careers.json";
 import frCommon from "@/locales/fr/common.json";
 import frHome from "@/locales/fr/home.json";
 import frAbout from "@/locales/fr/about.json";
@@ -19,6 +20,7 @@ import frServiceDetails from "@/locales/fr/serviceDetails.json";
 import frSectors from "@/locales/fr/sectors.json";
 import frSectorDetails from "@/locales/fr/sectorDetails.json";
 import frPortfolio from "@/locales/fr/portfolio.json";
+import frCareers from "@/locales/fr/careers.json";
 
 export const LANG_STORAGE_KEY = "sandha-lang";
 export const supportedLngs = ["en", "fr"] as const;
@@ -36,6 +38,7 @@ export const resources = {
     sectors: enSectors,
     sectorDetails: enSectorDetails,
     portfolio: enPortfolio,
+    careers: enCareers,
   },
   fr: {
     common: frCommon,
@@ -47,6 +50,7 @@ export const resources = {
     sectors: frSectors,
     sectorDetails: frSectorDetails,
     portfolio: frPortfolio,
+    careers: frCareers,
   },
 } as const;
 
@@ -78,6 +82,7 @@ if (!i18n.isInitialized) {
       "sectors",
       "sectorDetails",
       "portfolio",
+      "careers",
     ],
     interpolation: {
       escapeValue: false,

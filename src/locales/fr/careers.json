@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "title": "Carrières",
+    "description": "Bâtissez une carrière en ébénisterie architecturale canadienne chez Sandha Woodworks."
+  },
+  "hero": {
+    "eyebrow": "Carrières",
+    "title": "Bâtissez une carrière en ébénisterie architecturale canadienne.",
+    "description": "Nous développons nos équipes d'atelier, de bureau et d'installation. Si vous êtes fier de votre métier et cherchez un emploi durable au sein d'une équipe solidaire, nous serions ravis de vous rencontrer."
+  },
+  "president": {
+    "roleLabel": "Président",
+    "name": "Chamkaur Sandha",
+    "photoAlt": "Chamkaur Sandha, président de Sandha Woodworks",
+    "messageLabel": "Message de notre président",
+    "title": "Joignez-vous à une équipe fière de chaque projet.",
+    "p1": "Chez Sandha Woodworks, nous croyons qu'une ébénisterie d'exception commence par un engagement envers la qualité et une compréhension approfondie de la vision de nos clients. Du concept à la livraison, notre équipe apporte précision, savoir-faire et dévouement à chaque projet.",
+    "p2": "Nous sommes fiers de servir des partenaires commerciaux, institutionnels et de détail partout en Amérique du Nord avec des solutions durables — et nous recherchons toujours des gens de métier et des membres d'équipe de bureau qui partagent ces valeurs."
+  },
+  "culture": {
+    "label": "Notre culture",
+    "title": "Travail qualifié, personnes respectées, carrières durables.",
+    "items": {
+      "competitivePay": {
+        "title": "Rémunération compétitive",
+        "description": "Des salaires de métier qui reflètent l'expérience et les compétences."
+      },
+      "modernEquipment": {
+        "title": "Équipement moderne",
+        "description": "CNC multi-axes, finition dédiée, flux de travail d'ingénierie."
+      },
+      "teamEnvironment": {
+        "title": "Esprit d'équipe",
+        "description": "Un atelier et un bureau solidaires."
+      },
+      "growthPath": {
+        "title": "Parcours de croissance",
+        "description": "Formation et possibilités d'avancement."
+      }
+    }
+  },
+  "positions": {
+    "label": "Postes ouverts",
+    "title": "Nous embauchons actuellement.",
+    "description": "Soumettez votre candidature ci-dessous si vous êtes prêt à contribuer à une ébénisterie architecturale de haute qualité pour des clients partout au Canada.",
+    "items": {
+      "project-manager": {
+        "title": "Chargé de projet — Ébénisterie",
+        "meta": "Temps plein · Permanent · Brantford, ON N3R 7K1",
+        "description": "Dirigez des projets d'ébénisterie architecturale de l'attribution à l'installation — en coordonnant l'ingénierie, la production, les sous-traitants et les équipes de chantier pour livrer selon la portée, le budget et l'échéancier."
+      },
+      "microvellum-engineer": {
+        "title": "Ingénieur Microvellum / Spécialiste CAO en ébénisterie",
+        "meta": "Temps plein · Permanent · Brantford, ON",
+        "description": "Concevez l'ébénisterie architecturale dans Microvellum — des dessins d'atelier à la sortie prête pour CNC — pour des projets commerciaux, institutionnels et de détail haut de gamme."
+      },
+      "cabinet-maker": {
+        "title": "Ébéniste",
+        "meta": "Temps plein · Permanent · Brantford, ON",
+        "description": "Fabriquez des armoires et du casier architectural haut de gamme dans notre atelier de Brantford, à partir de dessins d'atelier Microvellum et de composants découpés au CNC."
+      },
+      "carpenter": {
+        "title": "Charpentier",
+        "meta": "Temps plein · Permanent · Brantford, ON (avec déplacements sur les chantiers)",
+        "description": "Installez l'ébénisterie architecturale et le casier sur des chantiers commerciaux, institutionnels et de détail partout en Ontario."
+      },
+      "senior-wood-finisher": {
+        "title": "Finisseur de bois senior / Spécialiste cabine de pulvérisation",
+        "meta": "Temps plein · Permanent · Brantford, ON",
+        "description": "Appliquez des finis et revêtements bois haut de gamme en cabine de pulvérisation dédiée pour l'ébénisterie architecturale, les armoires sur mesure et le casier commercial."
+      }
+    }
+  },
+  "cta": {
+    "title": "Intéressé à joindre notre équipe?",
+    "description": "Envoyez-nous votre parcours et votre expérience via le formulaire de candidature ci-dessus.",
+    "primary": "Contacter les RH"
+  },
+  "form": {
+    "eyebrow": "Postuler maintenant",
+    "title": "Candidature",
+    "intro": "Partagez votre parcours et téléversez votre curriculum vitae. Les champs obligatoires sont marqués d'un astérisque.",
+    "selectOne": "Sélectionnez",
+    "fields": {
+      "fullName": "Nom complet",
+      "email": "Adresse courriel",
+      "phone": "Numéro de téléphone",
+      "location": "Ville / province",
+      "position": "Poste visé",
+      "experience": "Années d'expérience",
+      "currentRole": "Poste actuel ou le plus récent",
+      "currentCompany": "Entreprise actuelle ou la plus récente",
+      "linkedin": "Profil LinkedIn",
+      "portfolio": "Portfolio / site Web",
+      "workAuthorization": "Autorisation de travail",
+      "startDate": "Date de début souhaitée",
+      "coverNote": "Lettre de motivation",
+      "resume": "Curriculum vitae",
+      "supportingDocuments": "Documents justificatifs"
+    },
+    "placeholders": {
+      "linkedin": "https://linkedin.com/in/…",
+      "portfolio": "https://…",
+      "coverNote": "Parlez-nous un peu de vous et de pourquoi vous aimeriez joindre Sandha Woodworks."
+    },
+    "upload": {
+      "resume": "Téléverser votre CV",
+      "resumeHint": "PDF, DOC ou DOCX jusqu'à 10 Mo",
+      "docs": "Ajouter un portfolio ou des certificats",
+      "docsHint": "Documents ou échantillons de travail facultatifs",
+      "remove": "Retirer"
+    },
+    "consent": "En soumettant ce formulaire, vous consentez à ce que notre équipe examine votre candidature. Nous communiquerons avec vous si votre expérience correspond à un poste ouvert.",
+    "actions": {
+      "submit": "Soumettre la candidature",
+      "submitting": "Envoi…",
+      "submitAnother": "Soumettre une autre candidature"
+    },
+    "success": {
+      "title": "Candidature reçue",
+      "body": "Merci d'avoir postulé. Notre équipe examinera vos renseignements et communiquera avec vous si votre profil correspond à un poste ouvert."
+    },
+    "experience": {
+      "0-1": "0–1 an",
+      "1-3": "1–3 ans",
+      "3-5": "3–5 ans",
+      "5plus": "5 ans et plus"
+    },
+    "authorization": {
+      "citizen": "Citoyen canadien",
+      "pr": "Résident permanent",
+      "workPermit": "Titulaire d'un permis de travail",
+      "sponsorship": "Ouvert au parrainage",
+      "preferNot": "Préfère ne pas répondre"
+    },
+    "errors": {
+      "fullNameRequired": "Le nom complet est requis",
+      "emailInvalid": "Entrez une adresse courriel valide",
+      "phoneInvalid": "Entrez un numéro de téléphone valide",
+      "locationRequired": "La ville / province est requise",
+      "positionRequired": "Veuillez sélectionner un poste",
+      "experienceRequired": "Veuillez sélectionner votre expérience",
+      "currentRoleRequired": "Le poste actuel ou le plus récent est requis",
+      "urlInvalid": "Entrez une URL valide",
+      "authorizationRequired": "Veuillez sélectionner votre autorisation de travail",
+      "resumeRequired": "Le curriculum vitae est requis",
+      "resumeType": "Le CV doit être un PDF, DOC ou DOCX",
+      "resumeSize": "Le CV dépasse 10 Mo",
+      "docType": "{{name}} : type de fichier non pris en charge",
+      "docSize": "{{name}} dépasse 10 Mo",
+      "generic": "Une erreur s'est produite. Veuillez réessayer."
+    }
+  }
+}

@@ -71,57 +71,22 @@ export const teamMembers = [
   },
 ] as const;
 
-export const careersCulture = [
-  {
-    title: "Competitive Pay",
-    description: "Trade wages that reflect experience and skill.",
-  },
-  {
-    title: "Modern Equipment",
-    description: "Multi-axis CNC, dedicated finishing, engineered workflow.",
-  },
-  {
-    title: "Team Environment",
-    description: "A supportive shop floor and office.",
-  },
-  {
-    title: "Growth Path",
-    description: "Training and advancement opportunities.",
-  },
+export const careersCultureIds = [
+  "competitivePay",
+  "modernEquipment",
+  "teamEnvironment",
+  "growthPath",
 ] as const;
 
-export const openPositions = [
-  {
-    title: "Project Manager — Millwork",
-    meta: "Full-time · Permanent · Brantford, ON N3R 7K1",
-    description:
-      "Lead architectural millwork projects from award through installation — coordinating engineering, production, subcontractors, and site teams to deliver on scope, budget, and schedule.",
-  },
-  {
-    title: "Microvellum Engineer / Millwork CAD Specialist",
-    meta: "Full-time · Permanent · Brantford, ON",
-    description:
-      "Engineer architectural millwork in Microvellum — from shop drawings to CNC-ready output — for high-end commercial, institutional, and retail projects.",
-  },
-  {
-    title: "Cabinet Maker",
-    meta: "Full-time · Permanent · Brantford, ON",
-    description:
-      "Build high-end architectural cabinetry and casework in our Brantford shop, working from Microvellum shop drawings and CNC-cut components.",
-  },
-  {
-    title: "Carpenter",
-    meta: "Full-time · Permanent · Brantford, ON (with travel to job sites)",
-    description:
-      "Install architectural millwork and casework on commercial, institutional, and retail sites across Ontario.",
-  },
-  {
-    title: "Senior Wood Finisher / Spray Booth Specialist",
-    meta: "Full-time · Permanent · Brantford, ON",
-    description:
-      "Apply high-end wood finishes and coatings in a dedicated spray booth environment for architectural millwork, custom cabinetry, and commercial casework.",
-  },
+export const openPositionIds = [
+  "project-manager",
+  "microvellum-engineer",
+  "cabinet-maker",
+  "carpenter",
+  "senior-wood-finisher",
 ] as const;
+
+export type OpenPositionId = (typeof openPositionIds)[number];
 
 /** Sector option IDs for the contact form. Labels live in contact.json. */
 export const contactSectorIds = [
