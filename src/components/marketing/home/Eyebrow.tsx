@@ -22,7 +22,7 @@ export function Eyebrow({ children, className, variant = "brand", id }: EyebrowP
     <p
       id={id}
       className={cn(
-        "text-[10px] font-semibold uppercase tracking-[0.35em] sm:tracking-[0.45em]",
+        "text-xs font-semibold tracking-wide sm:text-sm",
         variantClasses[variant],
         className,
       )}

@@ -84,7 +84,7 @@ export function OrderSummary({
           type="button"
           onClick={onCta}
           disabled={ctaDisabled || items.length === 0}
-          className="flex w-full items-center justify-center gap-2 rounded-full bg-foreground py-3 font-semibold text-cream transition hover:bg-brand-red disabled:pointer-events-none disabled:opacity-40"
+          className="flex w-full items-center justify-center gap-2 rounded-full bg-foreground py-3 font-semibold text-cream transition hover:bg-warm-black disabled:pointer-events-none disabled:opacity-40"
         >
           {ctaLabel}
           <ChevronRight className="h-4 w-4" />

@@ -34,6 +34,7 @@ export const navLinks = [
   { href: "/services", label: "Services" },
   { href: "/sectors", label: "Sectors", hasDropdown: true },
   { href: "/portfolio", label: "Portfolio" },
+  { href: "/store", label: "Store" },
   { href: "/linkedin", label: "Insight" },
   { href: "/careers", label: "Careers" },
   { href: "/contact", label: "Contact" },

@@ -22,19 +22,19 @@ export function StoreNav() {
   return (
     <div className="border-b border-border bg-background/95 backdrop-blur-sm">
       {/* Top bar: search + cart + wishlist */}
-      <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 sm:px-6 lg:px-8">
+      <div className="mx-auto flex w-full max-w-7xl items-center gap-3 px-[10px] py-3 sm:gap-4">
         <Link
           href="/store"
-          className="font-display text-sm font-semibold uppercase tracking-wider text-foreground hover:text-brand-red transition-colors shrink-0"
+          className="shrink-0 font-display text-sm font-semibold uppercase tracking-wider text-foreground transition-colors hover:text-brand"
         >
           Store
         </Link>
 
-        <div className="flex-1">
+        <div className="min-w-0 flex-1">
           <SearchBar />
         </div>
 
-        <div className="flex items-center gap-2 shrink-0">
+        <div className="flex shrink-0 items-center gap-1 sm:gap-2">
           <Link
             href="/store/wishlist"
             aria-label={`Wishlist (${wishlistCount} items)`}
@@ -42,7 +42,7 @@ export function StoreNav() {
           >
             <Heart className="h-5 w-5" />
             {wishlistCount > 0 && (
-              <span className="absolute -right-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-brand-red text-[9px] font-bold text-white">
+              <span className="absolute -right-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-foreground text-[9px] font-bold text-cream">
                 {wishlistCount > 9 ? "9+" : wishlistCount}
               </span>
             )}
@@ -55,7 +55,7 @@ export function StoreNav() {
           >
             <ShoppingCart className="h-5 w-5" />
             {cartCount > 0 && (
-              <span className="absolute -right-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-brand-red text-[9px] font-bold text-white">
+              <span className="absolute -right-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-foreground text-[9px] font-bold text-cream">
                 {cartCount > 9 ? "9+" : cartCount}
               </span>
             )}
@@ -63,12 +63,12 @@ export function StoreNav() {
         </div>
       </div>
 
-      {/* Category nav */}
+      {/* Category nav — horizontal scroll without expanding page gutters */}
       <nav
         aria-label="Product categories"
-        className="mx-auto max-w-7xl overflow-x-auto px-4 pb-3 sm:px-6 lg:px-8"
+        className="mx-auto w-full max-w-7xl overflow-x-auto overscroll-x-contain px-[10px] pb-3"
       >
-        <ul className="flex gap-1 whitespace-nowrap">
+        <ul className="flex w-max min-w-full gap-1 whitespace-nowrap">
           <li>
             <Link
               href="/store"
@@ -100,7 +100,7 @@ export function StoreNav() {
           <li>
             <Link
               href="/store/categories"
-              className="inline-flex rounded-full px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-brand-red transition-all hover:bg-brand-red/10"
+              className="inline-flex rounded-full px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-foreground transition-all hover:bg-muted"
             >
               All Categories →
             </Link>

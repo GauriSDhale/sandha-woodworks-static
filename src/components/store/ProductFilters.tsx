@@ -153,7 +153,7 @@ export function ProductFilters({ className }: { className?: string }) {
       <button
         type="button"
         onClick={() => setMobileOpen(true)}
-        className="flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium transition hover:bg-muted lg:hidden"
+        className="flex w-fit items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium transition hover:bg-muted lg:hidden"
       >
         <SlidersHorizontal className="h-4 w-4" />
         Filters

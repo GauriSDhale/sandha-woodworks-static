@@ -139,7 +139,7 @@ export function ProductCard({ product, onQuickView, priority }: ProductCardProps
               "inline-flex items-center gap-1.5 rounded-full px-3.5 py-2 text-xs font-semibold transition-all",
               adding
                 ? "bg-emerald-600 text-white"
-                : "bg-foreground text-cream hover:bg-brand-red",
+                : "bg-foreground text-cream hover:bg-warm-black",
             )}
           >
             <ShoppingCart className="h-3.5 w-3.5" />

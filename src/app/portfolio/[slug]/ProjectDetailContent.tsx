@@ -216,7 +216,7 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
           </div>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-brand px-8 py-3.5 text-sm font-semibold text-brand-foreground transition hover:bg-brand-light"
+            className="inline-flex items-center gap-2 rounded-full bg-foreground px-8 py-3.5 text-sm font-semibold text-cream transition hover:bg-warm-black"
           >
             Request a Quote
             <ArrowRight className="h-4 w-4" />

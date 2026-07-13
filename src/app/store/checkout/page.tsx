@@ -131,7 +131,7 @@ function ShippingStep() {
         <InputField label="Postal Code" required placeholder="K1A 0A1" error={errors.postalCode?.message} {...register("postalCode")} />
         <InputField label="Phone" required placeholder="+1 226 381 0023" error={errors.phone?.message} {...register("phone")} />
       </div>
-      <button type="submit" className="w-full rounded-full bg-foreground py-3 font-semibold text-cream transition hover:bg-brand-red">
+      <button type="submit" className="w-full rounded-full bg-foreground py-3 font-semibold text-cream transition hover:bg-warm-black">
         Continue to Delivery →
       </button>
     </form>
@@ -178,7 +178,7 @@ function DeliveryStep() {
           type="button"
           disabled={!checkout.deliveryMethod}
           onClick={() => dispatch(nextStep())}
-          className="flex-1 rounded-full bg-foreground py-3 font-semibold text-cream transition hover:bg-brand-red disabled:opacity-40 disabled:pointer-events-none"
+          className="flex-1 rounded-full bg-foreground py-3 font-semibold text-cream transition hover:bg-warm-black disabled:opacity-40 disabled:pointer-events-none"
         >
           Continue to Payment →
         </button>
@@ -213,7 +213,7 @@ function PaymentStep() {
           type="button"
           disabled={!checkout.paymentMethod}
           onClick={() => dispatch(nextStep())}
-          className="flex-1 rounded-full bg-foreground py-3 font-semibold text-cream transition hover:bg-brand-red disabled:opacity-40 disabled:pointer-events-none"
+          className="flex-1 rounded-full bg-foreground py-3 font-semibold text-cream transition hover:bg-warm-black disabled:opacity-40 disabled:pointer-events-none"
         >
           Review Order →
         </button>
@@ -329,7 +329,7 @@ function ReviewStep() {
           type="button"
           onClick={handlePlaceOrder}
           disabled={checkout.isProcessing}
-          className="flex-1 rounded-full bg-brand-red py-3 font-bold text-white transition hover:bg-red-600 disabled:opacity-50"
+          className="flex-1 rounded-full bg-foreground py-3 font-bold text-cream transition hover:bg-warm-black disabled:opacity-50"
         >
           {checkout.isProcessing ? "Processing…" : `Pay ${formatPrice(total)}`}
         </button>
@@ -361,7 +361,7 @@ export default function CheckoutPage() {
     return (
       <div className="flex flex-col items-center justify-center gap-4 py-24 text-center">
         <p className="font-display text-xl font-semibold">Your cart is empty</p>
-        <a href="/store" className="rounded-full bg-foreground px-5 py-2 text-sm font-semibold text-cream transition hover:bg-brand-red">
+        <a href="/store" className="rounded-full bg-foreground px-5 py-2 text-sm font-semibold text-cream transition hover:bg-warm-black">
           Browse Products
         </a>
       </div>
@@ -395,10 +395,7 @@ export default function CheckoutPage() {
         </div>
 
         {/* Order summary sidebar */}
-        <OrderSummary
-          deliveryMethodId={checkout.deliveryMethod?.id}
-          showCoupon={checkout.step === 1}
-        />
+        <OrderSummary deliveryMethodId={checkout.deliveryMethod?.id} />
       </div>
     </div>
   );

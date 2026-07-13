@@ -12,9 +12,7 @@ export const brandMedia = {
   favicon: media(
     "/__l5e/assets-v1/0a726b06-52f9-4f54-8206-e2fabddcc166/sw-favicon.png",
   ),
-  canadaFlag: media(
-    "/__l5e/assets-v1/66032763-d9ef-4fab-9e18-e80afafac860/canada-flag.png",
-  ),
+  canadaFlag: "/assets/brand/canada-flag.png",
 } as const;
 
 export const heroMedia = {
@@ -33,6 +31,7 @@ export const pageMedia = {
   sectorsHero: media("/assets/corp-inst-hero.jpg"),
   careersHero: media("/assets/about-hero-workshop-C9Oup6mp.jpg"),
   contactHero: media("/assets/corp-inst-hero.jpg"),
+  storeHero: "/assets/retail-millwork-hero.jpg",
 } as const;
 
 /** Home sector cards — same Unsplash URLs used on sandhawoodworks.ca */

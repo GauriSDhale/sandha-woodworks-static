@@ -28,7 +28,7 @@ export function SectionContainer({
 }: SectionContainerProps) {
   return (
     <Component id={id} className={cn(paddingClasses[padding], className)}>
-      <div className={cn("container-tight", innerClassName)}>{children}</div>
+      <div className={cn("container-full", innerClassName)}>{children}</div>
     </Component>
   );
 }

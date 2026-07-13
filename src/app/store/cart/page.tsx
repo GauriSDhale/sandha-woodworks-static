@@ -39,7 +39,7 @@ export default function CartPage() {
           </p>
           <Link
             href="/store"
-            className="mt-2 inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 font-semibold text-cream transition hover:bg-brand-red"
+            className="mt-2 inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 font-semibold text-cream transition hover:bg-warm-black"
           >
             Browse Products
             <ArrowRight className="h-4 w-4" />

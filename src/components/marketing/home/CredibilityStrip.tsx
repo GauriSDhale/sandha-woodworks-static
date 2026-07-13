@@ -77,7 +77,7 @@ export function CredibilityStrip() {
       className="border-y border-border/60 bg-cream py-10 sm:py-12"
       aria-labelledby="credibility-heading"
     >
-      <div className="container-tight">
+      <div className="container-full">
         <div
           className={cn(
             "mx-auto max-w-3xl text-center",
@@ -85,7 +85,7 @@ export function CredibilityStrip() {
             inView || reducedMotion ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
           )}
         >
-          <Eyebrow id="credibility-heading" variant="brand" className="tracking-[0.45em]">
+          <Eyebrow id="credibility-heading" variant="brand">
             {t.credibility.eyebrow}
           </Eyebrow>
           <p className="font-display mt-5 text-xl font-semibold text-warm-black sm:text-2xl">

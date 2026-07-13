@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import Script from "next/script";
-import { InsightsCarousel } from "@/components/marketing/InsightsCarousel";
-import { LinkedInPostsColumns } from "@/components/marketing/LinkedInPostsColumns";
+import { SociableKitLinkedInFeed } from "@/components/marketing/SociableKitLinkedInFeed";
 
 export const metadata: Metadata = {
   title: "Insight",
@@ -65,7 +63,7 @@ export default function InsightPage() {
               href="https://www.linkedin.com/company/sandha-woodworks-service-ltd/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-[#0A66C2] px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-white transition-transform hover:scale-[1.02]"
+              className="inline-flex items-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-cream transition-transform hover:scale-[1.02] hover:bg-warm-black"
             >
               {linkedInIcon}
               Follow on LinkedIn
@@ -74,16 +72,13 @@ export default function InsightPage() {
               href="https://www.linkedin.com/company/sandha-woodworks-service-ltd/posts/?feedView=all"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-cream/40 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-cream transition-colors hover:bg-cream hover:text-[#111111]"
+              className="inline-flex items-center justify-center rounded-full border border-cream/40 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-cream transition-colors hover:bg-cream hover:text-foreground"
             >
               View Latest Posts
             </a>
           </div>
         </div>
       </section>
-
-      {/* ── Insights & Articles Carousel ── */}
-      <InsightsCarousel />
 
       {/* ── Straight from LinkedIn — Header + Embed ── */}
       <section className="py-16 bg-muted sm:py-24">
@@ -106,13 +101,8 @@ export default function InsightPage() {
 
         {/* SociableKIT LinkedIn Page Posts Widget */}
         <div className="mt-14 w-full sm:mx-auto sm:max-w-7xl sm:px-6">
-          <div className="sk-ww-linkedin-page-post" data-embed-id="25695497" />
-          <LinkedInPostsColumns columns={2} posts={8} />
+          <SociableKitLinkedInFeed columns={2} posts={8} />
         </div>
-        <Script
-          src="https://widgets.sociablekit.com/linkedin-page-posts/widget.js"
-          strategy="lazyOnload"
-        />
       </section>
 
       {/* ── Stay in the Loop CTA ── */}
@@ -128,7 +118,7 @@ export default function InsightPage() {
             href="https://www.linkedin.com/company/sandha-woodworks-service-ltd/"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-10 inline-flex items-center gap-2 rounded-full bg-[#0A66C2] px-8 py-4 text-xs font-semibold uppercase tracking-[0.22em] text-white transition-colors hover:bg-[#084E96]"
+            className="mt-10 inline-flex items-center gap-2 rounded-full bg-foreground px-8 py-4 text-xs font-semibold uppercase tracking-[0.22em] text-cream transition-colors hover:bg-warm-black"
           >
             {linkedInIcon}
             Follow Sandha Woodworks
@@ -154,7 +144,7 @@ export default function InsightPage() {
                 key={item.number}
                 className="flex gap-4 rounded-2xl border border-border bg-background p-5 transition-colors hover:border-[#0A66C2]/40"
               >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0A66C2]/10 text-xs font-semibold text-[#0A66C2]">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand/10 text-xs font-semibold text-brand">
                   {item.number}
                 </div>
                 <div>

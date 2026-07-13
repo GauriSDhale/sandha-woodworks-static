@@ -46,7 +46,7 @@ export function HeroIntroSection() {
       <div className="pointer-events-none absolute inset-x-0 -top-16 h-16 bg-gradient-to-b from-transparent to-warm-black sm:-top-24 sm:h-24" />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cream/20 to-transparent" />
 
-      <div className="container-tight pb-20 pt-8 sm:pb-28 sm:pt-12">
+      <div className="container-full pb-20 pt-8 sm:pb-28 sm:pt-12">
         <HeroReveal delayMs={80} reducedMotion={reducedMotion}>
           <div className="flex items-start justify-between text-[10px] font-semibold uppercase tracking-[0.4em] text-cream/60">
             <span>{t.home.hero.tagline}</span>
@@ -74,7 +74,7 @@ export function HeroIntroSection() {
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:flex-col xl:flex-row">
               <Link
                 href="/contact"
-                className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-warm-black transition-all duration-300 hover:scale-[1.02] hover:bg-brand-light active:scale-[0.98] sm:w-auto"
+                className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-cream transition-all duration-300 hover:scale-[1.02] hover:bg-warm-black active:scale-[0.98] sm:w-auto"
               >
                 {t.home.hero.requestQuote}
                 <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />

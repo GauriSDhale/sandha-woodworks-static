@@ -19,18 +19,17 @@ const slides: InsightSlide[] = [
     eyebrow: "Featured insight",
     meta: "LinkedIn article · Mar 31, 2026",
     href: "/linkedin/why-awmac-quietly-becoming-backbone-trust",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4E12AQENSeB19t28aQ/article-cover_image-shrink_720_1280/B4EZ1FUtPSIsAI-/0/1774984553327?e=2147483647&v=beta&t=H4exUij-aET8rruYxDI3R80MLNY9hAx4PaZ9erOSN5Y",
+    image: "/assets/insights/awmac-backbone.png",
   },
   {
-    title: "Division 6 at the Highest Standard: Engineering Architectural Woodwork for a New Era of Construction",
+    title:
+      "Division 6 at the Highest Standard: Engineering Architectural Woodwork for a New Era of Construction",
     description:
       "Why architectural woodwork is no longer a finishing trade — but a strategic construction discipline built on engineering, precision and orchestration.",
     eyebrow: "Featured insight",
     meta: "LinkedIn article · Mar 15, 2026",
     href: "/linkedin/division-6-highest-standard-engineering-architectural",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4E12AQGfIBOZTIcwuA/article-cover_image-shrink_720_1280/B4EZzu85.gJ4AI-/0/1773535469941?e=2147483647&v=beta&t=U3CUNOB60lxY8MKrZhAizQscSdGRoFL988U1XjMkFwM",
+    image: "/assets/insights/division-6.jpg",
   },
   {
     title: "Canada's Interior Construction Reset",
@@ -39,8 +38,7 @@ const slides: InsightSlide[] = [
     eyebrow: "Featured insight",
     meta: "LinkedIn article · Mar 20, 2026",
     href: "/linkedin/canadas-interior-construction-reset",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4E12AQErRY8w1XDixg/article-cover_image-shrink_720_1280/B4EZ0DTtZ2JEAI-/0/1773876998204?e=2147483647&v=beta&t=rhd2k0NbgndYcI8t_LAHmD9kz-X5ZbjBGkewg8ewOX8",
+    image: "/assets/insights/interior-construction-reset.png",
   },
 ];
 
@@ -79,7 +77,7 @@ export function InsightsCarousel() {
             onClick={() =>
               setActiveIndex((current) => (current - 1 + slides.length) % slides.length)
             }
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-cream/20 text-lg text-cream transition-colors hover:bg-cream hover:text-[#151515]"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border text-lg text-foreground transition-colors hover:bg-foreground hover:text-cream"
             aria-label="Show previous insight"
           >
             ←
@@ -87,7 +85,7 @@ export function InsightsCarousel() {
           <button
             type="button"
             onClick={() => setActiveIndex((current) => (current + 1) % slides.length)}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-cream/20 text-lg text-cream transition-colors hover:bg-cream hover:text-[#151515]"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border text-lg text-foreground transition-colors hover:bg-foreground hover:text-cream"
             aria-label="Show next insight"
           >
             →
@@ -96,12 +94,14 @@ export function InsightsCarousel() {
       </div>
 
       <div className="mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="overflow-hidden rounded-4xl border border-white/10 bg-linear-to-br from-[#1b1b1b] via-[#111111] to-[#0d0d0d] p-4 sm:p-6 lg:p-8 w-full">
-          <div className="overflow-hidden rounded-3xl border border-white/10 bg-cream/5 w-full">
+        <div className="w-full overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-[#1b1b1b] via-[#111111] to-[#0d0d0d] p-4 sm:rounded-4xl sm:p-6 lg:p-8">
+          <div className="aspect-[16/9] w-full overflow-hidden rounded-2xl border border-white/10 bg-black sm:rounded-3xl">
             <img
               src={currentSlide.image}
               alt={currentSlide.title}
-              className="h-64 w-full object-cover sm:h-80 lg:h-96"
+              width={1280}
+              height={720}
+              className="h-full w-full object-contain object-center"
             />
           </div>
           <div className="mt-6 flex flex-wrap items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.3em] text-[#4DA3E8]">
@@ -138,8 +138,6 @@ export function InsightsCarousel() {
             </div>
           </div>
         </div>
-
-        {/* side list removed — carousel now uses full width */}
       </div>
     </section>
   );

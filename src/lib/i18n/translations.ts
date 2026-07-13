@@ -2,11 +2,16 @@ export type Lang = "en" | "fr";
 
 export const translations = {
   en: {
+    intro: {
+      tagline: "Architectural Millwork · Canada",
+      loading: "Crafting your experience",
+    },
     nav: {
       about: "About",
       services: "Services",
       sectors: "Sectors",
       portfolio: "Portfolio",
+      store: "Store",
       insight: "Insight",
       careers: "Careers",
       contact: "Contact",
@@ -53,9 +58,9 @@ export const translations = {
       },
       trustedPartners: {
         eyebrow: "Trusted Partners",
-        title: "Trusted by Canada's Leading Builders, Institutions & Brands",
+        title: "Trusted by Canada's leading brands",
         description:
-          "For over a decade, Sandha Woodworks has proudly contributed to commercial, institutional, healthcare, hospitality, retail and workplace projects across Canada through direct clients and trusted construction partners.",
+          "Over a decade of commercial millwork across Canada — with direct clients and construction partners.",
         proof: ["500+ projects", "100+ clients", "12 sectors"],
         partnerCount: "{count} partners",
         disclaimer:
@@ -66,6 +71,30 @@ export const translations = {
           financial: "Financial",
           education: "Education",
         },
+      },
+      whyChooseUs: {
+        eyebrow: "Why Choose Us",
+        title: "Why people choose Sandha",
+        description:
+          "A true turnkey millwork partner — design assist through fabrication and install, kept in-house for speed, quality, and accountability.",
+        cta: "Start a project",
+        reasons: [
+          {
+            title: "Drawings through install",
+            description:
+              "One team owns engineering, manufacturing, and site delivery — fewer handoffs, clearer schedules.",
+          },
+          {
+            title: "Built for commercial scale",
+            description:
+              "40,000 sq. ft. facility with CNC production and premium finishing for multi-site and institutional work.",
+          },
+          {
+            title: "Trusted quality standards",
+            description:
+              "AWMAC GIS member with the certifications GCs and architects expect on demanding projects.",
+          },
+        ],
       },
       manufacturing: {
         eyebrow: "Manufacturing at Scale",
@@ -121,8 +150,8 @@ export const translations = {
         },
       },
       projects: {
-        eyebrow: "Featured Projects",
-        title: "Recent work delivered on time, on scope, on budget.",
+        eyebrow: "Latest Projects",
+        title: "Recent work, delivered.",
         viewProject: "View Project",
         viewAll: "View all past projects",
         categories: {
@@ -200,11 +229,16 @@ export const translations = {
     },
   },
   fr: {
+    intro: {
+      tagline: "Ébénisterie architecturale · Canada",
+      loading: "Préparation de votre expérience",
+    },
     nav: {
       about: "À propos",
       services: "Services",
       sectors: "Secteurs",
       portfolio: "Portfolio",
+      store: "Boutique",
       insight: "Perspectives",
       careers: "Carrières",
       contact: "Contact",
@@ -251,9 +285,9 @@ export const translations = {
       },
       trustedPartners: {
         eyebrow: "Partenaires de confiance",
-        title: "La confiance des principaux constructeurs, institutions et marques du Canada",
+        title: "La confiance des grandes marques canadiennes",
         description:
-          "Depuis plus d'une décennie, Sandha Woodworks contribue fièrement à des projets commerciaux, institutionnels, de santé, d'hôtellerie, de détail et de milieu de travail à travers le Canada, pour des clients directs et des partenaires de construction de confiance.",
+          "Plus d'une décennie d'ébénisterie commerciale au Canada — clients directs et partenaires de construction.",
         proof: ["500+ projets", "100+ clients", "12 secteurs"],
         partnerCount: "{count} partenaires",
         disclaimer:
@@ -264,6 +298,30 @@ export const translations = {
           financial: "Financier",
           education: "Éducation",
         },
+      },
+      whyChooseUs: {
+        eyebrow: "Pourquoi nous choisir",
+        title: "Pourquoi choisir Sandha",
+        description:
+          "Un partenaire clé en main — de l'assistance à la conception à la fabrication et l'installation, le tout en interne pour la vitesse, la qualité et la responsabilité.",
+        cta: "Démarrer un projet",
+        reasons: [
+          {
+            title: "Du dessin à l'installation",
+            description:
+              "Une seule équipe pour l'ingénierie, la fabrication et la livraison sur site — moins de relais, des échéanciers plus clairs.",
+          },
+          {
+            title: "Conçu pour l'échelle commerciale",
+            description:
+              "Usine de 40 000 pi² avec production CNC et finition premium pour projets multi-sites et institutionnels.",
+          },
+          {
+            title: "Normes de qualité reconnues",
+            description:
+              "Membre AWMAC GIS avec les certifications attendues des entrepreneurs et architectes.",
+          },
+        ],
       },
       manufacturing: {
         eyebrow: "Fabrication à grande échelle",
@@ -319,8 +377,8 @@ export const translations = {
         },
       },
       projects: {
-        eyebrow: "Projets en vedette",
-        title: "Réalisations récentes livrées à temps, dans la portée et le budget.",
+        eyebrow: "Derniers projets",
+        title: "Réalisations récentes.",
         viewProject: "Voir le projet",
         viewAll: "Voir tous les projets",
         categories: {

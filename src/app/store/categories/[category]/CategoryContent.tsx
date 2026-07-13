@@ -38,7 +38,7 @@ export function CategoryContent({ categorySlug }: { categorySlug: string }) {
     return (
       <div className="flex flex-col items-center justify-center gap-4 py-20 text-center">
         <p className="font-display text-xl font-semibold">Category not found</p>
-        <Link href="/store/categories" className="rounded-full bg-foreground px-5 py-2 text-sm font-semibold text-cream hover:bg-brand-red">
+        <Link href="/store/categories" className="rounded-full bg-foreground px-5 py-2 text-sm font-semibold text-cream hover:bg-warm-black">
           View All Categories
         </Link>
       </div>
@@ -58,12 +58,21 @@ export function CategoryContent({ categorySlug }: { categorySlug: string }) {
       <motion.div
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
-        className="relative overflow-hidden rounded-3xl bg-surface-dark px-8 py-10 text-cream"
+        className="relative overflow-hidden rounded-3xl px-5 py-12 text-cream sm:px-8 sm:py-14"
       >
-        <h1 className="font-display text-3xl font-bold">{category.label}</h1>
-        <p className="mt-2 max-w-lg text-cream/70 text-sm">{category.description}</p>
-        <p className="mt-3 text-xs text-cream/50">{categoryProducts.length} products</p>
-        <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full bg-brand-red/20 blur-3xl" />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={category.image}
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover"
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/25" />
+        <div className="relative z-10 max-w-xl">
+          <h1 className="font-display text-3xl font-bold sm:text-4xl">{category.label}</h1>
+          <p className="mt-2 max-w-lg text-sm text-cream/80">{category.description}</p>
+          <p className="mt-3 text-xs text-cream/60">{categoryProducts.length} products</p>
+        </div>
       </motion.div>
 
       <div className="flex gap-8">
