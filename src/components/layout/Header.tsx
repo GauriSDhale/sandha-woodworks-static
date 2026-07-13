@@ -113,7 +113,7 @@ export function Header() {
                       <span className="whitespace-nowrap">{getNavLabel(link.href, t)}</span>
                       <ChevronDown className="h-3.5 w-3.5 shrink-0 opacity-70 transition-transform group-hover:rotate-180" />
                     </Link>
-                    <div className="absolute right-0 top-full z-50 hidden w-72 pt-2 group-hover:block">
+                    <div className="absolute left-0 top-full z-50 hidden w-72 pt-2 group-hover:block">
                       <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-xl">
                         <div className="max-h-[70vh] overflow-y-auto py-2">
                           {navSectorLinks.map((sector) => (
