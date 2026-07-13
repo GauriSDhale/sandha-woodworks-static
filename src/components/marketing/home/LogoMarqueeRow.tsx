@@ -59,7 +59,7 @@ function PartnerLogoMark({
       aria-label={logo.name}
       tabIndex={ariaHidden ? -1 : 0}
       className={cn(
-        "group/logo relative inline-flex h-10 items-center justify-center rounded-md px-1 transition-transform duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-cream sm:h-12 md:h-14",
+        "group/logo relative inline-flex h-10 items-center justify-center rounded-md px-1 transition-transform duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white sm:h-12 md:h-14",
         isActive && "scale-105",
       )}
       {...interactionProps}
@@ -89,22 +89,27 @@ export function LogoMarqueeRow({
   className,
 }: LogoMarqueeRowProps) {
   const [activeLogo, setActiveLogo] = useState<PartnerLogo | null>(null);
-  const track = [...logos, ...logos];
+
+  // Enough even copies so half the track is always wider than the viewport; -50% then loops seamlessly.
+  const copies = Math.max(6, Math.ceil(24 / Math.max(logos.length, 1)));
+  const evenCopies = copies % 2 === 0 ? copies : copies + 1;
+  const track = Array.from({ length: evenCopies }, () => logos).flat();
+  const half = track.length / 2;
 
   return (
     <div className={cn("relative", className)}>
       <div className="group/marquee relative overflow-hidden py-2">
         <div
-          className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-cream to-transparent sm:w-28 md:w-40"
+          className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-white to-transparent sm:w-28 md:w-40"
           aria-hidden="true"
         />
         <div
-          className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-cream to-transparent sm:w-28 md:w-40"
+          className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-white to-transparent sm:w-28 md:w-40"
           aria-hidden="true"
         />
         <div
           className={cn(
-            "flex w-max items-center gap-16 px-4 sm:gap-24 md:gap-32",
+            "flex w-max items-center gap-16 px-4 will-change-transform sm:gap-24 md:gap-32",
             reverse ? "animate-marquee-x-reverse" : "animate-marquee-x",
           )}
           style={{ animationDuration: `${durationSec}s` }}
@@ -113,7 +118,7 @@ export function LogoMarqueeRow({
             <PartnerLogoMark
               key={`${logo.file}-${index}`}
               logo={logo}
-              ariaHidden={index >= logos.length}
+              ariaHidden={index >= half}
               isActive={activeLogo?.file === logo.file}
               onActivate={setActiveLogo}
               onDeactivate={() => setActiveLogo(null)}
