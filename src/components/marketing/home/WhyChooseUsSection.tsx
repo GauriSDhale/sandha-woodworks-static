@@ -121,110 +121,112 @@ export function WhyChooseUsSection() {
         </div>
       </div>
 
-      {/* Full-bleed recent projects carousel */}
+      {/* Inset recent projects carousel — side padding like Archmill */}
       {hasSlides && current ? (
-        <div className="relative bg-warm-black">
-          <div className="relative aspect-[16/10] w-full overflow-hidden sm:aspect-[21/9]">
-            {slides.map((slide, index) => (
-              <Link
-                key={slide.slug}
-                href={slide.href}
-                className={cn(
-                  "absolute inset-0 transition-opacity duration-700",
-                  index === activeIndex
-                    ? "pointer-events-auto opacity-100"
-                    : "pointer-events-none opacity-0",
-                )}
-                aria-hidden={index !== activeIndex}
-                tabIndex={index === activeIndex ? 0 : -1}
-              >
-                <img
-                  src={slide.cover}
-                  alt={slide.name}
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
-              </Link>
-            ))}
-
-            {slides.length > 1 ? (
-              <>
-                <button
-                  type="button"
-                  onClick={() =>
-                    setActiveIndex(
-                      (index) => (index - 1 + slides.length) % slides.length,
-                    )
-                  }
-                  className="absolute left-3 top-1/2 z-10 inline-flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-white/25 bg-white/15 text-white backdrop-blur-sm transition hover:bg-white hover:text-warm-black sm:left-6 sm:size-12"
-                  aria-label="Show previous project"
+        <div className="bg-white px-4 pb-16 sm:px-6 sm:pb-20 lg:px-8 lg:pb-24">
+          <div className="relative mx-auto max-w-7xl overflow-hidden rounded-2xl bg-warm-black shadow-sm sm:rounded-3xl">
+            <div className="relative aspect-[16/10] w-full overflow-hidden sm:aspect-[21/9]">
+              {slides.map((slide, index) => (
+                <Link
+                  key={slide.slug}
+                  href={slide.href}
+                  className={cn(
+                    "absolute inset-0 transition-opacity duration-700",
+                    index === activeIndex
+                      ? "pointer-events-auto opacity-100"
+                      : "pointer-events-none opacity-0",
+                  )}
+                  aria-hidden={index !== activeIndex}
+                  tabIndex={index === activeIndex ? 0 : -1}
                 >
-                  <ArrowLeft className="size-4" />
-                </button>
-                <button
-                  type="button"
-                  onClick={() =>
-                    setActiveIndex((index) => (index + 1) % slides.length)
-                  }
-                  className="absolute right-3 top-1/2 z-10 inline-flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-white/25 bg-white/15 text-white backdrop-blur-sm transition hover:bg-white hover:text-warm-black sm:right-6 sm:size-12"
-                  aria-label="Show next project"
-                >
-                  <ArrowRight className="size-4" />
-                </button>
-              </>
-            ) : null}
+                  <img
+                    src={slide.cover}
+                    alt={slide.name}
+                    className="h-full w-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
+                </Link>
+              ))}
 
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 p-5 sm:p-8 lg:p-10">
-              <div className="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-                <div>
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-brand">
-                    {copy.projectsEyebrow}
-                  </p>
-                  <h3 className="font-display mt-2 text-2xl font-semibold text-white sm:text-3xl">
-                    {current.name}
-                  </h3>
-                  <p className="mt-1 text-sm text-white/70">
-                    {current.location} · {current.category}
-                  </p>
-                </div>
-                <div className="pointer-events-auto flex flex-wrap items-center gap-3">
-                  <Link
-                    href={current.href}
-                    className="inline-flex cursor-pointer items-center gap-2 rounded-full bg-white px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.16em] text-warm-black transition hover:bg-brand"
+              {slides.length > 1 ? (
+                <>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setActiveIndex(
+                        (index) => (index - 1 + slides.length) % slides.length,
+                      )
+                    }
+                    className="absolute left-3 top-1/2 z-10 inline-flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-white/25 bg-white/15 text-white backdrop-blur-sm transition hover:bg-white hover:text-warm-black sm:left-5 sm:size-12"
+                    aria-label="Show previous project"
                   >
-                    {copy.viewProject}
-                    <ArrowRight className="size-3.5" />
-                  </Link>
-                  <Link
-                    href="/portfolio"
-                    className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-white/35 px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.16em] text-white transition hover:border-white hover:bg-white/10"
+                    <ArrowLeft className="size-4" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setActiveIndex((index) => (index + 1) % slides.length)
+                    }
+                    className="absolute right-3 top-1/2 z-10 inline-flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-white/25 bg-white/15 text-white backdrop-blur-sm transition hover:bg-white hover:text-warm-black sm:right-5 sm:size-12"
+                    aria-label="Show next project"
                   >
-                    {copy.viewAllProjects}
-                  </Link>
+                    <ArrowRight className="size-4" />
+                  </button>
+                </>
+              ) : null}
+
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 p-5 sm:p-8">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                  <div>
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-brand">
+                      {copy.projectsEyebrow}
+                    </p>
+                    <h3 className="font-display mt-2 text-2xl font-semibold text-white sm:text-3xl">
+                      {current.name}
+                    </h3>
+                    <p className="mt-1 text-sm text-white/70">
+                      {current.location} · {current.category}
+                    </p>
+                  </div>
+                  <div className="pointer-events-auto flex flex-wrap items-center gap-3">
+                    <Link
+                      href={current.href}
+                      className="inline-flex cursor-pointer items-center gap-2 rounded-full bg-white px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.16em] text-warm-black transition hover:bg-brand"
+                    >
+                      {copy.viewProject}
+                      <ArrowRight className="size-3.5" />
+                    </Link>
+                    <Link
+                      href="/portfolio"
+                      className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-white/35 px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.16em] text-white transition hover:border-white hover:bg-white/10"
+                    >
+                      {copy.viewAllProjects}
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          {slides.length > 1 ? (
-            <div className="flex items-center justify-center gap-2 border-t border-white/10 bg-warm-black px-4 py-4">
-              {slides.map((slide, index) => (
-                <button
-                  key={slide.slug}
-                  type="button"
-                  onClick={() => setActiveIndex(index)}
-                  className={cn(
-                    "h-2 cursor-pointer rounded-full transition-all",
-                    index === activeIndex
-                      ? "w-8 bg-brand"
-                      : "w-2 bg-white/25 hover:bg-white/45",
-                  )}
-                  aria-label={`Show ${slide.name}`}
-                  aria-current={index === activeIndex ? "true" : undefined}
-                />
-              ))}
-            </div>
-          ) : null}
+            {slides.length > 1 ? (
+              <div className="flex items-center justify-center gap-2 border-t border-white/10 px-4 py-4">
+                {slides.map((slide, index) => (
+                  <button
+                    key={slide.slug}
+                    type="button"
+                    onClick={() => setActiveIndex(index)}
+                    className={cn(
+                      "h-2 cursor-pointer rounded-full transition-all",
+                      index === activeIndex
+                        ? "w-8 bg-brand"
+                        : "w-2 bg-white/25 hover:bg-white/45",
+                    )}
+                    aria-label={`Show ${slide.name}`}
+                    aria-current={index === activeIndex ? "true" : undefined}
+                  />
+                ))}
+              </div>
+            ) : null}
+          </div>
         </div>
       ) : (
         <div className="border-t border-border bg-muted/40 px-4 py-16 text-center sm:px-6 lg:px-8">
