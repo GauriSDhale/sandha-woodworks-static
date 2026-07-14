@@ -15,6 +15,8 @@ import enInsight from "@/locales/en/insight.json";
 import enLegal from "@/locales/en/legal.json";
 import enStore from "@/locales/en/store.json";
 import enStoreCatalog from "@/locales/en/storeCatalog.json";
+import enCapabilityPdf from "@/locales/en/capabilityPdf.json";
+import enCapabilityPdfDetails from "@/locales/en/capabilityPdfDetails.json";
 import frCommon from "@/locales/fr/common.json";
 import frHome from "@/locales/fr/home.json";
 import frAbout from "@/locales/fr/about.json";
@@ -29,6 +31,8 @@ import frInsight from "@/locales/fr/insight.json";
 import frLegal from "@/locales/fr/legal.json";
 import frStore from "@/locales/fr/store.json";
 import frStoreCatalog from "@/locales/fr/storeCatalog.json";
+import frCapabilityPdf from "@/locales/fr/capabilityPdf.json";
+import frCapabilityPdfDetails from "@/locales/fr/capabilityPdfDetails.json";
 
 export const LANG_STORAGE_KEY = "sandha-lang";
 export const supportedLngs = ["en", "fr"] as const;
@@ -51,6 +55,8 @@ export const resources = {
     legal: enLegal,
     store: enStore,
     storeCatalog: enStoreCatalog,
+    capabilityPdf: enCapabilityPdf,
+    capabilityPdfDetails: enCapabilityPdfDetails,
   },
   fr: {
     common: frCommon,
@@ -67,6 +73,8 @@ export const resources = {
     legal: frLegal,
     store: frStore,
     storeCatalog: frStoreCatalog,
+    capabilityPdf: frCapabilityPdf,
+    capabilityPdfDetails: frCapabilityPdfDetails,
   },
 } as const;
 
@@ -103,6 +111,8 @@ if (!i18n.isInitialized) {
       "legal",
       "store",
       "storeCatalog",
+      "capabilityPdf",
+      "capabilityPdfDetails",
     ],
     interpolation: {
       escapeValue: false,
