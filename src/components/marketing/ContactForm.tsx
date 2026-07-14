@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import { useForm, useWatch, type Resolver } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
+import { email, z } from "zod";
 import { Upload, X } from "lucide-react";
 import { contactSectors } from "@/lib/constants/about";
 import { sendEmail } from "@/lib/email";
@@ -160,39 +160,24 @@ export function ContactForm() {
 
   async function onSubmit(values: ContactFormValues) {
     setSubmitError(null);
+
     const country = countryCodes.find((c) => c.code === values.country);
     const isInquiry = values.formType === "inquiry";
+    const data = {
+      formType: isInquiry ? "General Inquiry" : "Request Quote",
+      fullName: values.fullName,
+      email: values.email,
+      phone: country ? `${country.dial} ${values.phone}` : values.phone,
+      company: values.company || "—",
+      projectName: values.projectName || "—",
+      projectLocation: values.projectLocation || "—",
+      sector: values.sector || "—",
+      timeline: values.timeline || "—",
+      budget: values.budget || "—",
+      message: values.message || "—",
+    };
 
-    const fd = new FormData();
-    fd.append("from_name", "Sandha Woodworks Website");
-    fd.append(
-      "subject",
-      isInquiry
-        ? `New General Inquiry — ${values.fullName}`
-        : `New Quote Request — ${values.fullName}${values.sector ? ` (${values.sector})` : ""}`,
-    );
-    fd.append("replyto", values.email);
-
-    fd.append("Form Type", isInquiry ? "General Inquiry" : "Request a Quote");
-    fd.append("Full Name", values.fullName);
-    fd.append("Email", values.email);
-    fd.append("Phone", `${country?.dial ?? ""} ${values.phone}`.trim());
-    if (values.company) fd.append("Company", values.company);
-    if (values.projectName) fd.append("Project Name", values.projectName);
-    if (values.projectLocation) fd.append("Project Location", values.projectLocation);
-    if (values.sector) fd.append("Sector", values.sector);
-    if (values.timeline) fd.append("Timeline", values.timeline);
-    if (values.budget) fd.append("Budget", values.budget);
-    if (values.message) fd.append("Message", values.message);
-
-    const files = values.files as FileList | undefined;
-    if (files) {
-      Array.from(files).forEach((file, index) =>
-        fd.append(`Attachment ${index + 1}`, file, file.name),
-      );
-    }
-
-    const result = await sendEmail(fd);
+    const result = await sendEmail(data);
     if (result.success) {
       setSent(true);
       reset();

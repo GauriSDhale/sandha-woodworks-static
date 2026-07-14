@@ -148,36 +148,49 @@ export function CareersApplicationForm() {
   async function onSubmit(values: CareersFormValues) {
     setSubmitError(null);
 
-    const fd = new FormData();
-    fd.append("from_name", "Sandha Woodworks Careers");
-    fd.append("subject", `New Career Application — ${values.fullName} (${values.position})`);
-    fd.append("replyto", values.email);
-
-    fd.append("Full Name", values.fullName);
-    fd.append("Email", values.email);
-    fd.append("Phone", values.phone);
-    fd.append("City / Province", values.location);
-    fd.append("Position Applying For", values.position);
-    fd.append("Years of Experience", values.experience);
-    fd.append("Current / Recent Role", values.currentRole);
-    if (values.currentCompany) fd.append("Current / Recent Company", values.currentCompany);
-    if (values.linkedin) fd.append("LinkedIn", values.linkedin);
-    if (values.portfolio) fd.append("Portfolio", values.portfolio);
-    fd.append("Work Authorization", values.workAuthorization);
-    if (values.startDate) fd.append("Preferred Start Date", values.startDate);
-    if (values.coverNote) fd.append("Cover Note", values.coverNote);
-
     const resume = values.resume as FileList | undefined;
-    if (resume?.[0]) fd.append("Resume", resume[0], resume[0].name);
-
     const docs = values.supportingDocuments as FileList | undefined;
-    if (docs) {
-      Array.from(docs).forEach((file, index) =>
-        fd.append(`Supporting Document ${index + 1}`, file, file.name),
-      );
-    }
+    const attachmentNames = [
+      ...(resume?.[0] ? [resume[0].name] : []),
+      ...(docs ? Array.from(docs).map((file) => file.name) : []),
+    ];
 
-    const result = await sendEmail(fd);
+    // EmailJS's free tier can't carry file attachments, so we send the full
+    // application as text and list the files the applicant selected. They can
+    // email the actual documents directly.
+    const details = [
+      `Position Applying For: ${values.position}`,
+      `Years of Experience: ${values.experience}`,
+      `City / Province: ${values.location}`,
+      `Current / Recent Role: ${values.currentRole}`,
+      values.currentCompany && `Current / Recent Company: ${values.currentCompany}`,
+      values.linkedin && `LinkedIn: ${values.linkedin}`,
+      values.portfolio && `Portfolio: ${values.portfolio}`,
+      `Work Authorization: ${values.workAuthorization}`,
+      values.startDate && `Preferred Start Date: ${values.startDate}`,
+      values.coverNote && `\nCover Note:\n${values.coverNote}`,
+      attachmentNames.length
+        ? `\nFiles selected (please email these directly): ${attachmentNames.join(", ")}`
+        : "",
+    ]
+      .filter(Boolean)
+      .join("\n");
+
+    const data = {
+      formType: "Career Application",
+      fullName: values.fullName,
+      email: values.email,
+      phone: values.phone,
+      company: values.currentCompany || "—",
+      projectName: values.position,
+      projectLocation: values.location,
+      sector: "Careers",
+      timeline: values.startDate || "—",
+      budget: "—",
+      message: details,
+    };
+
+    const result = await sendEmail(data);
     if (result.success) {
       setSent(true);
       reset();
