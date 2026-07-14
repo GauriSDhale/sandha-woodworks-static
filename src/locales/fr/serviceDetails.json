@@ -1,0 +1,986 @@
+{
+  "details": {
+    "design-assist": {
+      "overview": "L'équipe d'assistance à la conception de Sandha rejoint l'architecte et l'EG à 50 % du Développement de la conception pour traduire l'intention de l'ébénisterie en un ensemble constructible et verrouillé budgétairement. Nos ingénieurs produisent des dessins d'atelier, des rendus 3D, des maquettes physiques de placage et de finition, ainsi que des avis sur les matériaux à long délai — afin que la conception que vous approuviez soit l'ébénisterie que nous installons, sans surprises à l'attribution.",
+      "bestFor": [
+        "Équipes de conception-construction",
+        "Aménagements à cheminement accéléré",
+        "Ébénisterie architecturale complexe — halls, salles de conseil, murs d'accent",
+        "Ensembles de placage pour l'hôtellerie avec séquence et assortiment du grain",
+        "Intégration d'ébénisterie patrimoniale et culturelle"
+      ],
+      "deliverables": [
+        "Annotations de revue de constructibilité sur l'ensemble d'ébénisterie",
+        "Esquisses préliminaires de dessins d'atelier (plan, élévation, coupe)",
+        "Rendus 3D photoréalistes de l'ébénisterie d'accent",
+        "Panneaux d'échantillons physiques de placage, stratifié et finition",
+        "Fiches techniques de quincaillerie et maquettes de fonctionnement",
+        "Avis sur les matériaux à long délai (flitches, surface solide, métal spécialisé)",
+        "Notes de compatibilité entre l'intention de conception et le devis",
+        "Registre d'impact budgétaire pour chaque décision de conception"
+      ],
+      "faqs": [
+        {
+          "question": "Quand devriez-vous nous faire appel?",
+          "answer": "50 % DD est idéal. Nous pouvons également nous engager au SD pour les ensembles à grande portée (murs d'accent de hall, placage pour l'hôtellerie, intégration patrimoniale)."
+        },
+        {
+          "question": "À quoi ressemble concrètement l'assistance à la conception sur mon projet?",
+          "answer": "Ce sont les livrables présentés dans la galerie : annotations de dessins d'atelier, modèles 3D, échantillons physiques de placage et de finition, et un mémoire écrit de constructibilité. Livré avant l'appel d'offres afin que la conception soit verrouillée, chiffrée et dérisquée."
+        },
+        {
+          "question": "Facturez-vous l'assistance à la conception?",
+          "answer": "Pour les projets sur lesquels nous sommes présélectionnés, l'assistance à la conception jusqu'à l'attribution est gratuite. Pour les études de faisabilité ouvertes, nous proposons un prix forfaitaire crédité lors de l'attribution."
+        }
+      ]
+    },
+    "budget-estimating": {
+      "overview": "Sandha dispose d'un service d'estimation interne dédié qui travaille strictement sur l'ébénisterie architecturale — agencement, murs en placage, dessus en surface solide, portes, ébénisterie d'accent et finitions spécialisées. Chaque soumission est chiffrée par des estimateurs qui ont dirigé des projets d'ébénisterie dans notre propre atelier, donc les budgets reflètent les rendements réels des matériaux, le temps d'usinage réel et les qualités de finition réelles — pas des moyennes génériques au pied carré. Nous retournons des budgets d'ordre de grandeur à partir de dessins schématiques en une semaine, et une tarification ferme par poste à partir des DC en 3 à 5 jours ouvrables.",
+      "bestFor": [
+        "Établissement de budget de préconstruction",
+        "Soumissions d'appel d'offres ferme d'EG",
+        "Études de faisabilité côté propriétaire",
+        "Conversion GMP et gestion des coûts de conception-construction"
+      ],
+      "deliverables": [
+        "Budget d'ébénisterie d'ordre de grandeur à partir des dessins SD",
+        "Soumission ferme par poste à partir des DC avec tarification par qualité",
+        "Registre des hypothèses, inclusions et exclusions",
+        "Variantes, prix unitaires et opportunités d'IV signalés",
+        "Options de substitution de matériaux avec écart de coût"
+      ],
+      "faqs": [
+        {
+          "question": "À quelle vitesse produisez-vous une soumission?",
+          "answer": "Chiffre budgétaire en un jour ouvrable pour la plupart des ensembles ; soumission ferme avec dessins complets en 3 à 5 jours ouvrables."
+        },
+        {
+          "question": "Estimez-vous autre chose que l'ébénisterie?",
+          "answer": "Non — nous estimons uniquement l'ébénisterie architecturale. Cette concentration explique pourquoi nos chiffres tiennent de l'appel d'offres à la clôture."
+        },
+        {
+          "question": "Pouvez-vous chiffrer séparément selon les qualités AWMAC Économique, Personnalisée et Premium?",
+          "answer": "Oui. Chaque poste peut être soumis aux trois qualités afin que l'équipe de conception voie l'impact du choix de qualité sur les coûts."
+        }
+      ]
+    },
+    "value-engineering": {
+      "overview": "Lorsque le chiffre dépasse le budget, nous retournons un registre d'ingénierie de la valeur avec des économies quantifiées par poste — changements de substrat, modifications de chant, rétrogradations de quincaillerie — avec une photo de l'impact sur la conception afin que l'architecte approuve en connaissance de cause.",
+      "bestFor": [
+        "Projets hors budget",
+        "Conversion GMP",
+        "Gestion des coûts de conception-construction"
+      ],
+      "deliverables": [
+        "Registre d'IV poste par poste avec économies en $",
+        "Photos et échantillons de l'impact sur la conception",
+        "Registre des variantes approuvées / rejetées"
+      ],
+      "faqs": [
+        {
+          "question": "Êtes-vous propriétaires de la conception après l'IV?",
+          "answer": "Non — l'architecte approuve chaque décision d'IV avant qu'elle n'atteigne les dessins d'atelier."
+        }
+      ]
+    },
+    "constructability-review": {
+      "overview": "Nous examinons uniquement l'ensemble d'ébénisterie architecturale pour la constructibilité, la conformité au code et les lacunes de coordination avant la mise en appel d'offres. Notre équipe possède une expérience pratique en atelier d'ébénisterie, donc nous détectons les détails que les entrepreneurs généraux manquent — ruptures de séquence de placage aux coins intérieurs, conflits de quincaillerie dans les agencements serrés, emplacements de joints de surface solide tombant sur des bords à forte usure, exigences de blocage et de dégrossissement pour les murs d'accent, et plages d'atteinte ADA/AODA sur les comptoirs de réception.",
+      "bestFor": [
+        "Revue pré-appel d'offres de l'ensemble d'ébénisterie",
+        "Équipes de conception-construction avec une grande portée d'ébénisterie",
+        "Ébénisterie complexe pour la santé / l'hôtellerie",
+        "Coordination d'ébénisterie patrimoniale et d'accent"
+      ],
+      "deliverables": [
+        "Annotations en rouge sur l'ensemble complet des dessins d'ébénisterie",
+        "Mémoire de constructibilité propre à l'ébénisterie (constructibilité, code, finition, quincaillerie)",
+        "Registre des lacunes de coordination : dégrossissements MEP, AV, support structurel pour murs d'accent",
+        "Vérification de la séquence de placage et de la constructibilité de l'assortiment du grain",
+        "Rapport de conflit du calendrier de quincaillerie (jeux de charnières / coulisses / serrures dans les agencements serrés)",
+        "Vérification des plages d'atteinte ADA/AODA pour les comptoirs de réception et l'ébénisterie publique"
+      ],
+      "faqs": [
+        {
+          "question": "Examinez-vous d'autres métiers que l'ébénisterie?",
+          "answer": "Non — nous examinons uniquement l'ensemble d'ébénisterie architecturale. Cette concentration sur un seul métier explique pourquoi nous détectons les problèmes de placage, de quincaillerie, de finition et d'assemblage qu'une revue de constructibilité générale manque."
+        },
+        {
+          "question": "Quand la revue devrait-elle avoir lieu?",
+          "answer": "Avant l'appel d'offres est idéal — nous annotons l'ensemble d'ébénisterie avant que l'EG ne le chiffre, afin qu'il n'y ait pas de surprises à l'attribution. Nous pouvons également faire la revue à 50 % des DC si vous avez besoin d'une identification précoce des risques."
+        },
+        {
+          "question": "Que couvre le registre des lacunes de coordination?",
+          "answer": "Il répertorie chaque cas où l'ensemble de dessins d'ébénisterie manque de blocage, de dégrossissement MEP, de câblage AV/sécurité ou de support structurel requis pour l'installation — avec les numéros de dessins de référence et les correctifs proposés."
+        }
+      ]
+    },
+    "shop-drawings-engineering": {
+      "overview": "Chaque projet d'ébénisterie Sandha commence par un ensemble de dessins produit par notre équipe d'ingénierie interne. Nous dessinons dans AutoCAD et modélisons dans Microvellum afin que les dessins d'atelier approuvés alimentent directement les programmes CNC — aucune erreur de traduction entre la conception et la production. Nous coordonnons les RFI avec l'architecte et l'équipe de consultants, gérons le délai d'exécution des soumissions selon l'échéancier de l'EG, et tamponnons chaque dessin pour l'exactitude dimensionnelle, les indications de matériaux et l'intégration de la quincaillerie.",
+      "bestFor": [
+        "Dessins d'atelier d'ébénisterie pour approbation architecte / EG",
+        "Revue et révision d'annotations sur l'ensemble de dessins d'ébénisterie",
+        "Ensembles de soumission avec calendriers de finition et fiches techniques de quincaillerie",
+        "Dessins de production finaux avec données d'imbrication et d'usinage CNC",
+        "Dessins d'ébénisterie tels que construits après installation"
+      ],
+      "deliverables": [
+        "Ensemble de revue annoté sur les dessins d'ébénisterie architecturale",
+        "Ensemble complet de dessins d'atelier de soumission (PDF + DWG) avec feuille de titre",
+        "Calendrier coordonné de finition et de quincaillerie d'ébénisterie",
+        "Dessins détaillés d'élévation, de plan et de coupe",
+        "Dessins de détail de construction — assemblages, placage de chant, perçage de quincaillerie",
+        "Plans d'imbrication et programmes d'usinage prêts pour CNC",
+        "Registre des RFI et des révisions pour l'ensemble d'ébénisterie"
+      ],
+      "faqs": [
+        {
+          "question": "Produisez-vous des dessins d'atelier pour d'autres métiers que l'ébénisterie?",
+          "answer": "Non — nous réalisons l'ingénierie et le dessin strictement pour l'ébénisterie architecturale. Cette concentration explique pourquoi nos dessins incluent la séquence de placage, les schémas de perçage de quincaillerie et les données d'usinage CNC que les firmes de dessin généralistes manquent."
+        },
+        {
+          "question": "Que comprend l'ensemble de dessins?",
+          "answer": "Les annotations de revue, l'ensemble de soumission avec les calendriers de finition et de quincaillerie, les élévations et coupes de production finales, et les ensembles de dessins de production et d'installation pilotés par Microvellum."
+        },
+        {
+          "question": "Pourquoi Microvellum pour les dessins de production et d'installation?",
+          "answer": "Microvellum est la plateforme de référence de l'industrie nord-américaine de l'ébénisterie — chaque dimension du dessin d'atelier approuvé alimente un modèle paramétrique unique qui produit la liste de coupe CNC, le plan d'imbrication, les coordonnées de perçage de la quincaillerie, le programme de placage de chant ET les dessins de chantier de l'installateur. Comme les feuilles de production et d'installation partagent les mêmes données sources, il n'y a aucun écart entre ce que l'architecte a approuvé, ce que la CNC coupe et ce que l'équipe installe sur site."
+        },
+        {
+          "question": "Vos dessins d'atelier se connectent-ils directement à la CNC?",
+          "answer": "Oui — nos modèles Microvellum génèrent des listes de coupe, des programmes d'imbrication, des coordonnées de perçage de quincaillerie et des instructions de placage de chant. Ce que l'architecte approuve est exactement ce que la machine coupe et exactement ce à partir de quoi l'installateur construit sur site."
+        }
+      ],
+      "leadTime": "Première soumission : 2–3 semaines après l'attribution. Cycle de révision : 3–5 jours ouvrables."
+    },
+    "3d-modeling": {
+      "overview": "Notre équipe d'ingénierie interne modélise uniquement l'ébénisterie architecturale en 3D — comptoirs de réception, murs d'accent, bars courbes, plafonds à caissons, agencements sur mesure et ébénisterie plaquée — afin que l'architecte et le propriétaire approuvent l'apparence finale avant que nous coupions un seul panneau. Chaque modèle est construit à partir de connaissances réelles d'atelier : nous savons comment les séquences de placage se rompent aux coins intérieurs, comment la quincaillerie s'adapte dans les agencements serrés et comment les trajectoires d'outillage CNC affectent la surface finale.",
+      "bestFor": [
+        "Comptoirs de réception et ébénisterie de hall",
+        "Murs d'accent en placage courbé et plié",
+        "Rendus pour approbation du propriétaire avant production",
+        "Modèles d'ébénisterie prêts pour CNC pour Microvellum",
+        "Agencements complexes avec quincaillerie et éclairage intégrés"
+      ],
+      "deliverables": [
+        "Rendus 3D photoréalistes d'assemblages d'ébénisterie",
+        "Animations tournantes et visites virtuelles sur demande",
+        "Modèles SolidWorks / Microvellum prêts pour CNC",
+        "Diagrammes d'assemblage en éclaté avec indications de quincaillerie",
+        "Vérification de la séquence de placage et de la direction du grain en 3D",
+        "Documentation de comparaison rendu-réalité"
+      ],
+      "faqs": [
+        {
+          "question": "Modélisez-vous autre chose que l'ébénisterie?",
+          "answer": "Non — nous modélisons uniquement l'ébénisterie architecturale. Cette concentration signifie que notre équipe 3D comprend le séquencement du placage, les jeux de quincaillerie, les transitions de placage de chant et les limites d'usinage CNC — des détails qu'un artiste 3D généraliste manque."
+        },
+        {
+          "question": "Le modèle 3D peut-il aller directement à la CNC?",
+          "answer": "Oui — nos modèles SolidWorks et Microvellum sont construits prêts pour machine. La même géométrie utilisée pour le rendu du propriétaire devient la trajectoire d'outil CNC sans remodélisation."
+        },
+        {
+          "question": "Que signifie « rendu à réalité »?",
+          "answer": "Nous livrons une comparaison côte à côte montrant le rendu 3D approuvé à côté de l'ébénisterie installée finie. Cela prouve que le produit fini correspond à ce que le propriétaire a approuvé."
+        }
+      ]
+    },
+    "architect-consultant-coordination": {
+      "overview": "Sur chaque ensemble d'ébénisterie, Sandha attribue un seul chargé de projet comme point de contact pour l'architecte, le designer d'intérieur, l'EG, le MEP, l'AV, la sécurité et les consultants en structure. L'ébénisterie se trouve à l'intersection de presque tous les autres métiers — un comptoir de réception touche à l'électricité, aux données, à l'AV, aux retours HVAC, au blocage structurel, à l'éclairage, à la plomberie et aux finitions. Si un seul CP ne coordonne pas activement tous ces éléments, les dessins dérivent, les RFI stagnent et des conflits de chantier apparaissent pendant l'installation. C'est pourquoi nous faisons cela en interne : notre coordinateur vit dans l'ensemble de dessins, participe aux réunions de consultants, suit chaque RFI et pousse les révisions via Microvellum afin que ce qui est approuvé soit exactement ce qui est coupé et installé.",
+      "bestFor": [
+        "Aménagements complexes avec de nombreux consultants",
+        "Équipes de conception-construction et IPD",
+        "Projets à cheminement accéléré avec délai de réponse RFI serré",
+        "Ébénisterie multi-métiers touchant AV, MEP, sécurité et structure",
+        "Projets où l'architecte a besoin d'un seul contact responsable pour l'ébénisterie"
+      ],
+      "deliverables": [
+        "Un CP Sandha dédié comme point de contact unique pour l'architecte et les consultants",
+        "Registre des RFI en direct avec engagement de réponse sous 48 heures",
+        "Participation aux réunions de coordination architecte / consultant",
+        "Révisions des dessins d'atelier émises par commentaire de consultant",
+        "Rapports de conflit de coordination par rapport aux fonds de plan MEP, AV, sécurité et structure",
+        "Réunion de site pré-installation avec l'EG et les partenaires de métier",
+        "Rapport hebdomadaire de l'état des soumissions à l'équipe de conception"
+      ],
+      "faqs": [
+        {
+          "question": "Pourquoi l'ébénisterie a-t-elle besoin de son propre CP de coordination?",
+          "answer": "L'ébénisterie touche presque tous les autres métiers — électricité, données, AV, HVAC, blocage structurel, éclairage, finitions. Sans une personne qui suit ces transferts, les dessins et le travail sur site dérivent. Notre CP possède cette coordination afin que l'architecte n'ait pas à la poursuivre."
+        },
+        {
+          "question": "À quelle vitesse les RFI sont-ils répondus?",
+          "answer": "Sous 48 heures comme engagement standard, et le jour même sur les projets à cheminement accéléré. Chaque RFI est enregistré, suivi et clos avec une révision de dessin ou une réponse écrite."
+        },
+        {
+          "question": "Qui participe aux réunions de consultants?",
+          "answer": "Notre chargé de projet participe aux réunions de coordination architecte / DI / EG / MEP / AV / sécurité / structure selon les besoins — en personne sur les projets du GTA, sur Teams / Zoom pour les travaux hors région."
+        }
+      ]
+    },
+    "cnc-manufacturing": {
+      "overview": "Production CNC interne 3 et 5 axes sur défonceuses à plat Biesse Rover, scies à panneaux SCM/Selco, processeurs de panneaux CNC verticaux et lignes d'insertion de tourillons CNC automatisées — imbrication, perçage, placage de chant et usinage pour l'ébénisterie, l'agencement, les accessoires de vente au détail et les composants OEM.",
+      "bestFor": [
+        "Production de débordement pour ateliers d'ébénisterie",
+        "Fabrication de composants OEM",
+        "Prototypes d'accessoires de vente au détail et petites séries",
+        "Moulures sur mesure et pièces en bois massif usinées"
+      ],
+      "deliverables": [
+        "Liste de coupe et rapport d'imbrication prêts pour CNC",
+        "Échantillon d'inspection de première pièce",
+        "Séries de pièces ensachées, étiquetées et palettisées"
+      ],
+      "faqs": [
+        {
+          "question": "Acceptez-vous les fichiers natifs Microvellum ou SketchUp?",
+          "answer": "Oui — ainsi que les fichiers AutoCAD DWG, Cabinet Vision, Solidworks et STEP."
+        },
+        {
+          "question": "Quelle est votre quantité minimale?",
+          "answer": "Une pièce. Nous prototypons aussi facilement que nous produisons en série."
+        }
+      ],
+      "materials": "Tous les panneaux jusqu'à 5' × 12' × jusqu'à 1½\". Usinage du bois franc massif. Panneaux composites (Corian, phénolique, composite d'aluminium).",
+      "hardware": "Tourillons et confirmats insérés par machine. Schémas de quincaillerie Blum, Häfele, Grass percés par CNC.",
+      "leadTime": "Prototype : 3–5 jours ouvrables. Séries de production : Soumis par programme."
+    },
+    "custom-fabrication": {
+      "overview": "Ligne d'assemblage — agencement à grand volume. Une fois que le département CNC a coupé, plaqué les chants et préparé les pièces (chaque unité étiquetée et transportée par numéro de dessin), la trousse circule sur notre ligne d'assemblage. Des presses à caisson, des inséreurs de tourillons, des visseuses pneumatiques et un convoyeur à rouleaux maintiennent la cadence ; une équipe formée peut assembler, équiper en quincaillerie et emballer jusqu'à ~200 armoires par jour pour les déploiements multirésidentiels, éducatifs, de santé et de restauration rapide où le même détail se répète des centaines de fois. Département sur mesure — là où la magie opère. Géométrie complexe, caissons courbes, placages à livre ouverte, banquettes en bois massif, comptoirs de réception sculpturaux, murs de bibliothèque monumentaux, panneaux d'accent. Nos artisans expérimentés travaillent à des établis dédiés avec des presses à vide, des scies à ruban, des assembleuses de placage, des cintreuses et des postes de façonnage à la main. C'est le département qui transforme le rendu d'un architecte en une pièce fabriquée que personne d'autre dans le métier ne soumissionnera. Même atelier, même CP, même livraison. Un seul projet peut traverser les deux départements — des centaines de vanités répétitives sur la ligne, et le comptoir de réception du hall construit en pièce unique sur mesure — et quand même expédier sur un seul camion avec un seul ensemble de dessins.",
+      "bestFor": [
+        "Projets multirésidentiels, hôteliers et éducatifs avec des nombres élevés d'armoires répétitives",
+        "Comptoirs de réception sculpturaux, murs d'accent courbes, ébénisterie de bibliothèque monumentale",
+        "Banquettes en bois massif, sièges d'accent intégrés, placage cintré",
+        "Toute ébénisterie que le marché considère « trop complexe pour soumissionner »"
+      ],
+      "deliverables": [
+        "Proposition à prix ferme par poste avec variantes",
+        "Dessins d'atelier conformes AWMAC/AWI (PDF + DWG)",
+        "Échantillons de finition physiques et fiches techniques de quincaillerie",
+        "Registre de substitution de matériaux et d'ingénierie de la valeur",
+        "Ensemble de soumission pour documentation LEED / WELL",
+        "Manuel O&M et documentation d'entretien/garantie à la clôture"
+      ],
+      "faqs": [
+        {
+          "question": "Combien d'armoires la ligne d'assemblage peut-elle produire par jour?",
+          "answer": "Le débit de pointe est d'environ 200 unités d'armoires assemblées, équipées en quincaillerie et emballées par jour pour un agencement répétitif simple. Le taux réel dépend de la complexité de l'unité et du contenu en quincaillerie."
+        },
+        {
+          "question": "Comment décidez-vous ce qui va sur la ligne par rapport au sur mesure?",
+          "answer": "Si l'unité se répète plus de quelques fois et que chaque pièce est imbriquable et plaquable par CNC, elle va sur la ligne. Si elle implique des courbes, du placage à livre ouverte, de l'assemblage en bois massif, du métal/pierre intégré ou un détail d'accent unique, elle va au département sur mesure."
+        },
+        {
+          "question": "Un même projet peut-il utiliser les deux départements?",
+          "answer": "Oui, et la plupart des projets de taille moyenne à grande le font. Un ensemble hôtelier peut faire passer 300 vanités de chambres identiques sur la ligne d'assemblage tandis que le comptoir de réception du hall, le bar et le mur d'accent sont construits dans l'atelier sur mesure — tout est expédié coordonné sur un seul déchargement."
+        }
+      ],
+      "materials": "Agencement usiné par CNC en trousse (ligne) ; Bois francs massifs et placage rif/QC (sur mesure) ; Lamellés courbés et panneaux cintrés sous vide ; Sous-composants intégrés en métal, pierre et verre. Systèmes de finition : tout système de finition — pièces de ligne acheminées vers la cabine à ligne plate, pièces sur mesure vers les cabines manuelles à downdraft.",
+      "hardware": "Blum, Hafele, Salice, Grass — ligne et sur mesure. Supports et connecteurs usinés sur mesure pour pièces uniques.",
+      "leadTime": "Soumission budgétaire : 1 jour ouvrable. Soumission ferme (avec dessins) : 3–5 jours ouvrables. Dessins d'atelier : 2–3 semaines après l'attribution. Production : 6–10 semaines après approbations. Fenêtre de livraison : Phasée selon l'échéancier du chantier."
+    },
+    "finishing-paint": {
+      "overview": "Sandha exploite une ligne de finition interne en quatre étapes : poste de ponçage (large bande et orbitale selon un programme de grains contrôlé), ligne plate automatique Cefla (pulvérisation robotisée pour pièces plates avec récupération de surpulvérisation >95 %), cabines manuelles à downdraft (air de compensation HEPA, éclairage LED à précision chromatique pour assemblages 3D), et salle de séchage Sunspot (chambre de séchage à air chauffé à haute vélocité). Chaque unité est inspectée sous lampes à lumière du jour D65 par rapport à l'échantillon de contrôle signé avant de passer au quai d'emballage.",
+      "bestFor": [
+        "Ensembles de placage en bois franc teinté (exécutif, hôtellerie, civique)",
+        "Agencement en MDF peint pigmenté (commerce de détail, corporatif, santé)",
+        "Systèmes de luxe à haute brillance et à pores ouverts (hôtellerie de prestige)",
+        "Finitions résistantes aux produits chimiques pour laboratoire, santé et restauration",
+        "Projets LEED / WELL nécessitant des systèmes à l'eau à faible COV",
+        "Correspondance chromatique aux normes de marque (BM, SW, RAL, Pantone, échantillon physique)"
+      ],
+      "deliverables": [
+        "Échantillon de contrôle approuvé de 12\" × 12\" par finition, signé par l'architecte",
+        "Panneau d'étape avec 3 correspondances chromatiques candidates (BM / SW / RAL / Pantone / échantillon physique)",
+        "Registres de cohérence lot à lot (brillance, épaisseur de film, ΔE couleur)",
+        "Fiches de données de sécurité et de teneur en COV pour soumission LEED",
+        "Recette de couleur archivée pour phases futures et retouches sous garantie"
+      ],
+      "faqs": [
+        {
+          "question": "Finissez-vous l'ébénisterie d'autres fabricants?",
+          "answer": "Non. Le département de finition finit strictement l'ébénisterie construite par notre propre département sur mesure. Nous contrôlons le substrat — essence, teneur en humidité, ponçage, état du chant — afin de pouvoir garantir le film."
+        },
+        {
+          "question": "Pourquoi une ligne plate Cefla pour les pièces plates et des cabines manuelles pour les grandes unités?",
+          "answer": "Les panneaux plats bénéficient de la constance de l'épaisseur de film et de la quasi-absence de surpulvérisation d'une ligne automatisée. Les unités tridimensionnelles nécessitent le regard et le contrôle d'un finisseur certifié."
+        },
+        {
+          "question": "Qu'est-ce que la salle de séchage Sunspot et pourquoi est-elle importante?",
+          "answer": "C'est une chambre de séchage à air chauffé à haute vélocité. Elle force le séchage des revêtements catalysés et à base d'eau sans peau ni éclatement de solvant, de sorte qu'une unité est expédiée le jour même ou le lendemain au lieu de sécher sur des chariots pendant 24 à 48 heures."
+        }
+      ],
+      "materials": "Vernis de conversion catalysé ; Laque catalysée — pigmentée et claire ; Polyuréthane 2K ; À base d'eau à faible COV (GREENGUARD Gold) ; Durci aux UV ; Polyester haute brillance européen ; Systèmes multi-étapes teinture + teinture d'essuyage + toner + scellant + couche de finition ; Additif antimicrobien aux ions d'argent (santé).",
+      "leadTime": "Soumission budgétaire : 1 jour ouvrable. Soumission ferme (avec dessins) : 3–5 jours ouvrables. Dessins d'atelier : 2–3 semaines après l'attribution. Production : 6–10 semaines après approbations. Fenêtre de livraison : Phasée selon l'échéancier du chantier."
+    },
+    "solid-surface-work": {
+      "overview": "Corian fabriqué en interne en tant que fabricant certifié DuPont — la coupe, le thermoformage, l'assemblage et la finition se font tous sous notre toit, ce qui permet la garantie installée DuPont de 10 ans. Les comptoirs en quartz, granit et marbre sont fabriqués par des partenaires certifiés spécialisés dans le travail des dalles. Le verre architectural et les panneaux peints au dos proviennent de partenaires verriers certifiés. Tout est expédié dans un seul ensemble coordonné, séquencé avec l'agencement et installé par notre équipe.",
+      "bestFor": [
+        "Comptoirs Corian, murs humides et vanités à cuve intégrée (interne)",
+        "Comptoirs de réception en quartz, dessus de bar et vanités de salle d'eau (fabrication partenaire)",
+        "Comptoirs d'accent en granit et marbre naturels et postes d'hôtesse (fabrication partenaire)",
+        "Crédences, étagères et panneaux d'accent en verre trempé et peint au dos (fabrication partenaire)"
+      ],
+      "deliverables": [
+        "Fabrication et installation certifiées Corian avec garantie installée DuPont de 10 ans",
+        "Portée unique pour quartz, granit et marbre — calepiné, fabriqué et installé par nos partenaires certifiés",
+        "Portée unique pour verre architectural et vitrage peint au dos — trempé, percé et installé par nos partenaires certifiés",
+        "Un ensemble de soumission coordonné couvrant toutes les surfaces dures dans la portée d'ébénisterie"
+      ],
+      "faqs": [
+        {
+          "question": "Fabriquez-vous réellement le Corian vous-mêmes, ou est-ce sous-traité?",
+          "answer": "Le Corian est fabriqué en interne dans notre atelier. Nous sommes des fabricants de Corian certifiés — la coupe, le thermoformage, l'assemblage et la finition se font tous sous notre toit, ce qui permet à la garantie installée DuPont de 10 ans de s'attacher au comptoir fini."
+        },
+        {
+          "question": "Pourquoi sous-traiter le quartz, le granit et le marbre plutôt que de le faire en interne?",
+          "answer": "Le quartz, le granit et le marbre nécessitent un atelier de dallage dédié avec des scies à pont, une CNC à jet d'eau et un inventaire de dalles — c'est un métier différent de l'ébénisterie. Nous entretenons des relations à long terme avec des fabricants de pierre certifiés qui calepinent à partir de nos dessins d'atelier, coupent selon notre plan de joint et livrent selon notre échéancier, de sorte que le client a toujours un seul point de contact."
+        },
+        {
+          "question": "Le Corian et le verre peuvent-ils être combinés dans la même pièce?",
+          "answer": "Oui — un détail courant est un comptoir de réception en Corian avec un dessus en verre peint au dos pour transactions, ou une vanité Corian avec une crédence en verre à faible teneur en fer. Nous détaillons le substrat, le jour et le joint pour que les deux métiers s'installent proprement."
+        }
+      ],
+      "materials": "Corian (DuPont) — fabrication certifiée interne ; Quartz d'ingénierie — Caesarstone, Silestone, Cambria, HanStone (partenaire certifié) ; Dalle de granit et marbre naturels (partenaire certifié) ; Verre architectural trempé clair et à faible teneur en fer (partenaire certifié) ; Panneaux de verre peints au dos (émaillés) (partenaire certifié).",
+      "hardware": "Cuves à dosseret intégré Corian et éviers sous plan. Sous-structure en acier dissimulé et supports en porte-à-faux pour dessus en pierre. Systèmes d'entretoises, de pinces de chant et de canaux pour crédences en verre.",
+      "leadTime": "Soumission budgétaire : 1 jour ouvrable. Soumission ferme (avec dessins) : 3–5 jours ouvrables. Dessins d'atelier : 2–3 semaines après l'attribution. Production : 6–10 semaines après approbations."
+    },
+    "plastic-laminate-fabrication": {
+      "overview": "Le stratifié plastique est une surface composite d'ingénierie. Le HPL est constitué de papier kraft imprégné de phénol comprimé en une feuille décorative. Le TFL est une face mélamine plus mince fusionnée directement au panneau. Le CRL ajoute un système de résine modifié pour les environnements de santé et de laboratoire. Pour les petites séries, nous fabriquons entièrement en interne. Pour les grands projets, nous nous associons à des fournisseurs de stratifié certifiés (Wilsonart, Formica, Arborite, Nevamar, Pionite). Chaque assemblage reçoit un scellement six faces sur les âmes de zones humides, un collage à l'adhésif thermofusible PUR, et un placage de chant appliqué avec préchauffage et coupe d'extrémité.",
+      "bestFor": [
+        "Déploiements de commerce de détail et caisses nécessitant des couleurs aux normes de marque",
+        "Agencement de santé et de laboratoire nécessitant CRL et résistance aux désinfectants",
+        "Éducation — salles de classe, bibliothèques, administration et agencement de laboratoire",
+        "Bureaux corporatifs — comptoirs de réception, cuisinettes, rangement, crédences de salle de conseil",
+        "Cuisines d'agrément et en-suite multirésidentielles",
+        "Ébénisterie arrière-cuisine pour restauration et hôtellerie"
+      ],
+      "deliverables": [
+        "Proposition à prix ferme par poste avec variantes",
+        "Dessins d'atelier conformes AWMAC/AWI (PDF + DWG)",
+        "Échantillons de finition physiques et fiches techniques de quincaillerie",
+        "Registre de substitution de matériaux et d'ingénierie de la valeur",
+        "Ensemble de soumission pour documentation LEED / WELL",
+        "Manuel O&M et documentation d'entretien/garantie à la clôture"
+      ],
+      "faqs": [
+        {
+          "question": "Quelle est la différence entre HPL et TFL?",
+          "answer": "Le HPL est une feuille décorative séparée construite à partir de plusieurs couches de papier kraft imprégné de résine, puis collée à l'âme dans notre atelier. Il est plus épais, plus durable et résistant aux chocs. Le TFL est une seule couche de mélamine fusionnée directement sur le panneau à l'usine. Il est plus mince, plus économique, idéal pour les panneaux verticaux et les applications sèches."
+        },
+        {
+          "question": "Le stratifié plastique est-il résistant à la chaleur?",
+          "answer": "Le HPL standard résiste au contact bref avec des tasses et assiettes chaudes. Pour une exposition prolongée à la chaleur, nous spécifions des qualités résistantes à la chaleur ou ajoutons un insert en acier inoxydable ou en surface solide."
+        },
+        {
+          "question": "Comment le stratifié est-il collé à l'âme?",
+          "answer": "Nous utilisons de l'adhésif thermofusible PUR (polyuréthane réactif), pas de la colle de contact traditionnelle. Il est plus résistant, plus durable dans les environnements humides et moins sujet au délaminage avec le temps."
+        }
+      ],
+      "materials": "HPL (0,7 mm–1,7 mm) ; TFL ; CRL ; Stratifié ignifuge / classe A ; Âmes en MDF, MR-MDF, panneau de particules NAUF et contreplaqué ; Adhésif thermofusible PUR ; Placage de chant PVC/ABS de 3 mm assorti à la couleur ; Placage de chant au laser.",
+      "hardware": "Blum, Hettich, Häfele — charnières, coulisses et systèmes de levage de qualité européenne. Poignées et serrures ANSI/BHMA Grade 1. Niveleurs réglables, gestion des câbles et passe-fils. Éclairage LED intégré sur les vitrines d'exposition.",
+      "leadTime": "Soumission budgétaire : 1 jour ouvrable. Soumission ferme (avec dessins) : 3–5 jours ouvrables. Dessins d'atelier : 2–3 semaines après l'attribution. Production : 6–10 semaines après approbations."
+    },
+    "veneer-hardwood-fabrication": {
+      "overview": "Le placage est une tranche mince (0,5–0,6 mm) de bois franc véritable pressée sur une âme d'ingénierie stable. C'est du vrai bois — pas une impression — et nous permet de couvrir de grandes surfaces architecturales avec un grain continu et assorti que le bois massif ne peut pas offrir à cette échelle. Le bois franc massif est fraisé à partir de la bille elle-même — le bon choix pour les marches d'escalier, les mains courantes, les moulures épaisses, les montants de porte, les dessus de table à bords exposés, les dessus de bar, les banquettes.",
+      "bestFor": [
+        "Murs d'accent de hall et d'ascenseur (placage)",
+        "Lambris de salles de conseil d'hôtellerie et exécutives (placage)",
+        "Lambris de salle de bal et de corridor (placage)",
+        "Devants de comptoir de réception et ébénisterie d'arrière-bar (placage)",
+        "Marches d'escalier, mains courantes et nez de marche en bois franc massif",
+        "Moulures massives épaisses, montants de porte et dessus de bar",
+        "Tout projet où une lecture continue du grain sur une grande surface est importante"
+      ],
+      "deliverables": [
+        "Panneaux d'échantillons de flitch et de motif de coupe pour approbation de l'architecte",
+        "Plans d'implantation de l'assortiment du grain à pleine échelle avant pressage",
+        "Panneaux plaqués à livre ouverte et en séquence pressés en interne",
+        "Panneaux plaqués de chant avec placage assorti ou bordure solide",
+        "Moulures, garnitures, pièces d'escalier et composants de porte en bois franc massif usinés par CNC",
+        "Panneaux finis dans le même lot sous un seul numéro de lot pour une lecture chromatique cohérente"
+      ],
+      "faqs": [
+        {
+          "question": "Qu'est-ce qu'un placage de bois exactement?",
+          "answer": "Une véritable tranche de bois franc — généralement de 0,5 à 0,6 mm d'épaisseur — coupée d'une bille et pressée sur un substrat d'ingénierie stable. C'est du véritable bois, pas une impression ou un stratifié."
+        },
+        {
+          "question": "Placage vs. bois franc massif — lequel est le plus rentable?",
+          "answer": "Pour tout ce qui est large et plat (murs de hall, panneaux de salle de conseil, portes d'armoire), le placage sur âme d'ingénierie est nettement moins cher. Pour tout ce qui est étroit, structurel ou sollicité sur le chant (marches d'escalier, mains courantes, moulures épaisses, dessus de bar), le massif est moins cher."
+        },
+        {
+          "question": "Qu'est-ce que l'assortiment à livre ouverte vs. l'assortiment en séquence?",
+          "answer": "L'assortiment à livre ouverte alterne chaque feuille de placage pour que le grain se reflète symétriquement au joint. L'assortiment en séquence conserve toutes les feuilles d'un même flitch installées dans l'ordre où elles ont été tranchées, de sorte que le grain s'écoule continuellement sur tout un mur."
+        }
+      ],
+      "materials": "Placage rif, tranché sur quartier, tranché plat et tranché rotatif. Chêne blanc, noyer, chêne fumé, cerisier, érable, anigre, sapelli. Flitches assortis en séquence et au grain. Bois de charpente en bois franc nord-américain massif pour composants structurels."
+    },
+    "metal-integration": {
+      "overview": "Accessoires d'ébénisterie en bois nécessitant du métal — tabliers de service, plinthes, supports, joints, cuisines — livrés comme un seul ensemble. L'inox de qualité restauration est fabriqué par un partenaire certifié en cuisine commerciale selon la norme NSF/ANSI 2. Le métal architectural (laiton, acier noirci, inox satiné, aluminium thermolaqué) est sourcé via des ateliers de métal architecturaux de longue date. Le métal arrive dans notre atelier et est intégré dans l'accessoire en bois avant d'être expédié comme une seule unité assemblée.",
+      "bestFor": [
+        "Serveries de restaurant, postes de préparation et inox arrière-cuisine (NSF/ANSI 2)",
+        "Bars d'hôtel et d'hôtellerie avec devantures en bois, joints en laiton et barres de pied en acier noirci",
+        "Caisses de commerce de détail avec dessus en métal et plinthes",
+        "Comptoirs de réception bancaires, hôteliers et corporatifs avec parement laiton/inox",
+        "Étagères ouvertes bois-métal, présentoirs et systèmes de barre à vêtements",
+        "Portails de murs d'accent, bandes de joint et panneaux muraux à incrustation métallique"
+      ],
+      "deliverables": [
+        "Un ensemble coordonné de dessins d'atelier couvrant l'ébénisterie bois et le métal intégré",
+        "Fabrication d'inox certifié pour cuisine commerciale selon NSF/ANSI 2 via notre partenaire de cuisine",
+        "Fabrication de laiton architectural / acier noirci / thermolaquage via notre partenaire métallurgique",
+        "Intégration en atelier du métal dans le caisson bois avant expédition — un seul accessoire assemblé, pas deux",
+        "Une seule équipe d'installation et une seule réponse de garantie couvrant le bois et le métal"
+      ],
+      "faqs": [
+        {
+          "question": "Fabriquez-vous le métal en interne ou via un partenaire?",
+          "answer": "Le bois est interne. Le métal est fabriqué par des partenaires certifiés de longue date — un atelier d'inox pour cuisine commerciale pour la portée restauration, et des ateliers de métal architectural pour le laiton, l'acier noirci et l'aluminium thermolaqué."
+        },
+        {
+          "question": "Votre inox de restauration est-il certifié cuisine commerciale?",
+          "answer": "Oui — la fabrication d'inox 304 entièrement soudée est livrée par notre partenaire de cuisine commerciale selon la norme NSF/ANSI 2."
+        },
+        {
+          "question": "Qui détient la garantie sur la partie métal?",
+          "answer": "Sandha détient la garantie client sur l'accessoire fini. Les garanties du fabricant de métal sous-jacent transitent par nous."
+        }
+      ],
+      "materials": "Acier inoxydable 304 / 316 (partenaire de cuisine) ; Acier noirci / brut / laminé à chaud ; Laiton satiné et laiton antique ; Aluminium thermolaqué dans toute couleur RAL ; Caissons en chêne blanc, noyer, érable et MR-MDF (interne).",
+      "hardware": "Supports en porte-à-faux en acier dissimulés et sous-structure. Systèmes continus de plinthes et de socles en inox/laiton. Supports de barre de pied, entretoises et canaux de joint."
+    },
+    "healthcare-millwork": {
+      "overview": "Ébénisterie pour hôpital complet — du hall principal avec réception et murs de signalétique aux postes de soins infirmiers, salles d'examen et baies de préparation bloc opératoire, salles de médicaments, pharmacie, agencement de laboratoire, salons du personnel, chambres de patients, cafétérias, chapelles et traitement stérile arrière-cuisine. Chaque substrat, bord, ensemble de quincaillerie et finition est sélectionné selon les exigences ICRA, IPAC et d'exposition à l'eau du projet, et chaque installation est planifiée pour zéro perturbation des patients.",
+      "bestFor": [
+        "Aménagements complets d'hôpital — nouvelles constructions et agrandissements",
+        "Hall principal, signalétique et lambris bois de corridors publics",
+        "Postes de soins infirmiers et alcôves de documentation médicale",
+        "Salles d'examen, triage d'urgence et contrôle d'imagerie",
+        "Salles de médicaments, utilitaires propres/sales, stérilisation centrale",
+        "Préparation de pharmacie selon USP <797>/<800>",
+        "Chambres de patients, armoires de chevet, murs TV, vanités",
+        "Soins de longue durée, retraite, centres de chirurgie ambulatoire"
+      ],
+      "deliverables": [
+        "Proposition à prix ferme par poste avec variantes",
+        "Dessins d'atelier conformes AWMAC/AWI (PDF + DWG)",
+        "Échantillons de finition physiques et fiches techniques de quincaillerie",
+        "Registre de substitution de matériaux et d'ingénierie de la valeur",
+        "Ensemble de soumission pour documentation LEED / WELL",
+        "Manuel O&M et documentation d'entretien/garantie à la clôture",
+        "Plan de livraison et d'installation conforme ICRA / IPAC",
+        "Fiche de compatibilité chimique par finition",
+        "Ensemble de détails de construction pour zones humides",
+        "Calendrier d'installation à faible perturbation avec approbation du gestionnaire d'unité par quart"
+      ],
+      "faqs": [
+        {
+          "question": "À quels désinfectants vos finitions sont-elles résistantes?",
+          "answer": "Nous fournissons une matrice de compatibilité chimique par finition couvrant les ammoniums quaternaires, le peroxyde d'hydrogène accéléré (AHP), l'hypochlorite de sodium (eau de Javel jusqu'à 1:10), l'alcool isopropylique et les nettoyants phénoliques."
+        },
+        {
+          "question": "Pouvez-vous répondre aux exigences USP 797/800 pour la préparation de pharmacie?",
+          "answer": "Oui — ébénisterie non pelucheuse, nettoyable, à base de plinthe cintrée avec surfaces de travail en surface solide thermoformée à cuve intégrée pour les salles de préparation stérile (797) et dangereuse (800)."
+        },
+        {
+          "question": "Installez-vous dans des environnements hospitaliers occupés et en activité?",
+          "answer": "Oui — c'est une compétence de base. Nous organisons des équipes de soir et de fin de semaine, des barrières à poussière et à air négatif ICRA classe III/IV, une filtration HEPA et une approbation IPAC complète selon CSA Z317.13 avant la remise."
+        }
+      ],
+      "materials": "HPL ou stratifié résistant aux produits chimiques sur toute la hauteur dans les zones humides et cliniques. Surface solide (Corian, Hi-Macs) avec éviers à cuve intégrée thermoformée. Âme en MR-MDF ou NAUF phénolique, scellée six faces. Placage de chant continu PVC/ABS de 3 mm sur chaque bord exposé. Acier inoxydable pour traitement stérile. Placage rif/tranché sur quartier en chêne blanc, noyer et chêne fumé de qualité AWMAC Premium assorti en séquence pour le bois public.",
+      "hardware": "Charnières en inox ou nickelées résistantes à l'exposition répétée aux désinfectants. Poignées filaires, poignées de chant ou loquets sans contact. Serrures à narcotiques à clé (CompX Chicago) et serrures électroniques RFID pour armoires à médicaments. Coulisses en inox à extension complète avec intérieurs amovibles.",
+      "leadTime": "Soumission budgétaire : 1 jour ouvrable. Soumission ferme (avec dessins) : 3–5 jours ouvrables. Dessins d'atelier : 2–3 semaines après l'attribution. Production : 6–10 semaines après approbations."
+    },
+    "retail-fixtures": {
+      "overview": "Accessoires de vente au détail aux normes de marque fabriqués en séries de production reproductibles — caisses, gondoles, systèmes muraux, tours de marchandisage et kits pop-up — avec le contrôle de dessin nécessaire au déploiement d'un programme de magasin à l'échelle nationale. Les accessoires sont expédiés en kit plat ou pré-assemblés avec des sacs de quincaillerie étiquetés et des guides d'installation par magasin.",
+      "bestFor": [
+        "Déploiements nationaux de commerce de détail (10–500+ magasins)",
+        "Concessions aéroportuaires et vente au détail de voyage",
+        "Concessions shop-in-shop et grands magasins",
+        "Programmes pop-up et baux de courte durée"
+      ],
+      "deliverables": [
+        "Proposition à prix ferme par poste avec variantes",
+        "Dessins d'atelier conformes AWMAC/AWI (PDF + DWG)",
+        "Échantillons de finition physiques et fiches techniques de quincaillerie",
+        "Registre de substitution de matériaux et d'ingénierie de la valeur",
+        "Ensemble de soumission pour documentation LEED / WELL",
+        "Manuel O&M et documentation d'entretien/garantie à la clôture",
+        "Ensemble d'approbation du prototype",
+        "Nomenclature et kit d'installation par magasin",
+        "Suivi de déploiement avec calendrier de livraison par magasin"
+      ],
+      "faqs": [
+        {
+          "question": "Comment gérez-vous les variations d'un magasin à l'autre?",
+          "answer": "Le kit est standardisé. Les dimensions propres au site (colonnes, HVAC, conditions existantes) sont absorbées dans des lattes et des remplissages intégrés à chaque unité — l'accessoire lui-même ne change jamais."
+        },
+        {
+          "question": "Pouvez-vous gérer des magasins uniquement américains depuis le Canada?",
+          "answer": "Oui — nous expédions régulièrement aux États-Unis sous l'ALENA/CUSMA. La paperasse douanière et la logistique transfrontalière sont gérées par notre partenaire logistique."
+        }
+      ],
+      "materials": "HPL/TFL sur âme de qualité commerciale ; Bases en acier thermolaqué ; Dessus en surface solide (Corian, Hi-Macs) ; Panneaux d'affichage en acrylique et verre.",
+      "hardware": "Quincaillerie commerciale ANSI/BHMA Grade 1 ; Niveleurs réglables, gestion des câbles, passe-fils.",
+      "leadTime": "Prototype : 4–6 semaines. Série de production (par magasin) : 5–7 jours ouvrables une fois verrouillé. Capacité de déploiement national : Jusqu'à 15 magasins/semaine."
+    },
+    "hospitality-millwork": {
+      "overview": "Nous livrons l'ensemble complet d'ébénisterie pour les projets hôteliers — des grands halls avant avec murs en placage séquencé et assorti au grain et plafonds à caissons en bois, aux murs de tête de lit de chambres, armoires, minibars, bureaux, vanités et penderies, en passant par les étages d'agrément, les salons exécutifs, les salles de réunion, les salles de bal, les bars, les vestiaires de spa et de fitness, les lambris de corridor et les arrière-cuisines. Chaque projet est construit selon la qualité AWMAC Premium sur la portée publique.",
+      "bestFor": [
+        "Halls d'hôtels 5 étoiles et de luxe, comptoirs de réception et de conciergerie",
+        "Lambris muraux en placage séquencé et assorti au grain et plafonds à caissons",
+        "Agencement de chambres — têtes de lit, armoires, minibar, bureau, banc à bagages",
+        "Vanités de salles de bain et lambris muraux en placage pleine hauteur",
+        "Salons exécutifs, étages-clubs et suites d'hôtellerie",
+        "Salles de bal, salles de réunion et salles de conseil — lambris périmétriques en placage",
+        "Postes d'accueil F&B, arrière-bars, banquettes et ébénisterie de présentation des vins",
+        "Ébénisterie de spa, piscine et vestiaires de fitness",
+        "Lambris de corridor, vestibules d'ascenseur et cadres de porte d'entrée de chambres",
+        "Bar de terrasse sur toit et ébénisterie en bois d'extérieur"
+      ],
+      "deliverables": [
+        "Proposition à prix ferme par poste avec variantes",
+        "Dessins d'atelier conformes AWMAC/AWI (PDF + DWG)",
+        "Échantillons de finition physiques et fiches techniques de quincaillerie",
+        "Registre de substitution de matériaux et d'ingénierie de la valeur",
+        "Ensemble de soumission pour documentation LEED / WELL",
+        "Manuel O&M et documentation d'entretien/garantie à la clôture",
+        "Approbation des échantillons de séquence et d'assortiment du grain avant la coupe du placage",
+        "Approbation de conformité PIP / normes de marque par finition et famille de quincaillerie",
+        "Fourniture de portes coupe-feu via des partenaires certifiés audités",
+        "Forfait d'entretien à long terme — inspections planifiées, retouches et remise à neuf"
+      ],
+      "faqs": [
+        {
+          "question": "Travaillez-vous directement avec des chaînes hôtelières internationales?",
+          "answer": "Oui — nous livrons des ensembles d'ébénisterie pour les opérateurs hôteliers mondiaux de service complet et de luxe, en respectant le PIP et le livre de normes de conception de chaque marque en matière de finition, quincaillerie et qualité."
+        },
+        {
+          "question": "Comment assurez-vous la séquence et l'assortiment du grain du placage sur un mur de hall?",
+          "answer": "Chaque flitch de bille est examiné et approuvé avant la coupe. Les panneaux sont disposés dans un dessin d'atelier à pleine échelle, assortis à livre ouverte et en séquence, et stockés ensemble en un ensemble — le même flitch va de la réception au hall d'ascenseur afin que le grain se lise en continu."
+        },
+        {
+          "question": "Offrez-vous un forfait d'entretien à long terme?",
+          "answer": "Oui — chaque ensemble hôtelier peut inclure un programme d'entretien planifié : retouche de placage, réajustement de charnières et de coulisses, polissage de surface solide et remise à neuf de cycle PIP pour que l'ébénisterie reste prête pour l'ouverture année après année."
+        }
+      ],
+      "materials": "Placage rif et tranché sur quartier en chêne blanc, noyer et chêne fumé — séquencé et assorti au grain. Placage à livre ouverte pour halls et murs d'accent. Dalles de quartz et comptoirs en porcelaine pour comptoirs de réception et dessus de bar. Surface solide Corian / Hi-Macs pour vanités. HPL sur MR-MDF pour zones humides. Accents métalliques mixtes — laiton poli, acier noirci, joints en inox satiné. Profils de chêne cannelé et strié pour devants de bar et parements de réception.",
+      "hardware": "Charnières et coulisses à fermeture amortie Blum sur tout l'agencement des chambres. Quincaillerie d'armoire, de lit escamotable et de porte coulissante Hafele. Poignées de chant dissimulées et poignées métalliques design selon le livre de marque. Éclairage LED intégré en bandes dans les armoires, minibars et plinthes de vanités. Gestion de câbles dissimulée pour bureaux, murs média et armoires AV.",
+      "leadTime": "Soumission budgétaire : 1 jour ouvrable. Soumission ferme (avec dessins) : 3–5 jours ouvrables. Dessins d'atelier : 2–3 semaines après l'attribution. Production : 6–10 semaines après approbations."
+    },
+    "multi-residential-millwork": {
+      "overview": "Pour les entrepreneurs généraux construisant des tours résidentielles de 20, 40 ou 60 étages, la division d'ébénisterie ne se limite pas à un ensemble de cuisine — c'est chaque morceau de bois fini, de quartz, de surface solide Corian et d'agencement à garniture métallique que porte le bâtiment. Nous concevons, ingénierons, fabriquons et installons le tout sous un seul contrat. La portée du rez-de-chaussée comprend les murs d'accent du hall, l'ébénisterie de plafond à caissons, les comptoirs de conciergerie et de sécurité, les lambris de vestibule d'ascenseur, les salles de courrier et de colis. Les étages d'agrément ajoutent les cuisines de traiteur de salle de fête, les bars humides, les banquettes de coworking, les étagères de bibliothèque, les vestiaires de fitness, les comptoirs de spa pour animaux et de lavage de chiens, les salles de cinéma et les bars de terrasse sur toit. En-suite, nous produisons des cuisines pour 4 à 8 types d'unités, des vanités de salle d'eau et de toilette, des systèmes de penderie, des banquettes d'entrée, des placards de buanderie et des murs média.",
+      "bestFor": [
+        "Tours résidentielles de grande hauteur (20+ étages)",
+        "Tours locatives construites à cet effet",
+        "Ébénisterie de hall principal, de conciergerie et de salle de courrier",
+        "Étages d'agrément — salle de fête, bar, coworking, cinéma, spa pour animaux",
+        "Ébénisterie de vestiaires de fitness et de piscine",
+        "Lambris muraux de corridor et entourages d'unité",
+        "Bars de terrasse sur toit et cuisines extérieures",
+        "Cuisines, vanités, penderies, murs média en-suite",
+        "Programmes de mise à niveau pour acheteurs",
+        "Logements étudiants et tours pour aînés"
+      ],
+      "deliverables": [
+        "Proposition à prix ferme par poste avec variantes",
+        "Dessins d'atelier conformes AWMAC/AWI (PDF + DWG)",
+        "Échantillons de finition physiques et fiches techniques de quincaillerie",
+        "Registre de substitution de matériaux et d'ingénierie de la valeur",
+        "Ensemble de soumission pour documentation LEED / WELL",
+        "Manuel O&M et documentation d'entretien/garantie à la clôture",
+        "Ensemble d'approbation du prototype par type d'unité",
+        "Calendrier de livraison par suite aligné sur la séquence de construction",
+        "Catalogue de mise à niveau pour acheteurs (le cas échéant)"
+      ],
+      "faqs": [
+        {
+          "question": "Couvrez-vous toute l'ébénisterie du bâtiment ou seulement les unités?",
+          "answer": "Tout le bâtiment. Murs d'accent du hall principal, comptoirs de conciergerie et de salle de courrier, lambris de vestibule d'ascenseur, cuisines et bars d'agrément, vestiaires de fitness, spa pour animaux, cinéma, coworking, lambris de corridor, bars de terrasse sur toit — plus chaque cuisine, vanité, penderie, buanderie et mur média en-suite."
+        },
+        {
+          "question": "Pouvez-vous gérer les mises à niveau pour acheteurs?",
+          "answer": "Oui — nous gérons des programmes de mise à niveau pour acheteurs comprenant des portails de sélection en ligne, la gestion des changements par suite et une installation coordonnée."
+        },
+        {
+          "question": "Quelle est la taille minimale de projet?",
+          "answer": "Nous allons d'un immeuble boutique de 40 suites à des tours de 800+ suites."
+        }
+      ],
+      "materials": "Dalles de quartz (comptoirs waterfalls, murs d'accent, comptoirs de conciergerie). Surface solide Corian et famille DuPont. Lambris en placage de chêne blanc rif, noyer et bois figuré. Portes TFL / thermofilm / MDF peint pour cuisines et vanités en-suite. Boîtes en MR-panneau de particules et MR-MDF. Métaux mixtes — joints et incrustations en laiton brossé, acier noirci, inox satiné. Comptoirs et crédences en dalle de porcelaine (cuisines d'agrément).",
+      "hardware": "Charnières et coulisses à fermeture amortie Blum et Hettich. Profils push-to-open et J-pull en aluminium intégrés. Éclairage LED intégré sous meuble, en corniche et de plinthe. Tirages de tiroir à déchets, organiseurs de couverts et systèmes d'accessoires de penderie. Poignées en laiton brossé, noir mat et inox satiné (ensembles design).",
+      "leadTime": "Unités prototypes : 6–8 semaines. Production par étage : 1–2 semaines en régime permanent. Livraison échelonnée : Alignée sur l'échéancier du chantier."
+    },
+    "restaurant-qsr-millwork": {
+      "overview": "Deux portées, un seul atelier, un seul ébéniste responsable. Les restaurants à service complet / gastronomiques sont des travaux d'atelier sur mesure — chaque accessoire est unique au concept. Les QSR et chaînes multi-sites sont des travaux de ligne d'assemblage — un kit de pièces verrouillé produit à l'identique selon une norme de marque. Les deux filières partagent les mêmes disciplines d'ingénierie, de finition et d'AQ, mais leur mode de construction est complètement différent. La portée service complet comprend les postes d'accueil, les bars et arrière-bars sur mesure, les présentoirs de bouteilles illuminés, les banquettes courbes, les lambris muraux en noyer/chêne, les murs de vin et les salles à manger privées. La portée QSR comprend les comptoirs avant et les caisses aux normes de marque, les cloisons d'affichage numérique de menu, les armoires de borne de commande libre-service, l'ébénisterie de fenêtre de service au volant, les banquettes et les tables en stratifié.",
+      "bestFor": [
+        "Restaurants à service complet / gastronomiques et italiens avec service à table",
+        "Steakhouses, établissements dirigés par un chef et points de vente F&B hôteliers",
+        "Bars, bars à pression et aménagements de salon",
+        "Déploiements nationaux QSR — chaînes de café, burger, sous-marin, poulet, boulangerie, petit-déjeuner",
+        "Marques de café rapide et multi-sites",
+        "Programmes prototype-vers-production et re-branding / re-image de magasins"
+      ],
+      "deliverables": [
+        "Proposition à prix ferme par poste avec variantes",
+        "Dessins d'atelier conformes AWMAC/AWI (PDF + DWG)",
+        "Échantillons de finition physiques et fiches techniques de quincaillerie",
+        "Registre de substitution de matériaux et d'ingénierie de la valeur",
+        "Ensemble de soumission pour documentation LEED / WELL",
+        "Manuel O&M et documentation d'entretien/garantie à la clôture"
+      ],
+      "faqs": [
+        {
+          "question": "En quoi la portée d'un restaurant à service complet diffère-t-elle d'une portée QSR dans votre atelier?",
+          "answer": "Le service complet passe par le département sur mesure — dessins uniques, sélection de placage, assemblages courbes, ébénisterie ajustée à la main. Le QSR passe par la ligne d'assemblage — un prototype approuvé, puis une nomenclature verrouillée produite à l'identique pour chaque emplacement."
+        },
+        {
+          "question": "Pouvez-vous gérer un déploiement QSR multi-sites sur de nombreux emplacements?",
+          "answer": "Oui — c'est exactement à cela que sert la ligne d'assemblage. Nous prototypons, obtenons l'approbation de la marque et de la construction, puis produisons, emballons par magasin et libérons selon le calendrier de déploiement."
+        },
+        {
+          "question": "Pouvez-vous répondre aux exigences NSF de contact alimentaire sur les comptoirs avant?",
+          "answer": "Oui — surface solide avec joints cintrés, bords scellés et matériaux listés NSF pour les zones de contact alimentaire direct."
+        }
+      ],
+      "materials": "HPL sur MR-MDF (résistant aux graisses et aux nettoyants) — norme QSR. Placage de noyer rif et de chêne blanc sur âme MDF — service complet. Tables en planches de bois franc massif, postes d'accueil et dessus de bar. Comptoirs en surface solide avec dosseret intégré (NSF). Dessus de bar et de table en pierre/quartz/marbre (service complet). Plans de travail en inox 304 livrés par un partenaire de cuisine certifié NSF.",
+      "hardware": "Charnières à roulements étanches résistantes à la corrosion des nettoyants. Intérieurs amovibles/encastrables pour nettoyage quotidien. Serrures Grade 1 sur tiroirs de POS et armoires de caisse. Coulisses à extension complète robustes pour tiroirs de préparation arrière-cuisine.",
+      "leadTime": "Soumission budgétaire : 1 jour ouvrable. Soumission ferme (avec dessins) : 3–5 jours ouvrables. Dessins d'atelier : 2–3 semaines après l'attribution. Production : 6–10 semaines après approbations."
+    },
+    "pharmacy-clinic-millwork": {
+      "overview": "Les environnements de pharmacie et de clinique combinent un avant de qualité commerce de détail avec un arrière de qualité clinique. Nous ingénierons les deux côtés du comptoir dans un seul ensemble de dessins, coordonnés avec votre automatisation (Kirby Lester, ScriptPro) et votre équipement de réfrigération. Pour les salles de préparation, nous construisons un agencement nettoyable, non pelucheux, à base de plinthe cintrée et pouvons nous intégrer directement aux installations de hotte conformes USP <797>/<800>.",
+      "bestFor": [
+        "Aménagements et re-brandings de pharmacies communautaires",
+        "Aménagements de cliniques médicales et dentaires",
+        "Cliniques sans rendez-vous / de soins urgents",
+        "Cabinets de médecins indépendants"
+      ],
+      "deliverables": [
+        "Proposition à prix ferme par poste avec variantes",
+        "Dessins d'atelier conformes AWMAC/AWI (PDF + DWG)",
+        "Échantillons de finition physiques et fiches techniques de quincaillerie",
+        "Registre de substitution de matériaux et d'ingénierie de la valeur",
+        "Ensemble de soumission pour documentation LEED / WELL",
+        "Manuel O&M et documentation d'entretien/garantie à la clôture"
+      ],
+      "faqs": [
+        {
+          "question": "Intégrez-vous l'automatisation de pharmacie?",
+          "answer": "Oui — nous coordonnons les découpes, la ventilation et le câblage pour les systèmes Kirby Lester, ScriptPro et Parata."
+        },
+        {
+          "question": "Pouvez-vous travailler dans le cadre d'une rénovation de magasin en activité?",
+          "answer": "Oui — équipes de soir et de fin de semaine avec écrans anti-poussière et remise en main progressive."
+        }
+      ],
+      "materials": "Faces HPL / CRL. Comptoirs en surface solide (cuve intégrée). Âmes et chants scellés. Tiroirs à narcotiques verrouillables avec serrures CompX Chicago.",
+      "hardware": "Serrures et poignées Grade 1. Coulisses à extension complète sur tous les tiroirs à narcotiques.",
+      "leadTime": "Soumission budgétaire : 1 jour ouvrable. Soumission ferme (avec dessins) : 3–5 jours ouvrables. Dessins d'atelier : 2–3 semaines après l'attribution. Production : 6–10 semaines après approbations."
+    },
+    "education-millwork": {
+      "overview": "L'ébénisterie pour l'éducation est soumissionnée serré, spécifiée dur et utilisée plus dur. Sandha livre chaque poste d'ébénisterie d'un ensemble scolaire ou universitaire sous un seul CP, un seul ensemble de soumission et un seul installateur responsable — des casiers de garderie à hauteur d'enfant aux lambris d'auditorium universitaire. Nous desservons les garderies agréées, les écoles maternelle/primaire, les écoles élémentaires et intermédiaires, les écoles secondaires, les académies privées, les collèges, les polytechniques, les écoles de métiers et les universités. Toutes les zones scolaires sont couvertes — salles de classe, casiers de maternelle, murs à manteaux et sacs à dos, rangement des enseignants, casiers, lambris de corridor, cafétérias, bibliothèques, salles de conseil, réception administrative, laboratoires scientifiques, laboratoires informatiques, ateliers de fabrication/tech, salles de musique, studios d'art, amphithéâtres, auditoriums et plus.",
+      "bestFor": [
+        "Garderies agréées et centres d'éveil",
+        "Écoles primaires et élémentaires (maternelle–8e année)",
+        "Écoles secondaires et académies privées (9e–12e année)",
+        "Collèges, CEGEPs, polytechniques et écoles de métiers",
+        "Universités — facultés, résidences, installations sportives et administratives",
+        "Projets de campus neufs et rénovations d'installations existantes par phases",
+        "Laboratoires humides et secs (chimie, biologie, physique, génie)",
+        "Bibliothèques, places étudiantes, cafétérias et auditoriums"
+      ],
+      "deliverables": [
+        "Proposition à prix ferme par poste avec variantes",
+        "Dessins d'atelier conformes AWMAC/AWI (PDF + DWG)",
+        "Échantillons de finition physiques et fiches techniques de quincaillerie",
+        "Registre de substitution de matériaux et d'ingénierie de la valeur",
+        "Ensemble de soumission pour documentation LEED / WELL",
+        "Manuel O&M et documentation d'entretien/garantie à la clôture"
+      ],
+      "faqs": [
+        {
+          "question": "Servez-vous tous les niveaux, de la garderie à l'université?",
+          "answer": "Oui — des garderies agréées et salles maternelle/primaire en passant par les écoles primaires, élémentaires, secondaires, les académies privées, les collèges, les polytechniques, les écoles de métiers et les universités."
+        },
+        {
+          "question": "Répondez-vous aux fenêtres d'installation estivales des conseils scolaires?",
+          "answer": "Oui — chaque été, nous livrons des installations phasées dans les conseils du GTA. Réservez d'ici mars pour une installation en juillet/août."
+        },
+        {
+          "question": "Offrez-vous des comptoirs de service conformes à l'AODA?",
+          "answer": "Oui — sections abaissées avec dégagement pour les genoux et plages d'atteinte selon CSA B651 et AODA Conception des espaces publics sur tous les comptoirs d'administration, de bibliothèque et de services aux étudiants."
+        }
+      ],
+      "materials": "TFL / HPL sur MR-panneau de particules. Placage de chant PVC de 2 mm assorti à la couleur. Dessus résistants aux produits chimiques pour laboratoires (époxy, phénolique, inox). Tiroirs à crayons en érable massif. Placage de chêne blanc rif et de noyer pour zones d'accent. Panneaux à lamelles acoustiques pour auditoriums.",
+      "hardware": "Charnières et coulisses à fermeture amortie Blum. Serrures institutionnelles à clé CompX/Olympus. Poignées Ives ANSI Grade 1. Quincaillerie robuste pour casiers. Rails de cloison amovible (Modernfold, Hufcor).",
+      "leadTime": "Soumission budgétaire : 1 jour ouvrable. Soumission ferme (avec dessins) : 3–5 jours ouvrables. Dessins d'atelier : 2–3 semaines après l'attribution. Production : 6–10 semaines après approbations."
+    },
+    "corporate-institutional-millwork": {
+      "overview": "L'aménagement corporatif ou institutionnel typique comporte 20 à 40 postes d'ébénisterie dispersés dans le plan. Nous les consolidons en un seul ensemble — un CP, un jeu de dessins, une séquence de livraison. Pour les succursales bancaires de détail, nous construisons les lignes de caissiers, les comptoirs de caisse, les bureaux de conseillers financiers, l'ébénisterie d'accueil client, les lambris de vestibule de GAB, les salles de coffres et les crédences de salles de réunion. Pour les sièges sociaux corporatifs, nous livrons des comptoirs de réception, des tables de salle de conseil avec gestion de câbles intégrée, des bureaux de direction d'angle, des cabines de bureau paysager, des lambris acoustiques, de l'ébénisterie de cuisine et de café-bar. Pour les bureaux professionnels, nous concevons des étagères de bibliothèque, des comptoirs de réception, de l'agencement de salles d'examen et de traitement. Pour les bibliothèques, nous produisons des comptoirs de prêt, des étagères du sol au plafond, des carrels d'étude, des plafonds acoustiques à lamelles de bois.",
+      "bestFor": [
+        "Succursales bancaires de détail — lignes de caissiers, bureaux de conseillers, vestibules de GAB, salles de réunion",
+        "Sièges sociaux corporatifs et améliorations locatives étage par étage",
+        "Bureaux de direction, bureaux de niveau C et salles de conseil",
+        "Zones de réception, d'accueil et de travail temporaire",
+        "Cabinets d'avocats, cabinets comptables et services professionnels",
+        "Bibliothèques publiques et académiques, archives et salles de lecture",
+        "Centres d'appels, centres d'affaires et opérateurs de coworking",
+        "Services financiers — salles de marché, gestion de patrimoine, bureaux d'assurance",
+        "Bâtiments institutionnels fédéraux, provinciaux et municipaux",
+        "Palais de justice, stations de transport, centres de permis et civiques"
+      ],
+      "deliverables": [
+        "Proposition à prix ferme par poste avec variantes",
+        "Dessins d'atelier conformes AWMAC/AWI (PDF + DWG)",
+        "Échantillons de finition physiques et fiches techniques de quincaillerie",
+        "Registre de substitution de matériaux et d'ingénierie de la valeur",
+        "Ensemble de soumission pour documentation LEED / WELL",
+        "Manuel O&M et documentation d'entretien/garantie à la clôture",
+        "Ensemble de certification de résistance au feu classe A / classe B",
+        "Documentation de conformité CGP le cas échéant"
+      ],
+      "faqs": [
+        {
+          "question": "Construisez-vous selon les normes de marque bancaires sans être lié à une seule banque?",
+          "answer": "Oui — nous travaillons indépendamment des marques et correspondons à toute spécification de finition, placage, couleur et quincaillerie d'une banque selon son guide de conception."
+        },
+        {
+          "question": "Pouvez-vous livrer l'ensemble d'ébénisterie d'une succursale bancaire complète comme une seule portée?",
+          "answer": "Oui — ligne de caissiers, comptoirs de caisse, bureaux de conseillers, salle d'attente, lambris de vestibule de GAB, crédences de salle de réunion, cuisine arrière-cuisine du personnel et bureau du gérant sont fournis et installés sous un seul CP et un seul ensemble de soumission."
+        },
+        {
+          "question": "Êtes-vous inscrit au Programme des marchandises contrôlées?",
+          "answer": "Oui — Sandha est une installation enregistrée CGP, ce qui nous permet de travailler sur des projets institutionnels fédéraux de défense et de sécurité connexes."
+        }
+      ],
+      "materials": "Placages de chêne blanc rif, noyer et érable. HPL et TFL pour postes de travail très sollicités. Dessus de comptoir Corian, Hi-Macs et quartz. Cadres de face et joints en bois franc massif. Âmes traitées ignifuges (FRT) là où spécifié. Panneaux de rembourrage intégrés en cuir, feutre et acoustique.",
+      "hardware": "Charnières et coulisses à fermeture amortie Blum, Häfele. Serrures et poignées institutionnelles ANSI/BHMA Grade 1. Serrures d'armoire à clé CompX/Olympus. Prises pop-up puissance/données (Legrand, Mockett) intégrées dans les dessus de table de salle de conseil et de poste de travail. Fixations inviolables là où requis.",
+      "leadTime": "Soumission budgétaire : 1 jour ouvrable. Soumission ferme (avec dessins) : 3–5 jours ouvrables. Dessins d'atelier : 2–3 semaines après l'attribution. Production : 6–10 semaines après approbations."
+    },
+    "custom-cabinets": {
+      "overview": "Ce ne sont pas des armoires de catalogue ou de l'ébénisterie d'appel d'offres standard. Chaque élément est dessiné selon les proportions exactes de la maison et l'intention du designer — du lambris mural du sol au plafond dans le salon aux plafonds à caissons, aux entrées lambrissées et aux bibliothèques intégrées. Nous travaillons directement avec les architectes, les designers d'intérieur et les propriétaires pour fabriquer des composants uniques qui s'intègrent parfaitement à l'architecture.",
+      "bestFor": [
+        "Lambris muraux de maison entière et boiseries",
+        "Bibliothèques intégrées sur mesure et bureaux à domicile",
+        "Plafonds à caissons et ensembles de garnitures décoratives",
+        "Ébénisterie de cuisine, de vestiaire et de penderie sur mesure",
+        "Lambris d'escalier et ébénisterie de mur d'accent",
+        "Projets résidentiels où les produits de catalogue standard ne suffisent pas"
+      ],
+      "deliverables": [
+        "Proposition à prix ferme par poste avec variantes",
+        "Dessins d'atelier conformes AWMAC/AWI (PDF + DWG)",
+        "Échantillons de finition physiques et fiches techniques de quincaillerie",
+        "Registre de substitution de matériaux et d'ingénierie de la valeur",
+        "Ensemble de soumission pour documentation LEED / WELL",
+        "Manuel O&M et documentation d'entretien/garantie à la clôture"
+      ],
+      "faqs": [
+        {
+          "question": "Fabriquez-vous en impérial ou en métrique?",
+          "answer": "Les deux. Les dessins d'atelier sont produits dans les unités de l'ensemble de dessins de l'architecte."
+        },
+        {
+          "question": "Pouvons-nous intégrer des appareils électroménagers et de l'équipement A/V?",
+          "answer": "Oui — envoyez-nous les fiches techniques de l'équipement et nous concevrons les dégagements, la ventilation et les panneaux d'accès autour d'eux."
+        }
+      ],
+      "materials": "Placage de bois franc sur âme d'ingénierie. Faces HPL/TFL avec chant assorti. MDF peint avec surface à grain rempli. Cadres de face, portes et devantures de tiroir en bois franc massif.",
+      "hardware": "Blum, Hettich, Häfele — pleine fermeture amortie. LED intégrée (Loox, Tresco). Passe-fils pop-out puissance/données (Legrand, Mockett).",
+      "leadTime": "Soumission budgétaire : 1 jour ouvrable. Soumission ferme (avec dessins) : 3–5 jours ouvrables. Dessins d'atelier : 2–3 semaines après l'attribution. Production : 6–10 semaines après approbations."
+    },
+    "project-management": {
+      "overview": "Vous n'aurez pas à courir après 6 personnes pour savoir où est votre ébénisterie. Un seul CP, un seul numéro de téléphone, une seule boîte de réception. Nous travaillons dans Procore, Autodesk Construction Cloud, PlanGrid et Bluebeam — quel que soit le système de l'EG, nous nous y branches.",
+      "bestFor": [
+        "Tout projet Sandha"
+      ],
+      "deliverables": [
+        "CP nommé à l'attribution",
+        "Rapport d'état de projet hebdomadaire",
+        "Registre des RFI en direct et registre des soumissions",
+        "Suivi des déficits jusqu'à la clôture"
+      ],
+      "faqs": [
+        {
+          "question": "Vos CP viennent-ils sur le chantier?",
+          "answer": "Oui — visite pré-installation, supervision d'installation et visites de déficits sont toutes incluses."
+        }
+      ]
+    },
+    "scheduling": {
+      "overview": "Nous construisons notre calendrier de dessins d'atelier, d'approvisionnement, de production, de finition, de livraison et d'installation à l'intérieur de votre calendrier maître P6 / MS Project — avec marge, dépendances et planification tirée par rapport au chemin critique de l'EG.",
+      "deliverables": [
+        "Calendrier d'ébénisterie dans votre format P6 / MSP",
+        "Prévision hebdomadaire",
+        "Participation à la planification tirée"
+      ]
+    },
+    "procurement": {
+      "overview": "Les flitches de placage à long délai, les dalles de surface solide, la quincaillerie, les métaux spécialisés et les produits chimiques de finition sont commandés à l'attribution — pas après les dessins d'atelier — afin que le risque de délai soit éliminé avant qu'il n'affecte le calendrier.",
+      "deliverables": [
+        "Registre des longs délais à l'attribution",
+        "Bons de commande et suivi des délais",
+        "Registre de substitution si un matériau est sous allocation"
+      ]
+    },
+    "site-coordination": {
+      "overview": "Notre CP et notre installateur principal parcourent le chantier avant l'installation, vérifient le blocage et les dégrossissements MEP/AV par rapport aux dessins d'atelier, et verrouillent les mesures de lattage avant l'expédition de l'ébénisterie.",
+      "deliverables": [
+        "Rapport de visite de site pré-installation",
+        "Vérification du blocage / des dégrossissements",
+        "Mesures de lattage sur site"
+      ]
+    },
+    "quality-assurance": {
+      "overview": "Chaque ensemble reçoit une inspection dimensionnelle et de finition à 100 % par rapport aux dessins d'atelier approuvés et à l'échantillon de finition signé avant de quitter l'atelier. Inspection tierce AWMAC GIS disponible sur demande.",
+      "deliverables": [
+        "Liste de contrôle CQ pré-expédition par unité",
+        "Comparaison de finition par rapport à l'échantillon maître",
+        "Rapport AWMAC GIS (sur demande)"
+      ]
+    },
+    "delivery-logistics": {
+      "overview": "La livraison est un risque pour le calendrier. Nous la gérons comme tel — séquencement du chargement, coordination avec le surintendant du chantier et confirmation de la fenêtre de livraison 48 heures à l'avance. Les déploiements phasés multi-sites sont palettisés magasin par magasin avec un manifeste et un kit d'installation à code QR.",
+      "bestFor": [
+        "Livraisons mono-site dans le GTA et le Sud de l'Ontario",
+        "Déploiements nationaux multi-sites",
+        "Expéditions transfrontalières aux États-Unis (CUSMA)"
+      ],
+      "deliverables": [
+        "Confirmation de livraison 48 heures",
+        "Chargements enveloppés de couvertures, palettisés, étiquetés",
+        "Connaissement et photo d'état à la réception"
+      ],
+      "faqs": [
+        {
+          "question": "Livrez-vous aux États-Unis?",
+          "answer": "Oui — expédition transfrontalière régulière sous CUSMA avec un partenaire logistique qui gère les douanes."
+        }
+      ]
+    },
+    "packaging": {
+      "overview": "Chaque unité est enveloppée de couvertures, protégée aux coins, palettisée et — pour le transport transfrontalier ou aérien — caissée. Des manifestes et des kits d'installation à code QR sont inclus avec chaque chargement.",
+      "deliverables": [
+        "Enveloppement de couverture et protection des coins",
+        "Palettisé avec manifeste",
+        "Caissé pour transport transfrontalier / aérien",
+        "Kit d'installation à code QR"
+      ]
+    },
+    "just-in-time-delivery": {
+      "overview": "Nous entreposons les ensembles terminés dans notre entrepôt de produits finis et les libérons sur le chantier à la demande de l'EG — l'ébénisterie arrive au plancher le jour où le métier d'installation en a besoin, pas de fardeau d'entreposage sur le chantier, pas de conflits de grue.",
+      "deliverables": [
+        "Entreposage des produits finis dans notre entrepôt",
+        "Confirmation de livraison 48 heures sur libération",
+        "Libération zone par zone / étage par étage"
+      ]
+    },
+    "site-logistics": {
+      "overview": "Nous coordonnons les créneaux de quai de chargement, les réservations de monte-charge, les fenêtres d'ascenseur de fret, la protection des planchers et l'espace tampon avec le surintendant du chantier de l'EG — afin que le jour de livraison se passe sans incident.",
+      "deliverables": [
+        "Calendrier de quai de chargement et de levage",
+        "Plan de protection des planchers et installation",
+        "Plan d'entreposage en espace tampon"
+      ]
+    },
+    "installation-coordination": {
+      "overview": "L'installation est l'étape où un ensemble bien fabriqué devient un ensemble bien exécuté. Nous supervisons l'installation pour garantir que l'espace fini corresponde aux dessins d'atelier approuvés — équerres, aplombs, joints, lattes, fonctionnement de la quincaillerie. Chaque installation se termine par un CP Sandha qui parcourt la liste de vérification avec l'EG et le surintendant du chantier.",
+      "bestFor": [
+        "Projets d'installation directe dans le Sud de l'Ontario",
+        "Installation supervisée à l'échelle du Canada avec partenaires agréés",
+        "Rénovations en occupation avec équipes d'installation hors heures"
+      ],
+      "deliverables": [
+        "Vérification de site pré-installation",
+        "Supervision d'installation sur site",
+        "Visite de liste de vérification et clôture des déficits",
+        "Réponse de garantie pour la période de garantie"
+      ],
+      "faqs": [
+        {
+          "question": "Quelle est votre garantie?",
+          "answer": "Garantie de fabrication standard AWMAC/AWI de 1 an. Conditions prolongées disponibles sur demande."
+        },
+        {
+          "question": "Travaillez-vous en dehors des heures normales?",
+          "answer": "Oui — soirs, fins de semaine et fermetures pour les bâtiments occupés."
+        }
+      ]
+    },
+    "site-supervision": {
+      "overview": "Chaque installation — directe dans le Sud de l'Ontario ou par partenaire agréé à l'échelle du Canada — a un superviseur principal Sandha sur site qui possède les équerres, aplombs, joints, lattes, fonctionnement de la quincaillerie et la liste de vérification.",
+      "deliverables": [
+        "Superviseur principal Sandha par quart",
+        "Journal d'installation quotidien avec photos",
+        "Visite de liste de vérification avec EG / surintendant du chantier"
+      ]
+    },
+    "deficiency-management": {
+      "overview": "Chaque déficit est enregistré avec photo, emplacement et date de clôture engagée. Registre en direct partagé avec l'EG — clos dans le calendrier, pas dans la période de garantie.",
+      "deliverables": [
+        "Registre des déficits avec photos et dates de clôture",
+        "Rapport de clôture hebdomadaire",
+        "Approbation par zone"
+      ]
+    },
+    "project-closeout": {
+      "overview": "Ensemble de clôture livré à la performance substantielle : dessins d'atelier tels que construits, manuel d'entretien O&M, fiches techniques de quincaillerie, instructions d'entretien des finitions, documentation LEED/WELL, EPD/HPD et l'ensemble de garantie — un classeur PDF, un courriel.",
+      "deliverables": [
+        "Dessins d'atelier tels que construits (PDF + DWG)",
+        "Manuel O&M et d'entretien",
+        "Documentation LEED / WELL",
+        "EPD / HPD / lettres de déclaration",
+        "Ensemble de garantie"
+      ]
+    },
+    "warranty-support": {
+      "overview": "Garantie de fabrication AWMAC/AWI de 1 an plus garanties prolongées de finition et de caisson. Sandha soutient chaque projet avec une garantie écrite — couvrant la fabrication, les matériaux, les finitions et la construction des caissons selon les normes AWMAC/AWI.",
+      "deliverables": [
+        "Certificat de garantie écrit",
+        "Point de contact unique pour les réclamations de garantie",
+        "Service de garantie à réponse rapide"
+      ],
+      "faqs": [
+        {
+          "question": "Que couvre votre garantie?",
+          "answer": "Garantie de 1 an sur la fabrication et les matériaux selon les normes AWMAC/AWI, plus garanties prolongées de finition et de caisson telles que spécifiées dans votre contrat."
+        }
+      ]
+    },
+    "maintenance-repairs": {
+      "overview": "Visites d'entretien planifiées, équipes de retouche pour les réparations d'usure quotidienne, et tarification des réparations hors garantie par intervention — essentiel pour les cycles PIP d'hôtellerie, les étages d'agrément multirésidentiels et les zones de bois public en santé.",
+      "bestFor": [
+        "Cycles PIP d'hôtels",
+        "Étages d'agrément multirésidentiels",
+        "Zones de bois public en santé"
+      ],
+      "deliverables": [
+        "Programme d'entretien planifié",
+        "Interventions d'équipes de retouche",
+        "Tarification des réparations par intervention"
+      ]
+    },
+    "future-renovations": {
+      "overview": "Quand vient le temps du renouvellement PIP, de la rotation des améliorations locatives ou du re-branding, Sandha est déjà dans le bâtiment — nous détenons les documents tels que construits, nous connaissons le substrat, et nous pouvons phaser le renouvellement autour de l'occupation en activité.",
+      "bestFor": [
+        "Cycles PIP d'hôtels",
+        "Rotations d'améliorations locatives",
+        "Déploiements de re-branding",
+        "Renouvellements phasés de bâtiments occupés"
+      ],
+      "deliverables": [
+        "Évaluation de l'état de l'ébénisterie existante",
+        "Programme de remise à neuf de cycle PIP",
+        "Ensembles de reprise d'AL et de re-branding"
+      ]
+    },
+    "service-requests": {
+      "overview": "Une seule boîte de réception pour la garantie et le service : service@sandhawoodworks.ca. Chaque demande est enregistrée, triée et attribuée à un CP de service nommé sous 24 heures — indépendamment du projet dont elle provient.",
+      "deliverables": [
+        "Engagement de triage sous 24 heures",
+        "CP de service nommé par demande",
+        "Registre des demandes de service en direct"
+      ]
+    }
+  }
+}

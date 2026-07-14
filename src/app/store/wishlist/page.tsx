@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Heart, ShoppingCart } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { selectWishlistIds, removeFromWishlist } from "@/store/slices/wishlistSlice";
 import { addToCart } from "@/store/slices/cartSlice";
@@ -11,6 +12,7 @@ import { Breadcrumb } from "@/components/store/Breadcrumb";
 import { ProductCard } from "@/components/store/ProductCard";
 
 export default function WishlistPage() {
+  const { t } = useTranslation("store");
   const dispatch = useAppDispatch();
   const wishlistIds = useAppSelector(selectWishlistIds);
   const wishlistProducts = products.filter((p) => wishlistIds.includes(p.id));
@@ -34,14 +36,14 @@ export default function WishlistPage() {
 
   return (
     <div className="space-y-6">
-      <Breadcrumb items={[{ label: "Wishlist" }]} />
+      <Breadcrumb items={[{ label: t("nav.wishlist") }]} />
 
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-baseline gap-3">
-          <h1 className="font-display text-3xl font-bold">Wishlist</h1>
+          <h1 className="font-display text-3xl font-bold">{t("wishlist.title")}</h1>
           {wishlistProducts.length > 0 && (
             <span className="text-sm text-muted-foreground">
-              ({wishlistProducts.length} item{wishlistProducts.length !== 1 ? "s" : ""})
+              {t("wishlist.itemCount", { count: wishlistProducts.length })}
             </span>
           )}
         </div>
@@ -52,7 +54,7 @@ export default function WishlistPage() {
             className="flex items-center gap-2 rounded-full bg-foreground px-5 py-2 text-sm font-semibold text-cream transition hover:bg-warm-black"
           >
             <ShoppingCart className="h-4 w-4" />
-            Move All to Cart
+            {t("wishlist.moveAllToCart")}
           </button>
         )}
       </div>
@@ -64,15 +66,15 @@ export default function WishlistPage() {
           className="flex flex-col items-center justify-center gap-4 rounded-3xl border border-border bg-muted/20 py-24 text-center"
         >
           <Heart className="h-16 w-16 text-muted-foreground/30" />
-          <p className="font-display text-xl font-semibold">Your wishlist is empty</p>
+          <p className="font-display text-xl font-semibold">{t("empty.wishlistTitle")}</p>
           <p className="text-sm text-muted-foreground">
-            Save products you love and come back to them later.
+            {t("empty.wishlistHint")}
           </p>
           <Link
             href="/store"
             className="mt-2 inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 font-semibold text-cream transition hover:bg-warm-black"
           >
-            Browse Products
+            {t("cart.browseProducts")}
           </Link>
         </motion.div>
       ) : (

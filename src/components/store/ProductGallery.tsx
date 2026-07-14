@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import { ProductImage } from "./ProductImage";
 
@@ -12,6 +13,7 @@ interface ProductGalleryProps {
 }
 
 export function ProductGallery({ images, name }: ProductGalleryProps) {
+  const { t } = useTranslation("store");
   const [activeIdx, setActiveIdx] = useState(0);
   const [zoomed, setZoomed] = useState(false);
 
@@ -20,7 +22,6 @@ export function ProductGallery({ images, name }: ProductGalleryProps) {
 
   return (
     <div className="space-y-3">
-      {/* Main image */}
       <div
         className={cn(
           "relative overflow-hidden rounded-2xl bg-muted",
@@ -35,7 +36,11 @@ export function ProductGallery({ images, name }: ProductGalleryProps) {
         }}
         tabIndex={0}
         role="img"
-        aria-label={`${name} — image ${activeIdx + 1} of ${images.length}`}
+        aria-label={t("a11y.imageOf", {
+          name,
+          index: activeIdx + 1,
+          total: images.length,
+        })}
       >
         <AnimatePresence mode="wait">
           <motion.div
@@ -59,18 +64,16 @@ export function ProductGallery({ images, name }: ProductGalleryProps) {
           </motion.div>
         </AnimatePresence>
 
-        {/* Zoom icon */}
         <div className="pointer-events-none absolute right-3 top-3 rounded-full bg-white/70 p-1.5 shadow backdrop-blur-sm">
           <ZoomIn className="h-4 w-4 text-foreground/60" />
         </div>
 
-        {/* Nav arrows */}
         {images.length > 1 && (
           <>
             <button
               type="button"
               onClick={(e) => { e.stopPropagation(); prev(); }}
-              aria-label="Previous image"
+              aria-label={t("a11y.prevImage")}
               className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-1.5 shadow backdrop-blur-sm transition hover:bg-white"
             >
               <ChevronLeft className="h-4 w-4" />
@@ -78,7 +81,7 @@ export function ProductGallery({ images, name }: ProductGalleryProps) {
             <button
               type="button"
               onClick={(e) => { e.stopPropagation(); next(); }}
-              aria-label="Next image"
+              aria-label={t("a11y.nextImage")}
               className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-1.5 shadow backdrop-blur-sm transition hover:bg-white"
             >
               <ChevronRight className="h-4 w-4" />
@@ -86,15 +89,13 @@ export function ProductGallery({ images, name }: ProductGalleryProps) {
           </>
         )}
 
-        {/* Counter */}
         <div className="absolute bottom-3 left-1/2 -translate-x-1/2 rounded-full bg-black/40 px-2.5 py-0.5 text-xs text-white/90 backdrop-blur-sm">
           {activeIdx + 1} / {images.length}
         </div>
       </div>
 
-      {/* Thumbnails */}
       {images.length > 1 && (
-        <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none" role="tablist" aria-label="Image thumbnails">
+        <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none" role="tablist" aria-label={t("a11y.imageThumbnails")}>
           {images.map((img, i) => (
             <button
               key={i}
@@ -108,7 +109,7 @@ export function ProductGallery({ images, name }: ProductGalleryProps) {
                   ? "border-foreground shadow-sm"
                   : "border-transparent opacity-60 hover:opacity-90",
               )}
-              aria-label={`View image ${i + 1}`}
+              aria-label={t("a11y.viewImage", { index: i + 1 })}
             >
               <ProductImage
                 src={img}

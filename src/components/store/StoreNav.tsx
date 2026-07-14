@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ShoppingCart, Heart } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { selectCartCount } from "@/store/slices/cartSlice";
@@ -12,6 +13,7 @@ import { SearchBar } from "@/components/store/SearchBar";
 import { categories } from "@/store/data/categories";
 
 export function StoreNav() {
+  const { t } = useTranslation("store");
   const dispatch = useAppDispatch();
   const pathname = usePathname();
   const cartCount = useAppSelector(selectCartCount);
@@ -21,13 +23,12 @@ export function StoreNav() {
 
   return (
     <div className="border-b border-border bg-background/95 backdrop-blur-sm">
-      {/* Top bar: search + cart + wishlist */}
       <div className="mx-auto flex w-full max-w-7xl items-center gap-3 px-[10px] py-3 sm:gap-4">
         <Link
           href="/store"
           className="shrink-0 font-display text-sm font-semibold uppercase tracking-wider text-foreground transition-colors hover:text-brand"
         >
-          Store
+          {t("nav.store")}
         </Link>
 
         <div className="min-w-0 flex-1">
@@ -37,7 +38,7 @@ export function StoreNav() {
         <div className="flex shrink-0 items-center gap-1 sm:gap-2">
           <Link
             href="/store/wishlist"
-            aria-label={`Wishlist (${wishlistCount} items)`}
+            aria-label={t("a11y.wishlistCount", { count: wishlistCount })}
             className="relative flex items-center justify-center rounded-full p-2 transition hover:bg-muted"
           >
             <Heart className="h-5 w-5" />
@@ -50,7 +51,7 @@ export function StoreNav() {
           <button
             type="button"
             onClick={() => dispatch(openDrawer())}
-            aria-label={`Shopping cart (${cartCount} items)`}
+            aria-label={t("a11y.cartCount", { count: cartCount })}
             className="relative flex items-center justify-center rounded-full p-2 transition hover:bg-muted"
           >
             <ShoppingCart className="h-5 w-5" />
@@ -63,9 +64,8 @@ export function StoreNav() {
         </div>
       </div>
 
-      {/* Category nav — horizontal scroll without expanding page gutters */}
       <nav
-        aria-label="Product categories"
+        aria-label={t("a11y.productCategories")}
         className="mx-auto w-full max-w-7xl overflow-x-auto overscroll-x-contain px-[10px] pb-3"
       >
         <ul className="flex w-max min-w-full gap-1 whitespace-nowrap">
@@ -79,7 +79,7 @@ export function StoreNav() {
                   : "text-muted-foreground hover:bg-muted hover:text-foreground",
               )}
             >
-              All
+              {t("nav.all")}
             </Link>
           </li>
           {topCats.map((cat) => (
@@ -93,7 +93,7 @@ export function StoreNav() {
                     : "text-muted-foreground hover:bg-muted hover:text-foreground",
                 )}
               >
-                {cat.label}
+                {t(`categories.${cat.id}.label`)}
               </Link>
             </li>
           ))}
@@ -102,7 +102,7 @@ export function StoreNav() {
               href="/store/categories"
               className="inline-flex rounded-full px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-foreground transition-all hover:bg-muted"
             >
-              All Categories →
+              {t("nav.allCategories")}
             </Link>
           </li>
         </ul>

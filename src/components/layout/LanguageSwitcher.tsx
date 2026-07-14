@@ -1,6 +1,7 @@
 "use client";
 
-import { useLang } from "@/lib/i18n/LanguageProvider";
+import { useTranslation } from "react-i18next";
+import { changeAppLanguage, type AppLanguage } from "@/lib/i18n/i18n";
 import { cn } from "@/lib/utils";
 
 interface LanguageSwitcherProps {
@@ -9,7 +10,8 @@ interface LanguageSwitcherProps {
 }
 
 export function LanguageSwitcher({ isHome = false, className }: LanguageSwitcherProps) {
-  const { lang, setLang } = useLang();
+  const { i18n, t } = useTranslation("common");
+  const lang = (i18n.language?.startsWith("fr") ? "fr" : "en") as AppLanguage;
 
   return (
     <div
@@ -19,11 +21,11 @@ export function LanguageSwitcher({ isHome = false, className }: LanguageSwitcher
         className,
       )}
       role="group"
-      aria-label="Language"
+      aria-label={t("footer.language")}
     >
       <button
         type="button"
-        onClick={() => setLang("en")}
+        onClick={() => changeAppLanguage("en")}
         aria-pressed={lang === "en"}
         className={cn(
           "inline-flex h-7 min-w-[2.25rem] cursor-pointer items-center justify-center rounded-full px-2.5 transition-colors",
@@ -38,7 +40,7 @@ export function LanguageSwitcher({ isHome = false, className }: LanguageSwitcher
       </button>
       <button
         type="button"
-        onClick={() => setLang("fr")}
+        onClick={() => changeAppLanguage("fr")}
         aria-pressed={lang === "fr"}
         className={cn(
           "inline-flex h-7 min-w-[2.25rem] cursor-pointer items-center justify-center rounded-full px-2.5 transition-colors",

@@ -1,7 +1,7 @@
 "use client";
 
 import { Eyebrow } from "@/components/marketing/home/Eyebrow";
-import { useLang } from "@/lib/i18n/LanguageProvider";
+import { useTranslation } from "react-i18next";
 import { useInView } from "@/lib/hooks/useInView";
 import { useReducedMotion } from "@/lib/hooks/useReducedMotion";
 import { cn } from "@/lib/utils";
@@ -62,11 +62,16 @@ function MarqueeRow({
 }
 
 export function CredibilityStrip() {
-  const { t } = useLang();
+  const { t } = useTranslation("home");
   const reducedMotion = useReducedMotion();
   const [sectionRef, inView] = useInView<HTMLElement>({ threshold: 0.2 });
 
-  const items = t.credibility.items;
+  const credibility = t("credibility", { returnObjects: true }) as {
+    eyebrow: string;
+    tagline: string;
+    items: string[];
+  };
+  const items = credibility.items;
   const splitAt = Math.ceil(items.length / 2);
   const rowOne = items.slice(0, splitAt);
   const rowTwo = items.slice(splitAt);
@@ -86,10 +91,10 @@ export function CredibilityStrip() {
           )}
         >
           <Eyebrow id="credibility-heading" variant="brand">
-            {t.credibility.eyebrow}
+            {credibility.eyebrow}
           </Eyebrow>
           <p className="font-display mt-5 text-xl font-semibold text-warm-black sm:text-2xl">
-            {t.credibility.tagline}
+            {credibility.tagline}
           </p>
         </div>
 

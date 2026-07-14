@@ -1,9 +1,14 @@
+"use client";
+
+import { useTranslation } from "react-i18next";
 import { canadaFlagDataUri } from "@/lib/constants/canada-flag-data";
 
 export function MadeInCanadaBadge() {
+  const { t } = useTranslation("common");
+
   return (
     <div
-      aria-label="Sandha Woodworks — Made in Canada, serving Canada and the United States"
+      aria-label={t("footer.madeInCanadaAria")}
       className="pointer-events-none fixed bottom-3 right-3 z-50 sm:bottom-4 sm:right-4"
     >
       <div className="pointer-events-auto flex flex-col items-center gap-1 rounded-[2px] border border-white/10 bg-warm-black/90 px-1.5 py-1 shadow-2xl backdrop-blur-md sm:gap-2 sm:px-3 sm:py-2.5">
@@ -36,7 +41,7 @@ export function MadeInCanadaBadge() {
           </svg>
         </div>
         <span className="text-[6px] font-bold uppercase tracking-[0.2em] text-cream/90 sm:text-[8px] sm:tracking-[0.25em]">
-          Made in Canada
+          {t("footer.madeInCanada")}
         </span>
       </div>
     </div>

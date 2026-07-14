@@ -3,42 +3,20 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, ChevronDown } from "lucide-react";
-import type { ServiceItem, ServiceCategory, ServiceDetail } from "@/lib/constants/services";
+import { useTranslation } from "react-i18next";
+import type { ServiceItem, ServiceCategory } from "@/lib/constants/services";
+import { serviceDetailMeta } from "@/lib/constants/services";
 import { CtaBanner } from "@/components/marketing/PageSections";
 import { SectionAnchorNav } from "@/components/marketing/SectionAnchorNav";
-
-const defaultProcess = [
-  { step: "Estimating", description: "Take-off from your drawings, specs and finish schedule. Line-item quote returned within one business day for most packages." },
-  { step: "Engineering & Shop Drawings", description: "In-house team produces AWI/AWMAC-compliant shop drawings in AutoCAD, coordinated with Microvellum for direct-to-machine output." },
-  { step: "Submittals & Samples", description: "Finish samples, hardware cut-sheets and drawing set submitted for architect/GC approval prior to release to production." },
-  { step: "CNC Fabrication", description: "Panels nested and machined on multi-axis CNC. Solid-wood machining, edge-banding and dowel/confirmat assembly in dedicated cells." },
-  { step: "Finishing", description: "Controlled-environment spray booths for stain, lacquer, conversion varnish, catalyzed polyurethane and low-VOC waterborne systems." },
-  { step: "QC & Pre-Ship", description: "100% dimensional and finish inspection against the approved shop drawings. Pre-assembled where practical for site-fit certainty." },
-  { step: "Delivery & Install Coordination", description: "Blanket-wrapped, phased delivery coordinated with your site schedule. Installation supervision available Canada-wide." },
-];
-
-const quality = [
-  "AWMAC GIS third-party inspection available on request",
-  "ISO 9001-aligned quality management",
-  "Dimensional tolerances per NAAWS 4.0 grade (Custom or Premium)",
-  "Finish sheen, colour and film-build verified against approved sample",
-];
-
-const sustainability = [
-  "CARB Phase 2 / TSCA Title VI compliant panels standard; NAF/NAUF available on request",
-  "FSC® Chain-of-Custody material available (CoC certificate on request)",
-  "Low-VOC waterborne and GREENGUARD Gold finish systems available",
-  "Supports LEED v4/v4.1 credits: MR (Sourcing of Raw Materials, EPDs, HPDs) and EQ (Low-Emitting Materials)",
-  "Aligns with WELL Building Standard v2 X07 Materials Restrictions",
-];
 
 function FaqAccordion({ faqs }: { faqs: { question: string; answer: string }[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   return (
     <div className="space-y-3">
       {faqs.map((faq, i) => (
-        <div key={i} className="rounded-xl border border-border bg-card overflow-hidden">
+        <div key={i} className="overflow-hidden rounded-xl border border-border bg-card">
           <button
+            type="button"
             onClick={() => setOpenIndex(openIndex === i ? null : i)}
             className="flex w-full items-center justify-between gap-4 p-5 text-left font-medium transition hover:bg-muted/50"
           >
@@ -60,40 +38,84 @@ function FaqAccordion({ faqs }: { faqs: { question: string; answer: string }[] }
   );
 }
 
-const tocItems = [
-  { id: "overview", label: "Overview" },
-  { id: "best-for", label: "Best for" },
-  { id: "process", label: "Process" },
-  { id: "deliverables", label: "Deliverables" },
-  { id: "gallery", label: "Gallery" },
-  { id: "faqs", label: "FAQs" },
-];
+function asStringArray(value: unknown): string[] {
+  return Array.isArray(value) ? value.filter((v): v is string => typeof v === "string") : [];
+}
+
+function asFaqArray(value: unknown): { question: string; answer: string }[] {
+  if (!Array.isArray(value)) return [];
+  return value.filter(
+    (v): v is { question: string; answer: string } =>
+      !!v &&
+      typeof v === "object" &&
+      typeof (v as { question?: unknown }).question === "string" &&
+      typeof (v as { answer?: unknown }).answer === "string",
+  );
+}
+
+function asProcessSteps(
+  value: unknown,
+): { step: string; description: string }[] {
+  if (!Array.isArray(value)) return [];
+  return value.filter(
+    (v): v is { step: string; description: string } =>
+      !!v &&
+      typeof v === "object" &&
+      typeof (v as { step?: unknown }).step === "string" &&
+      typeof (v as { description?: unknown }).description === "string",
+  );
+}
 
 export function ServiceDetailContent({
   service,
-  detail,
   category,
   related,
 }: {
   service: ServiceItem;
-  detail: ServiceDetail | null;
   category: ServiceCategory;
   related: ServiceItem[];
 }) {
-  const processSteps = detail?.process ?? defaultProcess;
-  const show = (id: string) => {
-    switch (id) {
-      case "overview": return true;
-      case "best-for": return !!detail?.bestFor?.length;
-      case "process": return true;
-      case "deliverables": return !!detail?.deliverables?.length;
-      case "gallery": return !!detail?.gallery?.length;
-      case "faqs": return !!detail?.faqs?.length;
-      default: return false;
-    }
-  };
+  const { t } = useTranslation("services");
+  const { t: td } = useTranslation("serviceDetails");
+  const slug = service.slug;
 
-  const filteredToc = tocItems.filter((t) => show(t.id));
+  const name = t(`items.${slug}.name`);
+  const description = t(`items.${slug}.description`);
+  const categoryTitle = t(`categories.${category.id}.title`);
+
+  const overview = td(`details.${slug}.overview`);
+  const bestFor = asStringArray(td(`details.${slug}.bestFor`, { returnObjects: true }));
+  const deliverables = asStringArray(
+    td(`details.${slug}.deliverables`, { returnObjects: true }),
+  );
+  const faqs = asFaqArray(td(`details.${slug}.faqs`, { returnObjects: true }));
+  const gallery = serviceDetailMeta[slug]?.gallery ?? [];
+  const processSteps = asProcessSteps(t("defaultProcess", { returnObjects: true }));
+
+  const tocDefs = [
+    { id: "overview", labelKey: "detail.toc.overview" as const, show: true },
+    {
+      id: "best-for",
+      labelKey: "detail.toc.bestFor" as const,
+      show: bestFor.length > 0,
+    },
+    { id: "process", labelKey: "detail.toc.process" as const, show: true },
+    {
+      id: "deliverables",
+      labelKey: "detail.toc.deliverables" as const,
+      show: deliverables.length > 0,
+    },
+    {
+      id: "gallery",
+      labelKey: "detail.toc.gallery" as const,
+      show: gallery.length > 0,
+    },
+    { id: "faqs", labelKey: "detail.toc.faqs" as const, show: faqs.length > 0 },
+  ];
+
+  const filteredToc = tocDefs
+    .filter((item) => item.show)
+    .map((item) => ({ id: item.id, label: t(item.labelKey) }));
 
   return (
     <>
@@ -109,51 +131,56 @@ export function ServiceDetailContent({
             href="/services"
             className="inline-flex items-center gap-1 text-sm font-medium text-white/70 transition hover:text-white"
           >
-            <ArrowLeft className="h-4 w-4" /> All Services
+            <ArrowLeft className="h-4 w-4" /> {t("detail.back")}
           </Link>
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-white/70 mt-6">
-            {service.description}
+          <p className="mt-6 text-xs font-semibold uppercase tracking-[0.28em] text-white/70">
+            {description}
           </p>
           <h1 className="font-display mt-3 max-w-4xl text-4xl font-semibold leading-tight text-white md:text-6xl">
-            {service.name}
+            {name}
           </h1>
           <div className="mt-6 flex flex-wrap items-center gap-4">
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-bold uppercase tracking-wide text-cream transition hover:bg-warm-black"
             >
-              Request a Quote <ArrowRight className="h-4 w-4" />
+              {t("detail.requestQuote")} <ArrowRight className="h-4 w-4" />
             </Link>
             <a
               href="#overview"
               className="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-foreground"
             >
-              Read the article <ChevronDown className="h-4 w-4" />
+              {t("detail.readArticle")} <ChevronDown className="h-4 w-4" />
             </a>
           </div>
         </div>
       </section>
 
-      <SectionAnchorNav items={filteredToc} label="Article sections" />
+      <SectionAnchorNav items={filteredToc} label={t("detail.sectionsNav")} />
 
       <section id="overview" className="scroll-mt-28 px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl">
-            <h2 className="font-display text-3xl font-semibold">Overview</h2>
-            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              {detail?.overview}
-            </p>
+            <h2 className="font-display text-3xl font-semibold">
+              {t("detail.sections.overview")}
+            </h2>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">{overview}</p>
           </div>
         </div>
       </section>
 
-      {detail?.bestFor && detail.bestFor.length > 0 && (
-        <section id="best-for" className="scroll-mt-28 border-t border-border bg-muted px-4 py-10 sm:px-6 lg:px-8">
+      {bestFor.length > 0 && (
+        <section
+          id="best-for"
+          className="scroll-mt-28 border-t border-border bg-muted px-4 py-10 sm:px-6 lg:px-8"
+        >
           <div className="mx-auto max-w-7xl">
             <div className="mx-auto max-w-3xl">
-              <h2 className="font-display text-3xl font-semibold">Best for</h2>
+              <h2 className="font-display text-3xl font-semibold">
+                {t("detail.sections.bestFor")}
+              </h2>
               <ul className="mt-6 space-y-3">
-                {detail.bestFor.map((item, i) => (
+                {bestFor.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-base text-muted-foreground">
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
                     {item}
@@ -168,7 +195,9 @@ export function ServiceDetailContent({
       <section id="process" className="scroll-mt-28 border-t border-border px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl">
-            <h2 className="font-display text-3xl font-semibold">Process — award to install</h2>
+            <h2 className="font-display text-3xl font-semibold">
+              {t("detail.sections.process")}
+            </h2>
             <div className="mt-10 space-y-8">
               {processSteps.map((step, i) => (
                 <div key={i} className="flex gap-5">
@@ -188,13 +217,18 @@ export function ServiceDetailContent({
         </div>
       </section>
 
-      {detail?.deliverables && detail.deliverables.length > 0 && (
-        <section id="deliverables" className="scroll-mt-28 border-t border-border bg-muted px-4 py-10 sm:px-6 lg:px-8">
+      {deliverables.length > 0 && (
+        <section
+          id="deliverables"
+          className="scroll-mt-28 border-t border-border bg-muted px-4 py-10 sm:px-6 lg:px-8"
+        >
           <div className="mx-auto max-w-7xl">
             <div className="mx-auto max-w-3xl">
-              <h2 className="font-display text-3xl font-semibold">What you receive</h2>
+              <h2 className="font-display text-3xl font-semibold">
+                {t("detail.sections.deliverables")}
+              </h2>
               <ul className="mt-6 space-y-3">
-                {detail.deliverables.map((item, i) => (
+                {deliverables.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-base text-muted-foreground">
                     <span className="mt-0.5 text-brand">✓</span>
                     {item}
@@ -206,16 +240,18 @@ export function ServiceDetailContent({
         </section>
       )}
 
-      {detail?.gallery && detail.gallery.length > 0 && (
+      {gallery.length > 0 && (
         <section id="gallery" className="scroll-mt-28 border-t border-border px-4 py-10 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <h2 className="font-display text-3xl font-semibold">Gallery</h2>
+            <h2 className="font-display text-3xl font-semibold">
+              {t("detail.sections.gallery")}
+            </h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {detail.gallery.map((img, i) => (
+              {gallery.map((img, i) => (
                 <div key={i} className="overflow-hidden rounded-xl bg-muted">
                   <img
                     src={img}
-                    alt={`${service.name} — reference ${i + 1}`}
+                    alt={t("detail.sections.galleryAlt", { name, index: i + 1 })}
                     className="h-64 w-full object-cover"
                     loading="lazy"
                   />
@@ -226,13 +262,18 @@ export function ServiceDetailContent({
         </section>
       )}
 
-      {detail?.faqs && detail.faqs.length > 0 && (
-        <section id="faqs" className="scroll-mt-28 border-t border-border bg-muted px-4 py-10 sm:px-6 lg:px-8">
+      {faqs.length > 0 && (
+        <section
+          id="faqs"
+          className="scroll-mt-28 border-t border-border bg-muted px-4 py-10 sm:px-6 lg:px-8"
+        >
           <div className="mx-auto max-w-7xl">
             <div className="mx-auto max-w-3xl">
-              <h2 className="font-display text-3xl font-semibold">FAQs</h2>
+              <h2 className="font-display text-3xl font-semibold">
+                {t("detail.sections.faqs")}
+              </h2>
               <div className="mt-8">
-                <FaqAccordion faqs={detail.faqs} />
+                <FaqAccordion faqs={faqs} />
               </div>
             </div>
           </div>
@@ -243,7 +284,7 @@ export function ServiceDetailContent({
         <section className="border-t border-border px-4 py-10 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <h2 className="font-display text-3xl font-semibold">
-              Explore more {category.title.toLowerCase()}
+              {t("detail.sections.related", { category: categoryTitle.toLowerCase() })}
             </h2>
             <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {related.map((s) => (
@@ -255,18 +296,20 @@ export function ServiceDetailContent({
                   <div className="aspect-[16/9] overflow-hidden bg-muted">
                     <img
                       src={s.image}
-                      alt={s.name}
+                      alt={t(`items.${s.slug}.name`)}
                       className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                       loading="lazy"
                     />
                   </div>
                   <div className="flex flex-1 flex-col p-5">
-                    <h3 className="font-display text-lg font-semibold">{s.name}</h3>
+                    <h3 className="font-display text-lg font-semibold">
+                      {t(`items.${s.slug}.name`)}
+                    </h3>
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                      {s.description}
+                      {t(`items.${s.slug}.description`)}
                     </p>
                     <p className="mt-auto pt-4 text-sm font-medium text-brand transition group-hover:text-brand-light">
-                      Learn more <span aria-hidden="true">→</span>
+                      {t("detail.sections.learnMore")} <span aria-hidden="true">→</span>
                     </p>
                   </div>
                 </Link>
@@ -277,13 +320,13 @@ export function ServiceDetailContent({
       )}
 
       <CtaBanner
-        eyebrow="Next step"
-        title={`Have drawings for a ${service.name.toLowerCase()} package?`}
-        description="Send us the set and finish schedule — we'll return a line-item quote within one business day."
+        eyebrow={t("detail.cta.eyebrow")}
+        title={t("detail.cta.title", { name: name.toLowerCase() })}
+        description={t("detail.cta.description")}
         primaryHref="/contact"
-        primaryLabel="Request a Quote"
+        primaryLabel={t("detail.cta.primary")}
         secondaryHref="/portfolio"
-        secondaryLabel="See our work"
+        secondaryLabel={t("detail.cta.secondary")}
       />
     </>
   );

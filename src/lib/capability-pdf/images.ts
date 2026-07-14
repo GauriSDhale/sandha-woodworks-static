@@ -1,6 +1,6 @@
 import { pageMedia, projectGalleries } from "@/lib/constants/media";
 import { getSubsectorGallery } from "@/lib/constants/subsector-galleries";
-import type { SubSectorStatement } from "@/lib/constants/sub-sector-statements";
+import type { SubSectorStatementMeta } from "@/lib/constants/sub-sector-statements";
 
 /** Optional category hero placed first when present locally. */
 const poolHeroes: Record<string, string> = {
@@ -21,7 +21,7 @@ export const PDF_IMAGE_SLOT_COUNT = 10;
 /**
  * Resolve unique local image paths for a statement (relative `/assets/...`).
  */
-export function getStatementImagePaths(sub: SubSectorStatement): string[] {
+export function getStatementImagePaths(sub: SubSectorStatementMeta): string[] {
   const gallery = getSubsectorGallery(sub.slug).filter((p) => !p.toLowerCase().endsWith(".webp"));
   const hero = poolHeroes[sub.poolKey];
 
@@ -56,7 +56,7 @@ export function getStatementImagePaths(sub: SubSectorStatement): string[] {
 }
 
 /** @deprecated use getStatementImagePaths + loadImagesAsDataUrls */
-export function getStatementImages(sub: SubSectorStatement, origin: string) {
+export function getStatementImages(sub: SubSectorStatementMeta, origin: string) {
   return getStatementImagePaths(sub).map((src) =>
     src.startsWith("http") ? src : `${origin}${src}`,
   );

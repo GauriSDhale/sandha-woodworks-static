@@ -1,0 +1,2858 @@
+{
+  "hospitals": {
+    "name": "Hôpitaux",
+    "tagline": "Ébénisterie de soins aigus conçue pour le contrôle des infections, le nettoyage chimique et l'installation sur site en activité.",
+    "messaging": "Pour les hôpitaux, l'ébénisterie est une surface clinique — pas une finition. Chaque jointure, chant et charnière est choisi pour survivre au nettoyage quotidien, résister aux infiltrations d'eau et être remis en service sans non-conformité IPAC.",
+    "intro": [
+      "Sandha Woodworks fabrique le mobilier fixe qui fait fonctionner un hôpital de soins aigus — comptoirs d'accueil, postes d'infirmières, salles de médicaments, garde-robes de chambres, panneaux muraux médicaux et corridors cliniques.",
+      "Chaque substrat, chant, charnière et finition est conçu selon les exigences ICRA / IPAC de votre établissement, la liste de produits désinfectants et le profil d'exposition à l'humidité."
+    ],
+    "capabilities": [
+      "Comptoirs d'accueil hospitaliers avec dessus de transaction conformes à l'AODA",
+      "Postes d'infirmières avec zones de chartage et de distribution de médicaments intégrées",
+      "Garde-robes au-dessus du lit, murs TV et vanités intégrées en chambre",
+      "Panneaux muraux médicaux avec bande de chant PVC / ABS continue",
+      "Salles de médicaments, utilité propre/sale, mobilier de stérilisation centrale",
+      "Lambris de corridor hospitalier avec finition Classe A",
+      "Alcôves d'attente familiale et salles de quietude",
+      "Chapelle, salles de réflexion et bureaux de fondation hospitalière"
+    ],
+    "products": [
+      "Mobilier modulaire pour postes d'infirmières",
+      "Systèmes de garde-robes au-dessus du lit",
+      "Armoires à narcotiques pour salles de médicaments",
+      "Armoires à fournitures IV",
+      "Distributeurs EPI et ébénisterie pour boîtes de gants",
+      "Alcôves de chartage",
+      "Murs d'accent pour salons familiaux",
+      "Mobilier pass-through de stérilisation centrale"
+    ],
+    "manufacturingFocus": [
+      "Panneaux MR-MDF et âme phénolique NAUF, scellés sur six faces.",
+      "Bande de chant PVC/ABS continue de 3 mm, coins arrondis pour la nettoyabilité.",
+      "Finition polyuréthane catalysée de grade hospitalier testée contre quat, AHP, javel 1:10, IPA et lingettes phénoliques.",
+      "Cuvettes intégrales thermoformées en surface solide — aucun joint pour l'eau ou le biofilm."
+    ],
+    "qualityStandards": [
+      "CSA Z8000 — Établissements de santé canadiens",
+      "CSA Z317.13 — Prévention des infections pendant la construction",
+      "FGI Guidelines — Conception des hôpitaux",
+      "PIDAC / Public Health Ontario IPAC",
+      "Grade AWMAC Premium sur tout le placage"
+    ],
+    "installationNotes": [
+      "Barrières anti-poussière ICRA Classe III/IV avec HEPA et enceintes à air négatif.",
+      "Équipes hors heures planifiées autour de la distribution de médicaments et des cycles de sommeil des patients.",
+      "Installation à fixations silencieuses avec tampons anti-vibration sur les murs adjacents.",
+      "Autorisation IPAC selon CSA Z317.13 avant le retour en service de l'espace."
+    ],
+    "audience": [
+      "Autorités de santé et fondations hospitalières",
+      "Entrepreneurs généraux expérimentés en santé",
+      "Planificateurs hospitaliers et designers cliniques",
+      "Agents IPAC et ingénierie des installations",
+      "Gestionnaires de construction sur projets P3 de soins aigus"
+    ],
+    "clientNote": "Livrée sur des sites hospitaliers actifs en Ontario et dans le nord-est des États-Unis."
+  },
+  "medical-clinics": {
+    "name": "Cliniques médicales",
+    "tagline": "Ébénisterie pour cliniques sans rendez-vous, équipes de santé familiale, dentaires et spécialisées — propre, chaleureuse, nettoyable.",
+    "messaging": "Les patients de clinique voient l'ébénisterie dès leur entrée. Elle donne le ton à la visite. Sandha fabrique un mobilier de clinique qui respire l'hospitalité chaleureuse tout en offrant une nettoyabilité de grade hospitalier.",
+    "intro": [
+      "L'ébénisterie de clinique se situe entre le cabinet médical et l'espace commercial. Elle doit rassurer le patient et survivre à un nettoyage quotidien aux quats.",
+      "Sandha livre l'ensemble clinique complet — comptoirs d'accueil, meubles de salles d'examen, salles de traitement, ébénisterie dentaire, rangement médical et arrière-bureau d'équipe de santé familiale."
+    ],
+    "capabilities": [
+      "Comptoirs d'accueil de clinique prêts pour écran de protection",
+      "Armoires bas et haut de salles d'examen avec surface d'écriture intégrée",
+      "Mobilier d'operatoire dentaire et centres de stérilisation",
+      "Alcôves de triage et kiosques d'auto-enregistrement pour cliniques sans rendez-vous",
+      "Pods collaboratifs pour équipes de santé familiale",
+      "Rangement de dossiers médicaux et de spécimens",
+      "Banquettes de salle d'attente et alcôves de jeu pour enfants",
+      "Salles de chartage des médecins et salons du personnel"
+    ],
+    "products": [
+      "Comptoirs de transaction d'accueil",
+      "Armoires modulaires de salles d'examen",
+      "Consoles d'outils pour operatoires dentaires",
+      "Postes de travail de centres de stérilisation",
+      "Tiroirs extractibles pour fournitures médicales",
+      "Murs d'accent pour zones d'attente",
+      "Armoires pass-through pour spécimens",
+      "Mobilier de salles de pause"
+    ],
+    "manufacturingFocus": [
+      "Panneaux HPL sur âme MR-MDF pour la nettoyabilité.",
+      "Quincaillerie à fermeture douce cotée pour plus de 100 000 cycles.",
+      "Dessus d'accueil en surface solide intégrale avec relevés en gorge.",
+      "Panneaux de service amovibles sur consolutes dentaires pour l'accès aux utilités."
+    ],
+    "qualityStandards": [
+      "CSA Z317.13 — IPAC de construction à portée clinique",
+      "Conformité AODA / ADA des comptoirs de transaction",
+      "Lignes directrices CDCA pour l'ergonomie des operatoires dentaires",
+      "Panneaux composites CARB Phase 2 / TSCA Title VI",
+      "Grade AWMAC Custom minimum"
+    ],
+    "installationNotes": [
+      "Installations en fin de semaine / soirée pour garder la clinique ouverte en semaine.",
+      "Coordination avec les fournisseurs d'équipement dentaire / imagerie pour le dégrossissage.",
+      "Goulottes d'utilités prédécoupées pour aspiration, air et vide.",
+      "Panneaux de finition encliquetables pour l'entretien futur sans démolition."
+    ],
+    "audience": [
+      "Médecins et dentistes indépendants",
+      "Directeurs généraux d'équipes de santé familiale",
+      "Entrepreneurs généraux spécialisés en cliniques",
+      "Designers d'intérieur en santé",
+      "Exploitants de cliniques multi-emplacements"
+    ],
+    "clientNote": "Équipes de santé familiale, cabinets privés et groupes dentaires multi-emplacements."
+  },
+  "laboratories": {
+    "name": "Laboratoires",
+    "tagline": "Mobilier de laboratoire résistant aux produits chimiques, postes de travail et aménagements de recherche pour laboratoires humides, secs et analytiques.",
+    "messaging": "Les laboratoires sont notre portée la plus technique. Chaque banc est une petite machine — utilités, chimie, charge et cycle de 25 ans. Sandha fabrique un mobilier de laboratoire digne de la recherche et durable comme tel.",
+    "intro": [
+      "Le mobilier de laboratoire est une spécification, pas une finition. Il doit résister à la chimie, porter la charge, desservir les utilités et tenir un cycle de recherche de 25 ans.",
+      "Sandha livre des aménagements wet-lab, dry-lab, analytiques et de pathologie — avec dessus résistants aux produits chimiques, goulottes de service, rangement de réactifs et systèmes muraux nettoyables."
+    ],
+    "capabilities": [
+      "Bancs à surface de travail phénolique et époxy",
+      "Armoires bas et haut résistantes aux produits chimiques",
+      "Rayonnages à réactifs avec rebord et butée arrière",
+      "Caissons sous hotte aspirante",
+      "Armoires d'évier avec cuvette intégrale et séchage sur chevilles",
+      "Bancs d'instruments dimensionnés pour balance et centrifugeuse",
+      "Rangement de verrerie avec séparateurs réglables",
+      "Pass-throughs de salle blanche et ébénisterie de zones d'habillage"
+    ],
+    "products": [
+      "Plans de travail en résine phénolique (25 mm)",
+      "Plans de travail en résine époxy avec relevé en gorge",
+      "Systèmes de rayonnages à réactifs",
+      "Armoires de service sous hotte",
+      "Isolateurs de tables de balance",
+      "Panneaux de séchage de verrerie à chevilles",
+      "Armoires pass-through de salle blanche",
+      "Bancs de laboratoire fixes sur plinthes"
+    ],
+    "manufacturingFocus": [
+      "HPL résistant aux produits chimiques et phénolique massif sur toutes les surfaces wet-lab.",
+      "Caissons de tiroirs en acier peint en poudre sur glissières pleine extension 100 lb / 45 kg.",
+      "Panneaux arrière amovibles pour l'accès service et utilités.",
+      "Quincaillerie inox cotée pour l'exposition aux réactifs."
+    ],
+    "qualityStandards": [
+      "SEFA 8 — Norme de mobilier de laboratoire",
+      "CSA Z316.5 — Hottes et échappement associé",
+      "Compatibilité du débit d'air ASHRAE 110",
+      "Construction adjacente salle blanche Classe 100 / ISO 5",
+      "Grade AWMAC Custom minimum"
+    ],
+    "installationNotes": [
+      "Coordination MEP pour le dégrossissage gaz, eau DI, vide et drain.",
+      "Hauteurs de banc validées selon étude ergonomique avant installation.",
+      "Pieds de banc d'instruments isolés des vibrations au besoin.",
+      "Mastic résistant aux produits chimiques à toutes les jonctions murales."
+    ],
+    "audience": [
+      "Instituts de recherche et laboratoires hospitaliers",
+      "Exploitants d'installations analytiques et d'essais",
+      "Entrepreneurs pharmaceutiques et biotech",
+      "Planificateurs d'installations scientifiques universitaires",
+      "Intégrateurs et consultants de salles blanches"
+    ],
+    "clientNote": "Aménagements wet-lab, dry-lab et analytiques pour clients hospitaliers, universitaires et de recherche privée."
+  },
+  "long-term-care": {
+    "name": "Soins de longue durée",
+    "tagline": "Ébénisterie à l'échelle du résident — finitions chaleureuses, accessoires accessibles et durabilité pour le nettoyage quotidien.",
+    "messaging": "En soins de longue durée, l'ébénisterie est le mobilier que le résident utilise chaque jour pendant des années. Sandha conçoit le mobilier SLD pour être chaleureux au premier contact et clinique après cinq ans d'usage quotidien.",
+    "intro": [
+      "Les résidents en soins de longue durée vivent dans le bâtiment. L'ébénisterie doit se sentir comme chez soi pour eux, et performer comme une surface clinique pour l'équipe de soins.",
+      "Sandha fabrique garde-robes de chambres, mobilier de postes d'infirmières, ébénisterie de salle à manger et d'activités, et salles de bain accessibles pour établissements SLD et soins complexes de courte durée."
+    ],
+    "capabilities": [
+      "Garde-robes de chambre avec tiroir à médicaments verrouillable",
+      "Postes d'infirmières dimensionnés pour le ratio SLD et l'atteinte fauteuil roulant",
+      "Comptoirs de service et stations de boissons pour salles à manger",
+      "Rangement de salles d'activités pour la programmation",
+      "Vanités sans obstacles avec dégagement pour les genoux",
+      "Ébénisterie de salons familiaux et salles de quietude",
+      "Mobilier de chapelle et de réflexion multifaith",
+      "Ébénisterie d'agréments lessive, spa et salon coiffure"
+    ],
+    "products": [
+      "Garde-robes de résidents",
+      "Armoires de chevet au-dessus du lit",
+      "Carrels modulaires pour postes d'infirmières",
+      "Comptoirs de service",
+      "Vanités sans obstacles",
+      "Murs de rangement pour salles d'activités",
+      "Pupitres et bancs de chapelle",
+      "Mobilier de spa et salon"
+    ],
+    "manufacturingFocus": [
+      "HPL grain bois chaleureux sur âme MR-MDF — ressenti résidentiel, performance clinique.",
+      "Profils arrondis et quincaillerie captive — aucun point d'accroche, aucun accessoire amovible.",
+      "Plinthes scellées et transitions en gorge nettoyables.",
+      "Quincaillerie anti-effraction sur les tiroirs à médicaments."
+    ],
+    "qualityStandards": [
+      "Normes de conception des foyers de soins de longue durée MOHLTC / Ontario",
+      "CSA Z317.13 pour la prévention des infections à portée SLD",
+      "Exigences sans obstacles CSA B651 / AODA",
+      "Grade AWMAC Custom+",
+      "Panneaux composites CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation par phases par aile de résidents pour maintenir les zones occupées en service.",
+      "Installation à fixations silencieuses sur les murs adjacents aux résidents.",
+      "Coordination avec le personnel clinique MOHLTC sur les arrêts de service.",
+      "Visite d'autorisation IPAC post-installation avec le DOC."
+    ],
+    "audience": [
+      "Exploitants SLD et de soins complexes de courte durée",
+      "Chargés de projet du ministère de la Santé",
+      "Partenaires de développement P3 SLD",
+      "Designers d'intérieur à échelle résidentielle",
+      "Entrepreneurs généraux sur nouvelles constructions SLD"
+    ],
+    "clientNote": "Réaménagements SLD du ministère de la Santé et nouvelles constructions d'exploitants privés en Ontario."
+  },
+  "senior-living": {
+    "name": "Résidences pour aînés",
+    "tagline": "Ébénisterie pour vie autonome et communautés de retraite premium — chaleur résidentielle, savoir-faire hôtelier.",
+    "messaging": "Les résidences pour aînés ont l'apparence d'un hôtel boutique et la performance d'un bâtiment de santé. Sandha livre l'esthétique hôtelière avec la durabilité dont l'exploitant a besoin pour un amortissement de 15 ans.",
+    "intro": [
+      "Les résidents choisissent une résidence pour aînés parce que le bâtiment se lit comme un chez-soi — avec les agréments d'un petit hôtel. L'ébénisterie est au cœur de cette première impression.",
+      "Sandha fabrique réception de hall, salles à manger, bars à café, salons résidents, bibliothèques et cuisines en unité pour communautés de vie autonome et de retraite."
+    ],
+    "capabilities": [
+      "Comptoirs d'accueil de hall avec finition conciergerie",
+      "Stations de service et bars à boissons pour salles à manger",
+      "Murs en panneau de bois pour bibliothèques et salons de lecture",
+      "Bars à café et mobilier de bistro",
+      "Murs d'accent et cheminées pour salons résidents",
+      "Armoires de cuisine et vanités en unité",
+      "Mobilier de conditionnement, spa et bord de piscine",
+      "Ébénisterie de salles de jeux, théâtre et ateliers créatifs"
+    ],
+    "products": [
+      "Comptoirs de conciergerie",
+      "Arrière-boutique de bars à café",
+      "Rayonnages de bibliothèque",
+      "Banquettes de bistro",
+      "Cuisines en unité",
+      "Comptoirs d'accueil fitness",
+      "Ébénisterie de théâtre",
+      "Rangement de salles polyvalentes"
+    ],
+    "manufacturingFocus": [
+      "Placage AWMAC Premium sur les murs face au public.",
+      "Dessus en surface solide sur les comptoirs d'agréments en zone humide.",
+      "Quartz de grade résidentiel sur les cuisines en unité.",
+      "Finition chaude frottée à la main sur toute l'ébénisterie des salons publics."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Premium sur le placage",
+      "Conformité CSA B651 / AODA dans les espaces publics",
+      "ULC S102 / ASTM E84 Classe A sur le lambris de corridor",
+      "Finition selon norme PIP sur les chaînes de retraite de marque",
+      "Panneaux composites CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation en communauté occupée avec protocole d'expérience résident.",
+      "Installation des étages d'agréments phasée autour des heures de repas et de programmation.",
+      "Installation en unité coordonnée avec le calendrier d'emménagement des résidents.",
+      "Nettoyage white-glove post-installation avant le retour aux résidents."
+    ],
+    "audience": [
+      "FPI et exploitants privés de résidences pour aînés",
+      "Chaînes de retraite de marque et groupes de franchises",
+      "Designers d'intérieur expérimentés en hôtellerie",
+      "Gestionnaires de construction du secteur de la santé",
+      "Promoteurs résidentiels de luxe"
+    ],
+    "clientNote": "Chaînes de retraite de marque et communautés premium d'exploitants indépendants."
+  },
+  "retirement-communities": {
+    "name": "Communautés de retraite",
+    "tagline": "Ensembles d'ébénisterie pour campus multi-bâtiments de communautés de retraite.",
+    "messaging": "Une communauté de retraite est une petite ville. L'ébénisterie porte la marque du grand hall jusqu'au dernier appartement. Sandha livre des campus entiers comme un seul ensemble responsable.",
+    "intro": [
+      "Les communautés de retraite sont de petits campus. Chaque bâtiment — hall principal, tour résidentielle, centre de mieux-être, chapelle — exige une ébénisterie cohérente sous un seul fabricant responsable.",
+      "Sandha livre des ensembles de campus complets séquencés bâtiment par bâtiment, pour que les dates d'ouverture soient respectées sans perturber les phases déjà en service."
+    ],
+    "capabilities": [
+      "Ébénisterie de réception et grand salon du hall principal",
+      "Mobilier de salles à manger multi-ailes",
+      "Chapelle, théâtre et salles polyvalentes",
+      "Centre de mieux-être et agréments en bord de piscine",
+      "Mobilier d'aile de vie assistée",
+      "Ensembles de cuisines en unité par étage",
+      "Mobilier de boutique, salon et studio coiffure",
+      "Ébénisterie de jardins d'agréments et salons extérieurs"
+    ],
+    "products": [
+      "Murs d'accent de grand salon",
+      "Comptoirs de service multi-ailes",
+      "Pupitres de chapelle et de théâtre",
+      "Réception de centre de mieux-être",
+      "Mobilier résident de vie assistée",
+      "Cuisines en unité par gamme",
+      "Postes de travail de salon",
+      "Façades de bar extérieur"
+    ],
+    "manufacturingFocus": [
+      "Cuisines en unité fabriquées par lots pour la répétabilité d'étage en étage.",
+      "Placage AWMAC Premium sur les murs de grand salon et de salle à manger.",
+      "Finition classée climat sur les salons extérieurs couverts.",
+      "Trousses de retouche assorties expédiées aux installations pour le service en cycle de vie."
+    ],
+    "qualityStandards": [
+      "Normes de conception MOHLTC / ORCA",
+      "AWMAC Premium sur le bois public",
+      "CSA B651 / AODA dans chaque bâtiment du campus",
+      "Finition selon norme PIP lorsque la communauté est franchisée",
+      "ULC S102 / ASTM E84 Classe A sur le lambris de corridor"
+    ],
+    "installationNotes": [
+      "Livraison phasée pour que chaque bâtiment ouvre selon l'échéancier.",
+      "Remorque sur place pour retouches et petites défectuosités pendant la phase de liste de défectuosités.",
+      "Coordination avec les opérations du campus sur les itinéraires de livraison passant par les phases occupées.",
+      "Dossiers de remise par bâtiment avec cahier O&M relié."
+    ],
+    "audience": [
+      "FPI de communautés de retraite",
+      "Promoteurs de campus planifiés",
+      "Exploitants franchisés en expansion de portefeuille",
+      "Consortiums P3 de résidences pour aînés",
+      "Propriétaires de communautés confessionnelles"
+    ],
+    "clientNote": "Campus de retraite planifiés à l'échelle du Canada."
+  },
+  "assisted-living": {
+    "name": "Vie assistée",
+    "tagline": "Ébénisterie pour vie assistée — accessible, chaleureuse et discrètement clinique.",
+    "messaging": "La vie assistée respecte l'autonomie du résident. Le mobilier Sandha est dimensionné pour qu'un usager en fauteuil roulant ouvre chaque tiroir, et fini au standard d'une suite hôtelière.",
+    "intro": [
+      "La vie assistée se situe entre la vie autonome et les soins de longue durée. Les résidents vivent dans leur propre suite mais ont besoin d'aide quotidiennement.",
+      "Sandha fabrique le mobilier de suites résidents, salons familiaux, salles à manger et postes de soins conçus pour l'atteinte fauteuil roulant, le dégagement marchette et l'efficacité du personnel."
+    ],
+    "capabilities": [
+      "Kitchenettes et garde-robes de suites résidents",
+      "Consoles de postes de soins avec alcôves de chartage",
+      "Salles à manger avec supervision visuelle du personnel",
+      "Ébénisterie de salons familiaux et grands halls",
+      "Vanités de salles de bain sans obstacles",
+      "Mobilier de salles de mieux-être et de réadaptation",
+      "Chapelles et salles de réflexion",
+      "Agréments salon, spa et boutique"
+    ],
+    "products": [
+      "Armoires murales de kitchenette à portée basse",
+      "Caissons de vanités sans obstacles",
+      "Alcôves de chartage pour postes de soins",
+      "Stations de boissons de salle à manger",
+      "Banquettes de salons familiaux",
+      "Rangement de salles de mieux-être",
+      "Ébénisterie de chapelle",
+      "Vanités de salon"
+    ],
+    "manufacturingFocus": [
+      "Fonds d'armoires murales montés à 40 po pour l'atteinte fauteuil roulant.",
+      "Coins arrondis et poignées captives partout.",
+      "Fermeture douce caoutchoutée sur chaque tiroir pour un fonctionnement silencieux.",
+      "HPL grain bois chaleureux d'apparence résidentielle."
+    ],
+    "qualityStandards": [
+      "Lignes directrices MOHLTC pour la portée vie assistée",
+      "Atteinte sans obstacles CSA B651 / AODA",
+      "Construction compatible IPAC selon CSA Z317.13",
+      "Grade AWMAC Custom+",
+      "Panneaux composites CARB Phase 2"
+    ],
+    "installationNotes": [
+      "Installations en fin de semaine / soirée avec enceintes sans poussière.",
+      "Installation suite par suite selon le calendrier d'emménagement des résidents.",
+      "Coordination des postes de soins avec le personnel clinique sur les arrêts.",
+      "Cahier de remise pour l'équipe de soins avec compatibilité des produits de nettoyage."
+    ],
+    "audience": [
+      "Exploitants de vie assistée",
+      "Communautés pour aînés confessionnelles",
+      "Planificateurs SLD des autorités de santé",
+      "Promoteurs du vieillir chez soi",
+      "Entrepreneurs P3 de vie assistée"
+    ],
+    "clientNote": "Résidences de vie assistée et communautés de soins continus."
+  },
+  "schools": {
+    "name": "Écoles",
+    "tagline": "Mobilier K-12 conçu pour un cycle de vie de 20 ans en salle de classe et une fenêtre estivale de 8 semaines.",
+    "messaging": "L'armoire de salle de classe est l'ébénisterie la plus touchée d'un bâtiment public. Sandha fabrique le mobilier K-12 pour survivre à l'usage quotidien des élèves et passer une inspection des installations vingt ans plus tard.",
+    "intro": [
+      "Les écoles K-12 publiques et indépendantes encaissent beaucoup. Chaque tiroir, chaque charnière, chaque chant doit survivre à 20 ans d'usage et de nettoyage quotidiens.",
+      "Sandha est approuvé sur les listes de fournisseurs des conseils scolaires de l'Ontario et livre le mobilier K-12 partout au Canada et aux États-Unis selon les fenêtres estivales."
+    ],
+    "capabilities": [
+      "Armoires de salle de classe, casiers et unités murales enseignants",
+      "Casiers et crochets de manteaux pour maternelle",
+      "Bancs de corridor et casiers élèves",
+      "Comptoirs de circulation et rayonnages de bibliothèque",
+      "Rangement spécialisé pour salles de musique et d'arts",
+      "Mobilier de réception, administration et suite du directeur",
+      "Panneaux muraux acoustiques d'auditorium",
+      "Comptoirs de service de cafétéria"
+    ],
+    "products": [
+      "Unités d'armoires standard de salle de classe",
+      "Unités murales enseignants",
+      "Casiers de manteaux",
+      "Bancs de corridor",
+      "Comptoirs de circulation de bibliothèque",
+      "Rangement d'instruments de salle de musique",
+      "Chariots d'argile et de peinture pour salles d'arts",
+      "Service de cafétéria"
+    ],
+    "manufacturingFocus": [
+      "Quincaillerie BHMA Grade 1 sur chaque tiroir et porte.",
+      "Bande de chant PVC résistante aux impacts sur tous les coins exposés.",
+      "Finitions HPL nettoyables cotées pour la chimie d'entretien des conseils scolaires.",
+      "Spécification de cycle de vie de 20 ans et plus sur charnières, glissières et poignées."
+    ],
+    "qualityStandards": [
+      "Normes de nouvelles constructions du ministère de l'Éducation de l'Ontario",
+      "Grade AWMAC Custom à Premium",
+      "Quincaillerie ANSI/BHMA A156 Grade 1",
+      "Panneaux CARB Phase 2 / TSCA Title VI",
+      "Conformité CSA B651 / AODA"
+    ],
+    "installationNotes": [
+      "Livraison phasée en fenêtre estivale — première palette sur place en semaine 1.",
+      "Installation en salles de bascule lorsque l'école est occupée.",
+      "Visite de liste de défectuosités avec le directeur avant la rentrée de septembre.",
+      "Trousse de pièces de rechange laissée aux installations pour le service en cycle de vie."
+    ],
+    "audience": [
+      "Conseils scolaires et équipes d'installations de districts",
+      "Constructeurs d'écoles K-12 et entrepreneurs généraux",
+      "Propriétaires d'écoles indépendantes",
+      "Chargés de projet du ministère de l'Éducation",
+      "Directeurs d'écoles primaires et secondaires"
+    ],
+    "clientNote": "Conseils scolaires publics de l'Ontario et projets K-12 au Massachusetts."
+  },
+  "colleges": {
+    "name": "Collèges",
+    "tagline": "Ébénisterie pour l'apprentissage appliqué — ateliers de métiers, cuisines pédagogiques, simulation en santé et salles de classe.",
+    "messaging": "Les collèges enseignent avec le bâtiment. Les bancs de métiers, laboratoires de simulation et cuisines pédagogiques Sandha sont conçus pour faire partie du curriculum, pas seulement de la pièce qui l'entoure.",
+    "intro": [
+      "Les collèges enseignent des compétences. Le bâtiment doit doubler d'atelier, de cuisine, de laboratoire de simulation ou de studio — et être prêt pour le prochain cours.",
+      "Sandha livre bancs d'ateliers de métiers, mobilier de cuisines pédagogiques, salles de simulation en santé et aménagements de salles de classe selon les calendriers estivaux des collèges partout au Canada."
+    ],
+    "capabilities": [
+      "Bancs de travail et rangement d'outils pour ateliers de métiers",
+      "Îlots de cuisines pédagogiques et mobilier de garde-manger",
+      "Mobilier de salles de simulation en santé et panneaux de tête de lit",
+      "Murs d'accent et mobilier en pods pour salles de classe",
+      "Circulation de bibliothèque et learning commons",
+      "Mobilier de studios, maker-spaces et laboratoires d'arts",
+      "Ébénisterie de cafétéria, café et commerce de détail campus",
+      "Réception, administration et centres de vie étudiante"
+    ],
+    "products": [
+      "Bancs de travail de métiers",
+      "Îlots de cuisines pédagogiques",
+      "Panneaux de tête de lit pour simulation en santé",
+      "Tables en pods pour salles de classe",
+      "Comptoirs de circulation de bibliothèque",
+      "Murs d'outils pour maker-spaces",
+      "Comptoirs de café",
+      "Réception de vie étudiante"
+    ],
+    "manufacturingFocus": [
+      "Dessus phénoliques sur bancs de métiers pour résistance chimique et aux impacts.",
+      "Comptoirs de cuisines pédagogiques en surface solide avec gorge scellée.",
+      "Mobilier de simulation en santé spécifié à la nettoyabilité de grade hospitalier.",
+      "Pods de salle de classe modulaires conçus pour la reconfiguration entre semestres."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom à Premium",
+      "SEFA 8 sur bancs de métiers et de laboratoire",
+      "Panneaux CARB Phase 2 / TSCA Title VI",
+      "Conformité CSA B651 / AODA",
+      "CSA Z317.13 sur les salles de simulation en santé"
+    ],
+    "installationNotes": [
+      "Installations en fenêtre estivale selon les calendriers de semestres.",
+      "Installation d'ateliers de métiers coordonnée avec le fournisseur d'équipement pour les utilités.",
+      "Installation de simulation en santé vérifiée avec le responsable du programme clinique.",
+      "Formation post-installation pour les installations sur l'entretien et les retouches."
+    ],
+    "audience": [
+      "Planificateurs de campus de collèges communautaires",
+      "Directeurs de programmes d'apprentissage appliqué",
+      "Gestionnaires de construction postsecondaire",
+      "Consultants en simulation santé et formation aux métiers",
+      "Commanditaires de projets de fondations collégiales"
+    ],
+    "clientNote": "Travaux récents au Niagara College (Marotta Family Innovation Complex)."
+  },
+  "universities": {
+    "name": "Universités",
+    "tagline": "Ébénisterie universitaire de grade recherche — laboratoires, bibliothèques, studios et aménagements administratifs.",
+    "messaging": "L'ébénisterie universitaire doit servir le chercheur, l'étudiant et l'exploitant du campus — chacun selon sa propre norme. Sandha livre les trois dans un seul ensemble de fabrication.",
+    "intro": [
+      "Les universités exploitent laboratoires de recherche, bibliothèques et édifices administratifs sur le même campus. Les spécifications d'ébénisterie varient d'un bâtiment à l'autre — mais la norme est toujours une durabilité de grade recherche.",
+      "Sandha livre l'ébénisterie postsecondaire en Ontario et aux É.-U. — laboratoires humides, laboratoires secs, learning commons, bureaux de groupes de recherche et commerce de détail campus."
+    ],
+    "capabilities": [
+      "Bancs de laboratoires humides et secs",
+      "Learning commons et carrels de bibliothèque",
+      "Murs d'accent pour bureaux de groupes de recherche",
+      "Lambris de salles de classe et d'amphithéâtres",
+      "Systèmes muraux de studios et de critiques de design",
+      "Ébénisterie de commerce de détail et cafés campus",
+      "Mobilier administratif et de faculté",
+      "Ébénisterie de club de faculté et d'espaces événementiels"
+    ],
+    "products": [
+      "Systèmes de bancs wet-lab",
+      "Bureaux de recherche dry-lab",
+      "Carrels de bibliothèque",
+      "Murs de collaboration pour learning commons",
+      "Lambris d'amphithéâtre",
+      "Murs d'affichage de studio",
+      "Comptoirs de cafés campus",
+      "Réception d'accent pour bureaux de faculté"
+    ],
+    "manufacturingFocus": [
+      "Phénolique et époxy sur les surfaces wet-lab.",
+      "Placage AWMAC Premium sur le bois public des salons de faculté et bibliothèques.",
+      "Panneaux appariés en séquence sur les murs d'amphithéâtre.",
+      "Systèmes de carrels modulaires conçus pour se reconfigurer sur 25 ans."
+    ],
+    "qualityStandards": [
+      "SEFA 8 sur les systèmes de bancs de laboratoire",
+      "AWMAC Premium sur le placage",
+      "CSA Z316.5 sur les travaux liés aux hottes",
+      "Panneaux CARB Phase 2 / TSCA Title VI",
+      "Conformité AODA / ADA sur l'ensemble du campus public"
+    ],
+    "installationNotes": [
+      "Fenêtres d'installation estivales / semaines de lecture.",
+      "Installation de laboratoire coordonnée avec le fournisseur de hottes et le MEP.",
+      "Installation de bibliothèque phasée autour des périodes d'examens.",
+      "Visite de liste de défectuosités avec la gestion des installations et le commanditaire académique."
+    ],
+    "audience": [
+      "Bureaux de projets d'immobilisations universitaires",
+      "Chercheurs principaux d'installations de recherche",
+      "Architectes de campus et bureaux de planification",
+      "Entrepreneurs généraux postsecondaires",
+      "Comités de bâtiments financés par dotation"
+    ],
+    "clientNote": "Travaux récents à la University of Toronto Robarts Library Study Commons."
+  },
+  "libraries": {
+    "name": "Bibliothèques",
+    "tagline": "Ébénisterie pour bibliothèques publiques, universitaires et spécialisées — circulation, rayonnages, étude, heure du conte.",
+    "messaging": "Les bibliothèques sont devenues des centres communautaires. L'ébénisterie doit accueillir livres, ordinateurs portables et un voisinage entier. Sandha livre une ébénisterie de bibliothèque conçue pour les usagers et la stewardship.",
+    "intro": [
+      "L'ébénisterie d'une bibliothèque est son identité — le comptoir de circulation, les rayonnages, les carrels, le gradin de l'heure du conte.",
+      "Sandha livre des ensembles de bibliothèque pour succursales publiques, bibliothèques universitaires et archives spécialisées partout au Canada."
+    ],
+    "capabilities": [
+      "Comptoirs de circulation avec intégration de fente de retour",
+      "Rayonnages adultes, adolescents et enfants",
+      "Carrels d'étude et cabines d'étude de groupe",
+      "Murs d'accent pour salons de lecture",
+      "Gradins et casiers pour l'heure du conte",
+      "Salles d'histoire locale et d'archives",
+      "Mobilier de salles communautaires et d'espaces de programmes",
+      "Ébénisterie de café, maker-space et bibliothèque d'outils"
+    ],
+    "products": [
+      "Comptoirs de transaction de circulation",
+      "Rayonnages de livres",
+      "Carrels d'étude",
+      "Mobilier de cabines d'étude de groupe",
+      "Terrasses pour heure du conte",
+      "Caissons de rayonnage d'archives",
+      "Murs de rangement pour salles communautaires",
+      "Armoires d'outils pour maker-spaces"
+    ],
+    "manufacturingFocus": [
+      "Grade AWMAC Custom à Premium sur le bois public.",
+      "Capacité de charge renforcée sur tous les rayonnages.",
+      "Finition chaude frottée à la main sur gradins et casiers de la zone enfants.",
+      "Panneaux de service amovibles pour l'intégration AV aux comptoirs."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom à Premium",
+      "ULC S102 / ASTM E84 Classe A sur le lambris public",
+      "Conformité AODA / ADA des comptoirs de circulation",
+      "Orientations OLA / CFLA sur la conception des bibliothèques publiques",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation hors heures pour garder la succursale ouverte.",
+      "Coordination avec les fournisseurs RFID / auto-prêt sur les découpes de comptoir.",
+      "Rayonnages ancrés aux connexions structurelles selon les exigences sismiques.",
+      "Essai de charge post-installation des rayonnages avec le personnel de la bibliothèque."
+    ],
+    "audience": [
+      "Conseils de bibliothèques publiques",
+      "Projets d'immobilisations de bibliothèques universitaires",
+      "Planificateurs d'installations municipales",
+      "Designers d'intérieur expérimentés en bibliothèques",
+      "EG de bâtiments culturels"
+    ],
+    "clientNote": "Travaux récents à Valley Park Library, Hamilton et U of T Robarts Library."
+  },
+  "daycares": {
+    "name": "Garderies",
+    "tagline": "Ébénisterie sécuritaire pour enfants — fermeture douce, quincaillerie captive, finitions nettoyables.",
+    "messaging": "L'ébénisterie de garderie répond à la province, aux parents et au tout-petit de deux ans. Sandha construit chaque unité d'abord comme un équipement de sécurité, ensuite comme un meuble.",
+    "intro": [
+      "L'ébénisterie de garderie est la portée la plus sécuritaire du bâtiment. Chaque coin, chaque charnière, chaque finition est choisi en pensant à un enfant de deux ans.",
+      "Sandha fabrique bancs de casiers, lavabos bas, tables sensorielles, alcôves d'arts et comptoirs d'accueil pour garderies agréées partout en Ontario."
+    ],
+    "capabilities": [
+      "Casiers de manteaux dimensionnés pour l'atteinte des tout-petits",
+      "Linéaires de lavabos bas et stations de lavage des mains",
+      "Mobilier de tables sensorielles et d'alcôves d'arts",
+      "Rangement de salles de sieste et casiers de cots",
+      "Comptoirs d'accueil et d'enregistrement",
+      "Mobilier de cuisine pour collation",
+      "Stations de change et rangement",
+      "Mobilier de fournitures de programmes et d'administration"
+    ],
+    "products": [
+      "Bancs de casiers pour tout-petits",
+      "Armoires de lavabos bas",
+      "Unités de tables sensorielles",
+      "Rangement de cots de sieste",
+      "Comptoirs d'enregistrement d'accueil",
+      "Mobilier de préparation de collations",
+      "Stations de change",
+      "Rangement de programmes"
+    ],
+    "manufacturingFocus": [
+      "Fermeture douce partout, quincaillerie captive, aucune poignée amovible.",
+      "Coins arrondis sur chaque bord exposé.",
+      "Finitions HPL nettoyables cotées pour la chimie des garderies.",
+      "Ancrages anti-basculement sur chaque unité haute."
+    ],
+    "qualityStandards": [
+      "Ministère de l'Éducation de l'Ontario — Loi sur la garde d'enfants et la petite enfance",
+      "CSA Z614 pour les chants d'ébénisterie sécuritaires pour enfants",
+      "Panneaux CARB Phase 2 / TSCA Title VI",
+      "CSA B651 / AODA sur les comptoirs face aux parents",
+      "Grade AWMAC Custom"
+    ],
+    "installationNotes": [
+      "Ancrer chaque unité à la structure selon les exigences d'agrément.",
+      "Installer en soirée ou fin de semaine autour de la programmation.",
+      "Visite post-installation avec la direction de la garderie pour l'autorisation d'agrément.",
+      "Trousse de retouche fournie au personnel pour l'usure en cycle de vie."
+    ],
+    "audience": [
+      "Exploitants de garderies agréées",
+      "Programmes municipaux de petite enfance",
+      "Constructeurs de services de garde de conseils scolaires",
+      "Conseils de garderies confessionnelles et communautaires",
+      "Franchises de garderies multi-emplacements"
+    ],
+    "clientNote": "Exploitants de garderies agréées municipales et indépendantes."
+  },
+  "learning-centres": {
+    "name": "Centres d'apprentissage",
+    "tagline": "Ébénisterie pour tutorat, après-école et centres d'enrichissement — flexible, conforme à la marque, sécuritaire pour les enfants.",
+    "messaging": "Les centres d'apprentissage doivent sembler identiques, que l'enfant soit à Toronto ou à Tampa. Sandha fabrique les accessoires une fois et les déploie de façon cohérente.",
+    "intro": [
+      "Les centres d'apprentissage et programmes parascolaires exigent une construction lumineuse, sécuritaire et conforme à la marque à chaque emplacement.",
+      "Sandha fabrique des centres d'apprentissage selon la norme de marque — réception, pods de tutorat, murs de travail de groupe et salles de bain sécuritaires pour enfants — palettisés par emplacement."
+    ],
+    "capabilities": [
+      "Comptoirs d'accueil et d'enregistrement de marque",
+      "Pods de tutorat et bureaux individuels",
+      "Murs de travail de groupe et tables d'étude partagées",
+      "Vanités de salles de bain sécuritaires pour enfants",
+      "Rangement de fournitures et de matériel de programmes",
+      "Ébénisterie de salon parents et de salles d'observation",
+      "Snack-bars et stations d'hydratation",
+      "Présentoirs de marchandises et de cahiers"
+    ],
+    "products": [
+      "Comptoirs d'accueil selon norme de marque",
+      "Pods de tutorat",
+      "Tables d'étude partagées",
+      "Murs de rangement de matériel",
+      "Banquettes de salon parents",
+      "Comptoirs de snack-bar",
+      "Présentoirs de marchandises",
+      "Vanités sécuritaires pour enfants"
+    ],
+    "manufacturingFocus": [
+      "Répétabilité multi-sites de marque avec fiches de tolérance.",
+      "Finitions HPL nettoyables pour usage quotidien à fort débit.",
+      "Pods modulaires qui expédient à plat et s'assemblent sur place.",
+      "Palettisés par emplacement avec trousse d'installation à code QR."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom",
+      "Panneaux CARB Phase 2 / TSCA Title VI",
+      "CSA B651 / AODA sur les comptoirs d'accueil",
+      "Normes PIP de franchise le cas échéant",
+      "Dispositions d'assemblée publique OBC / NBC"
+    ],
+    "installationNotes": [
+      "Installation hors heures / fin de semaine pour garder le centre ouvert.",
+      "Autorisation du gestionnaire de marque sur l'emplacement prototype avant le déploiement.",
+      "Déploiement multi-emplacements avec un seul GP pour la région.",
+      "Trousse de retouche sur place par franchisé."
+    ],
+    "audience": [
+      "Exploitants propriétaires-franchisés",
+      "Franchiseurs de centres d'apprentissage",
+      "Propriétaires de programmes parascolaires",
+      "Directeurs municipaux de loisirs et d'enrichissement",
+      "Organismes de tutorat sans but lucratif"
+    ],
+    "clientNote": "Franchises de centres d'apprentissage multi-emplacements."
+  },
+  "training-facilities": {
+    "name": "Installations de formation",
+    "tagline": "Ébénisterie pour formation corporative et métiers — salles de classe, laboratoires de simulation et ateliers pratiques.",
+    "messaging": "Les installations de formation vivent et meurent par la salle. Sandha construit l'ébénisterie qui rend une journée de formation professionnelle dès l'entrée de l'étudiant.",
+    "intro": [
+      "Les installations de formation sortent les gens de leur journée de travail. La salle doit enseigner, démontrer et produire des résultats dans une fenêtre serrée.",
+      "Sandha livre salles de formation corporative, baies de simulation de métiers et laboratoires pratiques pour fournisseurs de formation privés et gouvernementaux."
+    ],
+    "capabilities": [
+      "Ébénisterie et pupitres de salles de formation corporative",
+      "Bancs de travail pour baies de simulation de métiers",
+      "Murs de salles de classe intégrés AV",
+      "Mobilier de salles de break-out",
+      "Salon clients et réception",
+      "Stations d'équipement de laboratoires de simulation",
+      "Pods flexibles pour cours de mise à niveau",
+      "Carrels de cabines de certification / tests"
+    ],
+    "products": [
+      "Pupitres d'instructeurs",
+      "Bancs de baies de simulation",
+      "Murs intégrés AV",
+      "Rangement de salles de break-out",
+      "Comptoirs d'accueil",
+      "Pods de cours de mise à niveau",
+      "Carrels de cabines de tests",
+      "Banquettes de salon clients"
+    ],
+    "manufacturingFocus": [
+      "Parcours de câbles AV coordonnés sur les dessins d'atelier.",
+      "Dessus phénoliques sur bancs de métiers et de simulation.",
+      "Systèmes de pupitres modulaires qui se reconfigurent entre programmes.",
+      "Portes âme pleine sur carrels de tests pour séparation acoustique."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom",
+      "Conformité CSA B651 / AODA",
+      "SEFA 8 sur les systèmes de bancs de métiers et de simulation",
+      "Panneaux CARB Phase 2 / TSCA Title VI",
+      "Normes d'intégrateurs AV (Crestron, Extron)"
+    ],
+    "installationNotes": [
+      "Installation en fin de semaine pour protéger la programmation de semaine.",
+      "Coordination avec l'intégrateur AV pour le tirage de câbles et le blocage des moniteurs.",
+      "Liste de défectuosités avec le responsable de programme avant le début du cours de certification.",
+      "Coordination avec l'installateur de mobilier pour les tables de formation."
+    ],
+    "audience": [
+      "Dirigeants d'apprentissage et développement corporatifs",
+      "Propriétaires d'écoles de formation aux métiers",
+      "Fournisseurs de formation gouvernementaux",
+      "Centres de formation syndicaux",
+      "Gestionnaires d'installations d'organismes de certification"
+    ],
+    "clientNote": "Installations de formation corporatives, syndicales et gouvernementales."
+  },
+  "corporate-offices": {
+    "name": "Bureaux corporatifs",
+    "tagline": "Ébénisterie pour sièges sociaux, tours et améliorations locatives — réception, salle de conseil, suites exécutives.",
+    "messaging": "Le comptoir d'accueil du siège social est le visage de l'entreprise. Sandha le construit une fois et le réussit, pour que la marque du client se livre comme un objet physique.",
+    "intro": [
+      "L'ébénisterie du siège corporatif est la marque du client à hauteur des yeux. Elle se livre une fois et représente l'entreprise pendant une décennie.",
+      "Sandha livre réception, salle de conseil, suite exécutive et mobilier de milieu de travail pour projets de tours du centre-ville et de sièges campus."
+    ],
+    "capabilities": [
+      "Comptoirs d'accueil avec murs d'accent intégrés à la marque",
+      "Lambris en placage apparié en séquence pour salles de conseil",
+      "Aménagements intégrés et crédences de bureaux exécutifs",
+      "Ébénisterie de touchdown et de cabines téléphoniques",
+      "Mobilier de café, pantry et lounge",
+      "Ébénisterie de salles de mieux-être, d'allaitement et de prière",
+      "Mobilier de salles de reprographie et d'ateliers",
+      "Murs d'accent intégrés à la signalisation"
+    ],
+    "products": [
+      "Comptoirs d'accueil flottants",
+      "Crédences de salles de conseil",
+      "Bureaux exécutifs",
+      "Pantrys de café",
+      "Caissons de cabines téléphoniques",
+      "Ébénisterie de salles de mieux-être",
+      "Stations de reprographie",
+      "Panneaux de signalisation pour murs d'accent"
+    ],
+    "manufacturingFocus": [
+      "Placage apparié en séquence pour grain continu sur les murs publics.",
+      "Découpes de crédences intégrées AV pré-coordonnées sur les dessins d'atelier.",
+      "Panneaux de service amovibles pour l'accès à la gestion des câbles.",
+      "Finition AWMAC Premium sur le placage."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom à Premium",
+      "Conformité AODA / ADA de la réception",
+      "WELL Building Standard v2 X07 acoustique",
+      "Panneaux CARB Phase 2 / TSCA Title VI",
+      "ULC S102 Classe A sur le lambris public"
+    ],
+    "installationNotes": [
+      "Installation en locataire occupé hors heures pour les étages occupés.",
+      "Réservation d'ascenseur de service et coordination avec la gestion de l'immeuble.",
+      "Coordination avec les intégrateurs AV, TI et sécurité.",
+      "Visite de liste de défectuosités avec le designer d'intérieur et le GP du locataire."
+    ],
+    "audience": [
+      "Équipes d'immobilier corporatif et d'installations",
+      "Entrepreneurs généraux de tours du centre-ville",
+      "Designers d'intérieur de milieu de travail",
+      "Chargés de projet d'améliorations locatives",
+      "Coordonnateurs d'installations exécutives"
+    ],
+    "clientNote": "Sièges sociaux, aménagements de tours et projets d'améliorations locatives multi-locataires."
+  },
+  "commercial-interiors": {
+    "name": "Intérieurs commerciaux",
+    "tagline": "Ébénisterie TI multi-locataires et milieu de travail pour immeubles commerciaux du centre-ville et de banlieue.",
+    "messaging": "Les TI d'intérieurs commerciaux sont un problème d'échéancier. Sandha mène l'ébénisterie pour que l'échéancier ne glisse pas de notre côté — un GP, un atelier, une équipe d'installation.",
+    "intro": [
+      "Les aménagements d'intérieurs commerciaux avancent vite, en locataire occupé, sur des budgets serrés. L'ébénisterie doit respecter la marque, le code et l'échéancier.",
+      "Sandha regroupe l'ébénisterie d'améliorations locatives pour immeubles multi-locataires — réception, salle de conseil, pantry, cabine téléphonique et portée de milieu de travail, en un seul bon de commande."
+    ],
+    "capabilities": [
+      "Comptoirs d'accueil locataires et murs d'accent de hall",
+      "Mobilier de salles de réunion et d'espaces huddle",
+      "Ébénisterie de café et de pantry",
+      "Caissons de cabines téléphoniques et de salles de mieux-être",
+      "Pods de milieu de travail et mobilier open-plan",
+      "Salles TI et stations copie-impression",
+      "Vestiaires et salles de manteaux",
+      "Murs d'accent intégrés à la signalisation"
+    ],
+    "products": [
+      "Comptoirs d'accueil locataires",
+      "Crédences de salles de réunion",
+      "Ensembles d'armoires de pantry",
+      "Cabines téléphoniques",
+      "Cadres de pods de milieu de travail",
+      "Stations copie-impression",
+      "Casiers de manteaux",
+      "Murs d'accent signalétique"
+    ],
+    "manufacturingFocus": [
+      "Grade AWMAC Custom sur les budgets TI, Premium disponible.",
+      "Ensemble pantry standardisé pour clients TI récurrents.",
+      "Crédences de salles de réunion modulaires qui expédient à plat.",
+      "Goulottes de gestion des câbles pré-coordonnées avec les TI."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom à Premium",
+      "Conformité AODA / ADA sur tous les comptoirs TI",
+      "Dispositions d'améliorations locatives OBC / NBC",
+      "LEED / WELL lorsque spécifié",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation en locataire occupé hors heures en standard.",
+      "Coordination fret et gestion d'immeuble sur les tours du centre-ville.",
+      "Coordination des métiers avec électricité et TI sur les dégrossissages de service.",
+      "Visite de liste de défectuosités avec locataire, EG et designer."
+    ],
+    "audience": [
+      "Équipes d'immobilier locataire",
+      "Designers d'intérieur sur ensembles TI",
+      "Entrepreneurs généraux sur TI multi-locataires",
+      "Chargés de projet côté propriétaire",
+      "Coordonnateurs d'installations"
+    ],
+    "clientNote": "Projets d'améliorations locatives en tours du centre-ville et en banlieue."
+  },
+  "financial-institutions": {
+    "name": "Institutions financières",
+    "tagline": "Succursales bancaires, caisses populaires et suites de banque privée — norme de marque, sécurisées, répétables.",
+    "messaging": "Une succursale bancaire doit ouvrir lundi matin, à l'heure, conforme à la marque. Sandha mène les déploiements de succursales comme un programme de fabrication, pas un projet.",
+    "intro": [
+      "Les succursales bancaires sont des accessoires de marque sur la rue principale. Chaque succursale doit être identique, conforme au code et intégrée aux systèmes d'espèces, caméras et alarmes.",
+      "Sandha fabrique comptoirs de caissiers, cabines de banque privée, entourages de GAB et salles d'espèces sécurisées — palettisés succursale par succursale."
+    ],
+    "capabilities": [
+      "Comptoirs de caissiers avec plateaux à espèces intégrés",
+      "Cabines de banque privée et salles de consultation",
+      "Entourages de GAB et ébénisterie de vestibule",
+      "Comptoirs d'accueil, greeter et conciergerie",
+      "Suites exécutives et lambris de salles de conseil",
+      "Murs d'accent intégrés à la signalisation",
+      "Mobilier sécurisé de salle d'espèces BOH",
+      "Banquettes de zones d'attente"
+    ],
+    "products": [
+      "Comptoirs de caissiers",
+      "Bureaux de banque privée",
+      "Entourages de GAB",
+      "Réception greeter",
+      "Lambris de suites exécutives",
+      "Mobilier de salles d'espèces",
+      "Signalisation de murs d'accent",
+      "Banquettes"
+    ],
+    "manufacturingFocus": [
+      "Répétabilité selon norme de marque sur des dizaines de succursales.",
+      "Intégration de panneaux pare-balles lorsque spécifié.",
+      "Dégrossissage plateaux à espèces, alarme, caméra et biométrie sur les dessins d'atelier.",
+      "Placage AWMAC Premium avec polyuréthane catalysé pour le nettoyage quotidien."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom à Premium",
+      "Conformité AODA / ADA des comptoirs de caissiers",
+      "Intégration pare-balles UL 752 (lorsque spécifié)",
+      "ULC S102 Classe A sur le lambris public",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation de nuit pour ouvrir la succursale le jour ouvrable suivant.",
+      "Coordination avec l'intégrateur de sécurité pour le dégrossissage espèces.",
+      "Palettisé et codé QR par adresse de succursale.",
+      "Visite de liste de défectuosités avec le directeur de succursale le jour d'ouverture."
+    ],
+    "audience": [
+      "Équipes d'immobilier corporatif bancaire",
+      "Gestionnaires d'installations de caisses populaires",
+      "Entrepreneurs généraux de services financiers",
+      "Consultants en conception et prototypage de succursales",
+      "Intégrateurs de sécurité"
+    ],
+    "clientNote": "Déploiements de succursales bancaires, caisses populaires et services financiers."
+  },
+  "government-offices": {
+    "name": "Bureaux gouvernementaux",
+    "tagline": "Aménagements de bureaux municipaux, provinciaux et fédéraux — longue durée, axés sur la conformité.",
+    "messaging": "L'ébénisterie de bureaux gouvernementaux est inspectée, achetée et auditée. Sandha construit selon CCDC, livre avec inscription CGP et expédie avec la paperasse dont l'acheteur a besoin pour clôturer.",
+    "intro": [
+      "Les bureaux gouvernementaux fonctionnent pendant des décennies sous le regard public et l'approvisionnement public. L'ébénisterie doit survivre aux deux.",
+      "Sandha livre l'ébénisterie de ministères, d'organismes et de directions sous appels d'offres MERX / BuyandSell et contrats CCDC."
+    ],
+    "capabilities": [
+      "Comptoirs d'accueil de ministères et d'organismes",
+      "Comptoirs de transaction de services au public",
+      "Lambris de salles de conseil et de chambres municipales",
+      "Mobilier de bureaux exécutifs",
+      "Salles d'entrevue et de travail silencieux",
+      "Salles de dossiers et rangement sécurisé",
+      "Ébénisterie de salons du personnel et de cafés",
+      "Murs d'accent publics intégrés à la signalisation"
+    ],
+    "products": [
+      "Comptoirs de transaction publics",
+      "Réception de ministères",
+      "Lambris de chambres municipales",
+      "Crédences exécutives",
+      "Ébénisterie de salles d'entrevue",
+      "Rayonnages de salles de dossiers",
+      "Comptoirs de cafés du personnel",
+      "Murs de signalisation d'accent"
+    ],
+    "manufacturingFocus": [
+      "Grade AWMAC Premium sur le bois public.",
+      "Cautionné et assuré selon les exigences des contrats CCDC.",
+      "Fabrication de panneaux de signalisation bilingues lorsque requis.",
+      "Suivi des articles à long délai par rapport à l'échéancier d'approvisionnement."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Premium (NAAWS 4.0)",
+      "AODA / ADA / CSA B651 sur chaque comptoir public",
+      "Inscription Controlled Goods Program (CGP)",
+      "ULC S102 Classe A sur le lambris public",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation hors heures pour les étages gouvernementaux occupés.",
+      "Installateurs avec autorisation de sécurité lorsque requis.",
+      "Coordination avec les services aux locataires sur le fret et l'accès à l'immeuble.",
+      "Documentation de défectuosités et de remise conforme CCDC."
+    ],
+    "audience": [
+      "Gestionnaires d'installations municipales, provinciales et fédérales",
+      "Services publics et Approvisionnement Canada",
+      "Entrepreneurs généraux expérimentés CCDC",
+      "Consultants en design d'intérieur gouvernemental",
+      "Commanditaires de projets d'organismes publics"
+    ],
+    "clientNote": "Aménagements de bureaux de ministères, d'organismes et de municipalités."
+  },
+  "civic-buildings": {
+    "name": "Édifices civiques",
+    "tagline": "Hôtels de ville, centres de services et ébénisterie de landmarks civiques — durabilité de 30 ans pour l'espace public.",
+    "messaging": "L'ébénisterie civique est un monument public à l'échelle du mobilier. Sandha façonne chambres municipales et comptoirs de service qui tiennent une génération d'usage public.",
+    "intro": [
+      "Les édifices civiques sont des landmarks. L'ébénisterie est visible pendant des décennies, de la chambre municipale au comptoir de service.",
+      "Sandha fabrique lambris de tribune et de galerie, comptoirs de service, ébénisterie d'exposition et murs d'accent de halls civiques sous approvisionnement municipal."
+    ],
+    "capabilities": [
+      "Lambris de tribune et de galerie de chambre municipale",
+      "Comptoirs de services au public et guichets de permis",
+      "Ébénisterie d'exposition et de murs interprétatifs",
+      "Murs d'accent de halls civiques",
+      "Vanités de salles de bain publiques",
+      "Salles communautaires et halls polyvalents",
+      "Mobilier de chapelle du souvenir et cérémoniel civique",
+      "Exposition de masse ou d'artefacts cérémoniels"
+    ],
+    "products": [
+      "Tribune de chambre municipale",
+      "Lambris de galerie",
+      "Comptoirs de services au public",
+      "Murs d'exposition",
+      "Accents de halls civiques",
+      "Rangement de salles polyvalentes",
+      "Mobilier cérémoniel",
+      "Mobilier d'exposition d'artefacts"
+    ],
+    "manufacturingFocus": [
+      "Placage grade AWMAC Premium sur tout le bois de chambre municipale.",
+      "Spécification longue durée — quincaillerie 30 ans, finitions nettoyables.",
+      "Détail cérémoniel façonné selon les références de design patrimonial.",
+      "Travail d'accent bronze et incrustation lorsque spécifié."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Premium (NAAWS 4.0)",
+      "NBC / OBC / CSA B651 / AODA / ADA",
+      "ULC S102 Classe A sur le lambris civique",
+      "Orientations de conservation du patrimoine le cas échéant",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation hors heures autour des séances du conseil et des événements civiques.",
+      "Protection sensible au patrimoine de la maçonnerie / des planchers existants.",
+      "Coordination avec l'équipe AV civique pour les mises à niveau de la chambre.",
+      "Prêt pour coupe de ruban publique à la date de remise."
+    ],
+    "audience": [
+      "Équipes de projets d'immobilisations municipales",
+      "Architectes civiques et consultants en patrimoine",
+      "Entrepreneurs généraux de travaux publics",
+      "Gestionnaires d'installations des services du conseil",
+      "Commanditaires de projets civiques et élus"
+    ],
+    "clientNote": "Hôtels de ville, centres de services et landmarks civiques partout au Canada."
+  },
+  "professional-offices": {
+    "name": "Bureaux professionnels",
+    "tagline": "Ébénisterie pour cabinets d'avocats, comptables et consultants — raffinée, discrète, orientée client.",
+    "messaging": "L'ébénisterie de bureaux professionnels se situe entre le client et les honoraires. Sandha façonne étages d'associés et salles de conseil qui se lisent comme de l'expertise avant même le début de la réunion.",
+    "intro": [
+      "Les cabinets de services professionnels vendent la confiance. La réception, la salle de conseil et l'étage des associés sont l'endroit où le client forme sa première impression.",
+      "Sandha construit bibliothèques juridiques, salles de conseil, suites exécutives et zones d'accueil au standard de la marque du cabinet."
+    ],
+    "capabilities": [
+      "Réception avec intégration de signalisation de marque rétroéclairée",
+      "Lambris en placage apparié en séquence pour salles de conseil",
+      "Bureaux et crédences d'associés",
+      "Rayonnages et mobilier de bibliothèques juridiques",
+      "Mobilier de salles de réunion et d'espaces huddle",
+      "Café clients et bar à café",
+      "Mobilier de salles de travail du personnel de soutien",
+      "Ébénisterie de salles de mieux-être / d'allaitement"
+    ],
+    "products": [
+      "Comptoirs d'accueil avec signalisation de marque",
+      "Crédences de salles de conseil",
+      "Bureaux d'associés",
+      "Rayonnages de bibliothèques juridiques",
+      "Crédences de salles de réunion",
+      "Comptoirs de cafés clients",
+      "Mobilier de salles de copie et de soutien",
+      "Ébénisterie de salles de mieux-être"
+    ],
+    "manufacturingFocus": [
+      "Placage AWMAC Premium sur l'étage des associés et la salle de conseil.",
+      "Construction de portes et murs attenuée acoustiquement.",
+      "Gestion intégrée des documents / de l'alimentation dans les bureaux d'associés.",
+      "Options de quincaillerie bronze / laiton pour les cabinets premium."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Premium sur le placage",
+      "Conformité AODA / ADA de la réception",
+      "Conformité acoustique WELL v2 X07",
+      "ULC S102 Classe A sur le lambris public",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation hors heures sur les étages de cabinet occupés.",
+      "Briefings de confidentialité pour les installateurs sur les étages d'associés.",
+      "Coordination avec l'intégrateur AV pour la salle de conseil.",
+      "Visite de liste de défectuosités avec l'associé directeur."
+    ],
+    "audience": [
+      "Gestionnaires de bureaux et associés directeurs de cabinets d'avocats",
+      "Responsables immobiliers de cabinets comptables et de consultation",
+      "Designers d'intérieur pour cabinets de services professionnels",
+      "Entrepreneurs généraux d'améliorations locatives",
+      "Directeurs de marque et de marketing des cabinets"
+    ],
+    "clientNote": "Aménagements de cabinets d'avocats, de comptabilité et de consultation."
+  },
+  "hotels": {
+    "name": "Hôtels",
+    "tagline": "Ébénisterie pour l'hôtel entier — hall, chambres, F&B et BOH sous un seul GP.",
+    "messaging": "L'ouverture d'un hôtel est une date ferme. Sandha mène l'ébénisterie pour l'hôtel entier comme un programme de fabrication avec un seul GP, pour que la coupe de ruban ait lieu à l'heure.",
+    "intro": [
+      "Les hôtels sont des bâtiments riches en ébénisterie. Chaque chambre, chaque corridor, chaque colonne de hall et chaque pantry BOH exige une fabrication coordonnée.",
+      "Sandha livre des ensembles pour l'hôtel entier séquencés jusqu'au jour d'ouverture — normes PIP des chaînes internationales, finition AWMAC Premium."
+    ],
+    "capabilities": [
+      "Ébénisterie de réception de hall et de porte-cochère",
+      "Murs d'accent en placage apparié en séquence",
+      "Têtes de lit, garde-robes, minibars et bureaux de chambres",
+      "Vanités de salles de bain et ébénisterie de zones humides",
+      "Pupitres d'hôtes F&B et bars arrière de restaurants",
+      "Lambris de salles de bal et de salles de réunion",
+      "Ébénisterie de spa, conditionnement et vestiaires",
+      "Pantrys BOH et stations de service"
+    ],
+    "products": [
+      "Comptoirs d'accueil",
+      "Têtes de lit de chambres",
+      "Systèmes de garde-robes",
+      "Minibars de chambres",
+      "Vanités de salles de bain",
+      "Bars arrière de restaurants",
+      "Lambris de salles de bal",
+      "Réception de spa"
+    ],
+    "manufacturingFocus": [
+      "AWMAC Premium sur le placage face au public.",
+      "Mobilier de chambres fabriqué par lots pour la répétition.",
+      "Bibliothèques de finitions et de quincaillerie approuvées PIP.",
+      "Manifeste hôtel complet et plan de palettes pour la livraison FF&E."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Premium sur le bois public",
+      "Conformité PIP des chaînes hôtelières (Marriott, Hilton, IHG, Hyatt, Accor)",
+      "ULC S102 / ASTM E84 Classe A sur les corridors",
+      "AODA / ADA sur les comptoirs de service aux clients",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation étage par étage des chambres selon l'échéancier d'ouverture.",
+      "Coordination avec l'installateur FF&E sur la livraison du hall.",
+      "Autorisation de l'inspecteur PIP avant l'ouverture partielle.",
+      "Programme d'entretien à long terme pour le service post-ouverture."
+    ],
+    "audience": [
+      "Marques propriétaires et exploitants d'hôtels",
+      "Promoteurs franchisés et sociétés de gestion",
+      "EG et GP expérimentés en hôtellerie",
+      "Designers d'intérieur hôteliers",
+      "Inspecteurs PIP et consultants en normes de marque"
+    ],
+    "clientNote": "Ensembles pour chaînes hôtelières internationales et hôtels boutique."
+  },
+  "resorts": {
+    "name": "Stations et resorts",
+    "tagline": "Ébénisterie pour resorts de destination — savoir-faire hôtelier avec détails extérieurs classés pour le climat.",
+    "messaging": "Les resorts de destination sont des expériences, pas des bâtiments. Sandha construit l'ébénisterie qui se lit comme du savoir-faire à l'intérieur et comme de la durabilité à l'extérieur, pour que le resort tienne entre les cycles de rénovation.",
+    "intro": [
+      "Les resorts prolongent l'hospitalité hors du bâtiment. L'ébénisterie passe du hall au bord de la piscine au quai — avec les finitions adaptées.",
+      "Sandha fabrique la portée des resorts de destination — pavillons de spa, bars en bord de piscine, réception de marina, mobilier de cabanas et intérieurs de villas en bord de mer."
+    ],
+    "capabilities": [
+      "Grande réception de hall de resort",
+      "Mobilier de spa et de salles de traitement",
+      "Bars en bord de piscine et swim-up",
+      "Mobilier de cabanas et de villas",
+      "Ébénisterie de pavillons en bord de mer",
+      "Réception de marina et hangar à bateaux",
+      "Ébénisterie de lodges de ski / lac",
+      "Aménagements de restaurants signature"
+    ],
+    "products": [
+      "Comptoirs de grande réception",
+      "Mobilier de traitements spa",
+      "Bars en bord de piscine",
+      "Façades de bars de cabanas",
+      "Mobilier en unité de villas",
+      "Réception de marina",
+      "Ébénisterie de lodges de ski",
+      "Aménagements de restaurants signature"
+    ],
+    "manufacturingFocus": [
+      "Finition classée climat sur la portée extérieure couverte.",
+      "Chants et quincaillerie de grade marin lorsque l'air salin est présent.",
+      "Placage AWMAC Premium sur les murs du grand hall.",
+      "Mobilier de villas et cabanas fabriqué par lots pour la cohérence."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Premium sur le placage",
+      "Normes PIP pour les exploitants de resorts de marque",
+      "ASTM D3273 / D3274 résistance aux moisissures en milieu humide",
+      "CSA B651 / AODA le cas échéant",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Mise en scène multi-propriétés sur les resorts multi-pods.",
+      "Installation selon fenêtre météo pour les pavillons extérieurs.",
+      "Coordination avec les entrepreneurs paysagers et de piscine.",
+      "Visite d'entretien sur place dans les 6 mois suivant l'ouverture."
+    ],
+    "audience": [
+      "Exploitants de resorts de destination",
+      "Promoteurs de voyages de luxe",
+      "Propriétaires de resorts de ski et de lodges lacustres",
+      "Équipes de marques de resorts boutique",
+      "Designers d'hospitalité de resorts"
+    ],
+    "clientNote": "Projets de resorts de ski, lac et bord de mer."
+  },
+  "restaurants": {
+    "name": "Restaurants",
+    "tagline": "Ébénisterie pour restaurants à service complet — bars, banquettes, hôtes, plafonds d'accent, préparation BOH.",
+    "messaging": "Le bar du restaurant est le centre de gravité de la salle. Sandha façonne bars, banquettes et plafonds d'accent qui ancrent l'expérience client pendant des années — pas une seule saison.",
+    "intro": [
+      "Les restaurants à service complet racontent une histoire avec leur ébénisterie — le bar, la banquette, le plafond d'accent, le pupitre d'hôte.",
+      "Sandha livre une portée restaurant clé en main de l'approbation d'échantillon concept jusqu'à la nuit d'ouverture — ébénisterie, intégration inox et installation sous un seul GP."
+    ],
+    "capabilities": [
+      "Bars et bars arrière sur mesure",
+      "Murs à vins et présentoirs de caves",
+      "Banquettes, booths et portails arqués",
+      "Plafonds d'accent et soffites",
+      "Pupitres d'hôtes et entourages POS",
+      "Accessoires de merchandising de détail",
+      "Comptoirs de préparation BOH et stations de service",
+      "Vanités et cabines de salles de bain"
+    ],
+    "products": [
+      "Bars signature",
+      "Présentoirs de bouteilles de bars arrière",
+      "Murs à vins",
+      "Banquettes sur mesure",
+      "Pupitres d'hôtes",
+      "Plafonds d'accent",
+      "Comptoirs de préparation BOH",
+      "Vanités de salles de bain"
+    ],
+    "manufacturingFocus": [
+      "Grade AWMAC Custom à Premium sur la portée FOH.",
+      "Matériaux conformes NSF sur les surfaces en contact alimentaire et de préparation.",
+      "Intégration sur mesure de la sellerie de banquettes coordonnée avec le tapissier.",
+      "Délai prototype-à-ouverture rapide — du premier croquis à l'installation en 12 semaines typiquement."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom à Premium",
+      "NSF ANSI 2 et 51 sur le contact alimentaire le cas échéant",
+      "Dispositions d'ébénisterie de service alimentaire OBC",
+      "AODA / ADA sur le pupitre d'hôte et les salles de bain",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Fenêtre d'installation de 6 jours de la coquille vide à l'ouverture partielle.",
+      "Coordination avec l'installateur d'équipement de cuisine sur le BOH.",
+      "Visite de chantier avec le chef-propriétaire avant le début du service alimentaire.",
+      "Visite de réglage post-ouverture dans le premier mois."
+    ],
+    "audience": [
+      "Restaurateurs et groupes F&B",
+      "Designers et consultants de restaurants",
+      "EG et GP hôteliers",
+      "Exploitants de franchises F&B",
+      "Chefs-propriétaires et investisseurs hôteliers"
+    ],
+    "clientNote": "Travaux récents : Mercato Mississauga, Scooped by Demetres, Coffee Island Toronto."
+  },
+  "quick-service-restaurants": {
+    "name": "Restaurants à service rapide (QSR)",
+    "tagline": "Ensembles d'accessoires QSR selon la norme de marque — comptoirs avant, menus numériques, kitting BOH.",
+    "messaging": "Le QSR gagne par la cohérence. Sandha fabrique le prototype une fois, puis déploie des magasins identiques partout au Canada et aux É.-U. — un seul numéro à appeler.",
+    "intro": [
+      "Le QSR est un problème de fabrication, pas de construction. Le prototype est approuvé une fois, puis déployé à l'identique sur des centaines d'emplacements.",
+      "Sandha traite le QSR à l'échelle du déploiement — comptoirs avant, murs de menus numériques, entourages POS, caissons de kiosques d'auto-commande et mobilier de préparation BOH."
+    ],
+    "capabilities": [
+      "Comptoirs de service avant selon norme de marque",
+      "Cadres de tableaux de menus numériques",
+      "Caissons de kiosques d'auto-commande",
+      "Entourages POS et voies de caisse",
+      "Bars à condiments et stations d'hydratation pour clients",
+      "Murs d'accent signature de marque",
+      "Comptoirs de préparation BOH et stations de maintien",
+      "Ébénisterie de fenêtres drive-thru"
+    ],
+    "products": [
+      "Comptoirs de service avant",
+      "Cadres de menus numériques",
+      "Kiosques d'auto-commande",
+      "Entourages POS",
+      "Bars à condiments",
+      "Murs d'accent signature",
+      "Comptoirs de préparation BOH",
+      "Ébénisterie drive-thru"
+    ],
+    "manufacturingFocus": [
+      "Approbation du prototype approuvé PIP avant le déploiement.",
+      "Fiches de tolérance et manifeste par magasin.",
+      "Palettisé, codé QR et expédié par adresse de magasin.",
+      "Spécification d'accessoires répétable — aucune fabrication sur place."
+    ],
+    "qualityStandards": [
+      "Conformité aux normes de marque PIP",
+      "NSF ANSI 2 et 51 sur les surfaces en contact alimentaire",
+      "AODA / ADA sur les comptoirs de service",
+      "Dispositions d'ébénisterie de service alimentaire OBC",
+      "ULC S102 Classe A sur le bois public"
+    ],
+    "installationNotes": [
+      "Installation de 24 / 48 heures par magasin lors des fermetures de nuit.",
+      "Déploiement multi-sites avec un seul GP pour la région.",
+      "Logistique transfrontalière via CUSMA vers les emplacements aux É.-U.",
+      "Trousse de retouche sur place par emplacement."
+    ],
+    "audience": [
+      "Responsables d'immobilier corporatif QSR",
+      "Exploitants franchisés en expansion de portefeuille",
+      "Firmes de gestion de construction QSR",
+      "Consultants en normes de marque et inspecteurs PIP",
+      "Promoteurs de franchises multi-unités"
+    ],
+    "clientNote": "Déploiements de chaînes QSR nationales."
+  },
+  "cafes": {
+    "name": "Cafés",
+    "tagline": "Ébénisterie pour bars espresso et cafés spécialisés — vitrines de pâtisserie, bars à café, merchandising de détail.",
+    "messaging": "Le bar du café est l'endroit où la marque rencontre la caféine. Sandha construit l'ébénisterie de bars à café dimensionnée pour la journée du barista et finie pour l'Instagram du client.",
+    "intro": [
+      "Les marques de café indépendantes et spécialisées vivent et meurent par le bar. Il doit fonctionner pour le barista et accueillir le client.",
+      "Sandha construit la portée café spécialisé — comptoirs de bars espresso, vitrines de pâtisserie, murs de marchandises de détail et ébénisterie de tables communes."
+    ],
+    "capabilities": [
+      "Comptoirs de service de bars espresso",
+      "Entourages d'armoires de vitrines de pâtisserie",
+      "Murs de marchandises de détail café",
+      "Assises de tables communes",
+      "Comptoirs commande-et-paiement avec intégration de menus numériques",
+      "Armoires d'arrière-bar barista",
+      "Stations de rangement de grains et de mouture",
+      "Ébénisterie de salles de cupping"
+    ],
+    "products": [
+      "Bars espresso",
+      "Entourages de vitrines de pâtisserie",
+      "Systèmes muraux de marchandises",
+      "Tables communes",
+      "Comptoirs de commande",
+      "Arrière-bar barista",
+      "Rangement de grains",
+      "Mobilier de salles de cupping"
+    ],
+    "manufacturingFocus": [
+      "AWMAC Custom à Premium sur les surfaces face au bar public.",
+      "Dessus de bars en surface solide avec plateaux d'égouttage intégrés.",
+      "Matériaux conformes NSF sur les surfaces en contact alimentaire.",
+      "Assortiment de teintes sur mesure à la palette de la marque."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom minimum",
+      "NSF ANSI 2 et 51 sur le contact alimentaire",
+      "AODA / ADA sur les comptoirs de commande",
+      "Dispositions de service alimentaire OBC",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation de nuit pour ouvrir le café le lendemain matin.",
+      "Coordination avec l'installateur d'équipement espresso sur la plomberie.",
+      "Coordination avec les fournisseurs de moulins et de torréfacteurs sur l'alimentation.",
+      "Réglage post-ouverture dans les 30 jours."
+    ],
+    "audience": [
+      "Propriétaires indépendants de café spécialisé",
+      "Équipes d'immobilier corporatif de chaînes de cafés",
+      "Marques de torréfacteurs avec concept de détail",
+      "Designers d'intérieur F&B sur portée café",
+      "Entrepreneurs généraux expérimentés en cafés"
+    ],
+    "clientNote": "Travaux récents : Coffee Island Toronto et déploiements de cafés indépendants."
+  },
+  "bars": {
+    "name": "Bars",
+    "tagline": "Ébénisterie pour bars à cocktails, sports-bars et lounges d'hôtel — le centre de gravité de la salle.",
+    "messaging": "Le bar est l'endroit où le client s'assoit et où l'argent se fait. Sandha construit des bars dimensionnés pour la vitesse du bartender et finis pour la première impression du client.",
+    "intro": [
+      "Le bar est la pièce d'ébénisterie la plus détaillée d'un espace hôtelier. Il doit accueillir spiritueux, glace, verrerie et la nuit d'un bartender.",
+      "Sandha construit bars à cocktails, lounges d'hôtel et sports-bars — présentoirs de bouteilles d'arrière-bar, puits de service et façades de bars face aux clients."
+    ],
+    "capabilities": [
+      "Façades de bars signature et intégrations de rails",
+      "Présentoirs de bouteilles d'arrière-bar avec intégration d'éclairage",
+      "Puits de vitesse et stations de service",
+      "Murs à vins et caves",
+      "Stations de mélange de cocktails et préparation",
+      "Ébénisterie de lounges d'hôtel",
+      "Intégration de murs TV de sports-bars",
+      "Lounges intimistes style speakeasy"
+    ],
+    "products": [
+      "Façades de bars",
+      "Présentoirs de bouteilles d'arrière-bar",
+      "Puits de vitesse",
+      "Murs à vins",
+      "Comptoirs de préparation de cocktails",
+      "Banquettes de lounges d'hôtel",
+      "Intégration de murs TV",
+      "Ébénisterie de lounges privés"
+    ],
+    "manufacturingFocus": [
+      "Dessus de bars en surface solide ou pierre avec canaux d'égouttage intégrés.",
+      "Intégration de présentoirs de bouteilles illuminés avec bandes LED.",
+      "Matériaux NSF sur toutes les surfaces en contact alimentaire et de mélange.",
+      "Rails d'accoudoir rembourrés avec câble dissimulé pour les systèmes de service."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom à Premium",
+      "NSF ANSI 2 et 51 sur le contact alimentaire",
+      "AODA / ADA sur la hauteur et l'atteinte de service au bar",
+      "Dispositions de service de spiritueux OBC",
+      "Panneaux composites CARB Phase 2"
+    ],
+    "installationNotes": [
+      "Installation de nuit post-fermeture pour rouvrir le lendemain soir.",
+      "Coordination avec les installateurs de systèmes glycol / tirage sur le dégrossissage.",
+      "Visite de conformité aux permis d'alcool avec le propriétaire avant le service.",
+      "Parcours ergonomique du poste bartender avant l'ouverture."
+    ],
+    "audience": [
+      "Exploitants de bars à cocktails et groupes hôteliers",
+      "Départements F&B d'hôtels",
+      "Propriétaires de sports-bars et gastropubs",
+      "Designers d'hospitalité axés bars",
+      "Groupes de divertissement nocturne"
+    ],
+    "clientNote": "Aménagements de lounges d'hôtel, bars à cocktails et F&B hôtelier."
+  },
+  "entertainment-venues": {
+    "name": "Lieux de divertissement",
+    "tagline": "Ébénisterie pour halls de théâtre, cinémas, salles de concert et arcades — durable, dramatique, axée sur la marque.",
+    "messaging": "Les lieux de divertissement font tourner la salle entre les spectacles. Sandha construit l'ébénisterie qui ancre l'expérience client — et la vente de marchandises — soir après soir.",
+    "intro": [
+      "Les lieux de divertissement absorbent des vagues de foule chaque soir. L'ébénisterie doit gérer le volume de clients, l'impact de marque et une rotation rapide entre les spectacles.",
+      "Sandha construit halls de théâtre, concessions de cinémas, murs de marchandises de salles de concert et aménagements d'arcades / centres de divertissement."
+    ],
+    "capabilities": [
+      "Murs d'accent de halls de théâtre et comptoirs de billetterie",
+      "Comptoirs de concessions de cinémas",
+      "Murs de marchandises de salles de concert",
+      "Mobilier d'arcades et de centres de divertissement",
+      "Concessions de pistes de bowling",
+      "Aménagements d'escape rooms et de divertissement familial",
+      "Ébénisterie de lounges VIP et de loges d'artistes",
+      "Pop-ups de marchandises et signalisation"
+    ],
+    "products": [
+      "Comptoirs de billetterie",
+      "Concessions de cinémas",
+      "Murs de marchandises",
+      "Comptoirs de prix d'arcades",
+      "Concessions de bowling",
+      "Mobilier de décors d'escape rooms",
+      "Ébénisterie de loges d'artistes",
+      "Unités de marchandises pop-up"
+    ],
+    "manufacturingFocus": [
+      "HPL classé impacts sur les comptoirs publics à fort trafic.",
+      "Murs d'accent illuminés intégrés à la marque.",
+      "Systèmes muraux de marchandises répétables pour spectacles pop-up.",
+      "Conformité NSF à portée concessions."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom",
+      "NSF sur le contact alimentaire des concessions",
+      "AODA / ADA sur les comptoirs publics",
+      "Dispositions d'occupation assemblée OBC",
+      "ULC S102 Classe A sur le lambris de hall"
+    ],
+    "installationNotes": [
+      "Installation en jour sombre pour ouvrir au prochain spectacle.",
+      "Coordination avec AV, éclairage et gréement sur les cavités partagées.",
+      "Installation multi-halls phasée autour de la programmation.",
+      "Visite post-ouverture avec le gestionnaire du lieu et l'équipe ops."
+    ],
+    "audience": [
+      "Exploitants de chaînes de théâtres et de cinémas",
+      "Ops de marchandises de salles de concert et de tournées",
+      "Exploitants de centres de divertissement familial",
+      "Designers de marques de divertissement",
+      "Entrepreneurs généraux d'occupation assemblée"
+    ],
+    "clientNote": "Aménagements de théâtres, cinémas et centres de divertissement."
+  },
+  "retail-stores": {
+    "name": "Magasins de détail",
+    "tagline": "Ébénisterie pour magasins phares et déploiements nationaux — cash wraps, systèmes muraux, expositions d'accent.",
+    "messaging": "Le commerce de détail gagne par la répétabilité. Sandha fabrique le magasin phare une fois, puis le reproduit à l'identique partout dans la chaîne — avec la logistique pour ouvrir à la date du locataire.",
+    "intro": [
+      "Un magasin de détail est une marque sous un toit. L'ébénisterie doit être identique d'un emplacement à l'autre et résister au roulement quotidien du merchandising.",
+      "Sandha fabrique des aménagements de magasins pour les marques nationales — des ouvertures phares aux déploiements multi-sites, palettisés magasin par magasin."
+    ],
+    "capabilities": [
+      "Ébénisterie de devantures et de portails",
+      "Cash wraps et entourages POS",
+      "Systèmes muraux, gondoles, linéaires de slat-wall",
+      "Vitrines et présentoirs sur mesure",
+      "Plafonds d'accent et soffites",
+      "Ébénisterie de cabines d'essayage",
+      "Mobilier d'arrière-boutique et BOH",
+      "Murs d'accent intégrés à la signalisation"
+    ],
+    "products": [
+      "Cash wraps",
+      "Systèmes d'exposition murale",
+      "Gondoles",
+      "Vitrines sur mesure",
+      "Cabines d'essayage",
+      "Plafonds d'accent",
+      "Rayonnages d'entrepôt BOH",
+      "Murs de signalisation d'accent"
+    ],
+    "manufacturingFocus": [
+      "Atelier CNC et finition dimensionnés pour la répétabilité d'accessoires identiques.",
+      "Programme prototype-à-déploiement avec fiches de tolérance.",
+      "Bibliothèques de finitions selon norme de marque maintenues d'un lot à l'autre.",
+      "Logistique transfrontalière CUSMA vers les emplacements aux É.-U."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom ou ensemble Brand-Standard",
+      "ULC S102 Classe A sur les finitions des zones publiques",
+      "Quincaillerie BHMA Grade 1 sur les points à fort toucher",
+      "AODA / ADA sur les cash wraps",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation de nuit pour ouvrir le magasin le jour ouvrable suivant.",
+      "Déploiement multi-sites sous un seul GP.",
+      "Visite d'installation selon norme de marque avant l'ouverture.",
+      "Trousse de pièces de rechange sur place par emplacement."
+    ],
+    "audience": [
+      "Équipes d'immobilier de marques nationales de détail",
+      "Promoteurs franchisés et exploitants multi-unités",
+      "Gestionnaires de construction axés détail",
+      "Directeurs de marque et de merchandising visuel",
+      "Designers d'intérieur de détail"
+    ],
+    "clientNote": "Travaux récents : Scooped by Demetres, AM Hair & Beauty."
+  },
+  "shopping-centres": {
+    "name": "Centres commerciaux",
+    "tagline": "Ébénisterie pour aires communes de centres, services aux visiteurs et aires de restauration.",
+    "messaging": "Les centres commerciaux concurrencent sur l'expérience. Sandha construit l'ébénisterie de services aux visiteurs, d'aires de restauration et de wayfinding qui élève la marque perçue de tout le centre.",
+    "intro": [
+      "Les centres commerciaux sont des collections de petites locataires reliées par le design des aires communes. Cette aire commune fixe la marque du centre.",
+      "Sandha construit réception de centre, services aux visiteurs, pods d'assises d'aires de restauration, caissons de kiosques et ensembles de vanités de salles de bain."
+    ],
+    "capabilities": [
+      "Comptoirs de services aux visiteurs de centres",
+      "Pods d'assises et mobilier d'aires de restauration",
+      "Kiosques RMU (unité de merchandising de détail)",
+      "Kiosques de conciergerie et d'information",
+      "Vanités de salles de bain de centres",
+      "Ébénisterie de zones de jeu pour enfants",
+      "Partenariats de concessions de halls de cinémas",
+      "Accessoires de signalisation et de wayfinding"
+    ],
+    "products": [
+      "Comptoirs de services aux visiteurs",
+      "Pods d'assises d'aires de restauration",
+      "Caissons de kiosques RMU",
+      "Kiosques de conciergerie",
+      "Vanités de salles de bain de centres",
+      "Ébénisterie de zones de jeu",
+      "Concessions de halls de cinémas",
+      "Signalisation de wayfinding"
+    ],
+    "manufacturingFocus": [
+      "HPL classé impacts et dessus composites pierre pour le trafic public.",
+      "Système de kiosques RMU modulaire qui expédie à plat.",
+      "Palette coordonnée entre les exploitants d'aires de restauration.",
+      "Pods d'assises à échelle publique conçus pour la charge d'ancrage."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom",
+      "Conformité AODA / ADA sur chaque comptoir public",
+      "ULC S102 Classe A sur le lambris public",
+      "NSF sur les partenariats d'aires de restauration",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation de nuit pour protéger les heures d'ouverture.",
+      "Coordination avec les opérations du centre sur le fret et l'accès.",
+      "Cycle d'installation RMU à rotations de 30 jours.",
+      "Liste de défectuosités des aires communes avec le GP du centre."
+    ],
+    "audience": [
+      "FPI de centres et exploitants de centres commerciaux",
+      "Groupes de détail multi-propriétés",
+      "Designers d'intérieur de centres",
+      "Entrepreneurs généraux de centres commerciaux",
+      "Gestionnaires d'installations d'aires communes"
+    ],
+    "clientNote": "Programmes d'aires communes pour centres fermés et lifestyle centres."
+  },
+  "luxury-retail": {
+    "name": "Commerce de luxe",
+    "tagline": "Mobilier pour montres, bijoux et biens de luxe — savoir-faire de grade musée.",
+    "messaging": "Le commerce de luxe se mesure en millimètres et en grade de matériaux. Sandha façonne vitrines et salons où le meuble est aussi étudié que le produit qu'il présente.",
+    "intro": [
+      "Le commerce de luxe, c'est l'ébénisterie comme un bijou. Chaque détail est proportion, quincaillerie et choix de finition au plus haut grade.",
+      "Sandha construit le mobilier de montres et bijoux, cash wraps de marques de luxe, vitrines et comptoirs avec intégration de coffres."
+    ],
+    "capabilities": [
+      "Vitrines d'exposition de montres et bijoux",
+      "Mobilier illuminé avec intégration LED et serrures",
+      "Cash wraps de luxe",
+      "Salons et lounges de consultation clients",
+      "Présentoirs muraux arrière signature",
+      "Arrière-boutiques intégrées coffres et sécurité",
+      "Intérieurs sur mesure doublés cuir et tissu",
+      "Intégration bar à cocktails / lounge VIP"
+    ],
+    "products": [
+      "Vitrines de montres",
+      "Vitrines d'exposition de bijoux",
+      "Murs arrière illuminés",
+      "Cash wraps",
+      "Mobilier de salons clients",
+      "Rangement intégré coffres",
+      "Intérieurs doublés cuir",
+      "Ébénisterie de lounges VIP"
+    ],
+    "manufacturingFocus": [
+      "Grade AWMAC Premium partout.",
+      "Détail d'accent laiton, bronze et incrustation.",
+      "Intégration d'éclairage LED de grade musée.",
+      "Quincaillerie de verrouillage et intégration de coffres sur mesure."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Premium",
+      "Intégration de serrures et coffres listés UL",
+      "ULC S102 Classe A sur le lambris public",
+      "AODA / ADA sur les comptoirs publics",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation white-glove par équipe dédiée.",
+      "Coordination avec l'équipe mondiale de merchandising visuel de la marque.",
+      "Parcours de sécurité avec l'assurance et la prévention des pertes.",
+      "Préparation pour ouverture partielle VIP ou événement presse."
+    ],
+    "audience": [
+      "Équipes VM mondiales de marques de luxe",
+      "Propriétaires de marques de montres et bijoux",
+      "Consultants en design de détail haut de gamme",
+      "Concessions de détail d'hôtels boutique",
+      "Locataires de rez-de-chaussée d'immobilier de luxe"
+    ],
+    "clientNote": "Aménagements de marques de montres, bijoux et boutiques de luxe."
+  },
+  "showrooms": {
+    "name": "Salles d'exposition",
+    "tagline": "Ébénisterie pour salles d'exposition auto, électroménagers et articles pour la maison — axée sur l'exposition, orientée marque.",
+    "messaging": "Les salles d'exposition vendent des décisions qui valent des milliers de dollars. Sandha construit l'ébénisterie qui met en scène le produit à la qualité de la marque — du mur derrière au comptoir à côté.",
+    "intro": [
+      "Les salles d'exposition sont des scènes pour le produit. L'ébénisterie encadre, éclaire et met en valeur tout, d'une automobile à un dessus de comptoir.",
+      "Sandha construit salles d'exposition de marques auto, murs d'exposition d'électroménagers, salles d'exposition cuisine-et-bain et détail de districts de design."
+    ],
+    "capabilities": [
+      "Ébénisterie de baies de livraison et lounges de marques auto",
+      "Murs d'exposition d'électroménagers",
+      "Expositions en vignette cuisine et salle de bain",
+      "Supports d'exposition de carrelage et de dalles de pierre",
+      "Pods de bureaux de vente et bureaux de consultation",
+      "Ébénisterie de salons clients",
+      "Mobilier BOH de zones de livraison",
+      "Murs d'accent intégrés à la signalisation"
+    ],
+    "products": [
+      "Baies de livraison de salles d'exposition auto",
+      "Murs d'exposition d'électroménagers",
+      "Vignettes cuisine",
+      "Vignettes salle de bain",
+      "Expositions carrelage / pierre",
+      "Pods de vente",
+      "Salons clients",
+      "Murs de signalisation d'accent"
+    ],
+    "manufacturingFocus": [
+      "Grade AWMAC Custom à Premium sur les murs de marque publics.",
+      "Bibliothèques de finitions et de quincaillerie approuvées par la marque produit.",
+      "Systèmes de vignettes modulaires pour programmes de produits rotatifs.",
+      "Éclairage LED et signalisation intégré."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom à Premium",
+      "AODA / ADA sur les comptoirs publics",
+      "Conformité PIP de la marque produit",
+      "ULC S102 Classe A sur le lambris public",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation de nuit pour protéger les heures d'ouverture.",
+      "Coordination avec les fournisseurs de signalisation et d'intégrateurs LED.",
+      "Visite d'installation VM du fournisseur produit avant l'ouverture.",
+      "Programme rotatif post-ouverture pour le rafraîchissement des vignettes."
+    ],
+    "audience": [
+      "Équipes d'immobilier corporatif de marques auto",
+      "Directeurs de détail de marques d'électroménagers et de produits",
+      "Propriétaires de concessionnaires cuisine-et-bain",
+      "Consultants en design de salles d'exposition",
+      "Agences d'expérience de marque"
+    ],
+    "clientNote": "Salles d'exposition de marques auto, électroménagers et cuisine-et-bain."
+  },
+  "pharmacies": {
+    "name": "Pharmacies",
+    "tagline": "Ébénisterie pour pharmacies de détail — distribution, consultation, vente avant-magasin.",
+    "messaging": "Le comptoir de distribution de pharmacie est un flux de travail réglementé, pas un comptoir de détail. Sandha construit une portée pharmacie qui passe l'inspection de l'ordre tout en merchandisant le magasin avant.",
+    "intro": [
+      "Les pharmacies sont à moitié magasin de détail et à moitié clinique. L'ébénisterie doit servir le merchandising et la distribution sous un même toit.",
+      "Sandha construit comptoirs de distribution, salles de consultation, zones d'attente patients, gondoles avant-magasin et expositions OTC."
+    ],
+    "capabilities": [
+      "Comptoirs de distribution avec zones de flux de travail pharmacien",
+      "Salles de consultation patients",
+      "Pods d'assises de zones d'attente",
+      "Gondoles OTC avant-magasin",
+      "Comptoirs de caisse avant",
+      "Mobilier de salles de préparations (non-USP)",
+      "Pods de vaccination",
+      "Murs d'accent et signalisation de catégories"
+    ],
+    "products": [
+      "Comptoirs de distribution",
+      "Ébénisterie de salles de consultation",
+      "Pods d'attente",
+      "Gondoles OTC",
+      "Comptoirs de caisse avant",
+      "Mobilier de salles de préparations",
+      "Pods de vaccination",
+      "Murs d'accent de catégories"
+    ],
+    "manufacturingFocus": [
+      "Grade AWMAC Custom sur le mobilier de distribution.",
+      "Comptoirs en surface solide à la distribution pour le nettoyage quotidien.",
+      "Intégration d'armoires à narcotiques verrouillables.",
+      "Rayonnages de cueillette d'ordonnances avec systèmes de bacs alphabétiques."
+    ],
+    "qualityStandards": [
+      "Normes OCP / provinciales de pharmacie",
+      "Grade AWMAC Custom",
+      "AODA / ADA sur les comptoirs de distribution",
+      "USP <795> préparations non stériles le cas échéant",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation de nuit pour protéger les heures d'exploitation de la pharmacie.",
+      "Coordination avec les fournisseurs de logiciels / robotique de pharmacie.",
+      "Visite d'inspection réglementaire avant la reprise de la distribution.",
+      "Trousse de retouche sur place pour l'usure quotidienne."
+    ],
+    "audience": [
+      "Immobilier corporatif de chaînes de pharmacies",
+      "Propriétaires de pharmacies indépendantes",
+      "Départements de pharmacies de chaînes d'épiceries",
+      "Exploitants de pharmacies de soins de longue durée",
+      "Designers d'intérieur de pharmacies"
+    ],
+    "clientNote": "Aménagements de pharmacies de chaînes, indépendantes et de soins de longue durée."
+  },
+  "grocery": {
+    "name": "Épicerie",
+    "tagline": "Ébénisterie pour épiceries à format complet et spécialisées — comptoirs de service, arrière-boutique, murs d'accent de marque.",
+    "messaging": "L'ébénisterie d'épicerie travaille aux côtés des vitrines, réfrigérateurs et caissiers. Sandha construit des comptoirs qui s'intègrent proprement à la réfrigération et rouvrent rapidement après chaque phase d'installation.",
+    "intro": [
+      "L'ébénisterie d'épicerie côtoie l'équipement lourd et les vitrines réfrigérées. Elle doit être nettoyable en place et conforme à la marque.",
+      "Sandha livre des comptoirs de service charcuterie, boulangerie, fruits et légumes et aliments spécialisés, plus des murs d'accent de marque épicerie et du mobilier BOH."
+    ],
+    "capabilities": [
+      "Ébénisterie de service charcuterie et fromages",
+      "Comptoirs de service boulangerie",
+      "Merchandising fruits et légumes et plats préparés",
+      "Comptoirs d'aliments spécialisés (boucherie, fruits de mer)",
+      "Entourages de voies de caisse avant",
+      "Service café en magasin et plats chauds",
+      "Mobilier de préparation et de réception BOH",
+      "Murs d'accent de marque"
+    ],
+    "products": [
+      "Comptoirs de service charcuterie",
+      "Comptoirs de boulangerie",
+      "Merchandising fruits et légumes",
+      "Comptoirs boucherie / fruits de mer",
+      "Voies de caisse avant",
+      "Ébénisterie de cafés en magasin",
+      "Comptoirs de préparation BOH",
+      "Murs d'accent de marque"
+    ],
+    "manufacturingFocus": [
+      "Matériaux conformes NSF sur toutes les surfaces en contact alimentaire.",
+      "Dessus en surface solide en gorge sur les comptoirs humides.",
+      "Coordination avec l'installateur de vitrines réfrigérées pour une intégration affleurante.",
+      "HPL classé impacts sur les façades de comptoirs côté public."
+    ],
+    "qualityStandards": [
+      "NSF ANSI 2 et 51 sur le contact alimentaire",
+      "Grade AWMAC Custom",
+      "AODA / ADA sur les comptoirs de service",
+      "Dispositions de service alimentaire OBC",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation de nuit pour protéger les heures d'ouverture de l'épicerie.",
+      "Coordination avec le fournisseur de réfrigération sur l'alignement des vitrines.",
+      "Visite d'inspection sanitaire avant la reprise du service alimentaire.",
+      "Autorisation du gérant de magasin avant la cloche d'ouverture."
+    ],
+    "audience": [
+      "Immobilier corporatif de chaînes d'épiceries",
+      "Propriétaires indépendants d'épiceries spécialisées",
+      "Exploitants multi-formats d'épiceries ethniques",
+      "Designers d'intérieur d'épiceries",
+      "Entrepreneurs généraux d'épiceries"
+    ],
+    "clientNote": "Déploiements d'épiceries à format complet et spécialisées."
+  },
+  "convenience-stores": {
+    "name": "Dépanneurs",
+    "tagline": "Ensembles d'accessoires pour dépanneurs — comptoirs avant, bars à café, entourages de réfrigérateurs, kiosques de cour avant carburant.",
+    "messaging": "Les dépanneurs doivent ouvrir chaque matin sans faute. Sandha mène les déploiements de dépanneurs comme un programme de fabrication — même accessoire, même équipe d'installation, chaque site.",
+    "intro": [
+      "Les dépanneurs font tourner l'inventaire rapidement et ouvrent de longues heures. L'ébénisterie doit être durable, remplaçable et identique magasin après magasin.",
+      "Sandha construit comptoirs avant, bars à café, entourages de réfrigérateurs et kiosques de préposés de cour avant carburant — palettisés par magasin."
+    ],
+    "capabilities": [
+      "Comptoirs de caisse avant avec intégration loterie",
+      "Bars à café et boissons chaudes en magasin",
+      "Merchandising grab-and-go",
+      "Entourages d'extrémités de réfrigérateurs et congélateurs",
+      "Exposition sécurisée vapes / tabac",
+      "Kiosques de préposés de cour avant carburant",
+      "Arrière-bureaux et salles de coffres",
+      "Murs de marque intégrés à la signalisation"
+    ],
+    "products": [
+      "Comptoirs de caisse avant",
+      "Comptoirs de bars à café",
+      "Unités grab-and-go",
+      "Extrémités de réfrigérateurs",
+      "Exposition tabac",
+      "Kiosques de préposés carburant",
+      "Mobilier d'arrière-bureau",
+      "Murs d'accent de marque"
+    ],
+    "manufacturingFocus": [
+      "HPL classé impacts sur tous les comptoirs côté public.",
+      "Dessus de bars à café en surface solide avec canaux d'égouttage.",
+      "Exposition tabac / vapes sécurisée renforcée acier.",
+      "Palettisé par site avec trousses d'installation à code QR."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom",
+      "NSF sur les surfaces de boissons chaudes",
+      "AODA / ADA sur les comptoirs avant",
+      "Dispositions OBC et TSSA de cour avant carburant",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation de 6 à 8 heures par magasin en fenêtre de nuit.",
+      "Déploiement multi-sites sous un seul GP.",
+      "Logistique transfrontalière via CUSMA vers les emplacements aux É.-U.",
+      "Trousse de retouche sur place par magasin."
+    ],
+    "audience": [
+      "Immobilier corporatif de chaînes de dépanneurs",
+      "Programmes de commodité de marques carburant",
+      "Exploitants multi-unités indépendants de dépanneurs",
+      "Consultants en design de marque de dépanneurs",
+      "EG de déploiements multi-sites"
+    ],
+    "clientNote": "Déploiements de dépanneurs de marques carburant et indépendants."
+  },
+  "multi-residential": {
+    "name": "Multirésidentiel",
+    "tagline": "Ébénisterie en hauteur — halls, étages d'agrément et chaque unité sous un seul fabricant.",
+    "messaging": "Les tours multirésidentielles ouvrent selon un échéancier que le marché surveille. Sandha livre l'ébénisterie pour l'ensemble du bâtiment selon le calendrier de remise du promoteur — chaque étage, chaque unité.",
+    "intro": [
+      "Les tours multirésidentielles sont riches en ébénisterie. Chaque hall, corridor et unité exige une fabrication coordonnée selon l'échéancier de remise du promoteur.",
+      "Sandha livre des ensembles pour l'ensemble du bâtiment — hall du rez-de-chaussée, étages d'agréments et cuisines, vanités et garde-robes en unité."
+    ],
+    "capabilities": [
+      "Ébénisterie de hall et de conciergerie du rez-de-chaussée",
+      "Lambris de vestibules d'ascenseurs et de corridors",
+      "Cuisines d'agréments, bars, co-working, théâtre, conditionnement",
+      "Armoires de cuisine en unité",
+      "Vanités et garde-robes en unité",
+      "Bars de terrasses toiture et ébénisterie extérieure",
+      "Murs d'accent de salles de réception et de salons",
+      "Spa animaux et agrément de lavage de chiens"
+    ],
+    "products": [
+      "Comptoirs de conciergerie",
+      "Lambris de corridors",
+      "Cuisines d'agréments",
+      "Cuisines en unité",
+      "Vanités en unité",
+      "Systèmes de garde-robes",
+      "Bars de salles de réception",
+      "Mobilier de spa animaux"
+    ],
+    "manufacturingFocus": [
+      "Cuisines en unité fabriquées par lots à l'échelle du bâtiment.",
+      "Placage AWMAC Premium sur le bois des espaces publics.",
+      "Intégration de comptoirs quartz sur les cuisines résidentielles.",
+      "Portail d'améliorations pour acheteurs pour la sélection des finitions."
+    ],
+    "qualityStandards": [
+      "Dispositions multirésidentielles OBC / NBC",
+      "Grade AWMAC Custom à Premium",
+      "AODA / ADA sur les comptoirs d'agréments publics",
+      "ULC S102 Classe A sur le lambris de corridor",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation en unité étage par étage selon l'échéancier du promoteur.",
+      "Installation des agréments publics phasée autour des événements d'ouverture.",
+      "Coordination avec l'installateur FF&E sur la livraison du hall.",
+      "Dossiers de remise par unité pour l'inspection d'occupation."
+    ],
+    "audience": [
+      "Promoteurs en hauteur et FPI",
+      "Entrepreneurs généraux multirésidentiels",
+      "Designers d'intérieur sur ensembles de tours",
+      "Gestionnaires de programmes d'améliorations pour acheteurs",
+      "Équipes de transition de gestion immobilière"
+    ],
+    "clientNote": "Promoteurs de condos en hauteur et de locatif à vocation partout en Ontario."
+  },
+  "apartments": {
+    "name": "Appartements",
+    "tagline": "Ébénisterie pour locatif à vocation — portée en-suite répétée au nombre d'unités.",
+    "messaging": "Le locatif à vocation est un investissement de 30 ans. Sandha construit l'ébénisterie en unité pour survivre locataire après locataire sans rénovation de cycle de vie.",
+    "intro": [
+      "Le locatif à vocation privilégie la durabilité et la répétabilité. Chaque unité reçoit le même accessoire, et chaque accessoire doit survivre au roulement des locataires pendant 30 ans.",
+      "Sandha fabrique cuisines, vanités et garde-robes en unité pour tours de locatif à vocation au nombre d'unités."
+    ],
+    "capabilities": [
+      "Armoires de cuisine en unité",
+      "Vanités et garde-robes en unité",
+      "Cuisines compactes studio et 1 chambre",
+      "Cuisines plus grandes pour unités familiales",
+      "Mobilier de salons d'agréments et de co-working",
+      "Lambris de corridors",
+      "Mobilier de buanderies communes et de salles de colis",
+      "Hall d'entrée et conciergerie"
+    ],
+    "products": [
+      "Cuisines compactes en unité",
+      "Cuisines familiales en unité",
+      "Vanités",
+      "Systèmes de garde-robes",
+      "Mobilier d'agréments",
+      "Lambris de corridors",
+      "Mobilier de salles de colis",
+      "Comptoirs de conciergerie"
+    ],
+    "manufacturingFocus": [
+      "Quincaillerie et charnières de cycle de vie 30 ans.",
+      "Spécification de cuisine en unité répétable dans toute la tour.",
+      "Quincaillerie BHMA Grade 1 sur chaque tiroir.",
+      "Finitions favorables au roulement qui survivent aux repeints des locataires."
+    ],
+    "qualityStandards": [
+      "Dispositions multirésidentielles OBC / NBC",
+      "Grade AWMAC Custom en unité",
+      "AODA / ADA sur les agréments publics",
+      "ULC S102 Classe A sur les corridors",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation en unité étage par étage.",
+      "Coordination avec le programme de remise de la gestion immobilière.",
+      "Trousse de pièces de rechange laissée aux installations.",
+      "Programme de service post-occupation pour les réparations de roulement."
+    ],
+    "audience": [
+      "Promoteurs de locatif à vocation",
+      "Portefeuilles immobiliers de FPI",
+      "Entrepreneurs généraux PBR",
+      "Opérations de gestion immobilière",
+      "Designers d'intérieur multirésidentiels"
+    ],
+    "clientNote": "Portefeuilles de locatif à vocation partout au Canada."
+  },
+  "condominiums": {
+    "name": "Condominiums",
+    "tagline": "Ébénisterie pour tours de condo — agréments publics et chaque cuisine, vanité et garde-robe en unité.",
+    "messaging": "Les acheteurs de condo voient l'étage d'agréments et imaginent le mode de vie. Sandha construit l'ébénisterie d'agréments qui conclut la vente — et l'ébénisterie en unité qui garde l'acheteur satisfait après l'emménagement.",
+    "intro": [
+      "Les tours de condo vendent l'étage d'agréments autant que l'unité. L'ébénisterie porte la marque du promoteur du hall au penthouse.",
+      "Sandha livre l'ébénisterie d'ensemble condo complet — halls, étages d'agréments, finitions en unité et programmes d'améliorations."
+    ],
+    "capabilities": [
+      "Réception de grand hall",
+      "Cuisines d'agréments, bars, salles de réception",
+      "Salons de co-working et d'étude",
+      "Théâtres et salles de jeux",
+      "Cuisines en unité par gamme",
+      "Vanités et garde-robes en unité",
+      "Ensembles de portail d'améliorations pour acheteurs",
+      "Cuisines de terrasses toiture et extérieures"
+    ],
+    "products": [
+      "Murs d'accent de grand hall",
+      "Bars de salles de réception",
+      "Mobilier de co-working",
+      "Ébénisterie de théâtre",
+      "Cuisines en unité (par gamme)",
+      "Quartz et armoires d'amélioration",
+      "Bars extérieurs de toiture",
+      "Comptoirs de conciergerie"
+    ],
+    "manufacturingFocus": [
+      "Placage AWMAC Premium sur le bois de grand hall.",
+      "Spécification de cuisine en unité par gamme (standard / amélioration / penthouse).",
+      "Bibliothèque de quartz et d'armoires d'améliorations pour acheteurs.",
+      "Fabrication par lots selon les calendriers au nombre d'unités."
+    ],
+    "qualityStandards": [
+      "Dispositions multirésidentielles OBC / NBC",
+      "Grade AWMAC Custom à Premium",
+      "Conformité garantie maisons neuves TARION / Ontario",
+      "ULC S102 Classe A sur les corridors",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation étage par étage selon l'échéancier d'occupation du promoteur.",
+      "Séquençage des unités d'améliorations pour acheteurs.",
+      "Installation des étages d'agréments phasée autour des événements d'occupation.",
+      "Programme de défectuosités avec l'équipe de gestion immobilière."
+    ],
+    "audience": [
+      "Promoteurs de condominiums",
+      "Designers d'intérieur sur ensembles condo",
+      "Gestionnaires de programmes d'améliorations pour acheteurs",
+      "Équipes de revue de défectuosités TARION",
+      "Équipes de transition de gestion immobilière"
+    ],
+    "clientNote": "Développements de tours de condo et d'immeubles moyens partout dans la RGT."
+  },
+  "student-housing": {
+    "name": "Résidences étudiantes",
+    "tagline": "Ébénisterie pour hébergement étudiant à vocation — en-suite et agréments partagés.",
+    "messaging": "Les résidences étudiantes doivent survivre aux vingt ans. Sandha construit l'ébénisterie PBSA pour la ruée de septembre et le grand ménage de juin — chaque année, sans rénovation de cycle de vie.",
+    "intro": [
+      "L'hébergement étudiant est à fort roulement, usage intense et entretien faible. Chaque accessoire doit survivre aux baux de 8 mois et aux roulements de vacances.",
+      "Sandha fabrique bureaux d'étude, garde-robes, kitchenettes en unité, cuisines partagées et salons sociaux pour PBSA."
+    ],
+    "capabilities": [
+      "Bureaux d'étude et rayonnages en unité",
+      "Garde-robes et placards en unité",
+      "Kitchenettes de studios",
+      "Cuisines de suites partagées",
+      "Ébénisterie de salons communs et d'espaces sociaux",
+      "Mobilier de salons d'étude et de bibliothèques",
+      "Agréments de conditionnement et de mieux-être",
+      "Mobilier de réception, courrier et salles de colis"
+    ],
+    "products": [
+      "Bureaux d'étude",
+      "Garde-robes",
+      "Kitchenettes de studios",
+      "Cuisines partagées",
+      "Mobilier de salons communs",
+      "Ébénisterie de salons d'étude",
+      "Réception fitness",
+      "Salle de courrier / colis"
+    ],
+    "manufacturingFocus": [
+      "Quincaillerie BHMA Grade 1 sur chaque tiroir et porte.",
+      "HPL classé impacts sur toutes les surfaces en unité.",
+      "Quincaillerie anti-effraction lorsque requis.",
+      "Spécification de finition favorable au roulement pour le cycle de nettoyage annuel."
+    ],
+    "qualityStandards": [
+      "Dispositions multirésidentielles OBC / NBC",
+      "Grade AWMAC Custom",
+      "AODA / ADA sur les agréments publics",
+      "ULC S102 Classe A sur les corridors",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Fenêtre d'installation estivale entre les trimestres académiques.",
+      "Installation phasée bâtiment par bâtiment sur les campus PBSA.",
+      "Trousse de pièces de rechange pour le programme de roulement annuel.",
+      "Visite post-occupation avec l'équipe de vie en résidence."
+    ],
+    "audience": [
+      "Promoteurs et exploitants PBSA",
+      "Bureaux d'hébergement universitaires",
+      "FPI d'hébergement étudiant",
+      "Entrepreneurs généraux PBSA de campus",
+      "Coordonnateurs d'installations de vie en résidence"
+    ],
+    "clientNote": "Projets d'hébergement étudiant à vocation et de résidences universitaires."
+  },
+  "luxury-residential-common-areas": {
+    "name": "Aires communes résidentielles de luxe",
+    "tagline": "Ébénisterie pour halls de tours ultra-luxe, étages d'agrément et salons résidents.",
+    "messaging": "Les aires communes résidentielles de luxe sont des clubs privés à l'échelle du bâtiment. Sandha façonne l'ébénisterie pour qu'elle se sente sur mesure et tienne l'usage quotidien des résidents pendant une génération.",
+    "intro": [
+      "Les tours ultra-luxe vendent l'aire commune comme une extension du foyer. Chaque matériau est spécifié par le designer d'intérieur au grade du savoir-faire hôtelier.",
+      "Sandha façonne le grand hall, les agréments de club privé, le mieux-être et les espaces de divertissement en toiture pour les marques résidentielles les plus haut de gamme."
+    ],
+    "capabilities": [
+      "Réception de grand hall avec murs en placage apparié en séquence",
+      "Ébénisterie de conciergerie et de portiers",
+      "Agréments de club privé : salle à manger, cave, salon cigares",
+      "Mieux-être : spa, bain froid, ébénisterie de salles de traitement",
+      "Salles de projection et salons de jeux",
+      "Tables de chef et cuisines de démonstration",
+      "Mobilier de divertissement en toiture et en bord de piscine",
+      "Arrière-boutique de gestion de l'immeuble"
+    ],
+    "products": [
+      "Murs d'accent de grand hall",
+      "Comptoirs de conciergerie",
+      "Salles à manger privées",
+      "Caves à vins",
+      "Salles de traitement spa",
+      "Salles de projection",
+      "Cuisines de démonstration",
+      "Bars de toiture"
+    ],
+    "manufacturingFocus": [
+      "Grade AWMAC Premium partout, savoir-faire musée sur les murs d'accent.",
+      "Séquençage de placage sur mesure et travail d'accent en incrustation.",
+      "Quincaillerie bronze / laiton et détail patrimonial.",
+      "Inspection de finition white-glove avant l'installation."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Premium (NAAWS 4.0)",
+      "AODA / ADA sur tous les agréments publics",
+      "ULC S102 Classe A sur les corridors",
+      "Conformité acoustique WELL v2 X07",
+      "Conformité garantie maisons neuves TARION / Ontario"
+    ],
+    "installationNotes": [
+      "Équipe d'installation white-glove.",
+      "Coordination avec les fournisseurs FF&E et d'installation d'œuvres d'art.",
+      "Protection de chantier au standard musée jusqu'à la remise.",
+      "Programme de service post-occupation pour les résidents."
+    ],
+    "audience": [
+      "Promoteurs ultra-luxe",
+      "Exploitants de résidences de marque (Ritz, Four Seasons, etc.)",
+      "Designers d'intérieur résidentiels de luxe",
+      "Architectes de clients privés",
+      "Programmes de conciergerie de gestion d'immeubles"
+    ],
+    "clientNote": "Développements de résidences de marque et de tours de luxe."
+  },
+  "community-centres": {
+    "name": "Centres communautaires",
+    "tagline": "Ébénisterie pour centres communautaires multigénérationnels — réception, salles de programmes, espaces humides.",
+    "messaging": "Les centres communautaires sont des infrastructures civiques partagées. Sandha construit une ébénisterie qui sert chaque programme et chaque usager sans temps d'arrêt de cycle de vie.",
+    "intro": [
+      "Les centres communautaires offrent de la programmation toute la journée pour tous les âges. L'ébénisterie doit servir un club de cartes pour aînés à 10 h et le basketball jeunesse à 20 h.",
+      "Sandha construit réception, salles de programmes, cuisines et ébénisterie d'espaces humides de centres communautaires municipaux sous approvisionnement public."
+    ],
+    "capabilities": [
+      "Comptoirs d'accueil et d'inscription aux programmes",
+      "Salles de programmes polyvalentes",
+      "Cuisines communautaires",
+      "Ébénisterie de salons jeunesse et de salles d'aînés",
+      "Ébénisterie d'espaces aquatiques et de vestiaires",
+      "Réception fitness et entourages d'équipement",
+      "Mobilier de salles de réunion",
+      "Vanités de salles de bain publiques"
+    ],
+    "products": [
+      "Comptoirs d'accueil",
+      "Rangement de salles de programmes",
+      "Cuisines communautaires",
+      "Mobilier de salons jeunesse",
+      "Ébénisterie de vestiaires aquatiques",
+      "Réception fitness",
+      "Mobilier de salles de réunion",
+      "Vanités de salles de bain publiques"
+    ],
+    "manufacturingFocus": [
+      "Construction classée humide pour la portée aquatique et vestiaires.",
+      "Finitions classées impacts pour l'usage de programmes publics.",
+      "Rangement modulaire de salles de programmes pour la reconfiguration.",
+      "Grade AWMAC Custom partout."
+    ],
+    "qualityStandards": [
+      "Documentation d'appels d'offres MERX / municipaux",
+      "Grade AWMAC Custom",
+      "CSA B651 / AODA / ADA",
+      "Dispositions d'occupation assemblée OBC",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation phasée attentive au calendrier de programmation.",
+      "Installation d'espaces humides coordonnée avec l'entrepreneur de piscine.",
+      "Liste de défectuosités municipale et cahier de remise.",
+      "Installation sensible aux relations communautaires pour les centres occupés."
+    ],
+    "audience": [
+      "Départements municipaux de loisirs",
+      "Organismes communautaires sans but lucratif",
+      "Entrepreneurs généraux de centres communautaires",
+      "Partenaires P3 d'installations communautaires",
+      "Consultants d'installations aquatiques"
+    ],
+    "clientNote": "Centres communautaires municipaux et programmes de loisirs."
+  },
+  "ymca": {
+    "name": "YMCA",
+    "tagline": "Ébénisterie pour installations YMCA et famille Y — comptoirs d'accueil, salles de programmes, espaces humides.",
+    "messaging": "Les installations YMCA servent la communauté dès l'enregistrement. Sandha construit l'ébénisterie du centre d'accueil Y et des espaces humides selon la norme de marque nationale et la durabilité municipale.",
+    "intro": [
+      "Les installations Y portent une marque nationale sous exploitation locale. L'ébénisterie doit respecter les normes de marque Y et les règles d'approvisionnement municipal en même temps.",
+      "Sandha livre centres d'accueil Y, réception membres, vestiaires aquatiques, espaces de programmes jeunesse et ébénisterie de cafés Y."
+    ],
+    "capabilities": [
+      "Réception de centre d'accueil Y",
+      "Inscription membres et programmes",
+      "Mobilier de salles de programmes jeunesse",
+      "Vestiaires aquatiques et ébénisterie d'espaces humides",
+      "Réception fitness et entourages d'équipement",
+      "Cafés Y et bars d'hydratation",
+      "Halls polyvalents et salles de réunion",
+      "Ébénisterie de garde d'enfants et de garderies"
+    ],
+    "products": [
+      "Réception de centre d'accueil",
+      "Comptoirs d'inscription",
+      "Rangement de programmes jeunesse",
+      "Vestiaires aquatiques",
+      "Réception fitness",
+      "Bars de cafés Y",
+      "Mobilier polyvalent",
+      "Mobilier de garde d'enfants"
+    ],
+    "manufacturingFocus": [
+      "Construction classée humide pour la portée aquatique.",
+      "Intégration de finitions et de signalisation selon norme de marque Y.",
+      "HPL classé impacts pour l'usage public à fort débit.",
+      "Coins arrondis sécuritaires pour enfants et quincaillerie captive dans les zones jeunesse."
+    ],
+    "qualityStandards": [
+      "Conformité aux normes de marque YMCA",
+      "Grade AWMAC Custom",
+      "CSA B651 / AODA / ADA",
+      "Occupation assemblée OBC",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Phasée autour du calendrier de programmation des membres.",
+      "Coordination des espaces humides avec l'entrepreneur de piscine.",
+      "Visite de l'inspecteur de marque Y avant l'ouverture.",
+      "Programme de service post-ouverture avec le gestionnaire d'installations."
+    ],
+    "audience": [
+      "Opérations régionales YMCA",
+      "Projets d'immobilisations de la famille Y",
+      "Entrepreneurs généraux expérimentés Y",
+      "Partenaires municipaux sur constructions Y",
+      "Consortiums P3 d'installations Y"
+    ],
+    "clientNote": "Installations de la famille Y partout au Canada."
+  },
+  "recreation-centres": {
+    "name": "Centres de loisirs",
+    "tagline": "Ébénisterie pour loisirs municipaux — arénas, centres de conditionnement, complexes aquatiques.",
+    "messaging": "Les centres de loisirs sont les bâtiments publics les plus fréquentés de la ville. Sandha construit une ébénisterie qui absorbe la foule quotidienne et passe l'inspection des installations année après année.",
+    "intro": [
+      "Les centres de loisirs encaissent l'usage public — arénas, planchers de conditionnement, installations aquatiques.",
+      "Sandha livre concessions d'arénas, réception fitness, vestiaires aquatiques et ensembles complets de centres de loisirs sous approvisionnement municipal."
+    ],
+    "capabilities": [
+      "Comptoirs de concessions d'aréna et de magasins de patins",
+      "Réception de planchers fitness et entourages d'équipement",
+      "Réception aquatique et ébénisterie de vestiaires",
+      "Mobilier de salles de réunion et polyvalentes",
+      "Comptoirs d'inscription aux programmes",
+      "Cafés de centres de loisirs et bars d'hydratation",
+      "Ébénisterie de vestiaires",
+      "Vanités de salles de bain publiques"
+    ],
+    "products": [
+      "Concessions d'aréna",
+      "Comptoirs de magasins de patins",
+      "Réception fitness",
+      "Vestiaires aquatiques",
+      "Inscription aux programmes",
+      "Bars de cafés de loisirs",
+      "Ébénisterie de vestiaires",
+      "Vanités de salles de bain publiques"
+    ],
+    "manufacturingFocus": [
+      "Construction classée humide pour la portée aquatique.",
+      "HPL classé impacts sur la portée adjacente aréna et gymnase.",
+      "Matériaux NSF sur le contact alimentaire des concessions.",
+      "Rangement modulaire de salles de programmes."
+    ],
+    "qualityStandards": [
+      "Approvisionnement MERX / municipal",
+      "Grade AWMAC Custom",
+      "CSA B651 / AODA / ADA",
+      "Occupation assemblée OBC",
+      "NSF sur la portée concessions"
+    ],
+    "installationNotes": [
+      "Installation attentive au calendrier de programmation.",
+      "Installation d'espaces humides avec coordination de l'entrepreneur de piscine.",
+      "Liste de défectuosités municipale et documentation de remise.",
+      "Visite de service post-ouverture avec le gestionnaire d'installations."
+    ],
+    "audience": [
+      "Directeurs municipaux de loisirs",
+      "Exploitants de centres de loisirs multi-usages",
+      "Consultants d'installations aquatiques",
+      "Entrepreneurs généraux de travaux publics",
+      "Partenaires P3 de centres de loisirs"
+    ],
+    "clientNote": "Arénas, centres de conditionnement et complexes aquatiques municipaux."
+  },
+  "public-libraries": {
+    "name": "Bibliothèques",
+    "tagline": "Ébénisterie pour bibliothèques de succursale et centrales — circulation, programmation communautaire, maker-spaces.",
+    "messaging": "Les bibliothèques publiques sont les derniers salons civiques gratuits. Sandha construit l'ébénisterie de succursale pour servir usagers, programmes et collection pendant plus de 20 ans.",
+    "intro": [
+      "Les bibliothèques publiques sont des infrastructures civiques de quartier. L'ébénisterie doit servir programmes, usagers et personnel pendant des décennies.",
+      "Sandha livre la portée de succursales et de bibliothèques centrales — circulation, rayonnages, salles de programmes, maker-spaces et terrasses de zones enfants."
+    ],
+    "capabilities": [
+      "Comptoirs de circulation et d'auto-prêt",
+      "Rayonnages adultes, YA et enfants",
+      "Mobilier de salles de programmes et de halls communautaires",
+      "Mobilier de maker-spaces et de bibliothèques d'outils",
+      "Salles d'histoire locale et d'archives",
+      "Terrasses d'heure du conte pour zones enfants",
+      "Carrels d'étude et cabines d'étude de groupe",
+      "Ébénisterie de cafés de succursales"
+    ],
+    "products": [
+      "Comptoirs de circulation",
+      "Rayonnages publics de livres",
+      "Rangement de salles de programmes",
+      "Bancs de maker-spaces",
+      "Rayonnages d'archives",
+      "Terrasses d'heure du conte",
+      "Carrels d'étude",
+      "Comptoirs de cafés"
+    ],
+    "manufacturingFocus": [
+      "Grade AWMAC Custom à Premium sur le bois public.",
+      "Découpes de comptoirs RFID / auto-prêt pré-coordonnées.",
+      "Rayonnages ancrés sismiquement selon spécification structurelle.",
+      "Finitions chaudes de zones enfants avec coins arrondis."
+    ],
+    "qualityStandards": [
+      "Orientations de conception de bibliothèques OLA / CFLA",
+      "Grade AWMAC Custom",
+      "CSA B651 / AODA / ADA",
+      "ULC S102 Classe A sur le lambris public",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation hors heures pour garder les succursales ouvertes.",
+      "Coordination avec le fournisseur RFID / auto-prêt sur les découpes.",
+      "Essai de charge post-installation des rayonnages avec le personnel.",
+      "Visite de l'équipe de programmation avant la réouverture au public."
+    ],
+    "audience": [
+      "Conseils de bibliothèques municipales",
+      "Projets d'immobilisations de bibliothèques publiques",
+      "Entrepreneurs généraux expérimentés en bibliothèques",
+      "Designers d'intérieur civiques",
+      "Planificateurs d'installations municipales"
+    ],
+    "clientNote": "Travaux récents : Valley Park Library et projets de succursales municipales."
+  },
+  "museums": {
+    "name": "Musées",
+    "tagline": "Ébénisterie de grade musée — mobilier d'exposition, entreposage d'artefacts, réception et café.",
+    "messaging": "L'ébénisterie de musée se situe entre le visiteur et l'artefact. Sandha façonne vitrines, rangement et murs interprétatifs selon les normes de préservation sans perdre la chaleur accueillante pour les visiteurs.",
+    "intro": [
+      "Les musées sont des bâtiments de narration. L'ébénisterie encadre l'artefact, soutient l'exposition et accueille le visiteur.",
+      "Sandha construit le mobilier d'exposition de grade musée, le rangement d'artefacts, les comptoirs d'admission et l'ébénisterie de boutiques de musée."
+    ],
+    "capabilities": [
+      "Mobilier d'exposition et vitrines",
+      "Armoires de rangement d'artefacts",
+      "Comptoirs d'admission et d'orientation",
+      "Mobilier de boutiques de musée",
+      "Ébénisterie de galeries interactives",
+      "Mobilier de cafés et d'espaces événementiels",
+      "Stations de guides et murs interprétatifs",
+      "Mobilier de laboratoires de conservation et de conservateurs"
+    ],
+    "products": [
+      "Vitrines d'exposition",
+      "Rangement d'artefacts",
+      "Comptoirs d'admission",
+      "Détail de boutiques de musée",
+      "Ébénisterie de galeries interactives",
+      "Mobilier de cafés",
+      "Stations de guides",
+      "Mobilier de laboratoires de conservation"
+    ],
+    "manufacturingFocus": [
+      "Grade AWMAC Premium avec matériaux de norme musée.",
+      "Finitions testées hors-gaz pour environnements sécuritaires pour artefacts.",
+      "Intégration LED de grade musée et éclairage de vitrines.",
+      "Détail d'accent bronze, laiton et incrustation."
+    ],
+    "qualityStandards": [
+      "Normes muséales (orientations ICOM, CMA)",
+      "Grade AWMAC Premium",
+      "Spécification hors-gaz / matériaux de préservation",
+      "ULC S102 Classe A sur le lambris public",
+      "AODA / ADA sur les comptoirs publics"
+    ],
+    "installationNotes": [
+      "Coordination avec les fournisseurs de design d'exposition et d'éclairage.",
+      "Installation white-glove pour la portée galeries.",
+      "Protection de chantier au standard de conservation.",
+      "Parcours pré-ouverture avec conservateurs et agents de conservation."
+    ],
+    "audience": [
+      "Équipes de projets d'immobilisations de musées",
+      "Conservateurs et agents de conservation",
+      "Firmes de design d'exposition",
+      "Entrepreneurs généraux expérimentés en patrimoine",
+      "Designers d'intérieur d'installations culturelles"
+    ],
+    "clientNote": "Aménagements de musées, galeries et institutions patrimoniales."
+  },
+  "cultural-centres": {
+    "name": "Centres culturels",
+    "tagline": "Ébénisterie pour centres culturels communautaires, arts et multifaith.",
+    "messaging": "Les centres culturels sont des lieux de rencontre pour l'identité. Sandha construit une ébénisterie qui respecte la communauté qu'elle sert et tient l'usage quotidien de la programmation.",
+    "intro": [
+      "Les centres culturels servent quartiers, communautés de foi et organismes artistiques sous un même toit.",
+      "Sandha livre réception de centres culturels, salles de programmes, studios d'arts, espaces de réflexion multifaith et murs d'accent au détail patrimonial."
+    ],
+    "capabilities": [
+      "Réception et orientation de centres culturels",
+      "Mobilier de salles de programmes et de studios",
+      "Rangement et postes de travail de studios d'arts",
+      "Salles de réflexion multifaith",
+      "Murs d'accent de halls communautaires",
+      "Mobilier de programmes jeunesse et aînés",
+      "Ébénisterie de cafés et de restauration événementielle",
+      "Murs interprétatifs au détail patrimonial"
+    ],
+    "products": [
+      "Comptoirs d'accueil",
+      "Rangement de salles de programmes",
+      "Bancs de studios d'arts",
+      "Mobilier de salles de réflexion",
+      "Murs de halls communautaires",
+      "Mobilier de programmes jeunesse",
+      "Ébénisterie de cafés",
+      "Murs interprétatifs"
+    ],
+    "manufacturingFocus": [
+      "Grade AWMAC Custom à Premium sur le bois public.",
+      "Recherche de détail culturellement approprié pour les murs d'accent.",
+      "Finitions chaudes pour les espaces de réflexion et de rassemblement.",
+      "Rangement modulaire de salles de programmes pour la reconfiguration."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom à Premium",
+      "CSA B651 / AODA / ADA",
+      "Dispositions d'occupation assemblée OBC",
+      "Orientations de design de patrimoine culturel le cas échéant",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Coordination avec la liaison culturelle sur la sensibilité de l'installation.",
+      "Installation phasée attentive au calendrier de programmation.",
+      "Parcours de la communauté de foi avant l'ouverture le cas échéant.",
+      "Documentation de remise municipale / sans but lucratif."
+    ],
+    "audience": [
+      "Conseils de centres culturels",
+      "Leadership de communautés de foi",
+      "Équipes municipales de services culturels",
+      "Organismes artistiques sans but lucratif",
+      "Entrepreneurs généraux d'installations culturelles"
+    ],
+    "clientNote": "Projets de centres culturels, arts et multifaith communautaires."
+  },
+  "religious-buildings": {
+    "name": "Édifices religieux",
+    "tagline": "Ébénisterie pour églises, mosquées, temples et synagogues — sanctuaire, rassemblement, détail cérémoniel.",
+    "messaging": "Les édifices religieux sont tenus sacrés par la communauté qu'ils servent. Sandha façonne l'ébénisterie de sanctuaire au standard d'une confiance générationnelle et livre avec un soin culturel.",
+    "intro": [
+      "Les édifices religieux accueillent cérémonie et communauté. L'ébénisterie encadre les deux — mobilier de sanctuaire, mobilier de halls de rassemblement, détail cérémoniel.",
+      "Sandha construit l'ébénisterie pour communautés de foi de toutes confessions, livrée avec sensibilité culturelle et savoir-faire."
+    ],
+    "capabilities": [
+      "Mobilier de sanctuaire (bancs, chaises, pupitres)",
+      "Murs d'accent au détail cérémoniel",
+      "Réception et salon de halls de rassemblement",
+      "Mobilier de cuisine et d'hospitalité",
+      "Salles de programmes jeunesse et d'école du dimanche",
+      "Mobilier de bibliothèques et d'étude",
+      "Rangement cérémoniel (vêtements liturgiques, objets rituels)",
+      "Alcôves de réflexion multifaith"
+    ],
+    "products": [
+      "Bancs et chaises de sanctuaire",
+      "Pupitres et lutrins",
+      "Murs d'accent cérémoniels",
+      "Cuisines d'hospitalité",
+      "Mobilier de programmes jeunesse",
+      "Mobilier de bibliothèques",
+      "Rangement de vêtements liturgiques",
+      "Alcôves de réflexion"
+    ],
+    "manufacturingFocus": [
+      "Grade AWMAC Premium sur le bois de sanctuaire.",
+      "Détail culturellement approprié façonné selon les références de la congrégation.",
+      "Travail d'accent bronze, laiton et détail patrimonial.",
+      "Finition longue durée pour un cycle de vie générationnel."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Premium",
+      "Dispositions d'occupation assemblée OBC",
+      "CSA B651 / AODA / ADA",
+      "Orientations de conservation du patrimoine le cas échéant",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Coordination avec le leadership de la congrégation.",
+      "Installation phasée attentive au calendrier cérémoniel.",
+      "Protection de chantier pendant l'installation pour préserver l'espace de culte.",
+      "Prêt pour consécration ou service d'ouverture à la remise."
+    ],
+    "audience": [
+      "Comités de construction de congrégations",
+      "Leadership de communautés de foi",
+      "Bureaux immobiliers confessionnels",
+      "Entrepreneurs généraux d'édifices religieux",
+      "Consultants en conservation du patrimoine"
+    ],
+    "clientNote": "Projets d'églises, mosquées, temples et synagogues partout en Ontario."
+  },
+  "custom-architectural-millwork": {
+    "name": "Ébénisterie architecturale sur mesure",
+    "tagline": "Détail architectural sur mesure — murs d'accent, plafonds, escaliers, portée unique.",
+    "messaging": "L'ébénisterie architecturale sur mesure, c'est le savoir-faire à l'échelle du bâtiment. L'équipe sur mesure de Sandha transforme le croquis d'un designer en un détail fabriqué et installé qui devient la signature du projet.",
+    "intro": [
+      "Certains projets sont uniques. Un mur d'accueil signature, un plafond courbe en bois, un escalier sculptural.",
+      "L'équipe d'ébénisterie architecturale sur mesure de Sandha collabore avec architectes et designers pour amener le détail sur mesure du croquis à l'installation."
+    ],
+    "capabilities": [
+      "Systèmes muraux courbes et radiaux",
+      "Plafonds d'accent sculpturaux",
+      "Revêtements d'escaliers sur mesure",
+      "Accents de réception signature",
+      "Salles de conseil ou suites exécutives uniques",
+      "Ébénisterie de restauration patrimoniale",
+      "Mobilier et installations sculpturales",
+      "Recherche et développement de détail architectural"
+    ],
+    "products": [
+      "Systèmes muraux courbes",
+      "Plafonds d'accent",
+      "Revêtements d'escaliers",
+      "Réceptions signature",
+      "Suites exécutives sur mesure",
+      "Restaurations patrimoniales",
+      "Installations sculpturales",
+      "R&D de détail sur mesure"
+    ],
+    "manufacturingFocus": [
+      "CNC 5 axes pour le travail courbe et sculptural.",
+      "Atelier de prototypage interne pour le développement de détails.",
+      "Grade AWMAC Premium partout, savoir-faire musée sur les signatures.",
+      "Détail d'accent bronze, laiton et incrustation."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Premium (NAAWS 4.0)",
+      "Orientations de conservation du patrimoine le cas échéant",
+      "ULC S102 Classe A sur le lambris public",
+      "Conformité AODA / ADA",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation white-glove par équipe dédiée.",
+      "Coordination avec l'architecte et le designer sur place.",
+      "Protection de chantier au standard de conservation lorsque requis.",
+      "Visite pré-ouverture avec l'architecte et le propriétaire."
+    ],
+    "audience": [
+      "Architectes avec projets de détail signature",
+      "Designers d'intérieur sur portée sur mesure",
+      "Consultants en restauration patrimoniale",
+      "Clients privés à valeur nette élevée",
+      "Institutions culturelles et civiques"
+    ],
+    "clientNote": "Détail architectural signature et portées sur mesure partout au Canada."
+  },
+  "manufacturing-facilities": {
+    "name": "Installations de fabrication",
+    "tagline": "Ébénisterie pour fabrication industrielle — façades de bureaux, salles de pause, laboratoires AQ, salles de formation.",
+    "messaging": "Les usines de fabrication ont besoin d'une portée bureaux et AQ intégrée qui survit à l'environnement d'usine. Sandha construit une ébénisterie adjacente à l'industriel à la durabilité du plancher de production sans perdre le professionnalisme des espaces de bureaux.",
+    "intro": [
+      "Les usines de fabrication ont des espaces de bureaux, d'administration et d'AQ intégrés au plancher de production.",
+      "Sandha livre façades de bureaux intégrées à l'usine, salles de pause, laboratoires AQ, ébénisterie de cribs d'outils et mobilier de salles de formation."
+    ],
+    "capabilities": [
+      "Mobilier de bureaux et d'administration en façade d'usine",
+      "Ébénisterie de salles de pause et de cafétérias",
+      "Mobilier de laboratoires AQ et de contrôle de qualité",
+      "Ébénisterie de cribs d'outils et de guichets de distribution",
+      "Salles de formation et de certification d'opérateurs",
+      "Salles de premiers soins et de santé industrielle",
+      "Vestiaires et salles de change",
+      "Réception et enregistrement des visiteurs"
+    ],
+    "products": [
+      "Façades de bureaux en façade d'usine",
+      "Mobilier de salles de pause",
+      "Bancs de laboratoires AQ",
+      "Mobilier de cribs d'outils",
+      "Ébénisterie de salles de formation",
+      "Salles de premiers soins",
+      "Vestiaires",
+      "Comptoirs d'accueil"
+    ],
+    "manufacturingFocus": [
+      "HPL classé impacts sur la portée adjacente à l'usine.",
+      "Dessus résistants aux produits chimiques sur les bancs de laboratoires AQ.",
+      "Ébénisterie sécurisée de cribs d'outils et de contrôle d'inventaire.",
+      "Quincaillerie et finitions à l'échelle industrielle."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom",
+      "SEFA 8 sur les bancs de laboratoires AQ",
+      "CSA B651 / AODA sur la portée administrative",
+      "Panneaux CARB Phase 2 / TSCA Title VI",
+      "Conformité OHSA à la sécurité au travail"
+    ],
+    "installationNotes": [
+      "Coordination avec l'échéancier de production de l'usine.",
+      "Installation en fenêtre d'arrêt pendant les arrêts planifiés.",
+      "Installation à fixations silencieuses sur les murs adjacents à la production.",
+      "Visite post-installation avec le directeur d'usine et le responsable AQ."
+    ],
+    "audience": [
+      "Propriétaires d'usines industrielles et de fabrication",
+      "Chargés de projet d'expansion d'usines",
+      "Entrepreneurs généraux industriels",
+      "Consultants AQ et production",
+      "Équipes d'immobilier corporatif industriel"
+    ],
+    "clientNote": "Expansions et aménagements d'usines industrielles et de fabrication."
+  },
+  "airports": {
+    "name": "Aéroports",
+    "tagline": "Ébénisterie pour concessions aéroportuaires, agents de porte et terminaux — durabilité 24/7 sous trafic public.",
+    "messaging": "L'ébénisterie aéroportuaire fonctionne 24 heures sur 24 sous une marque mondiale et l'approvisionnement public. Sandha construit la portée terminaux pour survivre aux deux et ouvrir selon l'échéancier opérationnel.",
+    "intro": [
+      "L'ébénisterie aéroportuaire fonctionne 24 h/24 sous le volume de passagers et l'approvisionnement des autorités aéroportuaires.",
+      "Sandha livre accessoires de concessions aéroportuaires, comptoirs d'agents de porte, ébénisterie de lounges et ensembles de détail de terminaux."
+    ],
+    "capabilities": [
+      "Pupitres d'agents de porte de compagnies aériennes",
+      "Comptoirs F&B de concessions aéroportuaires",
+      "Accessoires de détail aéroportuaire",
+      "Ébénisterie de lounges de compagnies aériennes",
+      "Kiosques d'information de terminaux",
+      "Comptoirs de service bagages",
+      "Réception de services aéroportuaires",
+      "Murs de terminaux intégrés à la signalisation"
+    ],
+    "products": [
+      "Pupitres d'agents de porte",
+      "Comptoirs F&B de concessions",
+      "Accessoires de détail de terminaux",
+      "Ébénisterie de lounges de compagnies aériennes",
+      "Kiosques d'information",
+      "Comptoirs de service bagages",
+      "Réception de service",
+      "Murs de signalisation de terminaux"
+    ],
+    "manufacturingFocus": [
+      "HPL classé impacts et composites pierre sur la portée de trafic public.",
+      "AWMAC Premium sur la portée lounges et exécutive des compagnies aériennes.",
+      "Matériaux NSF sur le contact alimentaire des concessions.",
+      "Spécification de cycle de vie 24/7 — quincaillerie Grade 1, finitions nettoyables."
+    ],
+    "qualityStandards": [
+      "Conformité à l'approvisionnement des autorités aéroportuaires",
+      "Grade AWMAC Custom à Premium",
+      "NSF sur les concessions",
+      "CSA B651 / AODA / ADA",
+      "Conformité opérationnelle Transport Canada / TSA"
+    ],
+    "installationNotes": [
+      "Installation de nuit entre les heures d'exploitation.",
+      "Installateurs avec autorisation de sécurité pour la portée airside.",
+      "Coordination avec les opérations aéroportuaires sur le fret et l'accès.",
+      "Liste de défectuosités et remise de l'autorité aéroportuaire."
+    ],
+    "audience": [
+      "Autorités aéroportuaires et exploitants de terminaux",
+      "Immobilier corporatif des compagnies aériennes",
+      "Exploitants de concessions aéroportuaires",
+      "Entrepreneurs généraux d'installations aéroportuaires",
+      "Consultants en design d'expérience de terminaux"
+    ],
+    "clientNote": "Aménagements de terminaux aéroportuaires, concessions et lounges de compagnies aériennes."
+  },
+  "transit": {
+    "name": "Transport en commun",
+    "tagline": "Ébénisterie pour pôles, stations et terminaux de transport — durabilité de grade transport public.",
+    "messaging": "Les stations de transport sont les bâtiments publics les plus fréquentés de la ville. Sandha construit une ébénisterie de transport pour survivre à l'heure de pointe, respecter l'autorité et rester en service entre les cycles de renouvellement.",
+    "intro": [
+      "L'ébénisterie de transport fonctionne aux côtés du matériel roulant et du volume public. Chaque accessoire doit survivre à l'heure de pointe et à l'approvisionnement du transport municipal.",
+      "Sandha livre comptoirs de service de stations, wayfinding, détail de stations et ébénisterie de soutien aux exploitants."
+    ],
+    "capabilities": [
+      "Comptoirs de service de stations de transport",
+      "Entourages de distributeurs de billets",
+      "Accessoires de détail et de concessions de stations",
+      "Kiosques de wayfinding et d'information",
+      "Salles de pause et d'administration des exploitants",
+      "Bureaux de chefs de station",
+      "Vanités de salles de bain publiques",
+      "Murs de stations intégrés à la signalisation"
+    ],
+    "products": [
+      "Comptoirs de service",
+      "Entourages de distributeurs de billets",
+      "Détail de stations",
+      "Kiosques de wayfinding",
+      "Salles de pause des exploitants",
+      "Bureaux de chefs de station",
+      "Vanités de salles de bain publiques",
+      "Murs de signalisation"
+    ],
+    "manufacturingFocus": [
+      "HPL résistant aux impacts et au vandalisme sur la portée publique.",
+      "Inox et composites pierre sur les comptoirs à forte abrasion.",
+      "Palette coordonnée avec la marque de l'autorité de transport.",
+      "Signalisation bilingue lorsque requis."
+    ],
+    "qualityStandards": [
+      "Approvisionnement des autorités de transport (Metrolinx, TTC, etc.)",
+      "Grade AWMAC Custom",
+      "CSA B651 / AODA sur les comptoirs publics",
+      "ULC S102 Classe A sur le lambris public",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Installation de nuit entre les heures d'exploitation du transport.",
+      "Installateurs avec autorisation de sécurité lorsque requis.",
+      "Coordination des opérations de transport sur le fret et l'accès.",
+      "Liste de défectuosités et remise de l'autorité de transport."
+    ],
+    "audience": [
+      "Autorités de transport et exploitants de stations",
+      "Partenaires de consortiums P3 de transport",
+      "Entrepreneurs généraux de stations de transport",
+      "Consultants en design de stations",
+      "Équipes d'installations de transport municipal"
+    ],
+    "clientNote": "Projets de stations Metrolinx, TTC et de transport municipal."
+  },
+  "special-projects": {
+    "name": "Projets spéciaux",
+    "tagline": "Ébénisterie unique — tout ce qui ne rentre dans aucune catégorie.",
+    "messaging": "Les projets spéciaux sont ceux que personne d'autre n'accepte. L'équipe de fabrication de Sandha conçoit, construit et installe la portée unique qui réalise des événements et des espaces signature.",
+    "intro": [
+      "Certaines portées ne rentrent dans aucune catégorie. Fabrication sur mesure pour salons professionnels, décors de film et d'événements, intérieurs de yachts privés, cabines d'avions privés.",
+      "L'équipe de projets spéciaux de Sandha définit, conçoit et fabrique ces ensembles uniques avec la même discipline que tout le reste de ce que nous livrons."
+    ],
+    "capabilities": [
+      "Kiosques sur mesure pour salons professionnels",
+      "Décors de film et de télévision",
+      "Fabrication sur mesure pour événements corporatifs",
+      "Fabrication d'intérieurs de yachts privés",
+      "Portée de cabines d'avions privés",
+      "Ébénisterie sculpturale et d'art public",
+      "Mobilier de décors de divertissement thématique",
+      "Installations signature uniques"
+    ],
+    "products": [
+      "Kiosques de salons professionnels",
+      "Mobilier de décors film / TV",
+      "Fabrication pour événements corporatifs",
+      "Portée d'intérieurs de yachts",
+      "Portée de cabines d'avions",
+      "Ébénisterie d'art sculptural",
+      "Décors de divertissement thématique",
+      "Signature unique"
+    ],
+    "manufacturingFocus": [
+      "CNC 5 axes et prototypage interne.",
+      "Développement flexible de la portée avec le client dès le concept.",
+      "Délais rapides pour les calendriers d'événements et de décors.",
+      "Dessins d'atelier pleinement conçus même sur portée unique."
+    ],
+    "qualityStandards": [
+      "Grade AWMAC Custom à Premium",
+      "Conformité sécurité décors et événements le cas échéant",
+      "Construction de grade marin sur la portée yachts",
+      "Soutien à la certification de cabines aviation le cas échéant",
+      "Panneaux CARB Phase 2 / TSCA Title VI"
+    ],
+    "installationNotes": [
+      "Calendriers d'installation sur mesure selon la portée du projet.",
+      "Expédition transfrontalière et internationale lorsque requis.",
+      "Équipe sur place pour l'installation et le démontage sur portée événements.",
+      "Programmes d'entreposage et de remise à neuf post-projet."
+    ],
+    "audience": [
+      "Sociétés de production d'événements et de salons professionnels",
+      "Designers de production film et TV",
+      "Designers d'intérieurs marins et aviation",
+      "Sculpteurs et commanditaires d'art public",
+      "Promoteurs de divertissement thématique"
+    ],
+    "clientNote": "Fabrication pour salons professionnels, film, marine, aviation et portées uniques."
+  }
+}

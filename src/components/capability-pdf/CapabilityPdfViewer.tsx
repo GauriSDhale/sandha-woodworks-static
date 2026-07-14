@@ -4,20 +4,36 @@ import { pdf } from "@react-pdf/renderer/lib/react-pdf.browser";
 import { ArrowLeft, Download, Printer, X } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { SubSectorStatementDoc } from "@/components/capability-pdf/SubSectorStatementDoc";
-import type { SubSectorStatement } from "@/lib/constants/sub-sector-statements";
+import {
+  getLocalizedStatement,
+  getPdfUiCopy,
+} from "@/lib/capability-pdf/localize";
+import type { SubSectorStatementMeta } from "@/lib/constants/sub-sector-statements";
 import { siteConfig } from "@/lib/constants/site";
 import { cn } from "@/lib/utils";
 
 interface CapabilityPdfViewerProps {
-  sub: SubSectorStatement;
+  sub: SubSectorStatementMeta;
 }
 
 export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
   const router = useRouter();
+  const { t, i18n } = useTranslation("capabilityPdf");
+  const { t: tDetails } = useTranslation("capabilityPdfDetails");
   const [blobUrl, setBlobUrl] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [ready, setReady] = useState(false);
+
+  const localized = useMemo(
+    () => getLocalizedStatement(sub, tDetails),
+    [sub, tDetails, i18n.language],
+  );
+  const ui = useMemo(
+    () => getPdfUiCopy(t, localized.name),
+    [t, localized.name, i18n.language],
+  );
 
   const filename = useMemo(
     () =>
@@ -41,7 +57,7 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
         if (cancelled) return;
 
         const blob = await pdf(
-          <SubSectorStatementDoc sub={sub} images={images} />,
+          <SubSectorStatementDoc sub={localized} ui={ui} images={images} />,
         ).toBlob();
         if (cancelled) return;
         objectUrl = URL.createObjectURL(blob);
@@ -67,7 +83,7 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
       cancelled = true;
       if (objectUrl) URL.revokeObjectURL(objectUrl);
     };
-  }, [sub]);
+  }, [sub, localized, ui]);
 
   function handleClose() {
     if (window.history.length > 1) router.back();
@@ -110,7 +126,7 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
               {siteConfig.name}
             </p>
             <h1 className="truncate font-display text-sm text-cream sm:text-base">
-              {sub.name} Capability Statement
+              {localized.name} {t("viewer.titleSuffix")}
             </h1>
           </div>
         </div>
@@ -126,7 +142,7 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
             )}
           >
             <Printer className="size-3.5" aria-hidden="true" />
-            <span className="hidden sm:inline">Print</span>
+            <span className="hidden sm:inline">{t("viewer.print")}</span>
           </button>
           <button
             type="button"
@@ -138,7 +154,7 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
             )}
           >
             <Download className="size-3.5" aria-hidden="true" />
-            <span className="hidden sm:inline">Download</span>
+            <span className="hidden sm:inline">{t("viewer.download")}</span>
           </button>
           <button
             type="button"
@@ -146,7 +162,7 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
             className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-cream/25 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-cream transition-colors hover:border-brand hover:text-brand"
           >
             <X className="size-3.5" aria-hidden="true" />
-            <span className="hidden sm:inline">Close</span>
+            <span className="hidden sm:inline">{t("viewer.close")}</span>
           </button>
         </div>
       </header>
@@ -154,14 +170,14 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
       <main className="relative flex-1 overflow-auto bg-neutral-900 px-4 py-6 sm:px-8">
         {error ? (
           <div className="flex h-full flex-col items-center justify-center text-center">
-            <p className="font-display text-xl text-cream">Could not open the PDF</p>
+            <p className="font-display text-xl text-cream">{t("viewer.errorTitle")}</p>
             <p className="mt-3 max-w-md text-sm text-cream/70">{error}</p>
             <button
               type="button"
               onClick={handleClose}
               className="mt-8 inline-flex items-center gap-2 text-sm text-brand hover:text-brand-light"
             >
-              <ArrowLeft className="size-4" /> Go back
+              <ArrowLeft className="size-4" /> {t("viewer.goBack")}
             </button>
           </div>
         ) : !ready || !blobUrl ? (
@@ -169,16 +185,14 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
             <div className="text-center">
               <div className="mx-auto h-10 w-10 animate-spin rounded-full border-2 border-cream/20 border-t-brand" />
               <p className="mt-5 text-[10px] font-semibold uppercase tracking-[0.32em] text-brand">
-                Preparing your capability statement
+                {t("viewer.preparingEyebrow")}
               </p>
-              <p className="mt-2 text-xs text-cream/60">
-                Loading photos and building the PDF — usually a few seconds.
-              </p>
+              <p className="mt-2 text-xs text-cream/60">{t("viewer.preparingHint")}</p>
             </div>
           </div>
         ) : (
           <iframe
-            title={`${sub.name} capability statement`}
+            title={t("viewer.iframeTitle", { name: localized.name })}
             src={`${blobUrl}#navpanes=0&view=FitH`}
             className="mx-auto h-full min-h-[70vh] w-full max-w-5xl rounded-sm bg-white shadow-2xl"
           />

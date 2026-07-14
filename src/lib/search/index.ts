@@ -1,5 +1,9 @@
 import { portfolioProjects } from "@/lib/constants/projects";
-import { serviceCategories, serviceDetails } from "@/lib/constants/services";
+import { serviceCategories } from "@/lib/constants/services";
+import enServices from "@/locales/en/services.json";
+import enServiceDetails from "@/locales/en/serviceDetails.json";
+import enSectorDetails from "@/locales/en/sectorDetails.json";
+import enPortfolio from "@/locales/en/portfolio.json";
 import { sectorDetails } from "@/lib/constants/sector-details";
 import { siteConfig } from "@/lib/constants/site";
 
@@ -69,8 +73,8 @@ const pages: SearchItem[] = [
     kind: "Page",
     title: "Insight",
     description: "Articles and updates from Sandha Woodworks.",
-    url: "/insight",
-    keywords: normalize("insight", "blog", "articles", "news"),
+    url: "/linkedin",
+    keywords: normalize("insight", "blog", "articles", "news", "linkedin"),
   },
   {
     id: "page-careers",
@@ -100,17 +104,28 @@ const pages: SearchItem[] = [
 function buildServiceItems(): SearchItem[] {
   return serviceCategories.flatMap((category) =>
     category.services.map((service) => {
-      const detail = serviceDetails[service.slug];
+      const item = enServices.items[service.slug as keyof typeof enServices.items];
+      const detail =
+        enServiceDetails.details[service.slug as keyof typeof enServiceDetails.details] as
+          | {
+              overview?: string;
+              bestFor?: string[];
+              deliverables?: string[];
+              materials?: string;
+            }
+          | undefined;
+      const categoryTitle =
+        enServices.categories[category.id as keyof typeof enServices.categories]?.title;
       return {
         id: `service-${service.slug}`,
         kind: "Service" as const,
-        title: service.name,
-        description: service.description,
+        title: item?.name ?? service.slug,
+        description: item?.description ?? "",
         url: `/services/${service.slug}`,
         keywords: normalize(
-          service.name,
-          service.description,
-          category.title,
+          item?.name,
+          item?.description,
+          categoryTitle,
           detail?.overview,
           detail?.bestFor?.join(" "),
           detail?.materials,
@@ -122,41 +137,62 @@ function buildServiceItems(): SearchItem[] {
 }
 
 function buildSectorItems(): SearchItem[] {
-  return Object.entries(sectorDetails).map(([slug, detail]) => ({
-    id: `sector-${slug}`,
-    kind: "Sector" as const,
-    title: detail.heading.replace(/\s+Millwork$/i, "") || detail.heading,
-    description: detail.description,
-    url: `/sectors/${slug}`,
-    keywords: normalize(
-      detail.heading,
-      detail.description,
-      detail.about,
-      detail.features.join(" "),
-      detail.standards.join(" "),
-      slug.replace(/-/g, " "),
-    ),
-  }));
+  return Object.keys(sectorDetails).map((slug) => {
+    const detail = enSectorDetails.details[slug as keyof typeof enSectorDetails.details] as
+      | {
+          heading?: string;
+          description?: string;
+          about?: string;
+          features?: string[];
+          standards?: string[];
+        }
+      | undefined;
+    const heading = detail?.heading ?? slug;
+    return {
+      id: `sector-${slug}`,
+      kind: "Sector" as const,
+      title: heading.replace(/\s+Millwork$/i, "") || heading,
+      description: detail?.description ?? "",
+      url: `/sectors/${slug}`,
+      keywords: normalize(
+        detail?.heading,
+        detail?.description,
+        detail?.about,
+        detail?.features?.join(" "),
+        detail?.standards?.join(" "),
+        slug.replace(/-/g, " "),
+      ),
+    };
+  });
 }
 
 function buildProjectItems(): SearchItem[] {
-  return portfolioProjects.map((project) => ({
-    id: `project-${project.slug}`,
-    kind: "Project" as const,
-    title: project.name,
-    description: `${project.location} · ${project.category}`,
-    url: `/portfolio/${project.slug}`,
-    keywords: normalize(
-      project.name,
-      project.location,
-      project.category,
-      project.scope,
-      project.client,
-      project.specs.sector,
-      project.specs.finish,
-      project.specs.materials.join(" "),
-    ),
-  }));
+  return portfolioProjects.map((project) => {
+    const copy = enPortfolio.projects[project.slug as keyof typeof enPortfolio.projects] as
+      | {
+          scope?: string;
+          clientPartner?: string;
+          specs?: { sector?: string; finish?: string; materials?: string[] };
+        }
+      | undefined;
+    return {
+      id: `project-${project.slug}`,
+      kind: "Project" as const,
+      title: project.name,
+      description: `${project.location} · ${project.category}`,
+      url: `/portfolio/${project.slug}`,
+      keywords: normalize(
+        project.name,
+        project.location,
+        project.category,
+        copy?.scope,
+        project.clientPartner ?? copy?.clientPartner,
+        copy?.specs?.sector,
+        copy?.specs?.finish,
+        copy?.specs?.materials?.join(" "),
+      ),
+    };
+  });
 }
 
 let cachedIndex: SearchItem[] | null = null;

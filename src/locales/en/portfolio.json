@@ -1,0 +1,198 @@
+{
+  "meta": {
+    "title": "Portfolio",
+    "description": "Selected architectural millwork projects from across Canada."
+  },
+  "hero": {
+    "eyebrow": "Portfolio",
+    "title": "Projects that define excellence",
+    "description": "Explore our recent millwork installations across commercial, retail, healthcare, and institutional environments."
+  },
+  "searchPlaceholder": "Search projects...",
+  "empty": "No projects found matching your criteria.",
+  "scopeLabel": "Scope:",
+  "readMore": "Read more",
+  "showLess": "Show less",
+  "viewGallery": "View Gallery ({{count}})",
+  "cta": {
+    "eyebrow": "Let's build together",
+    "title": "Have a project in mind?",
+    "body": "Let's discuss how Sandha Woodworks can deliver precision millwork for your next build.",
+    "primary": "Request a Quote"
+  },
+  "detail": {
+    "back": "All Projects",
+    "notFoundTitle": "Project not found",
+    "notFoundBack": "← Back to Portfolio",
+    "overview": "Project Overview",
+    "specs": "Project Specs",
+    "sector": "Sector",
+    "delivery": "Delivery",
+    "finish": "Finish",
+    "materials": "Materials",
+    "client": "Client: {{name}}",
+    "gallery": "Gallery",
+    "galleryAlt": "{{name}} {{index}}",
+    "previous": "Previous",
+    "next": "Next",
+    "ctaEyebrow": "Inspired by this project?",
+    "ctaTitle": "Let's bring the same craftsmanship to your next build.",
+    "requestQuote": "Request a Quote"
+  },
+  "filters": {
+    "All": "All",
+    "Healthcare": "Healthcare",
+    "Education": "Education",
+    "Retail": "Retail",
+    "Hospitality": "Hospitality",
+    "Corporate": "Corporate",
+    "Multi-Residential": "Multi-Residential",
+    "Institutional": "Institutional",
+    "Restaurant/QSR": "Restaurant/QSR",
+    "Commercial Interiors": "Commercial Interiors"
+  },
+  "projects": {
+    "coffee-island-toronto": {
+      "scope": "Full turnkey build-out — kitchen/tech fit-out, custom feature ceilings (yellow bulkhead & lighting), stainless & diamond-plate service counter, back-bar millwork, retail display shelving & merchandising fixtures, banquettes, window counters, storefront graphics, and all interior furniture.",
+      "specs": {
+        "sector": "Restaurant / QSR",
+        "delivery": "Design through install",
+        "finish": "Custom wood & laminate finishes",
+        "materials": [
+          "Custom feature ceilings",
+          "Stainless steel & diamond-plate counter",
+          "Millwork & display shelving",
+          "Banquettes & window counters"
+        ]
+      }
+    },
+    "niagara-college-marotta": {
+      "scope": "Institutional interior scope — feature perforated metal ceilings (interior & exterior soffit), signage wall, glass-walled study rooms, common-area casework, and lounge/cafeteria furniture package throughout the innovation complex and athletics wing.",
+      "specs": {
+        "sector": "Education / Institutional",
+        "delivery": "Design through install",
+        "finish": "Metal & glass finishes",
+        "materials": [
+          "Perforated metal ceilings",
+          "Glass-walled study rooms",
+          "Casework & millwork",
+          "Lounge & cafeteria furniture"
+        ]
+      }
+    },
+    "university-of-toronto-robarts": {
+      "scope": "Heritage-sensitive architectural millwork within Robarts Library — white oak column cladding, study carrels & partitions, upholstered banquette pods, individual workstation runs, reception & service casework, integrated task lighting and cable management.",
+      "specs": {
+        "sector": "Education / Library",
+        "delivery": "Design through install",
+        "finish": "White oak & upholstery",
+        "materials": [
+          "White oak column cladding",
+          "Study carrels & partitions",
+          "Upholstered banquette pods",
+          "Integrated task lighting"
+        ]
+      }
+    },
+    "tiffany-hill-primary-school": {
+      "scope": "K-8 school interior millwork — maple learning-stair bleachers, display cases, tiered wood cladding, reception & administration casework, teacher mail cubbies, classroom cabinetry & cubbies, window benches, recycling stations, and STEAM/music/art zone feature walls.",
+      "specs": {
+        "sector": "Education / K-12",
+        "delivery": "Design through install",
+        "finish": "Maple & laminate finishes",
+        "materials": [
+          "Maple learning-stair bleachers",
+          "Display cases & cladding",
+          "Classroom cabinetry & cubbies",
+          "STEAM/music/art zone feature walls"
+        ]
+      }
+    },
+    "tobin-high-school": {
+      "scope": "Full high school interior millwork package — auditorium acoustic wood wall panels & curved balcony fascia, science lab casework with epoxy tops and integrated sinks, chemistry classroom cabinetry, teacher prep rooms, student lockers & wardrobe units, main lobby reception desk, corridor slat wood ceilings and glulam feature bulkheads.",
+      "specs": {
+        "sector": "Education / High School",
+        "delivery": "Design through install",
+        "finish": "Wood veneer & epoxy",
+        "materials": [
+          "Acoustic wood wall panels",
+          "Science lab casework",
+          "Student lockers & wardrobes",
+          "Slat wood ceilings & glulam bulkheads"
+        ]
+      }
+    },
+    "scooped-by-demetres": {
+      "scope": "Complete mall parlour build-out — arched storefront, custom tiled service counter with curved glass gelato display, illuminated signage backing, back-of-house prep, menu boards, pint display freezer surround, and all finish carpentry.",
+      "specs": {
+        "sector": "Retail / Food Service",
+        "delivery": "Design through install",
+        "finish": "Tile & custom finishes",
+        "materials": [
+          "Arched storefront",
+          "Custom tiled service counter",
+          "Illuminated signage",
+          "Finish carpentry"
+        ]
+      }
+    },
+    "mercato-mississauga": {
+      "scope": "Complete architectural millwork package — arched wood portals, banquettes, custom bar, cane-panel screens, feature ceilings, wine displays, service stations, and washroom millwork.",
+      "specs": {
+        "sector": "Restaurant / QSR",
+        "delivery": "Design through install",
+        "finish": "Wood & cane-panel finishes",
+        "materials": [
+          "Arched wood portals",
+          "Custom bar & banquettes",
+          "Cane-panel screens",
+          "Feature ceilings & wine displays"
+        ]
+      }
+    },
+    "lake-country-coop": {
+      "scope": "Architectural millwork package, feature walls, casework, reception & public areas.",
+      "specs": {
+        "sector": "Institutional / Recreation",
+        "delivery": "Millwork package",
+        "finish": "Laminate & wood finishes",
+        "materials": [
+          "Feature walls",
+          "Casework",
+          "Reception millwork",
+          "Public area millwork"
+        ]
+      },
+      "clientPartner": "Atkar North America"
+    },
+    "am-hair-beauty": {
+      "scope": "Retail fixtures, custom stations, reception & display millwork.",
+      "specs": {
+        "sector": "Retail / Beauty",
+        "delivery": "Fixture & millwork package",
+        "finish": "Custom laminate finishes",
+        "materials": [
+          "Retail fixtures",
+          "Custom stations",
+          "Reception millwork",
+          "Display millwork"
+        ]
+      }
+    },
+    "valley-park-library": {
+      "scope": "Library casework, circulation, feature millwork, stack & admin areas.",
+      "specs": {
+        "sector": "Institutional / Library",
+        "delivery": "Millwork package",
+        "finish": "Wood & laminate finishes",
+        "materials": [
+          "Library casework",
+          "Circulation millwork",
+          "Feature millwork",
+          "Stack & admin millwork"
+        ]
+      },
+      "clientPartner": "Atkar North America"
+    }
+  }
+}

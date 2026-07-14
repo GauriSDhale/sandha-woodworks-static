@@ -1,15 +1,29 @@
 import type { Metadata } from "next";
-import { PageHero } from "@/components/marketing/PageSections";
+import { notFound } from "next/navigation";
 import { footerLegalLinks } from "@/lib/constants/site";
+import enLegal from "@/locales/en/legal.json";
+import { LegalDocumentContent } from "@/components/marketing/LegalDocumentContent";
 
-export const metadata: Metadata = {
-  title: "Legal Document",
-};
+const legalSlugs = footerLegalLinks
+  .filter((link) => link.href !== "/legal")
+  .map((link) => link.href.replace("/legal/", ""));
 
 export function generateStaticParams() {
-  return footerLegalLinks
-    .filter((link) => link.href !== "/legal")
-    .map((link) => ({ slug: link.href.replace("/legal/", "") }));
+  return legalSlugs.map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const doc = enLegal.docs[slug as keyof typeof enLegal.docs];
+  if (!doc) return { title: "Legal Document" };
+  return {
+    title: doc.title,
+    description: enLegal.meta.description,
+  };
 }
 
 export default async function LegalDocumentPage({
@@ -18,18 +32,6 @@ export default async function LegalDocumentPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const title = slug.replace(/-/g, " ");
-  return (
-    <>
-      <PageHero eyebrow="Legal & Compliance" title={title} />
-      <section className="px-4 py-10 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-muted-foreground">
-          <p>
-            This is a static placeholder for legal content. In production, this page would contain
-            the full policy or terms document for the selected legal page.
-          </p>
-        </div>
-      </section>
-    </>
-  );
+  if (!legalSlugs.includes(slug)) notFound();
+  return <LegalDocumentContent slug={slug} />;
 }

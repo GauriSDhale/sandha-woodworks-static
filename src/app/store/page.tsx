@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import {
   selectFilters,
@@ -21,23 +22,38 @@ import { pageMedia } from "@/lib/constants/media";
 import type { SortOption } from "@/store/types/product";
 import Link from "next/link";
 
-const SORT_LABELS: Record<SortOption, string> = {
-  newest: "Newest",
-  "price-asc": "Price: Low to High",
-  "price-desc": "Price: High to Low",
-  popular: "Most Popular",
-  "top-rated": "Top Rated",
-};
+const SORT_IDS: SortOption[] = [
+  "newest",
+  "price-asc",
+  "price-desc",
+  "popular",
+  "top-rated",
+];
+
+function sortLabelKey(id: SortOption): string {
+  switch (id) {
+    case "newest":
+      return "sort.newest";
+    case "price-asc":
+      return "sort.priceAsc";
+    case "price-desc":
+      return "sort.priceDesc";
+    case "popular":
+      return "sort.popular";
+    case "top-rated":
+      return "sort.topRated";
+  }
+}
 
 const PAGE_SIZE = 12;
 
 export default function StorePage() {
+  const { t } = useTranslation("store");
   const dispatch = useAppDispatch();
   const filters = useAppSelector(selectFilters);
   const searchParams = useSearchParams();
   const [page, setPage] = useState(1);
 
-  // Sync URL search param to store
   useEffect(() => {
     const q = searchParams.get("search") ?? "";
     if (q !== filters.searchQuery) {
@@ -45,7 +61,6 @@ export default function StorePage() {
     }
   }, [searchParams, dispatch, filters.searchQuery]);
 
-  // Reset page on filter change
   useEffect(() => {
     setPage(1);
   }, [filters]);
@@ -59,7 +74,6 @@ export default function StorePage() {
     <div className="space-y-6">
       <Breadcrumb items={[]} />
 
-      {/* Hero banner */}
       <motion.div
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
@@ -74,18 +88,17 @@ export default function StorePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/25" />
         <div className="relative z-10 max-w-xl">
           <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-cream/70">
-            Sandha Woodworks — Cabinet Store
+            {t("hero.eyebrow")}
           </p>
           <h1 className="font-display text-4xl font-bold leading-tight sm:text-5xl">
-            Premium Custom<br />Millwork Cabinets
+            {t("hero.titleLine1")}<br />{t("hero.titleLine2")}
           </h1>
           <p className="mt-3 text-base text-cream/80">
-            {products.length} products · Crafted in Brantford, ON · AWMAC Certified
+            {t("hero.subtitle", { count: products.length })}
           </p>
         </div>
       </motion.div>
 
-      {/* Categories */}
       <section aria-labelledby="store-categories-heading" className="space-y-4">
         <div className="flex items-end justify-between gap-3">
           <div>
@@ -93,17 +106,17 @@ export default function StorePage() {
               id="store-categories-heading"
               className="font-display text-2xl font-bold tracking-tight"
             >
-              Shop by category
+              {t("catalog.shopByCategory")}
             </h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Kitchen, vanities, closets, and more — crafted in Brantford.
+              {t("catalog.shopByCategoryHint")}
             </p>
           </div>
           <Link
             href="/store/categories"
             className="shrink-0 text-sm font-semibold text-foreground underline-offset-4 hover:underline"
           >
-            View all
+            {t("catalog.viewAll")}
           </Link>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -118,28 +131,23 @@ export default function StorePage() {
       </section>
 
       <div className="flex flex-col gap-6 lg:flex-row lg:gap-8">
-        {/* Sidebar filters (mobile toggle stacks above; desktop sidebar beside) */}
         <ProductFilters className="w-56 shrink-0 space-y-5" />
 
-        {/* Main content */}
         <div className="min-w-0 flex-1 space-y-5">
-          {/* Toolbar */}
           <div className="flex flex-wrap items-center justify-between gap-3">
             <p className="text-sm text-muted-foreground">
-              <span className="font-semibold text-foreground">{filtered.length}</span>{" "}
-              products found
+              {t("catalog.productsFound", { count: filtered.length })}
             </p>
             <div className="flex items-center gap-2">
-              {/* Mobile filters toggle rendered inside ProductFilters */}
-              <label htmlFor="sortSelect" className="sr-only">Sort by</label>
+              <label htmlFor="sortSelect" className="sr-only">{t("a11y.sortBy")}</label>
               <select
                 id="sortSelect"
                 value={filters.sortBy}
                 onChange={(e) => dispatch(setSortBy(e.target.value as SortOption))}
                 className="rounded-xl border border-border bg-background px-3 py-2 text-sm outline-none focus:border-foreground/40"
               >
-                {(Object.entries(SORT_LABELS) as [SortOption, string][]).map(([id, label]) => (
-                  <option key={id} value={id}>{label}</option>
+                {SORT_IDS.map((id) => (
+                  <option key={id} value={id}>{t(sortLabelKey(id))}</option>
                 ))}
               </select>
             </div>

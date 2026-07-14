@@ -29,6 +29,7 @@ export type DeliveryMethod = {
   estimatedDays: string;
 };
 
+/** Structural delivery options — labels/descriptions/estimatedDays resolve via `store.delivery.*`. */
 export const DELIVERY_METHODS: DeliveryMethod[] = [
   {
     id: "standard",
@@ -52,6 +53,13 @@ export const DELIVERY_METHODS: DeliveryMethod[] = [
     estimatedDays: "3–5 business days (scheduled)",
   },
 ];
+
+export function deliveryI18nKey(
+  id: string,
+  field: "label" | "description" | "estimatedDays",
+): string {
+  return `delivery.${id}.${field}`;
+}
 
 export interface OrderItem extends CartItem {
   subtotal: number;
