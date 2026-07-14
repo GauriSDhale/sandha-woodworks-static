@@ -13,6 +13,8 @@ import enPortfolio from "@/locales/en/portfolio.json";
 import enCareers from "@/locales/en/careers.json";
 import enInsight from "@/locales/en/insight.json";
 import enLegal from "@/locales/en/legal.json";
+import enStore from "@/locales/en/store.json";
+import enStoreCatalog from "@/locales/en/storeCatalog.json";
 import frCommon from "@/locales/fr/common.json";
 import frHome from "@/locales/fr/home.json";
 import frAbout from "@/locales/fr/about.json";
@@ -25,6 +27,8 @@ import frPortfolio from "@/locales/fr/portfolio.json";
 import frCareers from "@/locales/fr/careers.json";
 import frInsight from "@/locales/fr/insight.json";
 import frLegal from "@/locales/fr/legal.json";
+import frStore from "@/locales/fr/store.json";
+import frStoreCatalog from "@/locales/fr/storeCatalog.json";
 
 export const LANG_STORAGE_KEY = "sandha-lang";
 export const supportedLngs = ["en", "fr"] as const;
@@ -45,6 +49,8 @@ export const resources = {
     careers: enCareers,
     insight: enInsight,
     legal: enLegal,
+    store: enStore,
+    storeCatalog: enStoreCatalog,
   },
   fr: {
     common: frCommon,
@@ -59,6 +65,8 @@ export const resources = {
     careers: frCareers,
     insight: frInsight,
     legal: frLegal,
+    store: frStore,
+    storeCatalog: frStoreCatalog,
   },
 } as const;
 
@@ -93,6 +101,8 @@ if (!i18n.isInitialized) {
       "careers",
       "insight",
       "legal",
+      "store",
+      "storeCatalog",
     ],
     interpolation: {
       escapeValue: false,

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import type { Product } from "@/store/types/product";
 import { ProductCard } from "./ProductCard";
 import { SkeletonGrid } from "./SkeletonCard";
@@ -18,6 +19,7 @@ export function ProductGrid({
   isLoading = false,
   skeletonCount = 8,
 }: ProductGridProps) {
+  const { t } = useTranslation("store");
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
 
   if (isLoading) return <SkeletonGrid count={skeletonCount} />;
@@ -26,10 +28,10 @@ export function ProductGrid({
     return (
       <div className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-border bg-muted/30 py-20 text-center">
         <p className="text-xl font-display font-semibold text-foreground">
-          No products found
+          {t("empty.noProducts")}
         </p>
         <p className="text-sm text-muted-foreground">
-          Try adjusting your filters or search query.
+          {t("empty.noProductsHint")}
         </p>
       </div>
     );

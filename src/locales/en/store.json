@@ -1,0 +1,370 @@
+{
+  "meta": {
+    "defaultTitle": "Cabinet Store | Sandha Woodworks",
+    "titleTemplate": "%s | Sandha Woodworks Store",
+    "description": "Browse premium custom millwork cabinets, bathroom vanities, closets, and more — crafted in Brantford, ON.",
+    "categoriesTitle": "All Categories",
+    "categoriesDescription": "Browse all cabinet categories — kitchen, vanity, closets, office, and more."
+  },
+  "nav": {
+    "home": "Home",
+    "store": "Store",
+    "cart": "Cart",
+    "checkout": "Checkout",
+    "wishlist": "Wishlist",
+    "categories": "Categories",
+    "all": "All",
+    "allCategories": "All Categories →"
+  },
+  "hero": {
+    "eyebrow": "Sandha Woodworks — Cabinet Store",
+    "titleLine1": "Premium Custom",
+    "titleLine2": "Millwork Cabinets",
+    "subtitle": "{{count}} products · Crafted in Brantford, ON · AWMAC Certified"
+  },
+  "catalog": {
+    "shopByCategory": "Shop by category",
+    "shopByCategoryHint": "Kitchen, vanities, closets, and more — crafted in Brantford.",
+    "viewAll": "View all",
+    "productsFound": "{{count}} products found",
+    "productCount": "{{count}} products"
+  },
+  "filters": {
+    "title": "Filters",
+    "sortBy": "Sort By",
+    "category": "Category",
+    "priceRange": "Price Range (CAD)",
+    "allProducts": "All Products",
+    "clearAll": "Clear all filters ({{count}})"
+  },
+  "sort": {
+    "label": "Sort by",
+    "newest": "Newest",
+    "priceAsc": "Price: Low to High",
+    "priceDesc": "Price: High to Low",
+    "popular": "Most Popular",
+    "topRated": "Top Rated"
+  },
+  "categories": {
+    "kitchen-cabinets": {
+      "label": "Kitchen Cabinets",
+      "description": "Premium custom kitchen cabinetry crafted in our Brantford facility. Designed for Canadian homes with precision engineering."
+    },
+    "base-cabinets": {
+      "label": "Base Cabinets",
+      "description": "Sturdy base cabinets that form the foundation of your kitchen."
+    },
+    "wall-cabinets": {
+      "label": "Wall Cabinets",
+      "description": "Space-saving wall-mounted cabinets to maximize kitchen storage."
+    },
+    "corner-cabinets": {
+      "label": "Corner Cabinets",
+      "description": "Intelligent corner cabinet solutions that eliminate wasted space."
+    },
+    "tall-cabinets": {
+      "label": "Tall Cabinets",
+      "description": "Full-height cabinets for maximum vertical storage."
+    },
+    "pantry-cabinets": {
+      "label": "Pantry Cabinets",
+      "description": "Dedicated pantry storage systems for organized kitchens."
+    },
+    "bathroom-vanities": {
+      "label": "Bathroom Vanities",
+      "description": "Elegant bathroom vanity cabinets combining function with luxury aesthetics."
+    },
+    "closets": {
+      "label": "Closets & Wardrobes",
+      "description": "Custom closet and wardrobe systems tailored to your space."
+    },
+    "tv-units": {
+      "label": "TV Units",
+      "description": "Modern entertainment and TV unit solutions for living spaces."
+    },
+    "office-cabinets": {
+      "label": "Office Cabinets",
+      "description": "Professional office cabinet systems for productive work environments."
+    },
+    "laundry-cabinets": {
+      "label": "Laundry Cabinets",
+      "description": "Durable, moisture-resistant laundry room cabinet solutions."
+    },
+    "pageTitle": "All Categories",
+    "viewAll": "View All Categories",
+    "notFoundFallback": "Category"
+  },
+  "product": {
+    "skuLabel": "SKU:",
+    "skuWithCategory": "{{category}} · SKU: {{sku}}",
+    "badgeNew": "New",
+    "badgeBestseller": "Bestseller",
+    "quantity": "Quantity",
+    "addToCart": "Add to Cart",
+    "added": "Added!",
+    "buyNow": "Buy Now",
+    "share": "Share",
+    "quickView": "Quick View",
+    "fullDetails": "Full Details",
+    "backToStore": "Back to Store",
+    "dimensionsLabel": "Dimensions (W × H × D)",
+    "deliveryLabel": "Delivery:",
+    "warrantyLabel": "Warranty:",
+    "returnsLabel": "Returns:",
+    "contactUs": "Contact us",
+    "returnsPolicy": "30-day return on uninstalled items",
+    "reviewsCount": "{{count}} reviews",
+    "youMayAlsoLike": "You May Also Like",
+    "recentlyViewed": "Recently Viewed",
+    "tabs": {
+      "description": "Description",
+      "specs": "Specifications",
+      "reviews": "Reviews"
+    },
+    "attrs": {
+      "material": "Material",
+      "finish": "Finish",
+      "width": "Width",
+      "height": "Height",
+      "depth": "Depth",
+      "availability": "Availability"
+    }
+  },
+  "cart": {
+    "title": "Cart",
+    "pageTitle": "Shopping Cart",
+    "itemCount": "({{count}} item)",
+    "itemCount_plural": "({{count}} items)",
+    "itemsCount": "{{count}} item(s)",
+    "qty": "Qty:",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "hst": "HST (13%)",
+    "shipping": "Shipping",
+    "shippingWithMethod": "Shipping ({{method}})",
+    "shippingTbd": "—",
+    "total": "Total",
+    "orderSummary": "Order Summary",
+    "taxShippingNote": "HST and shipping calculated at checkout.",
+    "proceedToCheckout": "Proceed to Checkout",
+    "viewFullCart": "View Full Cart",
+    "browseProducts": "Browse Products",
+    "continueShopping": "Continue Shopping",
+    "moveToWishlist": "Move to Wishlist",
+    "remove": "Remove",
+    "trust": {
+      "secureCheckout": "Secure Checkout",
+      "freeReturns": "Free Returns",
+      "awmac": "AWMAC Certified",
+      "warranty": "5-Year Warranty"
+    }
+  },
+  "checkout": {
+    "title": "Checkout",
+    "back": "← Back",
+    "continueToDelivery": "Continue to Delivery →",
+    "continueToPayment": "Continue to Payment →",
+    "continueToReview": "Review Order →",
+    "processing": "Processing…",
+    "payAmount": "Pay {{amount}}",
+    "shippingTo": "Shipping To",
+    "country": "Canada",
+    "steps": {
+      "shipping": "Shipping",
+      "delivery": "Delivery",
+      "payment": "Payment",
+      "review": "Review"
+    },
+    "stepTitles": {
+      "1": "Shipping Address",
+      "2": "Delivery Method",
+      "3": "Payment",
+      "4": "Review Order"
+    },
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "company": "Company (optional)",
+      "addressLine1": "Address Line 1",
+      "addressLine2": "Address Line 2 (optional)",
+      "city": "City",
+      "province": "Province",
+      "postalCode": "Postal Code",
+      "phone": "Phone"
+    },
+    "errors": {
+      "firstName": "First name required",
+      "lastName": "Last name required",
+      "address": "Address required",
+      "city": "City required",
+      "province": "Province required",
+      "postalCode": "Valid Canadian postal code required",
+      "phone": "Valid phone number required"
+    }
+  },
+  "delivery": {
+    "standard": {
+      "label": "Standard Delivery",
+      "description": "Professional delivery & placement",
+      "estimatedDays": "5–8 business days"
+    },
+    "express": {
+      "label": "Express Delivery",
+      "description": "Priority delivery & placement",
+      "estimatedDays": "2–4 business days"
+    },
+    "white-glove": {
+      "label": "White Glove Service",
+      "description": "Premium delivery, assembly & removal of packaging",
+      "estimatedDays": "3–5 business days (scheduled)"
+    }
+  },
+  "payment": {
+    "securityBadge": "All transactions are secured with 256-bit SSL encryption.",
+    "demoHint": "Demo card for successful payment: {{card}} | Expiry {{expiry}} | CVC {{cvc}}",
+    "errors": {
+      "failed": "Payment failed. Please try again.",
+      "unexpected": "An unexpected error occurred. Please try again."
+    },
+    "providers": {
+      "razorpay": {
+        "label": "Razorpay",
+        "description": "Pay securely with card, UPI, net banking & more",
+        "badge": "Recommended"
+      },
+      "stripe": {
+        "label": "Stripe",
+        "description": "International cards — Visa, Mastercard, Amex",
+        "badge": "Coming soon"
+      },
+      "paypal": {
+        "label": "PayPal",
+        "description": "Pay with your PayPal balance or linked card",
+        "badge": "Coming soon"
+      }
+    }
+  },
+  "wishlist": {
+    "title": "Wishlist",
+    "itemCount": "({{count}} item)",
+    "itemCount_plural": "({{count}} items)",
+    "moveAllToCart": "Move All to Cart",
+    "save": "Save to Wishlist",
+    "saved": "Saved"
+  },
+  "orders": {
+    "historyTitle": "Order History",
+    "orderNumber": "Order Number",
+    "placed": "Placed",
+    "total": "Total",
+    "moreItems": "+{{count}} more item(s)",
+    "viaDelivery": "via {{method}}",
+    "successTitle": "Order Confirmed!",
+    "successMessage": "Order #{{orderNumber}} has been placed successfully.",
+    "emailConfirmation": "A confirmation has been sent to your email address.",
+    "summary": "Order Summary",
+    "totalPaid": "Total Paid",
+    "placedOn": "Placed On",
+    "delivery": "Delivery",
+    "viewHistory": "View Order History",
+    "status": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "processing": "Processing",
+      "shipped": "Shipped",
+      "delivered": "Delivered",
+      "cancelled": "Cancelled"
+    },
+    "timeline": {
+      "confirmed": "Order Confirmed",
+      "prepared": "Being Prepared",
+      "outForDelivery": "Out for Delivery"
+    }
+  },
+  "search": {
+    "breadcrumb": "Search",
+    "title": "Search",
+    "placeholderShort": "Search products…",
+    "placeholder": "Search cabinets, vanities, closets…",
+    "esc": "Esc",
+    "suggestions": "Suggestions",
+    "recent": "Recent",
+    "popular": "Popular Searches",
+    "clearHistory": "Clear",
+    "noResults": "No results for “{{query}}”",
+    "noResultsHint": "Try a different keyword or browse categories below.",
+    "resultsFor": "Search results for “{{query}}”",
+    "resultsCount": "{{count}} result found",
+    "resultsCount_plural": "{{count}} results found",
+    "browseAll": "Browse All Products",
+    "viewCategories": "View Categories",
+    "popularTerms": {
+      "kitchenCabinets": "Kitchen cabinets",
+      "bathroomVanity": "Bathroom vanity",
+      "walkInCloset": "Walk-in closet",
+      "tvUnitWalnut": "TV unit walnut",
+      "whiteShakerBase": "White shaker base",
+      "officeCabinet": "Office cabinet"
+    }
+  },
+  "empty": {
+    "cartTitle": "Your cart is empty",
+    "cartDrawerHint": "Add some products to get started.",
+    "cartPageHint": "Explore our premium millwork cabinet catalogue.",
+    "wishlistTitle": "Your wishlist is empty",
+    "wishlistHint": "Save products you love and come back to them later.",
+    "noProducts": "No products found",
+    "noProductsHint": "Try adjusting your filters or search query.",
+    "categoryNotFound": "Category not found",
+    "productNotFound": "Product not found",
+    "ordersTitle": "No orders yet",
+    "ordersHint": "Your order history will appear here once you've placed an order.",
+    "searchPrompt": "Enter a search term to find products.",
+    "searchNoResults": "No products found for “{{query}}”.",
+    "searchNoResultsHint": "Try a different keyword or browse our categories."
+  },
+  "availability": {
+    "inStock": "In Stock",
+    "madeToOrder": "Made to Order",
+    "outOfStock": "Out of Stock",
+    "inStockCount": "({{count}} in stock)"
+  },
+  "a11y": {
+    "shoppingCart": "Shopping cart",
+    "closeCart": "Close cart",
+    "wishlistCount": "Wishlist ({{count}} items)",
+    "cartCount": "Shopping cart ({{count}} items)",
+    "productCategories": "Product categories",
+    "openSearch": "Open search",
+    "search": "Search",
+    "clearSearch": "Clear search",
+    "closeSearch": "Close search",
+    "breadcrumb": "Breadcrumb",
+    "home": "Home",
+    "browseCategory": "Browse {{label}}",
+    "quickView": "Quick view",
+    "quickViewNamed": "Quick view: {{name}}",
+    "closeQuickView": "Close quick view",
+    "addToCart": "Add to cart",
+    "shareProduct": "Share product",
+    "addToWishlist": "Add to wishlist",
+    "removeFromWishlist": "Remove from wishlist",
+    "closeFilters": "Close filters",
+    "maxPrice": "Maximum price",
+    "sortBy": "Sort by",
+    "checkoutSteps": "Checkout steps",
+    "quantitySelector": "Quantity selector",
+    "decreaseQuantity": "Decrease quantity",
+    "increaseQuantity": "Increase quantity",
+    "quantityValue": "Quantity: {{count}}",
+    "pagination": "Pagination",
+    "prevPage": "Previous page",
+    "nextPage": "Next page",
+    "pageN": "Page {{page}}",
+    "prevImage": "Previous image",
+    "nextImage": "Next image",
+    "imageThumbnails": "Image thumbnails",
+    "viewImage": "View image {{index}}",
+    "imageOf": "{{name}} — image {{index}} of {{total}}"
+  }
+}

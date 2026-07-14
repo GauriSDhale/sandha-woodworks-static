@@ -1,10 +1,12 @@
 "use client";
 
+import { useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import {
   selectCheckout,
@@ -25,7 +27,7 @@ import {
   clearCart,
 } from "@/store/slices/cartSlice";
 import { placeOrder } from "@/store/slices/ordersSlice";
-import { DELIVERY_METHODS } from "@/store/types/order";
+import { DELIVERY_METHODS, deliveryI18nKey } from "@/store/types/order";
 import { CheckoutStepper } from "@/components/store/CheckoutStepper";
 import { OrderSummary } from "@/components/store/OrderSummary";
 import { Breadcrumb } from "@/components/store/Breadcrumb";
@@ -34,26 +36,6 @@ import { CartItem } from "@/components/store/CartItem";
 import { getPaymentProvider } from "@/store/payment";
 import { generateOrderNumber, generateId, formatPrice } from "@/store/utils/format";
 import type { ShippingAddress } from "@/store/types/order";
-
-// ─── Zod schema ───────────────────────────────────────────────────────────────
-const addressSchema = z.object({
-  firstName: z.string().min(2, "First name required"),
-  lastName: z.string().min(2, "Last name required"),
-  company: z.string().optional(),
-  addressLine1: z.string().min(5, "Address required"),
-  addressLine2: z.string().optional(),
-  city: z.string().min(2, "City required"),
-  province: z.string().min(2, "Province required"),
-  postalCode: z
-    .string()
-    .regex(/^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/, "Valid Canadian postal code required"),
-  country: z.string().min(1).default("Canada"),
-  phone: z.string().regex(/^\+?[\d\s\-().]{10,}$/, "Valid phone number required"),
-});
-
-type AddressForm = z.infer<typeof addressSchema>;
-// Ensure country is always string after transform
-type AddressFormOut = Omit<AddressForm, "country"> & { country: string };
 
 const PROVINCES = [
   "Alberta", "British Columbia", "Manitoba", "New Brunswick",
@@ -87,10 +69,31 @@ function InputField({
   );
 }
 
-// ─── Step 1: Shipping Address ─────────────────────────────────────────────────
 function ShippingStep() {
+  const { t } = useTranslation("store");
   const dispatch = useAppDispatch();
   const checkout = useAppSelector(selectCheckout);
+
+  const addressSchema = useMemo(
+    () =>
+      z.object({
+        firstName: z.string().min(2, t("checkout.errors.firstName")),
+        lastName: z.string().min(2, t("checkout.errors.lastName")),
+        company: z.string().optional(),
+        addressLine1: z.string().min(5, t("checkout.errors.address")),
+        addressLine2: z.string().optional(),
+        city: z.string().min(2, t("checkout.errors.city")),
+        province: z.string().min(2, t("checkout.errors.province")),
+        postalCode: z
+          .string()
+          .regex(/^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/, t("checkout.errors.postalCode")),
+        country: z.string().min(1).default(t("checkout.country")),
+        phone: z.string().regex(/^\+?[\d\s\-().]{10,}$/, t("checkout.errors.phone")),
+      }),
+    [t],
+  );
+
+  type AddressForm = z.infer<typeof addressSchema>;
 
   const { register, handleSubmit, formState: { errors } } = useForm<AddressForm>({
     resolver: zodResolver(addressSchema) as any,
@@ -108,17 +111,17 @@ function ShippingStep() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
       <div className="grid gap-4 sm:grid-cols-2">
-        <InputField label="First Name" required error={errors.firstName?.message} {...register("firstName")} />
-        <InputField label="Last Name" required error={errors.lastName?.message} {...register("lastName")} />
+        <InputField label={t("checkout.fields.firstName")} required error={errors.firstName?.message} {...register("firstName")} />
+        <InputField label={t("checkout.fields.lastName")} required error={errors.lastName?.message} {...register("lastName")} />
       </div>
-      <InputField label="Company (optional)" error={errors.company?.message} {...register("company")} />
-      <InputField label="Address Line 1" required error={errors.addressLine1?.message} {...register("addressLine1")} />
-      <InputField label="Address Line 2 (optional)" error={errors.addressLine2?.message} {...register("addressLine2")} />
+      <InputField label={t("checkout.fields.company")} error={errors.company?.message} {...register("company")} />
+      <InputField label={t("checkout.fields.addressLine1")} required error={errors.addressLine1?.message} {...register("addressLine1")} />
+      <InputField label={t("checkout.fields.addressLine2")} error={errors.addressLine2?.message} {...register("addressLine2")} />
       <div className="grid gap-4 sm:grid-cols-2">
-        <InputField label="City" required error={errors.city?.message} {...register("city")} />
+        <InputField label={t("checkout.fields.city")} required error={errors.city?.message} {...register("city")} />
         <div>
           <label className="mb-1 block text-sm font-medium text-foreground">
-            Province<span className="ml-0.5 text-brand-red">*</span>
+            {t("checkout.fields.province")}<span className="ml-0.5 text-brand-red">*</span>
           </label>
           <select {...register("province")}
             className="w-full rounded-xl border border-border bg-background px-3.5 py-2.5 text-sm outline-none transition focus:border-foreground/50">
@@ -128,20 +131,20 @@ function ShippingStep() {
         </div>
       </div>
       <div className="grid gap-4 sm:grid-cols-2">
-        <InputField label="Postal Code" required placeholder="K1A 0A1" error={errors.postalCode?.message} {...register("postalCode")} />
-        <InputField label="Phone" required placeholder="+1 226 381 0023" error={errors.phone?.message} {...register("phone")} />
+        <InputField label={t("checkout.fields.postalCode")} required placeholder="K1A 0A1" error={errors.postalCode?.message} {...register("postalCode")} />
+        <InputField label={t("checkout.fields.phone")} required placeholder="+1 226 381 0023" error={errors.phone?.message} {...register("phone")} />
       </div>
       <div className="flex justify-center">
         <button type="submit" className="w-fit rounded-full bg-foreground px-6 py-3 font-semibold text-cream transition hover:bg-warm-black">
-          Continue to Delivery →
+          {t("checkout.continueToDelivery")}
         </button>
       </div>
     </form>
   );
 }
 
-// ─── Step 2: Delivery Method ──────────────────────────────────────────────────
 function DeliveryStep() {
+  const { t } = useTranslation("store");
   const dispatch = useAppDispatch();
   const checkout = useAppSelector(selectCheckout);
 
@@ -163,18 +166,22 @@ function DeliveryStep() {
           }`} />
           <div className="flex-1">
             <div className="flex flex-wrap items-center justify-between gap-2">
-              <span className="font-semibold">{method.label}</span>
+              <span className="font-semibold">{t(deliveryI18nKey(method.id, "label"))}</span>
               <span className="font-bold">{formatPrice(method.price)}</span>
             </div>
-            <p className="mt-0.5 text-sm text-muted-foreground">{method.description}</p>
-            <p className="mt-1 text-xs text-muted-foreground">⏱ {method.estimatedDays}</p>
+            <p className="mt-0.5 text-sm text-muted-foreground">
+              {t(deliveryI18nKey(method.id, "description"))}
+            </p>
+            <p className="mt-1 text-xs text-muted-foreground">
+              ⏱ {t(deliveryI18nKey(method.id, "estimatedDays"))}
+            </p>
           </div>
         </button>
       ))}
       <div className="flex gap-3 pt-2">
         <button type="button" onClick={() => dispatch(prevStep())}
           className="flex-1 rounded-full border border-border py-3 font-medium transition hover:bg-muted">
-          ← Back
+          {t("checkout.back")}
         </button>
         <button
           type="button"
@@ -182,15 +189,15 @@ function DeliveryStep() {
           onClick={() => dispatch(nextStep())}
           className="flex-1 rounded-full bg-foreground py-3 font-semibold text-cream transition hover:bg-warm-black disabled:opacity-40 disabled:pointer-events-none"
         >
-          Continue to Payment →
+          {t("checkout.continueToPayment")}
         </button>
       </div>
     </div>
   );
 }
 
-// ─── Step 3: Payment ──────────────────────────────────────────────────────────
 function PaymentStep() {
+  const { t } = useTranslation("store");
   const dispatch = useAppDispatch();
   const checkout = useAppSelector(selectCheckout);
 
@@ -207,12 +214,16 @@ function PaymentStep() {
       ))}
       <PaymentSecurityBadge />
       <div className="rounded-2xl border border-border bg-background/70 px-4 py-3 text-sm text-muted-foreground">
-        Demo card for successful payment: <span className="font-semibold text-foreground">4111 1111 1111 1111</span> | Expiry <span className="font-semibold text-foreground">12/34</span> | CVC <span className="font-semibold text-foreground">123</span>
+        {t("payment.demoHint", {
+          card: "4111 1111 1111 1111",
+          expiry: "12/34",
+          cvc: "123",
+        })}
       </div>
       <div className="flex gap-3 pt-2">
         <button type="button" onClick={() => dispatch(prevStep())}
           className="flex-1 rounded-full border border-border py-3 font-medium transition hover:bg-muted">
-          ← Back
+          {t("checkout.back")}
         </button>
         <button
           type="button"
@@ -220,15 +231,15 @@ function PaymentStep() {
           onClick={() => dispatch(nextStep())}
           className="flex-1 rounded-full bg-foreground py-3 font-semibold text-cream transition hover:bg-warm-black disabled:opacity-40 disabled:pointer-events-none"
         >
-          Review Order →
+          {t("checkout.continueToReview")}
         </button>
       </div>
     </div>
   );
 }
 
-// ─── Step 4: Review & Place Order ─────────────────────────────────────────────
 function ReviewStep() {
+  const { t } = useTranslation("store");
   const dispatch = useAppDispatch();
   const router = useRouter();
   const checkout = useAppSelector(selectCheckout);
@@ -251,7 +262,7 @@ function ReviewStep() {
       const orderId = generateId();
 
       const paymentResult = await provider.initiatePayment({
-        amount: Math.round(total * 100), // paise/cents
+        amount: Math.round(total * 100),
         currency: "CAD",
         orderId,
         customerName: `${checkout.shippingAddress.firstName} ${checkout.shippingAddress.lastName}`,
@@ -289,10 +300,10 @@ function ReviewStep() {
         dispatch(resetCheckout());
         router.push("/store/order-success");
       } else {
-        dispatch(setError(paymentResult.error ?? "Payment failed. Please try again."));
+        dispatch(setError(paymentResult.error ?? t("payment.errors.failed")));
       }
     } catch {
-      dispatch(setError("An unexpected error occurred. Please try again."));
+      dispatch(setError(t("payment.errors.unexpected")));
     } finally {
       dispatch(setProcessing(false));
     }
@@ -300,10 +311,11 @@ function ReviewStep() {
 
   return (
     <div className="space-y-5">
-      {/* Address summary */}
       {checkout.shippingAddress && (
         <div className="rounded-2xl border border-border p-4">
-          <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground">Shipping To</p>
+          <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+            {t("checkout.shippingTo")}
+          </p>
           <p className="text-sm font-semibold">
             {checkout.shippingAddress.firstName} {checkout.shippingAddress.lastName}
           </p>
@@ -314,7 +326,6 @@ function ReviewStep() {
         </div>
       )}
 
-      {/* Items */}
       <div className="space-y-2">
         {items.map((item) => <CartItem key={item.productId} item={item} compact />)}
       </div>
@@ -328,7 +339,7 @@ function ReviewStep() {
       <div className="flex gap-3">
         <button type="button" onClick={() => dispatch(prevStep())}
           className="flex-1 rounded-full border border-border py-3 font-medium transition hover:bg-muted">
-          ← Back
+          {t("checkout.back")}
         </button>
         <button
           type="button"
@@ -336,15 +347,17 @@ function ReviewStep() {
           disabled={checkout.isProcessing}
           className="flex-1 rounded-full bg-foreground py-3 font-bold text-cream transition hover:bg-warm-black disabled:opacity-50"
         >
-          {checkout.isProcessing ? "Processing…" : `Pay ${formatPrice(total)}`}
+          {checkout.isProcessing
+            ? t("checkout.processing")
+            : t("checkout.payAmount", { amount: formatPrice(total) })}
         </button>
       </div>
     </div>
   );
 }
 
-// ─── Main Checkout Page ────────────────────────────────────────────────────────
 export default function CheckoutPage() {
+  const { t } = useTranslation("store");
   const checkout = useAppSelector(selectCheckout);
   const items = useAppSelector(selectCartItems);
 
@@ -355,19 +368,12 @@ export default function CheckoutPage() {
     4: <ReviewStep />,
   };
 
-  const stepTitles = {
-    1: "Shipping Address",
-    2: "Delivery Method",
-    3: "Payment",
-    4: "Review Order",
-  };
-
   if (items.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center gap-4 py-24 text-center">
-        <p className="font-display text-xl font-semibold">Your cart is empty</p>
+        <p className="font-display text-xl font-semibold">{t("empty.cartTitle")}</p>
         <a href="/store" className="rounded-full bg-foreground px-5 py-2 text-sm font-semibold text-cream transition hover:bg-warm-black">
-          Browse Products
+          {t("cart.browseProducts")}
         </a>
       </div>
     );
@@ -375,16 +381,15 @@ export default function CheckoutPage() {
 
   return (
     <div className="space-y-6">
-      <Breadcrumb items={[{ label: "Checkout" }]} />
-      <h1 className="font-display text-3xl font-bold">Checkout</h1>
+      <Breadcrumb items={[{ label: t("nav.checkout") }]} />
+      <h1 className="font-display text-3xl font-bold">{t("checkout.title")}</h1>
 
       <CheckoutStepper currentStep={checkout.step} className="mb-8" />
 
       <div className="grid gap-8 lg:grid-cols-[1fr_360px]">
-        {/* Step content */}
         <div>
           <h2 className="mb-5 font-display text-xl font-semibold">
-            {stepTitles[checkout.step]}
+            {t(`checkout.stepTitles.${checkout.step}`)}
           </h2>
           <AnimatePresence mode="wait">
             <motion.div
@@ -399,7 +404,6 @@ export default function CheckoutPage() {
           </AnimatePresence>
         </div>
 
-        {/* Order summary sidebar */}
         <OrderSummary deliveryMethodId={checkout.deliveryMethod?.id} />
       </div>
     </div>

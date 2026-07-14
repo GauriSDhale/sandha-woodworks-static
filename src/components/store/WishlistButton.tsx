@@ -1,6 +1,7 @@
 "use client";
 
 import { Heart } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { toggleWishlist, selectIsInWishlist } from "@/store/slices/wishlistSlice";
@@ -18,6 +19,7 @@ export function WishlistButton({
   variant = "icon",
   className,
 }: WishlistButtonProps) {
+  const { t } = useTranslation("store");
   const dispatch = useAppDispatch();
   const isInWishlist = useAppSelector(selectIsInWishlist(productId));
 
@@ -30,12 +32,16 @@ export function WishlistButton({
     dispatch(toggleWishlist(productId));
   };
 
+  const ariaLabel = isInWishlist
+    ? t("a11y.removeFromWishlist")
+    : t("a11y.addToWishlist");
+
   if (variant === "button") {
     return (
       <button
         type="button"
         onClick={handleClick}
-        aria-label={isInWishlist ? "Remove from wishlist" : "Add to wishlist"}
+        aria-label={ariaLabel}
         className={cn(
           "inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition-all",
           isInWishlist
@@ -47,7 +53,7 @@ export function WishlistButton({
         <Heart
           className={cn(iconSize, isInWishlist ? "fill-brand-red" : "")}
         />
-        {isInWishlist ? "Saved" : "Save to Wishlist"}
+        {isInWishlist ? t("wishlist.saved") : t("wishlist.save")}
       </button>
     );
   }
@@ -56,7 +62,7 @@ export function WishlistButton({
     <button
       type="button"
       onClick={handleClick}
-      aria-label={isInWishlist ? "Remove from wishlist" : "Add to wishlist"}
+      aria-label={ariaLabel}
       className={cn(
         "group/wish flex items-center justify-center rounded-full p-1.5 transition-all",
         isInWishlist

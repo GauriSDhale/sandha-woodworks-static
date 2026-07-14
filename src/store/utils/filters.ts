@@ -88,11 +88,12 @@ export function searchProducts(query: string, limit = 5): Product[] {
     .slice(0, limit);
 }
 
+/** Popular search chips — `query` stays EN for catalog matching; display via `store.search.popularTerms.*`. */
 export const POPULAR_SEARCHES = [
-  "Kitchen cabinets",
-  "Bathroom vanity",
-  "Walk-in closet",
-  "TV unit walnut",
-  "White shaker base",
-  "Office cabinet",
-];
+  { id: "kitchenCabinets", query: "Kitchen cabinets" },
+  { id: "bathroomVanity", query: "Bathroom vanity" },
+  { id: "walkInCloset", query: "Walk-in closet" },
+  { id: "tvUnitWalnut", query: "TV unit walnut" },
+  { id: "whiteShakerBase", query: "White shaker base" },
+  { id: "officeCabinet", query: "Office cabinet" },
+] as const;

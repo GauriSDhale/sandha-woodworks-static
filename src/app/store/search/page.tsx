@@ -1,15 +1,16 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useMemo } from "react";
-import { Suspense } from "react";
+import { useMemo, Suspense } from "react";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 import { searchProducts } from "@/store/utils/filters";
 import { ProductGrid } from "@/components/store/ProductGrid";
 import { Breadcrumb } from "@/components/store/Breadcrumb";
 import { SkeletonGrid } from "@/components/store/SkeletonCard";
 
 function SearchResults() {
+  const { t } = useTranslation("store");
   const searchParams = useSearchParams();
   const query = searchParams.get("q") ?? "";
 
@@ -20,74 +21,65 @@ function SearchResults() {
 
   return (
     <div className="space-y-6">
-        <Breadcrumb
-          items={[
-            { label: "Store", href: "/store" },
-            { label: "Search" },
-          ]}
-        />
+      <Breadcrumb
+        items={[
+          { label: t("search.breadcrumb") },
+        ]}
+      />
 
-        <div className="mb-2">
-          <h1 className="font-display text-3xl font-bold text-[var(--foreground)]">
-            {query ? (
-              <>
-                Search results for{" "}
-                <span className="text-[var(--brand-red)]">
-                  &ldquo;{query}&rdquo;
-                </span>
-              </>
-            ) : (
-              "Search"
-            )}
-          </h1>
-          {query && (
-            <p className="mt-1 text-[var(--muted-foreground)]">
-              {results.length} {results.length === 1 ? "result" : "results"}{" "}
-              found
-            </p>
-          )}
+      <div className="mb-2">
+        <h1 className="font-display text-3xl font-bold text-[var(--foreground)]">
+          {query
+            ? t("search.resultsFor", { query })
+            : t("search.title")}
+        </h1>
+        {query && (
+          <p className="mt-1 text-[var(--muted-foreground)]">
+            {t("search.resultsCount", { count: results.length })}
+          </p>
+        )}
+      </div>
+
+      {!query && (
+        <div className="text-center py-24">
+          <p className="text-2xl font-display font-semibold text-[var(--muted-foreground)]">
+            {t("empty.searchPrompt")}
+          </p>
+          <Link
+            href="/store"
+            className="mt-6 inline-block rounded-md bg-[var(--brand-red)] px-6 py-3 text-white font-semibold hover:opacity-90 transition-opacity"
+          >
+            {t("search.browseAll")}
+          </Link>
         </div>
+      )}
 
-        {!query && (
-          <div className="text-center py-24">
-            <p className="text-2xl font-display font-semibold text-[var(--muted-foreground)]">
-              Enter a search term to find products.
-            </p>
+      {query && results.length === 0 && (
+        <div className="text-center py-24">
+          <p className="text-2xl font-display font-semibold text-[var(--muted-foreground)]">
+            {t("empty.searchNoResults", { query })}
+          </p>
+          <p className="mt-2 text-[var(--muted-foreground)]">
+            {t("empty.searchNoResultsHint")}
+          </p>
+          <div className="mt-6 flex justify-center gap-4">
             <Link
               href="/store"
-              className="mt-6 inline-block rounded-md bg-[var(--brand-red)] px-6 py-3 text-white font-semibold hover:opacity-90 transition-opacity"
+              className="rounded-md bg-[var(--brand-red)] px-6 py-3 text-white font-semibold hover:opacity-90 transition-opacity"
             >
-              Browse All Products
+              {t("search.browseAll")}
+            </Link>
+            <Link
+              href="/store/categories"
+              className="rounded-md border border-[var(--border)] px-6 py-3 text-[var(--foreground)] font-semibold hover:bg-[var(--muted)] transition-colors"
+            >
+              {t("search.viewCategories")}
             </Link>
           </div>
-        )}
+        </div>
+      )}
 
-        {query && results.length === 0 && (
-          <div className="text-center py-24">
-            <p className="text-2xl font-display font-semibold text-[var(--muted-foreground)]">
-              No products found for &ldquo;{query}&rdquo;.
-            </p>
-            <p className="mt-2 text-[var(--muted-foreground)]">
-              Try a different keyword or browse our categories.
-            </p>
-            <div className="mt-6 flex justify-center gap-4">
-              <Link
-                href="/store"
-                className="rounded-md bg-[var(--brand-red)] px-6 py-3 text-white font-semibold hover:opacity-90 transition-opacity"
-              >
-                Browse All Products
-              </Link>
-              <Link
-                href="/store/categories"
-                className="rounded-md border border-[var(--border)] px-6 py-3 text-[var(--foreground)] font-semibold hover:bg-[var(--muted)] transition-colors"
-              >
-                View Categories
-              </Link>
-            </div>
-          </div>
-        )}
-
-        {query && results.length > 0 && <ProductGrid products={results} />}
+      {query && results.length > 0 && <ProductGrid products={results} />}
     </div>
   );
 }
