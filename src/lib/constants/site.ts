@@ -120,13 +120,14 @@ export const trustedPartnerSectors = [
   "Education",
 ] as const;
 
+/** Home sector cards → market detail pages (same destinations as SectorsGrid). */
 export const homeSectors = [
-  { href: "/sectors#healthcare", label: "Healthcare", imageKey: "healthcare" as const },
-  { href: "/sectors#retail", label: "Retail", imageKey: "retail" as const },
-  { href: "/sectors#hospitality", label: "Hospitality", imageKey: "hospitality" as const },
-  { href: "/sectors#corporate", label: "Corporate", imageKey: "corporate" as const },
-  { href: "/sectors#education", label: "Education", imageKey: "education" as const },
-  { href: "/sectors#institutional", label: "Institutional", imageKey: "institutional" as const },
+  { href: "/markets/healthcare", label: "Healthcare", imageKey: "healthcare" as const },
+  { href: "/markets/retail", label: "Retail", imageKey: "retail" as const },
+  { href: "/markets/hospitality", label: "Hospitality", imageKey: "hospitality" as const },
+  { href: "/markets/commercial", label: "Corporate", imageKey: "corporate" as const },
+  { href: "/markets/education", label: "Education", imageKey: "education" as const },
+  { href: "/markets/public", label: "Institutional", imageKey: "institutional" as const },
 ] as const;
 
 export const manufacturingBullets = [

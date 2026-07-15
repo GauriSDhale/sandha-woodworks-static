@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Insight",
+    "description": "Industry insight, project updates, and millwork knowledge from Sandha Woodworks."
+  },
+  "hero": {
+    "eyebrow": "Newsroom",
+    "titleLine1": "Insights, articles",
+    "titleLine2": "& company news.",
+    "description": "One place for everything happening at Sandha Woodworks — long-form insight from our team, milestones from the shop floor, and a live stream of company updates from LinkedIn.",
+    "followCta": "Follow on LinkedIn",
+    "postsCta": "View Latest Posts"
+  },
+  "feed": {
+    "label": "Live company updates",
+    "title": "Straight from LinkedIn.",
+    "description": "Project reveals, hiring news and factory milestones — auto-synced from our LinkedIn company page so this feed stays current with zero maintenance."
+  },
+  "loop": {
+    "label": "Stay in the loop",
+    "title": "See what we're building next — before anyone else.",
+    "followCta": "Follow Sandha Woodworks"
+  },
+  "why": {
+    "label": "Why follow",
+    "title": "Get the shop floor in your feed.",
+    "items": {
+      "01": {
+        "title": "Fresh project reveals",
+        "description": "See finished installs, renderings and shop drawings before they hit the portfolio page."
+      },
+      "02": {
+        "title": "Hiring & culture",
+        "description": "Open roles, apprenticeship intake and the people making it happen — first look, LinkedIn only."
+      },
+      "03": {
+        "title": "Behind-the-scenes video",
+        "description": "Drone flyovers, CNC time-lapses and finishing bay reels from our 40,000 sq. ft. facility."
+      },
+      "04": {
+        "title": "Industry insight",
+        "description": "AWMAC, WMCO and ISO milestones plus what we're learning from every build."
+      }
+    }
+  }
+}

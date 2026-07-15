@@ -7,16 +7,31 @@ import { CountUpStat } from "@/components/marketing/home/CountUpStat";
 import { getRecentProjectSlides } from "@/lib/projects/recent";
 import { useInView } from "@/lib/hooks/useInView";
 import { useReducedMotion } from "@/lib/hooks/useReducedMotion";
-import { useLang } from "@/lib/i18n/LanguageProvider";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
+import { SiteImage } from "@/components/ui/SiteImage";
 
 const statKeys = ["facility", "clients", "services", "sectors"] as const;
 
 export function WhyChooseUsSection() {
-  const { t } = useLang();
+  const { t } = useTranslation("home");
   const reducedMotion = useReducedMotion();
   const [sectionRef, inView] = useInView<HTMLElement>({ threshold: 0.1, triggerOnce: true });
-  const copy = t.home.whyChooseUs;
+  const copy = t("whyChooseUs", { returnObjects: true }) as {
+    eyebrow: string;
+    title: string;
+    description: string;
+    cta: string;
+    projectsEyebrow: string;
+    viewProject: string;
+    viewAllProjects: string;
+    emptyProjects: string;
+    stats: Record<
+      (typeof statKeys)[number],
+      { value: number; suffix: string; label: string; description: string; format?: "comma" }
+    >;
+    reasons: Array<{ title: string; description: string }>;
+  };
   const slides = getRecentProjectSlides(8);
   const [activeIndex, setActiveIndex] = useState(0);
   const current = slides[activeIndex] ?? null;
@@ -141,9 +156,10 @@ export function WhyChooseUsSection() {
                   aria-hidden={index !== activeIndex}
                   tabIndex={index === activeIndex ? 0 : -1}
                 >
-                  <img
+                  <SiteImage
                     src={slide.cover}
                     alt={slide.name}
+                    sizes="(min-width: 1280px) 1280px, 100vw"
                     className="h-full w-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
@@ -160,7 +176,7 @@ export function WhyChooseUsSection() {
                       )
                     }
                     className="absolute left-3 top-1/2 z-10 inline-flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-white/25 bg-white/15 text-white backdrop-blur-sm transition hover:bg-white hover:text-warm-black sm:left-5 sm:size-12"
-                    aria-label="Show previous project"
+                    aria-label={t("carousel.previous")}
                   >
                     <ArrowLeft className="size-4" />
                   </button>
@@ -170,7 +186,7 @@ export function WhyChooseUsSection() {
                       setActiveIndex((index) => (index + 1) % slides.length)
                     }
                     className="absolute right-3 top-1/2 z-10 inline-flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-white/25 bg-white/15 text-white backdrop-blur-sm transition hover:bg-white hover:text-warm-black sm:right-5 sm:size-12"
-                    aria-label="Show next project"
+                    aria-label={t("carousel.next")}
                   >
                     <ArrowRight className="size-4" />
                   </button>
@@ -187,7 +203,10 @@ export function WhyChooseUsSection() {
                       {current.name}
                     </h3>
                     <p className="mt-1 text-sm text-white/70">
-                      {current.location} · {current.category}
+                      {current.location} ·{" "}
+                      {t(`projects.categories.${current.category}`, {
+                        defaultValue: current.category,
+                      })}
                     </p>
                   </div>
                   <div className="pointer-events-auto flex flex-wrap items-center gap-3">

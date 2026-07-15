@@ -1,0 +1,69 @@
+{
+  "intro": {
+    "tagline": "Architectural Millwork · Canada",
+    "loading": "Crafting your experience"
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "sectors": "Sectors",
+    "portfolio": "Portfolio",
+    "store": "Store",
+    "insight": "Insight",
+    "careers": "Careers",
+    "contact": "Contact",
+    "requestQuote": "Request a Quote",
+    "viewAllSectors": "View all sectors →",
+    "allSectors": "All sectors"
+  },
+  "sectors": {
+    "healthcare": "Healthcare",
+    "education": "Education",
+    "commercial": "Commercial",
+    "hospitality": "Hospitality",
+    "retail": "Retail",
+    "residential": "Residential",
+    "public": "Public & Institutional",
+    "specialty": "Specialty"
+  },
+  "footer": {
+    "tagline": "Built on Trust. Driven by Quality.",
+    "description": "Precision architectural millwork, commercial casework, and custom fabrication for general contractors, architects, and developers across Canada.",
+    "company": "Company",
+    "explore": "Explore",
+    "legal": "Legal & Compliance",
+    "about": "About Us",
+    "careers": "Careers",
+    "contact": "Contact",
+    "services": "Services",
+    "sectors": "Sectors",
+    "portfolio": "Portfolio",
+    "visit": "Headquarter",
+    "contactLabel": "Contact",
+    "hours": "Hours",
+    "hoursValue": "Monday – Friday",
+    "hoursTime": "8:00 am – 5:00 pm ET",
+    "rights": "All rights reserved.",
+    "followUs": "Follow us",
+    "legalCentre": "Legal Centre",
+    "generalTerms": "General Terms & Conditions",
+    "canadaTerms": "Canada Ts & Cs",
+    "usaTerms": "USA Ts & Cs",
+    "codeOfConduct": "Code of Conduct",
+    "privacy": "Privacy Policy",
+    "accessibility": "Accessibility",
+    "websiteTerms": "Website Terms of Use",
+    "store": "Cabinet Store",
+    "taglineAlt": "Built on Trust · Driven by Quality",
+    "madeInCanada": "Made in Canada",
+    "madeInCanadaAria": "Sandha Woodworks — Made in Canada, serving Canada and the United States",
+    "language": "Language"
+  },
+  "cookies": {
+    "title": "We value your privacy",
+    "description": "We use cookies to enhance your browsing experience, analyze traffic, and improve our services. You can accept all, reject non-essential, or customize your preferences.",
+    "customize": "Customize",
+    "reject": "Reject all",
+    "accept": "Accept all"
+  }
+}

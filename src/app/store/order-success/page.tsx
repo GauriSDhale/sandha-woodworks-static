@@ -4,17 +4,25 @@ import { useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { CheckCircle2, Package, Truck, ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { useAppSelector } from "@/store/hooks";
 import { selectCurrentOrder } from "@/store/slices/ordersSlice";
 import { formatDate, formatPrice } from "@/store/utils/format";
+import { deliveryI18nKey } from "@/store/types/order";
 
 export default function OrderSuccessPage() {
+  const { t } = useTranslation("store");
   const order = useAppSelector(selectCurrentOrder);
 
-  // Confetti-like subtle entrance
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
+  const timeline = [
+    { icon: CheckCircle2, label: t("orders.timeline.confirmed"), done: true },
+    { icon: Package, label: t("orders.timeline.prepared"), done: false },
+    { icon: Truck, label: t("orders.timeline.outForDelivery"), done: false },
+  ];
 
   return (
     <div className="flex flex-col items-center justify-center gap-8 py-16 text-center">
@@ -34,15 +42,15 @@ export default function OrderSuccessPage() {
         className="space-y-2"
       >
         <h1 className="font-display text-3xl font-bold text-foreground">
-          Order Confirmed!
+          {t("orders.successTitle")}
         </h1>
         {order && (
           <p className="text-muted-foreground">
-            Order <span className="font-semibold text-foreground">#{order.orderNumber}</span> has been placed successfully.
+            {t("orders.successMessage", { orderNumber: order.orderNumber })}
           </p>
         )}
         <p className="text-sm text-muted-foreground">
-          A confirmation has been sent to your email address.
+          {t("orders.emailConfirmation")}
         </p>
       </motion.div>
 
@@ -53,7 +61,7 @@ export default function OrderSuccessPage() {
           transition={{ delay: 0.5 }}
           className="w-full max-w-lg rounded-3xl border border-border bg-background p-6 text-left space-y-5"
         >
-          <h2 className="font-display font-semibold text-lg">Order Summary</h2>
+          <h2 className="font-display font-semibold text-lg">{t("orders.summary")}</h2>
 
           <div className="space-y-2">
             {order.items.slice(0, 3).map((item) => (
@@ -64,7 +72,7 @@ export default function OrderSuccessPage() {
             ))}
             {order.items.length > 3 && (
               <p className="text-xs text-muted-foreground">
-                +{order.items.length - 3} more item(s)
+                {t("orders.moreItems", { count: order.items.length - 3 })}
               </p>
             )}
           </div>
@@ -72,28 +80,25 @@ export default function OrderSuccessPage() {
           <div className="h-px bg-border" />
 
           <div className="flex justify-between font-display">
-            <span className="font-semibold">Total Paid</span>
+            <span className="font-semibold">{t("orders.totalPaid")}</span>
             <span className="text-xl font-bold">{formatPrice(order.total)}</span>
           </div>
 
           <div className="grid grid-cols-2 gap-3 text-sm">
             <div className="rounded-xl bg-muted/40 px-3 py-2">
-              <p className="text-xs text-muted-foreground">Placed On</p>
+              <p className="text-xs text-muted-foreground">{t("orders.placedOn")}</p>
               <p className="font-semibold">{formatDate(order.createdAt)}</p>
             </div>
             <div className="rounded-xl bg-muted/40 px-3 py-2">
-              <p className="text-xs text-muted-foreground">Delivery</p>
-              <p className="font-semibold">{order.deliveryMethod.estimatedDays}</p>
+              <p className="text-xs text-muted-foreground">{t("orders.delivery")}</p>
+              <p className="font-semibold">
+                {t(deliveryI18nKey(order.deliveryMethod.id, "estimatedDays"))}
+              </p>
             </div>
           </div>
 
-          {/* Status timeline */}
           <div className="space-y-3 pt-1">
-            {[
-              { icon: CheckCircle2, label: "Order Confirmed", done: true },
-              { icon: Package, label: "Being Prepared", done: false },
-              { icon: Truck, label: "Out for Delivery", done: false },
-            ].map((step, idx) => (
+            {timeline.map((step, idx) => (
               <div key={idx} className="flex items-center gap-3">
                 <step.icon
                   className={`h-5 w-5 shrink-0 ${step.done ? "text-emerald-600" : "text-muted-foreground/30"}`}
@@ -118,13 +123,13 @@ export default function OrderSuccessPage() {
           href="/store/order-history"
           className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 font-medium transition hover:bg-muted"
         >
-          View Order History
+          {t("orders.viewHistory")}
         </Link>
         <Link
           href="/store"
           className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 font-semibold text-cream transition hover:bg-warm-black"
         >
-          Continue Shopping
+          {t("cart.continueShopping")}
           <ArrowRight className="h-4 w-4" />
         </Link>
       </motion.div>

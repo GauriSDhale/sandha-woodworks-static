@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Perspectives",
+    "description": "Perspectives industrielles, mises à jour de projets et savoir-faire en ébénisterie de Sandha Woodworks."
+  },
+  "hero": {
+    "eyebrow": "Salle de presse",
+    "titleLine1": "Perspectives, articles",
+    "titleLine2": "et nouvelles de l'entreprise.",
+    "description": "Un seul endroit pour tout ce qui se passe chez Sandha Woodworks — analyses approfondies de notre équipe, jalons de l'atelier et flux en direct des mises à jour de l'entreprise sur LinkedIn.",
+    "followCta": "Suivre sur LinkedIn",
+    "postsCta": "Voir les dernières publications"
+  },
+  "feed": {
+    "label": "Mises à jour en direct",
+    "title": "Directement de LinkedIn.",
+    "description": "Dévoilements de projets, nouvelles d'embauche et jalons d'usine — synchronisés automatiquement depuis notre page entreprise LinkedIn pour que ce fil reste à jour sans entretien."
+  },
+  "loop": {
+    "label": "Restez informés",
+    "title": "Voyez ce que nous bâtissons ensuite — avant tout le monde.",
+    "followCta": "Suivre Sandha Woodworks"
+  },
+  "why": {
+    "label": "Pourquoi nous suivre",
+    "title": "L'atelier dans votre fil d'actualité.",
+    "items": {
+      "01": {
+        "title": "Nouveaux projets dévoilés",
+        "description": "Voyez les installations terminées, rendus et dessins d'atelier avant qu'ils n'apparaissent sur la page portfolio."
+      },
+      "02": {
+        "title": "Embauche et culture",
+        "description": "Postes ouverts, recrutement d'apprentis et les gens qui font avancer les choses — en avant-première, sur LinkedIn seulement."
+      },
+      "03": {
+        "title": "Vidéos des coulisses",
+        "description": "Survols de drone, time-lapses CNC et bobines de la baie de finition de notre usine de 40 000 pi²."
+      },
+      "04": {
+        "title": "Perspectives industrielles",
+        "description": "Jalons AWMAC, WMCO et ISO, plus ce que nous apprenons de chaque chantier."
+      }
+    }
+  }
+}

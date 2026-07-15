@@ -1,0 +1,347 @@
+{
+  "meta": {
+    "title": "Services",
+    "description": "Toutes les capacités d'ébénisterie sous un même toit — de la préconstruction à la garantie et au service après-vente."
+  },
+  "hero": {
+    "eyebrow": "Services et capacités · Ce que nous faisons",
+    "title": "Toutes les capacités d'ébénisterie, sous un même toit.",
+    "description": "Préconstruction, ingénierie, fabrication, finition, gestion de projet, logistique, installation et garantie. Un seul fabricant canadien responsable."
+  },
+  "vs": {
+    "label": "Services vs secteurs",
+    "whatTitle": "Ce que nous faisons",
+    "whatBody": "Toutes les capacités d'ébénisterie que nous offrons — de l'ingénierie de préconstruction et de la fabrication à la finition, la gestion de projet, la logistique, l'installation et la garantie.",
+    "whatCta": "Voir tous les services",
+    "whereTitle": "Où nous le faisons",
+    "whereBodyBefore": "Pour les industries et types de bâtiments que nous desservons — santé, éducation, hôtellerie, commerce de détail, multirésidentiel, gouvernement et plus — consultez la",
+    "whereBodyLink": "page Secteurs",
+    "whereBodyAfter": ".",
+    "whereCta": "Explorer les secteurs",
+    "standardsLabel": "Normes selon lesquelles nous construisons"
+  },
+  "categoriesNav": "Catégories de services",
+  "categoryMeta": "{{number}} · {{count}} services",
+  "readArticle": "Lire l'article",
+  "sectors": {
+    "label": "Où nous appliquons ces capacités",
+    "title": "15 secteurs desservis.",
+    "explore": "Explorer le secteur"
+  },
+  "cta": {
+    "eyebrow": "Prêts quand vous l'êtes",
+    "title": "Envoyez-nous vos dessins. Nous vous retournerons un devis détaillé en un jour ouvrable.",
+    "secondary": "Voir les projets"
+  },
+  "detail": {
+    "back": "Tous les services",
+    "requestQuote": "Demander un devis",
+    "readArticle": "Lire l'article",
+    "sectionsNav": "Sections de l'article",
+    "toc": {
+      "overview": "Aperçu",
+      "bestFor": "Idéal pour",
+      "process": "Processus",
+      "deliverables": "Livrables",
+      "gallery": "Galerie",
+      "faqs": "FAQ"
+    },
+    "sections": {
+      "overview": "Aperçu",
+      "bestFor": "Idéal pour",
+      "process": "Processus — de l'attribution à l'installation",
+      "deliverables": "Ce que vous recevez",
+      "gallery": "Galerie",
+      "faqs": "FAQ",
+      "related": "Explorer plus de {{category}}",
+      "learnMore": "En savoir plus",
+      "galleryAlt": "{{name}} — référence {{index}}"
+    },
+    "cta": {
+      "eyebrow": "Prochaine étape",
+      "title": "Vous avez des dessins pour un ensemble {{name}}?",
+      "description": "Envoyez-nous le jeu de plans et le calendrier de finition — nous vous retournerons un devis détaillé en un jour ouvrable.",
+      "primary": "Demander un devis",
+      "secondary": "Voir nos réalisations"
+    }
+  },
+  "standards": [
+    "AWMAC NAAWS 4.0 · AWMAC GIS third-party inspection",
+    "AWI Architectural Woodwork Standards",
+    "CSA / OBC / NBC · CSA B651 / AODA / ADA",
+    "CARB Phase 2 / TSCA Title VI · LEED / WELL"
+  ],
+  "defaultProcess": [
+    {
+      "step": "Estimation",
+      "description": "Métré à partir de vos dessins, devis descriptifs et calendrier de finition. Devis détaillé retourné en un jour ouvrable pour la plupart des ensembles."
+    },
+    {
+      "step": "Ingénierie et dessins d'atelier",
+      "description": "L'équipe interne produit des dessins d'atelier conformes AWI/AWMAC dans AutoCAD, coordonnés avec Microvellum pour une sortie directe vers machine."
+    },
+    {
+      "step": "Soumissions et échantillons",
+      "description": "Échantillons de finition, fiches techniques de quincaillerie et jeu de dessins soumis pour approbation de l'architecte/EG avant mise en production."
+    },
+    {
+      "step": "Fabrication CNC",
+      "description": "Panneaux imbriqués et usinés sur CNC multi-axes. Usinage du bois massif, placage des chants et assemblage à tourillons/confirmats dans des cellules dédiées."
+    },
+    {
+      "step": "Finition",
+      "description": "Cabines de pulvérisation en environnement contrôlé pour teinture, laque, vernis de conversion, polyuréthane catalysé et systèmes à l'eau à faible COV."
+    },
+    {
+      "step": "AQ et pré-expédition",
+      "description": "Inspection dimensionnelle et de finition à 100 % par rapport aux dessins d'atelier approuvés. Préassemblé lorsque possible pour une certitude d'ajustement sur site."
+    },
+    {
+      "step": "Livraison et coordination d'installation",
+      "description": "Livraison enveloppée de couvertures, par phases, coordonnée avec l'échéancier du chantier. Supervision d'installation disponible partout au Canada."
+    }
+  ],
+  "categories": {
+    "pre-construction": {
+      "title": "Préconstruction",
+      "description": "Assistance à la conception, budgets, ingénierie de la valeur et revue de constructibilité — avant l'émission des dessins de construction."
+    },
+    "engineering": {
+      "title": "Ingénierie",
+      "description": "Dessins d'atelier, modèles 3D, sortie Microvellum et coordination architecte/consultants."
+    },
+    "manufacturing": {
+      "title": "Fabrication",
+      "description": "Ébénisterie architecturale sur mesure, ameublement fixe, CNC, stratifié, placage, surface solide, intégration métallique et finition interne."
+    },
+    "sector-scopes": {
+      "title": "Portées par secteur",
+      "description": "Ensembles d'ébénisterie propres à chaque secteur, conçus selon les codes de l'environnement."
+    },
+    "project-management": {
+      "title": "Gestion de projet",
+      "description": "GP dédiés, ordonnancement, approvisionnement, coordination de chantier et AQ."
+    },
+    "logistics": {
+      "title": "Logistique",
+      "description": "Emballage, livraison, libération juste-à-temps et logistique de chantier — partout au Canada, plus transfrontalier CUSMA."
+    },
+    "installation": {
+      "title": "Installation",
+      "description": "Installation professionnelle, supervision de chantier, gestion des déficits et clôture."
+    },
+    "warranty": {
+      "title": "Garantie et service après-vente",
+      "description": "Soutien de garantie, entretien, réparations, rénovations futures et demandes de service."
+    }
+  },
+  "items": {
+    "design-assist": {
+      "name": "Assistance à la conception",
+      "description": "Partenariat de conception d'ébénisterie — dessins d'atelier, modèles 3D, échantillons de placage et de finition avant l'appel d'offres."
+    },
+    "budget-estimating": {
+      "name": "Estimation budgétaire d'ébénisterie",
+      "description": "Équipe d'estimation d'ébénisterie interne — de l'ordre de grandeur à la tarification détaillée ferme."
+    },
+    "value-engineering": {
+      "name": "Ingénierie de la valeur",
+      "description": "Options de réduction des coûts sans perdre l'intention de conception."
+    },
+    "constructability-review": {
+      "name": "Revue de constructibilité d'ébénisterie",
+      "description": "Strictement ébénisterie — revue d'un second regard sur le jeu d'ébénisterie architecturale avant l'appel d'offres."
+    },
+    "shop-drawings-engineering": {
+      "name": "Dessins d'atelier et ingénierie d'ébénisterie",
+      "description": "Dessin et ingénierie d'ébénisterie internes — des annotations à la production aux fichiers prêts pour CNC."
+    },
+    "3d-modeling": {
+      "name": "Modélisation 3D et visualisation d'ébénisterie",
+      "description": "Rendus 3D photoréalistes et modèles prêts pour CNC — strictement pour l'ébénisterie architecturale."
+    },
+    "architect-consultant-coordination": {
+      "name": "Coordination architecte et consultants",
+      "description": "Un GP qui coordonne notre ébénisterie avec l'architecte, le DI et l'équipe de consultants."
+    },
+    "cnc-manufacturing": {
+      "name": "Département d'usinage CNC",
+      "description": "Production CNC multi-axes pour composants à tolérances serrées."
+    },
+    "custom-fabrication": {
+      "name": "Département sur mesure et assemblage",
+      "description": "Ligne d'assemblage interne pour ameublement fixe à volume élevé, plus un atelier sur mesure pour l'ébénisterie complexe unique."
+    },
+    "finishing-paint": {
+      "name": "Département de finition interne",
+      "description": "Du ponçage à la ligne plate robotisée Cefla, aux cabines manuelles, à la chambre de séchage Sunspot. Strictement pour notre propre ébénisterie."
+    },
+    "solid-surface-work": {
+      "name": "Surface solide et verre",
+      "description": "Corian fabriqué en interne, plus quartz, granit, marbre et verre architectural — coordonnés comme un seul ensemble d'ébénisterie intérieure."
+    },
+    "plastic-laminate-fabrication": {
+      "name": "Fabrication de stratifié plastique",
+      "description": "Fabrication de précision HPL / CRL sur Wilsonart, Formica, Arborite, Nevamar et Pionite."
+    },
+    "veneer-hardwood-fabrication": {
+      "name": "Fabrication de placage et bois franc",
+      "description": "Murs en placage séquencé et assorti au grain, plus ébénisterie en bois franc massif."
+    },
+    "metal-integration": {
+      "name": "Intégration de métal architectural",
+      "description": "Éléments d'ébénisterie en bois nécessitant du métal — tabliers de service, plinthes, supports, joints, cuisines — livrés comme un seul ensemble."
+    },
+    "healthcare-millwork": {
+      "name": "Ébénisterie pour la santé",
+      "description": "Ébénisterie de grade hospitalier conçue pour le contrôle des infections, la résistance à l'eau et une installation à faible perturbation dans des environnements patients en activité."
+    },
+    "retail-fixtures": {
+      "name": "Mobilier de commerce de détail",
+      "description": "Mobilier prêt au déploiement, produit avec une précision reproductible à grande échelle."
+    },
+    "hospitality-millwork": {
+      "name": "Ébénisterie pour l'hôtellerie",
+      "description": "Ébénisterie architecturale de grade premium pour hôtels de luxe et à service complet."
+    },
+    "multi-residential-millwork": {
+      "name": "Ébénisterie multirésidentielle",
+      "description": "Une seule division d'ébénisterie pour toute la tour — du hall au penthouse."
+    },
+    "restaurant-qsr-millwork": {
+      "name": "Ébénisterie pour restaurants et QSR",
+      "description": "Deux portées organisées : restaurants à service complet sur mesure, et programmes QSR prêts au déploiement."
+    },
+    "pharmacy-clinic-millwork": {
+      "name": "Ébénisterie pour pharmacies et cliniques",
+      "description": "Ameublement fixe pour pharmacie, salles d'examen et de consultation."
+    },
+    "education-millwork": {
+      "name": "Ébénisterie pour l'éducation",
+      "description": "Ébénisterie pour chaque environnement d'apprentissage — de la garderie à l'université, existant et nouvelle construction."
+    },
+    "corporate-institutional-millwork": {
+      "name": "Ébénisterie corporative, bancaire et institutionnelle",
+      "description": "Un seul partenaire d'ébénisterie pour banques, bureaux, bibliothèques et tout milieu de travail professionnel."
+    },
+    "custom-cabinets": {
+      "name": "Ébénisterie résidentielle sur mesure",
+      "description": "Ébénisterie et boiseries sur mesure pour résidences de designers — pas des ensembles d'appel d'offres standards."
+    },
+    "project-management": {
+      "name": "Gestion de projet",
+      "description": "GP dédiés de l'attribution à la clôture."
+    },
+    "scheduling": {
+      "name": "Ordonnancement",
+      "description": "Échéancier d'ébénisterie intégré à votre échéancier maître de construction."
+    },
+    "procurement": {
+      "name": "Approvisionnement",
+      "description": "Engagements de matériaux à long délai verrouillés à l'attribution, pas après les dessins d'atelier."
+    },
+    "site-coordination": {
+      "name": "Coordination de chantier",
+      "description": "Visites de chantier, coordination des blocs, vérification des préparations MEP/AV."
+    },
+    "quality-assurance": {
+      "name": "Assurance qualité",
+      "description": "Inspection pré-expédition à 100 % par rapport aux dessins d'atelier et échantillons de finition approuvés."
+    },
+    "delivery-logistics": {
+      "name": "Livraison et logistique",
+      "description": "Livraison coordonnée pour déploiements par phases et multi-sites."
+    },
+    "packaging": {
+      "name": "Emballage et caissage",
+      "description": "Enveloppé de couvertures, palettisé et caissé pour zéro dommage en transit."
+    },
+    "just-in-time-delivery": {
+      "name": "Livraison juste-à-temps",
+      "description": "L'ébénisterie arrive au plancher le jour où le métier d'installation en a besoin."
+    },
+    "site-logistics": {
+      "name": "Logistique de chantier",
+      "description": "Réservation de quai de chargement, levage, protection des planchers et coordination des espaces tampon."
+    },
+    "installation-coordination": {
+      "name": "Coordination d'installation",
+      "description": "Coordination sur site avec vos métiers d'installation."
+    },
+    "site-supervision": {
+      "name": "Supervision de chantier",
+      "description": "Superviseur principal Sandha sur chaque installation, partout au Canada."
+    },
+    "deficiency-management": {
+      "name": "Gestion des déficits",
+      "description": "Registre des déficits jusqu'à la clôture avec dates de clôture engagées."
+    },
+    "project-closeout": {
+      "name": "Clôture de projet",
+      "description": "Dessins tels que construits, manuels O&M, documents LEED, trousse de garantie — livrés dans un seul classeur."
+    },
+    "warranty-support": {
+      "name": "Soutien de garantie",
+      "description": "1 an de main-d'œuvre AWMAC/AWI + garanties prolongées de finition et de caisson."
+    },
+    "maintenance-repairs": {
+      "name": "Entretien et réparations",
+      "description": "Inspections planifiées, équipes de retouche et réparations hors garantie."
+    },
+    "future-renovations": {
+      "name": "Rénovations futures",
+      "description": "Remise à neuf de cycle PIP, réaménagements d'améliorations locatives, rafraîchissements de marque."
+    },
+    "service-requests": {
+      "name": "Demandes de service",
+      "description": "Un numéro de téléphone, une boîte de réception pour chaque demande de service sur chaque projet."
+    }
+  },
+  "sectorLinks": {
+    "healthcare": {
+      "name": "Santé"
+    },
+    "education": {
+      "name": "Éducation"
+    },
+    "corporate-offices": {
+      "name": "Bureaux corporatifs"
+    },
+    "retail": {
+      "name": "Commerce de détail"
+    },
+    "hospitality": {
+      "name": "Hôtellerie"
+    },
+    "restaurants-qsr": {
+      "name": "Restaurants et QSR"
+    },
+    "financial-institutions": {
+      "name": "Institutions financières"
+    },
+    "government-public-buildings": {
+      "name": "Gouvernement et bâtiments publics"
+    },
+    "multi-residential": {
+      "name": "Multirésidentiel"
+    },
+    "senior-living": {
+      "name": "Résidences pour aînés"
+    },
+    "community-recreation": {
+      "name": "Centres communautaires et de loisirs"
+    },
+    "libraries": {
+      "name": "Bibliothèques"
+    },
+    "cultural-civic": {
+      "name": "Bâtiments culturels et civiques"
+    },
+    "industrial-manufacturing": {
+      "name": "Industriel et fabrication"
+    },
+    "commercial-interiors": {
+      "name": "Intérieurs commerciaux"
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "title": "Contact",
+    "description": "Parlons de votre prochain projet. Demandez une soumission ou envoyez une demande générale."
+  },
+  "hero": {
+    "eyebrow": "Contact",
+    "title": "Parlons de votre prochain projet.",
+    "description": "Que vous soyez entrepreneur général, architecte, promoteur ou client commercial — notre équipe d'estimation est prête à vous aider."
+  },
+  "details": {
+    "title": "Coordonnées",
+    "address": "ADRESSE",
+    "phone": "TÉLÉPHONE",
+    "email": "COURRIEL",
+    "hours": "HEURES",
+    "hoursValue": "Lundi – Vendredi\n8 h 00 – 17 h 00 HE",
+    "social": "RÉSEAUX",
+    "socialOpens": "{{network}} (s'ouvre dans un nouvel onglet)",
+    "mapTitle": "Carte de l'emplacement de Sandha Woodworks",
+    "bidTitle": "Pour entrepreneurs généraux, architectes et promoteurs",
+    "bidBody": "Ajoutez-nous à votre liste d'appel d'offres — nous serions ravis de soumissionner sur votre prochain projet."
+  },
+  "form": {
+    "tabs": {
+      "quote": "Demande de soumission",
+      "inquiry": "Demande générale"
+    },
+    "fields": {
+      "fullName": "Nom complet",
+      "company": "Entreprise",
+      "email": "Courriel",
+      "phone": "Téléphone",
+      "countryDial": "Indicatif du pays",
+      "projectName": "Nom du projet",
+      "projectLocation": "Lieu du projet",
+      "sector": "Secteur",
+      "sectorPlaceholder": "Sélectionnez un secteur",
+      "timeline": "Échéancier",
+      "budget": "Budget (facultatif)",
+      "message": "Message",
+      "files": "Plans / fichiers du projet",
+      "filesHint": "(PDF, DWG, images — jusqu'à 10 Mo chacun)"
+    },
+    "placeholders": {
+      "fullName": "Jane Doe",
+      "email": "jane@entreprise.com",
+      "phone": "555 123 4567",
+      "phoneDigits": "5551234567",
+      "company": "Entreprise Inc.",
+      "inquiryMessage": "Comment pouvons-nous vous aider?",
+      "budget": "p. ex. 50 000 $–100 000 $",
+      "quoteMessage": "Portée, secteur, jalons clés ou tout autre détail utile."
+    },
+    "upload": {
+      "click": "Cliquez pour téléverser des plans",
+      "hint": "Joignez des plans d'atelier, appels d'offres, devis ou images de référence",
+      "removeAll": "Retirer tous les fichiers"
+    },
+    "actions": {
+      "sendMessage": "Envoyer le message",
+      "sending": "Envoi…",
+      "submitRequest": "Soumettre la demande",
+      "submitting": "Envoi…",
+      "submitAnother": "Soumettre une autre demande"
+    },
+    "success": {
+      "title": "Merci pour votre demande.",
+      "body": "Notre équipe d'estimation vous répondra dans un délai d'un jour ouvrable."
+    },
+    "uploadTip": {
+      "title": "Des difficultés à téléverser vos plans?",
+      "bodyBefore": "Les jeux de plans volumineux ou en plusieurs fichiers peuvent parfois bloquer le téléversement. Si cela se produit — ou si vous préférez les envoyer directement — veuillez courrieller vos fichiers de projet à",
+      "bodyAfter": "après avoir soumis ce formulaire. Indiquez le nom de votre projet afin que notre équipe puisse le relier à votre demande."
+    },
+    "errors": {
+      "fullNameMin": "Le nom complet doit comporter au moins 3 caractères",
+      "fullNameMax": "Le nom complet doit comporter 50 caractères ou moins",
+      "fullNameRequired": "Le nom complet est requis",
+      "emailInvalid": "Entrez une adresse courriel valide",
+      "phoneRequired": "Le numéro de téléphone est requis",
+      "phoneInvalid": "Entrez un numéro de téléphone valide (7 à 15 chiffres)",
+      "sectorRequired": "Veuillez sélectionner un secteur",
+      "timelineInvalid": "Entrez une date valide",
+      "timelinePast": "L'échéancier ne peut pas être dans le passé",
+      "messageRequired": "Le message est requis",
+      "fileType": "{{name}} : type de fichier non pris en charge (PDF, DWG ou images seulement)",
+      "fileSize": "{{name}} dépasse 10 Mo",
+      "generic": "Une erreur s'est produite. Veuillez réessayer."
+    },
+    "sectors": {
+      "healthcare": "Santé",
+      "education": "Éducation",
+      "retail": "Commerce de détail",
+      "hospitality": "Hôtellerie",
+      "corporate": "Entreprise",
+      "multiResidential": "Multirésidentiel",
+      "government": "Gouvernement",
+      "institutional": "Institutionnel",
+      "restaurantQsr": "Restaurant / QSR",
+      "pharmacyClinic": "Pharmacie / Clinique",
+      "commercialInteriors": "Intérieurs commerciaux",
+      "other": "Autre"
+    },
+    "countries": {
+      "CA": "Canada",
+      "US": "États-Unis",
+      "GB": "Royaume-Uni",
+      "IN": "Inde",
+      "AU": "Australie",
+      "AE": "Émirats arabes unis",
+      "DE": "Allemagne",
+      "FR": "France",
+      "MX": "Mexique",
+      "SG": "Singapour"
+    }
+  }
+}

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { SlidersHorizontal, X, ChevronDown, ChevronUp } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import {
@@ -13,13 +14,28 @@ import {
 import type { SortOption } from "@/store/types/product";
 import { PRICE_RANGE } from "@/store/data/products";
 
-const SORT_OPTIONS: { id: SortOption; label: string }[] = [
-  { id: "newest", label: "Newest" },
-  { id: "price-asc", label: "Price: Low to High" },
-  { id: "price-desc", label: "Price: High to Low" },
-  { id: "popular", label: "Most Popular" },
-  { id: "top-rated", label: "Top Rated" },
+const SORT_IDS: SortOption[] = [
+  "newest",
+  "price-asc",
+  "price-desc",
+  "popular",
+  "top-rated",
 ];
+
+function sortLabelKey(id: SortOption): string {
+  switch (id) {
+    case "newest":
+      return "sort.newest";
+    case "price-asc":
+      return "sort.priceAsc";
+    case "price-desc":
+      return "sort.priceDesc";
+    case "popular":
+      return "sort.popular";
+    case "top-rated":
+      return "sort.topRated";
+  }
+}
 
 function FilterSection({
   title,
@@ -47,6 +63,7 @@ function FilterSection({
 }
 
 export function ProductFilters({ className }: { className?: string }) {
+  const { t } = useTranslation("store");
   const dispatch = useAppDispatch();
   const filters = useAppSelector(selectFilters);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -55,26 +72,53 @@ export function ProductFilters({ className }: { className?: string }) {
 
   const FiltersContent = () => (
     <div className="space-y-5">
-      {/* Sort (mobile — shown inside filters panel) */}
-      <FilterSection title="Sort By">
-        {SORT_OPTIONS.map((opt) => (
-          <label key={opt.id} className="flex cursor-pointer items-center gap-2 text-sm">
+      <FilterSection title={t("filters.sortBy")}>
+        {SORT_IDS.map((id) => (
+          <label key={id} className="flex cursor-pointer items-center gap-2 text-sm">
             <input
               type="radio"
               name="sortBy"
-              checked={filters.sortBy === opt.id}
-              onChange={() => dispatch(setSortBy(opt.id))}
+              checked={filters.sortBy === id}
+              onChange={() => dispatch(setSortBy(id))}
               className="h-4 w-4 accent-foreground"
             />
-            <span className={filters.sortBy === opt.id ? "font-medium text-foreground" : "text-muted-foreground"}>
-              {opt.label}
+            <span className={filters.sortBy === id ? "font-medium text-foreground" : "text-muted-foreground"}>
+              {t(sortLabelKey(id))}
             </span>
           </label>
         ))}
       </FilterSection>
 
-      {/* Price range */}
-      <FilterSection title="Price Range (CAD)">
+      <FilterSection title={t("filters.category")}>
+        <label className="flex cursor-pointer items-center gap-2 text-sm">
+          <input
+            type="radio"
+            name="category"
+            checked={filters.category === null}
+            onChange={() => dispatch(setCategory(null))}
+            className="h-4 w-4 accent-foreground"
+          />
+          <span className={!filters.category ? "font-medium text-foreground" : "text-muted-foreground"}>
+            {t("filters.allProducts")}
+          </span>
+        </label>
+        {topCategories.map((cat) => (
+          <label key={cat.id} className="flex cursor-pointer items-center gap-2 text-sm">
+            <input
+              type="radio"
+              name="category"
+              checked={filters.category === cat.id}
+              onChange={() => dispatch(setCategory(cat.id as CategoryId))}
+              className="h-4 w-4 accent-foreground"
+            />
+            <span className={filters.category === cat.id ? "font-medium text-foreground" : "text-muted-foreground"}>
+              {t(`categories.${cat.id}.label`)}
+            </span>
+          </label>
+        ))}
+      </FilterSection>
+
+      <FilterSection title={t("filters.priceRange")}>
         <div className="space-y-3">
           <div className="flex items-center justify-between text-sm text-muted-foreground">
             <span>${filters.priceRange[0].toLocaleString()}</span>
@@ -90,12 +134,11 @@ export function ProductFilters({ className }: { className?: string }) {
               dispatch(setPriceRange([filters.priceRange[0], Number(e.target.value)]))
             }
             className="w-full accent-foreground"
-            aria-label="Maximum price"
+            aria-label={t("a11y.maxPrice")}
           />
         </div>
       </FilterSection>
 
-      {/* Reset */}
       {activeCount > 0 && (
         <button
           type="button"
@@ -103,7 +146,7 @@ export function ProductFilters({ className }: { className?: string }) {
           className="flex w-full items-center justify-center gap-2 rounded-full border border-red-200 py-2 text-sm font-medium text-red-500 transition hover:bg-red-50"
         >
           <X className="h-3.5 w-3.5" />
-          Clear all filters ({activeCount})
+          {t("filters.clearAll", { count: activeCount })}
         </button>
       )}
     </div>
@@ -111,14 +154,13 @@ export function ProductFilters({ className }: { className?: string }) {
 
   return (
     <>
-      {/* Mobile toggle */}
       <button
         type="button"
         onClick={() => setMobileOpen(true)}
         className="flex w-fit items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium transition hover:bg-muted lg:hidden"
       >
         <SlidersHorizontal className="h-4 w-4" />
-        Filters
+        {t("filters.title")}
         {activeCount > 0 && (
           <span className="rounded-full bg-foreground px-1.5 py-0.5 text-[10px] font-bold text-cream">
             {activeCount}
@@ -126,7 +168,6 @@ export function ProductFilters({ className }: { className?: string }) {
         )}
       </button>
 
-      {/* Mobile drawer */}
       {mobileOpen && (
         <>
           <div
@@ -136,11 +177,11 @@ export function ProductFilters({ className }: { className?: string }) {
           />
           <aside className="fixed inset-y-0 left-0 z-50 w-80 overflow-y-auto bg-background p-5 shadow-2xl lg:hidden">
             <div className="mb-4 flex items-center justify-between">
-              <h2 className="font-display font-semibold">Filters</h2>
+              <h2 className="font-display font-semibold">{t("filters.title")}</h2>
               <button
                 type="button"
                 onClick={() => setMobileOpen(false)}
-                aria-label="Close filters"
+                aria-label={t("a11y.closeFilters")}
                 className="rounded-full p-1.5 hover:bg-muted"
               >
                 <X className="h-4 w-4" />
@@ -151,7 +192,6 @@ export function ProductFilters({ className }: { className?: string }) {
         </>
       )}
 
-      {/* Desktop sidebar */}
       <aside className={cn("hidden lg:block", className)}>
         <FiltersContent />
       </aside>

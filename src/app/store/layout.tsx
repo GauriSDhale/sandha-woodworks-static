@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import { StoreProvider } from "@/components/store/providers/StoreProvider";
 import { CartDrawer } from "@/components/store/CartDrawer";
 import { StoreNav } from "@/components/store/StoreNav";
+import enStore from "@/locales/en/store.json";
 
 export const metadata: Metadata = {
   title: {
-    default: "Cabinet Store | Sandha Woodworks",
-    template: "%s | Sandha Woodworks Store",
+    default: enStore.meta.defaultTitle,
+    template: enStore.meta.titleTemplate,
   },
-  description:
-    "Browse premium custom millwork cabinets, bathroom vanities, closets, and more — crafted in Brantford, ON.",
+  description: enStore.meta.description,
 };
 
 export default function StoreLayout({

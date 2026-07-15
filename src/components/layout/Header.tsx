@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { ChevronDown, Menu, Search, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { navSectorLinks } from "@/lib/constants/sectors";
 import { navLinks, siteConfig } from "@/lib/constants/site";
 import { brandMedia } from "@/lib/constants/media";
@@ -11,8 +12,8 @@ import { HashLink } from "@/components/ui/HashLink";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { SiteSearch, useSiteSearchHotkey } from "@/components/layout/SiteSearch";
 import { getNavLabel, getSectorLabel } from "@/lib/i18n/nav";
-import { translations } from "@/lib/i18n/translations";
-import { useLang } from "@/lib/i18n/LanguageProvider";
+import enCommon from "@/locales/en/common.json";
+import frCommon from "@/locales/fr/common.json";
 import { cn } from "@/lib/utils";
 
 const navLinkBase =
@@ -29,8 +30,8 @@ function navLinkClasses(lightOnDark: boolean, active: boolean) {
 
 /** Keep CTA width stable across EN/FR so the quote button doesn't jump. */
 function StableCtaLabel({ label }: { label: string }) {
-  const en = translations.en.nav.requestQuote;
-  const fr = translations.fr.nav.requestQuote;
+  const en = enCommon.nav.requestQuote;
+  const fr = frCommon.nav.requestQuote;
   const wider = fr.length >= en.length ? fr : en;
 
   return (
@@ -45,7 +46,7 @@ function StableCtaLabel({ label }: { label: string }) {
 
 export function Header() {
   const pathname = usePathname();
-  const { t } = useLang();
+  const { t } = useTranslation("common");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileSectorsOpen, setMobileSectorsOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -85,10 +86,10 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 w-full border-b font-normal transition-[background-color,border-color,box-shadow,color] duration-300",
+        "fixed inset-x-0 top-0 z-50 w-full font-normal transition-[background-color,border-color,box-shadow,color] duration-300",
         lightOnDark
-          ? "border-transparent bg-transparent text-white shadow-none"
-          : "border-border/40 bg-white text-foreground shadow-sm",
+          ? "border-b-0 bg-gradient-to-b from-black/25 via-black/8 to-transparent text-white shadow-none"
+          : "border-b border-border/40 bg-white text-foreground shadow-sm",
       )}
     >
       <div className="flex h-16 w-full items-center justify-between gap-4 px-4 sm:h-[4.5rem] sm:px-5 lg:px-6">
@@ -129,7 +130,7 @@ export function Header() {
                             href="/sectors"
                             className="mt-1 block border-t border-border px-4 py-3 text-xs font-semibold uppercase tracking-[0.15em] text-brand"
                           >
-                            {t.nav.viewAllSectors}
+                            {t("nav.viewAllSectors")}
                           </Link>
                         </div>
                       </div>
@@ -160,7 +161,7 @@ export function Header() {
               href="/contact"
               className="inline-flex h-10 items-center justify-center rounded-full bg-foreground px-5 text-sm font-semibold text-cream transition-colors duration-300 hover:bg-warm-black"
             >
-              <StableCtaLabel label={t.nav.requestQuote} />
+              <StableCtaLabel label={t("nav.requestQuote")} />
             </Link>
           </div>
 
@@ -240,7 +241,7 @@ export function Header() {
                           )}
                           onClick={() => setMobileOpen(false)}
                         >
-                          {t.nav.allSectors}
+                          {t("nav.allSectors")}
                         </Link>
                         {navSectorLinks.map((sector) => (
                           <HashLink
@@ -287,7 +288,7 @@ export function Header() {
               className="mt-4 rounded-full bg-foreground px-5 py-3 text-center text-sm font-semibold text-cream transition-colors hover:bg-warm-black"
               onClick={() => setMobileOpen(false)}
             >
-              {t.nav.requestQuote}
+              {t("nav.requestQuote")}
             </Link>
           </nav>
         </div>

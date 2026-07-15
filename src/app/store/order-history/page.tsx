@@ -3,10 +3,12 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ClipboardList, ArrowRight, Package } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { useAppSelector } from "@/store/hooks";
 import { selectOrders } from "@/store/slices/ordersSlice";
 import { formatDate, formatPrice } from "@/store/utils/format";
 import { Breadcrumb } from "@/components/store/Breadcrumb";
+import { deliveryI18nKey } from "@/store/types/order";
 import { cn } from "@/lib/utils";
 
 const STATUS_STYLES: Record<string, string> = {
@@ -19,12 +21,13 @@ const STATUS_STYLES: Record<string, string> = {
 };
 
 export default function OrderHistoryPage() {
+  const { t } = useTranslation("store");
   const orders = useAppSelector(selectOrders);
 
   return (
     <div className="space-y-6">
-      <Breadcrumb items={[{ label: "Order History" }]} />
-      <h1 className="font-display text-3xl font-bold">Order History</h1>
+      <Breadcrumb items={[{ label: t("orders.historyTitle") }]} />
+      <h1 className="font-display text-3xl font-bold">{t("orders.historyTitle")}</h1>
 
       {orders.length === 0 ? (
         <motion.div
@@ -33,15 +36,15 @@ export default function OrderHistoryPage() {
           className="flex flex-col items-center justify-center gap-4 rounded-3xl border border-border bg-muted/20 py-24 text-center"
         >
           <ClipboardList className="h-16 w-16 text-muted-foreground/30" />
-          <p className="font-display text-xl font-semibold">No orders yet</p>
+          <p className="font-display text-xl font-semibold">{t("empty.ordersTitle")}</p>
           <p className="text-sm text-muted-foreground">
-            Your order history will appear here once you&apos;ve placed an order.
+            {t("empty.ordersHint")}
           </p>
           <Link
             href="/store"
             className="mt-2 inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 font-semibold text-cream transition hover:bg-warm-black"
           >
-            Browse Products
+            {t("cart.browseProducts")}
             <ArrowRight className="h-4 w-4" />
           </Link>
         </motion.div>
@@ -55,27 +58,25 @@ export default function OrderHistoryPage() {
               transition={{ delay: idx * 0.06 }}
               className="rounded-2xl border border-border bg-background p-5 space-y-4"
             >
-              {/* Header */}
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <div>
-                  <p className="text-xs text-muted-foreground">Order Number</p>
+                  <p className="text-xs text-muted-foreground">{t("orders.orderNumber")}</p>
                   <p className="font-display font-bold text-foreground">{order.orderNumber}</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-xs text-muted-foreground">Placed</p>
+                  <p className="text-xs text-muted-foreground">{t("orders.placed")}</p>
                   <p className="text-sm font-medium">{formatDate(order.createdAt)}</p>
                 </div>
                 <span
                   className={cn(
-                    "rounded-full px-3 py-1 text-xs font-semibold capitalize",
+                    "rounded-full px-3 py-1 text-xs font-semibold",
                     STATUS_STYLES[order.status] ?? STATUS_STYLES.pending,
                   )}
                 >
-                  {order.status}
+                  {t(`orders.status.${order.status}`)}
                 </span>
               </div>
 
-              {/* Items */}
               <div className="space-y-1.5">
                 {order.items.slice(0, 2).map((item) => (
                   <div key={item.productId} className="flex items-center gap-3 text-sm">
@@ -85,19 +86,22 @@ export default function OrderHistoryPage() {
                   </div>
                 ))}
                 {order.items.length > 2 && (
-                  <p className="text-xs text-muted-foreground pl-7">+{order.items.length - 2} more item(s)</p>
+                  <p className="text-xs text-muted-foreground pl-7">
+                    {t("orders.moreItems", { count: order.items.length - 2 })}
+                  </p>
                 )}
               </div>
 
-              {/* Footer */}
               <div className="flex items-center justify-between border-t border-border pt-3">
                 <div>
-                  <p className="text-xs text-muted-foreground">Total</p>
+                  <p className="text-xs text-muted-foreground">{t("orders.total")}</p>
                   <p className="font-display font-bold">{formatPrice(order.total)}</p>
                 </div>
                 <div className="flex gap-2">
                   <span className="text-xs text-muted-foreground self-center">
-                    via {order.deliveryMethod.label}
+                    {t("orders.viaDelivery", {
+                      method: t(deliveryI18nKey(order.deliveryMethod.id, "label")),
+                    })}
                   </span>
                 </div>
               </div>

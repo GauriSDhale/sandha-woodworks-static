@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import type { Category } from "@/store/types/product";
 import { ProductImage } from "./ProductImage";
 import { cn } from "@/lib/utils";
@@ -18,6 +19,10 @@ export function CategoryCard({
   productCount,
   className,
 }: CategoryCardProps) {
+  const { t } = useTranslation("store");
+  const label = t(`categories.${category.id}.label`);
+  const description = t(`categories.${category.id}.description`);
+
   return (
     <motion.div
       whileHover={{ y: -4 }}
@@ -29,31 +34,31 @@ export function CategoryCard({
           "group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition-shadow hover:shadow-lg",
           className,
         )}
-        aria-label={`Browse ${category.label}`}
+        aria-label={t("a11y.browseCategory", { label })}
       >
-        {/* Image */}
         <div className="relative aspect-[16/9] overflow-hidden bg-muted">
           <ProductImage
             src={category.image}
-            alt={category.label}
+            alt={label}
             fill
             className="group-hover:scale-105 transition-transform duration-500"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
           <div className="absolute inset-x-0 bottom-0 p-4">
             <h3 className="font-display text-lg font-semibold text-white">
-              {category.label}
+              {label}
             </h3>
             {productCount !== undefined && (
-              <p className="text-sm text-white/80">{productCount} products</p>
+              <p className="text-sm text-white/80">
+                {t("catalog.productCount", { count: productCount })}
+              </p>
             )}
           </div>
         </div>
 
-        {/* Footer */}
         <div className="flex items-center justify-between p-4">
           <p className="line-clamp-2 text-sm text-muted-foreground">
-            {category.description}
+            {description}
           </p>
           <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-1" />
         </div>

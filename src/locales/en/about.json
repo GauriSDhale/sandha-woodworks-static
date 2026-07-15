@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "title": "About Us",
+    "description": "Architectural millwork built on trust. Driven by quality. Learn about Sandha Woodworks."
+  },
+  "hero": {
+    "eyebrow": "About Sandha Woodworks",
+    "title": "Architectural millwork built on trust. Driven by quality."
+  },
+  "journey": {
+    "label": "Our Journey",
+    "title": "Timeline",
+    "description": "From a small custom shop founded in {{founded}} to a certified architectural millwork manufacturer serving projects across North America."
+  },
+  "timeline": {
+    "2014": {
+      "title": "Sandha Woodworks is founded",
+      "description": "The principal brought years of hands-on carpentry and site experience into a small custom millwork shop rooted in craftsmanship and integrity."
+    },
+    "2018": {
+      "title": "Expanded into full architectural millwork",
+      "description": "Expanded into full architectural millwork for commercial, institutional, and educational clients across Ontario."
+    },
+    "2022": {
+      "title": "Industry memberships",
+      "description": "Became a member of AWMAC (Architectural Woodwork Manufacturers Association of Canada), CKCA (Canadian Kitchen Cabinet Association), and WMCO (Wood Manufacturing Cluster of Ontario)."
+    },
+    "2023": {
+      "title": "ISO 9001 certification",
+      "description": "Achieved ISO 9001 certification, formalizing our quality management system across engineering, production, and installation."
+    },
+    "today": {
+      "year": "Today",
+      "title": "40,000 sq. ft. facility",
+      "description": "A 40,000 sq. ft. facility delivering engineered millwork for schools, universities, healthcare, retail, and commercial fit-outs across North America."
+    }
+  },
+  "story": {
+    "label": "Our Story",
+    "title": "A principal who came up through experience — and built a shop around it.",
+    "p1": "Sandha Woodworks was founded in {{founded}} by Chamkaur Sandha, who came to architectural millwork the long way — through years of hands-on carpentry, site installation, and shop floor experience. That background shaped a very specific belief: great millwork is engineered by people who understand how it gets built, delivered, and installed.",
+    "p2": "From a small custom shop, Sandha Woodworks has grown into a full-service architectural millwork manufacturer serving general contractors, architects, developers, and institutional clients across Canada and into the U.S. Our team, our processes, and our 40,000 sq. ft. facility are all built around one idea: deliver quality work, on time, without surprises.",
+    "videoTitle": "Sandha Woodworks — Factory Tour"
+  },
+  "certifications": {
+    "label": "Memberships & Certifications",
+    "title": "Accredited by the industry bodies that set the standard.",
+    "items": {
+      "awmac": {
+        "name": "AWMAC Member",
+        "description": "Architectural Woodwork Manufacturers Association of Canada."
+      },
+      "ckca": {
+        "name": "CKCA Member",
+        "description": "Canadian Kitchen Cabinet Association."
+      },
+      "wmco": {
+        "name": "WMCO Member",
+        "description": "Wood Manufacturing Cluster of Ontario."
+      },
+      "iso": {
+        "name": "ISO 9001 Certified",
+        "description": "Certified quality management system across the business."
+      }
+    }
+  },
+  "missionVision": {
+    "mission": {
+      "title": "Mission",
+      "description": "To deliver high-quality architectural millwork with precision, reliability, and accountability from concept to completion."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "To become one of Canada's most trusted and respected architectural millwork manufacturers."
+    },
+    "quality": {
+      "title": "Quality",
+      "description": "To uphold the highest standards of craftsmanship, material selection, and finish in every piece we create."
+    }
+  },
+  "values": {
+    "label": "Our Values",
+    "title": "The principles that guide every project.",
+    "items": {
+      "quality": {
+        "title": "Quality",
+        "description": "Uncompromising standards across engineering, production, and finish."
+      },
+      "trust": {
+        "title": "Trust",
+        "description": "Transparent communication and dependable execution on every project."
+      },
+      "precision": {
+        "title": "Precision",
+        "description": "Tight-tolerance millwork produced with CNC accuracy and craft."
+      },
+      "accountability": {
+        "title": "Accountability",
+        "description": "One team owning drawings, fabrication, delivery, and coordination."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Continual investment in processes, machinery, and materials."
+      },
+      "teamwork": {
+        "title": "Teamwork",
+        "description": "A skilled shop floor and office working as a single delivery team."
+      }
+    }
+  },
+  "facilityPhoto": {
+    "caption": "Inside the Sandha Woodworks Ontario millwork facility — 5-axis CNC router cutting white oak plywood"
+  },
+  "facility": {
+    "label": "Facility Overview",
+    "title": "{{sqFt}} sq. ft. of engineered manufacturing capacity.",
+    "features": [
+      "In-house engineering and shop drawings",
+      "Microvellum-based production workflow",
+      "Multi-axis CNC manufacturing",
+      "Dedicated finishing and paint booth",
+      "QA process aligned to AWMAC standards",
+      "Logistics, delivery, and install coordination"
+    ]
+  },
+  "whyChooseUs": {
+    "label": "Why Choose Us",
+    "title": "Single-source accountability from concept to installation.",
+    "items": {
+      "singlePoint": {
+        "title": "Single Point of Contact",
+        "description": "One project team owning your drawings, production, and site coordination."
+      },
+      "engineered": {
+        "title": "Engineered In-House",
+        "description": "Microvellum-driven engineering eliminates surprises in the shop."
+      },
+      "national": {
+        "title": "Delivered Nationally",
+        "description": "Coordinated logistics for phased rollouts across Canada."
+      },
+      "certified": {
+        "title": "Certified & Compliant",
+        "description": "AWMAC GIS, ISO 9001, WMCO, Controlled Goods Program."
+      }
+    }
+  },
+  "teamFloor": {
+    "label": "One team, one accountable floor",
+    "title": "The people who draw it, build it, finish it and install it.",
+    "imageAlt": "The Sandha Woodworks team"
+  },
+  "leadership": {
+    "label": "Meet Our Leadership Team",
+    "title": "The people behind every project.",
+    "description": "Our leadership team brings together decades of experience in millwork, design, and project delivery — guiding Sandha Woodworks in delivering exceptional results for every client.",
+    "members": {
+      "chamkaur-sandha": {
+        "title": "Founder – President",
+        "description": "From humble beginnings, Chamkaur founded the company with a clear vision and a strong belief in the value of hard work. Through dedication, hands-on experience, and perseverance, he built the company step by step into a trusted and respected business rooted in integrity, craftsmanship, and quality."
+      },
+      "gurpreet-singh": {
+        "title": "Project Manager",
+        "description": "Gurpreet completed his studies in Business Administration before gaining hands-on experience in the carpentry field. He supports project management through planning, coordination, and communication to ensure projects are delivered efficiently."
+      },
+      "muhamed-mahmutovic": {
+        "title": "Director of Business Development",
+        "description": "Muhamed brings over 10 years of experience in project and site management, with a strong background in project execution, contract management, and strategic growth. He focuses on identifying opportunities and supporting successful project delivery."
+      },
+      "jayant-makkar": {
+        "title": "Project Engineer",
+        "description": "Jayant specializes in architectural design and millwork engineering. With a background in architecture and kitchen and bath design, he translates complex concepts into efficient, buildable millwork solutions."
+      },
+      "trevor-guyatt": {
+        "title": "Senior Estimator",
+        "description": "With over 17 years in the millwork industry — starting on the shop floor after graduating from Conestoga College — Trevor prepares accurate project estimates by carefully reviewing drawings, scope, and production requirements."
+      },
+      "manjinder-singh": {
+        "title": "Production Manager",
+        "description": "Manjinder oversees daily production operations to ensure projects are completed efficiently and on schedule. He manages workflow, scheduling, and team coordination while maintaining high standards of quality and craftsmanship."
+      },
+      "jugraj-singh": {
+        "title": "Supply Chain",
+        "description": "With hands-on experience in supply chain operations, Jugraj manages procurement and material coordination — working closely with vendors and internal teams to keep a reliable flow of materials and support smooth project execution."
+      }
+    }
+  },
+  "cta": {
+    "eyebrow": "Ready when you are",
+    "title": "Ready to bring your next commercial project to life?",
+    "primaryLabel": "Request a Quote",
+    "secondaryLabel": "See Projects"
+  }
+}

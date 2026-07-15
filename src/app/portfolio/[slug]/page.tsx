@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { portfolioProjects } from "@/lib/constants/projects";
+import enPortfolio from "@/locales/en/portfolio.json";
 import { ProjectDetailContent } from "./ProjectDetailContent";
 
 export function generateStaticParams() {
@@ -15,9 +16,10 @@ export async function generateMetadata({
   const { slug } = await params;
   const project = portfolioProjects.find((p) => p.slug === slug);
   if (!project) return { title: "Project Not Found" };
+  const copy = enPortfolio.projects[slug as keyof typeof enPortfolio.projects];
   return {
     title: project.name,
-    description: project.scope,
+    description: copy?.scope,
   };
 }
 
@@ -32,9 +34,11 @@ export default async function ProjectDetailPage({
   if (!project) {
     return (
       <div className="flex min-h-[60vh] flex-col items-center justify-center px-6">
-        <h1 className="font-display text-4xl font-semibold">Project not found</h1>
+        <h1 className="font-display text-4xl font-semibold">
+          {enPortfolio.detail.notFoundTitle}
+        </h1>
         <Link href="/portfolio" className="mt-6 text-brand hover:underline">
-          ← Back to Portfolio
+          {enPortfolio.detail.notFoundBack}
         </Link>
       </div>
     );

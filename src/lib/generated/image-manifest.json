@@ -1,0 +1,292 @@
+{
+  "/assets/about/about-hero.jpg": {
+    "width": 1584,
+    "height": 672,
+    "srcSet": "/assets/about/about-hero.w640.webp 640w, /assets/about/about-hero.w1280.webp 1280w"
+  },
+  "/assets/portfolio/coffee-island-toronto/IMG_2890.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/portfolio/coffee-island-toronto/IMG_2890.w640.webp 640w, /assets/portfolio/coffee-island-toronto/IMG_2890.w1280.webp 1280w"
+  },
+  "/assets/portfolio/coffee-island-toronto/IMG_2896.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/portfolio/coffee-island-toronto/IMG_2896.w640.webp 640w, /assets/portfolio/coffee-island-toronto/IMG_2896.w1280.webp 1280w"
+  },
+  "/assets/portfolio/coffee-island-toronto/IMG_2899.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/portfolio/coffee-island-toronto/IMG_2899.w640.webp 640w, /assets/portfolio/coffee-island-toronto/IMG_2899.w1280.webp 1280w"
+  },
+  "/assets/portfolio/coffee-island-toronto/IMG_2900.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/portfolio/coffee-island-toronto/IMG_2900.w640.webp 640w, /assets/portfolio/coffee-island-toronto/IMG_2900.w1280.webp 1280w"
+  },
+  "/assets/portfolio/coffee-island-toronto/IMG_2904.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/portfolio/coffee-island-toronto/IMG_2904.w640.webp 640w, /assets/portfolio/coffee-island-toronto/IMG_2904.w1280.webp 1280w"
+  },
+  "/assets/portfolio/coffee-island-toronto/IMG_2907.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/portfolio/coffee-island-toronto/IMG_2907.w640.webp 640w, /assets/portfolio/coffee-island-toronto/IMG_2907.w1280.webp 1280w"
+  },
+  "/assets/portfolio/coffee-island-toronto/IMG_2909.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/portfolio/coffee-island-toronto/IMG_2909.w640.webp 640w, /assets/portfolio/coffee-island-toronto/IMG_2909.w1280.webp 1280w"
+  },
+  "/assets/portfolio/coffee-island-toronto/IMG_2910.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/portfolio/coffee-island-toronto/IMG_2910.w640.webp 640w, /assets/portfolio/coffee-island-toronto/IMG_2910.w1280.webp 1280w"
+  },
+  "/assets/portfolio/coffee-island-toronto/IMG_2913.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/portfolio/coffee-island-toronto/IMG_2913.w640.webp 640w, /assets/portfolio/coffee-island-toronto/IMG_2913.w1280.webp 1280w"
+  },
+  "/assets/portfolio/coffee-island.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/portfolio/coffee-island.w640.webp 640w, /assets/portfolio/coffee-island.w1280.webp 1280w"
+  },
+  "/assets/portfolio/mercato-mississauga/mercato-11.jpg": {
+    "width": 1920,
+    "height": 1280,
+    "srcSet": "/assets/portfolio/mercato-mississauga/mercato-11.w640.webp 640w, /assets/portfolio/mercato-mississauga/mercato-11.w1280.webp 1280w, /assets/portfolio/mercato-mississauga/mercato-11.w1920.webp 1920w"
+  },
+  "/assets/portfolio/mercato-mississauga/mercato-12.jpg": {
+    "width": 1920,
+    "height": 1280,
+    "srcSet": "/assets/portfolio/mercato-mississauga/mercato-12.w640.webp 640w, /assets/portfolio/mercato-mississauga/mercato-12.w1280.webp 1280w, /assets/portfolio/mercato-mississauga/mercato-12.w1920.webp 1920w"
+  },
+  "/assets/portfolio/mercato-mississauga/mercato-7.jpg": {
+    "width": 1920,
+    "height": 1280,
+    "srcSet": "/assets/portfolio/mercato-mississauga/mercato-7.w640.webp 640w, /assets/portfolio/mercato-mississauga/mercato-7.w1280.webp 1280w, /assets/portfolio/mercato-mississauga/mercato-7.w1920.webp 1920w"
+  },
+  "/assets/portfolio/portfolio-bg.jpg": {
+    "width": 1920,
+    "height": 1440,
+    "srcSet": "/assets/portfolio/portfolio-bg.w640.webp 640w, /assets/portfolio/portfolio-bg.w1280.webp 1280w, /assets/portfolio/portfolio-bg.w1920.webp 1920w"
+  },
+  "/assets/portfolio/scooped-by-demetres/IMG_2820.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "srcSet": "/assets/portfolio/scooped-by-demetres/IMG_2820.w640.webp 640w, /assets/portfolio/scooped-by-demetres/IMG_2820.w1280.webp 1280w, /assets/portfolio/scooped-by-demetres/IMG_2820.w1920.webp 1920w"
+  },
+  "/assets/portfolio/scooped-by-demetres/IMG_2824.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "srcSet": "/assets/portfolio/scooped-by-demetres/IMG_2824.w640.webp 640w, /assets/portfolio/scooped-by-demetres/IMG_2824.w1280.webp 1280w, /assets/portfolio/scooped-by-demetres/IMG_2824.w1920.webp 1920w"
+  },
+  "/assets/portfolio/scooped-by-demetres/IMG_2825.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "srcSet": "/assets/portfolio/scooped-by-demetres/IMG_2825.w640.webp 640w, /assets/portfolio/scooped-by-demetres/IMG_2825.w1280.webp 1280w, /assets/portfolio/scooped-by-demetres/IMG_2825.w1920.webp 1920w"
+  },
+  "/assets/portfolio/scooped-by-demetres/IMG_2828.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "srcSet": "/assets/portfolio/scooped-by-demetres/IMG_2828.w640.webp 640w, /assets/portfolio/scooped-by-demetres/IMG_2828.w1280.webp 1280w, /assets/portfolio/scooped-by-demetres/IMG_2828.w1920.webp 1920w"
+  },
+  "/assets/portfolio/scooped-by-demetres/IMG_2832.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "srcSet": "/assets/portfolio/scooped-by-demetres/IMG_2832.w640.webp 640w, /assets/portfolio/scooped-by-demetres/IMG_2832.w1280.webp 1280w, /assets/portfolio/scooped-by-demetres/IMG_2832.w1920.webp 1920w"
+  },
+  "/assets/portfolio/scooped-by-demetres/IMG_2835.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "srcSet": "/assets/portfolio/scooped-by-demetres/IMG_2835.w640.webp 640w, /assets/portfolio/scooped-by-demetres/IMG_2835.w1280.webp 1280w, /assets/portfolio/scooped-by-demetres/IMG_2835.w1920.webp 1920w"
+  },
+  "/assets/portfolio/scooped-by-demetres/IMG_2837.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "srcSet": "/assets/portfolio/scooped-by-demetres/IMG_2837.w640.webp 640w, /assets/portfolio/scooped-by-demetres/IMG_2837.w1280.webp 1280w, /assets/portfolio/scooped-by-demetres/IMG_2837.w1920.webp 1920w"
+  },
+  "/assets/portfolio/scooped.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "srcSet": "/assets/portfolio/scooped.w640.webp 640w, /assets/portfolio/scooped.w1280.webp 1280w, /assets/portfolio/scooped.w1920.webp 1920w"
+  },
+  "/assets/portfolio/tiffany-hill-primary-school/th-11.jpg": {
+    "width": 1920,
+    "height": 1286,
+    "srcSet": "/assets/portfolio/tiffany-hill-primary-school/th-11.w640.webp 640w, /assets/portfolio/tiffany-hill-primary-school/th-11.w1280.webp 1280w, /assets/portfolio/tiffany-hill-primary-school/th-11.w1920.webp 1920w"
+  },
+  "/assets/portfolio/tiffany-hill-primary-school/th-3.jpg": {
+    "width": 1920,
+    "height": 1185,
+    "srcSet": "/assets/portfolio/tiffany-hill-primary-school/th-3.w640.webp 640w, /assets/portfolio/tiffany-hill-primary-school/th-3.w1280.webp 1280w, /assets/portfolio/tiffany-hill-primary-school/th-3.w1920.webp 1920w"
+  },
+  "/assets/portfolio/tiffany-hill-primary-school/th-4.jpg": {
+    "width": 1920,
+    "height": 1559,
+    "srcSet": "/assets/portfolio/tiffany-hill-primary-school/th-4.w640.webp 640w, /assets/portfolio/tiffany-hill-primary-school/th-4.w1280.webp 1280w, /assets/portfolio/tiffany-hill-primary-school/th-4.w1920.webp 1920w"
+  },
+  "/assets/portfolio/tiffany-hill-primary-school/th-5.jpg": {
+    "width": 1920,
+    "height": 1376,
+    "srcSet": "/assets/portfolio/tiffany-hill-primary-school/th-5.w640.webp 640w, /assets/portfolio/tiffany-hill-primary-school/th-5.w1280.webp 1280w, /assets/portfolio/tiffany-hill-primary-school/th-5.w1920.webp 1920w"
+  },
+  "/assets/portfolio/tiffany-hill-primary-school/th-6.jpg": {
+    "width": 1920,
+    "height": 1277,
+    "srcSet": "/assets/portfolio/tiffany-hill-primary-school/th-6.w640.webp 640w, /assets/portfolio/tiffany-hill-primary-school/th-6.w1280.webp 1280w, /assets/portfolio/tiffany-hill-primary-school/th-6.w1920.webp 1920w"
+  },
+  "/assets/portfolio/tiffany-hill-primary-school/th-9.jpg": {
+    "width": 1920,
+    "height": 1325,
+    "srcSet": "/assets/portfolio/tiffany-hill-primary-school/th-9.w640.webp 640w, /assets/portfolio/tiffany-hill-primary-school/th-9.w1280.webp 1280w, /assets/portfolio/tiffany-hill-primary-school/th-9.w1920.webp 1920w"
+  },
+  "/assets/portfolio/tiffany-hill.jpg": {
+    "width": 1920,
+    "height": 1559,
+    "srcSet": "/assets/portfolio/tiffany-hill.w640.webp 640w, /assets/portfolio/tiffany-hill.w1280.webp 1280w, /assets/portfolio/tiffany-hill.w1920.webp 1920w"
+  },
+  "/assets/portfolio/tobin-high-school/tobin-1_2.jpg": {
+    "width": 1920,
+    "height": 1442,
+    "srcSet": "/assets/portfolio/tobin-high-school/tobin-1_2.w640.webp 640w, /assets/portfolio/tobin-high-school/tobin-1_2.w1280.webp 1280w, /assets/portfolio/tobin-high-school/tobin-1_2.w1920.webp 1920w"
+  },
+  "/assets/portfolio/tobin-high-school/tobin-2.jpg": {
+    "width": 1828,
+    "height": 1920,
+    "srcSet": "/assets/portfolio/tobin-high-school/tobin-2.w640.webp 640w, /assets/portfolio/tobin-high-school/tobin-2.w1280.webp 1280w"
+  },
+  "/assets/portfolio/tobin-high-school/tobin-3_2.jpg": {
+    "width": 1920,
+    "height": 1277,
+    "srcSet": "/assets/portfolio/tobin-high-school/tobin-3_2.w640.webp 640w, /assets/portfolio/tobin-high-school/tobin-3_2.w1280.webp 1280w, /assets/portfolio/tobin-high-school/tobin-3_2.w1920.webp 1920w"
+  },
+  "/assets/portfolio/tobin-high-school/tobin-4_2.jpg": {
+    "width": 1920,
+    "height": 1679,
+    "srcSet": "/assets/portfolio/tobin-high-school/tobin-4_2.w640.webp 640w, /assets/portfolio/tobin-high-school/tobin-4_2.w1280.webp 1280w, /assets/portfolio/tobin-high-school/tobin-4_2.w1920.webp 1920w"
+  },
+  "/assets/portfolio/tobin-high-school/tobin-7.jpg": {
+    "width": 1920,
+    "height": 1606,
+    "srcSet": "/assets/portfolio/tobin-high-school/tobin-7.w640.webp 640w, /assets/portfolio/tobin-high-school/tobin-7.w1280.webp 1280w, /assets/portfolio/tobin-high-school/tobin-7.w1920.webp 1920w"
+  },
+  "/assets/portfolio/tobin-high-school/tobin-9_2.jpg": {
+    "width": 1920,
+    "height": 1441,
+    "srcSet": "/assets/portfolio/tobin-high-school/tobin-9_2.w640.webp 640w, /assets/portfolio/tobin-high-school/tobin-9_2.w1280.webp 1280w, /assets/portfolio/tobin-high-school/tobin-9_2.w1920.webp 1920w"
+  },
+  "/assets/portfolio/tobin-high.jpg": {
+    "width": 1920,
+    "height": 1441,
+    "srcSet": "/assets/portfolio/tobin-high.w640.webp 640w, /assets/portfolio/tobin-high.w1280.webp 1280w, /assets/portfolio/tobin-high.w1920.webp 1920w"
+  },
+  "/assets/subsectors/apartments/1.jpg": {
+    "width": 1920,
+    "height": 1442,
+    "srcSet": "/assets/subsectors/apartments/1.w640.webp 640w, /assets/subsectors/apartments/1.w1280.webp 1280w, /assets/subsectors/apartments/1.w1920.webp 1920w"
+  },
+  "/assets/subsectors/apartments/2.jpg": {
+    "width": 1828,
+    "height": 1920,
+    "srcSet": "/assets/subsectors/apartments/2.w640.webp 640w, /assets/subsectors/apartments/2.w1280.webp 1280w"
+  },
+  "/assets/subsectors/apartments/3.jpg": {
+    "width": 1920,
+    "height": 1277,
+    "srcSet": "/assets/subsectors/apartments/3.w640.webp 640w, /assets/subsectors/apartments/3.w1280.webp 1280w, /assets/subsectors/apartments/3.w1920.webp 1920w"
+  },
+  "/assets/subsectors/apartments/4.jpg": {
+    "width": 1920,
+    "height": 1679,
+    "srcSet": "/assets/subsectors/apartments/4.w640.webp 640w, /assets/subsectors/apartments/4.w1280.webp 1280w, /assets/subsectors/apartments/4.w1920.webp 1920w"
+  },
+  "/assets/subsectors/apartments/7.jpg": {
+    "width": 1920,
+    "height": 1606,
+    "srcSet": "/assets/subsectors/apartments/7.w640.webp 640w, /assets/subsectors/apartments/7.w1280.webp 1280w, /assets/subsectors/apartments/7.w1920.webp 1920w"
+  },
+  "/assets/subsectors/apartments/9.jpg": {
+    "width": 1920,
+    "height": 1441,
+    "srcSet": "/assets/subsectors/apartments/9.w640.webp 640w, /assets/subsectors/apartments/9.w1280.webp 1280w, /assets/subsectors/apartments/9.w1920.webp 1920w"
+  },
+  "/assets/subsectors/cafes/1.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/subsectors/cafes/1.w640.webp 640w, /assets/subsectors/cafes/1.w1280.webp 1280w"
+  },
+  "/assets/subsectors/cafes/2.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/subsectors/cafes/2.w640.webp 640w, /assets/subsectors/cafes/2.w1280.webp 1280w"
+  },
+  "/assets/subsectors/cafes/3.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/subsectors/cafes/3.w640.webp 640w, /assets/subsectors/cafes/3.w1280.webp 1280w"
+  },
+  "/assets/subsectors/cafes/4.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/subsectors/cafes/4.w640.webp 640w, /assets/subsectors/cafes/4.w1280.webp 1280w"
+  },
+  "/assets/subsectors/cafes/5.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/subsectors/cafes/5.w640.webp 640w, /assets/subsectors/cafes/5.w1280.webp 1280w"
+  },
+  "/assets/subsectors/cafes/6.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/subsectors/cafes/6.w640.webp 640w, /assets/subsectors/cafes/6.w1280.webp 1280w"
+  },
+  "/assets/subsectors/cafes/7.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/subsectors/cafes/7.w640.webp 640w, /assets/subsectors/cafes/7.w1280.webp 1280w"
+  },
+  "/assets/subsectors/cafes/8.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/subsectors/cafes/8.w640.webp 640w, /assets/subsectors/cafes/8.w1280.webp 1280w"
+  },
+  "/assets/subsectors/restaurants/1.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/subsectors/restaurants/1.w640.webp 640w, /assets/subsectors/restaurants/1.w1280.webp 1280w"
+  },
+  "/assets/subsectors/restaurants/2.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/subsectors/restaurants/2.w640.webp 640w, /assets/subsectors/restaurants/2.w1280.webp 1280w"
+  },
+  "/assets/subsectors/restaurants/3.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/subsectors/restaurants/3.w640.webp 640w, /assets/subsectors/restaurants/3.w1280.webp 1280w"
+  },
+  "/assets/subsectors/restaurants/4.jpg": {
+    "width": 1824,
+    "height": 1368,
+    "srcSet": "/assets/subsectors/restaurants/4.w640.webp 640w, /assets/subsectors/restaurants/4.w1280.webp 1280w"
+  },
+  "/assets/subsectors/restaurants/5.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "srcSet": "/assets/subsectors/restaurants/5.w640.webp 640w, /assets/subsectors/restaurants/5.w1280.webp 1280w, /assets/subsectors/restaurants/5.w1920.webp 1920w"
+  },
+  "/assets/subsectors/restaurants/6.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "srcSet": "/assets/subsectors/restaurants/6.w640.webp 640w, /assets/subsectors/restaurants/6.w1280.webp 1280w, /assets/subsectors/restaurants/6.w1920.webp 1920w"
+  },
+  "/assets/subsectors/restaurants/7.jpg": {
+    "width": 2400,
+    "height": 1800,
+    "srcSet": "/assets/subsectors/restaurants/7.w640.webp 640w, /assets/subsectors/restaurants/7.w1280.webp 1280w, /assets/subsectors/restaurants/7.w1920.webp 1920w"
+  }
+}

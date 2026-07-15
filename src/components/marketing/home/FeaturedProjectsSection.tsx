@@ -8,8 +8,9 @@ import { projectGalleries, projectMedia } from "@/lib/constants/media";
 import { featuredProjects } from "@/lib/constants/projects";
 import { useInView } from "@/lib/hooks/useInView";
 import { useReducedMotion } from "@/lib/hooks/useReducedMotion";
-import { useLang } from "@/lib/i18n/LanguageProvider";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
+import { SiteImage } from "@/components/ui/SiteImage";
 
 type ProjectCategory = "Institutional" | "Retail";
 
@@ -18,10 +19,16 @@ function projectImage(slug: string, imageKey: keyof typeof projectMedia) {
 }
 
 export function FeaturedProjectsSection() {
-  const { t } = useLang();
+  const { t } = useTranslation("home");
   const reducedMotion = useReducedMotion();
   const [sectionRef, inView] = useInView<HTMLElement>({ threshold: 0.12, triggerOnce: true });
-  const p = t.home.projects;
+  const p = t("projects", { returnObjects: true }) as {
+    eyebrow: string;
+    title: string;
+    viewProject: string;
+    viewAll: string;
+    categories: Record<ProjectCategory, string>;
+  };
 
   return (
     <section
@@ -64,9 +71,10 @@ export function FeaturedProjectsSection() {
                 className="group flex flex-col overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
               >
                 <div className="relative aspect-[16/10] overflow-hidden bg-muted">
-                  <img
+                  <SiteImage
                     src={projectImage(project.slug, project.imageKey)}
                     alt={project.name}
+                    sizes="(min-width: 768px) 50vw, 100vw"
                     className={cn(
                       "h-full w-full object-cover",
                       !reducedMotion &&

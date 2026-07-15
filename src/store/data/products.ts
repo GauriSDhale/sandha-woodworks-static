@@ -652,7 +652,7 @@ export const products: Product[] = [
     rating: 4.5,
     reviews: 33,
     description:
-      "A freestanding wardrobe cabinet that combines hanging space above with generous deep-drawer storage below. The solid maple construction ensures decades of use, while the natural finish complements any bedroom dÃ©cor.",
+      "A freestanding wardrobe cabinet that combines hanging space above with generous deep-drawer storage below. The solid maple construction ensures decades of use, while the natural finish complements any bedroom décor.",
     dimensions: { width: 48, height: 78, depth: 22, unit: "in" },
     material: "Solid Maple",
     finish: "Natural",
@@ -1097,7 +1097,7 @@ export const products: Product[] = [
     rating: 4.6,
     reviews: 73,
     description:
-      "A full-round lazy susan corner cabinet that spins 360Â° for effortless access to every item stored inside. The bi-fold doors open smoothly and the robust rotating tray system is rated for 40 lbs per shelf.",
+      "A full-round lazy susan corner cabinet that spins 360° for effortless access to every item stored inside. The bi-fold doors open smoothly and the robust rotating tray system is rated for 40 lbs per shelf.",
     dimensions: { width: 33, height: 34.5, depth: 24, unit: "in" },
     material: "Plywood",
     finish: "Painted White",
@@ -1110,7 +1110,7 @@ export const products: Product[] = [
       "/images/products/download-2.jpg",
     ],
     specifications: {
-      "Rotation": "Full 360Â°",
+      "Rotation": "Full 360°",
       "Shelf Load": "40 lbs each",
       "Door Style": "Bi-fold (Shaker)",
       "Shelves": "2 rotating",

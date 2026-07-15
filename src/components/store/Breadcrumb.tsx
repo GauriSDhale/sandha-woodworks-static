@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ChevronRight, Home } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 
 interface BreadcrumbItem {
@@ -15,14 +16,15 @@ interface BreadcrumbProps {
 }
 
 export function Breadcrumb({ items, className }: BreadcrumbProps) {
+  const { t } = useTranslation("store");
   const allItems: BreadcrumbItem[] = [
-    { label: "Home", href: "/" },
-    { label: "Store", href: "/store" },
+    { label: t("nav.home"), href: "/" },
+    { label: t("nav.store"), href: "/store" },
     ...items,
   ];
 
   return (
-    <nav aria-label="Breadcrumb" className={cn("", className)}>
+    <nav aria-label={t("a11y.breadcrumb")} className={cn("", className)}>
       <ol className="flex flex-wrap items-center gap-1 text-sm text-muted-foreground">
         {allItems.map((item, idx) => {
           const isLast = idx === allItems.length - 1;
@@ -37,7 +39,7 @@ export function Breadcrumb({ items, className }: BreadcrumbProps) {
                   className="hover:text-foreground transition-colors"
                 >
                   {idx === 0 ? (
-                    <Home className="h-3.5 w-3.5" aria-label="Home" />
+                    <Home className="h-3.5 w-3.5" aria-label={t("a11y.home")} />
                   ) : (
                     item.label
                   )}
@@ -55,7 +57,6 @@ export function Breadcrumb({ items, className }: BreadcrumbProps) {
         })}
       </ol>
 
-      {/* Structured data for SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

@@ -12,7 +12,7 @@ import {
 } from "@/lib/constants/partners";
 import { useInView } from "@/lib/hooks/useInView";
 import { useReducedMotion } from "@/lib/hooks/useReducedMotion";
-import { useLang } from "@/lib/i18n/LanguageProvider";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 
 const categoryLabelKeys: Record<
@@ -26,10 +26,14 @@ const categoryLabelKeys: Record<
 };
 
 export function TrustedPartnersSection() {
-  const { t } = useLang();
+  const { t } = useTranslation("home");
   const reducedMotion = useReducedMotion();
   const [sectionRef, inView] = useInView<HTMLElement>({ threshold: 0.12 });
-  const categories = t.home.trustedPartners.categories;
+  const categories = t("trustedPartners.categories", { returnObjects: true }) as Record<
+    "retail" | "restaurants" | "financial" | "education",
+    string
+  >;
+  const proof = t("trustedPartners.proof", { returnObjects: true }) as string[];
 
   return (
     <section
@@ -45,7 +49,7 @@ export function TrustedPartnersSection() {
             inView || reducedMotion ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0",
           )}
         >
-          <Eyebrow variant="brand">{t.home.trustedPartners.eyebrow}</Eyebrow>
+          <Eyebrow variant="brand">{t("trustedPartners.eyebrow")}</Eyebrow>
           <DisplayHeading
             id="trusted-partners-heading"
             as="h2"
@@ -53,13 +57,13 @@ export function TrustedPartnersSection() {
             tone="dark"
             className="mt-3 tracking-tight"
           >
-            {t.home.trustedPartners.title}
+            {t("trustedPartners.title")}
           </DisplayHeading>
           <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-            {t.home.trustedPartners.description}
+            {t("trustedPartners.description")}
           </p>
           <ul className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
-            {t.home.trustedPartners.proof.map((item) => (
+            {proof.map((item) => (
               <li
                 key={item}
                 className="flex items-center gap-2 text-xs font-semibold tracking-wide text-muted-foreground"
@@ -75,10 +79,9 @@ export function TrustedPartnersSection() {
       <div className="mt-10 space-y-12 sm:mt-12 sm:space-y-14">
         {partnerCategories.map((category, index) => {
           const label = categories[categoryLabelKeys[category.id]];
-          const countLabel = t.home.trustedPartners.partnerCount.replace(
-            "{count}",
-            String(category.logos.length),
-          );
+          const countLabel = t("trustedPartners.partnerCount", {
+            count: category.logos.length,
+          });
 
           return (
             <div
@@ -125,7 +128,7 @@ export function TrustedPartnersSection() {
 
       <div className="container-full mt-12 sm:mt-14">
         <p className="mx-auto max-w-2xl text-center text-xs leading-relaxed text-muted-foreground">
-          {t.home.trustedPartners.disclaimer}
+          {t("trustedPartners.disclaimer")}
         </p>
       </div>
     </section>

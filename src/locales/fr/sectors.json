@@ -1,0 +1,418 @@
+{
+  "meta": {
+    "title": "Secteurs",
+    "description": "Ébénisterie conçue pour chaque marché commercial — huit marchés principaux, un seul fabricant responsable."
+  },
+  "hero": {
+    "eyebrow": "Marchés desservis",
+    "title": "Ébénisterie conçue pour chaque marché commercial.",
+    "description": "Huit marchés principaux. Un seul fabricant responsable. Chaque ensemble conçu selon les codes, les exigences de nettoyabilité et le cycle de vie de son industrie — et livré selon l'échéancier de cette industrie."
+  },
+  "vs": {
+    "label": "Marchés vs services",
+    "whoTitle": "Qui nous servons",
+    "whoBody": "Cette page détaille chaque marché que nous desservons — santé, éducation, commercial, hôtellerie, commerce de détail, résidentiel, public et spécialisé. Chacun avec ses propres codes, normes et modèle de livraison.",
+    "whoCta": "Explorer tous les marchés",
+    "whatTitle": "Ce que nous faisons",
+    "whatBodyBefore": "Pour un aperçu de nos capacités — préconstruction, ingénierie, fabrication, finition, GP, logistique, installation et garantie — consultez la",
+    "whatBodyLink": "page Services",
+    "whatBodyAfter": ".",
+    "whatCta": "Voir tous les services",
+    "approvalsLabel": "Approuvés pour"
+  },
+  "approvals": [
+    "Entrepreneurs généraux et gestionnaires de construction",
+    "Promoteurs et groupes propriétaires multirésidentiels",
+    "Architectes et designers d'intérieur",
+    "Approvisionnement en santé, conseils scolaires et municipalités"
+  ],
+  "grid": {
+    "explore": "Explorer →",
+    "subSectors": "{{count}} sous-secteurs"
+  },
+  "indexCta": {
+    "eyebrow": "Un partenaire d'ébénisterie. Tous les marchés.",
+    "title": "Envoyez-nous vos dessins. Nous vous retournerons un devis détaillé en un jour ouvrable.",
+    "secondary": "Voir les projets par marché"
+  },
+  "market": {
+    "back": "Marchés desservis",
+    "capabilityCount": "{{count}} énoncés de capacité uniques ci-dessous ↓",
+    "aboutTitle": "À propos de ce marché",
+    "overviewLabel": "Aperçu",
+    "subSectorsLabel": "Énoncés de capacité par sous-secteur",
+    "subSectorsTitle": "Une capacité unique par sous-secteur {{market}}.",
+    "subSectorsBody": "Chaque énoncé de capacité est conçu spécifiquement pour son industrie — avec sa propre portée, bibliothèque de produits, normes, approche d'installation et photographie. Rien n'est partagé entre les sous-secteurs.",
+    "explorePortfolio": "Explorer le portefeuille {{name}}",
+    "relatedLabel": "Pages de secteurs détaillées",
+    "relatedTitle": "Lire les pages de secteurs approfondies dans {{market}}.",
+    "readSector": "Lire la page du secteur",
+    "otherLabel": "Autres marchés",
+    "otherTitle": "Explorez d'autres marchés que nous desservons.",
+    "explore": "Explorer",
+    "cta": {
+      "eyebrow": "Prêts à chiffrer un ensemble?",
+      "title": "Vous avez des dessins pour un ensemble {{market}}?",
+      "description": "Envoyez-nous le jeu de plans et le calendrier de finition — nous vous retournerons un devis détaillé en un jour ouvrable.",
+      "primary": "Demander un devis",
+      "secondary": "Voir les projets"
+    }
+  },
+  "carousel": {
+    "label": "Galerie de projets",
+    "title": "Travaux issus de nos projets {{market}}.",
+    "body": "Projets de portefeuille sélectionnés de ce marché — ouvrez toute diapositive pour l'étude de cas complète et la galerie.",
+    "emptyBody": "Aucun projet {{market}} en vedette dans le portefeuille pour le moment. Parcourez le portefeuille complet pour des travaux d'ébénisterie connexes.",
+    "emptyExpanding": "Nous élargissons la galerie {{market}} en vedette. Entre-temps, explorez les réalisations dans tous les marchés du portefeuille.",
+    "viewProject": "Voir le projet",
+    "viewPortfolio": "Voir le portefeuille",
+    "prev": "Afficher le projet précédent",
+    "next": "Afficher le projet suivant",
+    "showSlide": "Afficher {{name}}"
+  },
+  "detail": {
+    "back": "Tous les secteurs",
+    "aboutTitle": "À propos de ce secteur",
+    "standardsLabel": "Normes et conformité",
+    "featuresTitle": "Ce que nous construisons",
+    "whyLabel": "Pourquoi choisir Sandha",
+    "whyTitle": "Les raisons pour lesquelles les EG, architectes et propriétaires nous attribuent l'ensemble.",
+    "servicesLabel": "Services appliqués",
+    "servicesTitle": "Capacités connexes pour ce secteur.",
+    "readArticle": "Lire l'article",
+    "ctaEyebrow": "Prêts à chiffrer un ensemble?",
+    "requestQuote": "Demander un devis",
+    "seeProjects": "Voir les projets",
+    "otherLabel": "Autres secteurs",
+    "otherTitle": "Explorez d'autres secteurs que nous desservons.",
+    "explore": "Explorer"
+  },
+  "markets": {
+    "healthcare": {
+      "label": "Marché",
+      "title": "Santé",
+      "description": "Ébénisterie de grade hospitalier pour chaque environnement clinique, de soins et de mieux-être."
+    },
+    "education": {
+      "label": "Marché",
+      "title": "Éducation",
+      "description": "Ébénisterie pour le primaire-secondaire, le postsecondaire et l'apprentissage tout au long de la vie, conçue pour un cycle de vie de 20 ans et plus."
+    },
+    "commercial": {
+      "label": "Marché",
+      "title": "Commercial et milieu de travail",
+      "description": "Aménagements corporatifs, civiques et financiers — de la réception à la salle de conseil."
+    },
+    "hospitality": {
+      "label": "Marché",
+      "title": "Hôtellerie et restauration",
+      "description": "Hôtels, restaurants, QSR et lieux de divertissement — ébénisterie FOH et BOH clé en main."
+    },
+    "retail": {
+      "label": "Marché",
+      "title": "Commerce de détail et consommation",
+      "description": "Accessoires et aménagements de magasins conformes à la marque pour déploiements nationaux et multi-sites."
+    },
+    "residential": {
+      "label": "Marché",
+      "title": "Résidentiel",
+      "description": "Condo en hauteur, locatif et locatif à vocation — halls, étages d'agrément et chaque unité."
+    },
+    "public": {
+      "label": "Marché",
+      "title": "Public et communautaire",
+      "description": "Centres communautaires, bibliothèques, musées et édifices religieux — ébénisterie de grade civique."
+    },
+    "specialty": {
+      "label": "Marché",
+      "title": "Projets spécialisés",
+      "description": "Ébénisterie architecturale sur mesure, industrielle, transport et réalisations uniques."
+    }
+  },
+  "marketDetails": {
+    "healthcare": {
+      "overview": "Des hôpitaux de soins aigus aux soins de longue durée et aux communautés de mieux-être pour aînés, nous livrons une ébénisterie prête pour le contrôle des infections, conçue selon les codes, la nettoyabilité et les exigences de cycle de vie du secteur de la santé.",
+      "overviewBullets": [
+        "Fabrication et installation sensibilisées IPAC / ICRA pour les environnements patients en activité.",
+        "Finitions résistantes à la désinfection, testées contre la chimie hospitalière.",
+        "Portée pour l'ensemble de l'établissement : bois public, HPL clinique, surface solide et inox BOH."
+      ],
+      "subSectors": {
+        "hospitals": {
+          "name": "Hôpitaux",
+          "description": "Ébénisterie de soins aigus conçue pour le contrôle des infections, le nettoyage chimique et l'installation sur site en activité. Livrée sur des sites hospitaliers actifs en Ontario et dans le nord-est des États-Unis."
+        },
+        "medical-clinics": {
+          "name": "Cliniques médicales",
+          "description": "Ébénisterie pour cliniques sans rendez-vous, équipes de santé familiale, dentaires et spécialisées — propre, chaleureuse, nettoyable. Équipes de santé familiale, cabinets privés et groupes dentaires multi-emplacements."
+        },
+        "laboratories": {
+          "name": "Laboratoires",
+          "description": "Mobilier de laboratoire résistant aux produits chimiques, postes de travail et aménagements de recherche pour laboratoires humides, secs et analytiques. Aménagements wet-lab, dry-lab et analytiques pour clients hospitaliers, universitaires et de recherche privée."
+        },
+        "long-term-care": {
+          "name": "Soins de longue durée",
+          "description": "Ébénisterie à l'échelle du résident — finitions chaleureuses, accessoires accessibles et durabilité pour le nettoyage quotidien. Réaménagements SLD du ministère de la Santé et nouvelles constructions d'exploitants privés en Ontario."
+        },
+        "senior-living": {
+          "name": "Résidences pour aînés",
+          "description": "Ébénisterie pour vie autonome et communautés de retraite premium — chaleur résidentielle, savoir-faire hôtelier. Chaînes de retraite de marque et communautés premium d'exploitants indépendants."
+        },
+        "retirement-communities": {
+          "name": "Communautés de retraite",
+          "description": "Ensembles d'ébénisterie pour campus multi-bâtiments de communautés de retraite. Campus de retraite planifiés à l'échelle du Canada."
+        },
+        "assisted-living": {
+          "name": "Vie assistée",
+          "description": "Ébénisterie pour vie assistée — accessible, chaleureuse et discrètement clinique. Résidences de vie assistée et communautés de soins continus."
+        }
+      }
+    },
+    "education": {
+      "overview": "Approuvés sur les listes de fournisseurs des conseils scolaires et collèges de l'Ontario — nous livrons l'ébénisterie pour salles de classe, laboratoires, bibliothèques et espaces d'apprentissage, calée sur la fenêtre de construction estivale.",
+      "overviewBullets": [
+        "Approuvés fournisseurs auprès des conseils scolaires et du postsecondaire.",
+        "Livraison phasée en fenêtre estivale et installation en espaces de bascule.",
+        "Quincaillerie Grade 1, chants résistants aux impacts, finitions nettoyables."
+      ],
+      "subSectors": {
+        "schools": {
+          "name": "Écoles",
+          "description": "Mobilier K-12 conçu pour un cycle de vie de 20 ans en salle de classe et une fenêtre estivale de 8 semaines. Conseils scolaires publics de l'Ontario et projets K-12 au Massachusetts."
+        },
+        "colleges": {
+          "name": "Collèges",
+          "description": "Ébénisterie pour l'apprentissage appliqué — ateliers de métiers, cuisines pédagogiques, simulation en santé et salles de classe. Travaux récents au Niagara College (Marotta Family Innovation Complex)."
+        },
+        "universities": {
+          "name": "Universités",
+          "description": "Ébénisterie universitaire de grade recherche — laboratoires, bibliothèques, studios et aménagements administratifs. Travaux récents à la University of Toronto Robarts Library Study Commons."
+        },
+        "libraries": {
+          "name": "Bibliothèques",
+          "description": "Ébénisterie pour bibliothèques publiques, universitaires et spécialisées — circulation, rayonnages, étude, heure du conte. Travaux récents à Valley Park Library, Hamilton et U of T Robarts Library."
+        },
+        "daycares": {
+          "name": "Garderies",
+          "description": "Ébénisterie sécuritaire pour enfants — fermeture douce, quincaillerie captive, finitions nettoyables. Exploitants de garderies agréées municipales et indépendantes."
+        },
+        "learning-centres": {
+          "name": "Centres d'apprentissage",
+          "description": "Ébénisterie pour tutorat, après-école et centres d'enrichissement — flexible, conforme à la marque, sécuritaire pour les enfants. Franchises de centres d'apprentissage multi-emplacements."
+        },
+        "training-facilities": {
+          "name": "Installations de formation",
+          "description": "Ébénisterie pour formation corporative et métiers — salles de classe, laboratoires de simulation et ateliers pratiques. Installations de formation corporatives, syndicales et gouvernementales."
+        }
+      }
+    },
+    "commercial": {
+      "overview": "Ensembles pour sièges sociaux, améliorations locatives et milieux de travail institutionnels — murs d'accent, salles de conseil, suites exécutives et comptoirs de service civiques, coordonnés avec le designer, l'AV et les intégrateurs de sécurité.",
+      "overviewBullets": [
+        "Assistance à la conception du schéma jusqu'aux documents de construction.",
+        "Installation en locataire occupé / hors heures pour les étages occupés.",
+        "Coordination AV, TI et intégrateurs de sécurité sur les dessins d'atelier."
+      ],
+      "subSectors": {
+        "corporate-offices": {
+          "name": "Bureaux corporatifs",
+          "description": "Ébénisterie pour sièges sociaux, tours et améliorations locatives — réception, salle de conseil, suites exécutives. Sièges sociaux, aménagements de tours et projets d'améliorations locatives multi-locataires."
+        },
+        "commercial-interiors": {
+          "name": "Intérieurs commerciaux",
+          "description": "Ébénisterie TI multi-locataires et milieu de travail pour immeubles commerciaux du centre-ville et de banlieue."
+        },
+        "financial-institutions": {
+          "name": "Institutions financières",
+          "description": "Succursales bancaires, caisses populaires et suites de banque privée — norme de marque, sécurisées, répétables."
+        },
+        "government-offices": {
+          "name": "Bureaux gouvernementaux",
+          "description": "Aménagements de bureaux municipaux, provinciaux et fédéraux — longue durée, axés sur la conformité."
+        },
+        "civic-buildings": {
+          "name": "Édifices civiques",
+          "description": "Hôtels de ville, centres de services et ébénisterie de landmarks civiques — durabilité de 30 ans pour l'espace public."
+        },
+        "professional-offices": {
+          "name": "Bureaux professionnels",
+          "description": "Ébénisterie pour cabinets d'avocats, comptables et consultants — raffinée, discrète, orientée client."
+        }
+      }
+    },
+    "hospitality": {
+      "overview": "Ensembles pour l'ensemble de la propriété, du hall aux arrière-cuisines — murs en placage séquencé, mobilier de chambres, bars, banquettes, plafonds d'accent et stations de service, livrés selon les normes PIP de l'hôtellerie.",
+      "overviewBullets": [
+        "Finition AWMAC Premium sur le placage face au public.",
+        "Un seul GP : ébénisterie + inox + comptoirs de service + banquettes.",
+        "Prototype-à-déploiement rapide pour les chaînes multi-emplacements."
+      ],
+      "subSectors": {
+        "hotels": {
+          "name": "Hôtels",
+          "description": "Ébénisterie pour l'hôtel entier — hall, chambres, F&B et BOH sous un seul GP. Ensembles pour chaînes hôtelières internationales et hôtels boutique."
+        },
+        "resorts": {
+          "name": "Stations et resorts",
+          "description": "Ébénisterie pour resorts de destination — savoir-faire hôtelier avec détails extérieurs classés pour le climat. Projets de resorts de ski, lac et bord de mer."
+        },
+        "restaurants": {
+          "name": "Restaurants",
+          "description": "Ébénisterie pour restaurants à service complet — bars, banquettes, hôtes, plafonds d'accent, préparation BOH. Travaux récents : Mercato Mississauga, Scooped by Demetres, Coffee Island Toronto."
+        },
+        "quick-service-restaurants": {
+          "name": "Restaurants à service rapide (QSR)",
+          "description": "Ensembles d'accessoires QSR selon la norme de marque — comptoirs avant, menus numériques, kitting BOH. Déploiements de chaînes QSR nationales."
+        },
+        "cafes": {
+          "name": "Cafés",
+          "description": "Ébénisterie pour bars espresso et cafés spécialisés — vitrines de pâtisserie, bars à café, merchandising de détail."
+        },
+        "bars": {
+          "name": "Bars",
+          "description": "Ébénisterie pour bars à cocktails, sports-bars et lounges d'hôtel — le centre de gravité de la salle."
+        },
+        "entertainment-venues": {
+          "name": "Lieux de divertissement",
+          "description": "Ébénisterie pour halls de théâtre, cinémas, salles de concert et arcades — durable, dramatique, axée sur la marque."
+        }
+      }
+    },
+    "retail": {
+      "overview": "Des magasins phares aux déploiements nationaux — systèmes muraux, cash wraps, mobilier d'exposition et accessoires spécialisés reproduits magasin après magasin selon le PIP de la marque, palettisés et codés QR par emplacement.",
+      "overviewBullets": [
+        "Atelier CNC et finition dimensionnés pour la répétabilité d'accessoires identiques.",
+        "Prototype-à-déploiement avec fiches de tolérance et manifeste.",
+        "Logistique transfrontalière (CUSMA) vers les emplacements aux É.-U."
+      ],
+      "subSectors": {
+        "retail-stores": {
+          "name": "Magasins de détail",
+          "description": "Ébénisterie pour magasins phares et déploiements nationaux — cash wraps, systèmes muraux, expositions d'accent. Travaux récents : Scooped by Demetres, AM Hair & Beauty."
+        },
+        "shopping-centres": {
+          "name": "Centres commerciaux",
+          "description": "Ébénisterie pour aires communes de centres, services aux visiteurs et aires de restauration. Programmes d'aires communes pour centres fermés et lifestyle centres."
+        },
+        "luxury-retail": {
+          "name": "Commerce de luxe",
+          "description": "Mobilier pour montres, bijoux et biens de luxe — savoir-faire de grade musée."
+        },
+        "showrooms": {
+          "name": "Salles d'exposition",
+          "description": "Ébénisterie pour salles d'exposition auto, électroménagers et articles pour la maison — axée sur l'exposition, orientée marque."
+        },
+        "pharmacies": {
+          "name": "Pharmacies",
+          "description": "Ébénisterie pour pharmacies de détail — distribution, consultation, vente avant-magasin."
+        },
+        "grocery": {
+          "name": "Épicerie",
+          "description": "Ébénisterie pour épiceries à format complet et spécialisées — comptoirs de service, arrière-boutique, murs d'accent de marque."
+        },
+        "convenience-stores": {
+          "name": "Dépanneurs",
+          "description": "Ensembles d'accessoires pour dépanneurs — comptoirs avant, bars à café, entourages de réfrigérateurs, kiosques de cour avant carburant."
+        }
+      }
+    },
+    "residential": {
+      "overview": "Ébénisterie pour l'ensemble du bâtiment multirésidentiel — halls du rez-de-chaussée, étages d'agrément et chaque cuisine, vanité et garde-robe en unité. Un seul fabricant responsable, des espaces publics au penthouse.",
+      "overviewBullets": [
+        "Agréments publics + corridors + chaque unité sous un seul fournisseur.",
+        "Portails d'améliorations pour acheteurs — quartz, armoires et garde-robes.",
+        "Fabrication au volume d'unités selon les calendriers de livraison du promoteur."
+      ],
+      "subSectors": {
+        "multi-residential": {
+          "name": "Multirésidentiel",
+          "description": "Ébénisterie en hauteur — halls, étages d'agrément et chaque unité sous un seul fabricant."
+        },
+        "apartments": {
+          "name": "Appartements",
+          "description": "Ébénisterie pour locatif à vocation — portée en-suite répétée au nombre d'unités."
+        },
+        "condominiums": {
+          "name": "Condominiums",
+          "description": "Ébénisterie pour tours de condo — agréments publics et chaque cuisine, vanité et garde-robe en unité."
+        },
+        "student-housing": {
+          "name": "Résidences étudiantes",
+          "description": "Ébénisterie pour hébergement étudiant à vocation — en-suite et agréments partagés."
+        },
+        "luxury-residential-common-areas": {
+          "name": "Aires communes résidentielles de luxe",
+          "description": "Ébénisterie pour halls de tours ultra-luxe, étages d'agrément et salons résidents."
+        }
+      }
+    },
+    "public": {
+      "overview": "Ébénisterie durable pour landmarks civiques et communautaires — centres récréatifs, YMCA, bibliothèques, musées, centres culturels et lieux de culte, livrée sous conformité d'approvisionnement municipal.",
+      "overviewBullets": [
+        "Construction classée humide pour environnements aquatiques et vestiaires.",
+        "Prêt pour appels d'offres MERX / municipaux avec contrats CCDC et cautionnement.",
+        "Intégration sensible au patrimoine pour les édifices emblématiques."
+      ],
+      "subSectors": {
+        "community-centres": {
+          "name": "Centres communautaires",
+          "description": "Ébénisterie pour centres communautaires multigénérationnels — réception, salles de programmes, espaces humides."
+        },
+        "ymca": {
+          "name": "YMCA",
+          "description": "Ébénisterie pour installations YMCA et famille Y — comptoirs d'accueil, salles de programmes, espaces humides."
+        },
+        "recreation-centres": {
+          "name": "Centres de loisirs",
+          "description": "Ébénisterie pour loisirs municipaux — arénas, centres de conditionnement, complexes aquatiques."
+        },
+        "public-libraries": {
+          "name": "Bibliothèques",
+          "description": "Ébénisterie pour bibliothèques de succursale et centrales — circulation, programmation communautaire, maker-spaces."
+        },
+        "museums": {
+          "name": "Musées",
+          "description": "Ébénisterie de grade musée — mobilier d'exposition, entreposage d'artefacts, réception et café."
+        },
+        "cultural-centres": {
+          "name": "Centres culturels",
+          "description": "Ébénisterie pour centres culturels communautaires, arts et multifaith."
+        },
+        "religious-buildings": {
+          "name": "Édifices religieux",
+          "description": "Ébénisterie pour églises, mosquées, temples et synagogues — sanctuaire, rassemblement, détail cérémoniel."
+        }
+      }
+    },
+    "specialty": {
+      "overview": "Pour les projets qui ne rentrent dans aucune catégorie — ébénisterie architecturale sur mesure, usines de fabrication, pôles de transport, concessions d'aéroport et fabrication spécialisée.",
+      "overviewBullets": [
+        "Spécification intensives : stratifié résistant aux produits chimiques, dessus phénoliques, inox.",
+        "Installation en fenêtres d'arrêt coordonnées autour de la production.",
+        "Admissible CGP pour les travaux fédéraux à portée sécurisée."
+      ],
+      "subSectors": {
+        "custom-architectural-millwork": {
+          "name": "Ébénisterie architecturale sur mesure",
+          "description": "Détail architectural sur mesure — murs d'accent, plafonds, escaliers, portée unique."
+        },
+        "manufacturing-facilities": {
+          "name": "Installations de fabrication",
+          "description": "Ébénisterie pour fabrication industrielle — façades de bureaux, salles de pause, laboratoires AQ, salles de formation."
+        },
+        "airports": {
+          "name": "Aéroports",
+          "description": "Ébénisterie pour concessions aéroportuaires, agents de porte et terminaux — durabilité 24/7 sous trafic public."
+        },
+        "transit": {
+          "name": "Transport en commun",
+          "description": "Ébénisterie pour pôles, stations et terminaux de transport — durabilité de grade transport public."
+        },
+        "special-projects": {
+          "name": "Projets spéciaux",
+          "description": "Ébénisterie unique — tout ce qui ne rentre dans aucune catégorie."
+        }
+      }
+    }
+  }
+}
