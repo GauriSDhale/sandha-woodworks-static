@@ -88,7 +88,7 @@ export function Header() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 w-full border-b font-normal transition-[background-color,border-color,box-shadow,color] duration-300",
         lightOnDark
-          ? "border-transparent bg-transparent text-white shadow-none"
+          ? "border-transparent bg-gradient-to-b from-black/55 via-black/25 to-transparent text-white shadow-none"
           : "border-border/40 bg-white text-foreground shadow-sm",
       )}
     >

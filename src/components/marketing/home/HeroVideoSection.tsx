@@ -19,7 +19,8 @@ export function HeroVideoSection() {
       </div>
 
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_35%,rgba(0,0,0,0.35)_100%)]" />
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-[8vh] bg-gradient-to-b from-black/40 to-transparent" />
+      {/* Stronger top scrim so white nav stays readable over light sky frames */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[28vh] bg-gradient-to-b from-black/75 via-black/35 to-transparent" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[18vh] bg-gradient-to-t from-black/50 to-transparent" />
     </section>
   );
