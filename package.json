@@ -7,7 +7,8 @@
     "build": "npm run i18n:check && next build",
     "start": "next start",
     "lint": "eslint",
-    "i18n:check": "node scripts/i18n-parity.mjs"
+    "i18n:check": "node scripts/i18n-parity.mjs",
+    "images:optimize": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -34,6 +35,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
+    "sharp": "^0.35.3",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

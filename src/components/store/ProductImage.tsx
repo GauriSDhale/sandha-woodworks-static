@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Package } from "lucide-react";
+import { SiteImage } from "@/components/ui/SiteImage";
 
 interface ProductImageProps {
   src: string;
@@ -16,7 +17,7 @@ export function ProductImage({
   src,
   alt,
   className,
-  priority: _priority,
+  priority = false,
   fill,
 }: ProductImageProps) {
   const [errored, setErrored] = useState(false);
@@ -38,10 +39,11 @@ export function ProductImage({
   }
 
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
+    <SiteImage
       src={src}
       alt={alt}
+      priority={priority}
+      sizes={fill ? "(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" : "100vw"}
       onError={() => setErrored(true)}
       className={cn(
         "object-cover transition-transform duration-500",

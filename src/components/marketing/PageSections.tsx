@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { pageMedia } from "@/lib/constants/media";
 import { cn } from "@/lib/utils";
+import { SiteImage } from "@/components/ui/SiteImage";
 
 interface PageHeroProps {
   eyebrow?: string;
@@ -20,7 +21,13 @@ export function PageHero({
 }: PageHeroProps) {
   return (
     <section className="relative flex min-h-[55vh] items-end overflow-hidden pt-24">
-      <img src={image} alt="" className="absolute inset-0 h-full w-full object-cover" />
+      <SiteImage
+        src={image}
+        alt=""
+        priority
+        sizes="100vw"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
       <div
         className={cn(
           "absolute inset-0",

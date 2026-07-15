@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useForm, useWatch, type Resolver } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useTranslation } from "react-i18next";
@@ -133,15 +133,23 @@ export function CareersApplicationForm() {
     return zodResolver(schema) as Resolver<CareersFormValues>;
   }, [t, i18nInstance.language]);
 
+  // Keep the latest locale-aware resolver so language switches revalidate with new copy.
+  const resolverRef = useRef(resolver);
+  resolverRef.current = resolver;
+  const stableResolver = useRef<Resolver<CareersFormValues>>((values, context, options) =>
+    resolverRef.current(values, context, options),
+  ).current;
+
   const {
     register,
     handleSubmit,
     control,
     setValue,
     reset,
+    trigger,
     formState: { errors, isSubmitting },
   } = useForm<CareersFormValues>({
-    resolver,
+    resolver: stableResolver,
     mode: "onBlur",
     defaultValues: {
       fullName: "",
@@ -159,6 +167,14 @@ export function CareersApplicationForm() {
       coverNote: "",
     },
   });
+
+  // Re-run validation for fields that already show errors so messages match EN/FR.
+  useEffect(() => {
+    const names = Object.keys(errors) as (keyof CareersFormValues)[];
+    if (names.length === 0) return;
+    void trigger(names);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- only refresh existing errors on language change
+  }, [i18nInstance.language, trigger]);
 
   const selectedResume = useWatch({ control, name: "resume" }) as FileList | undefined;
   const selectedDocs = useWatch({ control, name: "supportingDocuments" }) as

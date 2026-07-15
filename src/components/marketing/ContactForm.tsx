@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useForm, useWatch, type Resolver } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useTranslation } from "react-i18next";
@@ -135,8 +135,19 @@ export function ContactForm() {
     return zodResolver(schema) as unknown as Resolver<ContactFormValues>;
   }, [t, i18nInstance.language]);
 
-  const contactResolver: Resolver<ContactFormValues> = (values, context, options) =>
-    (values.formType === "inquiry" ? inquiryResolver : quoteResolver)(values, context, options);
+  // Keep resolvers in refs so react-hook-form always validates with the active language.
+  const quoteResolverRef = useRef(quoteResolver);
+  const inquiryResolverRef = useRef(inquiryResolver);
+  quoteResolverRef.current = quoteResolver;
+  inquiryResolverRef.current = inquiryResolver;
+
+  const contactResolver = useRef<Resolver<ContactFormValues>>((values, context, options) =>
+    (values.formType === "inquiry" ? inquiryResolverRef.current : quoteResolverRef.current)(
+      values,
+      context,
+      options,
+    ),
+  ).current;
 
   const {
     register,
@@ -145,6 +156,7 @@ export function ContactForm() {
     setValue,
     reset,
     clearErrors,
+    trigger,
     formState: { errors, isSubmitting },
   } = useForm<ContactFormValues>({
     resolver: contactResolver,
@@ -154,7 +166,7 @@ export function ContactForm() {
       fullName: "",
       company: "",
       email: "",
-      country: "IN",
+      country: "CA",
       phone: "",
       projectName: "",
       projectLocation: "",
@@ -164,6 +176,14 @@ export function ContactForm() {
       message: "",
     },
   });
+
+  // Re-run validation for fields that already show errors so messages match EN/FR.
+  useEffect(() => {
+    const names = Object.keys(errors) as (keyof ContactFormValues)[];
+    if (names.length === 0) return;
+    void trigger(names);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- only refresh existing errors on language change
+  }, [i18nInstance.language, trigger]);
 
   const formType = useWatch({ control, name: "formType" });
   const selectedFiles = useWatch({ control, name: "files" }) as FileList | undefined;
@@ -371,7 +391,7 @@ export function ContactForm() {
                     aria-label={t("form.fields.countryDial")}
                     {...register("country")}
                     className="w-24 shrink-0 rounded-xl border border-border bg-white px-2 py-3 text-sm outline-none focus:border-black"
-                    defaultValue="IN"
+                    defaultValue="CA"
                   >
                     {countryCodes.map((c) => (
                       <option

@@ -86,10 +86,10 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 w-full border-b font-normal transition-[background-color,border-color,box-shadow,color] duration-300",
+        "fixed inset-x-0 top-0 z-50 w-full font-normal transition-[background-color,border-color,box-shadow,color] duration-300",
         lightOnDark
-          ? "border-transparent bg-transparent text-white shadow-none"
-          : "border-border/40 bg-white text-foreground shadow-sm",
+          ? "border-b-0 bg-gradient-to-b from-black/25 via-black/8 to-transparent text-white shadow-none"
+          : "border-b border-border/40 bg-white text-foreground shadow-sm",
       )}
     >
       <div className="flex h-16 w-full items-center justify-between gap-4 px-4 sm:h-[4.5rem] sm:px-5 lg:px-6">

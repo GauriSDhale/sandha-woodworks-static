@@ -9,6 +9,7 @@ import { useInView } from "@/lib/hooks/useInView";
 import { useReducedMotion } from "@/lib/hooks/useReducedMotion";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
+import { SiteImage } from "@/components/ui/SiteImage";
 
 const statKeys = ["facility", "clients", "services", "sectors"] as const;
 
@@ -155,9 +156,10 @@ export function WhyChooseUsSection() {
                   aria-hidden={index !== activeIndex}
                   tabIndex={index === activeIndex ? 0 : -1}
                 >
-                  <img
+                  <SiteImage
                     src={slide.cover}
                     alt={slide.name}
+                    sizes="(min-width: 1280px) 1280px, 100vw"
                     className="h-full w-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />

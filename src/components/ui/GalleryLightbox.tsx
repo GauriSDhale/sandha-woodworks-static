@@ -2,6 +2,7 @@
 
 import { useEffect, useCallback } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { SiteImage } from "@/components/ui/SiteImage";
 
 interface GalleryLightboxProps {
   images: { src: string; alt: string }[];
@@ -76,9 +77,11 @@ export function GalleryLightbox({ images, currentIndex, onClose, onPrev, onNext 
         className="flex h-full w-full items-center justify-center p-4"
         onClick={(e) => e.stopPropagation()}
       >
-        <img
+        <SiteImage
           src={current.src}
           alt={current.alt}
+          priority
+          sizes="100vw"
           className="max-h-full max-w-full object-contain"
         />
       </div>
