@@ -154,7 +154,7 @@ export function ContactForm() {
       fullName: "",
       company: "",
       email: "",
-      country: "IN",
+      country: "CA",
       phone: "",
       projectName: "",
       projectLocation: "",
@@ -371,7 +371,7 @@ export function ContactForm() {
                     aria-label={t("form.fields.countryDial")}
                     {...register("country")}
                     className="w-24 shrink-0 rounded-xl border border-border bg-white px-2 py-3 text-sm outline-none focus:border-black"
-                    defaultValue="IN"
+                    defaultValue="CA"
                   >
                     {countryCodes.map((c) => (
                       <option
