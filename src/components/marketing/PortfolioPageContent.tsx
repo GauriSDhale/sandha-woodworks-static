@@ -10,6 +10,7 @@ import {
   type PortfolioProject,
 } from "@/lib/constants/projects";
 import { projectGalleries } from "@/lib/constants/media";
+import { SiteImage } from "@/components/ui/SiteImage";
 
 function ProjectRow({
   project,
@@ -77,9 +78,10 @@ function ProjectRow({
         >
           <div className="relative aspect-[16/9] overflow-hidden bg-warm-black">
             {gallery ? (
-              <img
+              <SiteImage
                 src={gallery.cover}
                 alt={project.name}
+                sizes="(min-width: 768px) 80vw, 100vw"
                 className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
               />
             ) : null}

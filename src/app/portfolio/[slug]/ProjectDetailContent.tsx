@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import type { PortfolioProject } from "@/lib/constants/projects";
 import { projectGalleries } from "@/lib/constants/media";
 import { GalleryLightbox } from "@/components/ui/GalleryLightbox";
+import { SiteImage } from "@/components/ui/SiteImage";
 
 interface Props {
   project: PortfolioProject;
@@ -38,9 +39,11 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
     <>
       <section className="relative flex min-h-[60vh] items-end overflow-hidden pt-24">
         {images.length > 0 ? (
-          <img
+          <SiteImage
             src={images[0].src}
             alt={project.name}
+            priority
+            sizes="100vw"
             className="absolute inset-0 h-full w-full object-cover"
           />
         ) : null}
@@ -85,9 +88,10 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
                     className="group overflow-hidden rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
                   >
                     <div className="aspect-[4/3] overflow-hidden bg-muted">
-                      <img
+                      <SiteImage
                         src={src}
                         alt={t("detail.galleryAlt", { name: project.name, index: i + 1 })}
+                        sizes="(min-width: 1024px) 22vw, (min-width: 640px) 33vw, 100vw"
                         className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                       />
                     </div>
@@ -163,11 +167,11 @@ export function ProjectDetailContent({ project, prevProject, nextProject }: Prop
                   className="group overflow-hidden rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
                 >
                   <div className="aspect-[4/3] overflow-hidden bg-muted">
-                    <img
+                    <SiteImage
                       src={src}
                       alt={t("detail.galleryAlt", { name: project.name, index: i + 1 })}
+                      sizes="(min-width: 640px) 50vw, 100vw"
                       className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                      loading={i < 4 ? "eager" : "lazy"}
                     />
                   </div>
                 </button>
