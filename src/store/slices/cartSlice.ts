@@ -21,7 +21,6 @@ const cartSlice = createSlice({
       } else {
         state.items.push(action.payload);
       }
-      state.isDrawerOpen = true;
     },
     removeFromCart(state, action: PayloadAction<string>) {
       state.items = state.items.filter((i) => i.productId !== action.payload);

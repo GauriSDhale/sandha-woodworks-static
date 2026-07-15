@@ -4,10 +4,11 @@ import Link from "next/link";
 import { useState } from "react";
 import { ShoppingCart, Eye } from "lucide-react";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 import type { Product } from "@/store/types/product";
-import { useAppDispatch } from "@/store/hooks";
-import { addToCart } from "@/store/slices/cartSlice";
+import { useAppDispatch, useAppSelector } from "@/store/hooks";
+import { addToCart, selectCartItems } from "@/store/slices/cartSlice";
 import { Rating } from "./Rating";
 import { PriceTag } from "./PriceTag";
 import { WishlistButton } from "./WishlistButton";
@@ -22,10 +23,21 @@ interface ProductCardProps {
 
 export function ProductCard({ product, onQuickView, priority }: ProductCardProps) {
   const dispatch = useAppDispatch();
+  const router = useRouter();
+  const cartItems = useAppSelector(selectCartItems);
   const [adding, setAdding] = useState(false);
 
-  const handleAddToCart = (e: React.MouseEvent) => {
+  const inCart = cartItems.some((item) => item.productId === product.id);
+
+  const handleAddToCart = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
+    e.stopPropagation();
+
+    if (inCart) {
+      router.push("/store/cart");
+      return;
+    }
+
     setAdding(true);
     dispatch(
       addToCart({
@@ -134,16 +146,18 @@ export function ProductCard({ product, onQuickView, priority }: ProductCardProps
             type="button"
             onClick={handleAddToCart}
             whileTap={{ scale: 0.93 }}
-            aria-label="Add to cart"
+            aria-label={inCart ? "Go to cart" : "Add to cart"}
             className={cn(
               "inline-flex items-center gap-1.5 rounded-full px-3.5 py-2 text-xs font-semibold transition-all",
-              adding
-                ? "bg-emerald-600 text-white"
-                : "bg-foreground text-cream hover:bg-warm-black",
+              inCart
+                ? "bg-foreground text-cream hover:bg-warm-black"
+                : adding
+                  ? "bg-emerald-600 text-white"
+                  : "bg-foreground text-cream hover:bg-warm-black",
             )}
           >
             <ShoppingCart className="h-3.5 w-3.5" />
-            {adding ? "Added!" : "Add to Cart"}
+            {inCart ? "Go to Cart" : adding ? "Added!" : "Add to Cart"}
           </motion.button>
         </div>
       </div>

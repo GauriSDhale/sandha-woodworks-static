@@ -50,7 +50,10 @@ export default function StorePage() {
     setPage(1);
   }, [filters]);
 
-  const filtered = useMemo(() => applyFilters(products, filters), [filters]);
+  const filtered = useMemo(
+    () => applyFilters(products, { ...filters, category: null }),
+    [filters],
+  );
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
   const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
   const topCategories = useMemo(() => getTopLevelCategories(), []);

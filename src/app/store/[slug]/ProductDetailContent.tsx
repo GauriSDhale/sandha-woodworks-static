@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { ShoppingCart, Share2, Truck, Shield, RefreshCw } from "lucide-react";
 import { motion } from "framer-motion";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
-import { addToCart, openDrawer } from "@/store/slices/cartSlice";
+import { addToCart, selectCartItems } from "@/store/slices/cartSlice";
 import { addRecentlyViewed, selectRecentlyViewedIds } from "@/store/slices/productsSlice";
 import { getProductBySlug, getRelatedProducts, products } from "@/store/data/products";
 import { ProductGallery } from "@/components/store/ProductGallery";
@@ -43,12 +44,24 @@ export function ProductDetailContent({ slug }: { slug: string }) {
     );
   }
 
+  const cartItems = useAppSelector(selectCartItems);
+  const router = useRouter();
+  const inCart = cartItems.some((item) => item.productId === product.id);
+
   const related = getRelatedProducts(product, 4);
   const recentlyViewed = products
     .filter((p) => recentlyViewedIds.includes(p.id) && p.id !== product.id)
     .slice(0, 4);
 
-  const handleAddToCart = () => {
+  const handleAddToCart = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (inCart) {
+      router.push("/store/cart");
+      return;
+    }
+
     dispatch(
       addToCart({
         productId: product.id,
@@ -60,7 +73,6 @@ export function ProductDetailContent({ slug }: { slug: string }) {
         category: product.category,
       }),
     );
-    dispatch(openDrawer());
   };
 
   const handleBuyNow = () => {
@@ -154,7 +166,7 @@ export function ProductDetailContent({ slug }: { slug: string }) {
             <div className="flex flex-col gap-2 sm:flex-row">
               <button type="button" onClick={handleAddToCart}
                 className="flex flex-1 items-center justify-center gap-2 rounded-full bg-foreground py-3 font-semibold text-cream transition hover:bg-warm-black">
-                <ShoppingCart className="h-4 w-4" />Add to Cart
+                <ShoppingCart className="h-4 w-4" />{inCart ? "Go to Cart" : "Add to Cart"}
               </button>
               <button type="button" onClick={handleBuyNow}
                 className="flex flex-1 items-center justify-center gap-2 rounded-full border-2 border-foreground py-3 font-semibold text-foreground transition hover:bg-foreground hover:text-cream">
