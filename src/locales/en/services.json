@@ -1,0 +1,347 @@
+{
+  "meta": {
+    "title": "Services",
+    "description": "Every millwork capability under one roof — pre-construction through warranty and aftercare."
+  },
+  "hero": {
+    "eyebrow": "Services & Capabilities · What we do",
+    "title": "Every millwork capability, under one roof.",
+    "description": "Pre-construction, engineering, manufacturing, finishing, project management, logistics, installation and warranty. One accountable Canadian manufacturer."
+  },
+  "vs": {
+    "label": "Services vs. Sectors",
+    "whatTitle": "What we do",
+    "whatBody": "Every millwork capability we offer — from pre-construction engineering and manufacturing to finishing, project management, logistics, installation, and warranty.",
+    "whatCta": "View all services",
+    "whereTitle": "Where we do it",
+    "whereBodyBefore": "For the industries and building types we serve — healthcare, education, hospitality, retail, multi-residential, government and more — see the",
+    "whereBodyLink": "Sectors page",
+    "whereBodyAfter": ".",
+    "whereCta": "Explore sectors",
+    "standardsLabel": "Standards we build to"
+  },
+  "categoriesNav": "Service categories",
+  "categoryMeta": "{{number}} · {{count}} services",
+  "readArticle": "Read article",
+  "sectors": {
+    "label": "Where we apply these capabilities",
+    "title": "15 sectors served.",
+    "explore": "Explore sector"
+  },
+  "cta": {
+    "eyebrow": "Ready when you are",
+    "title": "Send us your drawings. We'll return a line-item quote in one business day.",
+    "secondary": "See Projects"
+  },
+  "detail": {
+    "back": "All Services",
+    "requestQuote": "Request a Quote",
+    "readArticle": "Read the article",
+    "sectionsNav": "Article sections",
+    "toc": {
+      "overview": "Overview",
+      "bestFor": "Best for",
+      "process": "Process",
+      "deliverables": "Deliverables",
+      "gallery": "Gallery",
+      "faqs": "FAQs"
+    },
+    "sections": {
+      "overview": "Overview",
+      "bestFor": "Best for",
+      "process": "Process — award to install",
+      "deliverables": "What you receive",
+      "gallery": "Gallery",
+      "faqs": "FAQs",
+      "related": "Explore more {{category}}",
+      "learnMore": "Learn more",
+      "galleryAlt": "{{name}} — reference {{index}}"
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Have drawings for a {{name}} package?",
+      "description": "Send us the set and finish schedule — we'll return a line-item quote within one business day.",
+      "primary": "Request a Quote",
+      "secondary": "See our work"
+    }
+  },
+  "standards": [
+    "AWMAC NAAWS 4.0 · AWMAC GIS third-party inspection",
+    "AWI Architectural Woodwork Standards",
+    "CSA / OBC / NBC · CSA B651 / AODA / ADA",
+    "CARB Phase 2 / TSCA Title VI · LEED / WELL"
+  ],
+  "defaultProcess": [
+    {
+      "step": "Estimating",
+      "description": "Take-off from your drawings, specs and finish schedule. Line-item quote returned within one business day for most packages."
+    },
+    {
+      "step": "Engineering & Shop Drawings",
+      "description": "In-house team produces AWI/AWMAC-compliant shop drawings in AutoCAD, coordinated with Microvellum for direct-to-machine output."
+    },
+    {
+      "step": "Submittals & Samples",
+      "description": "Finish samples, hardware cut-sheets and drawing set submitted for architect/GC approval prior to release to production."
+    },
+    {
+      "step": "CNC Fabrication",
+      "description": "Panels nested and machined on multi-axis CNC. Solid-wood machining, edge-banding and dowel/confirmat assembly in dedicated cells."
+    },
+    {
+      "step": "Finishing",
+      "description": "Controlled-environment spray booths for stain, lacquer, conversion varnish, catalyzed polyurethane and low-VOC waterborne systems."
+    },
+    {
+      "step": "QC & Pre-Ship",
+      "description": "100% dimensional and finish inspection against the approved shop drawings. Pre-assembled where practical for site-fit certainty."
+    },
+    {
+      "step": "Delivery & Install Coordination",
+      "description": "Blanket-wrapped, phased delivery coordinated with your site schedule. Installation supervision available Canada-wide."
+    }
+  ],
+  "categories": {
+    "pre-construction": {
+      "title": "Pre-Construction",
+      "description": "Design assist, budgets, VE and constructability review — before the CDs go out."
+    },
+    "engineering": {
+      "title": "Engineering",
+      "description": "Shop drawings, 3D models, Microvellum output and architect/consultant coordination."
+    },
+    "manufacturing": {
+      "title": "Manufacturing",
+      "description": "Custom architectural millwork, casework, CNC, laminate, veneer, solid surface, metal integration and in-house finishing."
+    },
+    "sector-scopes": {
+      "title": "Sector Scopes",
+      "description": "Sector-specific millwork packages engineered to the codes of the environment."
+    },
+    "project-management": {
+      "title": "Project Management",
+      "description": "Dedicated PMs, scheduling, procurement, site coordination and QA."
+    },
+    "logistics": {
+      "title": "Logistics",
+      "description": "Packaging, delivery, JIT release and site logistics — Canada-wide plus CUSMA cross-border."
+    },
+    "installation": {
+      "title": "Installation",
+      "description": "Professional install, site supervision, deficiency management and closeout."
+    },
+    "warranty": {
+      "title": "Warranty & Aftercare",
+      "description": "Warranty support, maintenance, repairs, future renovations and service requests."
+    }
+  },
+  "items": {
+    "design-assist": {
+      "name": "Design Assist",
+      "description": "Millwork design partnership — shop drawings, 3D models, veneer & finish samples before you tender."
+    },
+    "budget-estimating": {
+      "name": "Millwork Budget Estimating",
+      "description": "In-house millwork estimating team — order-of-magnitude to firm line-item pricing."
+    },
+    "value-engineering": {
+      "name": "Value Engineering",
+      "description": "Cost-out options without losing the design intent."
+    },
+    "constructability-review": {
+      "name": "Millwork Constructability Review",
+      "description": "Strictly millwork — second-set-of-eyes review on the architectural millwork set before you tender."
+    },
+    "shop-drawings-engineering": {
+      "name": "Millwork Shop Drawings & Engineering",
+      "description": "In-house millwork drawing and engineering — from redlines to CNC-ready production files."
+    },
+    "3d-modeling": {
+      "name": "Millwork 3D Modeling & Visualization",
+      "description": "Photoreal 3D renders and CNC-ready models — strictly for architectural millwork."
+    },
+    "architect-consultant-coordination": {
+      "name": "Architect & Consultant Coordination",
+      "description": "One PM coordinating our millwork with the architect, ID and consultant team."
+    },
+    "cnc-manufacturing": {
+      "name": "CNC Machining Department",
+      "description": "Multi-axis CNC production for tight-tolerance components."
+    },
+    "custom-fabrication": {
+      "name": "Custom & Assembly Department",
+      "description": "In-house assembly line for high-volume casework plus a custom shop for the complex, one-of-one millwork."
+    },
+    "finishing-paint": {
+      "name": "In-House Finishing Department",
+      "description": "Sanding to Cefla robotic flatline to manual booths to Sunspot dry room. Strictly for our own millwork."
+    },
+    "solid-surface-work": {
+      "name": "Solid Surface & Glass",
+      "description": "Corian fabricated in-house, plus quartz, granite, marble and architectural glass — coordinated as one interior-millwork package."
+    },
+    "plastic-laminate-fabrication": {
+      "name": "Plastic Laminate Fabrication",
+      "description": "Precision HPL / CRL fabrication on Wilsonart, Formica, Arborite, Nevamar and Pionite."
+    },
+    "veneer-hardwood-fabrication": {
+      "name": "Veneer & Hardwood Fabrication",
+      "description": "Sequence and grain-matched veneer walls, plus solid-hardwood millwork."
+    },
+    "metal-integration": {
+      "name": "Architectural Metal Integration",
+      "description": "Wood millwork fixtures that need metal — servery aprons, kicks, brackets, reveals, kitchens — delivered as one package."
+    },
+    "healthcare-millwork": {
+      "name": "Healthcare Millwork",
+      "description": "Hospital-grade millwork engineered for infection control, water resistance, and low-disturbance install in live patient environments."
+    },
+    "retail-fixtures": {
+      "name": "Retail Fixtures",
+      "description": "Rollout-ready fixtures produced with repeatable accuracy at scale."
+    },
+    "hospitality-millwork": {
+      "name": "Hospitality Millwork",
+      "description": "Premium-grade architectural millwork for luxury and full-service hotels."
+    },
+    "multi-residential-millwork": {
+      "name": "Multi-Residential Millwork",
+      "description": "One millwork division for the whole tower — lobby to penthouse."
+    },
+    "restaurant-qsr-millwork": {
+      "name": "Restaurant & QSR Millwork",
+      "description": "Two organized scopes: bespoke full-service restaurants, and rollout-ready QSR programs."
+    },
+    "pharmacy-clinic-millwork": {
+      "name": "Pharmacy & Clinic Millwork",
+      "description": "Dispensary, exam and consultation-room casework."
+    },
+    "education-millwork": {
+      "name": "Education Millwork",
+      "description": "Millwork for every learning environment — daycare to university, existing and new-build."
+    },
+    "corporate-institutional-millwork": {
+      "name": "Corporate, Bank & Institutional Millwork",
+      "description": "One millwork partner for banks, offices, libraries and every professional workplace."
+    },
+    "custom-cabinets": {
+      "name": "Custom Residential Millwork",
+      "description": "Bespoke millwork and panelling for designer homes — not standard tender packages."
+    },
+    "project-management": {
+      "name": "Project Management",
+      "description": "Dedicated PMs from award through closeout."
+    },
+    "scheduling": {
+      "name": "Scheduling",
+      "description": "Millwork schedule built inside your master construction schedule."
+    },
+    "procurement": {
+      "name": "Procurement",
+      "description": "Long-lead material commitments locked at award, not after shop drawings."
+    },
+    "site-coordination": {
+      "name": "Site Coordination",
+      "description": "Site walks, blocking coordination, MEP/AV rough-in verification."
+    },
+    "quality-assurance": {
+      "name": "Quality Assurance",
+      "description": "100% pre-ship inspection against approved shop drawings and finish samples."
+    },
+    "delivery-logistics": {
+      "name": "Delivery & Logistics",
+      "description": "Coordinated delivery for phased and multi-site rollouts."
+    },
+    "packaging": {
+      "name": "Packaging & Crating",
+      "description": "Blanket-wrapped, palletized and crated for zero transit damage."
+    },
+    "just-in-time-delivery": {
+      "name": "Just-In-Time Delivery",
+      "description": "Millwork lands on the floor the day the install trade needs it."
+    },
+    "site-logistics": {
+      "name": "Site Logistics",
+      "description": "Loading-dock booking, hoisting, floor protection and swing-space coordination."
+    },
+    "installation-coordination": {
+      "name": "Installation Coordination",
+      "description": "On-site coordination with your install trades."
+    },
+    "site-supervision": {
+      "name": "Site Supervision",
+      "description": "Sandha lead supervisor on every install, Canada-wide."
+    },
+    "deficiency-management": {
+      "name": "Deficiency Management",
+      "description": "Deficiency register through closeout with committed close dates."
+    },
+    "project-closeout": {
+      "name": "Project Closeout",
+      "description": "As-builts, O&M manuals, LEED docs, warranty package — delivered in one binder."
+    },
+    "warranty-support": {
+      "name": "Warranty Support",
+      "description": "1-year AWMAC/AWI workmanship + extended finish and cabinet-box warranties."
+    },
+    "maintenance-repairs": {
+      "name": "Maintenance & Repairs",
+      "description": "Scheduled inspections, touch-up crews and out-of-warranty repairs."
+    },
+    "future-renovations": {
+      "name": "Future Renovations",
+      "description": "PIP-cycle refurbishment, tenant-improvement re-fits, brand refreshes."
+    },
+    "service-requests": {
+      "name": "Service Requests",
+      "description": "One phone number, one inbox for every service request across every project."
+    }
+  },
+  "sectorLinks": {
+    "healthcare": {
+      "name": "Healthcare"
+    },
+    "education": {
+      "name": "Education"
+    },
+    "corporate-offices": {
+      "name": "Corporate Offices"
+    },
+    "retail": {
+      "name": "Retail"
+    },
+    "hospitality": {
+      "name": "Hospitality"
+    },
+    "restaurants-qsr": {
+      "name": "Restaurants & QSR"
+    },
+    "financial-institutions": {
+      "name": "Financial Institutions"
+    },
+    "government-public-buildings": {
+      "name": "Government & Public Buildings"
+    },
+    "multi-residential": {
+      "name": "Multi-Residential"
+    },
+    "senior-living": {
+      "name": "Senior Living"
+    },
+    "community-recreation": {
+      "name": "Community & Recreation Centres"
+    },
+    "libraries": {
+      "name": "Libraries"
+    },
+    "cultural-civic": {
+      "name": "Cultural & Civic Buildings"
+    },
+    "industrial-manufacturing": {
+      "name": "Industrial & Manufacturing"
+    },
+    "commercial-interiors": {
+      "name": "Commercial Interiors"
+    }
+  }
+}

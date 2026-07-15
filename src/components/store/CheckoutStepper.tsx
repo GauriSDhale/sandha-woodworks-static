@@ -1,15 +1,16 @@
 "use client";
 
 import { Check } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import type { CheckoutStep } from "@/store/types/checkout";
 
-const STEPS = [
-  { step: 1 as CheckoutStep, label: "Shipping" },
-  { step: 2 as CheckoutStep, label: "Delivery" },
-  { step: 3 as CheckoutStep, label: "Payment" },
-  { step: 4 as CheckoutStep, label: "Review" },
-];
+const STEP_KEYS = [
+  { step: 1 as CheckoutStep, key: "shipping" },
+  { step: 2 as CheckoutStep, key: "delivery" },
+  { step: 3 as CheckoutStep, key: "payment" },
+  { step: 4 as CheckoutStep, key: "review" },
+] as const;
 
 interface CheckoutStepperProps {
   currentStep: CheckoutStep;
@@ -17,20 +18,21 @@ interface CheckoutStepperProps {
 }
 
 export function CheckoutStepper({ currentStep, className }: CheckoutStepperProps) {
+  const { t } = useTranslation("store");
+
   return (
     <nav
-      aria-label="Checkout steps"
+      aria-label={t("a11y.checkoutSteps")}
       className={cn("relative flex items-center justify-between", className)}
     >
-      {/* Progress track */}
       <div className="absolute inset-x-0 top-4 h-px bg-border" aria-hidden="true" />
       <div
         className="absolute top-4 h-px bg-foreground transition-all duration-500"
-        style={{ left: 0, width: `${((currentStep - 1) / (STEPS.length - 1)) * 100}%` }}
+        style={{ left: 0, width: `${((currentStep - 1) / (STEP_KEYS.length - 1)) * 100}%` }}
         aria-hidden="true"
       />
 
-      {STEPS.map(({ step, label }) => {
+      {STEP_KEYS.map(({ step, key }) => {
         const done = currentStep > step;
         const active = currentStep === step;
         return (
@@ -54,7 +56,7 @@ export function CheckoutStepper({ currentStep, className }: CheckoutStepperProps
                 active ? "text-foreground" : done ? "text-foreground/70" : "text-muted-foreground",
               )}
             >
-              {label}
+              {t(`checkout.steps.${key}`)}
             </span>
           </div>
         );

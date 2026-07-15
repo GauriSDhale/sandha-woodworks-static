@@ -1,0 +1,370 @@
+{
+  "meta": {
+    "defaultTitle": "Boutique de cabinets | Sandha Woodworks",
+    "titleTemplate": "%s | Boutique Sandha Woodworks",
+    "description": "Parcourez des cabinets millwork sur mesure, vanités de salle de bain, garde-robes et plus — fabriqués à Brantford, ON.",
+    "categoriesTitle": "Toutes les catégories",
+    "categoriesDescription": "Parcourez toutes les catégories de cabinets — cuisine, vanité, garde-robes, bureau et plus."
+  },
+  "nav": {
+    "home": "Accueil",
+    "store": "Boutique",
+    "cart": "Panier",
+    "checkout": "Paiement",
+    "wishlist": "Liste de souhaits",
+    "categories": "Catégories",
+    "all": "Tout",
+    "allCategories": "Toutes les catégories →"
+  },
+  "hero": {
+    "eyebrow": "Sandha Woodworks — Boutique de cabinets",
+    "titleLine1": "Cabinets millwork",
+    "titleLine2": "sur mesure de qualité",
+    "subtitle": "{{count}} produits · Fabriqués à Brantford, ON · Certifié AWMAC"
+  },
+  "catalog": {
+    "shopByCategory": "Magasiner par catégorie",
+    "shopByCategoryHint": "Cuisine, vanités, garde-robes et plus — fabriqués à Brantford.",
+    "viewAll": "Voir tout",
+    "productsFound": "{{count}} produits trouvés",
+    "productCount": "{{count}} produits"
+  },
+  "filters": {
+    "title": "Filtres",
+    "sortBy": "Trier par",
+    "category": "Catégorie",
+    "priceRange": "Fourchette de prix (CAD)",
+    "allProducts": "Tous les produits",
+    "clearAll": "Effacer tous les filtres ({{count}})"
+  },
+  "sort": {
+    "label": "Trier par",
+    "newest": "Plus récents",
+    "priceAsc": "Prix : croissant",
+    "priceDesc": "Prix : décroissant",
+    "popular": "Plus populaires",
+    "topRated": "Mieux notés"
+  },
+  "categories": {
+    "kitchen-cabinets": {
+      "label": "Cabinets de cuisine",
+      "description": "Cabinets de cuisine sur mesure de qualité, fabriqués dans notre usine de Brantford. Conçus pour les maisons canadiennes avec une ingénierie de précision."
+    },
+    "base-cabinets": {
+      "label": "Cabinets de bas",
+      "description": "Cabinets de bas robustes qui forment la base de votre cuisine."
+    },
+    "wall-cabinets": {
+      "label": "Cabinets muraux",
+      "description": "Cabinets muraux gain de place pour maximiser le rangement en cuisine."
+    },
+    "corner-cabinets": {
+      "label": "Cabinets d'angle",
+      "description": "Solutions intelligentes de cabinets d'angle qui éliminent l'espace perdu."
+    },
+    "tall-cabinets": {
+      "label": "Cabinets hauts",
+      "description": "Cabinets pleine hauteur pour un rangement vertical maximal."
+    },
+    "pantry-cabinets": {
+      "label": "Cabinets garde-manger",
+      "description": "Systèmes de rangement dédiés au garde-manger pour des cuisines organisées."
+    },
+    "bathroom-vanities": {
+      "label": "Vanités de salle de bain",
+      "description": "Vanités de salle de bain élégantes alliant fonction et esthétique luxueuse."
+    },
+    "closets": {
+      "label": "Garde-robes et dressings",
+      "description": "Systèmes de garde-robes et dressings sur mesure adaptés à votre espace."
+    },
+    "tv-units": {
+      "label": "Meubles TV",
+      "description": "Solutions modernes de meubles TV et divertissement pour les espaces de vie."
+    },
+    "office-cabinets": {
+      "label": "Cabinets de bureau",
+      "description": "Systèmes de cabinets de bureau professionnels pour des environnements de travail productifs."
+    },
+    "laundry-cabinets": {
+      "label": "Cabinets de buanderie",
+      "description": "Solutions de cabinets de buanderie durables et résistants à l'humidité."
+    },
+    "pageTitle": "Toutes les catégories",
+    "viewAll": "Voir toutes les catégories",
+    "notFoundFallback": "Catégorie"
+  },
+  "product": {
+    "skuLabel": "UGS :",
+    "skuWithCategory": "{{category}} · UGS : {{sku}}",
+    "badgeNew": "Nouveau",
+    "badgeBestseller": "Meilleure vente",
+    "quantity": "Quantité",
+    "addToCart": "Ajouter au panier",
+    "added": "Ajouté!",
+    "buyNow": "Acheter maintenant",
+    "share": "Partager",
+    "quickView": "Aperçu rapide",
+    "fullDetails": "Tous les détails",
+    "backToStore": "Retour à la boutique",
+    "dimensionsLabel": "Dimensions (L × H × P)",
+    "deliveryLabel": "Livraison :",
+    "warrantyLabel": "Garantie :",
+    "returnsLabel": "Retours :",
+    "contactUs": "Contactez-nous",
+    "returnsPolicy": "Retour sous 30 jours sur les articles non installés",
+    "reviewsCount": "{{count}} avis",
+    "youMayAlsoLike": "Vous aimerez aussi",
+    "recentlyViewed": "Consultés récemment",
+    "tabs": {
+      "description": "Description",
+      "specs": "Spécifications",
+      "reviews": "Avis"
+    },
+    "attrs": {
+      "material": "Matériau",
+      "finish": "Fini",
+      "width": "Largeur",
+      "height": "Hauteur",
+      "depth": "Profondeur",
+      "availability": "Disponibilité"
+    }
+  },
+  "cart": {
+    "title": "Panier",
+    "pageTitle": "Panier d'achat",
+    "itemCount": "({{count}} article)",
+    "itemCount_plural": "({{count}} articles)",
+    "itemsCount": "{{count}} article(s)",
+    "qty": "Qté :",
+    "subtotal": "Sous-total",
+    "discount": "Rabais",
+    "hst": "TVH (13 %)",
+    "shipping": "Livraison",
+    "shippingWithMethod": "Livraison ({{method}})",
+    "shippingTbd": "—",
+    "total": "Total",
+    "orderSummary": "Résumé de la commande",
+    "taxShippingNote": "TVH et livraison calculées au paiement.",
+    "proceedToCheckout": "Passer au paiement",
+    "viewFullCart": "Voir le panier complet",
+    "browseProducts": "Parcourir les produits",
+    "continueShopping": "Continuer vos achats",
+    "moveToWishlist": "Déplacer vers la liste de souhaits",
+    "remove": "Retirer",
+    "trust": {
+      "secureCheckout": "Paiement sécurisé",
+      "freeReturns": "Retours gratuits",
+      "awmac": "Certifié AWMAC",
+      "warranty": "Garantie de 5 ans"
+    }
+  },
+  "checkout": {
+    "title": "Paiement",
+    "back": "← Retour",
+    "continueToDelivery": "Continuer vers la livraison →",
+    "continueToPayment": "Continuer vers le paiement →",
+    "continueToReview": "Réviser la commande →",
+    "processing": "Traitement…",
+    "payAmount": "Payer {{amount}}",
+    "shippingTo": "Livraison à",
+    "country": "Canada",
+    "steps": {
+      "shipping": "Adresse",
+      "delivery": "Livraison",
+      "payment": "Paiement",
+      "review": "Révision"
+    },
+    "stepTitles": {
+      "1": "Adresse de livraison",
+      "2": "Mode de livraison",
+      "3": "Paiement",
+      "4": "Réviser la commande"
+    },
+    "fields": {
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "company": "Entreprise (facultatif)",
+      "addressLine1": "Adresse ligne 1",
+      "addressLine2": "Adresse ligne 2 (facultatif)",
+      "city": "Ville",
+      "province": "Province",
+      "postalCode": "Code postal",
+      "phone": "Téléphone"
+    },
+    "errors": {
+      "firstName": "Prénom requis",
+      "lastName": "Nom requis",
+      "address": "Adresse requise",
+      "city": "Ville requise",
+      "province": "Province requise",
+      "postalCode": "Code postal canadien valide requis",
+      "phone": "Numéro de téléphone valide requis"
+    }
+  },
+  "delivery": {
+    "standard": {
+      "label": "Livraison standard",
+      "description": "Livraison et placement professionnels",
+      "estimatedDays": "5–8 jours ouvrables"
+    },
+    "express": {
+      "label": "Livraison express",
+      "description": "Livraison et placement prioritaires",
+      "estimatedDays": "2–4 jours ouvrables"
+    },
+    "white-glove": {
+      "label": "Service White Glove",
+      "description": "Livraison premium, assemblage et retrait de l'emballage",
+      "estimatedDays": "3–5 jours ouvrables (sur rendez-vous)"
+    }
+  },
+  "payment": {
+    "securityBadge": "Toutes les transactions sont sécurisées par un chiffrement SSL 256 bits.",
+    "demoHint": "Carte de démonstration pour un paiement réussi : {{card}} | Expiration {{expiry}} | CVC {{cvc}}",
+    "errors": {
+      "failed": "Le paiement a échoué. Veuillez réessayer.",
+      "unexpected": "Une erreur inattendue s'est produite. Veuillez réessayer."
+    },
+    "providers": {
+      "razorpay": {
+        "label": "Razorpay",
+        "description": "Payez en toute sécurité par carte, UPI, virement bancaire et plus",
+        "badge": "Recommandé"
+      },
+      "stripe": {
+        "label": "Stripe",
+        "description": "Cartes internationales — Visa, Mastercard, Amex",
+        "badge": "Bientôt disponible"
+      },
+      "paypal": {
+        "label": "PayPal",
+        "description": "Payez avec votre solde PayPal ou une carte liée",
+        "badge": "Bientôt disponible"
+      }
+    }
+  },
+  "wishlist": {
+    "title": "Liste de souhaits",
+    "itemCount": "({{count}} article)",
+    "itemCount_plural": "({{count}} articles)",
+    "moveAllToCart": "Tout ajouter au panier",
+    "save": "Enregistrer dans la liste",
+    "saved": "Enregistré"
+  },
+  "orders": {
+    "historyTitle": "Historique des commandes",
+    "orderNumber": "Numéro de commande",
+    "placed": "Passée le",
+    "total": "Total",
+    "moreItems": "+{{count}} autre(s) article(s)",
+    "viaDelivery": "via {{method}}",
+    "successTitle": "Commande confirmée!",
+    "successMessage": "La commande n° {{orderNumber}} a été passée avec succès.",
+    "emailConfirmation": "Une confirmation a été envoyée à votre adresse courriel.",
+    "summary": "Résumé de la commande",
+    "totalPaid": "Total payé",
+    "placedOn": "Passée le",
+    "delivery": "Livraison",
+    "viewHistory": "Voir l'historique",
+    "status": {
+      "pending": "En attente",
+      "confirmed": "Confirmée",
+      "processing": "En traitement",
+      "shipped": "Expédiée",
+      "delivered": "Livrée",
+      "cancelled": "Annulée"
+    },
+    "timeline": {
+      "confirmed": "Commande confirmée",
+      "prepared": "En préparation",
+      "outForDelivery": "En cours de livraison"
+    }
+  },
+  "search": {
+    "breadcrumb": "Recherche",
+    "title": "Recherche",
+    "placeholderShort": "Rechercher des produits…",
+    "placeholder": "Rechercher cabinets, vanités, garde-robes…",
+    "esc": "Échap",
+    "suggestions": "Suggestions",
+    "recent": "Récentes",
+    "popular": "Recherches populaires",
+    "clearHistory": "Effacer",
+    "noResults": "Aucun résultat pour « {{query}} »",
+    "noResultsHint": "Essayez un autre mot-clé ou parcourez les catégories ci-dessous.",
+    "resultsFor": "Résultats de recherche pour « {{query}} »",
+    "resultsCount": "{{count}} résultat trouvé",
+    "resultsCount_plural": "{{count}} résultats trouvés",
+    "browseAll": "Parcourir tous les produits",
+    "viewCategories": "Voir les catégories",
+    "popularTerms": {
+      "kitchenCabinets": "Cabinets de cuisine",
+      "bathroomVanity": "Vanité de salle de bain",
+      "walkInCloset": "Garde-robe walk-in",
+      "tvUnitWalnut": "Meuble TV noyer",
+      "whiteShakerBase": "Base shaker blanche",
+      "officeCabinet": "Cabinet de bureau"
+    }
+  },
+  "empty": {
+    "cartTitle": "Votre panier est vide",
+    "cartDrawerHint": "Ajoutez des produits pour commencer.",
+    "cartPageHint": "Explorez notre catalogue de cabinets millwork de qualité.",
+    "wishlistTitle": "Votre liste de souhaits est vide",
+    "wishlistHint": "Enregistrez les produits que vous aimez et revenez-y plus tard.",
+    "noProducts": "Aucun produit trouvé",
+    "noProductsHint": "Essayez d'ajuster vos filtres ou votre recherche.",
+    "categoryNotFound": "Catégorie introuvable",
+    "productNotFound": "Produit introuvable",
+    "ordersTitle": "Aucune commande pour le moment",
+    "ordersHint": "Votre historique de commandes apparaîtra ici une fois que vous aurez passé une commande.",
+    "searchPrompt": "Entrez un terme de recherche pour trouver des produits.",
+    "searchNoResults": "Aucun produit trouvé pour « {{query}} ».",
+    "searchNoResultsHint": "Essayez un autre mot-clé ou parcourez nos catégories."
+  },
+  "availability": {
+    "inStock": "En stock",
+    "madeToOrder": "Sur commande",
+    "outOfStock": "Rupture de stock",
+    "inStockCount": "({{count}} en stock)"
+  },
+  "a11y": {
+    "shoppingCart": "Panier d'achat",
+    "closeCart": "Fermer le panier",
+    "wishlistCount": "Liste de souhaits ({{count}} articles)",
+    "cartCount": "Panier d'achat ({{count}} articles)",
+    "productCategories": "Catégories de produits",
+    "openSearch": "Ouvrir la recherche",
+    "search": "Recherche",
+    "clearSearch": "Effacer la recherche",
+    "closeSearch": "Fermer la recherche",
+    "breadcrumb": "Fil d'Ariane",
+    "home": "Accueil",
+    "browseCategory": "Parcourir {{label}}",
+    "quickView": "Aperçu rapide",
+    "quickViewNamed": "Aperçu rapide : {{name}}",
+    "closeQuickView": "Fermer l'aperçu rapide",
+    "addToCart": "Ajouter au panier",
+    "shareProduct": "Partager le produit",
+    "addToWishlist": "Ajouter à la liste de souhaits",
+    "removeFromWishlist": "Retirer de la liste de souhaits",
+    "closeFilters": "Fermer les filtres",
+    "maxPrice": "Prix maximum",
+    "sortBy": "Trier par",
+    "checkoutSteps": "Étapes du paiement",
+    "quantitySelector": "Sélecteur de quantité",
+    "decreaseQuantity": "Diminuer la quantité",
+    "increaseQuantity": "Augmenter la quantité",
+    "quantityValue": "Quantité : {{count}}",
+    "pagination": "Pagination",
+    "prevPage": "Page précédente",
+    "nextPage": "Page suivante",
+    "pageN": "Page {{page}}",
+    "prevImage": "Image précédente",
+    "nextImage": "Image suivante",
+    "imageThumbnails": "Miniatures d'images",
+    "viewImage": "Voir l'image {{index}}",
+    "imageOf": "{{name}} — image {{index}} sur {{total}}"
+  }
+}

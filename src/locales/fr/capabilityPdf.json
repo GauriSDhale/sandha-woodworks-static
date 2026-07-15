@@ -1,0 +1,206 @@
+{
+  "viewer": {
+    "preparingEyebrow": "Préparation de votre énoncé de capacité",
+    "preparingHint": "Chargement des photos et création du PDF — quelques secondes en général.",
+    "print": "Imprimer",
+    "download": "Télécharger",
+    "close": "Fermer",
+    "goBack": "Retour",
+    "errorTitle": "Impossible d'ouvrir le PDF",
+    "titleSuffix": "Énoncé de capacité",
+    "iframeTitle": "Énoncé de capacité — {{name}}"
+  },
+  "document": {
+    "title": "Énoncé de capacité — {{name}}",
+    "footerBrand": "Capacité · 2026",
+    "coverMeta": "Couverture · 01",
+    "sections": {
+      "introduction": "Introduction",
+      "capabilities": "Capacités",
+      "products": "Produits",
+      "manufacturing": "Fabrication",
+      "standards": "Normes",
+      "installation": "Installation",
+      "selectedWork": "Travaux sélectionnés",
+      "about": "À propos",
+      "whatWeWillDo": "Ce que nous ferons",
+      "process": "Processus",
+      "closeOut": "Clôture",
+      "contact": "Contact"
+    },
+    "eyebrows": {
+      "introduction": "01 · Introduction",
+      "capabilities": "02 · Capacités {{name}}",
+      "products": "03 · Produits et appareillages",
+      "manufacturing": "04 · Focus fabrication",
+      "standards": "05 · Codes, normes et conformité",
+      "installation": "06 · Approche d'installation",
+      "selectedWork": "07 · Travaux sélectionnés",
+      "selectedWorkCont": "07 · Travaux sélectionnés (suite)",
+      "audience": "08 · Avec qui nous travaillons",
+      "about": "À propos de Sandha Woodworks",
+      "whatWeWillDo": "Ce que nous ferons sur votre projet",
+      "process": "Comment nous menons votre projet — de l'attribution à la garantie",
+      "closeOut": "Clôture, garantie et service après-vente",
+      "contact": "Contact"
+    },
+    "headlines": {
+      "intro": "Ébénisterie {{name}},\nconçue par Sandha.",
+      "capabilities": "Une portée sur mesure,\npas un ensemble générique.",
+      "products": "La bibliothèque de produits\nderrière les ensembles {{name}}.",
+      "manufacturing": "Comment nous le fabriquons\npour {{name}}.",
+      "standards": "Construit selon les codes\nqui comptent sur le chantier.",
+      "installation": "Sur place.\nDans les délais. Peu de perturbation.",
+      "selectedWork": "Détails, finis, ajustement.",
+      "audience": "Partenaires sur les projets {{name}}.",
+      "about": "En un coup d'œil",
+      "whatWeWillDo": "Un GP.\nUne équipe. Pas de relais, pas de mélanges de dossiers.",
+      "process": "Un flux unique et continu.\nPorté par un seul GP.",
+      "closeOut": "Le travail n'est pas terminé une fois installé.\nIl l'est lorsque vous êtes couverts.",
+      "contact": "Chaque ensemble {{name}} — ingénierie, fabrication, finition et installation par\nune seule équipe."
+    },
+    "underOneRoofTitle": "Sous un même toit",
+    "processNote": "Chaque étape ci-dessus est portée de bout en bout par votre chargé de projet Sandha. Pas de relais. Pas de dossiers mélangés.",
+    "serviceLine": "Ligne de service",
+    "contactLabels": {
+      "quote": "Demandes de devis",
+      "general": "Général",
+      "phone": "Téléphone",
+      "address": "Adresse",
+      "web": "Web",
+      "linkedin": "LinkedIn"
+    },
+    "whatWeWillDoBody": [
+      "Sur chaque projet Sandha {{name}}, un chargé de projet dédié possède le dossier dès la signature du contrat jusqu'à la fin de la période de garantie. Vous appelez une personne. Vous écrivez à une personne. Cette personne connaît vos dessins, votre échéancier, votre surintendant de chantier et chaque changement que vous avez signé.",
+      "Nous ne changeons pas de GP en cours de mandat. Nous ne répartissons pas une même portée entre trois coordonnateurs qui n'en détiennent chacun qu'une tranche. Votre GP dirige votre ingénierie, vos dessins d'atelier, vos approvisionnements, votre créneau de production, votre finition, vos fenêtres de livraison, votre équipe d'installation et la clôture des défectuosités — comme une responsabilité continue.",
+      "Derrière ce GP se trouve la même équipe Sandha sur chaque projet : nos ingénieurs, nos opérateurs CNC, nos finisseurs, nos chefs d'installation. Pas un casting tournant de sous-traitants. C'est ce qui maintient la qualité constante, du premier échantillon au dernier point de la liste de défectuosités."
+    ],
+    "whatWeWillDoPanel": [
+      "Un nom sur le dossier — de l'attribution à la clôture de garantie.",
+      "Une seule usine fabrique, finit et emballe chaque pièce.",
+      "Le même chef d'équipe mène la mobilisation, l'installation et les défectuosités."
+    ]
+  },
+  "shared": {
+    "underOneRoof": [
+      "Ingénierie et dessins d'atelier",
+      "Fabrication CNC",
+      "Finition et cabines de pulvérisation",
+      "Gestion de projet",
+      "Logistique et livraison",
+      "Installation sur site",
+      "Garantie et service"
+    ],
+    "atAGlance": [
+      "Siège et fabrication — Brantford, Ontario",
+      "Ingénierie, CNC, finition, GP et installation à l'interne",
+      "Au service du Canada et des États-Unis",
+      "Fabriqué au Canada · Aligné AWMAC · AQ alignée ISO",
+      "Un chargé de projet — de l'attribution à la garantie"
+    ],
+    "companyCommitments": "Nous avons bâti l'entreprise autour de trois engagements : construire selon le devis, respecter l'échéancier et répondre au téléphone après la clôture du chantier. Tout le reste — la ligne CNC, les cabines de finition, les équipes d'installation, les GP — existe pour rendre ces trois engagements vrais sur chaque mandat que nous signons.",
+    "projectFlow": [
+      {
+        "n": "01",
+        "t": "Attribution du projet",
+        "d": "Contrat signé, GP dédié assigné, lancement planifié avec l'EG et l'équipe de conception."
+      },
+      {
+        "n": "02",
+        "t": "Lancement et revue de site",
+        "d": "Portée, devis, échéancier, journal des soumissions et conditions de site confirmés avec tous les métiers."
+      },
+      {
+        "n": "03",
+        "t": "Ingénierie",
+        "d": "Nos ingénieurs à l'interne traduisent l'intention de l'architecte en assemblages constructibles et conformes aux codes."
+      },
+      {
+        "n": "04",
+        "t": "Dessins d'atelier",
+        "d": "Jeu complet émis pour revue — coupes, élévations, quincaillerie, calendrier de finition."
+      },
+      {
+        "n": "05",
+        "t": "Approbations et échantillons",
+        "d": "Échantillons de finition, maquettes et révisions jusqu'à l'approbation de l'architecte et du propriétaire."
+      },
+      {
+        "n": "06",
+        "t": "Approvisionnement",
+        "d": "Matériaux, placages, pierre, quincaillerie et appareils libérés selon le calendrier des longs délais."
+      },
+      {
+        "n": "07",
+        "t": "Fabrication",
+        "d": "Découpe CNC, chant, surface solide et assemblage dans notre atelier."
+      },
+      {
+        "n": "08",
+        "t": "Finition",
+        "d": "Cabines de pulvérisation à l'interne — teinture, laque catalysée, vernis de conversion, séchage en usine."
+      },
+      {
+        "n": "09",
+        "t": "Contrôle de la qualité",
+        "d": "Chaque unité vérifiée selon les dessins d'atelier approuvés avant de quitter le bâtiment."
+      },
+      {
+        "n": "10",
+        "t": "Emballage et logistique",
+        "d": "Emballage sous couverture, caisse au besoin, séquencé selon l'échéancier d'installation."
+      },
+      {
+        "n": "11",
+        "t": "Livraison",
+        "d": "Fenêtres de livraison directe au site coordonnées avec l'EG et la gestion de l'immeuble."
+      },
+      {
+        "n": "12",
+        "t": "Installation",
+        "d": "Équipes d'installation Sandha — sans sous-traitants tiers — pose, ajustement et mise en service de chaque pièce."
+      },
+      {
+        "n": "13",
+        "t": "Défectuosités et liste de punch",
+        "d": "Le GP visite l'espace avec l'EG et le consultant, suit et ferme chaque point."
+      },
+      {
+        "n": "14",
+        "t": "Clôture",
+        "d": "Remise des plans tels que construits, manuels O&M, calendriers de finition, documents de garantie et trousses de retouche."
+      },
+      {
+        "n": "15",
+        "t": "Garantie et service après-vente",
+        "d": "Garantie standard d'un an (conditions sur mesure selon le contrat) — le même GP répond aux appels de service."
+      }
+    ],
+    "closeOutItems": [
+      {
+        "t": "Achèvement substantiel",
+        "d": "Visite finale avec l'EG, le consultant et le propriétaire. Chaque défectuosité consignuée et datée."
+      },
+      {
+        "t": "Clôture des défectuosités",
+        "d": "Les équipes Sandha reviennent jusqu'à ce que la liste de punch soit à zéro — pas de remises partielles."
+      },
+      {
+        "t": "Dossier de clôture",
+        "d": "Plans tels que construits, manuels O&M, calendriers de finition, consignes d'entretien, trousses de retouche, FDS et certificats de garantie remis à l'achèvement."
+      },
+      {
+        "t": "Garantie standard",
+        "d": "Garantie de 12 mois sur les matériaux, finis, quincaillerie et main-d'œuvre, à compter de l'achèvement substantiel."
+      },
+      {
+        "t": "Conditions de garantie sur mesure",
+        "d": "Des conditions prolongées — 2, 5 ans ou spécifiques au projet — sont honorées selon le contrat exécuté pour cette portée. Ce que nous avons signé, nous le soutenons."
+      },
+      {
+        "t": "Service après-vente",
+        "d": "Pendant et après la période de garantie, les appels de service sont acheminés au même chargé de projet qui a mené le mandat. Un numéro. Réponse rapide. Suivi documenté."
+      }
+    ]
+  }
+}

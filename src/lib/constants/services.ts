@@ -1,1194 +1,352 @@
+/** Structural services data. Copy lives in src/locales/{en,fr}/services.json + serviceDetails.json */
+
 export interface ServiceItem {
-  name: string;
   slug: string;
-  description: string;
   image: string;
 }
 
 export interface ServiceCategory {
   id: string;
   number: string;
-  title: string;
-  description: string;
   count: number;
   services: ServiceItem[];
 }
 
 export const serviceCategories: ServiceCategory[] = [
   {
-    id: "pre-construction",
-    number: "01",
-    title: "Pre-Construction",
-    description: "Design assist, budgets, VE and constructability review — before the CDs go out.",
-    count: 4,
-    services: [
+    "id": "pre-construction",
+    "number": "01",
+    "count": 4,
+    "services": [
       {
-        name: "Design Assist",
-        slug: "design-assist",
-        description: "Millwork design partnership — shop drawings, 3D models, veneer & finish samples before you tender.",
-        image: "/assets/services/design-assist.jpg",
+        "slug": "design-assist",
+        "image": "/assets/services/design-assist.jpg"
       },
       {
-        name: "Millwork Budget Estimating",
-        slug: "budget-estimating",
-        description: "In-house millwork estimating team — order-of-magnitude to firm line-item pricing.",
-        image: "/assets/services/estimating.jpg",
+        "slug": "budget-estimating",
+        "image": "/assets/services/estimating.jpg"
       },
       {
-        name: "Value Engineering",
-        slug: "value-engineering",
-        description: "Cost-out options without losing the design intent.",
-        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&q=85&auto=format&fit=crop",
+        "slug": "value-engineering",
+        "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&q=85&auto=format&fit=crop"
       },
       {
-        name: "Millwork Constructability Review",
-        slug: "constructability-review",
-        description: "Strictly millwork — second-set-of-eyes review on the architectural millwork set before you tender.",
-        image: "/assets/services/constructability.jpg",
-      },
-    ],
+        "slug": "constructability-review",
+        "image": "/assets/services/constructability.jpg"
+      }
+    ]
   },
   {
-    id: "engineering",
-    number: "02",
-    title: "Engineering",
-    description: "Shop drawings, 3D models, Microvellum output and architect/consultant coordination.",
-    count: 3,
-    services: [
+    "id": "engineering",
+    "number": "02",
+    "count": 3,
+    "services": [
       {
-        name: "Millwork Shop Drawings & Engineering",
-        slug: "shop-drawings-engineering",
-        description: "In-house millwork drawing and engineering — from redlines to CNC-ready production files.",
-        image: "/assets/services/shop-drawings.jpg",
+        "slug": "shop-drawings-engineering",
+        "image": "/assets/services/shop-drawings.jpg"
       },
       {
-        name: "Millwork 3D Modeling & Visualization",
-        slug: "3d-modeling",
-        description: "Photoreal 3D renders and CNC-ready models — strictly for architectural millwork.",
-        image: "/assets/services/3d-modeling.jpg",
+        "slug": "3d-modeling",
+        "image": "/assets/services/3d-modeling.jpg"
       },
       {
-        name: "Architect & Consultant Coordination",
-        slug: "architect-consultant-coordination",
-        description: "One PM coordinating our millwork with the architect, ID and consultant team.",
-        image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85&auto=format&fit=crop",
-      },
-    ],
+        "slug": "architect-consultant-coordination",
+        "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85&auto=format&fit=crop"
+      }
+    ]
   },
   {
-    id: "manufacturing",
-    number: "03",
-    title: "Manufacturing",
-    description: "Custom architectural millwork, casework, CNC, laminate, veneer, solid surface, metal integration and in-house finishing.",
-    count: 7,
-    services: [
+    "id": "manufacturing",
+    "number": "03",
+    "count": 7,
+    "services": [
       {
-        name: "CNC Machining Department",
-        slug: "cnc-manufacturing",
-        description: "Multi-axis CNC production for tight-tolerance components.",
-        image: "/assets/services/cnc.jpg",
+        "slug": "cnc-manufacturing",
+        "image": "/assets/services/cnc.jpg"
       },
       {
-        name: "Custom & Assembly Department",
-        slug: "custom-fabrication",
-        description: "In-house assembly line for high-volume casework plus a custom shop for the complex, one-of-one millwork.",
-        image: "/assets/services/custom-assembly.jpg",
+        "slug": "custom-fabrication",
+        "image": "/assets/services/custom-assembly.jpg"
       },
       {
-        name: "In-House Finishing Department",
-        slug: "finishing-paint",
-        description: "Sanding to Cefla robotic flatline to manual booths to Sunspot dry room. Strictly for our own millwork.",
-        image: "/assets/services/finishing.jpg",
+        "slug": "finishing-paint",
+        "image": "/assets/services/finishing.jpg"
       },
       {
-        name: "Solid Surface & Glass",
-        slug: "solid-surface-work",
-        description: "Corian fabricated in-house, plus quartz, granite, marble and architectural glass — coordinated as one interior-millwork package.",
-        image: "/assets/services/solid-surface.jpg",
+        "slug": "solid-surface-work",
+        "image": "/assets/services/solid-surface.jpg"
       },
       {
-        name: "Plastic Laminate Fabrication",
-        slug: "plastic-laminate-fabrication",
-        description: "Precision HPL / CRL fabrication on Wilsonart, Formica, Arborite, Nevamar and Pionite.",
-        image: "/assets/services/laminate.jpg",
+        "slug": "plastic-laminate-fabrication",
+        "image": "/assets/services/laminate.jpg"
       },
       {
-        name: "Veneer & Hardwood Fabrication",
-        slug: "veneer-hardwood-fabrication",
-        description: "Sequence and grain-matched veneer walls, plus solid-hardwood millwork.",
-        image: "/assets/services/veneer.jpg",
+        "slug": "veneer-hardwood-fabrication",
+        "image": "/assets/services/veneer.jpg"
       },
       {
-        name: "Architectural Metal Integration",
-        slug: "metal-integration",
-        description: "Wood millwork fixtures that need metal — servery aprons, kicks, brackets, reveals, kitchens — delivered as one package.",
-        image: "/assets/services/metal.jpg",
-      },
-    ],
+        "slug": "metal-integration",
+        "image": "/assets/services/metal.jpg"
+      }
+    ]
   },
   {
-    id: "sector-scopes",
-    number: "04",
-    title: "Sector Scopes",
-    description: "Sector-specific millwork packages engineered to the codes of the environment.",
-    count: 9,
-    services: [
+    "id": "sector-scopes",
+    "number": "04",
+    "count": 9,
+    "services": [
       {
-        name: "Healthcare Millwork",
-        slug: "healthcare-millwork",
-        description: "Hospital-grade millwork engineered for infection control, water resistance, and low-disturbance install in live patient environments.",
-        image: "/assets/services/healthcare.jpg",
+        "slug": "healthcare-millwork",
+        "image": "/assets/services/healthcare.jpg"
       },
       {
-        name: "Retail Fixtures",
-        slug: "retail-fixtures",
-        description: "Rollout-ready fixtures produced with repeatable accuracy at scale.",
-        image: "/assets/services/retail.jpg",
+        "slug": "retail-fixtures",
+        "image": "/assets/services/retail.jpg"
       },
       {
-        name: "Hospitality Millwork",
-        slug: "hospitality-millwork",
-        description: "Premium-grade architectural millwork for luxury and full-service hotels.",
-        image: "/assets/services/hospitality.jpg",
+        "slug": "hospitality-millwork",
+        "image": "/assets/services/hospitality.jpg"
       },
       {
-        name: "Multi-Residential Millwork",
-        slug: "multi-residential-millwork",
-        description: "One millwork division for the whole tower — lobby to penthouse.",
-        image: "/assets/services/multi-res.jpg",
+        "slug": "multi-residential-millwork",
+        "image": "/assets/services/multi-res.jpg"
       },
       {
-        name: "Restaurant & QSR Millwork",
-        slug: "restaurant-qsr-millwork",
-        description: "Two organized scopes: bespoke full-service restaurants, and rollout-ready QSR programs.",
-        image: "/assets/services/restaurant-qsr.jpg",
+        "slug": "restaurant-qsr-millwork",
+        "image": "/assets/services/restaurant-qsr.jpg"
       },
       {
-        name: "Pharmacy & Clinic Millwork",
-        slug: "pharmacy-clinic-millwork",
-        description: "Dispensary, exam and consultation-room casework.",
-        image: "/assets/services/pharmacy.jpg",
+        "slug": "pharmacy-clinic-millwork",
+        "image": "/assets/services/pharmacy.jpg"
       },
       {
-        name: "Education Millwork",
-        slug: "education-millwork",
-        description: "Millwork for every learning environment — daycare to university, existing and new-build.",
-        image: "/assets/services/education.jpg",
+        "slug": "education-millwork",
+        "image": "/assets/services/education.jpg"
       },
       {
-        name: "Corporate, Bank & Institutional Millwork",
-        slug: "corporate-institutional-millwork",
-        description: "One millwork partner for banks, offices, libraries and every professional workplace.",
-        image: "/assets/services/corp-inst.jpg",
+        "slug": "corporate-institutional-millwork",
+        "image": "/assets/services/corp-inst.jpg"
       },
       {
-        name: "Custom Residential Millwork",
-        slug: "custom-cabinets",
-        description: "Bespoke millwork and panelling for designer homes — not standard tender packages.",
-        image: "/assets/services/residential.jpg",
-      },
-    ],
+        "slug": "custom-cabinets",
+        "image": "/assets/services/residential.jpg"
+      }
+    ]
   },
   {
-    id: "project-management",
-    number: "05",
-    title: "Project Management",
-    description: "Dedicated PMs, scheduling, procurement, site coordination and QA.",
-    count: 5,
-    services: [
+    "id": "project-management",
+    "number": "05",
+    "count": 5,
+    "services": [
       {
-        name: "Project Management",
-        slug: "project-management",
-        description: "Dedicated PMs from award through closeout.",
-        image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85&auto=format&fit=crop",
+        "slug": "project-management",
+        "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85&auto=format&fit=crop"
       },
       {
-        name: "Scheduling",
-        slug: "scheduling",
-        description: "Millwork schedule built inside your master construction schedule.",
-        image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=900&q=85&auto=format&fit=crop",
+        "slug": "scheduling",
+        "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=900&q=85&auto=format&fit=crop"
       },
       {
-        name: "Procurement",
-        slug: "procurement",
-        description: "Long-lead material commitments locked at award, not after shop drawings.",
-        image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=900&q=85&auto=format&fit=crop",
+        "slug": "procurement",
+        "image": "https://images.unsplash.com/photo-1553413077-190dd305871c?w=900&q=85&auto=format&fit=crop"
       },
       {
-        name: "Site Coordination",
-        slug: "site-coordination",
-        description: "Site walks, blocking coordination, MEP/AV rough-in verification.",
-        image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=85&auto=format&fit=crop",
+        "slug": "site-coordination",
+        "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=85&auto=format&fit=crop"
       },
       {
-        name: "Quality Assurance",
-        slug: "quality-assurance",
-        description: "100% pre-ship inspection against approved shop drawings and finish samples.",
-        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=85&auto=format&fit=crop",
-      },
-    ],
+        "slug": "quality-assurance",
+        "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=85&auto=format&fit=crop"
+      }
+    ]
   },
   {
-    id: "logistics",
-    number: "06",
-    title: "Logistics",
-    description: "Packaging, delivery, JIT release and site logistics — Canada-wide plus CUSMA cross-border.",
-    count: 4,
-    services: [
+    "id": "logistics",
+    "number": "06",
+    "count": 4,
+    "services": [
       {
-        name: "Delivery & Logistics",
-        slug: "delivery-logistics",
-        description: "Coordinated delivery for phased and multi-site rollouts.",
-        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&q=85&auto=format&fit=crop",
+        "slug": "delivery-logistics",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&q=85&auto=format&fit=crop"
       },
       {
-        name: "Packaging & Crating",
-        slug: "packaging",
-        description: "Blanket-wrapped, palletized and crated for zero transit damage.",
-        image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=900&q=85&auto=format&fit=crop",
+        "slug": "packaging",
+        "image": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=900&q=85&auto=format&fit=crop"
       },
       {
-        name: "Just-In-Time Delivery",
-        slug: "just-in-time-delivery",
-        description: "Millwork lands on the floor the day the install trade needs it.",
-        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&q=85&auto=format&fit=crop",
+        "slug": "just-in-time-delivery",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&q=85&auto=format&fit=crop"
       },
       {
-        name: "Site Logistics",
-        slug: "site-logistics",
-        description: "Loading-dock booking, hoisting, floor protection and swing-space coordination.",
-        image: "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=900&q=85&auto=format&fit=crop",
-      },
-    ],
+        "slug": "site-logistics",
+        "image": "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=900&q=85&auto=format&fit=crop"
+      }
+    ]
   },
   {
-    id: "installation",
-    number: "07",
-    title: "Installation",
-    description: "Professional install, site supervision, deficiency management and closeout.",
-    count: 4,
-    services: [
+    "id": "installation",
+    "number": "07",
+    "count": 4,
+    "services": [
       {
-        name: "Installation Coordination",
-        slug: "installation-coordination",
-        description: "On-site coordination with your install trades.",
-        image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=85&auto=format&fit=crop",
+        "slug": "installation-coordination",
+        "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=85&auto=format&fit=crop"
       },
       {
-        name: "Site Supervision",
-        slug: "site-supervision",
-        description: "Sandha lead supervisor on every install, Canada-wide.",
-        image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=85&auto=format&fit=crop",
+        "slug": "site-supervision",
+        "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=85&auto=format&fit=crop"
       },
       {
-        name: "Deficiency Management",
-        slug: "deficiency-management",
-        description: "Deficiency register through closeout with committed close dates.",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=900&q=85&auto=format&fit=crop",
+        "slug": "deficiency-management",
+        "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=900&q=85&auto=format&fit=crop"
       },
       {
-        name: "Project Closeout",
-        slug: "project-closeout",
-        description: "As-builts, O&M manuals, LEED docs, warranty package — delivered in one binder.",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=85&auto=format&fit=crop",
-      },
-    ],
+        "slug": "project-closeout",
+        "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=85&auto=format&fit=crop"
+      }
+    ]
   },
   {
-    id: "warranty",
-    number: "08",
-    title: "Warranty & Aftercare",
-    description: "Warranty support, maintenance, repairs, future renovations and service requests.",
-    count: 4,
-    services: [
+    "id": "warranty",
+    "number": "08",
+    "count": 4,
+    "services": [
       {
-        name: "Warranty Support",
-        slug: "warranty-support",
-        description: "1-year AWMAC/AWI workmanship + extended finish and cabinet-box warranties.",
-        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&q=85&auto=format&fit=crop",
+        "slug": "warranty-support",
+        "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&q=85&auto=format&fit=crop"
       },
       {
-        name: "Maintenance & Repairs",
-        slug: "maintenance-repairs",
-        description: "Scheduled inspections, touch-up crews and out-of-warranty repairs.",
-        image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=85&auto=format&fit=crop",
+        "slug": "maintenance-repairs",
+        "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=85&auto=format&fit=crop"
       },
       {
-        name: "Future Renovations",
-        slug: "future-renovations",
-        description: "PIP-cycle refurbishment, tenant-improvement re-fits, brand refreshes.",
-        image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&q=85&auto=format&fit=crop",
+        "slug": "future-renovations",
+        "image": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&q=85&auto=format&fit=crop"
       },
       {
-        name: "Service Requests",
-        slug: "service-requests",
-        description: "One phone number, one inbox for every service request across every project.",
-        image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85&auto=format&fit=crop",
-      },
-    ],
-  },
+        "slug": "service-requests",
+        "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85&auto=format&fit=crop"
+      }
+    ]
+  }
 ];
 
-export const serviceStandards = [
-  "AWMAC NAAWS 4.0 · AWMAC GIS third-party inspection",
-  "AWI Architectural Woodwork Standards",
-  "CSA / OBC / NBC · CSA B651 / AODA / ADA",
-  "CARB Phase 2 / TSCA Title VI · LEED / WELL",
-] as const;
-
-const defaultProcess = [
-  { step: "Estimating", description: "Take-off from your drawings, specs and finish schedule. Line-item quote returned within one business day for most packages." },
-  { step: "Engineering & Shop Drawings", description: "In-house team produces AWI/AWMAC-compliant shop drawings in AutoCAD, coordinated with Microvellum for direct-to-machine output." },
-  { step: "Submittals & Samples", description: "Finish samples, hardware cut-sheets and drawing set submitted for architect/GC approval prior to release to production." },
-  { step: "CNC Fabrication", description: "Panels nested and machined on multi-axis CNC. Solid-wood machining, edge-banding and dowel/confirmat assembly in dedicated cells." },
-  { step: "Finishing", description: "Controlled-environment spray booths for stain, lacquer, conversion varnish, catalyzed polyurethane and low-VOC waterborne systems." },
-  { step: "QC & Pre-Ship", description: "100% dimensional and finish inspection against the approved shop drawings. Pre-assembled where practical for site-fit certainty." },
-  { step: "Delivery & Install Coordination", description: "Blanket-wrapped, phased delivery coordinated with your site schedule. Installation supervision available Canada-wide." },
-];
-
-const defaultQuality = [
-  "AWMAC GIS third-party inspection available on request",
-  "ISO 9001-aligned quality management",
-  "Dimensional tolerances per NAAWS 4.0 grade (Custom or Premium)",
-  "Finish sheen, colour and film-build verified against approved sample",
-];
-
-const defaultSustainability = [
-  "CARB Phase 2 / TSCA Title VI compliant panels standard; NAF/NAUF available on request",
-  "FSC® Chain-of-Custody material available (CoC certificate on request)",
-  "Low-VOC waterborne and GREENGUARD Gold finish systems available",
-  "Supports LEED v4/v4.1 credits: MR (Sourcing of Raw Materials, EPDs, HPDs) and EQ (Low-Emitting Materials)",
-  "Aligns with WELL Building Standard v2 X07 Materials Restrictions",
-];
-
-export interface ServiceDetail {
-  overview: string;
-  bestFor?: string[];
-  process?: { step: string; description: string }[];
-  deliverables?: string[];
-  quality?: string[];
-  sustainability?: string[];
+export interface ServiceDetailMeta {
   gallery?: string[];
-  faqs?: { question: string; answer: string }[];
-  materials?: string;
-  hardware?: string;
-  leadTime?: string;
-  canadianStandards?: string[];
-  usStandards?: string[];
 }
 
-export const serviceDetails: Record<string, ServiceDetail> = {
+/** Non-copy detail fields (images). Body copy is in serviceDetails locale JSON. */
+export const serviceDetailMeta: Record<string, ServiceDetailMeta> = {
   "design-assist": {
-    overview: "Sandha's design-assist team joins the architect and GC at 50% Design Development to translate the millwork intent into a buildable, budget-locked package. Our engineers produce shop drawings, 3D renders, physical veneer and finish mockups, and long-lead material advisories — so the design you approve is the millwork we install, with no surprises at award.",
-    bestFor: [
-      "Design-build teams",
-      "Fast-track fit-outs",
-      "Complex architectural millwork — lobbies, boardrooms, feature walls",
-      "Hospitality veneer packages with sequence & grain match",
-      "Heritage & cultural millwork integration",
-    ],
-    deliverables: [
-      "Buildability review markups on the millwork set",
-      "Preliminary shop-drawing sketches (plan, elevation, section)",
-      "Photoreal 3D renderings of feature millwork",
-      "Physical veneer, laminate & finish sample boards",
-      "Hardware cut-sheets and operation mockups",
-      "Long-lead material advisories (flitches, solid surface, specialty metal)",
-      "Design intent vs. spec compatibility notes",
-      "Budget-impact log for each design decision",
-    ],
-    gallery: [
-      "/assets/services/design-assist.jpg",
-    ],
-    faqs: [
-      { question: "When should you bring us in?", answer: "50% DD is ideal. We can also engage at SD for scope-heavy packages (lobby feature walls, hospitality veneer, heritage integration)." },
-      { question: "What does design assist actually look like on my project?", answer: "It's the deliverables shown in the gallery: shop-drawing markups, 3D models, physical veneer and finish samples, and a written buildability memo. Delivered before tender so the design is locked, priced and de-risked." },
-      { question: "Do you charge for design assist?", answer: "For projects we're short-listed on, design assist through award is at no charge. For open feasibility studies we quote a fixed fee credited back on award." },
-    ],
-  },
-  "budget-estimating": {
-    overview: "Sandha runs a dedicated in-house estimating department that works strictly on architectural millwork — casework, veneer walls, solid-surface tops, doors, feature millwork and specialty finishes. Every quote is priced by estimators who have run millwork jobs in our own shop, so budgets reflect real material yields, real machining time and real finish grades — not generic square-foot averages. We return order-of-magnitude budgets from schematic drawings in one week, and firm line-item pricing from CDs in 3–5 business days.",
-    bestFor: [
-      "Pre-construction budget setting",
-      "GC hard-bid pursuits",
-      "Owner-side feasibility studies",
-      "GMP conversion and design-build cost management",
-    ],
-    deliverables: [
-      "Order-of-magnitude millwork budget from SD drawings",
-      "Firm line-item quote from CDs with grade-by-grade pricing",
-      "Assumption, inclusion and exclusion log",
-      "Alternates, unit prices and VE opportunities flagged",
-      "Material substitution options with cost delta",
-    ],
-    faqs: [
-      { question: "How fast do you turn a quote?", answer: "Budget number in one business day for most packages; firm quote with full drawings in 3–5 business days." },
-      { question: "Do you estimate anything other than millwork?", answer: "No — we estimate architectural millwork only. That focus is why our numbers hold from tender through closeout." },
-      { question: "Can you price to AWMAC Economy, Custom and Premium grade separately?", answer: "Yes. Every line item can be quoted at all three grades so the design team sees the cost impact of grade selection." },
-    ],
-  },
-  "value-engineering": {
-    overview: "When the number comes back over budget, we return a value-engineering log with quantified savings by line — substrate swaps, edge changes, hardware downgrades — with a photo of the design impact so the architect approves with eyes open.",
-    bestFor: [
-      "Over-budget projects",
-      "GMP conversion",
-      "Design-build cost management",
-    ],
-    deliverables: [
-      "Line-by-line VE log with $ savings",
-      "Design-impact photos and samples",
-      "Alternates approved / rejected register",
-    ],
-    faqs: [
-      { question: "Do you own the design after VE?", answer: "No — the architect signs off on every VE decision before it hits shop drawings." },
-    ],
-  },
-  "constructability-review": {
-    overview: "We review only the architectural millwork package for buildability, code compliance and coordination gaps before you go out to bid. Our team has hands-on millwork shop experience, so we catch the details general contractors miss — veneer sequence breaks at inside corners, hardware conflicts in tight casework, solid-surface seam locations that fall on high-wear edges, blocking and rough-in requirements for feature walls, and ADA/AODA reach ranges on reception desks.",
-    bestFor: [
-      "Pre-tender millwork package review",
-      "Design-build teams with heavy millwork scope",
-      "Complex healthcare / hospitality millwork",
-      "Heritage and feature-millwork coordination",
-    ],
-    deliverables: [
-      "Redline markups on the full millwork drawing set",
-      "Millwork-only constructability memo (buildability, code, finish, hardware)",
-      "Coordination-gap register: MEP rough-ins, AV blocking, structural backing for feature walls",
-      "Veneer sequence and grain-match constructability check",
-      "Hardware schedule clash report (hinge / slide / lock clearances in tight casework)",
-      "ADA/AODA reach-range verification for reception desks and public millwork",
-    ],
-    faqs: [
-      { question: "Do you review trades other than millwork?", answer: "No — we review only the architectural millwork package. That single-trade focus is why we catch the veneer, hardware, finish and assembly issues a general constructability review misses." },
-      { question: "When should the review happen?", answer: "Pre-tender is ideal — we redline the millwork set before the GC prices it, so there are no surprises at award. We can also review at 50% CDs if you need early risk identification." },
-      { question: "What does the coordination-gap register cover?", answer: "It lists every instance where the millwork drawing set is missing blocking, MEP rough-in, AV/security cabling, or structural backing required for installation — with reference drawing numbers and proposed fixes." },
-    ],
-  },
-  "shop-drawings-engineering": {
-    overview: "Every Sandha millwork project starts with a drawing set produced by our in-house engineering team. We draft in AutoCAD and model in Microvellum so the approved shop drawings feed directly into CNC programs — no translation errors between design and production. We coordinate RFIs with the architect and consultant team, manage submittal turnaround inside the GC's schedule, and stamp every drawing for dimensional accuracy, material callouts and hardware integration.",
-    bestFor: [
-      "Millwork shop drawings for architect / GC approval",
-      "Redline review and revision on the millwork drawing set",
-      "Submittal packages with finish schedules and hardware cut-sheets",
-      "Final production drawings with CNC nesting and machining data",
-      "As-built millwork drawings post-installation",
-    ],
-    deliverables: [
-      "Redline review set on the architectural millwork drawings",
-      "Full submittal shop-drawing set (PDF + DWG) with title sheet",
-      "Coordinated millwork finish and hardware schedule",
-      "Detailed elevation, plan and section drawings",
-      "Construction detail drawings — joinery, edge banding, hardware boring",
-      "CNC-ready nesting layouts and machining programs",
-      "RFI log and revision register for the millwork package",
-    ],
-    faqs: [
-      { question: "Do you produce shop drawings for trades other than millwork?", answer: "No — we engineer and draft strictly for architectural millwork. That focus is why our drawings include veneer sequence, hardware boring patterns and CNC machining data that general drafting firms miss." },
-      { question: "What does the drawing set include?", answer: "Redlined review markups, the submittal package with finish/hardware schedules, final production elevations and sections, and Microvellum-driven production and installer drawing sets." },
-      { question: "Why Microvellum for production and installer drawings?", answer: "Microvellum is the North American millwork industry's benchmark platform — every dimension in the approved shop drawing feeds one parametric model that outputs the CNC cutlist, nesting layout, hardware boring coordinates, edge-banding program AND the installer's field drawings. Because production and installer sheets share the same source data, there is zero drift between what the architect approved, what the CNC cuts, and what the crew installs on site." },
-      { question: "Do your shop drawings connect directly to CNC?", answer: "Yes — our Microvellum models generate cutlists, nesting programs, hardware boring coordinates and edge-banding instructions. What the architect approves is exactly what the machine cuts, and exactly what the installer builds from on site." },
-    ],
-    leadTime: "First submission: 2–3 weeks post-award. Revision cycle: 3–5 business days.",
-  },
-  "3d-modeling": {
-    overview: "Our in-house engineering team models only architectural millwork in 3D — reception desks, feature walls, curved bars, coffered ceilings, custom casework and veneer-clad millwork — so the architect and owner approve the finished look before we cut a single panel. Every model is built from real shop-floor knowledge: we know how veneer sequences break at inside corners, how hardware fits in tight casework, and how CNC tooling paths affect the final surface.",
-    bestFor: [
-      "Reception desks and lobby millwork",
-      "Curved and folded veneer feature walls",
-      "Owner-approval renderings before production",
-      "CNC-ready millwork models for Microvellum",
-      "Complex casework with integrated hardware and lighting",
-    ],
-    deliverables: [
-      "Photoreal 3D renderings of millwork assemblies",
-      "Turntable and walk-through animations on request",
-      "CNC-ready SolidWorks / Microvellum models",
-      "Exploded-view assembly diagrams with hardware callouts",
-      "Veneer sequence and grain-direction verification in 3D",
-      "Render-to-reality comparison documentation",
-    ],
-    faqs: [
-      { question: "Do you model anything other than millwork?", answer: "No — we model only architectural millwork. That focus means our 3D team understands veneer sequencing, hardware clearances, edge-banding transitions and CNC machining limits — details a general 3D artist misses." },
-      { question: "Can the 3D model go straight to CNC?", answer: "Yes — our SolidWorks and Microvellum models are built machine-ready. The same geometry used for the owner rendering becomes the CNC toolpath with no re-modeling." },
-      { question: "What does 'render to reality' mean?", answer: "We deliver a side-by-side comparison showing the approved 3D render next to the finished installed millwork. It proves the finished product matches what the owner signed off on." },
-    ],
-  },
-  "architect-consultant-coordination": {
-    overview: "On every millwork package, Sandha assigns a single project manager as the point of contact for the architect, interior designer, GC, MEP, AV, security and structural consultants. Millwork sits at the intersection of almost every other trade — a reception desk touches power, data, AV, HVAC returns, structural blocking, lighting, plumbing and finish trades. If one PM isn't actively coordinating all of them, drawings drift, RFIs stall, and site conflicts show up during install. That's why we do this in-house: our coordinator lives inside the drawing set, joins the consultant meetings, tracks every RFI, and pushes revisions through Microvellum so what's approved is exactly what's cut and installed.",
-    bestFor: [
-      "Complex fit-outs with many consultants",
-      "Design-build and IPD teams",
-      "Fast-track projects with tight RFI turnaround",
-      "Multi-trade millwork touching AV, MEP, security and structural",
-      "Projects where the architect needs one accountable millwork contact",
-    ],
-    deliverables: [
-      "One dedicated Sandha PM as single point of contact for architect and consultants",
-      "Live RFI log with 48-hour response commitment",
-      "Attendance at architect / consultant coordination meetings",
-      "Shop-drawing revisions issued per consultant comment",
-      "Coordination clash reports against MEP, AV, security and structural backgrounds",
-      "Pre-install site meeting with GC and trade partners",
-      "Weekly submittal-status report to the design team",
-    ],
-    faqs: [
-      { question: "Why does millwork need its own coordination PM?", answer: "Millwork touches almost every other trade — power, data, AV, HVAC, structural blocking, lighting, finishes. Without one person tracking those hand-offs, drawings and site work drift apart. Our PM owns that coordination so the architect doesn't have to chase it." },
-      { question: "How fast are RFIs answered?", answer: "Inside 48 hours as a standard commitment, and same-day on fast-track jobs. Every RFI is logged, tracked, and closed with a drawing revision or written response." },
-      { question: "Who attends the consultant meetings?", answer: "Our project manager attends architect / ID / GC / MEP / AV / security / structural coordination meetings as needed — in person on GTA projects, on Teams / Zoom on out-of-town work." },
-    ],
+    gallery: ["/assets/services/design-assist.jpg"],
   },
   "cnc-manufacturing": {
-    overview: "In-house 3- and 5-axis CNC production on Biesse Rover flatbed routers, SCM/Selco beam saws, vertical CNC panel processors and automated CNC dowel-insertion lines — nesting, boring, edge-banding and machining for millwork, casework, retail fixtures and OEM component work.",
-    bestFor: [
-      "Millwork shops overflow production",
-      "OEM component manufacturing",
-      "Retail fixture prototypes and short runs",
-      "Custom mouldings and machined solid-wood parts",
-    ],
-    deliverables: [
-      "CNC-ready cutlist and nesting report",
-      "First-article inspection sample",
-      "Bagged, labelled, palletized part-runs",
-    ],
-    materials: "All panel goods to 5' × 12' × up to 1½\". Solid hardwood machining. Composite panels (Corian, phenolic, aluminum composite).",
-    hardware: "Machine-inserted dowels and confirmats. CNC-drilled Blum, Häfele, Grass hardware patterns.",
-    leadTime: "Prototype: 3–5 business days. Production runs: Quoted per program.",
-    gallery: [
-      "/assets/services/cnc.jpg",
-    ],
-    faqs: [
-      { question: "Do you accept native Microvellum or SketchUp files?", answer: "Yes — plus AutoCAD DWG, Cabinet Vision, Solidworks and STEP files." },
-      { question: "What's your minimum run?", answer: "One piece. We prototype as readily as we run production." },
-    ],
-  },
-  "custom-fabrication": {
-    overview: "Assembly line — high-volume casework. Once the CNC department has cut, edge-banded and kitted the parts (each unit tagged and carted by drawing number), the kit flows onto our assembly line. Case clamps, dowel inserters, pneumatic drivers and a roller conveyor keep the line moving; a trained crew can assemble, hardware-fit and wrap up to ~200 cabinets per day for multi-residential, education, healthcare and QSR roll-outs where the same detail repeats hundreds of times. Custom department — where the magic happens. Complex geometry, curved carcasses, book-matched veneer lay-ups, solid-wood banquettes, sculptural reception desks, monumental library walls, feature panelling. Our senior craftspeople work at dedicated benches with vacuum presses, band-saws, veneer stitchers, radius formers and hand-shaping stations. This is the department that turns an architect's rendering into a fabricated piece nobody else in the trade will quote. Same shop, same PM, same delivery. A single project can flow through both departments — hundreds of repeat vanities down the line, and the lobby reception desk built one-off in custom — and still ship on one truck with one drawing package.",
-    bestFor: [
-      "Multi-residential, hotel and education projects with high repeat cabinet counts",
-      "Sculptural reception desks, curved feature walls, monumental library millwork",
-      "Solid-wood banquettes, integrated feature seating, radiused veneer",
-      "Any millwork the market considers 'too complex to quote'",
-    ],
-    deliverables: [
-      "Fixed-price line-item proposal with alternates",
-      "AWMAC/AWI-compliant shop drawings (PDF + DWG)",
-      "Physical finish samples & hardware cut-sheets",
-      "Material substitution and value-engineering log",
-      "Submittal package for LEED / WELL documentation",
-      "O&M manual and care/warranty documentation at closeout",
-    ],
-    materials: "Kitted CNC-machined casework (line); Solid hardwoods and rift/QC veneer (custom); Bent laminations and vacuum-pressed radius panels; Integrated metal, stone and glass sub-components. Finish systems: Any finish system — line pieces routed to the flatline booth, custom pieces to manual downdraft booths.",
-    hardware: "Blum, Hafele, Salice, Grass — line and custom. Custom-machined brackets and connectors for one-off pieces.",
-    leadTime: "Budget quote: 1 business day. Firm quote (with drawings): 3–5 business days. Shop drawings: 2–3 weeks post-award. Production: 6–10 weeks after approvals. Delivery window: Phased to site schedule.",
-    faqs: [
-      { question: "How many cabinets can the assembly line produce per day?", answer: "Peak throughput is around 200 assembled, hardware-fitted and wrapped cabinet units per day for straightforward repeat casework. Actual rate depends on unit complexity and hardware content." },
-      { question: "How do you decide what goes on the line vs. into custom?", answer: "If the unit repeats more than a handful of times and every part is CNC-nestable and edge-bandable, it runs on the line. If it involves curves, book-matched veneer, solid-wood joinery, integrated metal/stone, or a one-off feature detail, it goes to the custom department." },
-      { question: "Can one project use both departments?", answer: "Yes, and most mid- to large-size projects do. A hotel package might run 300 identical guestroom vanities down the assembly line while the lobby reception desk, bar front and feature wall are built in the custom shop — everything ships coordinated on one release." },
-    ],
-  },
-  "finishing-paint": {
-    overview: "Sandha operates a four-step in-house finishing line: sanding station (wide-belt and orbital to controlled grit schedule), Cefla automatic flatline (robotic spray for flat parts with >95% overspray recovery), manual downdraft booths (HEPA make-up air, LED colour-accurate lighting for 3D assemblies), and Sunspot dry/cure room (high-velocity heated cure chamber). Every unit is inspected under D65 daylight lamps against the signed control sample before it moves to the packing dock.",
-    bestFor: [
-      "Stained hardwood veneer packages (executive, hospitality, civic)",
-      "Pigmented painted MDF casework (retail, corporate, healthcare)",
-      "High-gloss and open-pore luxury systems (flagship hospitality)",
-      "Chemical-resistant finishes for lab, healthcare and food-service",
-      "LEED / WELL projects requiring low-VOC waterborne",
-      "Brand-standard colour matching (BM, SW, RAL, Pantone, physical chip)",
-    ],
-    deliverables: [
-      "12\" × 12\" approved control sample per finish, signed by architect",
-      "Step-panel with 3 candidate colour matches (BM / SW / RAL / Pantone / physical chip)",
-      "Batch-to-batch consistency records (sheen, film build, colour ΔE)",
-      "MSDS / SDS and VOC-content data sheets for LEED submittal",
-      "Colour recipe archived for future phases and warranty touch-ups",
-    ],
-    materials: "Catalyzed conversion varnish; Catalyzed lacquer — pigmented and clear; 2K polyurethane; Low-VOC waterborne (GREENGUARD Gold); UV-cured; European high-gloss polyester; Multi-step stain + wiping stain + toner + sealer + top-coat systems; Antimicrobial silver-ion additive (healthcare).",
-    leadTime: "Budget quote: 1 business day. Firm quote (with drawings): 3–5 business days. Shop drawings: 2–3 weeks post-award. Production: 6–10 weeks after approvals. Delivery window: Phased to site schedule.",
-    faqs: [
-      { question: "Do you finish other manufacturers' millwork?", answer: "No. The finishing department strictly finishes millwork built by our own custom department. We control the substrate — species, moisture content, sanding, edge condition — so we can guarantee the film." },
-      { question: "Why a Cefla flatline for flat parts and manual booths for large units?", answer: "Flat panels benefit from the film-build consistency and near-zero over-spray of an automated line. Three-dimensional units need a certified finisher's eye and gun control." },
-      { question: "What is the Sunspot dry room and why does it matter?", answer: "It's a high-velocity heated cure chamber. It force-cures catalyzed and waterborne coatings without skinning or solvent-pop, so a unit ships the same or next day instead of curing on carts for 24–48 hours." },
-    ],
-  },
-  "solid-surface-work": {
-    overview: "Corian fabricated in-house as a certified DuPont fabricator — cutting, thermoforming, seaming and finishing all happen under our roof, which is what allows the DuPont 10-year installed warranty. Quartz, granite and marble countertops are fabricated through certified partners who specialize in slab work. Architectural glass and back-painted panels are sourced through certified glass partners. Everything ships in one coordinated package, sequenced with the casework and installed by our crew.",
-    bestFor: [
-      "Corian countertops, wet walls and integral-bowl vanities (in-house)",
-      "Quartz reception counters, bar tops and washroom vanities (partner-fabricated)",
-      "Natural granite and marble feature counters and hostess stations (partner-fabricated)",
-      "Tempered and back-painted glass splashbacks, shelving and feature panels (partner-fabricated)",
-    ],
-    deliverables: [
-      "Certified Corian fabrication and installation carrying the DuPont 10-year installed warranty",
-      "Single-source quartz, granite and marble scope — templated, fabricated and installed by our certified partners",
-      "Single-source architectural glass and back-painted glazing scope — tempered, drilled and installed through our certified partners",
-      "One coordinated submittal package covering every hard surface in the millwork scope",
-    ],
-    materials: "Corian (DuPont) — in-house certified fabrication; Engineered quartz — Caesarstone, Silestone, Cambria, HanStone (certified partner); Natural granite and marble slab (certified partner); Tempered clear and low-iron architectural glass (certified partner); Back-painted (glazed) glass panels (certified partner).",
-    hardware: "Corian integral coved bowls and undermount sinks. Concealed steel sub-structure and cantilever brackets for stone tops. Stand-off, edge-grip and channel systems for glass splashbacks.",
-    leadTime: "Budget quote: 1 business day. Firm quote (with drawings): 3–5 business days. Shop drawings: 2–3 weeks post-award. Production: 6–10 weeks after approvals.",
-    faqs: [
-      { question: "Do you actually fabricate Corian yourselves, or is it sub-contracted?", answer: "Corian is fabricated in-house at our shop. We are certified Corian fabricators — cutting, thermoforming, seaming and finishing all happen under our roof, which is what allows the DuPont 10-year installed warranty to attach to the finished counter." },
-      { question: "Why partner out quartz, granite and marble instead of doing it in-house?", answer: "Quartz, granite and marble need a dedicated slab shop with bridge saws, water-jet CNC and slab-yard inventory — that is a different trade from millwork. We keep long-term relationships with certified stone fabricators who template off our shop drawings, cut to our seam plan and deliver on our schedule, so the client still gets one point of contact." },
-      { question: "Can Corian and glass be combined in the same piece?", answer: "Yes — a common detail is a Corian reception counter with a back-painted glass transaction top, or a Corian vanity with a low-iron glass splashback. We detail the substrate, reveal and joint so both trades install cleanly." },
-    ],
-  },
-  "plastic-laminate-fabrication": {
-    overview: "Plastic laminate is an engineered composite surface. HPL is built from phenolic-impregnated kraft paper compressed into a decorative sheet. TFL is a thinner melamine face fused directly to the board. CRL adds a modified resin system for healthcare and lab environments. For smaller runs we fabricate entirely in-house. For larger projects we partner with certified laminate suppliers (Wilsonart, Formica, Arborite, Nevamar, Pionite). Every assembly receives six-side sealing on wet-zone cores, PUR hot-melt adhesive bonding, and edge-band applied with pre-heating and end-cutting.",
-    bestFor: [
-      "Retail rollouts and cash-wraps requiring brand-standard colours",
-      "Healthcare and laboratory casework needing CRL and disinfectant resistance",
-      "Education — classrooms, libraries, admin, and lab casework",
-      "Corporate offices — reception desks, pantries, storage, boardroom credenzas",
-      "Multi-residential amenity and in-suite kitchens",
-      "Food-service and hospitality back-of-house millwork",
-    ],
-    deliverables: [
-      "Fixed-price line-item proposal with alternates",
-      "AWMAC/AWI-compliant shop drawings (PDF + DWG)",
-      "Physical finish samples & hardware cut-sheets",
-      "Material substitution and value-engineering log",
-      "Submittal package for LEED / WELL documentation",
-      "O&M manual and care/warranty documentation at closeout",
-    ],
-    materials: "HPL (0.7mm–1.7mm); TFL; CRL; Fire-Rated / Class A laminate; MDF, MR-MDF, NAUF particleboard, and plywood cores; PUR hot-melt adhesive; 3mm PVC/ABS colour-matched edge-band; Laser-edge banding.",
-    hardware: "Blum, Hettich, Häfele — European-grade hinges, slides, and lift systems. ANSI/BHMA Grade 1 pulls and locks. Adjustable levellers, wire management, and grommets. Integrated LED lighting on display casework.",
-    leadTime: "Budget quote: 1 business day. Firm quote (with drawings): 3–5 business days. Shop drawings: 2–3 weeks post-award. Production: 6–10 weeks after approvals.",
-    faqs: [
-      { question: "What is the difference between HPL and TFL?", answer: "HPL is a separate decorative sheet built from multiple resin-impregnated kraft-paper layers, then bonded to the core in our shop. It is thicker, more durable, impact-resistant. TFL is a single melamine layer fused directly onto the board at the panel plant. It is thinner, more economical, ideal for vertical panels and dry applications." },
-      { question: "Is plastic laminate heat-resistant?", answer: "Standard HPL withstands brief contact with hot cups and plates. For extended heat exposure, we specify heat-resistant grades or add a stainless-steel or solid-surface inset." },
-      { question: "How is the laminate bonded to the core?", answer: "We use PUR (polyurethane reactive) hot-melt adhesive, not traditional contact cement. It is stronger, more durable in wet environments, and less prone to delamination over time." },
-    ],
-  },
-  "veneer-hardwood-fabrication": {
-    overview: "Veneer is a thin (0.5-0.6 mm) slice of real hardwood pressed onto a stable engineered core. It is real wood — not a print — and lets us cover large architectural surfaces with a continuous, matched grain that solid lumber cannot deliver at that scale. Solid hardwood is milled from the log itself — the right call for stair treads, handrails, thick mouldings, door stiles, tabletops with exposed edges, bar tops, bench seats.",
-    bestFor: [
-      "Lobby and elevator-cab feature walls (veneer)",
-      "Hospitality and executive boardroom paneling (veneer)",
-      "Ballroom and corridor wainscot (veneer)",
-      "Reception desk fronts and back-bar millwork (veneer)",
-      "Solid hardwood stair treads, handrails and nosings",
-      "Thick solid mouldings, door stiles and bar tops",
-      "Any project where a continuous grain read across a wide surface matters",
-    ],
-    deliverables: [
-      "Flitch and cut-pattern sample boards for architect approval",
-      "Full-scale grain-match layout drawings before pressing",
-      "Book- and sequence-matched veneered panels pressed in-house",
-      "Panels edge-banded with matching veneer or solid lipping",
-      "Solid-hardwood mouldings, trim, stair parts and door components CNC-machined to profile",
-      "Panels finished in the same batch under one lot number so colour reads consistently",
-    ],
-    materials: "Rift, quarter-cut, plain-sliced and rotary-cut veneer. White oak, walnut, fumed oak, cherry, maple, anigre, sapele. Sequence- and grain-matched flitches. Solid North American hardwood lumber for structural components.",
-    faqs: [
-      { question: "What actually is a wood veneer?", answer: "A real slice of hardwood — typically 0.5 to 0.6 mm thick — cut from a log and pressed onto a stable engineered substrate. It is genuine wood, not a print or a laminate." },
-      { question: "Veneer vs. solid hardwood — which is more cost-effective?", answer: "For anything wide and flat (lobby walls, boardroom panels, cabinet doors) veneer over an engineered core is dramatically cheaper. For anything narrow, structural or edge-loaded (stair treads, handrails, thick mouldings, bar tops) solid is cheaper." },
-      { question: "What's book-match vs. sequence-match?", answer: "Book-match flips every other veneer leaf so the grain mirrors across the joint. Sequence-match keeps all the leaves from one flitch installed in the order they were sliced, so grain flows continuously across a whole wall." },
-    ],
-  },
-  "metal-integration": {
-    overview: "Wood millwork fixtures that need metal — servery aprons, kicks, brackets, reveals, kitchens — delivered as one package. Restaurant-grade stainless is fabricated through a certified commercial-kitchen partner to NSF/ANSI 2. Architectural metal (brass, blackened steel, satin stainless, powder-coated aluminum) is single-sourced through long-standing architectural metal shops. Metal arrives at our shop and is integrated into the wood fixture before it ships as one assembled unit.",
-    bestFor: [
-      "Restaurant serveries, prep stations and back-of-house stainless work (NSF/ANSI 2)",
-      "Hotel and hospitality bars with wood fronts, brass reveals and blackened-steel foot-rails",
-      "Retail cash-wraps with metal transaction tops and toe-kicks",
-      "Bank, hotel and corporate reception desks with brass/stainless fascia",
-      "Wood-and-metal open shelving, display fixtures and hangbar systems",
-      "Feature-wall portals, reveal bands and metal-inlay wall panelling",
-    ],
-    deliverables: [
-      "One coordinated shop-drawing package covering the wood millwork and the integrated metal",
-      "Certified commercial-kitchen stainless fabrication to NSF/ANSI 2 through our kitchen partner",
-      "Architectural brass / blackened-steel / powder-coat fabrication through our metal partner",
-      "In-shop integration of metal into the wood carcass before shipping — one assembled fixture, not two",
-      "Single install crew and single warranty response covering both wood and metal",
-    ],
-    materials: "304 / 316 stainless steel (kitchen partner); Blackened / raw / hot-rolled steel; Satin brass and antique brass; Powder-coated aluminum in any RAL colour; White oak, walnut, maple and MR-MDF carcasses (in-house).",
-    hardware: "Concealed steel cantilever brackets and sub-structure. Continuous stainless/brass toe-kick and plinth systems. Foot-rail brackets, stand-offs and reveal channels.",
-    faqs: [
-      { question: "Do you fabricate the metal in-house or through a partner?", answer: "The wood is in-house. The metal is fabricated by long-term certified partners — a commercial-kitchen stainless shop for restaurant scope, and architectural metal shops for brass, blackened steel and powder-coated aluminum." },
-      { question: "Is your restaurant stainless commercial-kitchen certified?", answer: "Yes — fully welded 304 stainless fabrication is delivered by our commercial-kitchen partner to NSF/ANSI 2." },
-      { question: "Who holds the warranty on the metal portion?", answer: "Sandha holds the client-facing warranty on the completed fixture. The underlying metal fabricator warranties flow through us." },
-    ],
+    gallery: ["/assets/services/cnc.jpg"],
   },
   "healthcare-millwork": {
-    overview: "Whole-hospital millwork — from main-lobby reception and wayfinding walls to nurses' stations, exam and OR pre-op bays, medication rooms, pharmacy compounding, lab casework, staff lounges, patient rooms, cafeterias, chapels and back-of-house sterile processing. Every substrate, edge, hardware set and finish is selected against the project's ICRA, IPAC and water-exposure requirements, and every install is planned for zero patient disturbance.",
-    bestFor: [
-      "Full hospital fit-outs — new build and expansions",
-      "Main lobby, wayfinding and public-corridor wood paneling",
-      "Nurses' stations and physician charting alcoves",
-      "Exam rooms, ED triage and imaging control",
-      "Medication rooms, clean/dirty utility, central sterile",
-      "Pharmacy compounding to USP <797>/<800>",
-      "Patient rooms, overbed wardrobes, TV walls, vanities",
-      "Long-term care, retirement, ambulatory surgery centres",
-    ],
-    deliverables: [
-      "Fixed-price line-item proposal with alternates",
-      "AWMAC/AWI-compliant shop drawings (PDF + DWG)",
-      "Physical finish samples & hardware cut-sheets",
-      "Material substitution and value-engineering log",
-      "Submittal package for LEED / WELL documentation",
-      "O&M manual and care/warranty documentation at closeout",
-      "ICRA / IPAC-compliant delivery & install sequencing plan",
-      "Chemical-compatibility datasheet per finish",
-      "Wet-zone construction detail package",
-      "Low-disturbance install schedule with unit-manager sign-off per shift",
-    ],
-    materials: "HPL or Chemical-Resistant Laminate full-height in wet & clinical zones. Solid-surface (Corian, Hi-Macs) with thermoformed integral-bowl sinks. MR-MDF or NAUF phenolic core, six-side sealed. Continuous 3mm PVC/ABS edgeband on every exposed edge. Stainless steel for sterile processing. AWMAC Premium sequence-matched rift/quarter-cut white oak, walnut and fumed-oak veneer for public wood.",
-    hardware: "Stainless or nickel-plated hinges rated for repeat disinfectant exposure. Wire pulls, edge pulls or hands-free push-latches. Keyed narcotics locks (CompX Chicago) and RFID electronic locks for medication cabinets. Full-extension stainless slides with removable interiors.",
-    leadTime: "Budget quote: 1 business day. Firm quote (with drawings): 3–5 business days. Shop drawings: 2–3 weeks post-award. Production: 6–10 weeks after approvals.",
     gallery: ["/assets/services/healthcare.jpg"],
-    faqs: [
-      { question: "Which disinfectants are your finishes rated for?", answer: "We provide a chemical-compatibility matrix per finish covering quaternary ammonium, accelerated hydrogen peroxide (AHP), sodium hypochlorite (bleach up to 1:10), isopropyl alcohol and phenolic cleaners." },
-      { question: "Can you meet USP 797/800 requirements for pharmacy compounding?", answer: "Yes — non-shedding, cleanable, coved-base millwork with thermoformed integral-bowl solid-surface work-surfaces for sterile (797) and hazardous (800) compounding rooms." },
-      { question: "Do you install in occupied, operating hospital environments?", answer: "Yes — this is a core competency. We run after-hours and weekend crews, ICRA Class III/IV dust and negative-air barriers, HEPA filtration, and full IPAC sign-off per CSA Z317.13 before handover." },
-    ],
   },
   "retail-fixtures": {
-    overview: "Brand-standard retail fixtures manufactured as repeatable production runs — cash-wraps, gondolas, wall systems, merchandising towers and pop-up kits — with the drawing control needed to roll a store program nationally. Fixtures ship as flat-pack or pre-assembled kits with labelled hardware bags and store-by-store install guides.",
-    bestFor: [
-      "National retail rollouts (10–500+ stores)",
-      "Airport concessions and travel retail",
-      "Shop-in-shop and department-store concessions",
-      "Pop-up and short-lease programs",
-    ],
-    deliverables: [
-      "Fixed-price line-item proposal with alternates",
-      "AWMAC/AWI-compliant shop drawings (PDF + DWG)",
-      "Physical finish samples & hardware cut-sheets",
-      "Material substitution and value-engineering log",
-      "Submittal package for LEED / WELL documentation",
-      "O&M manual and care/warranty documentation at closeout",
-      "Prototype sign-off package",
-      "Per-store bill of materials and install kit",
-      "Rollout tracker with delivery-by-store schedule",
-    ],
-    materials: "HPL/TFL over commercial-grade core; Powder-coated steel bases; Solid-surface tops (Corian, Hi-Macs); Acrylic and glass display panels.",
-    hardware: "ANSI/BHMA Grade 1 commercial hardware; Adjustable levellers, wire-management, cable-pass grommets.",
-    leadTime: "Prototype: 4–6 weeks. Production run (per store): 5–7 business days once locked. National rollout capacity: Up to 15 stores/week.",
     gallery: ["/assets/services/retail-hero.jpg"],
-    faqs: [
-      { question: "How do you handle store-by-store variation?", answer: "The kit is standardized. Site-specific dims (columns, HVAC, existing conditions) are absorbed in scribes and fillers built into every unit — the fixture itself never changes." },
-      { question: "Can you manage US-only stores from Canada?", answer: "Yes — we ship into the US routinely under NAFTA/CUSMA. Customs paperwork and cross-border logistics are handled by our logistics partner." },
-    ],
   },
   "hospitality-millwork": {
-    overview: "We deliver the full millwork package for hotel projects — from grand front-of-house lobbies with sweeping sequence- and grain-matched veneer walls and coffered wood ceilings, to guest-room headboard walls, wardrobes, minibars, desks, vanities and closets, through to amenity floors, executive lounges, meeting rooms, ballrooms, bars, spa and fitness change-rooms, corridor wainscot and back-of-house pantries. Every project is built to AWMAC Premium grade on public-facing scope.",
-    bestFor: [
-      "5-star and luxury hotel lobbies, reception and concierge desks",
-      "Sequence- and grain-matched veneer wall paneling and coffered ceilings",
-      "Guest-room casework — headboards, wardrobes, minibar, desk, luggage bench",
-      "Guest bathroom vanities and full-height veneer wall paneling",
-      "Executive lounges, club floors and hospitality suites",
-      "Ballrooms, meeting rooms and boardrooms — full-perimeter veneer paneling",
-      "F&B host stands, back-bars, banquettes and wine display millwork",
-      "Spa, pool and fitness change-room millwork",
-      "Corridor wainscot, elevator vestibules and guestroom entry door casings",
-      "Rooftop bar and terrace millwork in exterior-grade wood",
-    ],
-    deliverables: [
-      "Fixed-price line-item proposal with alternates",
-      "AWMAC/AWI-compliant shop drawings (PDF + DWG)",
-      "Physical finish samples & hardware cut-sheets",
-      "Material substitution and value-engineering log",
-      "Submittal package for LEED / WELL documentation",
-      "O&M manual and care/warranty documentation at closeout",
-      "Sequence and grain match sample approval before veneer cutting",
-      "PIP / brand-standard compliance sign-off per finish and hardware family",
-      "Fire-rated door supply through audited certified partners",
-      "Long-term maintenance package — scheduled inspections, touch-up and refurbishment",
-    ],
-    materials: "Rift and quarter-cut white oak, walnut and fumed oak veneer — sequence and grain matched. Book-matched veneer for lobby and feature walls. Quartz slabs and porcelain counters for reception and bar tops. Corian / Hi-Macs solid surface for vanities. HPL over MR-MDF for wet areas. Mixed metal accents — polished brass, blackened steel, satin stainless reveals. Fluted and reeded oak profiles for bar fronts and reception fascias.",
-    hardware: "Blum soft-close hinges and slides on all guest-room casework. Hafele wardrobe, Murphy-bed and sliding-door hardware. Concealed door edge pulls and designer metal handles per brand book. Integrated LED strip lighting in wardrobes, minibars and vanity toe-kicks. Concealed cable management for desks, media walls and AV cabinetry.",
-    leadTime: "Budget quote: 1 business day. Firm quote (with drawings): 3–5 business days. Shop drawings: 2–3 weeks post-award. Production: 6–10 weeks after approvals.",
     gallery: ["/assets/services/hospitality.jpg"],
-    faqs: [
-      { question: "Do you work directly with international hotel chains?", answer: "Yes — we deliver millwork packages for global full-service and luxury hotel operators, matching each brand's PIP and Design Standard book on finish, hardware and grade." },
-      { question: "How do you sequence- and grain-match veneer across a lobby wall?", answer: "Every log flitch is reviewed and approved before cutting. Panels are laid out in a full-scale shop drawing, book- and sequence-matched, and stored together as a set — the same flitch runs from reception through elevator lobby so grain reads continuously." },
-      { question: "Do you offer a long-term maintenance package?", answer: "Yes — every hotel package can include a scheduled maintenance program: veneer touch-up, hinge and slide re-adjustment, solid-surface polishing, and PIP-cycle refurbishment so the millwork stays opening-day-ready year after year." },
-    ],
   },
   "multi-residential-millwork": {
-    overview: "For general contractors building 20-, 40- or 60-storey residential towers, the millwork division is not just a kitchen package — it is every piece of finished wood, quartz, Corian solid surface and metal-trimmed casework the building carries. We scope, engineer, manufacture and install all of it under one contract. Main-floor scope covers lobby feature walls, coffered ceiling millwork, concierge and security desks, elevator vestibule paneling, mail and parcel rooms. Amenity floors add party-room catering kitchens, wet bars, co-working benches, library shelving, fitness change rooms, pet-spa and dog-wash counters, theatre rooms, and rooftop terrace bars. In-suite, we produce 4–8 unit-type kitchens, ensuite and powder-room vanities, walk-in closet systems, entry benches, laundry closets and media walls.",
-    bestFor: [
-      "High-rise condominium towers (20+ storeys)",
-      "Purpose-built rental towers",
-      "Main-floor lobby, concierge and mail-room millwork",
-      "Amenity floors — party room, bar, co-working, theatre, pet spa",
-      "Fitness and pool change-room millwork",
-      "Corridor wall paneling and unit-entry surrounds",
-      "Rooftop terrace bars and outdoor kitchens",
-      "In-suite kitchens, vanities, closets, media walls",
-      "Purchaser upgrade programs",
-      "Student housing and seniors' living towers",
-    ],
-    deliverables: [
-      "Fixed-price line-item proposal with alternates",
-      "AWMAC/AWI-compliant shop drawings (PDF + DWG)",
-      "Physical finish samples & hardware cut-sheets",
-      "Material substitution and value-engineering log",
-      "Submittal package for LEED / WELL documentation",
-      "O&M manual and care/warranty documentation at closeout",
-      "Unit-type prototype approval package",
-      "Suite-by-suite delivery schedule aligned to construction sequence",
-      "Purchaser upgrade catalogue (where applicable)",
-    ],
-    materials: "Quartz slabs (waterfall counters, feature walls, concierge desks). Corian and DuPont-family solid surface. Rift-cut white oak, walnut and figured wood veneer paneling. TFL / thermofoil / painted MDF doors for in-suite kitchens and vanities. MR-particleboard and MR-MDF boxes. Mixed metals — brushed brass, blackened steel, satin stainless reveals and inlays. Porcelain slab counters and backsplashes (amenity kitchens).",
-    hardware: "Blum and Hettich soft-close hinges and undermount runners. Push-to-open and integrated aluminum J-pull profiles. Integrated LED under-cabinet, cove and toe-kick lighting. Waste-bin pull-outs, cutlery organizers and closet accessory systems. Brushed brass, matte black and satin stainless pulls (designer packages).",
-    leadTime: "Prototype units: 6–8 weeks. Production per floor: 1–2 weeks steady-state. Rolling delivery: Aligned to site schedule.",
     gallery: ["/assets/services/multi-res.jpg"],
-    faqs: [
-      { question: "Do you cover the whole building's millwork or just the units?", answer: "The whole building. Main-floor lobby feature walls, concierge and mail-room desks, elevator vestibule paneling, amenity kitchens and bars, fitness change rooms, pet spa, theatre, co-working, corridor wainscot, rooftop terrace bars — plus every in-suite kitchen, vanity, closet, laundry and media wall." },
-      { question: "Can you handle purchaser upgrades?", answer: "Yes — we operate purchaser upgrade programs including online selection portals, per-suite change management and coordinated install." },
-      { question: "What's the minimum project size?", answer: "We scale from a 40-suite boutique building to 800+ suite high-rises." },
-    ],
   },
   "restaurant-qsr-millwork": {
-    overview: "Two scopes, one shop, one accountable millworker. Full-service / fine-dining restaurants are custom-shop work — every fixture unique to the concept. QSR and multi-chain brands are assembly-line work — a locked kit-of-parts produced identically to a brand standard. The two streams share the same engineering, finishing and QA disciplines, but the way they get built is completely different. Full-service scope includes host stands, custom bar and back-bar fits, illuminated bottle displays, curved banquettes, walnut/oak wall panelling, wine walls and private dining rooms. QSR scope includes brand-standard front counter and POS cabinetry, digital menu-board bulkheads, self-order kiosk cabinets, drive-thru window millwork, banquette booths and laminate tables.",
-    bestFor: [
-      "Full-service / fine-dining and Italian dine-in restaurants",
-      "Steakhouses, chef-driven and hotel F&B outlets",
-      "Bars, taprooms and lounge fit-outs",
-      "National QSR rollouts — coffee, burger, sub, chicken, bakery, breakfast chains",
-      "Fast-casual and multi-unit café brands",
-      "Prototype-to-production programs and store re-brands / re-images",
-    ],
-    deliverables: [
-      "Fixed-price line-item proposal with alternates",
-      "AWMAC/AWI-compliant shop drawings (PDF + DWG)",
-      "Physical finish samples & hardware cut-sheets",
-      "Material substitution and value-engineering log",
-      "Submittal package for LEED / WELL documentation",
-      "O&M manual and care/warranty documentation at closeout",
-    ],
-    materials: "HPL over MR-MDF (grease- and cleaner-resistant) — QSR standard. Rift-cut walnut and white-oak veneer on MDF core — full-service. Solid hardwood plank tables, host stands and bar tops. Solid-surface counters with integral cove (NSF). Stone/quartz/marble bar and table tops (full-service). 304 stainless work-tops delivered by NSF-certified kitchen partner.",
-    hardware: "Sealed-bearing hinges resistant to cleaner corrosion. Removable/drop-in interiors for daily cleaning. Grade 1 locks on POS drawers and cash cabinets. Heavy-duty full-extension slides for BOH prep drawers.",
-    leadTime: "Budget quote: 1 business day. Firm quote (with drawings): 3–5 business days. Shop drawings: 2–3 weeks post-award. Production: 6–10 weeks after approvals.",
     gallery: ["/assets/services/restaurant-qsr.jpg"],
-    faqs: [
-      { question: "How is a full-service restaurant scope different from a QSR scope inside your shop?", answer: "Full-service goes through the custom department — one-off drawings, veneer selection, curved joinery, hand-fit millwork. QSR goes through the assembly line — one prototype signed off, then a locked BOM produced identically for every location." },
-      { question: "Can you run a multi-unit QSR rollout across many locations?", answer: "Yes — that is exactly what the assembly line is built for. We prototype, get brand and construction sign-off, then produce, pack per store and release on the rollout schedule." },
-      { question: "Can you meet NSF food-contact requirements on FOH counters?", answer: "Yes — solid-surface with coved seams, sealed edges and NSF-listed materials for direct food-contact zones." },
-    ],
   },
   "pharmacy-clinic-millwork": {
-    overview: "Pharmacy and clinic environments combine retail-grade FOH with clinical-grade BOH. We engineer both sides of the counter in one drawing package, coordinated with your automation (Kirby Lester, ScriptPro) and refrigeration equipment. For compounding rooms we build cleanable, non-shedding, coved-base casework and can integrate directly with USP <797>/<800>-compliant hood installations.",
-    bestFor: [
-      "Community pharmacy fit-outs and re-brands",
-      "Medical and dental clinic buildouts",
-      "Walk-in / urgent-care clinics",
-      "Independent physician offices",
-    ],
-    deliverables: [
-      "Fixed-price line-item proposal with alternates",
-      "AWMAC/AWI-compliant shop drawings (PDF + DWG)",
-      "Physical finish samples & hardware cut-sheets",
-      "Material substitution and value-engineering log",
-      "Submittal package for LEED / WELL documentation",
-      "O&M manual and care/warranty documentation at closeout",
-    ],
-    materials: "HPL / CRL faces. Solid-surface counters (integral bowl). Sealed cores and edges. Locking narcotic drawers with CompX Chicago locks.",
-    hardware: "Grade 1 locks and pulls. Full-extension slides on all narcotic drawers.",
-    leadTime: "Budget quote: 1 business day. Firm quote (with drawings): 3–5 business days. Shop drawings: 2–3 weeks post-award. Production: 6–10 weeks after approvals.",
     gallery: ["/assets/services/pharmacy.jpg"],
-    faqs: [
-      { question: "Do you integrate pharmacy automation?", answer: "Yes — we coordinate cutouts, ventilation and cabling for Kirby Lester, ScriptPro and Parata systems." },
-      { question: "Can you work under a live-store renovation?", answer: "Yes — night and weekend crews with dust barriers and phased hand-over." },
-    ],
   },
   "education-millwork": {
-    overview: "Education millwork is priced tight, spec'd hard and used harder. Sandha delivers every millwork line item on a school or campus package under one PM, one submittal set and one accountable installer — from child-height daycare cubbies to university auditorium paneling. We serve licensed child daycares, JK/SK and primary schools, elementary and middle schools, secondary/high schools, private academies, colleges, polytechnics, trade schools and universities. Every school area is covered — classrooms, kindergarten cubbies, coat and backpack walls, teacher storage, lockers, corridor paneling, cafeterias, libraries, boardrooms, admin reception, science labs, computer labs, maker/tech shops, music rooms, art studios, lecture halls, auditoriums and more.",
-    bestFor: [
-      "Licensed child daycares and early-learning centres",
-      "Primary and elementary schools (JK–grade 8)",
-      "High schools and private academies (grade 9–12)",
-      "Colleges, CEGEPs, polytechnics and trade schools",
-      "Universities — faculties, residences, athletics and admin",
-      "New-build campus projects and phased existing-facility renovations",
-      "Wet and dry labs (chemistry, biology, physics, engineering)",
-      "Libraries, student squares, cafeterias and auditoriums",
-    ],
-    deliverables: [
-      "Fixed-price line-item proposal with alternates",
-      "AWMAC/AWI-compliant shop drawings (PDF + DWG)",
-      "Physical finish samples & hardware cut-sheets",
-      "Material substitution and value-engineering log",
-      "Submittal package for LEED / WELL documentation",
-      "O&M manual and care/warranty documentation at closeout",
-    ],
-    materials: "TFL / HPL over MR-particleboard. 2mm colour-matched PVC edge. Chemical-resistant tops for labs (epoxy, phenolic, stainless). Solid maple pencil drawers. Rift white oak & walnut veneer for feature areas. Acoustic slat panels for auditoriums.",
-    hardware: "Blum soft-close hinges & runners. CompX/Olympus keyed institutional locks. Ives ANSI Grade 1 pulls. Heavy-duty locker hardware. Operable partition tracks (Modernfold, Hufcor).",
-    leadTime: "Budget quote: 1 business day. Firm quote (with drawings): 3–5 business days. Shop drawings: 2–3 weeks post-award. Production: 6–10 weeks after approvals.",
     gallery: ["/assets/services/education.jpg"],
-    faqs: [
-      { question: "Do you serve every level from daycare to university?", answer: "Yes — from licensed child daycares and JK/SK rooms through primary, elementary, high school, private academies, colleges, polytechnics, trade schools and universities." },
-      { question: "Do you meet school-board summer install windows?", answer: "Yes — every summer we deliver phased installs across GTA boards. Book by March for July/August install." },
-      { question: "Do you offer AODA-compliant service counters?", answer: "Yes — lowered sections with knee clearance and reach range built to CSA B651 and AODA Design of Public Spaces on all admin, library and student-services counters." },
-    ],
   },
   "corporate-institutional-millwork": {
-    overview: "The typical corporate or institutional fit-out carries 20–40 millwork line items scattered across the plan. We consolidate them into one package — one PM, one drawing set, one delivery sequence. For retail bank branches we build teller lines, cash counters, financial advisor offices, customer waiting millwork, ATM vestibule paneling, safe-deposit rooms and meeting room credenzas. For corporate head offices we deliver reception desks, boardroom tables with integrated cable management, executive corner offices, open-plan phone booth pods, acoustic wall paneling, pantry and coffee-bar millwork. For professional offices we scope library shelving, reception counters, exam and treatment-room casework. For libraries we produce circulation desks, floor-to-ceiling shelving, study carrels, acoustic wood-slat ceilings.",
-    bestFor: [
-      "Retail bank branches — teller lines, advisor offices, ATM vestibules, meeting rooms",
-      "Corporate head offices and floor-by-floor tenant improvements",
-      "Executive suites, C-level offices and boardrooms",
-      "Reception, waiting and touchdown areas",
-      "Law firms, accounting practices and professional services",
-      "Public and academic libraries, archives and reading rooms",
-      "Call centres, business centres and co-working operators",
-      "Financial services — trading floors, wealth management, insurance offices",
-      "Federal, provincial and municipal institutional buildings",
-      "Courthouses, transit stations, licensing and civic centres",
-    ],
-    deliverables: [
-      "Fixed-price line-item proposal with alternates",
-      "AWMAC/AWI-compliant shop drawings (PDF + DWG)",
-      "Physical finish samples & hardware cut-sheets",
-      "Material substitution and value-engineering log",
-      "Submittal package for LEED / WELL documentation",
-      "O&M manual and care/warranty documentation at closeout",
-      "Class A / Class B fire-rating certification package",
-      "CGP compliance documentation where applicable",
-    ],
-    materials: "Rift white oak, walnut and maple veneers. HPL & TFL for high-touch workstations. Corian, Hi-Macs and quartz counter tops. Solid-hardwood face frames and reveals. Fire-retardant treated (FRT) cores where specified. Integrated leather, felt and acoustic upholstery panels.",
-    hardware: "Blum, Häfele soft-close hinges and runners. ANSI/BHMA Grade 1 institutional locks and pulls. CompX/Olympus keyed cabinet locks. Pop-up power/data (Legrand, Mockett) integrated in boardroom and workstation tops. Tamper-resistant fasteners where required.",
-    leadTime: "Budget quote: 1 business day. Firm quote (with drawings): 3–5 business days. Shop drawings: 2–3 weeks post-award. Production: 6–10 weeks after approvals.",
     gallery: ["/assets/services/corp-inst.jpg"],
-    faqs: [
-      { question: "Do you build to bank brand standards without being tied to one bank?", answer: "Yes — we work brand-agnostic and match any bank's finish, veneer, colour and hardware specification from their design guide." },
-      { question: "Can you deliver an entire bank branch millwork package as one scope?", answer: "Yes — teller line, cash counters, advisor offices, waiting lounge, ATM vestibule paneling, meeting room credenzas, back-of-house staff kitchen and manager office are supplied and installed under one PM and one submittal set." },
-      { question: "Are you Controlled Goods Program registered?", answer: "Yes — Sandha is a CGP-registered facility, which lets us work on federal defence and security-adjacent institutional projects." },
-    ],
   },
   "custom-cabinets": {
-    overview: "This is not catalogue cabinetry or standard tender millwork. Every element is drawn to the home's exact proportions and the designer's intent — from floor-to-ceiling wall panelling in the living room to coffered ceilings, wainscoted entryways and built-in libraries. We work directly with architects, interior designers and homeowners to fabricate one-off components that integrate seamlessly with the architecture.",
-    bestFor: [
-      "Whole-house wall panelling and wainscoting",
-      "Custom built-in libraries and home offices",
-      "Coffered ceilings and decorative trim packages",
-      "Bespoke kitchen, mudroom and closet millwork",
-      "Staircase panelling and feature wall millwork",
-      "Residential projects where standard catalogue products will not suffice",
-    ],
-    deliverables: [
-      "Fixed-price line-item proposal with alternates",
-      "AWMAC/AWI-compliant shop drawings (PDF + DWG)",
-      "Physical finish samples & hardware cut-sheets",
-      "Material substitution and value-engineering log",
-      "Submittal package for LEED / WELL documentation",
-      "O&M manual and care/warranty documentation at closeout",
-    ],
-    materials: "Hardwood veneer over engineered core. HPL/TFL faces with matching edge. Painted MDF with grain-filled surface. Solid hardwood face-frames, doors and drawer fronts.",
-    hardware: "Blum, Hettich, Häfele — full soft-close. Integrated LED (Loox, Tresco). Pop-out power/data grommets (Legrand, Mockett).",
-    leadTime: "Budget quote: 1 business day. Firm quote (with drawings): 3–5 business days. Shop drawings: 2–3 weeks post-award. Production: 6–10 weeks after approvals.",
     gallery: ["/assets/services/residential.jpg"],
-    faqs: [
-      { question: "Do you fabricate to imperial or metric?", answer: "Both. Shop drawings are produced in the units of the architect's drawing set." },
-      { question: "Can we integrate appliances and A/V equipment?", answer: "Yes — send us the equipment cut-sheets and we'll engineer clearances, ventilation and access panels around them." },
-    ],
   },
   "project-management": {
-    overview: "You will not chase 6 people to find out where your millwork is. One PM, one phone number, one email inbox. We work inside Procore, Autodesk Construction Cloud, PlanGrid and Bluebeam — whatever the GC's system is, we plug in.",
-    bestFor: ["Every Sandha project"],
-    deliverables: [
-      "Named PM at award",
-      "Weekly project status report",
-      "Live RFI log and submittal register",
-      "Deficiency tracker through closeout",
-    ],
     gallery: ["/assets/services/estimating.jpg"],
-    faqs: [
-      { question: "Do your PMs come to site?", answer: "Yes — pre-install walk, install supervision and deficiency walks are all included." },
-    ],
-  },
-  "scheduling": {
-    overview: "We build our shop-drawing, procurement, production, finishing, delivery and install schedule inside your master P6 / MS Project schedule — with float, dependencies and pull-planning against the GC's critical path.",
-    deliverables: [
-      "Millwork schedule in your P6 / MSP format",
-      "Weekly look-ahead",
-      "Pull-plan participation",
-    ],
-  },
-  "procurement": {
-    overview: "Long-lead veneer flitches, solid-surface slabs, hardware, specialty metals and finishing chemicals are ordered at award — not after shop drawings — so lead-time risk is retired before it hits the schedule.",
-    deliverables: [
-      "Long-lead register at award",
-      "Purchase orders and lead-time tracker",
-      "Substitution log if a material is on allocation",
-    ],
-  },
-  "site-coordination": {
-    overview: "Our PM and lead installer walk the site pre-install, verify blocking and MEP/AV rough-ins against the shop drawings, and lock scribe measurements before millwork ships.",
-    deliverables: [
-      "Pre-install site walk report",
-      "Blocking / rough-in verification",
-      "Field scribe measurements",
-    ],
-  },
-  "quality-assurance": {
-    overview: "Every package receives 100% dimensional and finish inspection against the approved shop drawings and signed-off finish sample before it leaves the shop. AWMAC GIS third-party inspection available on request.",
-    deliverables: [
-      "Pre-ship QC checklist per unit",
-      "Finish comparison against master sample",
-      "AWMAC GIS report (on request)",
-    ],
-  },
-  "delivery-logistics": {
-    overview: "Delivery is a schedule risk. We manage it as one — sequencing the load, coordinating with the site super and confirming the delivery window 48 hours out. Phased multi-site rollouts are palletized store-by-store with a manifest and QR-coded install kit.",
-    bestFor: [
-      "Single-site GTA and Southern Ontario deliveries",
-      "National multi-site rollouts",
-      "Cross-border US shipments (CUSMA)",
-    ],
-    deliverables: [
-      "48-hour delivery confirmation",
-      "Blanket-wrapped, palletized, labelled loads",
-      "Bill-of-lading and photo-of-condition on receipt",
-    ],
-    faqs: [
-      { question: "Do you deliver to the US?", answer: "Yes — routine cross-border shipping under CUSMA with a logistics partner handling customs." },
-    ],
-  },
-  "packaging": {
-    overview: "Every unit blanket-wrapped, cornered, palletized and — for cross-border or air freight — crated. Manifests and QR-coded install kits included with every load.",
-    deliverables: [
-      "Blanket-wrap and corner protection",
-      "Palletized with manifest",
-      "Crated for cross-border / air freight",
-      "QR-coded install kit",
-    ],
-  },
-  "just-in-time-delivery": {
-    overview: "We stage completed packages in our finished-goods warehouse and release to site on the GC's request — millwork lands on the floor the day the install trade needs it, no site storage burden, no crane clashes.",
-    deliverables: [
-      "Finished-goods staging in our warehouse",
-      "48-hour delivery confirmation on release",
-      "Zone-by-zone / floor-by-floor release",
-    ],
-  },
-  "site-logistics": {
-    overview: "We coordinate loading-dock time slots, hoist bookings, freight-elevator windows, floor protection and swing-space with the GC's site super — so delivery day is a non-event.",
-    deliverables: [
-      "Loading dock and hoisting schedule",
-      "Floor protection plan and installation",
-      "Swing-space staging plan",
-    ],
-  },
-  "installation-coordination": {
-    overview: "The install is where a well-manufactured package becomes a well-executed one. We supervise install to ensure the finished space matches the approved shop drawings — squares, plumbs, reveals, scribes, hardware operation. Every install ends with a Sandha PM walking the punch-list with the GC and site super.",
-    bestFor: [
-      "Southern Ontario direct-install projects",
-      "Canada-wide supervised install with vetted partners",
-      "Occupied renovations with off-hours install crews",
-    ],
-    deliverables: [
-      "Pre-install site verification",
-      "Install supervision on site",
-      "Punch-list walk and deficiency close-out",
-      "Warranty response for the guarantee period",
-    ],
-    faqs: [
-      { question: "What's your warranty?", answer: "Standard AWMAC/AWI 1-year workmanship guarantee. Extended terms available on request." },
-      { question: "Do you work outside standard hours?", answer: "Yes — evenings, weekends and shutdowns for occupied buildings." },
-    ],
-  },
-  "site-supervision": {
-    overview: "Every install — direct Southern Ontario or vetted-partner Canada-wide — has a Sandha lead supervisor on site who owns squares, plumbs, reveals, scribes, hardware operation and the punch-list.",
-    deliverables: [
-      "Sandha lead supervisor per shift",
-      "Daily install log with photos",
-      "Punch-list walk with GC / site super",
-    ],
-  },
-  "deficiency-management": {
-    overview: "Every deficiency logged with photo, location and committed close date. Live register shared with the GC — closed inside the schedule, not the warranty period.",
-    deliverables: [
-      "Deficiency register with photos and close dates",
-      "Weekly closeout report",
-      "Sign-off per zone",
-    ],
-  },
-  "project-closeout": {
-    overview: "Closeout package delivered at substantial performance: as-built shop drawings, O&M care manual, hardware cut-sheets, finish care instructions, LEED/WELL documentation, EPDs/HPDs and the warranty package — one PDF binder, one email.",
-    deliverables: [
-      "As-built shop drawings (PDF + DWG)",
-      "O&M and care manual",
-      "LEED / WELL documentation",
-      "EPDs / HPDs / declaration letters",
-      "Warranty package",
-    ],
-  },
-  "warranty-support": {
-    overview: "1-year AWMAC/AWI workmanship warranty plus extended finish and cabinet-box warranties. Sandha backs every project with a written warranty — covering workmanship, materials, finishes and cabinet-box construction per AWMAC/AWI standards.",
-    deliverables: [
-      "Written warranty certificate",
-      "Single point of contact for warranty claims",
-      "Rapid-response warranty service",
-    ],
-    faqs: [
-      { question: "What does your warranty cover?", answer: "1-year workmanship and materials per AWMAC/AWI standards, plus extended finish and cabinet-box warranties as specified in your contract." },
-    ],
-  },
-  "maintenance-repairs": {
-    overview: "Scheduled maintenance visits, touch-up crews for daily-wear repairs, and out-of-warranty repair pricing per callout — critical for hospitality PIP cycles, multi-res amenity floors and healthcare public-wood zones.",
-    bestFor: [
-      "Hotel PIP cycles",
-      "Multi-res amenity floors",
-      "Healthcare public-wood zones",
-    ],
-    deliverables: [
-      "Scheduled maintenance program",
-      "Touch-up crew callouts",
-      "Repair pricing per callout",
-    ],
-  },
-  "future-renovations": {
-    overview: "When it's time for the PIP refresh, tenant-improvement turnover or brand refit, Sandha is already inside the building — we hold the as-builts, we know the substrate, and we can phase the refit around live occupancy.",
-    bestFor: [
-      "Hotel PIP cycles",
-      "Tenant-improvement turnovers",
-      "Brand refresh rollouts",
-      "Occupied building phased refits",
-    ],
-    deliverables: [
-      "Existing millwork condition assessment",
-      "PIP-cycle refurbishment program",
-      "TI re-fit and brand refresh packages",
-    ],
-  },
-  "service-requests": {
-    overview: "One warranty and service inbox: service@sandhawoodworks.ca. Every request logged, triaged and assigned to a named service PM inside 24 hours — regardless of which project it came from.",
-    deliverables: [
-      "24-hour triage commitment",
-      "Named service PM per request",
-      "Live service-request register",
-    ],
   },
 };
 
 export interface SectorLink {
-  name: string;
   slug: string;
   image: string;
 }
 
 export const servicesSectorLinks: SectorLink[] = [
-  { name: "Healthcare", slug: "healthcare", image: "/assets/services/healthcare.jpg" },
-  { name: "Education", slug: "education", image: "/assets/services/education.jpg" },
-  { name: "Corporate Offices", slug: "corporate-offices", image: "/assets/services/corp-inst.jpg" },
-  { name: "Retail", slug: "retail", image: "/assets/services/retail-hero.jpg" },
-  { name: "Hospitality", slug: "hospitality", image: "/assets/services/hospitality.jpg" },
-  { name: "Restaurants & QSR", slug: "restaurants-qsr", image: "/assets/services/sector-restaurant.jpg" },
-  { name: "Financial Institutions", slug: "financial-institutions", image: "/assets/services/sector-financial.jpg" },
-  { name: "Government & Public Buildings", slug: "government-public-buildings", image: "/assets/services/sector-government.jpg" },
-  { name: "Multi-Residential", slug: "multi-residential", image: "/assets/services/multi-res.jpg" },
-  { name: "Senior Living", slug: "senior-living", image: "/assets/services/healthcare.jpg" },
-  { name: "Community & Recreation Centres", slug: "community-recreation", image: "/assets/services/education.jpg" },
-  { name: "Libraries", slug: "libraries", image: "/assets/services/sector-library.jpg" },
-  { name: "Cultural & Civic Buildings", slug: "cultural-civic", image: "/assets/services/sector-cultural.jpg" },
-  { name: "Industrial & Manufacturing", slug: "industrial-manufacturing", image: "/assets/services/custom-assembly.jpg" },
-  { name: "Commercial Interiors", slug: "commercial-interiors", image: "/assets/services/sector-commercial.jpg" },
+  {
+    "slug": "healthcare",
+    "image": "/assets/services/healthcare.jpg"
+  },
+  {
+    "slug": "education",
+    "image": "/assets/services/education.jpg"
+  },
+  {
+    "slug": "corporate-offices",
+    "image": "/assets/services/corp-inst.jpg"
+  },
+  {
+    "slug": "retail",
+    "image": "/assets/services/retail-hero.jpg"
+  },
+  {
+    "slug": "hospitality",
+    "image": "/assets/services/hospitality.jpg"
+  },
+  {
+    "slug": "restaurants-qsr",
+    "image": "/assets/services/sector-restaurant.jpg"
+  },
+  {
+    "slug": "financial-institutions",
+    "image": "/assets/services/sector-financial.jpg"
+  },
+  {
+    "slug": "government-public-buildings",
+    "image": "/assets/services/sector-government.jpg"
+  },
+  {
+    "slug": "multi-residential",
+    "image": "/assets/services/multi-res.jpg"
+  },
+  {
+    "slug": "senior-living",
+    "image": "/assets/services/healthcare.jpg"
+  },
+  {
+    "slug": "community-recreation",
+    "image": "/assets/services/education.jpg"
+  },
+  {
+    "slug": "libraries",
+    "image": "/assets/services/sector-library.jpg"
+  },
+  {
+    "slug": "cultural-civic",
+    "image": "/assets/services/sector-cultural.jpg"
+  },
+  {
+    "slug": "industrial-manufacturing",
+    "image": "/assets/services/custom-assembly.jpg"
+  },
+  {
+    "slug": "commercial-interiors",
+    "image": "/assets/services/sector-commercial.jpg"
+  }
 ];
+
+export function getService(slug: string) {
+  for (const cat of serviceCategories) {
+    const service = cat.services.find((s) => s.slug === slug);
+    if (service) return { service, category: cat };
+  }
+  return null;
+}

@@ -5,6 +5,7 @@ import {
   getAllSubSectorSlugs,
   getSubSectorStatement,
 } from "@/lib/constants/sub-sector-statements";
+import enDetails from "@/locales/en/capabilityPdfDetails.json";
 
 const TYPES = ["sub-sector", "sector"] as const;
 
@@ -13,7 +14,6 @@ export function generateStaticParams() {
     type: "sub-sector",
     slug,
   }));
-  // Sector-level templates can be added later; keep param space valid for static export.
   return subSectorParams;
 }
 
@@ -25,10 +25,11 @@ export async function generateMetadata({
   const { type, slug } = await params;
   if (type === "sub-sector") {
     const sub = getSubSectorStatement(slug);
-    if (!sub) return { title: "Capability Statement", robots: { index: false } };
+    const copy = (enDetails as Record<string, { name?: string; tagline?: string }>)[slug];
+    if (!sub || !copy?.name) return { title: "Capability Statement", robots: { index: false } };
     return {
-      title: `${sub.name} Capability Statement`,
-      description: sub.tagline,
+      title: `${copy.name} Capability Statement`,
+      description: copy.tagline,
       robots: { index: false },
     };
   }
@@ -50,6 +51,5 @@ export default async function CapabilityPdfPage({
     return <CapabilityPdfViewer sub={sub} />;
   }
 
-  // Sector-level docs not ported yet
   notFound();
 }

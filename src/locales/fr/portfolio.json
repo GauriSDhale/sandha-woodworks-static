@@ -1,0 +1,198 @@
+{
+  "meta": {
+    "title": "Portfolio",
+    "description": "Projets d'ébénisterie architecturale sélectionnés partout au Canada."
+  },
+  "hero": {
+    "eyebrow": "Portfolio",
+    "title": "Des projets qui définissent l'excellence",
+    "description": "Découvrez nos installations d'ébénisterie récentes dans des environnements commerciaux, de détail, de santé et institutionnels."
+  },
+  "searchPlaceholder": "Rechercher des projets...",
+  "empty": "Aucun projet ne correspond à vos critères.",
+  "scopeLabel": "Portée :",
+  "readMore": "Lire la suite",
+  "showLess": "Réduire",
+  "viewGallery": "Voir la galerie ({{count}})",
+  "cta": {
+    "eyebrow": "Bâtissons ensemble",
+    "title": "Vous avez un projet en tête?",
+    "body": "Discutons de la façon dont Sandha Woodworks peut livrer une ébénisterie de précision pour votre prochain chantier.",
+    "primary": "Demander un devis"
+  },
+  "detail": {
+    "back": "Tous les projets",
+    "notFoundTitle": "Projet introuvable",
+    "notFoundBack": "← Retour au portfolio",
+    "overview": "Aperçu du projet",
+    "specs": "Spécifications du projet",
+    "sector": "Secteur",
+    "delivery": "Livraison",
+    "finish": "Finition",
+    "materials": "Matériaux",
+    "client": "Client : {{name}}",
+    "gallery": "Galerie",
+    "galleryAlt": "{{name}} {{index}}",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "ctaEyebrow": "Ce projet vous inspire?",
+    "ctaTitle": "Apportons le même savoir-faire à votre prochain chantier.",
+    "requestQuote": "Demander un devis"
+  },
+  "filters": {
+    "All": "Tous",
+    "Healthcare": "Santé",
+    "Education": "Éducation",
+    "Retail": "Commerce de détail",
+    "Hospitality": "Hôtellerie",
+    "Corporate": "Corporatif",
+    "Multi-Residential": "Multirésidentiel",
+    "Institutional": "Institutionnel",
+    "Restaurant/QSR": "Restaurant/QSR",
+    "Commercial Interiors": "Intérieurs commerciaux"
+  },
+  "projects": {
+    "coffee-island-toronto": {
+      "scope": "Aménagement clé en main complet — aménagement cuisine/technique, plafonds d'accent sur mesure (caisson jaune et éclairage), comptoir de service en inox et plaque diamantée, ébénisterie de bar arrière, rayonnages d'exposition et mobilier de merchandising, banquettes, comptoirs de fenêtre, graphismes de devanture et tout le mobilier intérieur.",
+      "specs": {
+        "sector": "Restaurant / QSR",
+        "delivery": "De la conception à l'installation",
+        "finish": "Finitions bois et stratifié sur mesure",
+        "materials": [
+          "Plafonds d'accent sur mesure",
+          "Comptoir en inox et plaque diamantée",
+          "Ébénisterie et rayonnages d'exposition",
+          "Banquettes et comptoirs de fenêtre"
+        ]
+      }
+    },
+    "niagara-college-marotta": {
+      "scope": "Portée intérieure institutionnelle — plafonds en métal perforé d'accent (soffite intérieur et extérieur), mur de signalisation, salles d'étude vitrées, agencement des aires communes et ensemble de mobilier lounge/cafétéria dans l'ensemble du complexe d'innovation et de l'aile athlétique.",
+      "specs": {
+        "sector": "Éducation / Institutionnel",
+        "delivery": "De la conception à l'installation",
+        "finish": "Finitions métal et verre",
+        "materials": [
+          "Plafonds en métal perforé",
+          "Salles d'étude vitrées",
+          "Agencement et ébénisterie",
+          "Mobilier lounge et cafétéria"
+        ]
+      }
+    },
+    "university-of-toronto-robarts": {
+      "scope": "Ébénisterie architecturale sensible au patrimoine à la bibliothèque Robarts — revêtement de colonnes en chêne blanc, carrels d'étude et cloisons, pods de banquettes rembourrées, rangées de postes de travail individuels, agencement de réception et de service, éclairage de tâche intégré et gestion des câbles.",
+      "specs": {
+        "sector": "Éducation / Bibliothèque",
+        "delivery": "De la conception à l'installation",
+        "finish": "Chêne blanc et rembourrage",
+        "materials": [
+          "Revêtement de colonnes en chêne blanc",
+          "Carrels d'étude et cloisons",
+          "Pods de banquettes rembourrées",
+          "Éclairage de tâche intégré"
+        ]
+      }
+    },
+    "tiffany-hill-primary-school": {
+      "scope": "Ébénisterie intérieure pour école primaire-intermédiaire — gradins d'escalier d'apprentissage en érable, vitrines d'exposition, revêtement de bois en paliers, agencement de réception et d'administration, casiers courrier des enseignants, armoires et casiers de classe, bancs de fenêtre, stations de recyclage et murs d'accent des zones STEAM/musique/art.",
+      "specs": {
+        "sector": "Éducation / Primaire-intermédiaire",
+        "delivery": "De la conception à l'installation",
+        "finish": "Finitions érable et stratifié",
+        "materials": [
+          "Gradins d'escalier d'apprentissage en érable",
+          "Vitrines et revêtements",
+          "Armoires et casiers de classe",
+          "Murs d'accent STEAM/musique/art"
+        ]
+      }
+    },
+    "tobin-high-school": {
+      "scope": "Ensemble complet d'ébénisterie intérieure pour école secondaire — panneaux muraux acoustiques en bois et fascia de balcon courbe de l'auditorium, agencement de laboratoire de sciences avec dessus en époxy et éviers intégrés, armoires de classe de chimie, salles de préparation des enseignants, casiers et garde-robes étudiants, comptoir de réception du hall principal, plafonds à lattes de bois dans les corridors et caissons d'accent en bois lamellé-collé.",
+      "specs": {
+        "sector": "Éducation / École secondaire",
+        "delivery": "De la conception à l'installation",
+        "finish": "Placage de bois et époxy",
+        "materials": [
+          "Panneaux muraux acoustiques en bois",
+          "Agencement de laboratoire de sciences",
+          "Casiers et garde-robes étudiants",
+          "Plafonds à lattes de bois et caissons en bois lamellé-collé"
+        ]
+      }
+    },
+    "scooped-by-demetres": {
+      "scope": "Aménagement complet de salon en centre commercial — devanture arquée, comptoir de service carrelé sur mesure avec vitrine de gelato en verre courbe, support de signalisation illuminé, préparation arrière-scène, panneaux de menu, entourage de congélateur d'exposition de pintes et toute la menuiserie de finition.",
+      "specs": {
+        "sector": "Commerce de détail / Restauration",
+        "delivery": "De la conception à l'installation",
+        "finish": "Carrelage et finitions sur mesure",
+        "materials": [
+          "Devanture arquée",
+          "Comptoir de service carrelé sur mesure",
+          "Signalisation illuminée",
+          "Menuiserie de finition"
+        ]
+      }
+    },
+    "mercato-mississauga": {
+      "scope": "Ensemble complet d'ébénisterie architecturale — portails de bois arqués, banquettes, bar sur mesure, écrans en panneaux de canne, plafonds d'accent, expositions de vins, stations de service et ébénisterie de salles de bain.",
+      "specs": {
+        "sector": "Restaurant / QSR",
+        "delivery": "De la conception à l'installation",
+        "finish": "Finitions bois et panneaux de canne",
+        "materials": [
+          "Portails de bois arqués",
+          "Bar et banquettes sur mesure",
+          "Écrans en panneaux de canne",
+          "Plafonds d'accent et expositions de vins"
+        ]
+      }
+    },
+    "lake-country-coop": {
+      "scope": "Ensemble d'ébénisterie architecturale, murs d'accent, agencement, réception et aires publiques.",
+      "specs": {
+        "sector": "Institutionnel / Loisirs",
+        "delivery": "Ensemble d'ébénisterie",
+        "finish": "Finitions stratifié et bois",
+        "materials": [
+          "Murs d'accent",
+          "Agencement",
+          "Ébénisterie de réception",
+          "Ébénisterie des aires publiques"
+        ]
+      },
+      "clientPartner": "Atkar North America"
+    },
+    "am-hair-beauty": {
+      "scope": "Mobilier de détail, stations sur mesure, ébénisterie de réception et d'exposition.",
+      "specs": {
+        "sector": "Commerce de détail / Beauté",
+        "delivery": "Ensemble mobilier et ébénisterie",
+        "finish": "Finitions stratifié sur mesure",
+        "materials": [
+          "Mobilier de détail",
+          "Stations sur mesure",
+          "Ébénisterie de réception",
+          "Ébénisterie d'exposition"
+        ]
+      }
+    },
+    "valley-park-library": {
+      "scope": "Agencement de bibliothèque, circulation, ébénisterie d'accent, rayonnages et aires administratives.",
+      "specs": {
+        "sector": "Institutionnel / Bibliothèque",
+        "delivery": "Ensemble d'ébénisterie",
+        "finish": "Finitions bois et stratifié",
+        "materials": [
+          "Agencement de bibliothèque",
+          "Ébénisterie de circulation",
+          "Ébénisterie d'accent",
+          "Ébénisterie des rayonnages et de l'administration"
+        ]
+      },
+      "clientPartner": "Atkar North America"
+    }
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "credibility": {
+    "eyebrow": "Capacités et certifications",
+    "tagline": "Bâti sur la confiance · Guidé par la qualité",
+    "items": [
+      "Atelier de 40 000 pi²",
+      "Ingénierie interne",
+      "Fabrication CNC",
+      "Finition premium",
+      "Gestion de projet",
+      "Livraison et logistique",
+      "Membre AWMAC GIS",
+      "Certifié ISO 9001",
+      "Membre WMCO",
+      "Programme des marchandises contrôlées",
+      "Fabriqué au Canada"
+    ]
+  },
+  "hero": {
+    "tagline": "Sandha Woodworks · Fondée au Canada",
+    "location": "Brantford, ON — CA",
+    "headlineLine1": "Ébénisterie de précision.",
+    "headlineLine2": "Livrée partout au Canada.",
+    "description": "Fabricant canadien d'ébénisterie architecturale clé en main pour entrepreneurs généraux, architectes et promoteurs — des dessins d'atelier à l'installation finale.",
+    "viewPortfolio": "Voir le portfolio",
+    "requestQuote": "Demander un devis",
+    "reelLabel": "Reel · 00:30 · Sandha Woodworks",
+    "scrollHint": "Défiler ↓",
+    "footerCraft": "Ébénisterie · Fabrication",
+    "capabilities": [
+      "Du dessin à l'installation",
+      "Ingénierie interne",
+      "AWMAC GIS",
+      "Fabriqué au Canada"
+    ]
+  },
+  "trustedPartners": {
+    "eyebrow": "Partenaires de confiance",
+    "title": "La confiance des grandes marques canadiennes",
+    "description": "Plus d'une décennie d'ébénisterie commerciale au Canada — clients directs et partenaires de construction.",
+    "proof": [
+      "500+ projets",
+      "100+ clients",
+      "12 secteurs"
+    ],
+    "partnerCount": "{{count}} partenaires",
+    "disclaimer": "Projets sélectionnés réalisés directement ou par l'entremise d'entrepreneurs généraux et de gestionnaires de construction. Toutes les marques appartiennent à leurs propriétaires respectifs.",
+    "categories": {
+      "retail": "Commerce de détail",
+      "restaurants": "Restaurants et QSR",
+      "financial": "Financier",
+      "education": "Éducation"
+    }
+  },
+  "whyChooseUs": {
+    "eyebrow": "Pourquoi nous choisir",
+    "title": "Pourquoi choisir Sandha",
+    "description": "Un partenaire clé en main — de l'assistance à la conception à la fabrication et l'installation, le tout en interne pour la vitesse, la qualité et la responsabilité.",
+    "cta": "Démarrer un projet",
+    "projectsEyebrow": "Projets récents",
+    "viewProject": "Voir le projet",
+    "viewAllProjects": "Voir tous les projets",
+    "emptyProjects": "Nous ajoutons ici la photographie de projets. Consultez le portfolio complet pour le travail réalisé dans tous les secteurs.",
+    "stats": {
+      "facility": {
+        "value": 40000,
+        "suffix": "",
+        "label": "Pi² d'usine",
+        "description": "Fabrication sur mesure à Brantford, ON",
+        "format": "comma"
+      },
+      "clients": {
+        "value": 100,
+        "suffix": "+",
+        "label": "Clients actifs",
+        "description": "Approuvé par les grands constructeurs du Canada"
+      },
+      "services": {
+        "value": 21,
+        "suffix": "+",
+        "label": "Gammes de services",
+        "description": "De l'assistance à la conception à l'installation"
+      },
+      "sectors": {
+        "value": 12,
+        "suffix": "",
+        "label": "Secteurs desservis",
+        "description": "Commercial, institutionnel, santé et plus"
+      }
+    },
+    "reasons": [
+      {
+        "title": "Du dessin à l'installation",
+        "description": "Une seule équipe pour l'ingénierie, la fabrication et la livraison sur site — moins de relais, des échéanciers plus clairs."
+      },
+      {
+        "title": "Conçu pour l'échelle commerciale",
+        "description": "Usine de 40 000 pi² avec production CNC et finition premium pour projets multi-sites et institutionnels."
+      },
+      {
+        "title": "Normes de qualité reconnues",
+        "description": "Membre AWMAC GIS avec les certifications attendues des entrepreneurs et architectes."
+      }
+    ]
+  },
+  "manufacturing": {
+    "eyebrow": "Fabrication à grande échelle",
+    "titleLine1": "Bâti pour livrer",
+    "titleLine2": "de grands projets",
+    "titleAccent": "d'ébénisterie architecturale.",
+    "bullets": [
+      "Fabriqué au Canada",
+      "Ingénierie → Fabrication → Installation",
+      "Commercial · Santé · Hôtellerie · Éducation · Détail"
+    ],
+    "stats": {
+      "founded": {
+        "value": 2014,
+        "suffix": "",
+        "label": "Fondée",
+        "description": "Plus d'une décennie d'ébénisterie architecturale"
+      },
+      "facility": {
+        "value": 40000,
+        "suffix": "+",
+        "label": "Pi² d'usine",
+        "description": "Fabrication sur mesure à Brantford, ON",
+        "format": "comma"
+      },
+      "projects": {
+        "value": 500,
+        "suffix": "+",
+        "label": "Projets livrés",
+        "description": "Commercial · Institutionnel · Santé"
+      },
+      "awmac": {
+        "value": null,
+        "display": "AWMAC",
+        "suffix": "",
+        "label": "Membre",
+        "description": "Association des fabricants de boiseries architecturales du Canada"
+      }
+    }
+  },
+  "sectors": {
+    "eyebrow": "Secteurs desservis",
+    "title": "La confiance des secteurs commerciaux les plus exigeants du Canada.",
+    "explore": "Explorer tous les secteurs →",
+    "cardExplore": "Explorer →",
+    "names": {
+      "Healthcare": "Santé",
+      "Retail": "Commerce de détail",
+      "Hospitality": "Hôtellerie",
+      "Corporate": "Corporatif",
+      "Education": "Éducation",
+      "Institutional": "Institutionnel"
+    }
+  },
+  "projects": {
+    "eyebrow": "Derniers projets",
+    "title": "Réalisations récentes.",
+    "viewProject": "Voir le projet",
+    "viewAll": "Voir tous les projets",
+    "categories": {
+      "Institutional": "Institutionnel",
+      "Retail": "Commerce de détail",
+      "Education": "Éducation",
+      "Healthcare": "Santé",
+      "Hospitality": "Hôtellerie",
+      "Commercial": "Commercial"
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Témoignages",
+    "title": "La confiance des leaders de l'industrie",
+    "items": [
+      {
+        "quote": "Sandha Woodworks a livré une menuiserie exceptionnelle dans un délai complexe multi-unités. Leur équipe a été réactive et précise.",
+        "name": "Directeur de projet",
+        "role": "Partenaire entrepreneur général"
+      },
+      {
+        "quote": "Des dessins d'atelier à l'installation, la qualité et le professionnalisme ont dépassé nos attentes.",
+        "name": "Directeur de design",
+        "role": "Cabinet d'architecture"
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "À propos de Sandha Woodworks",
+    "title": "Un fabricant canadien d'ébénisterie bâti pour l'échelle et la responsabilité.",
+    "body": "Nous exploitons une usine de fabrication de 40 000 pi² avec ingénierie interne, production CNC et finition — livrant des ensembles d'ébénisterie coordonnés pour projets commerciaux de toute envergure.",
+    "cta": "Notre histoire",
+    "stats": {
+      "facility": "pi² d'usine",
+      "clients": "Clients actifs",
+      "services": "Gammes de services",
+      "sectors": "Secteurs desservis"
+    }
+  },
+  "cta": {
+    "eyebrow": "Construisons ensemble",
+    "title": "Un projet en tête ? Nous serons ravis de le chiffrer.",
+    "description": "Envoyez-nous vos dessins et spécifications. Notre équipe d'estimation vous répondra sous un jour ouvrable.",
+    "primary": "Demander un devis",
+    "secondary": "Voir le portfolio"
+  },
+  "carousel": {
+    "previous": "Projet précédent",
+    "next": "Projet suivant"
+  }
+}

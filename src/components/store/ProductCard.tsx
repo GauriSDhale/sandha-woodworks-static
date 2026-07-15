@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ShoppingCart, Eye } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import type { Product } from "@/store/types/product";
 import { useAppDispatch } from "@/store/hooks";
@@ -21,6 +22,7 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product, onQuickView, priority }: ProductCardProps) {
+  const { t } = useTranslation("store");
   const dispatch = useAppDispatch();
   const [adding, setAdding] = useState(false);
 
@@ -48,7 +50,6 @@ export function ProductCard({ product, onQuickView, priority }: ProductCardProps
       transition={{ duration: 0.3 }}
       className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition-shadow duration-300 hover:shadow-xl"
     >
-      {/* Image */}
       <Link
         href={`/store/${product.slug}`}
         className="relative block aspect-[4/3] overflow-hidden bg-muted"
@@ -63,7 +64,6 @@ export function ProductCard({ product, onQuickView, priority }: ProductCardProps
           className="group-hover:scale-105"
         />
 
-        {/* Action overlay */}
         <div className="absolute inset-0 flex items-end justify-center gap-2 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 transition-opacity duration-200 group-hover:opacity-100 pb-3">
           {onQuickView && (
             <button
@@ -72,16 +72,15 @@ export function ProductCard({ product, onQuickView, priority }: ProductCardProps
                 e.preventDefault();
                 onQuickView(product);
               }}
-              aria-label="Quick view"
+              aria-label={t("a11y.quickView")}
               className="flex items-center gap-1.5 rounded-full bg-white/90 px-3 py-1.5 text-xs font-semibold text-foreground shadow backdrop-blur-sm transition-transform hover:scale-105 active:scale-95"
             >
               <Eye className="h-3.5 w-3.5" />
-              Quick View
+              {t("product.quickView")}
             </button>
           )}
         </div>
 
-        {/* Wishlist overlay */}
         <div className="absolute right-2.5 top-2.5">
           <WishlistButton
             productId={product.id}
@@ -91,14 +90,11 @@ export function ProductCard({ product, onQuickView, priority }: ProductCardProps
         </div>
       </Link>
 
-      {/* Content */}
       <div className="flex flex-1 flex-col gap-2 p-4">
-        {/* Category */}
         <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-          {product.category.replace(/-/g, " ")}
+          {t(`categories.${product.category}.label`)}
         </p>
 
-        {/* Name */}
         <Link
           href={`/store/${product.slug}`}
           className="line-clamp-2 font-display font-semibold leading-snug text-foreground transition-colors hover:text-brand-red"
@@ -106,10 +102,8 @@ export function ProductCard({ product, onQuickView, priority }: ProductCardProps
           {product.name}
         </Link>
 
-        {/* Rating */}
         <Rating value={product.rating} count={product.reviews} size="sm" />
 
-        {/* Availability */}
         <span
           className={cn(
             "text-xs font-medium",
@@ -120,10 +114,9 @@ export function ProductCard({ product, onQuickView, priority }: ProductCardProps
                 : "text-red-500",
           )}
         >
-          {availabilityLabel(product.availability)}
+          {availabilityLabel(product.availability, t)}
         </span>
 
-        {/* Price + Cart */}
         <div className="mt-auto flex flex-wrap items-center justify-between gap-2 pt-2">
           <PriceTag
             price={product.price}
@@ -134,7 +127,7 @@ export function ProductCard({ product, onQuickView, priority }: ProductCardProps
             type="button"
             onClick={handleAddToCart}
             whileTap={{ scale: 0.93 }}
-            aria-label="Add to cart"
+            aria-label={t("a11y.addToCart")}
             className={cn(
               "inline-flex items-center gap-1.5 rounded-full px-3.5 py-2 text-xs font-semibold transition-all",
               adding
@@ -143,7 +136,7 @@ export function ProductCard({ product, onQuickView, priority }: ProductCardProps
             )}
           >
             <ShoppingCart className="h-3.5 w-3.5" />
-            {adding ? "Added!" : "Add to Cart"}
+            {adding ? t("product.added") : t("product.addToCart")}
           </motion.button>
         </div>
       </div>

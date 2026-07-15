@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "title": "À propos",
+    "description": "Ébénisterie architecturale bâtie sur la confiance. Guidée par la qualité. Découvrez Sandha Woodworks."
+  },
+  "hero": {
+    "eyebrow": "À propos de Sandha Woodworks",
+    "title": "Ébénisterie architecturale bâtie sur la confiance. Guidée par la qualité."
+  },
+  "journey": {
+    "label": "Notre parcours",
+    "title": "Chronologie",
+    "description": "D’un petit atelier sur mesure fondé en {{founded}} à un fabricant certifié d’ébénisterie architecturale au service de projets partout en Amérique du Nord."
+  },
+  "timeline": {
+    "2014": {
+      "title": "Fondation de Sandha Woodworks",
+      "description": "Le fondateur a apporté des années d’expérience pratique en menuiserie et sur chantier dans un petit atelier d’ébénisterie fondé sur le savoir-faire et l’intégrité."
+    },
+    "2018": {
+      "title": "Expansion vers l’ébénisterie architecturale complète",
+      "description": "Expansion vers l’ébénisterie architecturale complète pour des clients commerciaux, institutionnels et éducatifs partout en Ontario."
+    },
+    "2022": {
+      "title": "Adhésions industrielles",
+      "description": "Devenu membre de l’AWMAC (Architectural Woodwork Manufacturers Association of Canada), de la CKCA (Canadian Kitchen Cabinet Association) et du WMCO (Wood Manufacturing Cluster of Ontario)."
+    },
+    "2023": {
+      "title": "Certification ISO 9001",
+      "description": "Obtention de la certification ISO 9001, formalisant notre système de gestion de la qualité en ingénierie, production et installation."
+    },
+    "today": {
+      "year": "Aujourd’hui",
+      "title": "Usine de 40 000 pi²",
+      "description": "Une usine de 40 000 pi² livrant de l’ébénisterie technique pour écoles, universités, santé, commerce de détail et aménagements commerciaux partout en Amérique du Nord."
+    }
+  },
+  "story": {
+    "label": "Notre histoire",
+    "title": "Un dirigeant formé sur le terrain — qui a bâti un atelier autour de cette expérience.",
+    "p1": "Sandha Woodworks a été fondée en {{founded}} par Chamkaur Sandha, qui est venu à l’ébénisterie architecturale par la longue voie — des années de menuiserie pratique, d’installation sur site et d’expérience en atelier. Ce parcours a façonné une conviction précise : la grande ébénisterie est conçue par des gens qui comprennent comment elle se fabrique, se livre et s’installe.",
+    "p2": "Parti d’un petit atelier sur mesure, Sandha Woodworks est devenue un fabricant d’ébénisterie architecturale clé en main au service d’entrepreneurs généraux, d’architectes, de promoteurs et de clients institutionnels partout au Canada et aux États-Unis. Notre équipe, nos processus et notre usine de 40 000 pi² reposent sur une idée : livrer un travail de qualité, à temps, sans surprises.",
+    "videoTitle": "Sandha Woodworks — Visite de l’usine"
+  },
+  "certifications": {
+    "label": "Adhésions et certifications",
+    "title": "Accrédités par les organismes industriels qui fixent la norme.",
+    "items": {
+      "awmac": {
+        "name": "Membre AWMAC",
+        "description": "Architectural Woodwork Manufacturers Association of Canada."
+      },
+      "ckca": {
+        "name": "Membre CKCA",
+        "description": "Canadian Kitchen Cabinet Association."
+      },
+      "wmco": {
+        "name": "Membre WMCO",
+        "description": "Wood Manufacturing Cluster of Ontario."
+      },
+      "iso": {
+        "name": "Certifié ISO 9001",
+        "description": "Système de gestion de la qualité certifié à l’échelle de l’entreprise."
+      }
+    }
+  },
+  "missionVision": {
+    "mission": {
+      "title": "Mission",
+      "description": "Livrer une ébénisterie architecturale de haute qualité avec précision, fiabilité et responsabilité, du concept à l’achèvement."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "Devenir l’un des fabricants d’ébénisterie architecturale les plus fiables et respectés au Canada."
+    },
+    "quality": {
+      "title": "Qualité",
+      "description": "Maintenir les plus hauts standards de savoir-faire, de sélection des matériaux et de finition dans chaque pièce que nous créons."
+    }
+  },
+  "values": {
+    "label": "Nos valeurs",
+    "title": "Les principes qui guident chaque projet.",
+    "items": {
+      "quality": {
+        "title": "Qualité",
+        "description": "Des normes sans compromis en ingénierie, production et finition."
+      },
+      "trust": {
+        "title": "Confiance",
+        "description": "Communication transparente et exécution fiable sur chaque projet."
+      },
+      "precision": {
+        "title": "Précision",
+        "description": "Ébénisterie à tolérances serrées produite avec exactitude CNC et métier."
+      },
+      "accountability": {
+        "title": "Responsabilité",
+        "description": "Une seule équipe propriétaire des dessins, de la fabrication, de la livraison et de la coordination."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Investissement continu dans les processus, les machines et les matériaux."
+      },
+      "teamwork": {
+        "title": "Esprit d’équipe",
+        "description": "Un atelier qualifié et un bureau travaillant comme une seule équipe de livraison."
+      }
+    }
+  },
+  "facilityPhoto": {
+    "caption": "À l’intérieur de l’usine d’ébénisterie Sandha Woodworks en Ontario — routeur CNC 5 axes découpant du contreplaqué de chêne blanc"
+  },
+  "facility": {
+    "label": "Aperçu de l’usine",
+    "title": "{{sqFt}} pi² de capacité de fabrication technique.",
+    "features": [
+      "Ingénierie et dessins d’atelier internes",
+      "Flux de production basé sur Microvellum",
+      "Fabrication CNC multi-axes",
+      "Cabine de finition et de peinture dédiée",
+      "Processus d’AQ aligné sur les normes AWMAC",
+      "Logistique, livraison et coordination d’installation"
+    ]
+  },
+  "whyChooseUs": {
+    "label": "Pourquoi nous choisir",
+    "title": "Responsabilité à source unique, du concept à l’installation.",
+    "items": {
+      "singlePoint": {
+        "title": "Point de contact unique",
+        "description": "Une équipe de projet propriétaire de vos dessins, de la production et de la coordination sur site."
+      },
+      "engineered": {
+        "title": "Conçu en interne",
+        "description": "L’ingénierie Microvellum élimine les surprises en atelier."
+      },
+      "national": {
+        "title": "Livraison nationale",
+        "description": "Logistique coordonnée pour des déploiements par phases partout au Canada."
+      },
+      "certified": {
+        "title": "Certifié et conforme",
+        "description": "AWMAC GIS, ISO 9001, WMCO, Programme des marchandises contrôlées."
+      }
+    }
+  },
+  "teamFloor": {
+    "label": "Une équipe, un atelier responsable",
+    "title": "Ceux qui dessinent, fabriquent, finissent et installent.",
+    "imageAlt": "L’équipe Sandha Woodworks"
+  },
+  "leadership": {
+    "label": "Rencontrez notre équipe de direction",
+    "title": "Les personnes derrière chaque projet.",
+    "description": "Notre équipe de direction réunit des décennies d’expérience en ébénisterie, design et livraison de projets — guidant Sandha Woodworks pour offrir des résultats exceptionnels à chaque client.",
+    "members": {
+      "chamkaur-sandha": {
+        "title": "Fondateur – Président",
+        "description": "Parti d’origines modestes, Chamkaur a fondé l’entreprise avec une vision claire et une forte conviction dans la valeur du travail. Par le dévouement, l’expérience pratique et la persévérance, il a bâti l’entreprise étape par étape en une entreprise de confiance, ancrée dans l’intégrité, le savoir-faire et la qualité."
+      },
+      "gurpreet-singh": {
+        "title": "Gestionnaire de projet",
+        "description": "Gurpreet a complété des études en administration des affaires avant d’acquérir une expérience pratique en menuiserie. Il appuie la gestion de projet par la planification, la coordination et la communication afin d’assurer une livraison efficace."
+      },
+      "muhamed-mahmutovic": {
+        "title": "Directeur du développement des affaires",
+        "description": "Muhamed apporte plus de 10 ans d’expérience en gestion de projet et de chantier, avec une solide expertise en exécution, gestion de contrats et croissance stratégique. Il se concentre sur le repérage d’occasions et l’appui à une livraison réussie."
+      },
+      "jayant-makkar": {
+        "title": "Ingénieur de projet",
+        "description": "Jayant se spécialise en design architectural et en ingénierie d’ébénisterie. Fort d’une formation en architecture et en design de cuisines et salles de bain, il traduit des concepts complexes en solutions d’ébénisterie efficaces et réalisables."
+      },
+      "trevor-guyatt": {
+        "title": "Estimateur senior",
+        "description": "Avec plus de 17 ans dans l’industrie de l’ébénisterie — commencé sur le plancher d’atelier après ses études au Conestoga College — Trevor prépare des estimations précises en examinant soigneusement les dessins, la portée et les exigences de production."
+      },
+      "manjinder-singh": {
+        "title": "Gestionnaire de production",
+        "description": "Manjinder supervise les opérations quotidiennes de production pour assurer une réalisation efficace et dans les délais. Il gère le flux de travail, l’ordonnancement et la coordination d’équipe tout en maintenant des normes élevées de qualité et de savoir-faire."
+      },
+      "jugraj-singh": {
+        "title": "Chaîne d’approvisionnement",
+        "description": "Fort d’une expérience pratique en opérations d’approvisionnement, Jugraj gère les achats et la coordination des matériaux — en collaboration étroite avec les fournisseurs et les équipes internes pour assurer un flux fiable et soutenir une exécution fluide."
+      }
+    }
+  },
+  "cta": {
+    "eyebrow": "Prêts quand vous l’êtes",
+    "title": "Prêt à donner vie à votre prochain projet commercial ?",
+    "primaryLabel": "Demander un devis",
+    "secondaryLabel": "Voir les projets"
+  }
+}

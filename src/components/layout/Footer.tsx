@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 import {
   footerCompanyLinks,
   footerExploreLinks,
@@ -10,21 +11,22 @@ import {
 } from "@/lib/constants/site";
 import { brandMedia } from "@/lib/constants/media";
 import { socialIconPaths } from "@/lib/constants/socialIcons";
-import { useLang } from "@/lib/i18n/LanguageProvider";
 
-const companyLinkLabels: Record<string, keyof ReturnType<typeof useLang>["t"]["footer"]> = {
+const companyLinkLabels: Record<string, string> = {
   "/about-us": "about",
   "/careers": "careers",
   "/contact": "contact",
 };
 
-const exploreLinkLabels: Record<string, keyof ReturnType<typeof useLang>["t"]["footer"]> = {
-  "/services": "services",
-  "/sectors": "sectors",
-  "/portfolio": "portfolio",
+/** Full i18n keys so explore links always resolve under footer.* */
+const exploreLinkKeys: Record<string, string> = {
+  "/services": "footer.services",
+  "/sectors": "footer.sectors",
+  "/portfolio": "footer.portfolio",
+  "/store": "footer.store",
 };
 
-const legalLinkLabels: Record<string, keyof ReturnType<typeof useLang>["t"]["footer"]> = {
+const legalLinkLabels: Record<string, string> = {
   "/legal": "legalCentre",
   "/legal/general-terms": "generalTerms",
   "/legal/canada-terms": "canadaTerms",
@@ -35,9 +37,8 @@ const legalLinkLabels: Record<string, keyof ReturnType<typeof useLang>["t"]["foo
   "/legal/website-terms": "websiteTerms",
 };
 
-
 export function Footer() {
-  const { t } = useLang();
+  const { t } = useTranslation("common");
 
   return (
     <footer className="bg-[#111111] text-cream">
@@ -52,14 +53,14 @@ export function Footer() {
               />
             </Link>
             <p className="max-w-md text-sm leading-relaxed text-cream/70">
-              {t.footer.description}
+              {t("footer.description")}
             </p>
             <p className="text-xs uppercase tracking-[0.3em] text-cream/50">
-              {siteConfig.tagline}
+              {t("footer.taglineAlt")}
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-cream/70">
-                {t.footer.followUs}
+                {t("footer.followUs")}
               </span>
               {socialLinks.slice(0, 7).map((social) => (
                 <a
@@ -80,13 +81,13 @@ export function Footer() {
 
           <div className="space-y-4">
             <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-cream/60">
-              {t.footer.company}
+              {t("footer.company")}
             </h3>
             <ul className="space-y-3 text-sm">
               {footerCompanyLinks.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-cream/85 transition-colors hover:text-cream">
-                    {t.footer[companyLinkLabels[link.href]]}
+                    {t(`footer.${companyLinkLabels[link.href]}`)}
                   </Link>
                 </li>
               ))}
@@ -95,28 +96,34 @@ export function Footer() {
 
           <div className="space-y-4">
             <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-cream/60">
-              {t.footer.explore}
+              {t("footer.explore")}
             </h3>
             <ul className="space-y-3 text-sm">
-              {footerExploreLinks.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className="text-cream/85 transition-colors hover:text-cream">
-                    {t.footer[exploreLinkLabels[link.href]]}
-                  </Link>
-                </li>
-              ))}
+              {footerExploreLinks.map((link) => {
+                const translationKey = exploreLinkKeys[link.href];
+                return (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="text-cream/85 transition-colors hover:text-cream"
+                    >
+                      {translationKey ? t(translationKey) : link.label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
           <div className="space-y-4">
             <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-cream/60">
-              {t.footer.legal}
+              {t("footer.legal")}
             </h3>
             <ul className="space-y-2.5 text-sm">
               {footerLegalLinks.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-cream/75 transition-colors hover:text-cream">
-                    {t.footer[legalLinkLabels[link.href]]}
+                    {t(`footer.${legalLinkLabels[link.href]}`)}
                   </Link>
                 </li>
               ))}
@@ -126,14 +133,14 @@ export function Footer() {
 
         <div className="mt-16 grid gap-8 border-t border-cream/15 pt-10 md:grid-cols-3">
           <div className="text-sm text-cream/75">
-            <p className="mb-2 text-xs uppercase tracking-[0.25em] text-cream/50">{t.footer.visit}</p>
+            <p className="mb-2 text-xs uppercase tracking-[0.25em] text-cream/50">{t("footer.visit")}</p>
             {siteConfig.address.line1}
             <br />
             {siteConfig.address.line2}
           </div>
           <div className="text-sm text-cream/75">
             <p className="mb-2 text-xs uppercase tracking-[0.25em] text-cream/50">
-              {t.footer.contactLabel}
+              {t("footer.contactLabel")}
             </p>
             <a href={siteConfig.phoneHref} className="block hover:text-cream">
               {siteConfig.phone}
@@ -143,15 +150,17 @@ export function Footer() {
             </a>
           </div>
           <div className="text-sm text-cream/75">
-            <p className="mb-2 text-xs uppercase tracking-[0.25em] text-cream/50">{t.footer.hours}</p>
-            {t.footer.hoursValue}
+            <p className="mb-2 text-xs uppercase tracking-[0.25em] text-cream/50">{t("footer.hours")}</p>
+            {t("footer.hoursValue")}
             <br />
-            {t.footer.hoursTime}
+            {t("footer.hoursTime")}
           </div>
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-cream/15 pt-8 text-xs text-cream/55 sm:flex-row sm:items-center">
-          <p>© {new Date().getFullYear()} {siteConfig.legalName} {t.footer.rights}</p>
+          <p>
+            © {new Date().getFullYear()} {siteConfig.legalName} {t("footer.rights")}
+          </p>
           <p className="uppercase tracking-[0.25em]">{siteConfig.certificationsFooter}</p>
         </div>
       </div>

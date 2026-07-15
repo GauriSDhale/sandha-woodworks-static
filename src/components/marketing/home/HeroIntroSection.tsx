@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { ArrowRight } from "lucide-react";
 import { DisplayHeading, DisplayHeadingAccent } from "@/components/marketing/home/DisplayHeading";
-import { useLang } from "@/lib/i18n/LanguageProvider";
+import { useTranslation } from "react-i18next";
 import { useReducedMotion } from "@/lib/hooks/useReducedMotion";
 import { cn } from "@/lib/utils";
 
@@ -35,8 +35,19 @@ function HeroReveal({
 }
 
 export function HeroIntroSection() {
-  const { t } = useLang();
+  const { t } = useTranslation("home");
   const reducedMotion = useReducedMotion();
+  const hero = t("hero", { returnObjects: true }) as {
+    tagline: string;
+    location: string;
+    headlineLine1: string;
+    headlineLine2: string;
+    description: string;
+    viewPortfolio: string;
+    requestQuote: string;
+    footerCraft: string;
+    capabilities: string[];
+  };
 
   return (
     <section
@@ -49,16 +60,16 @@ export function HeroIntroSection() {
       <div className="container-full pb-10 pt-8 sm:pb-14 sm:pt-6">
         <HeroReveal delayMs={80} reducedMotion={reducedMotion}>
           <div className="flex items-start justify-between text-[10px] font-semibold uppercase tracking-[0.4em] text-cream/60">
-            <span>{t.home.hero.tagline}</span>
-            <span className="hidden sm:inline">{t.home.hero.location}</span>
+            <span>{hero.tagline}</span>
+            <span className="hidden sm:inline">{hero.location}</span>
           </div>
         </HeroReveal>
 
         <HeroReveal delayMs={160} reducedMotion={reducedMotion}>
           <DisplayHeading as="h1" tone="light" size="lg" className="mt-8 sm:mt-10">
-            <span className="block">{t.home.hero.headlineLine1}</span>
+            <span className="block">{hero.headlineLine1}</span>
             <DisplayHeadingAccent className="mt-1 block sm:mt-2">
-              {t.home.hero.headlineLine2}
+              {hero.headlineLine2}
             </DisplayHeadingAccent>
           </DisplayHeading>
         </HeroReveal>
@@ -66,7 +77,7 @@ export function HeroIntroSection() {
         <div className="mt-8 grid gap-8 sm:mt-10 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:items-end">
           <HeroReveal delayMs={280} reducedMotion={reducedMotion}>
             <p className="max-w-2xl text-base leading-relaxed text-cream/80 sm:text-lg">
-              {t.home.hero.description}
+              {hero.description}
             </p>
           </HeroReveal>
 
@@ -76,14 +87,14 @@ export function HeroIntroSection() {
                 href="/contact"
                 className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-cream transition-all duration-300 hover:scale-[1.02] hover:bg-warm-black active:scale-[0.98] sm:w-auto"
               >
-                {t.home.hero.requestQuote}
+                {hero.requestQuote}
                 <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
               </Link>
               <Link
                 href="/portfolio"
                 className="group inline-flex w-full items-center justify-center gap-2 rounded-full border border-cream/40 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-cream transition-all duration-300 hover:border-cream hover:bg-cream/10 active:scale-[0.98] sm:w-auto"
               >
-                {t.home.hero.viewPortfolio}
+                {hero.viewPortfolio}
                 <ArrowRight className="h-3.5 w-3.5 opacity-70 transition-transform duration-300 group-hover:translate-x-0.5" />
               </Link>
             </div>
@@ -92,7 +103,7 @@ export function HeroIntroSection() {
 
         <HeroReveal delayMs={480} reducedMotion={reducedMotion}>
           <ul className="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2 sm:mt-10 sm:gap-x-6">
-            {t.home.hero.capabilities.map((item) => (
+            {hero.capabilities.map((item) => (
               <li
                 key={item}
                 className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.28em] text-cream/55 sm:tracking-[0.32em]"
@@ -107,8 +118,8 @@ export function HeroIntroSection() {
         <HeroReveal delayMs={560} reducedMotion={reducedMotion}>
           <div className="mt-12 flex items-end justify-between border-t border-cream/15 pt-6 text-[10px] font-semibold uppercase tracking-[0.4em] text-cream/50 sm:mt-16">
             <span>© {currentYear}</span>
-            <span className="hidden sm:inline">{t.home.hero.footerCraft}</span>
-            <span className="sm:hidden">{t.home.hero.location}</span>
+            <span className="hidden sm:inline">{hero.footerCraft}</span>
+            <span className="sm:hidden">{hero.location}</span>
           </div>
         </HeroReveal>
       </div>

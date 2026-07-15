@@ -1,0 +1,418 @@
+{
+  "meta": {
+    "title": "Sectors",
+    "description": "Millwork engineered for every commercial market — eight core markets, one accountable manufacturer."
+  },
+  "hero": {
+    "eyebrow": "Markets We Serve",
+    "title": "Millwork engineered for every commercial market.",
+    "description": "Eight core markets. One accountable manufacturer. Every package engineered to the codes, cleanability and life-cycle demands of its industry — and delivered on the schedule that industry runs on."
+  },
+  "vs": {
+    "label": "Markets vs. Services",
+    "whoTitle": "Who we serve",
+    "whoBody": "This page details every market we serve — healthcare, education, commercial, hospitality, retail, residential, public and specialty. Each with its own codes, standards and delivery model.",
+    "whoCta": "Explore all markets",
+    "whatTitle": "What we do",
+    "whatBodyBefore": "For a breakdown of our capabilities — pre-construction, engineering, manufacturing, finishing, PM, logistics, installation and warranty — see the",
+    "whatBodyLink": "Services page",
+    "whatBodyAfter": ".",
+    "whatCta": "View all services",
+    "approvalsLabel": "Approved for"
+  },
+  "approvals": [
+    "General contractors & construction managers",
+    "Developers & multi-res owner groups",
+    "Architects & interior designers",
+    "Healthcare, school-board & municipal procurement"
+  ],
+  "grid": {
+    "explore": "Explore →",
+    "subSectors": "{{count}} sub-sectors"
+  },
+  "indexCta": {
+    "eyebrow": "One millwork partner. Every market.",
+    "title": "Send us your drawings. We'll return a line-item quote in one business day.",
+    "secondary": "See Projects By Market"
+  },
+  "market": {
+    "back": "Markets We Serve",
+    "capabilityCount": "{{count}} unique capability statements below ↓",
+    "aboutTitle": "About this market",
+    "overviewLabel": "Overview",
+    "subSectorsLabel": "Sub-sector capability statements",
+    "subSectorsTitle": "One unique capability per {{market}} sub-sector.",
+    "subSectorsBody": "Each capability statement is engineered specifically for its industry — with its own scope, product library, standards, install approach and photography. Nothing is shared between sub-sectors.",
+    "explorePortfolio": "Explore {{name}} Portfolio",
+    "relatedLabel": "Detailed sector pages",
+    "relatedTitle": "Read the deep sector pages within {{market}}.",
+    "readSector": "Read sector page",
+    "otherLabel": "Other markets",
+    "otherTitle": "Explore more of what we serve.",
+    "explore": "Explore",
+    "cta": {
+      "eyebrow": "Ready to price a package?",
+      "title": "Have drawings for a {{market}} package?",
+      "description": "Send us the set and finish schedule — we'll return a line-item quote within one business day.",
+      "primary": "Request a Quote",
+      "secondary": "See Projects"
+    }
+  },
+  "carousel": {
+    "label": "Project gallery",
+    "title": "Work from our {{market}} projects.",
+    "body": "Selected portfolio projects from this market — open any slide for the full case study and gallery.",
+    "emptyBody": "No featured {{market}} projects in the portfolio yet. Browse the full portfolio for related millwork work.",
+    "emptyExpanding": "We're expanding the featured {{market}} gallery. In the meantime, explore completed work across all markets in the portfolio.",
+    "viewProject": "View project",
+    "viewPortfolio": "View portfolio",
+    "prev": "Show previous project",
+    "next": "Show next project",
+    "showSlide": "Show {{name}}"
+  },
+  "detail": {
+    "back": "All Sectors",
+    "aboutTitle": "About this sector",
+    "standardsLabel": "Standards & compliance",
+    "featuresTitle": "What we build",
+    "whyLabel": "Why choose Sandha",
+    "whyTitle": "The reasons GCs, architects and owners award us the package.",
+    "servicesLabel": "Services applied",
+    "servicesTitle": "Related capabilities on this sector.",
+    "readArticle": "Read article",
+    "ctaEyebrow": "Ready to price a package?",
+    "requestQuote": "Request a Quote",
+    "seeProjects": "See Projects",
+    "otherLabel": "Other sectors",
+    "otherTitle": "Explore more of what we serve.",
+    "explore": "Explore"
+  },
+  "markets": {
+    "healthcare": {
+      "label": "Market",
+      "title": "Healthcare",
+      "description": "Hospital-grade millwork for every clinical, care and wellness environment."
+    },
+    "education": {
+      "label": "Market",
+      "title": "Education",
+      "description": "K-12, post-secondary and lifelong-learning millwork built for a 20+ year life-cycle."
+    },
+    "commercial": {
+      "label": "Market",
+      "title": "Commercial & Workplace",
+      "description": "Corporate, civic and financial fit-outs — reception through boardroom."
+    },
+    "hospitality": {
+      "label": "Market",
+      "title": "Hospitality & Food Service",
+      "description": "Hotels, restaurants, QSR and entertainment venues — turnkey FOH and BOH millwork."
+    },
+    "retail": {
+      "label": "Market",
+      "title": "Retail & Consumer",
+      "description": "Brand-consistent fixtures and store build-outs for national and multi-site rollouts."
+    },
+    "residential": {
+      "label": "Market",
+      "title": "Residential",
+      "description": "High-rise condo, rental and purpose-built rental — lobbies, amenity floors and every unit."
+    },
+    "public": {
+      "label": "Market",
+      "title": "Public & Community",
+      "description": "Community centres, libraries, museums and religious buildings — civic-grade millwork."
+    },
+    "specialty": {
+      "label": "Market",
+      "title": "Specialty Projects",
+      "description": "Custom architectural millwork, industrial, transit and one-of-a-kind builds."
+    }
+  },
+  "marketDetails": {
+    "healthcare": {
+      "overview": "From acute-care hospitals to long-term care and senior wellness communities, we deliver infection-control-ready millwork engineered for the codes, cleanability and life-cycle demands of healthcare.",
+      "overviewBullets": [
+        "IPAC / ICRA-aware manufacturing and install for live patient environments.",
+        "Disinfect-safe finishes tested against hospital chemistry.",
+        "Whole-facility scope: public wood, clinical HPL, solid-surface and BOH stainless."
+      ],
+      "subSectors": {
+        "hospitals": {
+          "name": "Hospitals",
+          "description": "Acute-care millwork engineered for infection control, chemical wipe-down and live-site install. Delivered on live hospital sites across Ontario and the northeastern United States."
+        },
+        "medical-clinics": {
+          "name": "Medical Clinics",
+          "description": "Walk-in, family-health-team, dental and specialty-clinic millwork — clean, warm, cleanable. Family-health teams, private practices and multi-location dental groups."
+        },
+        "laboratories": {
+          "name": "Laboratories",
+          "description": "Chemical-resistant lab casework, workstations and research fit-outs for wet, dry and analytical labs. Wet-lab, dry-lab and analytical fit-outs for hospital, university and private research clients."
+        },
+        "long-term-care": {
+          "name": "Long-Term Care",
+          "description": "Resident-scale millwork — warm finishes, accessible fixtures, and daily-cleanable durability. Ministry-of-Health LTC redevelopments and private-operator new builds across Ontario."
+        },
+        "senior-living": {
+          "name": "Senior Living",
+          "description": "Independent-living and premium retirement-community millwork — residential warmth, hospitality craft. Branded retirement chains and independent-operator premium communities."
+        },
+        "retirement-communities": {
+          "name": "Retirement Communities",
+          "description": "Full-campus millwork packages for multi-building retirement communities. Master-planned retirement campuses across Canada."
+        },
+        "assisted-living": {
+          "name": "Assisted Living",
+          "description": "Assisted-living millwork — accessible, warm and quietly clinical. Assisted-living residences and continuing-care communities."
+        }
+      }
+    },
+    "education": {
+      "overview": "Approved on Ontario school-board and college vendor lists — we deliver classroom, lab, library and learning-space millwork sized for the summer construction window.",
+      "overviewBullets": [
+        "School-board and post-secondary vendor-approved.",
+        "Summer-window phased delivery and swing-space install.",
+        "Grade 1 hardware, impact-rated edges, cleanable finishes."
+      ],
+      "subSectors": {
+        "schools": {
+          "name": "Schools",
+          "description": "K-12 casework built for a 20-year classroom lifecycle and an 8-week summer window. Ontario public school boards and Massachusetts K-12 builds."
+        },
+        "colleges": {
+          "name": "Colleges",
+          "description": "Applied-learning millwork — trades bays, teaching kitchens, health-sim and classrooms. Recent work at Niagara College (Marotta Family Innovation Complex)."
+        },
+        "universities": {
+          "name": "Universities",
+          "description": "Research-grade university millwork — labs, libraries, studios and admin fit-outs. Recent work at the University of Toronto Robarts Library Study Commons."
+        },
+        "libraries": {
+          "name": "Libraries",
+          "description": "Public, academic and specialty library millwork — circulation, stacks, study, story-time. Recent work at Valley Park Library, Hamilton and U of T Robarts Library."
+        },
+        "daycares": {
+          "name": "Daycares",
+          "description": "Child-safe daycare millwork — soft-close, captive hardware, cleanable finishes. Municipal and independent licensed daycare operators."
+        },
+        "learning-centres": {
+          "name": "Learning Centres",
+          "description": "Tutoring, after-school and enrichment-centre millwork — flexible, brand-consistent, kid-safe. Multi-location learning-centre franchises."
+        },
+        "training-facilities": {
+          "name": "Training Facilities",
+          "description": "Corporate and trades training millwork — classrooms, sim-labs and hands-on bays. Corporate, union and government training facilities."
+        }
+      }
+    },
+    "commercial": {
+      "overview": "Head-office, tenant-improvement and institutional workplace packages — feature walls, boardrooms, executive suites and civic service counters, coordinated with the designer, AV and security integrators.",
+      "overviewBullets": [
+        "Design-assist from schematic through construction documents.",
+        "Live-tenant / after-hours install for occupied floors.",
+        "AV, IT and security-integrator coordination on the shop drawings."
+      ],
+      "subSectors": {
+        "corporate-offices": {
+          "name": "Corporate Offices",
+          "description": "HQ, tower and tenant-improvement millwork — reception, boardroom, executive suites. Corporate HQ, tower fit-outs and multi-tenant TI projects."
+        },
+        "commercial-interiors": {
+          "name": "Commercial Interiors",
+          "description": "Multi-tenant TI and workplace millwork for downtown and suburban commercial buildings."
+        },
+        "financial-institutions": {
+          "name": "Financial Institutions",
+          "description": "Bank branches, credit unions and private-banking suites — brand-standard, secure, repeatable."
+        },
+        "government-offices": {
+          "name": "Government Offices",
+          "description": "Municipal, provincial and federal office fit-outs — long-life, compliance-driven."
+        },
+        "civic-buildings": {
+          "name": "Civic Buildings",
+          "description": "City halls, service centres and civic-landmark millwork — 30-year public-realm durability."
+        },
+        "professional-offices": {
+          "name": "Professional Offices",
+          "description": "Law-firm, accounting and consulting-office millwork — refined, quiet, client-facing."
+        }
+      }
+    },
+    "hospitality": {
+      "overview": "Whole-property packages from lobby to back-of-house — sequence-matched veneer walls, guest-room casework, bars, banquettes, feature ceilings and service stations, delivered on hospitality PIP standards.",
+      "overviewBullets": [
+        "AWMAC Premium finish on public-facing veneer.",
+        "One PM: millwork + stainless + service counters + banquettes.",
+        "Fast prototype-to-rollout for multi-location chains."
+      ],
+      "subSectors": {
+        "hotels": {
+          "name": "Hotels",
+          "description": "Whole-hotel millwork — lobby, guest rooms, F&B and BOH under one PM. International hotel-chain and boutique-hotel packages."
+        },
+        "resorts": {
+          "name": "Resorts",
+          "description": "Destination-resort millwork — hospitality craft with weather-graded outdoor detail. Destination ski, lake and beachfront resort projects."
+        },
+        "restaurants": {
+          "name": "Restaurants",
+          "description": "Full-service restaurant millwork — bars, banquettes, hosts, feature ceilings, BOH prep. Recent work: Mercato Mississauga, Scooped by Demetres, Coffee Island Toronto."
+        },
+        "quick-service-restaurants": {
+          "name": "Quick Service Restaurants (QSR)",
+          "description": "Brand-standard QSR fixture packages — front counters, digital menus, BOH kitting. National QSR chain rollouts."
+        },
+        "cafes": {
+          "name": "Cafés",
+          "description": "Espresso-bar and specialty-café millwork — pastry cases, coffee bars, retail merchandising."
+        },
+        "bars": {
+          "name": "Bars",
+          "description": "Cocktail-bar, sports-bar and hotel-lounge millwork — the room's centre of gravity."
+        },
+        "entertainment-venues": {
+          "name": "Entertainment Venues",
+          "description": "Theatre-lobby, cinema, concert-venue and arcade millwork — durable, dramatic, brand-forward."
+        }
+      }
+    },
+    "retail": {
+      "overview": "From flagship stores to national rollouts — wall systems, cash wraps, display casework and specialty fixtures reproduced store-to-store on the brand PIP, palletized and QR-coded per location.",
+      "overviewBullets": [
+        "CNC and finishing floor scaled for identical-fixture repeatability.",
+        "Prototype-to-rollout with tolerance sheets and manifest.",
+        "Cross-border logistics (CUSMA) to US locations."
+      ],
+      "subSectors": {
+        "retail-stores": {
+          "name": "Retail Stores",
+          "description": "Flagship and national-rollout store millwork — cash wraps, wall systems, feature displays. Recent work: Scooped by Demetres, AM Hair & Beauty."
+        },
+        "shopping-centres": {
+          "name": "Shopping Centres",
+          "description": "Mall common-area, guest-services and food-court millwork. Enclosed-mall and lifestyle-centre common-area programs."
+        },
+        "luxury-retail": {
+          "name": "Luxury Retail",
+          "description": "Watch, jewellery and luxury-goods casework — museum-grade craft."
+        },
+        "showrooms": {
+          "name": "Showrooms",
+          "description": "Auto, appliance and home-goods showroom millwork — display-driven, brand-forward."
+        },
+        "pharmacies": {
+          "name": "Pharmacies",
+          "description": "Retail-pharmacy millwork — dispensing, consultation, front-store retail."
+        },
+        "grocery": {
+          "name": "Grocery",
+          "description": "Full-format and specialty-grocery millwork — service counters, back-of-house, brand feature walls."
+        },
+        "convenience-stores": {
+          "name": "Convenience Stores",
+          "description": "C-store fixture packages — front counters, coffee bars, cooler surrounds, fuel-forecourt kiosks."
+        }
+      }
+    },
+    "residential": {
+      "overview": "Whole-building millwork for multi-residential — main-floor lobbies, amenity floors and every in-suite kitchen, vanity and closet. One accountable manufacturer from public spaces to penthouse.",
+      "overviewBullets": [
+        "Public amenity + corridor + every unit under one supplier.",
+        "Purchaser-upgrade portals for quartz, cabinetry and closets.",
+        "Unit-count manufacturing on developer turnover schedules."
+      ],
+      "subSectors": {
+        "multi-residential": {
+          "name": "Multi-Residential",
+          "description": "High-rise millwork — lobbies, amenity floors and every unit under one manufacturer."
+        },
+        "apartments": {
+          "name": "Apartments",
+          "description": "Purpose-built rental millwork — in-suite scope repeated at unit count."
+        },
+        "condominiums": {
+          "name": "Condominiums",
+          "description": "Condo tower millwork — public amenities and every in-suite kitchen, vanity and closet."
+        },
+        "student-housing": {
+          "name": "Student Housing",
+          "description": "Purpose-built student accommodation millwork — in-suite and shared-amenity."
+        },
+        "luxury-residential-common-areas": {
+          "name": "Luxury Residential Common Areas",
+          "description": "Ultra-luxury tower lobbies, amenity floors and resident-lounge millwork."
+        }
+      }
+    },
+    "public": {
+      "overview": "Durable millwork for civic and community landmarks — rec centres, YMCAs, libraries, museums, cultural centres and places of worship, delivered under municipal procurement compliance.",
+      "overviewBullets": [
+        "Wet-rated construction for aquatic and change-room environments.",
+        "MERX / municipal tender-ready with CCDC contracts and bonding.",
+        "Heritage-sensitive integration for landmark buildings."
+      ],
+      "subSectors": {
+        "community-centres": {
+          "name": "Community Centres",
+          "description": "Multi-generational community-centre millwork — reception, program rooms, wet spaces."
+        },
+        "ymca": {
+          "name": "YMCA",
+          "description": "YMCA and Y-family facility millwork — welcome desks, program rooms, wet spaces."
+        },
+        "recreation-centres": {
+          "name": "Recreation Centres",
+          "description": "Municipal-recreation millwork — arenas, fitness centres, aquatic complexes."
+        },
+        "public-libraries": {
+          "name": "Libraries",
+          "description": "Branch and central-library millwork — circulation, community programming, maker-spaces."
+        },
+        "museums": {
+          "name": "Museums",
+          "description": "Museum-grade millwork — exhibit casework, artefact storage, reception and café."
+        },
+        "cultural-centres": {
+          "name": "Cultural Centres",
+          "description": "Community cultural, arts and multi-faith centre millwork."
+        },
+        "religious-buildings": {
+          "name": "Religious Buildings",
+          "description": "Church, mosque, temple and synagogue millwork — sanctuary, gathering, ceremonial detail."
+        }
+      }
+    },
+    "specialty": {
+      "overview": "For projects that don't fit a category — custom architectural millwork, manufacturing plants, transit hubs, airport concessions and specialty fabrication.",
+      "overviewBullets": [
+        "Heavy-duty spec: chemical-resistant laminate, phenolic tops, stainless.",
+        "Turnaround install coordinated around production windows.",
+        "CGP-eligible for federal secure-scope work."
+      ],
+      "subSectors": {
+        "custom-architectural-millwork": {
+          "name": "Custom Architectural Millwork",
+          "description": "Bespoke architectural detail — feature walls, ceilings, staircases, one-off scope."
+        },
+        "manufacturing-facilities": {
+          "name": "Manufacturing Facilities",
+          "description": "Industrial-manufacturing millwork — office fronts, break-rooms, QA labs, training rooms."
+        },
+        "airports": {
+          "name": "Airports",
+          "description": "Airport-concession, gate-agent and terminal millwork — 24/7 durability under public traffic."
+        },
+        "transit": {
+          "name": "Transit",
+          "description": "Transit-hub, station and terminal millwork — public-transit-grade durability."
+        },
+        "special-projects": {
+          "name": "Special Projects",
+          "description": "One-of-a-kind millwork — anything that doesn't fit a category."
+        }
+      }
+    }
+  }
+}

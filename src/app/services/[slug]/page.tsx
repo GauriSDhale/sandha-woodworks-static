@@ -1,16 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { serviceCategories, serviceDetails } from "@/lib/constants/services";
+import { getService, serviceCategories } from "@/lib/constants/services";
+import enServices from "@/locales/en/services.json";
 import { ServiceDetailContent } from "./ServiceDetailContent";
-
-function getService(slug: string) {
-  for (const cat of serviceCategories) {
-    const service = cat.services.find((s) => s.slug === slug);
-    if (service) return { service, category: cat };
-  }
-  return null;
-}
 
 export function generateStaticParams() {
   return serviceCategories.flatMap((cat) =>
@@ -26,9 +18,10 @@ export async function generateMetadata({
   const { slug } = await params;
   const found = getService(slug);
   if (!found) return { title: "Service Not Found" };
+  const item = enServices.items[slug as keyof typeof enServices.items];
   return {
-    title: `${found.service.name} | Sandha Woodworks`,
-    description: found.service.description,
+    title: `${item?.name ?? slug} | Sandha Woodworks`,
+    description: item?.description,
   };
 }
 
@@ -40,17 +33,11 @@ export default async function ServiceDetailPage({
   const { slug } = await params;
   const found = getService(slug);
   if (!found) notFound();
-  const { service, category } = found;
-  const detail = serviceDetails[slug];
 
+  const { service, category } = found;
   const related = category.services.filter((s) => s.slug !== slug).slice(0, 6);
 
   return (
-    <ServiceDetailContent
-      service={service}
-      detail={detail ?? null}
-      category={category}
-      related={related}
-    />
+    <ServiceDetailContent service={service} category={category} related={related} />
   );
 }

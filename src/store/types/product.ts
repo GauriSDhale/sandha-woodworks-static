@@ -79,9 +79,7 @@ export interface Product {
 
 export interface Category {
   id: CategoryId;
-  label: string;
   slug: string;
-  description: string;
   parent?: CategoryId;
   image: string;
   productCount?: number;

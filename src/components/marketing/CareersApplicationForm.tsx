@@ -1,94 +1,51 @@
 "use client";
 
-import { useRef, useState } from "react";
-import { useForm, useWatch } from "react-hook-form";
+import { useMemo, useRef, useState } from "react";
+import { useForm, useWatch, type Resolver } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useTranslation } from "react-i18next";
 import { z } from "zod";
 import { CheckCircle2, Upload, X } from "lucide-react";
-import { openPositions } from "@/lib/constants/about";
+import { openPositionIds } from "@/lib/constants/about";
 import { sendEmail } from "@/lib/email";
+import i18n from "@/lib/i18n/i18n";
 
-const roleOptions = openPositions.map((position) => position.title);
-const experienceOptions = ["0–1 year", "1–3 years", "3–5 years", "5+ years"];
-const authorizationOptions = [
-  "Canadian citizen",
-  "Permanent resident",
-  "Work permit holder",
-  "Open to sponsorship",
-  "Prefer not to say",
-];
+const experienceIds = ["0-1", "1-3", "3-5", "5plus"] as const;
+const authorizationIds = [
+  "citizen",
+  "pr",
+  "workPermit",
+  "sponsorship",
+  "preferNot",
+] as const;
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10 MB
 const RESUME_EXTENSIONS = [".pdf", ".doc", ".docx"];
 const SUPPORTING_EXTENSIONS = [".pdf", ".doc", ".docx", ".png", ".jpg", ".jpeg"];
 
 const optionalText = (max: number) => z.string().trim().max(max).optional().or(z.literal(""));
-const optionalUrl = z.union([z.literal(""), z.url("Enter a valid URL")]).optional();
 
 function fileExt(name: string) {
   return `.${name.split(".").pop()?.toLowerCase() ?? ""}`;
 }
 
-const careersSchema = z
-  .object({
-    fullName: z.string().trim().min(1, "Full name is required").max(80),
-    email: z.email("Enter a valid email address"),
-    phone: z.string().trim().min(7, "Enter a valid phone number"),
-    location: z.string().trim().min(1, "City / province is required"),
-    position: z.string().min(1, "Please select a position"),
-    experience: z.string().min(1, "Please select your experience"),
-    currentRole: z.string().trim().min(1, "Current or most recent role is required"),
-    currentCompany: optionalText(100),
-    linkedin: optionalUrl,
-    portfolio: optionalUrl,
-    workAuthorization: z.string().min(1, "Please select your work authorization"),
-    startDate: z.string().optional(),
-    coverNote: optionalText(2000),
-    resume: z.any(),
-    supportingDocuments: z.any().optional(),
-  })
-  .superRefine((data, ctx) => {
-    // Resume — required, single file, type + size checked.
-    const resume = data.resume as FileList | undefined;
-    if (!resume || resume.length === 0) {
-      ctx.addIssue({ code: "custom", path: ["resume"], message: "Resume is required" });
-    } else {
-      const file = resume[0];
-      if (!RESUME_EXTENSIONS.includes(fileExt(file.name))) {
-        ctx.addIssue({
-          code: "custom",
-          path: ["resume"],
-          message: "Resume must be a PDF, DOC or DOCX",
-        });
-      }
-      if (file.size > MAX_FILE_SIZE) {
-        ctx.addIssue({ code: "custom", path: ["resume"], message: "Resume is larger than 10 MB" });
-      }
-    }
-
-    // Supporting documents — optional, but validate each if provided.
-    const docs = data.supportingDocuments as FileList | undefined;
-    if (docs && docs.length > 0) {
-      Array.from(docs).forEach((file) => {
-        if (!SUPPORTING_EXTENSIONS.includes(fileExt(file.name))) {
-          ctx.addIssue({
-            code: "custom",
-            path: ["supportingDocuments"],
-            message: `${file.name}: unsupported file type`,
-          });
-        }
-        if (file.size > MAX_FILE_SIZE) {
-          ctx.addIssue({
-            code: "custom",
-            path: ["supportingDocuments"],
-            message: `${file.name} is larger than 10 MB`,
-          });
-        }
-      });
-    }
-  });
-
-type CareersFormValues = z.infer<typeof careersSchema>;
+type CareersFormValues = {
+  fullName: string;
+  email: string;
+  phone: string;
+  location: string;
+  position: string;
+  experience: string;
+  currentRole: string;
+  currentCompany?: string;
+  linkedin?: string;
+  portfolio?: string;
+  workAuthorization: string;
+  startDate?: string;
+  coverNote?: string;
+  resume?: FileList;
+  supportingDocuments?: FileList;
+};
 
 function formatBytes(bytes: number) {
   if (bytes < 1024) return `${bytes} B`;
@@ -97,10 +54,84 @@ function formatBytes(bytes: number) {
 }
 
 export function CareersApplicationForm() {
+  const { t, i18n: i18nInstance } = useTranslation("careers");
   const resumeInputRef = useRef<HTMLInputElement | null>(null);
   const docsInputRef = useRef<HTMLInputElement | null>(null);
   const [sent, setSent] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
+
+  const resolver = useMemo(() => {
+    const optionalUrl = z
+      .union([z.literal(""), z.url(t("form.errors.urlInvalid"))])
+      .optional();
+
+    const schema = z
+      .object({
+        fullName: z.string().trim().min(1, t("form.errors.fullNameRequired")).max(80),
+        email: z.email(t("form.errors.emailInvalid")),
+        phone: z.string().trim().min(7, t("form.errors.phoneInvalid")),
+        location: z.string().trim().min(1, t("form.errors.locationRequired")),
+        position: z.string().min(1, t("form.errors.positionRequired")),
+        experience: z.string().min(1, t("form.errors.experienceRequired")),
+        currentRole: z.string().trim().min(1, t("form.errors.currentRoleRequired")),
+        currentCompany: optionalText(100),
+        linkedin: optionalUrl,
+        portfolio: optionalUrl,
+        workAuthorization: z.string().min(1, t("form.errors.authorizationRequired")),
+        startDate: z.string().optional(),
+        coverNote: optionalText(2000),
+        resume: z.any(),
+        supportingDocuments: z.any().optional(),
+      })
+      .superRefine((data, ctx) => {
+        const resume = data.resume as FileList | undefined;
+        if (!resume || resume.length === 0) {
+          ctx.addIssue({
+            code: "custom",
+            path: ["resume"],
+            message: t("form.errors.resumeRequired"),
+          });
+        } else {
+          const file = resume[0];
+          if (!RESUME_EXTENSIONS.includes(fileExt(file.name))) {
+            ctx.addIssue({
+              code: "custom",
+              path: ["resume"],
+              message: t("form.errors.resumeType"),
+            });
+          }
+          if (file.size > MAX_FILE_SIZE) {
+            ctx.addIssue({
+              code: "custom",
+              path: ["resume"],
+              message: t("form.errors.resumeSize"),
+            });
+          }
+        }
+
+        const docs = data.supportingDocuments as FileList | undefined;
+        if (docs && docs.length > 0) {
+          Array.from(docs).forEach((file) => {
+            if (!SUPPORTING_EXTENSIONS.includes(fileExt(file.name))) {
+              ctx.addIssue({
+                code: "custom",
+                path: ["supportingDocuments"],
+                message: t("form.errors.docType", { name: file.name }),
+              });
+            }
+            if (file.size > MAX_FILE_SIZE) {
+              ctx.addIssue({
+                code: "custom",
+                path: ["supportingDocuments"],
+                message: t("form.errors.docSize", { name: file.name }),
+              });
+            }
+          });
+        }
+      });
+
+    return zodResolver(schema) as Resolver<CareersFormValues>;
+  }, [t, i18nInstance.language]);
 
   const {
     register,
@@ -110,7 +141,7 @@ export function CareersApplicationForm() {
     reset,
     formState: { errors, isSubmitting },
   } = useForm<CareersFormValues>({
-    resolver: zodResolver(careersSchema),
+    resolver,
     mode: "onBlur",
     defaultValues: {
       fullName: "",
@@ -130,7 +161,9 @@ export function CareersApplicationForm() {
   });
 
   const selectedResume = useWatch({ control, name: "resume" }) as FileList | undefined;
-  const selectedDocs = useWatch({ control, name: "supportingDocuments" }) as FileList | undefined;
+  const selectedDocs = useWatch({ control, name: "supportingDocuments" }) as
+    | FileList
+    | undefined;
 
   const { ref: resumeFieldRef, ...resumeRegister } = register("resume");
   const { ref: docsFieldRef, ...docsRegister } = register("supportingDocuments");
@@ -147,6 +180,10 @@ export function CareersApplicationForm() {
 
   async function onSubmit(values: CareersFormValues) {
     setSubmitError(null);
+    const tEn = i18n.getFixedT("en", "careers");
+    const positionLabel = tEn(`positions.items.${values.position}.title`);
+    const experienceLabel = tEn(`form.experience.${values.experience}`);
+    const authorizationLabel = tEn(`form.authorization.${values.workAuthorization}`);
 
     const resume = values.resume as FileList | undefined;
     const docs = values.supportingDocuments as FileList | undefined;
@@ -159,14 +196,14 @@ export function CareersApplicationForm() {
     // application as text and list the files the applicant selected. They can
     // email the actual documents directly.
     const details = [
-      `Position Applying For: ${values.position}`,
-      `Years of Experience: ${values.experience}`,
+      `Position Applying For: ${positionLabel}`,
+      `Years of Experience: ${experienceLabel}`,
       `City / Province: ${values.location}`,
       `Current / Recent Role: ${values.currentRole}`,
       values.currentCompany && `Current / Recent Company: ${values.currentCompany}`,
       values.linkedin && `LinkedIn: ${values.linkedin}`,
       values.portfolio && `Portfolio: ${values.portfolio}`,
-      `Work Authorization: ${values.workAuthorization}`,
+      `Work Authorization: ${authorizationLabel}`,
       values.startDate && `Preferred Start Date: ${values.startDate}`,
       values.coverNote && `\nCover Note:\n${values.coverNote}`,
       attachmentNames.length
@@ -182,7 +219,7 @@ export function CareersApplicationForm() {
       email: values.email,
       phone: values.phone,
       company: values.currentCompany || "—",
-      projectName: values.position,
+      projectName: positionLabel,
       projectLocation: values.location,
       sector: "Careers",
       timeline: values.startDate || "—",
@@ -195,7 +232,7 @@ export function CareersApplicationForm() {
       setSent(true);
       reset();
     } else {
-      setSubmitError(result.message ?? "Something went wrong. Please try again.");
+      setSubmitError(result.message ?? t("form.errors.generic"));
     }
   }
 
@@ -205,21 +242,33 @@ export function CareersApplicationForm() {
         <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand/10 text-brand">
           <CheckCircle2 className="h-7 w-7" />
         </div>
-        <h3 className="mt-6 font-display text-2xl font-semibold">Application received</h3>
+        <h3 className="mt-6 font-display text-2xl font-semibold">{t("form.success.title")}</h3>
         <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
-          Thank you for applying. Our team will review your details and reach out if your profile is
-          a match for an opening.
+          {t("form.success.body")}
         </p>
         <button
           type="button"
           onClick={() => setSent(false)}
           className="mt-6 rounded-full border border-border px-5 py-2 text-sm font-medium transition hover:bg-background"
         >
-          Submit another application
+          {t("form.actions.submitAnother")}
         </button>
       </div>
     );
   }
+
+  const positionOptions = openPositionIds.map((id) => ({
+    value: id,
+    label: t(`positions.items.${id}.title`),
+  }));
+  const experienceOptions = experienceIds.map((id) => ({
+    value: id,
+    label: t(`form.experience.${id}`),
+  }));
+  const authorizationOptions = authorizationIds.map((id) => ({
+    value: id,
+    label: t(`form.authorization.${id}`),
+  }));
 
   return (
     <div
@@ -227,24 +276,24 @@ export function CareersApplicationForm() {
       className="rounded-3xl border border-border bg-white p-6 shadow-sm sm:p-8"
     >
       <div className="space-y-3">
-        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand">Apply now</p>
-        <h2 className="font-display text-3xl font-semibold">Candidate application</h2>
-        <p className="text-sm leading-relaxed text-muted-foreground">
-          Share your background and upload your resume. Required fields are marked with an asterisk.
+        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand">
+          {t("form.eyebrow")}
         </p>
+        <h2 className="font-display text-3xl font-semibold">{t("form.title")}</h2>
+        <p className="text-sm leading-relaxed text-muted-foreground">{t("form.intro")}</p>
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)} className="mt-8 space-y-6" noValidate>
         <div className="grid gap-5 md:grid-cols-2">
           <Field
-            label="Full name"
+            label={t("form.fields.fullName")}
             id="fullName"
             required
             registration={register("fullName")}
             error={errors.fullName?.message}
           />
           <Field
-            label="Email address"
+            label={t("form.fields.email")}
             id="email"
             type="email"
             required
@@ -252,7 +301,7 @@ export function CareersApplicationForm() {
             error={errors.email?.message}
           />
           <Field
-            label="Phone number"
+            label={t("form.fields.phone")}
             id="phone"
             type="tel"
             required
@@ -260,7 +309,7 @@ export function CareersApplicationForm() {
             error={errors.phone?.message}
           />
           <Field
-            label="City / province"
+            label={t("form.fields.location")}
             id="location"
             required
             registration={register("location")}
@@ -270,17 +319,19 @@ export function CareersApplicationForm() {
 
         <div className="grid gap-5 md:grid-cols-2">
           <SelectField
-            label="Position applying for"
+            label={t("form.fields.position")}
             id="position"
-            options={roleOptions}
+            options={positionOptions}
+            placeholder={t("form.selectOne")}
             required
             registration={register("position")}
             error={errors.position?.message}
           />
           <SelectField
-            label="Years of experience"
+            label={t("form.fields.experience")}
             id="experience"
             options={experienceOptions}
+            placeholder={t("form.selectOne")}
             required
             registration={register("experience")}
             error={errors.experience?.message}
@@ -289,14 +340,14 @@ export function CareersApplicationForm() {
 
         <div className="grid gap-5 md:grid-cols-2">
           <Field
-            label="Current or most recent role"
+            label={t("form.fields.currentRole")}
             id="currentRole"
             required
             registration={register("currentRole")}
             error={errors.currentRole?.message}
           />
           <Field
-            label="Current or most recent company"
+            label={t("form.fields.currentCompany")}
             id="currentCompany"
             registration={register("currentCompany")}
             error={errors.currentCompany?.message}
@@ -305,18 +356,18 @@ export function CareersApplicationForm() {
 
         <div className="grid gap-5 md:grid-cols-2">
           <Field
-            label="LinkedIn profile"
+            label={t("form.fields.linkedin")}
             id="linkedin"
             type="url"
-            placeholder="https://linkedin.com/in/…"
+            placeholder={t("form.placeholders.linkedin")}
             registration={register("linkedin")}
             error={errors.linkedin?.message}
           />
           <Field
-            label="Portfolio / website"
+            label={t("form.fields.portfolio")}
             id="portfolio"
             type="url"
-            placeholder="https://…"
+            placeholder={t("form.placeholders.portfolio")}
             registration={register("portfolio")}
             error={errors.portfolio?.message}
           />
@@ -324,15 +375,16 @@ export function CareersApplicationForm() {
 
         <div className="grid gap-5 md:grid-cols-2">
           <SelectField
-            label="Work authorization"
+            label={t("form.fields.workAuthorization")}
             id="workAuthorization"
             options={authorizationOptions}
+            placeholder={t("form.selectOne")}
             required
             registration={register("workAuthorization")}
             error={errors.workAuthorization?.message}
           />
           <Field
-            label="Preferred start date"
+            label={t("form.fields.startDate")}
             id="startDate"
             type="date"
             registration={register("startDate")}
@@ -342,23 +394,22 @@ export function CareersApplicationForm() {
 
         <div>
           <label htmlFor="coverNote" className="block text-sm font-medium">
-            Cover note
+            {t("form.fields.coverNote")}
           </label>
           <textarea
             id="coverNote"
             rows={5}
             {...register("coverNote")}
             className="mt-2 w-full rounded-2xl border border-border bg-muted px-4 py-3 text-sm outline-none focus:border-black"
-            placeholder="Tell us a little about yourself and why you'd like to join Sandha Woodworks."
+            placeholder={t("form.placeholders.coverNote")}
           />
           <FieldError message={errors.coverNote?.message} />
         </div>
 
         <div className="grid gap-6 md:grid-cols-2">
-          {/* Resume — required */}
           <div>
             <label htmlFor="resume" className="block text-sm font-medium">
-              Resume
+              {t("form.fields.resume")}
               <span className="ml-1 text-brand-red">*</span>
             </label>
             <label
@@ -367,8 +418,10 @@ export function CareersApplicationForm() {
               }`}
             >
               <Upload className="h-7 w-7 text-muted-foreground" />
-              <span className="mt-3 text-sm font-medium">Upload your resume</span>
-              <span className="mt-1 text-xs text-muted-foreground">PDF, DOC, or DOCX up to 10 MB</span>
+              <span className="mt-3 text-sm font-medium">{t("form.upload.resume")}</span>
+              <span className="mt-1 text-xs text-muted-foreground">
+                {t("form.upload.resumeHint")}
+              </span>
               <input
                 id="resume"
                 type="file"
@@ -382,13 +435,16 @@ export function CareersApplicationForm() {
               />
             </label>
             <FieldError message={errors.resume?.message as string | undefined} />
-            <FileList files={selectedResume} onClear={clearResume} />
+            <FileList
+              files={selectedResume}
+              onClear={clearResume}
+              removeLabel={t("form.upload.remove")}
+            />
           </div>
 
-          {/* Supporting documents — optional */}
           <div>
             <label htmlFor="supportingDocuments" className="block text-sm font-medium">
-              Supporting documents
+              {t("form.fields.supportingDocuments")}
             </label>
             <label
               className={`mt-2 flex cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed bg-muted px-6 py-8 text-center transition hover:border-black/20 ${
@@ -396,8 +452,10 @@ export function CareersApplicationForm() {
               }`}
             >
               <Upload className="h-7 w-7 text-muted-foreground" />
-              <span className="mt-3 text-sm font-medium">Add portfolio or certificates</span>
-              <span className="mt-1 text-xs text-muted-foreground">Optional documents or work samples</span>
+              <span className="mt-3 text-sm font-medium">{t("form.upload.docs")}</span>
+              <span className="mt-1 text-xs text-muted-foreground">
+                {t("form.upload.docsHint")}
+              </span>
               <input
                 id="supportingDocuments"
                 type="file"
@@ -412,13 +470,16 @@ export function CareersApplicationForm() {
               />
             </label>
             <FieldError message={errors.supportingDocuments?.message as string | undefined} />
-            <FileList files={selectedDocs} onClear={clearDocs} />
+            <FileList
+              files={selectedDocs}
+              onClear={clearDocs}
+              removeLabel={t("form.upload.remove")}
+            />
           </div>
         </div>
 
         <div className="rounded-2xl border border-border bg-muted p-4 text-sm leading-relaxed text-muted-foreground">
-          By submitting this form, you consent to our team reviewing your application. We will be in
-          touch if your experience aligns with an opening.
+          {t("form.consent")}
         </div>
 
         {submitError ? (
@@ -430,16 +491,24 @@ export function CareersApplicationForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="rounded-full bg-foreground px-6 py-3 text-sm font-bold uppercase tracking-[0.16em] text-cream transition disabled:cursor-not-allowed disabled:opacity-60 w-full cursor-pointer hover:bg-brand"
+          className="w-full cursor-pointer rounded-full bg-foreground px-6 py-3 text-sm font-bold uppercase tracking-[0.16em] text-cream transition hover:bg-brand disabled:cursor-not-allowed disabled:opacity-60"
         >
-          {isSubmitting ? "Submitting…" : "Submit application"}
+          {isSubmitting ? t("form.actions.submitting") : t("form.actions.submit")}
         </button>
       </form>
     </div>
   );
 }
 
-function FileList({ files, onClear }: { files?: FileList; onClear: () => void }) {
+function FileList({
+  files,
+  onClear,
+  removeLabel,
+}: {
+  files?: FileList;
+  onClear: () => void;
+  removeLabel: string;
+}) {
   if (!files || files.length === 0) return null;
   return (
     <ul className="mt-3 space-y-2">
@@ -459,7 +528,7 @@ function FileList({ files, onClear }: { files?: FileList; onClear: () => void })
           className="inline-flex items-center gap-1 text-xs font-medium text-brand-red hover:underline"
         >
           <X className="h-3.5 w-3.5" />
-          Remove
+          {removeLabel}
         </button>
       </li>
     </ul>
@@ -516,13 +585,15 @@ function SelectField({
   label,
   id,
   options,
+  placeholder,
   required = false,
   registration,
   error,
 }: {
   label: string;
   id: string;
-  options: string[];
+  options: { value: string; label: string }[];
+  placeholder: string;
   required?: boolean;
   registration: ReturnType<ReturnType<typeof useForm>["register"]>;
   error?: string;
@@ -535,11 +606,11 @@ function SelectField({
       </label>
       <select id={id} {...registration} defaultValue="" className={inputClass(!!error)}>
         <option value="" disabled>
-          Select one
+          {placeholder}
         </option>
         {options.map((option) => (
-          <option key={option} value={option}>
-            {option}
+          <option key={option.value} value={option.value}>
+            {option.label}
           </option>
         ))}
       </select>
