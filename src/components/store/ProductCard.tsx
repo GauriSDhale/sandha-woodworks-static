@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { useState } from "react";
 import { ShoppingCart, Eye } from "lucide-react";
 import { motion } from "framer-motion";

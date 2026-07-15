@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { CountUpStat } from "@/components/marketing/home/CountUpStat";
 import { getRecentProjectSlides } from "@/lib/projects/recent";

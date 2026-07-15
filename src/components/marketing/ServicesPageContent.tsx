@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { ArrowRight, Wrench, Building2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { PageHero, CtaBanner, SectionLabel } from "@/components/marketing/PageSections";

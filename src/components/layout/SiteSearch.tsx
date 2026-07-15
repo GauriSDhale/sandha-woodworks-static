@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useId, useMemo, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { ChevronRight, Search, X } from "lucide-react";
 import { searchSite, type SearchItem, type SearchKind } from "@/lib/search";
+import { localeFromPathname, localizeHref } from "@/lib/i18n/routing";
 import { cn } from "@/lib/utils";
 
 const kindStyles: Record<SearchKind, string> = {
@@ -20,6 +21,8 @@ interface SiteSearchProps {
 
 export function SiteSearch({ open, onOpenChange }: SiteSearchProps) {
   const router = useRouter();
+  const pathname = usePathname();
+  const locale = localeFromPathname(pathname);
   const inputRef = useRef<HTMLInputElement>(null);
   const listId = useId();
   const [query, setQuery] = useState("");
@@ -81,7 +84,7 @@ export function SiteSearch({ open, onOpenChange }: SiteSearchProps) {
 
   function navigateTo(item: SearchItem) {
     onOpenChange(false);
-    router.push(item.url);
+    router.push(localizeHref(item.url, locale));
   }
 
   if (!open) return null;

@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { usePathname } from "next/navigation";
 import { ShoppingCart, Heart } from "lucide-react";
 import { useTranslation } from "react-i18next";

@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { useState } from "react";
 import { DisplayHeading } from "@/components/marketing/home/DisplayHeading";
 import { Eyebrow } from "@/components/marketing/home/Eyebrow";

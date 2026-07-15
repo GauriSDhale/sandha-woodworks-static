@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { ChevronDown, Menu, Search, X } from "lucide-react";
@@ -12,6 +12,7 @@ import { HashLink } from "@/components/ui/HashLink";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { SiteSearch, useSiteSearchHotkey } from "@/components/layout/SiteSearch";
 import { getNavLabel, getSectorLabel } from "@/lib/i18n/nav";
+import { stripLocalePrefix } from "@/lib/i18n/routing";
 import enCommon from "@/locales/en/common.json";
 import frCommon from "@/locales/fr/common.json";
 import { cn } from "@/lib/utils";
@@ -51,7 +52,8 @@ export function Header() {
   const [mobileSectorsOpen, setMobileSectorsOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const isHome = pathname === "/";
+  const path = stripLocalePrefix(pathname || "/");
+  const isHome = path === "/";
   /** Transparent header over hero video — only at top of homepage */
   const lightOnDark = isHome && !scrolled;
 
@@ -104,7 +106,7 @@ export function Header() {
         <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <nav className="hidden items-center gap-2 xl:flex" aria-label="Main navigation">
             {navLinks.map((link) => {
-              const active = pathname === link.href || pathname.startsWith(`${link.href}/`);
+              const active = path === link.href || path.startsWith(`${link.href}/`);
               const isSectors = link.href === "/sectors";
 
               if (isSectors && "hasDropdown" in link && link.hasDropdown) {
@@ -201,7 +203,7 @@ export function Header() {
           </div>
           <nav className="flex flex-col gap-1">
             {navLinks.map((link) => {
-              const active = pathname === link.href || pathname.startsWith(`${link.href}/`);
+              const active = path === link.href || path.startsWith(`${link.href}/`);
               const isSectors = link.href === "/sectors";
 
               if (isSectors && "hasDropdown" in link && link.hasDropdown) {

@@ -1,7 +1,9 @@
 "use client";
 
+import { usePathname, useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
-import { changeAppLanguage, type AppLanguage } from "@/lib/i18n/i18n";
+import { type AppLanguage } from "@/lib/i18n/i18n";
+import { localeFromPathname, swapLocalePath } from "@/lib/i18n/routing";
 import { cn } from "@/lib/utils";
 
 interface LanguageSwitcherProps {
@@ -10,8 +12,15 @@ interface LanguageSwitcherProps {
 }
 
 export function LanguageSwitcher({ isHome = false, className }: LanguageSwitcherProps) {
-  const { i18n, t } = useTranslation("common");
-  const lang = (i18n.language?.startsWith("fr") ? "fr" : "en") as AppLanguage;
+  const { t } = useTranslation("common");
+  const pathname = usePathname() || "/";
+  const router = useRouter();
+  const lang = localeFromPathname(pathname);
+
+  function selectLanguage(next: AppLanguage) {
+    if (next === lang) return;
+    router.push(swapLocalePath(pathname, next));
+  }
 
   return (
     <div
@@ -25,7 +34,7 @@ export function LanguageSwitcher({ isHome = false, className }: LanguageSwitcher
     >
       <button
         type="button"
-        onClick={() => changeAppLanguage("en")}
+        onClick={() => selectLanguage("en")}
         aria-pressed={lang === "en"}
         className={cn(
           "inline-flex h-7 min-w-[2.25rem] cursor-pointer items-center justify-center rounded-full px-2.5 transition-colors",
@@ -40,7 +49,7 @@ export function LanguageSwitcher({ isHome = false, className }: LanguageSwitcher
       </button>
       <button
         type="button"
-        onClick={() => changeAppLanguage("fr")}
+        onClick={() => selectLanguage("fr")}
         aria-pressed={lang === "fr"}
         className={cn(
           "inline-flex h-7 min-w-[2.25rem] cursor-pointer items-center justify-center rounded-full px-2.5 transition-colors",

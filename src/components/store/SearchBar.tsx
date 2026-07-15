@@ -3,8 +3,9 @@
 import { useState, useCallback, useEffect, useRef } from "react";
 import { Search, X, Clock, TrendingUp, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
+import { localeFromPathname, localizeHref } from "@/lib/i18n/routing";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import {
   openSearch,
@@ -22,6 +23,8 @@ export function SearchBar() {
   const { t } = useTranslation("store");
   const dispatch = useAppDispatch();
   const router = useRouter();
+  const pathname = usePathname();
+  const locale = localeFromPathname(pathname);
   const isOpen = useAppSelector(selectIsSearchOpen);
   const history = useAppSelector(selectSearchHistory);
   const recentSearches = history.slice(0, 10);
@@ -56,7 +59,9 @@ export function SearchBar() {
     dispatch(addSearchHistory(trimmed));
     dispatch(setSearchQuery(trimmed));
     dispatch(closeSearch());
-    router.push(`/store?search=${encodeURIComponent(trimmed)}`);
+    router.push(
+      localizeHref(`/store?search=${encodeURIComponent(trimmed)}`, locale),
+    );
   };
 
   return (

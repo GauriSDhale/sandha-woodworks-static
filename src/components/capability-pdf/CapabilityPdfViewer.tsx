@@ -2,9 +2,10 @@
 
 import { pdf } from "@react-pdf/renderer/lib/react-pdf.browser";
 import { ArrowLeft, Download, Printer, X } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { localeFromPathname, localizeHref } from "@/lib/i18n/routing";
 import { SubSectorStatementDoc } from "@/components/capability-pdf/SubSectorStatementDoc";
 import {
   getLocalizedStatement,
@@ -20,6 +21,8 @@ interface CapabilityPdfViewerProps {
 
 export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
   const router = useRouter();
+  const pathname = usePathname();
+  const locale = localeFromPathname(pathname);
   const { t, i18n } = useTranslation("capabilityPdf");
   const { t: tDetails } = useTranslation("capabilityPdfDetails");
   const [blobUrl, setBlobUrl] = useState<string | null>(null);
@@ -87,7 +90,7 @@ export function CapabilityPdfViewer({ sub }: CapabilityPdfViewerProps) {
 
   function handleClose() {
     if (window.history.length > 1) router.back();
-    else router.push("/sectors");
+    else router.push(localizeHref("/sectors", locale));
   }
 
   function handleDownload() {

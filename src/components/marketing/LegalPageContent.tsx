@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { useTranslation } from "react-i18next";
 import { PageHero } from "@/components/marketing/PageSections";
 import { footerLegalLinks } from "@/lib/constants/site";

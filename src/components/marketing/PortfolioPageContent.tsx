@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { useMemo, useState, useRef, useEffect } from "react";
 import { Search, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";

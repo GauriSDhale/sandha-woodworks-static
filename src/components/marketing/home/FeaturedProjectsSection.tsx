@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
-import Link from "next/link";
+import Link from "@/components/i18n/Link";
 import { DisplayHeading } from "@/components/marketing/home/DisplayHeading";
 import { Eyebrow } from "@/components/marketing/home/Eyebrow";
 import { projectGalleries, projectMedia } from "@/lib/constants/media";
