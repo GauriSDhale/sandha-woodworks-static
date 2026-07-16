@@ -86,6 +86,25 @@
         "suffix": "",
         "label": "Secteurs desservis",
         "description": "Commercial, institutionnel, santé et plus"
+      },
+      "founded": {
+        "value": 2014,
+        "suffix": "",
+        "label": "Fondée",
+        "description": "Plus d'une décennie d'ébénisterie architecturale"
+      },
+      "projects": {
+        "value": 500,
+        "suffix": "+",
+        "label": "Projets livrés",
+        "description": "Commercial · Institutionnel · Santé"
+      },
+      "awmac": {
+        "value": null,
+        "display": "AWMAC",
+        "suffix": "",
+        "label": "Membre",
+        "description": "Association des fabricants de boiseries architecturales du Canada"
       }
     },
     "reasons": [
