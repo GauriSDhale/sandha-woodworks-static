@@ -13,15 +13,17 @@ import type { LocalizedStatement, PdfUiCopy } from "@/lib/capability-pdf/localiz
 import { pdfContact } from "@/lib/capability-pdf/shared-copy";
 import { siteConfig } from "@/lib/constants/site";
 
+// PDF styles are renderer-local (not Tailwind), so we hardcode the site theme palette here.
+// Goal: match website bluish titles/eyebrows and the same border/rule feel.
 const c = {
-  ink: "#141518",
-  cream: "#f7f5ee",
-  brand: "#C9A96A",
-  brandDark: "#9a7c40",
-  border: "#e6e2d6",
-  muted: "#6f6a5c",
+  ink: "#0b1220", // --warm-black
+  cream: "#f7f8fa", // --cream
+  brand: "#2f6fed", // --brand
+  brandDark: "#1d4ed8", // --brand-dark
+  border: "#e2e6ee", // --border
+  muted: "#5b6577", // --muted-foreground
   card: "#ffffff",
-  softBg: "#f2ede0",
+  softBg: "#eef1f5", // --taupe (light neutral)
 };
 
 const s = StyleSheet.create({
