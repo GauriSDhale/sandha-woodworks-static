@@ -4,12 +4,11 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { LegalDocNav } from "@/components/marketing/LegalPageContent";
+import type { LegalDocument, LegalSection } from "@/lib/constants/legal-documents";
 import {
-  getLegalDocument,
-  legalDisclaimer,
-  type LegalDocument,
-  type LegalSection,
-} from "@/lib/constants/legal-documents";
+  useLegalDisclaimer,
+  useLegalDocument,
+} from "@/lib/hooks/useLegalDocuments";
 import { siteConfig } from "@/lib/constants/site";
 
 function LegalSectionBlock({ section }: { section: LegalSection }) {
@@ -36,6 +35,7 @@ function LegalSectionBlock({ section }: { section: LegalSection }) {
 
 function LegalDocumentArticle({ doc }: { doc: LegalDocument }) {
   const { t } = useTranslation("legal");
+  const disclaimer = useLegalDisclaimer();
 
   return (
     <article className="mx-auto max-w-4xl">
@@ -51,7 +51,7 @@ function LegalDocumentArticle({ doc }: { doc: LegalDocument }) {
         </p>
         <div className="mt-6 flex flex-wrap gap-x-8 gap-y-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-muted-foreground">
           <span>{t("versionLabel", { version: doc.version })}</span>
-          <span>{t("updatedLabel", { date: doc.updated })}</span>
+          <span>{t("updatedLabel", { date: t("updatedDate") })}</span>
           <span>{t("issuedBy")}</span>
         </div>
       </header>
@@ -71,7 +71,7 @@ function LegalDocumentArticle({ doc }: { doc: LegalDocument }) {
           {t("importantNotice")}
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          {legalDisclaimer}
+          {disclaimer}
         </p>
       </aside>
 
@@ -93,13 +93,12 @@ function LegalDocumentArticle({ doc }: { doc: LegalDocument }) {
 
 export function LegalDocumentContent({ slug }: { slug: string }) {
   const { t } = useTranslation("legal");
-  const doc = getLegalDocument(slug);
+  const doc = useLegalDocument(slug);
 
   if (!doc) {
     return (
       <section className="px-4 py-24 text-center sm:px-6 lg:px-8">
-        <p className="text-muted-foreground">{t("backToCentre")}</p>
-        <Link href="/legal" className="mt-4 inline-flex text-brand underline-offset-4 hover:underline">
+        <Link href="/legal" className="inline-flex text-brand underline-offset-4 hover:underline">
           {t("backToCentre")}
         </Link>
       </section>

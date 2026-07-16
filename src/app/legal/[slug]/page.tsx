@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LegalDocumentContent } from "@/components/marketing/LegalDocumentContent";
 import {
-  getLegalDocument,
-  legalDocuments,
+  getLegalDocumentMeta,
+  legalDocumentMeta,
   legalSlugAliases,
   resolveLegalSlug,
 } from "@/lib/constants/legal-documents";
+import enLegal from "@/locales/en/legal.json";
 
 const allSlugs = [
-  ...legalDocuments.map((doc) => doc.slug),
+  ...legalDocumentMeta.map((doc) => doc.slug),
   ...Object.keys(legalSlugAliases),
 ];
 
@@ -23,11 +24,12 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const doc = getLegalDocument(slug);
-  if (!doc) return { title: "Legal Document" };
+  const meta = getLegalDocumentMeta(slug);
+  if (!meta) return { title: "Legal Document" };
+  const copy = enLegal.documents[meta.slug as keyof typeof enLegal.documents];
   return {
-    title: doc.title,
-    description: doc.description,
+    title: copy?.title ?? meta.slug,
+    description: copy?.description ?? enLegal.meta.description,
   };
 }
 
@@ -38,7 +40,7 @@ export default async function LegalDocumentPage({
 }) {
   const { slug } = await params;
   const resolved = resolveLegalSlug(slug);
-  if (!getLegalDocument(resolved)) notFound();
+  if (!getLegalDocumentMeta(resolved)) notFound();
 
   return <LegalDocumentContent slug={resolved} />;
 }

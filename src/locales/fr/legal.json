@@ -27,5 +27,376 @@
     "Website": "Politiques applicables lorsque vous utilisez sandhawoodworks.ca."
   },
   "footerAddress": "Sandha Woodworks Service Ltd. · 121 Roy Blvd, Brantford, Ontario N3R 7K1, Canada",
-  "contactPrompt": "Pour toute question sur ces documents, écrivez à"
+  "contactPrompt": "Pour toute question sur ces documents, écrivez à",
+  "disclaimer": "Les renseignements figurant sur cette page sont publiés par Sandha Woodworks Service Ltd. à titre d’information générale seulement et ne constituent pas un avis juridique. Ces conditions complètent, et ne remplacent pas, tout contrat de projet exécuté, bon de commande, entente-cadre de services ou modification écrite. En cas de conflit, l’entente écrite exécutée entre les parties prévaut. Sandha Woodworks se réserve le droit de modifier ces conditions en tout temps; la version publiée sur sandhawoodworks.ca au moment de l’acceptation de la commande régit la transaction.",
+  "documents": {
+    "general-terms-and-conditions": {
+      "title": "Conditions générales",
+      "shortLabel": "Conditions générales",
+      "description": "Conditions commerciales et juridiques de base applicables à tous les devis, commandes, services et ententes conclus avec Sandha Woodworks Service Ltd.",
+      "introduction": "Les présentes Conditions générales (les « Conditions ») constituent une entente juridiquement contraignante entre Sandha Woodworks Service Ltd. (« Sandha Woodworks », « nous ») et la partie à qui un devis, une proposition, une facture ou un contrat est adressé (le « Client »). En émettant un bon de commande, en signant un contrat ou autrement en acceptant l’exécution de Sandha Woodworks, le Client accepte d’être lié par les présentes Conditions dans la mesure où elles ne sont pas modifiées par une entente écrite signée.",
+      "sections": [
+        {
+          "heading": "1. Formation du contrat",
+          "body": "Un contrat contraignant est formé dès (i) l’acceptation écrite par Sandha Woodworks du bon de commande du Client, ou (ii) la signature d’une entente écrite renvoyant aux présentes Conditions, selon la première éventualité. Toute condition supplémentaire ou incompatible proposée par le Client dans un bon de commande ou un accusé de réception est expressément rejetée, sauf acceptation écrite d’un dirigeant autorisé de Sandha Woodworks."
+        },
+        {
+          "heading": "2. Devis et portée",
+          "bullets": [
+            "Les devis sont valides pendant trente (30) jours à compter de leur date d’émission, sauf indication contraire expresse.",
+            "Les prix sont fondés sur les dessins, devis descriptifs, quantités, calendriers et conditions de chantier disponibles au moment de l’estimation.",
+            "Tout changement de portée, de matériaux, de finitions, de quantités, de séquence, de conditions de chantier ou de calendrier de livraison constitue un avenant et peut entraîner un ajustement de prix et d’échéancier conclu par écrit avant l’exécution."
+          ]
+        },
+        {
+          "heading": "3. Prix, taxes, facturation et paiement",
+          "bullets": [
+            "Les prix sont indiqués en dollars canadiens ou américains, selon le devis, et excluent toutes taxes fédérales, provinciales, étatiques et locales, droits, prélèvements et frais de transport applicables.",
+            "La facturation progressive, la retenue et le holdback suivent le contrat de projet applicable ainsi que la législation sur les privilèges et fiducies de construction, y compris la Loi sur la construction (Ontario), L.R.O. 1990, chap. C.30 (et ses modifications), ou la législation équivalente du lieu du projet.",
+            "Les montants non contestés sont exigibles dans les trente (30) jours de la date de facture. Les montants en souffrance portent intérêt au moindre de 1,5 % par mois (18 % par année) et du taux maximal permis par la loi, plus les frais raisonnables de recouvrement, y compris les honoraires d’avocats sur une base d’indemnité substantielle."
+          ]
+        },
+        {
+          "heading": "4. Titre, risque de perte et sûreté",
+          "body": "Le titre et le risque de perte des biens livrés passent au Client dès la livraison au chantier ou au transporteur public, selon la première éventualité. Nonobstant le transfert de titre, Sandha Woodworks conserve une sûreté en garantie du prix d’achat sur tous les biens fabriqués jusqu’au paiement intégral, et le Client consent à l’enregistrement de déclarations de financement en vertu de la Loi sur les sûretés mobilières (Ontario) ou de la législation équivalente de toute autre juridiction applicable."
+        },
+        {
+          "heading": "5. Livraison, installation et conditions de chantier",
+          "body": "Les dates de livraison et d’installation sont des estimations fondées sur le calendrier de projet courant et sont conditionnelles aux approbations en temps utile, à la préparation du chantier, à la disponibilité des matériaux et à la coordination avec les autres corps de métier. Sandha Woodworks n’est pas responsable des retards causés par le Client, ses consultants, l’entrepreneur général, d’autres corps de métier, ou par un cas de force majeure."
+        },
+        {
+          "heading": "6. Garantie et recours",
+          "body": "Sandha Woodworks garantit que ses travaux seront conformes aux dessins d’atelier approuvés, aux devis descriptifs et aux normes de qualité AWMAC / AWI applicables visées au contrat de projet. La couverture, la durée et les recours de garantie sont ceux du contrat exécuté applicable; à défaut de précision, la garantie se limite à la réparation ou au remplacement des travaux défectueux signalés par écrit dans l’année suivant l’achèvement substantiel. CE QUI PRÉCÈDE CONSTITUE LE SEUL ET UNIQUE RECOURS DU CLIENT. TOUTE AUTRE GARANTIE, EXPRESSE, IMPLICITE OU LÉGALE, Y COMPRIS LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET D’ADÉQUATION À UN USAGE PARTICULIER, EST EXCLUE DANS TOUTE LA MESURE PERMISE PAR LA LOI."
+        },
+        {
+          "heading": "7. Limitation de responsabilité",
+          "body": "Dans toute la mesure permise par la loi applicable, la responsabilité globale de Sandha Woodworks découlant de ou liée à tout contrat, devis, service ou fourniture ne dépasse pas le montant effectivement payé à Sandha Woodworks aux termes du contrat donnant lieu à la réclamation. En aucun cas Sandha Woodworks n’est responsable de dommages indirects, accessoires, spéciaux, consécutifs, punitifs ou exemplaires, y compris la perte de profits, la perte d’usage, la perte d’occasions d’affaires ou les dommages pour retard, qu’ils découlent d’un contrat, d’un délit (y compris la négligence), d’une loi ou autrement."
+        },
+        {
+          "heading": "8. Indemnisation",
+          "body": "Chaque partie indemnise et tient l’autre à couvert des réclamations de tiers pour blessures corporelles ou dommages aux biens corporels dans la mesure causée par les actes ou omissions négligents ou la faute intentionnelle de la partie indemnisante, sous réserve des limitations de responsabilité prévues aux présentes."
+        },
+        {
+          "heading": "9. Assurance",
+          "body": "Sandha Woodworks maintient une assurance responsabilité civile générale, une assurance automobile et, le cas échéant, une couverture d’indemnisation des accidents du travail conformément à la loi applicable. Des certificats d’assurance sont disponibles sur demande écrite dans le cadre d’un projet actif ou prospectif."
+        },
+        {
+          "heading": "10. Confidentialité et propriété intellectuelle",
+          "body": "Tous les dessins d’atelier, données d’ingénierie, prix, méthodologies et renseignements techniques divulgués par Sandha Woodworks sont confidentiels et demeurent la propriété intellectuelle de Sandha Woodworks. Le Client reçoit une licence limitée et non transférable d’utiliser ces documents uniquement pour le projet applicable."
+        },
+        {
+          "heading": "11. Force majeure",
+          "body": "Aucune partie n’est responsable d’un manquement ou d’un retard d’exécution causé par des événements indépendants de sa volonté raisonnable, y compris cas de force majeure, guerre, terrorisme, épidémie, pandémie, conflits de travail, ordres gouvernementaux, perturbation de la chaîne d’approvisionnement, ou défaillance des transports ou des services publics."
+        },
+        {
+          "heading": "12. Droit applicable et règlement des différends",
+          "body": "Sauf entente écrite contraire, les présentes Conditions et tout différend en découlant ou s’y rapportant sont régis par les lois de la province de l’Ontario et les lois fédérales du Canada qui s’y appliquent, et les parties reconnaissent la compétence exclusive des tribunaux de l’Ontario siégeant dans le district judiciaire de Brantford, sous réserve de toute clause d’arbitrage obligatoire du contrat de projet applicable."
+        },
+        {
+          "heading": "13. Divisibilité et intégralité de l’entente",
+          "body": "Si une disposition est jugée invalide ou inexécutoire, les autres dispositions demeurent en vigueur. Les présentes Conditions, conjointement avec le contrat exécuté applicable, constituent l’entente intégrale entre les parties quant à l’objet et remplacent toutes discussions et communications antérieures."
+        }
+      ]
+    },
+    "canada-terms-and-conditions": {
+      "title": "Canada — Conditions supplémentaires",
+      "shortLabel": "Conditions — Canada",
+      "description": "Conditions territoriales canadiennes complétant les Conditions générales pour les projets exécutés au Canada.",
+      "introduction": "Les présentes Conditions supplémentaires du Canada s’appliquent, en plus des Conditions générales, à tous les devis, contrats et services exécutés par Sandha Woodworks Service Ltd. au Canada. En cas de conflit entre les présentes Conditions supplémentaires et les Conditions générales, les présentes Conditions supplémentaires prévalent pour les travaux exécutés au Canada.",
+      "sections": [
+        {
+          "heading": "1. Droit applicable et compétence",
+          "body": "Les contrats pour des travaux exécutés au Canada sont régis par les lois de la province de l’Ontario et les lois fédérales du Canada qui s’y appliquent, sauf si le projet est situé dans une autre province ou un autre territoire canadien, auquel cas les lois de cette province ou de ce territoire s’appliquent. Les parties reconnaissent la compétence des tribunaux de la province ou du territoire où le projet est situé."
+        },
+        {
+          "heading": "2. Législation sur les privilèges et fiducies de construction",
+          "body": "Tous les travaux sont assujettis à la législation applicable sur les privilèges et fiducies de construction, y compris la Loi sur la construction (Ontario), L.R.O. 1990, chap. C.30, la Prompt Payment and Construction Lien Act de l’Alberta, et la législation équivalente de toute autre juridiction canadienne où un projet est situé."
+        },
+        {
+          "heading": "3. Taxes",
+          "body": "Tous les prix excluent la taxe sur les produits et services (TPS), la taxe de vente harmonisée (TVH), la taxe de vente provinciale (TVP) et la taxe de vente du Québec (TVQ), le cas échéant. Le Client est responsable de ces taxes, à l’exception des impôts sur le revenu net de Sandha Woodworks."
+        },
+        {
+          "heading": "4. Indemnisation des accidents du travail",
+          "body": "Sandha Woodworks maintient une couverture en règle auprès de la Commission de la sécurité professionnelle et de l’assurance contre les accidents du travail (WSIB) de l’Ontario et, le cas échéant, auprès de l’autorité correspondante de toute province ou territoire canadien où des travaux sont exécutés. Un certificat de décharge à jour est disponible sur demande écrite."
+        },
+        {
+          "heading": "5. Santé et sécurité au travail",
+          "body": "Tous les travaux sur chantier sont exécutés conformément à la Loi sur la santé et la sécurité au travail (Ontario), L.R.O. 1990, chap. O.1, et à ses règlements, ou à la législation équivalente en matière de santé et de sécurité au travail de la province ou du territoire applicable."
+        },
+        {
+          "heading": "6. Protection du consommateur et anti-pourriel",
+          "body": "Sandha Woodworks exerce ses activités conformément à la Loi sur la protection des renseignements personnels et les documents électroniques (LPRPDE), aux lois provinciales applicables sur la protection de la vie privée du secteur privé, et à la Loi canadienne anti-pourriel (LCAP), L.C. 2010, ch. 23."
+        },
+        {
+          "heading": "7. Devise",
+          "body": "Tous les montants payables aux termes de contrats canadiens sont payables en dollars canadiens (CAD), sauf indication contraire expresse sur le devis ou la facture."
+        },
+        {
+          "heading": "8. Communications bilingues",
+          "body": "Pour les travaux exécutés dans la province de Québec, les documents contractuels peuvent être fournis en français sur demande écrite, conformément à la Charte de la langue française, RLRQ c. C-11."
+        }
+      ]
+    },
+    "usa-terms-and-conditions": {
+      "title": "États-Unis — Conditions supplémentaires",
+      "shortLabel": "Conditions — É.-U.",
+      "description": "Conditions territoriales américaines complétant les Conditions générales pour les projets exécutés aux États-Unis.",
+      "introduction": "Les présentes Conditions supplémentaires des États-Unis s’appliquent, en plus des Conditions générales, à tous les devis, contrats et services exécutés par Sandha Woodworks Service Ltd. aux États-Unis d’Amérique. En cas de conflit entre les présentes Conditions supplémentaires et les Conditions générales, les présentes Conditions supplémentaires prévalent pour les travaux exécutés aux États-Unis.",
+      "sections": [
+        {
+          "heading": "1. Droit applicable et compétence",
+          "body": "Les contrats pour des travaux exécutés aux États-Unis sont régis par le droit substantiel de l’État où se trouve le chantier, sans égard aux règles de conflit de lois. Le Uniform Commercial Code tel qu’adopté dans cet État s’applique à la vente de biens. Les parties reconnaissent la compétence non exclusive des tribunaux fédéraux et étatiques de cet État."
+        },
+        {
+          "heading": "2. Droits de privilège de mécanicien",
+          "body": "Sandha Woodworks se réserve tous les droits de mechanic’s lien, d’avis d’arrêt, de cautionnement de paiement et de paiement rapide disponibles en vertu des lois de l’État où se trouve le projet. Les avis préalables au privilège prescrits par la loi, le cas échéant, seront remis conformément au droit étatique applicable."
+        },
+        {
+          "heading": "3. Taxes",
+          "body": "Tous les prix excluent les taxes de vente, d’utilisation, d’accise et similaires étatiques et locales, qui relèvent de la responsabilité du Client, sauf si un certificat d’exonération valide est fourni avant la facturation."
+        },
+        {
+          "heading": "4. Sécurité occupationnelle",
+          "body": "Tous les travaux sur chantier sont exécutés conformément à l’Occupational Safety and Health Act of 1970 (29 U.S.C. § 651 et seq.) et aux normes OSHA applicables, ainsi qu’à toute loi étatique correspondante en matière de santé et de sécurité au travail."
+        },
+        {
+          "heading": "5. Indemnisation des accidents du travail",
+          "body": "Sandha Woodworks maintient une couverture d’indemnisation des accidents du travail et d’employer’s liability conforme aux exigences de l’État où les travaux sont exécutés, dans la mesure où Sandha Woodworks emploie du personnel sur place dans cet État."
+        },
+        {
+          "heading": "6. Anti-corruption",
+          "body": "Les parties se conforment au U.S. Foreign Corrupt Practices Act et à toute loi anti-corruption applicable. Ni l’une ni l’autre ne doit offrir, promettre ou fournir quoi que ce soit de valeur à un agent public afin d’obtenir ou de conserver indûment un avantage commercial."
+        },
+        {
+          "heading": "7. Protection du consommateur et communications électroniques",
+          "body": "Sandha Woodworks exerce ses activités conformément au CAN-SPAM Act, au Telephone Consumer Protection Act et aux lois étatiques applicables sur la protection de la vie privée et du consommateur, y compris, le cas échéant, le California Consumer Privacy Act."
+        },
+        {
+          "heading": "8. Devise",
+          "body": "Tous les montants payables aux termes de contrats américains sont payables en dollars des États-Unis (USD), sauf indication contraire expresse sur le devis ou la facture."
+        },
+        {
+          "heading": "9. Contrôle des exportations",
+          "body": "Le Client n’exporter pas, ne réexporte pas et ne transfère pas les biens, logiciels ou renseignements techniques fournis par Sandha Woodworks en violation des lois américaines sur le contrôle des exportations ou des sanctions économiques."
+        }
+      ]
+    },
+    "code-of-conduct": {
+      "title": "Code de conduite",
+      "shortLabel": "Code de conduite",
+      "description": "Normes d’éthique, d’intégrité et de comportement professionnel applicables aux employés, dirigeants, entrepreneurs et partenaires commerciaux de Sandha Woodworks.",
+      "introduction": "Le présent Code de conduite énonce les normes d’éthique et de comportement professionnel que Sandha Woodworks Service Ltd. attend de tous les employés, dirigeants, administrateurs, entrepreneurs, agents et partenaires commerciaux (collectivement, les « Personnes visées ») dans l’exercice de leurs fonctions pour ou avec Sandha Woodworks.",
+      "sections": [
+        {
+          "heading": "1. Respect de la loi",
+          "body": "Les Personnes visées se conforment en tout temps aux lois, règlements et normes industrielles applicables des juridictions où Sandha Woodworks exerce ses activités, y compris les lois sur la corruption, la concurrence, le travail, la santé et la sécurité, l’environnement et la protection des données."
+        },
+        {
+          "heading": "2. Anti-corruption et anti-pots-de-vin",
+          "bullets": [
+            "Il est interdit d’offrir, de promettre, d’autoriser ou d’accepter un pot-de-vin, une commission occulte ou tout autre avantage indu.",
+            "Les cadeaux, marques d’hospitalité et divertissements d’affaires doivent être modestes, occasionnels, licites et jamais destinés à influencer indûment une décision commerciale.",
+            "Les relations avec les agents publics exigent une diligence particulière et doivent être conformes aux lois anti-corruption applicables."
+          ]
+        },
+        {
+          "heading": "3. Concurrence loyale",
+          "body": "Sandha Woodworks concurrence sur le mérite. Les Personnes visées ne concluent pas d’ententes anticoncurrentielles, ne manipulent pas les appels d’offres et n’échangent pas d’informations concurrentielles sensibles de manière inappropriée avec des concurrents."
+        },
+        {
+          "heading": "4. Conflits d’intérêts",
+          "body": "Les Personnes visées évitent les conflits d’intérêts réels ou apparents entre leurs intérêts personnels et ceux de Sandha Woodworks, et divulguent rapidement tout conflit potentiel à la direction."
+        },
+        {
+          "heading": "5. Milieu de travail respectueux, droits de la personne et non-discrimination",
+          "body": "Sandha Woodworks maintient un milieu de travail exempt de harcèlement, de discrimination et de violence, et respecte les droits de la personne et les lois du travail applicables, y compris le Code des droits de la personne de l’Ontario."
+        },
+        {
+          "heading": "6. Interdiction du travail forcé et du travail des enfants",
+          "body": "Sandha Woodworks interdit le travail forcé, asservi ou des enfants dans ses activités et sa chaîne d’approvisionnement, et s’attend à ce que ses fournisseurs et partenaires respectent les mêmes normes, conformément à la législation applicable sur l’esclavage moderne et le travail forcé."
+        },
+        {
+          "heading": "7. Santé, sécurité et environnement",
+          "body": "Les Personnes visées se conforment à toutes les exigences applicables en matière de santé, de sécurité et d’environnement et signalent rapidement les dangers, incidents et quasi-accidents."
+        },
+        {
+          "heading": "8. Renseignements confidentiels et protection des données",
+          "body": "Les Personnes visées protègent les renseignements confidentiels de Sandha Woodworks, de ses clients et de ses partenaires, et traitent les renseignements personnels conformément aux politiques de l’entreprise et aux lois applicables sur la protection de la vie privée."
+        },
+        {
+          "heading": "9. Livres et registres exacts",
+          "body": "Toutes les opérations financières sont consignées avec exactitude et intégralité. Les fausses écritures, les caisses occultes et les documents trompeurs sont strictement interdits."
+        },
+        {
+          "heading": "10. Signalement des préoccupations et non-représailles",
+          "body": "Les violations soupçonnées de la loi ou du présent Code doivent être signalées à un superviseur, aux ressources humaines ou à info@sandhawoodworks.ca. Sandha Woodworks interdit les représailles contre quiconque signale de bonne foi une préoccupation."
+        }
+      ]
+    },
+    "privacy-policy": {
+      "title": "Politique de confidentialité",
+      "shortLabel": "Politique de confidentialité",
+      "description": "Comment Sandha Woodworks recueille, utilise, divulgue et protège les renseignements personnels dans le cadre de ses activités et de son site Web.",
+      "introduction": "La présente Politique de confidentialité décrit la façon dont Sandha Woodworks Service Ltd. (« Sandha Woodworks », « nous ») recueille, utilise, divulgue et protège les renseignements personnels dans le cadre de ses activités commerciales et de sandhawoodworks.ca. En interagissant avec nous ou en utilisant notre site Web, vous acceptez les pratiques décrites dans la présente Politique.",
+      "sections": [
+        {
+          "heading": "1. Portée",
+          "body": "La présente Politique s’applique aux renseignements personnels recueillis auprès des clients, prospects, visiteurs du site, candidats à l’emploi, fournisseurs et autres personnes dans le cadre de nos activités au Canada et, le cas échéant, aux États-Unis."
+        },
+        {
+          "heading": "2. Renseignements personnels que nous recueillons",
+          "bullets": [
+            "Coordonnées (nom, entreprise, titre, adresse courriel, numéro de téléphone, adresse postale).",
+            "Renseignements sur le projet et le devis fournis dans les formulaires de demande ou la correspondance.",
+            "Renseignements de candidature (CV, lettres d’accompagnement, portfolios et données connexes).",
+            "Données techniques et d’utilisation du site (adresse IP, type de navigateur, pages consultées et données analytiques agrégées)."
+          ]
+        },
+        {
+          "heading": "3. Fins de collecte et d’utilisation",
+          "bullets": [
+            "Répondre aux demandes, préparer des devis et gérer les relations clients et projets.",
+            "Traiter les candidatures et gérer les ressources humaines.",
+            "Exploiter, sécuriser et améliorer notre site Web et nos communications.",
+            "Respecter les obligations légales, réglementaires et contractuelles."
+          ]
+        },
+        {
+          "heading": "4. Fondement juridique et consentement",
+          "body": "Nous recueillons et utilisons les renseignements personnels avec consentement, lorsque cela est requis, ou selon d’autres fondements juridiques permis par la loi applicable, y compris la nécessité contractuelle et les intérêts légitimes d’affaires compatibles avec vos droits à la vie privée."
+        },
+        {
+          "heading": "5. Divulgation des renseignements personnels",
+          "body": "Nous ne vendons pas les renseignements personnels. Nous pouvons les communiquer à des fournisseurs de services qui nous appuient (hébergement, analytique, courriel, RH), à des conseillers professionnels, et lorsque la loi l’exige ou pour protéger nos droits, le tout sous des obligations de confidentialité appropriées dans la mesure du possible."
+        },
+        {
+          "heading": "6. Transferts internationaux",
+          "body": "Les renseignements personnels peuvent être traités ou stockés à l’extérieur de votre province ou pays de résidence, y compris aux États-Unis, où les lois sur la protection des données peuvent différer. Nous prenons des mesures raisonnables pour protéger les renseignements personnels lors de tels transferts."
+        },
+        {
+          "heading": "7. Mesures de protection",
+          "body": "Nous maintenons des mesures administratives, techniques et physiques raisonnables pour protéger les renseignements personnels contre l’accès, l’utilisation, la divulgation, la modification ou la destruction non autorisés, adaptées à la sensibilité des renseignements."
+        },
+        {
+          "heading": "8. Conservation",
+          "body": "Nous ne conservons les renseignements personnels que le temps raisonnablement nécessaire pour atteindre les fins pour lesquelles ils ont été recueillis et pour respecter nos obligations légales, réglementaires, fiscales et contractuelles."
+        },
+        {
+          "heading": "9. Vos droits",
+          "body": "Sous réserve de la loi applicable, vous avez le droit d’accéder à vos renseignements personnels, de les corriger, de les mettre à jour ou d’en demander la suppression, et de retirer votre consentement à un traitement ultérieur. Les résidents de certaines juridictions (y compris en vertu de la LPRPDE, du CCPA et des lois étatiques applicables sur la vie privée) peuvent avoir des droits supplémentaires."
+        },
+        {
+          "heading": "10. Témoins et analytique",
+          "body": "Notre site Web utilise des témoins et des technologies similaires pour assurer des fonctionnalités essentielles et recueillir des données analytiques agrégées. Vous pouvez configurer votre navigateur pour refuser les témoins; certaines fonctions du site peuvent alors ne pas fonctionner correctement."
+        },
+        {
+          "heading": "11. Enfants",
+          "body": "Notre site Web ne s’adresse pas aux enfants de moins de 13 ans et nous ne recueillons pas sciemment de renseignements personnels auprès d’enfants."
+        },
+        {
+          "heading": "12. Modifications de la présente Politique",
+          "body": "Nous pouvons mettre à jour la présente Politique de confidentialité de temps à autre. La version courante, ainsi que sa date d’entrée en vigueur, sera publiée sur cette page."
+        },
+        {
+          "heading": "13. Contact",
+          "body": "Les demandes, requêtes et plaintes relatives à la confidentialité peuvent être adressées au responsable de la confidentialité chez Sandha Woodworks Service Ltd., 121 Roy Blvd., Brantford, Ontario N3R 7K1, Canada, ou par courriel à info@sandhawoodworks.ca."
+        }
+      ]
+    },
+    "accessibility-statement": {
+      "title": "Déclaration d’accessibilité",
+      "shortLabel": "Accessibilité",
+      "description": "Engagement de Sandha Woodworks envers un service, un emploi et des expériences numériques accessibles, conformément à la LAPHO et à la législation comparable.",
+      "introduction": "Sandha Woodworks Service Ltd. s’engage à offrir des biens, services, possibilités d’emploi et expériences numériques accessibles aux personnes handicapées, conformément à la Loi de 2005 sur l’accessibilité pour les personnes handicapées de l’Ontario, L.O. 2005, chap. 11 (LAPHO), aux normes d’accessibilité intégrées et à la législation comparable applicable.",
+      "sections": [
+        {
+          "heading": "1. Notre engagement",
+          "body": "Sandha Woodworks s’engage à traiter toutes les personnes dans le respect de leur dignité et de leur autonomie, et à prévenir les obstacles à l’accessibilité dans les biens et services que nous offrons, nos pratiques d’emploi et nos propriétés numériques."
+        },
+        {
+          "heading": "2. Service à la clientèle",
+          "body": "Nous nous engageons à offrir un service à la clientèle accessible aux personnes de toutes capacités, y compris l’accommodement raisonnable des appareils et accessoires fonctionnels, des animaux d’assistance et des personnes de soutien, conformément à la loi applicable."
+        },
+        {
+          "heading": "3. Emploi",
+          "body": "Sandha Woodworks offre des mesures d’adaptation individualisées en milieu de travail aux employés handicapés tout au long du cycle de recrutement, d’embauche et d’emploi, conformément au Code des droits de la personne de l’Ontario et aux normes d’emploi de la LAPHO."
+        },
+        {
+          "heading": "4. Accessibilité numérique",
+          "body": "Nous visons la conformité aux Règles pour l’accessibilité des contenus Web (WCAG) 2.1 niveau AA pour sandhawoodworks.ca. Si vous rencontrez un obstacle d’accessibilité sur notre site, communiquez avec nous afin que nous puissions vous fournir l’information dont vous avez besoin dans un format accessible."
+        },
+        {
+          "heading": "5. Rétroaction et demandes d’adaptation",
+          "body": "La rétroaction sur l’accessibilité de nos services et les demandes d’information dans un autre format peuvent être adressées à info@sandhawoodworks.ca ou au 121 Roy Blvd., Brantford, Ontario N3R 7K1, Canada. Nous répondrons dans les délais exigés par la loi applicable."
+        },
+        {
+          "heading": "6. Plan d’accessibilité",
+          "body": "Sandha Woodworks maintient un plan d’accessibilité et un programme de formation conformes à la LAPHO et les revoit périodiquement afin de refléter les normes et pratiques exemplaires actuelles."
+        }
+      ]
+    },
+    "website-terms-of-use": {
+      "title": "Conditions d’utilisation du site Web",
+      "shortLabel": "Conditions d’utilisation du site",
+      "description": "Conditions juridiquement contraignantes régissant l’accès à sandhawoodworks.ca et son utilisation, y compris la propriété intellectuelle, l’utilisation acceptable et les exclusions de responsabilité.",
+      "introduction": "Les présentes Conditions d’utilisation du site Web (les « Conditions ») forment une entente juridiquement contraignante entre vous et Sandha Woodworks Service Ltd. (« Sandha Woodworks », « nous ») et régissent votre accès à sandhawoodworks.ca et à tout sous-domaine connexe (le « Site ») ainsi que son utilisation. En accédant au Site ou en l’utilisant, vous acceptez d’être lié par les présentes Conditions.",
+      "sections": [
+        {
+          "heading": "1. Utilisation permise",
+          "body": "Le Site est fourni à des fins d’information concernant Sandha Woodworks, nos capacités, projets, carrières et communications d’affaires. Vous pouvez accéder au Site et l’utiliser uniquement à des fins licites, personnelles ou internes à votre entreprise."
+        },
+        {
+          "heading": "2. Propriété intellectuelle",
+          "body": "Le Site et tout son contenu, y compris textes, photographies, dessins, graphiques, logos, marques de commerce, vidéos, code et mise en page, appartiennent à Sandha Woodworks ou à ses concédants et sont protégés par les lois canadiennes, américaines et internationales sur le droit d’auteur, les marques de commerce et autres droits de propriété intellectuelle. Aucune licence n’est accordée, sauf le droit limité de consulter le Site pour l’usage permis."
+        },
+        {
+          "heading": "3. Marques de commerce",
+          "body": "« Sandha Woodworks », le logotype Sandha et les marques connexes sont des marques de commerce de Sandha Woodworks Service Ltd. Toutes les autres marques mentionnées appartiennent à leurs propriétaires respectifs."
+        },
+        {
+          "heading": "4. Utilisation acceptable",
+          "bullets": [
+            "N’utilisez pas le Site à des fins illicites, frauduleuses ou contrefaisantes.",
+            "N’essayez pas d’obtenir un accès non autorisé à toute partie du Site, de ses serveurs ou de tout système ou réseau connecté.",
+            "N’interférez pas avec le fonctionnement, la sécurité ou la disponibilité du Site, ne le perturbez pas, ne le désactivez pas, ne le surchargez pas et ne l’affaiblissez pas.",
+            "N’utilisez aucun moyen automatisé (y compris scrapers, robots ou crawlers) pour accéder au contenu du Site ou le recueillir, sauf dans la mesure permise par notre fichier robots.txt."
+          ]
+        },
+        {
+          "heading": "5. Soumissions",
+          "body": "Toute information que vous soumettez par le Site (à l’exclusion des renseignements personnels régis par notre Politique de confidentialité) est réputée non confidentielle et non exclusive. Vous accordez à Sandha Woodworks une licence non exclusive, mondiale et libre de redevances pour utiliser ces soumissions à des fins commerciales licites."
+        },
+        {
+          "heading": "6. Liens vers des tiers",
+          "body": "Le Site peut contenir des liens vers des sites Web de tiers. Sandha Woodworks n’est pas responsable du contenu, de l’exactitude, de la sécurité ou des pratiques de confidentialité de tout site tiers et ne les cautionne pas du seul fait d’un lien."
+        },
+        {
+          "heading": "7. Avertissement",
+          "body": "LE SITE ET SON CONTENU SONT FOURNIS « TELS QUELS » ET « SELON LA DISPONIBILITÉ », SANS GARANTIE D’AUCUNE SORTE, EXPRESSE, IMPLICITE OU LÉGALE, Y COMPRIS LES GARANTIES DE QUALITÉ MARCHANDE, D’ADÉQUATION À UN USAGE PARTICULIER, D’ABSENCE DE CONTREFAÇON, D’EXACTITUDE OU DE DISPONIBILITÉ. Sandha Woodworks ne garantit pas que le Site sera ininterrompu, exempt d’erreurs, sécurisé ou exempt de virus ou d’autres composants nuisibles."
+        },
+        {
+          "heading": "8. Limitation de responsabilité",
+          "body": "DANS TOUTE LA MESURE PERMISE PAR LA LOI APPLICABLE, SANDHA WOODWORKS N’EST PAS RESPONSABLE DE TOUT DOMMAGE DIRECT, INDIRECT, ACCESSOIRE, SPÉCIAL, CONSÉCUTIF, PUNITIF OU EXEMPLAIRE DÉCOULANT DE OU LIÉ À VOTRE UTILISATION DU SITE OU À L’IMPOSSIBILITÉ DE L’UTILISER, QUE CE SOIT EN VERTU D’UN CONTRAT, D’UN DÉLIT, D’UNE LOI OU AUTREMENT, MÊME SI ELLE A ÉTÉ AVISÉE DE LA POSSIBILITÉ DE TELS DOMMAGES."
+        },
+        {
+          "heading": "9. Indemnisation",
+          "body": "Vous acceptez d’indemniser et de tenir à couvert Sandha Woodworks, ses administrateurs, dirigeants, employés et mandataires de toute réclamation, responsabilité, dommage, perte ou dépense (y compris les honoraires d’avocats raisonnables) découlant de votre violation des présentes Conditions ou de votre mauvaise utilisation du Site."
+        },
+        {
+          "heading": "10. Droit applicable et compétence",
+          "body": "Les présentes Conditions sont régies par les lois de la province de l’Ontario et les lois fédérales du Canada qui s’y appliquent, sans égard aux règles de conflit de lois. Vous reconnaissez la compétence exclusive des tribunaux de l’Ontario siégeant dans le district judiciaire de Brantford pour tout différend découlant de ou lié à votre utilisation du Site."
+        },
+        {
+          "heading": "11. Modifications",
+          "body": "Sandha Woodworks peut mettre à jour les présentes Conditions de temps à autre en publiant une version révisée sur cette page. Votre utilisation continue du Site après la publication constitue l’acceptation des Conditions révisées."
+        },
+        {
+          "heading": "12. Contact",
+          "body": "Les questions concernant les présentes Conditions peuvent être envoyées à info@sandhawoodworks.ca ou à Sandha Woodworks Service Ltd., 121 Roy Blvd., Brantford, Ontario N3R 7K1, Canada."
+        }
+      ]
+    }
+  },
+  "updatedDate": "janvier 2026"
 }

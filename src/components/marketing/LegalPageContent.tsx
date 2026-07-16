@@ -14,12 +14,13 @@ import {
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import {
-  legalDocuments,
   type LegalDocument,
+  type LegalDocIcon,
 } from "@/lib/constants/legal-documents";
+import { useLegalDocuments } from "@/lib/hooks/useLegalDocuments";
 import { cn } from "@/lib/utils";
 
-const iconMap: Record<LegalDocument["icon"], LucideIcon> = {
+const iconMap: Record<LegalDocIcon, LucideIcon> = {
   FileText,
   Leaf,
   Flag,
@@ -31,12 +32,9 @@ const iconMap: Record<LegalDocument["icon"], LucideIcon> = {
 
 const categoryOrder: LegalDocument["category"][] = ["Terms", "Ethics", "Website"];
 
-function docsByCategory(category: LegalDocument["category"]) {
-  return legalDocuments.filter((doc) => doc.category === category);
-}
-
 export function LegalPageContent() {
   const { t } = useTranslation("legal");
+  const documents = useLegalDocuments();
 
   return (
     <>
@@ -71,7 +69,7 @@ export function LegalPageContent() {
 
           <div className="mt-10 space-y-14">
             {categoryOrder.map((category) => {
-              const docs = docsByCategory(category);
+              const docs = documents.filter((doc) => doc.category === category);
               if (!docs.length) return null;
 
               return (
@@ -137,13 +135,14 @@ export function LegalDocNav({
   className?: string;
 }) {
   const { t } = useTranslation("legal");
+  const documents = useLegalDocuments();
 
   return (
     <nav
       aria-label={t("navAria")}
       className={cn("flex flex-wrap gap-2", className)}
     >
-      {legalDocuments.map((doc) => {
+      {documents.map((doc) => {
         const active = doc.slug === activeSlug;
         return (
           <Link
