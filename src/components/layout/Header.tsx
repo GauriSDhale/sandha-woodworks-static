@@ -92,16 +92,17 @@ export function Header() {
           : "border-b border-border/40 bg-white text-foreground shadow-sm",
       )}
     >
-      <div className="flex h-[4.5rem] w-full items-center justify-between gap-4 px-4 sm:h-20 sm:px-5 lg:px-6">
-        <Link href="/" className="group shrink-0" aria-label={`${siteConfig.name} — home`}>
-          <img
-            src={brandMedia.logo}
-            alt={siteConfig.name}
-            className="h-12 w-auto sm:h-14"
-          />
-        </Link>
+      <div className="w-full px-4 sm:px-6 lg:px-8">
+        <div className="flex h-[4.5rem] items-center justify-between gap-4 sm:h-20">
+          <Link href="/" className="group shrink-0" aria-label={`${siteConfig.name} — home`}>
+            <img
+              src={brandMedia.logo}
+              alt={siteConfig.name}
+              className="h-12 w-auto sm:h-14"
+            />
+          </Link>
 
-        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
+          <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <nav className="hidden items-center gap-2 xl:flex" aria-label="Main navigation">
             {navLinks.map((link) => {
               const active = pathname === link.href || pathname.startsWith(`${link.href}/`);
@@ -165,24 +166,25 @@ export function Header() {
             </Link>
           </div>
 
-          <div className="flex items-center gap-1 xl:hidden">
-            <button
-              type="button"
-              onClick={openSearch}
-              className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full text-current"
-              aria-label="Search the site"
-            >
-              <Search className="h-5 w-5" />
-            </button>
-            <button
-              type="button"
-              className="inline-flex size-10 items-center justify-center rounded-full text-current"
-              onClick={() => setMobileOpen((open) => !open)}
-              aria-expanded={mobileOpen}
-              aria-label={mobileOpen ? "Close menu" : "Open menu"}
-            >
-              {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
+            <div className="flex items-center gap-1 xl:hidden">
+              <button
+                type="button"
+                onClick={openSearch}
+                className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full text-current"
+                aria-label="Search the site"
+              >
+                <Search className="h-5 w-5" />
+              </button>
+              <button
+                type="button"
+                className="inline-flex size-10 items-center justify-center rounded-full text-current"
+                onClick={() => setMobileOpen((open) => !open)}
+                aria-expanded={mobileOpen}
+                aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              >
+                {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              </button>
+            </div>
           </div>
         </div>
       </div>
