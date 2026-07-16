@@ -92,12 +92,12 @@ export function Header() {
           : "border-b border-border/40 bg-white text-foreground shadow-sm",
       )}
     >
-      <div className="flex h-16 w-full items-center justify-between gap-4 px-4 sm:h-[4.5rem] sm:px-5 lg:px-6">
+      <div className="flex h-[4.5rem] w-full items-center justify-between gap-4 px-4 sm:h-20 sm:px-5 lg:px-6">
         <Link href="/" className="group shrink-0" aria-label={`${siteConfig.name} — home`}>
           <img
             src={brandMedia.logo}
             alt={siteConfig.name}
-            className="h-10 w-auto sm:h-11"
+            className="h-12 w-auto sm:h-14"
           />
         </Link>
 

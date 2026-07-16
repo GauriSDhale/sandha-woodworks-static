@@ -49,7 +49,7 @@ export function Footer() {
               <img
                 src={brandMedia.logo}
                 alt={siteConfig.name}
-                className="h-14 w-auto brightness-0 invert"
+                className="h-16 w-auto sm:h-20 brightness-0 invert"
               />
             </Link>
             <p className="max-w-md text-sm leading-relaxed text-cream/70">

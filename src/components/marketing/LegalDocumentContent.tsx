@@ -121,7 +121,7 @@ export function LegalDocumentContent({ slug }: { slug: string }) {
 
       <section
         id="legal-document-nav"
-        className="sticky top-16 z-20 border-b border-border bg-background/90 backdrop-blur sm:top-[4.5rem]"
+        className="sticky top-[4.5rem] z-20 border-b border-border bg-background/90 backdrop-blur sm:top-20"
       >
         <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
           <LegalDocNav activeSlug={doc.slug} />

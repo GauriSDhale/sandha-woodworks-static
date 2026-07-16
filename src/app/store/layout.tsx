@@ -19,8 +19,8 @@ export default function StoreLayout({
 }) {
   return (
     <StoreProvider>
-      {/* Offset fixed site header (h-16 / sm:h-[4.5rem]) so StoreNav is not cropped */}
-      <div className="overflow-x-hidden pt-16 sm:pt-[4.5rem]">
+      {/* Offset fixed site header (h-[4.5rem] / sm:h-20) so StoreNav is not cropped */}
+      <div className="overflow-x-hidden pt-[4.5rem] sm:pt-20">
         <StoreNav />
         <div className="mx-auto w-full max-w-7xl px-[10px] py-8">
           {children}
