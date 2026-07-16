@@ -214,7 +214,7 @@ export function AboutUsContent() {
                   <img
                     src={teamMedia[member.avatarKey]}
                     alt={member.name}
-                    className="h-full w-full object-cover object-top -mt-[100px]"
+                    className="h-full w-full object-cover"
                   />
                 </div>
                 <div className="p-6">

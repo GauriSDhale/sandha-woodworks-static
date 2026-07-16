@@ -30,7 +30,7 @@ function ServiceCard({
         <img
           src={service.image}
           alt={t(`items.${service.slug}.name`)}
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+          className={`h-full w-full object-cover transition duration-500 group-hover:scale-105 ${service.imagePosition ?? ""}`}
           loading="lazy"
         />
       </div>

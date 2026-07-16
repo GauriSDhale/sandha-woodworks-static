@@ -115,7 +115,7 @@ export const projectGalleries: Record<string, { cover: string; gallery: string[]
     ],
   },
   "tobin-high-school": {
-    cover: "/assets/portfolio/tobin-high-school/tobin-9_2.jpg",
+    cover: "/assets/portfolio/tobin-high-school/tobin-1_2.jpg",
     gallery: [
       "/assets/portfolio/tobin-high-school/tobin-1_2.jpg",
       "/assets/portfolio/tobin-high-school/tobin-2.jpg",
@@ -141,7 +141,7 @@ export const projectGalleries: Record<string, { cover: string; gallery: string[]
     ],
   },
   "mercato-mississauga": {
-    cover: "/assets/portfolio/mercato-mississauga/mercato-2.jpg",
+    cover: "/assets/portfolio/mercato-mississauga/mercato-3.jpg",
     gallery: [
       "/assets/portfolio/mercato-mississauga/mercato-2.jpg",
       "/assets/portfolio/mercato-mississauga/mercato-3.jpg",
@@ -155,7 +155,7 @@ export const projectGalleries: Record<string, { cover: string; gallery: string[]
     ],
   },
   "lake-country-coop": {
-    cover: "/assets/portfolio/lake-country-coop/lake-1.jpg",
+    cover: "/assets/portfolio/lake-country-coop/lake-2.jpg",
     gallery: [
       "/assets/portfolio/lake-country-coop/lake-1.jpg",
       "/assets/portfolio/lake-country-coop/lake-2.jpg",
@@ -171,7 +171,7 @@ export const projectGalleries: Record<string, { cover: string; gallery: string[]
     ],
   },
   "valley-park-library": {
-    cover: "/assets/portfolio/valley-park-library/valley-1.jpg",
+    cover: "/assets/portfolio/valley-park-library/valley-2.jpg",
     gallery: [
       "/assets/portfolio/valley-park-library/valley-1.jpg",
       "/assets/portfolio/valley-park-library/valley-2.jpg",
