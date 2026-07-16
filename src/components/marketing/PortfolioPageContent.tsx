@@ -126,8 +126,7 @@ export function PortfolioPageContent() {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-warm-black px-6 py-12 text-cream md:py-16">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(201,162,39,0.12),transparent_50%)]" />
+      <section className="bg-ink-atmosphere relative overflow-hidden px-6 py-12 text-cream md:py-16">
         <div
           className={`relative z-10 mx-auto max-w-7xl transition-all duration-700 ${
             heroInView ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
@@ -188,9 +187,7 @@ export function PortfolioPageContent() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden px-6 py-12">
-        <div className="absolute inset-0 bg-gradient-to-br from-walnut via-warm-black to-warm-black" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(201,162,39,0.2),transparent_50%)]" />
+      <section className="bg-ink-atmosphere relative overflow-hidden px-6 py-12">
         <div className="relative mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-brand">

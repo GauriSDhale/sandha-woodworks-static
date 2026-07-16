@@ -1,88 +1,35 @@
 "use client";
 
-import { Eyebrow } from "@/components/marketing/home/Eyebrow";
 import { useTranslation } from "react-i18next";
 import { useInView } from "@/lib/hooks/useInView";
 import { useReducedMotion } from "@/lib/hooks/useReducedMotion";
 import { cn } from "@/lib/utils";
 
-function CredibilityPill({
-  label,
-  ariaHidden,
-}: {
-  label: string;
-  ariaHidden?: boolean;
-}) {
-  return (
-    <span
-      aria-hidden={ariaHidden}
-      className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full border border-border/80 bg-white/70 px-4 py-2.5 text-xs font-medium uppercase tracking-[0.18em] text-foreground/75 backdrop-blur-sm transition-colors duration-300 hover:border-brand/30 hover:bg-white hover:text-foreground"
-    >
-      <span className="h-1 w-1 shrink-0 rounded-full bg-brand" aria-hidden="true" />
-      {label}
-    </span>
-  );
-}
-
-function MarqueeRow({
-  items,
-  reverse = false,
-}: {
-  items: readonly string[];
-  reverse?: boolean;
-}) {
-  const track = [...items, ...items];
-
-  return (
-    <div className="group/marquee relative overflow-hidden">
-      <div
-        className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-cream to-transparent sm:w-28"
-        aria-hidden="true"
-      />
-      <div
-        className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-cream to-transparent sm:w-28"
-        aria-hidden="true"
-      />
-      <div
-        className={cn(
-          "flex w-max items-center gap-3 px-3",
-          reverse ? "animate-marquee-x-reverse" : "animate-marquee-x",
-        )}
-      >
-        {track.map((item, index) => (
-          <CredibilityPill
-            key={`${item}-${index}`}
-            label={item}
-            ariaHidden={index >= items.length}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-export function CredibilityStrip() {
+/**
+ * Capabilities & trust band — warm wood/gold styling scoped to this block only.
+ * Site-wide titles/eyebrows keep the bluish brand accent.
+ */
+export function CredibilityStrip({ className }: { className?: string }) {
   const { t } = useTranslation("home");
   const reducedMotion = useReducedMotion();
-  const [sectionRef, inView] = useInView<HTMLElement>({ threshold: 0.2 });
+  const [sectionRef, inView] = useInView<HTMLElement>({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
 
   const credibility = t("credibility", { returnObjects: true }) as {
     eyebrow: string;
     tagline: string;
     items: string[];
   };
-  const items = credibility.items;
-  const splitAt = Math.ceil(items.length / 2);
-  const rowOne = items.slice(0, splitAt);
-  const rowTwo = items.slice(splitAt);
 
   return (
-    <section
+    <aside
       ref={sectionRef}
-      className="border-y border-border/60 bg-cream py-5 sm:py-6"
+      className={cn("credibility-band relative overflow-hidden text-cream", className)}
       aria-labelledby="credibility-heading"
     >
-      <div className="container-full">
+      <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div
           className={cn(
             "mx-auto max-w-3xl text-center",
@@ -90,35 +37,47 @@ export function CredibilityStrip() {
             inView || reducedMotion ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
           )}
         >
-          <Eyebrow id="credibility-heading" variant="brand">
+          <p className="credibility-band-accent text-[10px] font-semibold uppercase tracking-[0.4em] sm:text-xs">
             {credibility.eyebrow}
-          </Eyebrow>
-          <p className="font-display mt-5 text-xl font-semibold text-warm-black sm:text-2xl">
-            {credibility.tagline}
           </p>
+          <h3
+            id="credibility-heading"
+            className="font-display mt-4 text-2xl font-semibold tracking-tight text-cream sm:text-3xl md:text-4xl"
+          >
+            {credibility.tagline}
+          </h3>
+          <div className="credibility-band-rule mx-auto mt-5 h-[3px] w-12" aria-hidden="true" />
         </div>
 
-        {reducedMotion ? (
-          <ul className="mx-auto mt-8 flex max-w-5xl flex-wrap items-center justify-center gap-3 sm:mt-10">
-            {items.map((item) => (
-              <li key={item}>
-                <CredibilityPill label={item} />
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <div
-            className={cn(
-              "mt-8 space-y-3 sm:mt-10 sm:space-y-4",
-              !reducedMotion && "transition-all duration-700 delay-150",
-              inView ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
-            )}
-          >
-            <MarqueeRow items={rowOne} />
-            <MarqueeRow items={rowTwo} reverse />
-          </div>
-        )}
+        <ul
+          className={cn(
+            "mx-auto mt-10 flex max-w-5xl flex-wrap items-center justify-center gap-x-3 gap-y-3 sm:mt-12 sm:gap-x-4 sm:gap-y-3.5",
+            !reducedMotion && "transition-all duration-700 delay-150",
+            inView || reducedMotion ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0",
+          )}
+        >
+          {credibility.items.map((item, index) => (
+            <li
+              key={item}
+              className={cn(
+                "credibility-band-pill inline-flex items-center gap-2.5 rounded-full border border-cream/15 bg-cream/[0.06] px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-cream/85 backdrop-blur-sm transition-colors duration-300 hover:bg-cream/[0.1] hover:text-cream sm:px-5 sm:text-xs",
+                !reducedMotion && "transition-[opacity,transform] duration-500",
+                inView || reducedMotion
+                  ? "translate-y-0 opacity-100"
+                  : "translate-y-3 opacity-0",
+              )}
+              style={
+                reducedMotion
+                  ? undefined
+                  : { transitionDelay: inView ? `${120 + index * 40}ms` : "0ms" }
+              }
+            >
+              <span className="credibility-band-dot h-1.5 w-1.5 shrink-0 rounded-full" aria-hidden="true" />
+              {item}
+            </li>
+          ))}
+        </ul>
       </div>
-    </section>
+    </aside>
   );
 }

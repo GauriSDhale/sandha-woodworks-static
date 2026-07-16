@@ -41,8 +41,8 @@ export function Footer() {
   const { t } = useTranslation("common");
 
   return (
-    <footer className="bg-[#111111] text-cream">
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+    <footer className="bg-ink-atmosphere relative overflow-hidden text-cream">
+      <div className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
           <div className="space-y-6 lg:col-span-2">
             <Link href="/" className="inline-block" aria-label={`${siteConfig.name} — home`}>

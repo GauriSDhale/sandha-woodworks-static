@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { CountUpStat } from "@/components/marketing/home/CountUpStat";
+import { CredibilityStrip } from "@/components/marketing/home/CredibilityStrip";
 import { getRecentProjectSlides } from "@/lib/projects/recent";
 import { useInView } from "@/lib/hooks/useInView";
 import { useReducedMotion } from "@/lib/hooks/useReducedMotion";
@@ -125,6 +126,8 @@ export function WhyChooseUsSection() {
           </ul>
         </div>
       </div>
+
+      <CredibilityStrip className="mt-10 sm:mt-12" />
 
       <div className="flex justify-center px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
         <Link
