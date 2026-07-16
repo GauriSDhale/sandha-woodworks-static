@@ -28,13 +28,13 @@ const exploreLinkKeys: Record<string, string> = {
 
 const legalLinkLabels: Record<string, string> = {
   "/legal": "legalCentre",
-  "/legal/general-terms": "generalTerms",
-  "/legal/canada-terms": "canadaTerms",
-  "/legal/usa-terms": "usaTerms",
+  "/legal/general-terms-and-conditions": "generalTerms",
+  "/legal/canada-terms-and-conditions": "canadaTerms",
+  "/legal/usa-terms-and-conditions": "usaTerms",
   "/legal/code-of-conduct": "codeOfConduct",
-  "/legal/privacy": "privacy",
-  "/legal/accessibility": "accessibility",
-  "/legal/website-terms": "websiteTerms",
+  "/legal/privacy-policy": "privacy",
+  "/legal/accessibility-statement": "accessibility",
+  "/legal/website-terms-of-use": "websiteTerms",
 };
 
 export function Footer() {

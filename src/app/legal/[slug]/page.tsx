@@ -1,15 +1,20 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { footerLegalLinks } from "@/lib/constants/site";
-import enLegal from "@/locales/en/legal.json";
 import { LegalDocumentContent } from "@/components/marketing/LegalDocumentContent";
+import {
+  getLegalDocument,
+  legalDocuments,
+  legalSlugAliases,
+  resolveLegalSlug,
+} from "@/lib/constants/legal-documents";
 
-const legalSlugs = footerLegalLinks
-  .filter((link) => link.href !== "/legal")
-  .map((link) => link.href.replace("/legal/", ""));
+const allSlugs = [
+  ...legalDocuments.map((doc) => doc.slug),
+  ...Object.keys(legalSlugAliases),
+];
 
 export function generateStaticParams() {
-  return legalSlugs.map((slug) => ({ slug }));
+  return allSlugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
@@ -18,11 +23,11 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const doc = enLegal.docs[slug as keyof typeof enLegal.docs];
+  const doc = getLegalDocument(slug);
   if (!doc) return { title: "Legal Document" };
   return {
     title: doc.title,
-    description: enLegal.meta.description,
+    description: doc.description,
   };
 }
 
@@ -32,6 +37,8 @@ export default async function LegalDocumentPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  if (!legalSlugs.includes(slug)) notFound();
-  return <LegalDocumentContent slug={slug} />;
+  const resolved = resolveLegalSlug(slug);
+  if (!getLegalDocument(resolved)) notFound();
+
+  return <LegalDocumentContent slug={resolved} />;
 }

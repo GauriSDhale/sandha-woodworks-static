@@ -1,35 +1,31 @@
 {
   "meta": {
-    "title": "Centre juridique",
-    "description": "Documents juridiques et de conformité pour Sandha Woodworks Service Ltd."
+    "title": "Juridique et conformité",
+    "description": "Informations juridiques, de confidentialité et de conformité pour Sandha Woodworks Service Ltd., y compris les conditions générales, les conditions supplémentaires Canada et É.-U., le code de conduite, la politique de confidentialité, l'accessibilité et les conditions d'utilisation du site."
   },
   "hero": {
-    "eyebrow": "Juridique et conformité",
-    "title": "Centre juridique",
-    "description": "Politiques, conditions et documents de conformité régissant l'utilisation de ce site Web et de nos services."
+    "eyebrow": "Sandha Woodworks Service Ltd.",
+    "title": "Juridique et conformité",
+    "description": "Les informations juridiques, de confidentialité et de conformité publiées par Sandha Woodworks. Ces documents font partie de notre cadre contractuel et réglementaire et sont mis à disposition ici dans un souci de transparence envers nos clients, partenaires et visiteurs du site."
   },
-  "placeholder": "Ceci est un contenu juridique temporaire. En production, cette page contiendrait le texte intégral de la politique ou des conditions pour le document sélectionné.",
-  "docs": {
-    "general-terms": {
-      "title": "Conditions générales"
-    },
-    "canada-terms": {
-      "title": "Conditions — Canada"
-    },
-    "usa-terms": {
-      "title": "Conditions — É.-U."
-    },
-    "code-of-conduct": {
-      "title": "Code de conduite"
-    },
-    "privacy": {
-      "title": "Politique de confidentialité"
-    },
-    "accessibility": {
-      "title": "Accessibilité"
-    },
-    "website-terms": {
-      "title": "Conditions d'utilisation du site Web"
-    }
-  }
+  "navAria": "Documents juridiques",
+  "browseLabel": "Parcourir les documents",
+  "readDocument": "Lire le document",
+  "backToCentre": "Tous les documents juridiques",
+  "versionLabel": "Version {{version}}",
+  "updatedLabel": "Dernière mise à jour {{date}}",
+  "issuedBy": "Publié par Sandha Woodworks Service Ltd.",
+  "importantNotice": "Avis important",
+  "categories": {
+    "Terms": "Conditions",
+    "Ethics": "Éthique",
+    "Website": "Site Web"
+  },
+  "categoryIntros": {
+    "Terms": "Conditions commerciales régissant les devis, contrats et livraisons de projets.",
+    "Ethics": "Normes de conduite, d'intégrité et de service accessible.",
+    "Website": "Politiques applicables lorsque vous utilisez sandhawoodworks.ca."
+  },
+  "footerAddress": "Sandha Woodworks Service Ltd. · 121 Roy Blvd, Brantford, Ontario N3R 7K1, Canada",
+  "contactPrompt": "Pour toute question sur ces documents, écrivez à"
 }
