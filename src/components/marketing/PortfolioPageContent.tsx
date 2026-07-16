@@ -126,7 +126,7 @@ export function PortfolioPageContent() {
 
   return (
     <>
-      <section className="bg-ink-atmosphere relative overflow-hidden px-6 py-12 text-cream md:py-16">
+      <section className="bg-ink-atmosphere relative overflow-hidden px-4 pt-24 pb-12 text-cream sm:px-6 lg:px-8 md:pt-28 md:pb-16">
         <div
           className={`relative z-10 mx-auto max-w-7xl transition-all duration-700 ${
             heroInView ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
@@ -144,7 +144,7 @@ export function PortfolioPageContent() {
         </div>
       </section>
 
-      <section className="px-6 py-6 md:py-8">
+      <section className="px-4 py-6 sm:px-6 lg:px-8 md:py-8">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <div className="flex flex-wrap gap-2">
@@ -187,7 +187,7 @@ export function PortfolioPageContent() {
         </div>
       </section>
 
-      <section className="bg-ink-atmosphere relative overflow-hidden px-6 py-12">
+      <section className="bg-ink-atmosphere relative overflow-hidden px-4 py-12 sm:px-6 lg:px-8">
         <div className="relative mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-brand">
