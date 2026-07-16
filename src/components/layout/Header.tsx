@@ -17,7 +17,7 @@ import frCommon from "@/locales/fr/common.json";
 import { cn } from "@/lib/utils";
 
 const navLinkBase =
-  "relative inline-flex items-center gap-1 rounded-full px-3 py-2 text-base font-semibold tracking-wide transition-colors duration-200 ease-out hover:bg-brand/10 active:scale-[0.98] active:bg-brand/25";
+  "relative inline-flex items-center gap-1 rounded-full px-2 py-2 text-sm font-semibold tracking-wide transition-colors duration-200 ease-out hover:bg-brand/10 active:scale-[0.98] active:bg-brand/25 min-[1700px]:px-3 min-[1700px]:text-base";
 
 function navLinkClasses(lightOnDark: boolean, active: boolean) {
   return cn(
@@ -103,7 +103,10 @@ export function Header() {
           </Link>
 
           <div className="flex shrink-0 items-center gap-2 sm:gap-3">
-          <nav className="hidden items-center gap-2 xl:flex" aria-label="Main navigation">
+          <nav
+            className="hidden min-w-0 items-center gap-1 2xl:flex min-[1700px]:gap-2"
+            aria-label="Main navigation"
+          >
             {navLinks.map((link) => {
               const active = pathname === link.href || pathname.startsWith(`${link.href}/`);
               const isSectors = link.href === "/sectors";
@@ -148,7 +151,7 @@ export function Header() {
             })}
           </nav>
 
-          <div className="hidden items-center gap-3 xl:flex">
+          <div className="hidden shrink-0 items-center gap-2 2xl:flex min-[1700px]:gap-3">
             <button
               type="button"
               onClick={openSearch}
@@ -166,7 +169,7 @@ export function Header() {
             </Link>
           </div>
 
-            <div className="flex items-center gap-1 xl:hidden">
+            <div className="flex items-center gap-1 2xl:hidden">
               <button
                 type="button"
                 onClick={openSearch}
@@ -192,7 +195,7 @@ export function Header() {
       {mobileOpen ? (
         <div
           className={cn(
-            "border-t px-4 py-6 xl:hidden",
+            "border-t px-4 py-6 2xl:hidden",
             lightOnDark
               ? "border-white/20 bg-black/80 text-cream backdrop-blur-md"
               : "border-black/10 bg-white text-foreground",

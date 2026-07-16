@@ -26,15 +26,22 @@ const c = {
   softBg: "#eef1f5", // --taupe (light neutral)
 };
 
+// Shared page frame so header/body/footer stay aligned on every page.
+const PAGE_X = 44;
+const PAGE_TOP = 60;
+const PAGE_BOTTOM = 56;
+const HEADER_TOP = 22;
+const FOOTER_BOTTOM = 22;
+
 const s = StyleSheet.create({
   page: {
     fontFamily: "Helvetica",
     fontSize: 10,
     color: c.ink,
     backgroundColor: c.cream,
-    paddingTop: 60,
-    paddingBottom: 56,
-    paddingHorizontal: 44,
+    paddingTop: PAGE_TOP,
+    paddingBottom: PAGE_BOTTOM,
+    paddingHorizontal: PAGE_X,
     lineHeight: 1.45,
   },
   cover: {
@@ -59,9 +66,9 @@ const s = StyleSheet.create({
   },
   coverBody: {
     position: "absolute",
-    left: 44,
-    right: 44,
-    bottom: 56,
+    left: PAGE_X,
+    right: PAGE_X,
+    bottom: PAGE_BOTTOM,
   },
   brandMark: {
     fontSize: 8,
@@ -92,9 +99,9 @@ const s = StyleSheet.create({
   },
   headerBar: {
     position: "absolute",
-    top: 22,
-    left: 44,
-    right: 44,
+    top: HEADER_TOP,
+    left: PAGE_X,
+    right: PAGE_X,
     flexDirection: "row",
     justifyContent: "space-between",
     paddingBottom: 10,
@@ -109,9 +116,9 @@ const s = StyleSheet.create({
   },
   footerBar: {
     position: "absolute",
-    bottom: 22,
-    left: 44,
-    right: 44,
+    bottom: FOOTER_BOTTOM,
+    left: PAGE_X,
+    right: PAGE_X,
     flexDirection: "row",
     justifyContent: "space-between",
     paddingTop: 10,
