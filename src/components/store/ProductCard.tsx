@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { ShoppingCart, Eye } from "lucide-react";
 import { motion } from "framer-motion";
@@ -56,9 +57,10 @@ export function ProductCard({ product, onQuickView, priority }: ProductCardProps
 
   return (
     <motion.article
-      initial={{ opacity: 0, y: 16 }}
+      layout
+      initial={false}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.2, ease: "easeOut" }}
       className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition-shadow duration-300 hover:shadow-xl"
     >
       <Link

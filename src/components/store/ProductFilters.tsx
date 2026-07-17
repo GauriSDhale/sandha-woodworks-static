@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { SlidersHorizontal, X, ChevronDown, ChevronUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
@@ -11,7 +11,10 @@ import {
   setSortBy,
   resetFilters,
 } from "@/store/slices/productsSlice";
+import { setCategory } from "@/store/slices/productsSlice";
+import { getTopLevelCategories } from "@/store/data/categories";
 import type { SortOption } from "@/store/types/product";
+import type { CategoryId } from "@/store/types/product";
 import { PRICE_RANGE } from "@/store/data/products";
 
 const SORT_IDS: SortOption[] = [
@@ -84,35 +87,6 @@ export function ProductFilters({ className }: { className?: string }) {
             />
             <span className={filters.sortBy === id ? "font-medium text-foreground" : "text-muted-foreground"}>
               {t(sortLabelKey(id))}
-            </span>
-          </label>
-        ))}
-      </FilterSection>
-
-      <FilterSection title={t("filters.category")}>
-        <label className="flex cursor-pointer items-center gap-2 text-sm">
-          <input
-            type="radio"
-            name="category"
-            checked={filters.category === null}
-            onChange={() => dispatch(setCategory(null))}
-            className="h-4 w-4 accent-foreground"
-          />
-          <span className={!filters.category ? "font-medium text-foreground" : "text-muted-foreground"}>
-            {t("filters.allProducts")}
-          </span>
-        </label>
-        {topCategories.map((cat) => (
-          <label key={cat.id} className="flex cursor-pointer items-center gap-2 text-sm">
-            <input
-              type="radio"
-              name="category"
-              checked={filters.category === cat.id}
-              onChange={() => dispatch(setCategory(cat.id as CategoryId))}
-              className="h-4 w-4 accent-foreground"
-            />
-            <span className={filters.category === cat.id ? "font-medium text-foreground" : "text-muted-foreground"}>
-              {t(`categories.${cat.id}.label`)}
             </span>
           </label>
         ))}

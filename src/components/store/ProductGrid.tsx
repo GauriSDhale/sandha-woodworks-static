@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import type { Product } from "@/store/types/product";
 import { ProductCard } from "./ProductCard";
@@ -40,16 +40,14 @@ export function ProductGrid({
   return (
     <>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        <AnimatePresence mode="popLayout">
-          {products.map((product, idx) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              onQuickView={setQuickViewProduct}
-              priority={idx < 4}
-            />
-          ))}
-        </AnimatePresence>
+        {products.map((product, idx) => (
+          <ProductCard
+            key={product.id}
+            product={product}
+            onQuickView={setQuickViewProduct}
+            priority={idx < 4}
+          />
+        ))}
       </div>
 
       <AnimatePresence>
