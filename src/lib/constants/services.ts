@@ -3,6 +3,8 @@
 export interface ServiceItem {
   slug: string;
   image: string;
+  /** Optional Tailwind object-position class to adjust the card image crop */
+  imagePosition?: string;
 }
 
 export interface ServiceCategory {
@@ -24,7 +26,8 @@ export const serviceCategories: ServiceCategory[] = [
       },
       {
         "slug": "budget-estimating",
-        "image": "/assets/services/estimating.jpg"
+        "image": "/assets/services/estimating.jpg",
+        "imagePosition": "object-[center_20%]"
       },
       {
         "slug": "value-engineering",
