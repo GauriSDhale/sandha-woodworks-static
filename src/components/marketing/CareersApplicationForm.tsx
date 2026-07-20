@@ -292,7 +292,7 @@ export function CareersApplicationForm() {
       className="rounded-3xl border border-border bg-white p-6 shadow-sm sm:p-8"
     >
       <div className="space-y-3">
-        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand">
+        <p className="type-eyebrow text-brand">
           {t("form.eyebrow")}
         </p>
         <h2 className="font-display text-3xl font-semibold">{t("form.title")}</h2>

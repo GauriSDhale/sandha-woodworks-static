@@ -97,7 +97,7 @@ export function CountUpStat({
       >
         {shown}
       </p>
-      <p className="mt-4 text-[10px] font-semibold uppercase tracking-[0.3em] text-brand underline decoration-transparent underline-offset-4 transition-colors duration-300 group-hover/stat:decoration-brand/50 group-focus-visible/stat:decoration-brand/50">
+      <p className="type-eyebrow mt-4 text-brand underline decoration-transparent underline-offset-4 transition-colors duration-300 group-hover/stat:decoration-brand/50 group-focus-visible/stat:decoration-brand/50">
         {label}
       </p>
       <p className="mt-2 text-sm leading-relaxed text-cream/60 transition-colors duration-300 group-hover/stat:text-cream/80 group-focus-visible/stat:text-cream/80">

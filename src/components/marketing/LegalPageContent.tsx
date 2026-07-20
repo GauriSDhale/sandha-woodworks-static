@@ -48,7 +48,7 @@ export function LegalPageContent() {
           aria-hidden="true"
         />
         <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-28 sm:px-6 sm:pb-20 sm:pt-32 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-brand">
+          <p className="type-eyebrow text-brand">
             {t("hero.eyebrow")}
           </p>
           <h1 className="font-display mt-5 max-w-4xl text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
@@ -63,7 +63,7 @@ export function LegalPageContent() {
 
       <section className="bg-background px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-muted-foreground">
+          <p className="type-eyebrow text-muted-foreground">
             {t("browseLabel")}
           </p>
 
@@ -100,7 +100,7 @@ export function LegalPageContent() {
                                 <h3 className="font-display text-lg font-semibold tracking-tight text-foreground transition-colors group-hover:text-brand sm:text-xl">
                                   {doc.shortLabel}
                                 </h3>
-                                <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+                                <span className="type-eyebrow text-muted-foreground">
                                   {t("versionLabel", { version: doc.version })}
                                 </span>
                               </div>

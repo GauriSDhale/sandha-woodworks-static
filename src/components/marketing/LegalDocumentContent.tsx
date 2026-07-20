@@ -40,7 +40,7 @@ function LegalDocumentArticle({ doc }: { doc: LegalDocument }) {
   return (
     <article className="mx-auto max-w-4xl">
       <header className="border-b border-border pb-8">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-muted-foreground">
+        <p className="type-eyebrow text-muted-foreground">
           {t(`categories.${doc.category}`)}
         </p>
         <h1 className="font-display mt-4 text-3xl font-semibold tracking-tight text-foreground md:text-5xl">
@@ -49,7 +49,7 @@ function LegalDocumentArticle({ doc }: { doc: LegalDocument }) {
         <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
           {doc.description}
         </p>
-        <div className="mt-6 flex flex-wrap gap-x-8 gap-y-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-muted-foreground">
+        <div className="type-eyebrow mt-6 flex flex-wrap gap-x-8 gap-y-2 text-muted-foreground">
           <span>{t("versionLabel", { version: doc.version })}</span>
           <span>{t("updatedLabel", { date: t("updatedDate") })}</span>
           <span>{t("issuedBy")}</span>
@@ -67,7 +67,7 @@ function LegalDocumentArticle({ doc }: { doc: LegalDocument }) {
       </div>
 
       <aside className="mt-14 rounded-2xl border border-border bg-muted/40 p-6 sm:p-8">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-foreground">
+        <p className="type-eyebrow text-foreground">
           {t("importantNotice")}
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">

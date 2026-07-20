@@ -87,7 +87,7 @@ export function ManufacturingSection() {
                     : { transitionDelay: inView ? `${140 + index * 80}ms` : "0ms" }
                 }
               >
-                <span className="mr-3 inline-block text-[10px] font-semibold tracking-[0.3em] text-brand">
+                <span className="type-eyebrow mr-3 inline-block text-brand">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 {item}

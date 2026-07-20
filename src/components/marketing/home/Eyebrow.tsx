@@ -13,20 +13,13 @@ interface EyebrowProps {
 const variantClasses: Record<EyebrowVariant, string> = {
   default: "text-muted-foreground",
   brand: "text-brand",
-  cream: "text-cream/60",
-  creamMuted: "text-cream/50",
+  cream: "text-cream/70",
+  creamMuted: "text-cream/55",
 };
 
 export function Eyebrow({ children, className, variant = "brand", id }: EyebrowProps) {
   return (
-    <p
-      id={id}
-      className={cn(
-        "text-xs font-semibold tracking-wide sm:text-sm",
-        variantClasses[variant],
-        className,
-      )}
-    >
+    <p id={id} className={cn("type-eyebrow", variantClasses[variant], className)}>
       {children}
     </p>
   );

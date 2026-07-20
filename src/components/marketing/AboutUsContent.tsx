@@ -48,7 +48,7 @@ export function AboutUsContent() {
                   <h3 className="mt-2 text-xl font-semibold">
                     {t(`timeline.${item.id}.title`)}
                   </h3>
-                  <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                  <p className="mt-2 max-w-2xl text-base leading-relaxed text-muted-foreground">
                     {t(`timeline.${item.id}.description`)}
                   </p>
                 </article>
@@ -65,10 +65,10 @@ export function AboutUsContent() {
             <h2 className="font-display mt-4 text-3xl font-semibold md:text-4xl">
               {t("story.title")}
             </h2>
-            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
               {t("story.p1", { founded: siteConfig.founded })}
             </p>
-            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
               {t("story.p2")}
             </p>
           </div>
@@ -87,7 +87,7 @@ export function AboutUsContent() {
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {certificationItems.map((cert) => (
               <article key={cert.id} className="rounded-2xl border border-border bg-white p-6">
-                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                <p className="type-eyebrow text-muted-foreground">
                   {cert.year}
                 </p>
                 <h3 className="mt-3 text-lg font-semibold">
@@ -125,7 +125,7 @@ export function AboutUsContent() {
             {valueItems.map((id) => (
               <article key={id} className="rounded-2xl border border-border p-6">
                 <h3 className="text-lg font-semibold">{t(`values.items.${id}.title`)}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-2 text-base leading-relaxed text-muted-foreground">
                   {t(`values.items.${id}.description`)}
                 </p>
               </article>
@@ -222,7 +222,7 @@ export function AboutUsContent() {
                   <p className="mt-1 text-sm font-medium text-brand">
                     {t(`leadership.members.${member.id}.title`)}
                   </p>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  <p className="mt-3 text-base leading-relaxed text-muted-foreground">
                     {t(`leadership.members.${member.id}.description`)}
                   </p>
                 </div>

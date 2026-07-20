@@ -34,7 +34,7 @@ function ProjectRow({
     >
       <div className="flex flex-col items-center gap-8 md:flex-row">
         <div className="w-full md:w-1/5">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+          <p className="type-eyebrow text-brand">
             {t(`filters.${project.category}`, { defaultValue: project.category })}
           </p>
           <h2 className="font-display mt-2 text-2xl font-semibold text-foreground">
@@ -132,7 +132,7 @@ export function PortfolioPageContent() {
             heroInView ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
           }`}
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-brand">
+          <p className="type-eyebrow text-brand">
             {t("hero.eyebrow")}
           </p>
           <h1 className="font-display mt-4 max-w-4xl text-4xl font-semibold md:text-6xl">
@@ -190,7 +190,7 @@ export function PortfolioPageContent() {
       <section className="bg-ink-atmosphere relative overflow-hidden px-4 py-12 sm:px-6 lg:px-8">
         <div className="relative mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-brand">
+            <p className="type-eyebrow text-brand">
               {t("cta.eyebrow")}
             </p>
             <h2 className="font-display mt-3 max-w-xl text-3xl font-semibold text-cream md:text-4xl">

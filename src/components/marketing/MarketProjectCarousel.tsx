@@ -39,7 +39,7 @@ export function MarketProjectCarousel({
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-muted-foreground">
+            <p className="type-eyebrow text-muted-foreground">
               {t("carousel.label")}
             </p>
             <h2 className="font-display mt-3 text-3xl font-semibold">
@@ -94,7 +94,7 @@ export function MarketProjectCarousel({
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-5 sm:p-8">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-brand">
+                <p className="type-eyebrow text-brand">
                   {tp(`filters.${current.category}`, { defaultValue: current.category })}
                 </p>
                 <h3 className="font-display mt-2 text-2xl font-semibold text-white sm:text-3xl">

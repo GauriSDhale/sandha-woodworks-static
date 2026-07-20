@@ -25,7 +25,7 @@ export function SectorsGrid() {
                 className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-70 transition-transform duration-700 group-hover:scale-105"
               />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-surface-dark via-surface-dark/60 to-surface-dark/10" />
-              <span className="pointer-events-none absolute left-5 top-5 rounded-full bg-surface-dark/70 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.3em] text-cream backdrop-blur">
+              <span className="type-eyebrow pointer-events-none absolute left-5 top-5 rounded-full bg-surface-dark/70 px-3 py-1 text-cream backdrop-blur">
                 {sector.number} · {t(`markets.${sector.id}.label`)}
               </span>
               <div className="relative z-10 p-5 sm:p-6">
@@ -34,10 +34,10 @@ export function SectorsGrid() {
                   {t(`markets.${sector.id}.description`)}
                 </p>
                 <div className="mt-4 flex items-center justify-between border-t border-cream/20 pt-3">
-                  <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-brand">
+                  <span className="type-eyebrow text-brand">
                     {t("grid.explore")}
                   </span>
-                  <span className="text-[9px] uppercase tracking-[0.22em] text-cream/70">
+                  <span className="text-xs uppercase tracking-[0.12em] text-cream/70">
                     {t("grid.subSectors", { count: sector.subSectors })}
                   </span>
                 </div>

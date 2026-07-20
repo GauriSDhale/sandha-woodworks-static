@@ -35,7 +35,7 @@ function ServiceCard({
         />
       </div>
       <div className="flex flex-1 flex-col p-5">
-        <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+        <p className="type-eyebrow normal-case tracking-normal text-muted-foreground">
           {String(index + 1).padStart(2, "0")}
         </p>
         <h3 className="font-display mt-2 text-lg font-semibold">
@@ -136,7 +136,7 @@ export function ServicesPageContent() {
           {serviceCategories.map((category) => (
             <article key={category.id} id={category.id} className="scroll-mt-28">
               <div className="border-b border-border pb-6">
-                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                <p className="type-eyebrow normal-case tracking-normal text-muted-foreground">
                   {t("categoryMeta", {
                     number: category.number,
                     count: category.count,

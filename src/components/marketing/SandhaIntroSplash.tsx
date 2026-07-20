@@ -54,14 +54,14 @@ function IntroPanel({
             aria-hidden="true"
           />
           <p
-            className="text-[10px] font-semibold uppercase tracking-[0.4em] text-cream/70"
+            className="type-eyebrow text-cream/70"
             style={{ animation: "intro-rise 0.8s 0.25s ease-out both" }}
           >
             SW · 2010 — {year}
           </p>
         </div>
         <p
-          className="hidden text-[10px] font-semibold uppercase tracking-[0.4em] text-cream/70 sm:block"
+          className="type-eyebrow hidden text-cream/70 sm:block"
           style={{ animation: "intro-rise 0.8s 0.25s ease-out both" }}
         >
           Brantford · Ontario · Canada
@@ -76,7 +76,7 @@ function IntroPanel({
             aria-hidden="true"
           />
           <p
-            className="text-[10px] font-semibold uppercase tracking-[0.55em] text-cream/70"
+            className="type-eyebrow tracking-[0.2em] text-cream/70"
             style={{ animation: "intro-rise 0.9s 0.3s ease-out both" }}
           >
             {tagline}
@@ -113,7 +113,7 @@ function IntroPanel({
             aria-hidden="true"
           />
           <p
-            className="text-[11px] font-semibold uppercase tracking-[0.7em] text-cream sm:text-sm"
+            className="type-eyebrow tracking-[0.2em] text-cream sm:text-sm"
             style={{ animation: "intro-rise 0.8s 1.25s ease-out both" }}
           >
             {SUB_WORD}
@@ -129,13 +129,13 @@ function IntroPanel({
       </div>
 
       <div
-        className="absolute left-6 top-1/2 origin-left -translate-y-1/2 -rotate-90 whitespace-nowrap text-[9px] font-semibold uppercase tracking-[0.5em] text-cream/50 sm:left-10"
+        className="type-eyebrow absolute left-6 top-1/2 origin-left -translate-y-1/2 -rotate-90 whitespace-nowrap text-cream/55 sm:left-10"
         style={{ animation: "intro-rise 0.9s 1.5s ease-out both" }}
       >
         Precision · Craft · Delivery
       </div>
       <div
-        className="absolute right-6 top-1/2 origin-right -translate-y-1/2 rotate-90 whitespace-nowrap text-[9px] font-semibold uppercase tracking-[0.5em] text-cream/50 sm:right-10"
+        className="type-eyebrow absolute right-6 top-1/2 origin-right -translate-y-1/2 rotate-90 whitespace-nowrap text-cream/55 sm:right-10"
         style={{ animation: "intro-rise 0.9s 1.5s ease-out both" }}
       >
         Architectural Millwork
@@ -149,7 +149,7 @@ function IntroPanel({
           <span className="text-5xl font-black tabular-nums leading-none text-cream sm:text-6xl">
             {String(count).padStart(3, "0")}
           </span>
-          <span className="text-xs font-semibold uppercase tracking-[0.4em] text-cream/50">%</span>
+          <span className="text-xs font-semibold uppercase tracking-[0.14em] text-cream/55">%</span>
         </div>
         <div
           className="flex flex-col items-end gap-2"
@@ -163,7 +163,7 @@ function IntroPanel({
               }}
             />
           </div>
-          <p className="text-[9px] font-semibold uppercase tracking-[0.5em] text-cream/50">
+          <p className="type-eyebrow text-cream/55">
             {loading}
           </p>
         </div>

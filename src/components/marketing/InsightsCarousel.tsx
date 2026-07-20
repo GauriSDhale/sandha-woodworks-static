@@ -59,7 +59,7 @@ export function InsightsCarousel() {
     <section className="border-y border-border/70 bg-background py-8 sm:py-10">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 px-4 sm:px-6 lg:flex-row lg:items-end lg:justify-between lg:px-8">
         <div className="max-w-3xl">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-brand">
+          <p className="mb-4 type-eyebrow text-brand">
             Insights & Articles
           </p>
           <h2 className="font-display text-3xl leading-[1.1] sm:text-4xl md:text-5xl">
@@ -104,7 +104,7 @@ export function InsightsCarousel() {
               className="h-full w-full object-contain object-center"
             />
           </div>
-          <div className="mt-6 flex flex-wrap items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.3em] text-[#4DA3E8]">
+          <div className="type-eyebrow mt-6 flex flex-wrap items-center gap-3 text-[#4DA3E8]">
             <span>{currentSlide.eyebrow}</span>
             <span className="text-cream/40">•</span>
             <span className="text-cream/70">{currentSlide.meta}</span>

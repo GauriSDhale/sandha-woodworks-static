@@ -37,7 +37,7 @@ export function CredibilityStrip({ className }: { className?: string }) {
             inView || reducedMotion ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
           )}
         >
-          <p className="credibility-band-accent text-[10px] font-semibold uppercase tracking-[0.4em] sm:text-xs">
+          <p className="credibility-band-accent type-eyebrow">
             {credibility.eyebrow}
           </p>
           <h3
@@ -60,7 +60,7 @@ export function CredibilityStrip({ className }: { className?: string }) {
             <li
               key={item}
               className={cn(
-                "credibility-band-pill inline-flex items-center gap-2.5 rounded-full border border-cream/15 bg-cream/[0.06] px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-cream/85 backdrop-blur-sm transition-colors duration-300 hover:bg-cream/[0.1] hover:text-cream sm:px-5 sm:text-xs",
+                "credibility-band-pill inline-flex items-center gap-2.5 rounded-full border border-cream/15 bg-cream/[0.06] px-4 py-2.5 text-xs font-semibold uppercase tracking-[0.12em] text-cream/85 backdrop-blur-sm transition-colors duration-300 hover:bg-cream/[0.1] hover:text-cream sm:px-5 sm:text-sm",
                 !reducedMotion && "transition-[opacity,transform] duration-500",
                 inView || reducedMotion
                   ? "translate-y-0 opacity-100"

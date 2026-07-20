@@ -87,7 +87,7 @@ export function WhyChooseUsSection() {
                   description={stat.description}
                   delayMs={index * 120}
                   active={inView}
-                  className="[&_p:first-child]:font-display [&_p:first-child]:text-2xl [&_p:first-child]:font-semibold [&_p:first-child]:tracking-tight [&_p:first-child]:text-foreground sm:[&_p:first-child]:text-3xl lg:[&_p:first-child]:text-4xl lg:[&_p:first-child]:leading-[1.1] [&_p:nth-child(2)]:mt-2 [&_p:nth-child(2)]:text-[10px] [&_p:nth-child(2)]:font-semibold [&_p:nth-child(2)]:uppercase [&_p:nth-child(2)]:tracking-[0.2em] [&_p:nth-child(2)]:text-brand [&_p:nth-child(2)]:no-underline [&_p:last-child]:mt-1 [&_p:last-child]:text-sm [&_p:last-child]:text-muted-foreground"
+                  className="[&_p:first-child]:font-display [&_p:first-child]:text-2xl [&_p:first-child]:font-semibold [&_p:first-child]:tracking-tight [&_p:first-child]:text-foreground sm:[&_p:first-child]:text-3xl lg:[&_p:first-child]:text-4xl lg:[&_p:first-child]:leading-[1.1] [&_p:nth-child(2)]:type-eyebrow [&_p:nth-child(2)]:mt-2 [&_p:nth-child(2)]:text-brand [&_p:nth-child(2)]:no-underline [&_p:last-child]:mt-1 [&_p:last-child]:text-base [&_p:last-child]:text-muted-foreground"
                 />
               </div>
             );
@@ -101,7 +101,7 @@ export function WhyChooseUsSection() {
             inView || reducedMotion ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0",
           )}
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-brand">
+          <p className="type-eyebrow text-brand">
             {copy.eyebrow}
           </p>
           <h2
@@ -201,7 +201,7 @@ export function WhyChooseUsSection() {
               <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 p-5 sm:p-8">
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                   <div>
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-brand">
+                    <p className="type-eyebrow text-brand">
                       {copy.projectsEyebrow}
                     </p>
                     <h3 className="font-display mt-2 text-2xl font-semibold text-white sm:text-3xl">

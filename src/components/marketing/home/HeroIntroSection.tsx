@@ -59,7 +59,7 @@ export function HeroIntroSection() {
 
       <div className="container-full pb-10 pt-8 sm:pb-14 sm:pt-6">
         <HeroReveal delayMs={80} reducedMotion={reducedMotion}>
-          <div className="flex items-start justify-between text-[10px] font-semibold uppercase tracking-[0.4em] text-cream/60">
+          <div className="type-eyebrow flex items-start justify-between text-cream/65">
             <span>{hero.tagline}</span>
             <span className="hidden sm:inline">{hero.location}</span>
           </div>
@@ -85,14 +85,14 @@ export function HeroIntroSection() {
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:flex-col xl:flex-row">
               <Link
                 href="/contact"
-                className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-cream transition-all duration-300 hover:scale-[1.02] hover:bg-warm-black active:scale-[0.98] sm:w-auto"
+                className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-foreground px-7 py-3.5 type-eyebrow text-cream transition-all duration-300 hover:scale-[1.02] hover:bg-warm-black active:scale-[0.98] sm:w-auto"
               >
                 {hero.requestQuote}
                 <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
               </Link>
               <Link
                 href="/portfolio"
-                className="group inline-flex w-full items-center justify-center gap-2 rounded-full border border-cream/40 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-cream transition-all duration-300 hover:border-cream hover:bg-cream/10 active:scale-[0.98] sm:w-auto"
+                className="group inline-flex w-full items-center justify-center gap-2 rounded-full border border-cream/40 px-7 py-3.5 type-eyebrow text-cream transition-all duration-300 hover:border-cream hover:bg-cream/10 active:scale-[0.98] sm:w-auto"
               >
                 {hero.viewPortfolio}
                 <ArrowRight className="h-3.5 w-3.5 opacity-70 transition-transform duration-300 group-hover:translate-x-0.5" />
@@ -106,7 +106,7 @@ export function HeroIntroSection() {
             {hero.capabilities.map((item) => (
               <li
                 key={item}
-                className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.28em] text-cream/55 sm:tracking-[0.32em]"
+                className="type-eyebrow flex items-center gap-2 text-cream/60"
               >
                 <span className="h-1 w-1 shrink-0 rounded-full bg-brand" aria-hidden="true" />
                 {item}
@@ -116,7 +116,7 @@ export function HeroIntroSection() {
         </HeroReveal>
 
         <HeroReveal delayMs={560} reducedMotion={reducedMotion}>
-          <div className="mt-12 flex items-end justify-between border-t border-cream/15 pt-6 text-[10px] font-semibold uppercase tracking-[0.4em] text-cream/50 sm:mt-16">
+          <div className="type-eyebrow mt-12 flex items-end justify-between border-t border-cream/15 pt-6 text-cream/55 sm:mt-16">
             <span>© {currentYear}</span>
             <span className="hidden sm:inline">{hero.footerCraft}</span>
             <span className="sm:hidden">{hero.location}</span>

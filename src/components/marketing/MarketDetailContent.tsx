@@ -86,7 +86,7 @@ export function MarketDetailContent({
 
           <section className="px-4 py-10 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-7xl">
-              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-muted-foreground">
+              <p className="type-eyebrow text-muted-foreground">
                 {t("market.subSectorsLabel")}
               </p>
               <h2 className="font-display mt-3 text-3xl font-semibold">
@@ -126,7 +126,7 @@ export function MarketDetailContent({
           {detail.relatedSectorSlugs.length > 0 && (
             <section className="border-t border-border bg-muted px-4 py-10 sm:px-6 lg:px-8">
               <div className="mx-auto max-w-7xl">
-                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-muted-foreground">
+                <p className="type-eyebrow text-muted-foreground">
                   {t("market.relatedLabel")}
                 </p>
                 <h2 className="font-display mt-3 text-3xl font-semibold">
@@ -173,7 +173,7 @@ export function MarketDetailContent({
       {otherMarkets.length > 0 && (
         <section className="border-t border-border px-4 py-10 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-muted-foreground">
+            <p className="type-eyebrow text-muted-foreground">
               {t("market.otherLabel")}
             </p>
             <h2 className="font-display mt-3 text-3xl font-semibold">{t("market.otherTitle")}</h2>

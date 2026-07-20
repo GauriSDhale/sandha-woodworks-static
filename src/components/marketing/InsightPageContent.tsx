@@ -24,7 +24,7 @@ export function InsightPageContent() {
       <section className="relative overflow-hidden bg-[#111111] pt-24 pb-10 text-cream sm:pt-28 sm:pb-14">
         <div className="pointer-events-none absolute inset-0 opacity-30 [background:radial-gradient(circle_at_20%_20%,#0A66C2_0%,transparent_45%),radial-gradient(circle_at_80%_60%,#0A66C2_0%,transparent_55%)]" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.4em] text-[#4DA3E8]">
+          <div className="type-eyebrow flex items-center gap-3 text-[#4DA3E8]">
             <span className="h-px w-8 bg-[#4DA3E8]" />
             <span>{t("hero.eyebrow")}</span>
           </div>
@@ -40,7 +40,7 @@ export function InsightPageContent() {
               href={LINKEDIN_COMPANY}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-cream transition-transform hover:scale-[1.02] hover:bg-warm-black"
+              className="inline-flex items-center gap-2 rounded-full bg-foreground px-7 py-3.5 type-eyebrow text-cream transition-transform hover:scale-[1.02] hover:bg-warm-black"
             >
               {linkedInIcon}
               {t("hero.followCta")}
@@ -49,7 +49,7 @@ export function InsightPageContent() {
               href={LINKEDIN_POSTS}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-cream/40 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-cream transition-colors hover:bg-cream hover:text-foreground"
+              className="inline-flex items-center justify-center rounded-full border border-cream/40 px-7 py-3.5 type-eyebrow text-cream transition-colors hover:bg-cream hover:text-foreground"
             >
               {t("hero.postsCta")}
             </a>
@@ -61,7 +61,7 @@ export function InsightPageContent() {
         <div className="w-full sm:mx-auto sm:max-w-7xl sm:px-6">
           <div className="px-4 sm:px-0">
             <div className="mx-auto max-w-3xl text-center">
-              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-brand">
+              <p className="mb-4 type-eyebrow text-brand">
                 {t("feed.label")}
               </p>
               <h2 className="font-display text-3xl leading-[1.1] sm:text-4xl md:text-5xl">
@@ -81,7 +81,7 @@ export function InsightPageContent() {
 
       <section className="bg-[#111111] py-10 text-cream sm:py-14">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-[#4DA3E8]">
+          <p className="type-eyebrow text-[#4DA3E8]">
             {t("loop.label")}
           </p>
           <h2 className="mx-auto mt-6 max-w-3xl font-display text-4xl leading-tight sm:text-5xl md:text-6xl">
@@ -91,7 +91,7 @@ export function InsightPageContent() {
             href={LINKEDIN_COMPANY}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-10 inline-flex items-center gap-2 rounded-full bg-foreground px-8 py-4 text-xs font-semibold uppercase tracking-[0.22em] text-cream transition-colors hover:bg-warm-black"
+            className="mt-10 inline-flex items-center gap-2 rounded-full bg-foreground px-8 py-4 type-eyebrow text-cream transition-colors hover:bg-warm-black"
           >
             {linkedInIcon}
             {t("loop.followCta")}
@@ -102,7 +102,7 @@ export function InsightPageContent() {
       <section className="bg-cream py-8 sm:py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-brand">
+            <p className="mb-4 type-eyebrow text-brand">
               {t("why.label")}
             </p>
             <h2 className="font-display text-3xl leading-[1.1] sm:text-4xl md:text-5xl">

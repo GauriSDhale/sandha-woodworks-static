@@ -42,7 +42,7 @@ function PartnerLogoMark({
         aria-label={logo.name}
         tabIndex={ariaHidden ? -1 : 0}
         className={cn(
-          "inline-flex h-8 max-w-[140px] items-center justify-center whitespace-nowrap rounded-md border border-warm-black/10 bg-white/70 px-3 text-[10px] font-semibold uppercase tracking-[0.12em] text-warm-black/55 transition-all duration-300 sm:h-9 md:h-10",
+          "inline-flex h-8 max-w-[140px] items-center justify-center whitespace-nowrap rounded-md border border-warm-black/10 bg-white/70 px-3 text-xs font-semibold uppercase tracking-[0.08em] text-warm-black/55 transition-all duration-300 sm:h-9 sm:text-sm md:h-10",
           isActive && "border-brand/30 bg-white text-warm-black",
         )}
         {...interactionProps}

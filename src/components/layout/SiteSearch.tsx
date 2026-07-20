@@ -156,7 +156,7 @@ export function SiteSearch({ open, onOpenChange }: SiteSearchProps) {
                   >
                     <span
                       className={cn(
-                        "mt-0.5 shrink-0 rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.14em]",
+                        "mt-0.5 shrink-0 rounded-full px-2 py-0.5 text-xs font-semibold uppercase tracking-[0.12em]",
                         kindStyles[item.kind],
                       )}
                     >
@@ -181,7 +181,7 @@ export function SiteSearch({ open, onOpenChange }: SiteSearchProps) {
             )}
           </div>
 
-          <div className="flex items-center justify-between border-t border-border px-4 py-2.5 text-[11px] text-muted-foreground">
+          <div className="flex items-center justify-between border-t border-border px-4 py-2.5 text-xs text-muted-foreground sm:text-sm">
             <span>Search across the whole site</span>
             <span className="hidden sm:inline">↑↓ Navigate · Enter Open · Esc Close</span>
           </div>
