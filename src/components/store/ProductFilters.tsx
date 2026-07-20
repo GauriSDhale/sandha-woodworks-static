@@ -1,19 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { SlidersHorizontal, X, ChevronDown, ChevronUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import {
   selectFilters,
-  setCategory,
   setPriceRange,
   setSortBy,
   resetFilters,
 } from "@/store/slices/productsSlice";
-import type { CategoryId, SortOption } from "@/store/types/product";
-import { categories } from "@/store/data/categories";
+import { setCategory } from "@/store/slices/productsSlice";
+import { getTopLevelCategories } from "@/store/data/categories";
+import type { SortOption } from "@/store/types/product";
+import type { CategoryId } from "@/store/types/product";
 import { PRICE_RANGE } from "@/store/data/products";
 
 const SORT_IDS: SortOption[] = [
@@ -70,13 +71,7 @@ export function ProductFilters({ className }: { className?: string }) {
   const filters = useAppSelector(selectFilters);
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const topCategories = categories.filter((c) => !c.parent);
-
-  const activeCount = [
-    filters.category,
-  ].filter(Boolean).length + (
-    (filters.priceRange[0] !== PRICE_RANGE[0] || filters.priceRange[1] !== PRICE_RANGE[1]) ? 1 : 0
-  );
+  const activeCount = (filters.priceRange[0] !== PRICE_RANGE[0] || filters.priceRange[1] !== PRICE_RANGE[1]) ? 1 : 0;
 
   const FiltersContent = () => (
     <div className="space-y-5">
@@ -92,35 +87,6 @@ export function ProductFilters({ className }: { className?: string }) {
             />
             <span className={filters.sortBy === id ? "font-medium text-foreground" : "text-muted-foreground"}>
               {t(sortLabelKey(id))}
-            </span>
-          </label>
-        ))}
-      </FilterSection>
-
-      <FilterSection title={t("filters.category")}>
-        <label className="flex cursor-pointer items-center gap-2 text-sm">
-          <input
-            type="radio"
-            name="category"
-            checked={filters.category === null}
-            onChange={() => dispatch(setCategory(null))}
-            className="h-4 w-4 accent-foreground"
-          />
-          <span className={!filters.category ? "font-medium text-foreground" : "text-muted-foreground"}>
-            {t("filters.allProducts")}
-          </span>
-        </label>
-        {topCategories.map((cat) => (
-          <label key={cat.id} className="flex cursor-pointer items-center gap-2 text-sm">
-            <input
-              type="radio"
-              name="category"
-              checked={filters.category === cat.id}
-              onChange={() => dispatch(setCategory(cat.id as CategoryId))}
-              className="h-4 w-4 accent-foreground"
-            />
-            <span className={filters.category === cat.id ? "font-medium text-foreground" : "text-muted-foreground"}>
-              {t(`categories.${cat.id}.label`)}
             </span>
           </label>
         ))}

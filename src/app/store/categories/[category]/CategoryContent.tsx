@@ -59,7 +59,7 @@ export function CategoryContent({ categorySlug }: { categorySlug: string }) {
       />
 
       <motion.div
-        initial={{ opacity: 0, y: 12 }}
+        initial={false}
         animate={{ opacity: 1, y: 0 }}
         className="relative overflow-hidden rounded-3xl px-5 py-12 text-cream sm:px-8 sm:py-14"
       >

@@ -1,13 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { X, ShoppingCart, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import type { Product } from "@/store/types/product";
-import { useAppDispatch } from "@/store/hooks";
-import { addToCart } from "@/store/slices/cartSlice";
+import { useAppDispatch, useAppSelector } from "@/store/hooks";
+import { addToCart, selectCartItems } from "@/store/slices/cartSlice";
 import { ProductGallery } from "./ProductGallery";
 import { Rating } from "./Rating";
 import { PriceTag } from "./PriceTag";
@@ -25,8 +26,20 @@ export function QuickView({ product, onClose }: QuickViewProps) {
   const { t: tCatalog } = useTranslation("storeCatalog");
   const copy = getProductLocalizedCopy(product, tCatalog);
   const dispatch = useAppDispatch();
+  const router = useRouter();
+  const cartItems = useAppSelector(selectCartItems);
 
-  const handleAddToCart = () => {
+  const inCart = cartItems.some((item) => item.productId === product.id);
+
+  const handleAddToCart = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (inCart) {
+      router.push("/store/cart");
+      return;
+    }
+
     dispatch(
       addToCart({
         productId: product.id,

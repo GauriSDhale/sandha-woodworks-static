@@ -2,11 +2,12 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { ShoppingCart, Share2, Truck, Shield, RefreshCw } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
-import { addToCart, openDrawer } from "@/store/slices/cartSlice";
+import { addToCart, selectCartItems } from "@/store/slices/cartSlice";
 import { addRecentlyViewed, selectRecentlyViewedIds } from "@/store/slices/productsSlice";
 import { getProductBySlug, getRelatedProducts, products } from "@/store/data/products";
 import { ProductGallery } from "@/components/store/ProductGallery";
@@ -48,6 +49,10 @@ export function ProductDetailContent({ slug }: { slug: string }) {
     );
   }
 
+  const cartItems = useAppSelector(selectCartItems);
+  const router = useRouter();
+  const inCart = cartItems.some((item) => item.productId === product.id);
+
   const copy = getProductLocalizedCopy(product, tCatalog);
   const related = getRelatedProducts(product, 4);
   const recentlyViewed = products
@@ -55,7 +60,15 @@ export function ProductDetailContent({ slug }: { slug: string }) {
     .slice(0, 4);
   const categoryLabel = t(`categories.${product.category}.label`);
 
-  const handleAddToCart = () => {
+  const handleAddToCart = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (inCart) {
+      router.push("/store/cart");
+      return;
+    }
+
     dispatch(
       addToCart({
         productId: product.id,
@@ -67,7 +80,6 @@ export function ProductDetailContent({ slug }: { slug: string }) {
         category: product.category,
       }),
     );
-    dispatch(openDrawer());
   };
 
   const handleBuyNow = () => {

@@ -1,14 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { ShoppingCart, Eye } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import type { Product } from "@/store/types/product";
-import { useAppDispatch } from "@/store/hooks";
-import { addToCart } from "@/store/slices/cartSlice";
+import { useAppDispatch, useAppSelector } from "@/store/hooks";
+import { addToCart, selectCartItems } from "@/store/slices/cartSlice";
 import { Rating } from "./Rating";
 import { PriceTag } from "./PriceTag";
 import { WishlistButton } from "./WishlistButton";
@@ -24,10 +25,21 @@ interface ProductCardProps {
 export function ProductCard({ product, onQuickView, priority }: ProductCardProps) {
   const { t } = useTranslation("store");
   const dispatch = useAppDispatch();
+  const router = useRouter();
+  const cartItems = useAppSelector(selectCartItems);
   const [adding, setAdding] = useState(false);
 
-  const handleAddToCart = (e: React.MouseEvent) => {
+  const inCart = cartItems.some((item) => item.productId === product.id);
+
+  const handleAddToCart = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
+    e.stopPropagation();
+
+    if (inCart) {
+      router.push("/store/cart");
+      return;
+    }
+
     setAdding(true);
     dispatch(
       addToCart({
@@ -45,9 +57,10 @@ export function ProductCard({ product, onQuickView, priority }: ProductCardProps
 
   return (
     <motion.article
-      initial={{ opacity: 0, y: 16 }}
+      layout
+      initial={false}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.2, ease: "easeOut" }}
       className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition-shadow duration-300 hover:shadow-xl"
     >
       <Link
@@ -130,9 +143,11 @@ export function ProductCard({ product, onQuickView, priority }: ProductCardProps
             aria-label={t("a11y.addToCart")}
             className={cn(
               "inline-flex items-center gap-1.5 rounded-full px-3.5 py-2 text-xs font-semibold transition-all",
-              adding
-                ? "bg-emerald-600 text-white"
-                : "bg-foreground text-cream hover:bg-warm-black",
+              inCart
+                ? "bg-foreground text-cream hover:bg-warm-black"
+                : adding
+                  ? "bg-emerald-600 text-white"
+                  : "bg-foreground text-cream hover:bg-warm-black",
             )}
           >
             <ShoppingCart className="h-3.5 w-3.5" />

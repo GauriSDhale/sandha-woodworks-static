@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { selectCartCount } from "@/store/slices/cartSlice";
 import { selectWishlistCount } from "@/store/slices/wishlistSlice";
+import { setCategory } from "@/store/slices/productsSlice";
 import { openDrawer } from "@/store/slices/cartSlice";
 import { SearchBar } from "@/components/store/SearchBar";
 import { categories } from "@/store/data/categories";
@@ -72,6 +73,7 @@ export function StoreNav() {
           <li>
             <Link
               href="/store"
+              onClick={() => dispatch(setCategory(null))}
               className={cn(
                 "inline-flex rounded-full px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider transition-all",
                 pathname === "/store"
