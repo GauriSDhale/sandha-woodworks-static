@@ -55,13 +55,13 @@ export const footerExploreLinks = [
 
 export const footerLegalLinks = [
   { href: "/legal", label: "Legal Centre" },
-  { href: "/legal/general-terms", label: "General Terms & Conditions" },
-  { href: "/legal/canada-terms", label: "Canada Ts & Cs" },
-  { href: "/legal/usa-terms", label: "USA Ts & Cs" },
+  { href: "/legal/general-terms-and-conditions", label: "General Terms & Conditions" },
+  { href: "/legal/canada-terms-and-conditions", label: "Canada Ts & Cs" },
+  { href: "/legal/usa-terms-and-conditions", label: "USA Ts & Cs" },
   { href: "/legal/code-of-conduct", label: "Code of Conduct" },
-  { href: "/legal/privacy", label: "Privacy Policy" },
-  { href: "/legal/accessibility", label: "Accessibility" },
-  { href: "/legal/website-terms", label: "Website Terms of Use" },
+  { href: "/legal/privacy-policy", label: "Privacy Policy" },
+  { href: "/legal/accessibility-statement", label: "Accessibility" },
+  { href: "/legal/website-terms-of-use", label: "Website Terms of Use" },
 ] as const;
 
 export const socialLinks = [

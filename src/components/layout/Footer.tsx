@@ -28,28 +28,28 @@ const exploreLinkKeys: Record<string, string> = {
 
 const legalLinkLabels: Record<string, string> = {
   "/legal": "legalCentre",
-  "/legal/general-terms": "generalTerms",
-  "/legal/canada-terms": "canadaTerms",
-  "/legal/usa-terms": "usaTerms",
+  "/legal/general-terms-and-conditions": "generalTerms",
+  "/legal/canada-terms-and-conditions": "canadaTerms",
+  "/legal/usa-terms-and-conditions": "usaTerms",
   "/legal/code-of-conduct": "codeOfConduct",
-  "/legal/privacy": "privacy",
-  "/legal/accessibility": "accessibility",
-  "/legal/website-terms": "websiteTerms",
+  "/legal/privacy-policy": "privacy",
+  "/legal/accessibility-statement": "accessibility",
+  "/legal/website-terms-of-use": "websiteTerms",
 };
 
 export function Footer() {
   const { t } = useTranslation("common");
 
   return (
-    <footer className="bg-[#111111] text-cream">
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+    <footer className="bg-ink-atmosphere relative overflow-hidden text-cream">
+      <div className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
           <div className="space-y-6 lg:col-span-2">
             <Link href="/" className="inline-block" aria-label={`${siteConfig.name} — home`}>
               <img
                 src={brandMedia.logo}
                 alt={siteConfig.name}
-                className="h-14 w-auto brightness-0 invert"
+                className="h-16 w-auto sm:h-20 brightness-0 invert"
               />
             </Link>
             <p className="max-w-md text-sm leading-relaxed text-cream/70">

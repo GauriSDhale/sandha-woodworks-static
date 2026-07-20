@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { CountUpStat } from "@/components/marketing/home/CountUpStat";
+import { CredibilityStrip } from "@/components/marketing/home/CredibilityStrip";
 import { getRecentProjectSlides } from "@/lib/projects/recent";
 import { useInView } from "@/lib/hooks/useInView";
 import { useReducedMotion } from "@/lib/hooks/useReducedMotion";
@@ -11,7 +12,7 @@ import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import { SiteImage } from "@/components/ui/SiteImage";
 
-const statKeys = ["facility", "clients", "services", "sectors"] as const;
+const statKeys = ["founded", "facility", "projects", "clients", "services", "sectors", "awmac"] as const;
 
 export function WhyChooseUsSection() {
   const { t } = useTranslation("home");
@@ -28,7 +29,7 @@ export function WhyChooseUsSection() {
     emptyProjects: string;
     stats: Record<
       (typeof statKeys)[number],
-      { value: number; suffix: string; label: string; description: string; format?: "comma" }
+      { value: number | null; display?: string; suffix: string; label: string; description: string; format?: "comma" }
     >;
     reasons: Array<{ title: string; description: string }>;
   };
@@ -57,17 +58,19 @@ export function WhyChooseUsSection() {
       <div className="mx-auto grid max-w-7xl gap-12 px-4 pt-8 sm:px-6 sm:pt-10 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:pt-12">
         <div
           className={cn(
-            "flex flex-col justify-center gap-8 sm:gap-10",
+            "grid grid-cols-2 gap-x-6 gap-y-10 sm:gap-x-10",
             !reducedMotion && "transition-all duration-700",
             inView || reducedMotion ? "opacity-100" : "opacity-0",
           )}
         >
           {statKeys.map((key, index) => {
             const stat = copy.stats[key];
+            const isAWMAC = key === "awmac";
             return (
               <div
                 key={key}
                 className={cn(
+                  isAWMAC && "col-span-full",
                   !reducedMotion && "transition-all duration-700",
                   inView || reducedMotion
                     ? "translate-y-0 opacity-100"
@@ -77,15 +80,15 @@ export function WhyChooseUsSection() {
               >
                 <CountUpStat
                   value={stat.value}
+                  display={"display" in stat ? stat.display : undefined}
                   suffix={stat.suffix}
                   format={"format" in stat ? stat.format : undefined}
                   label={stat.label}
                   description={stat.description}
                   delayMs={index * 120}
                   active={inView}
-                  className="[&_p:first-child]:font-display [&_p:first-child]:text-3xl [&_p:first-child]:font-semibold [&_p:first-child]:tracking-tight [&_p:first-child]:text-foreground sm:[&_p:first-child]:text-4xl lg:[&_p:first-child]:text-[2.75rem] lg:[&_p:first-child]:leading-[1.15] [&_p:nth-child(2)]:mt-3 [&_p:nth-child(2)]:text-[11px] [&_p:nth-child(2)]:font-medium [&_p:nth-child(2)]:normal-case [&_p:nth-child(2)]:tracking-normal [&_p:nth-child(2)]:text-foreground/80 [&_p:nth-child(2)]:no-underline [&_p:last-child]:mt-1 [&_p:last-child]:text-sm [&_p:last-child]:text-muted-foreground"
+                  className="[&_p:first-child]:font-display [&_p:first-child]:text-2xl [&_p:first-child]:font-semibold [&_p:first-child]:tracking-tight [&_p:first-child]:text-foreground sm:[&_p:first-child]:text-3xl lg:[&_p:first-child]:text-4xl lg:[&_p:first-child]:leading-[1.1] [&_p:nth-child(2)]:mt-2 [&_p:nth-child(2)]:text-[10px] [&_p:nth-child(2)]:font-semibold [&_p:nth-child(2)]:uppercase [&_p:nth-child(2)]:tracking-[0.2em] [&_p:nth-child(2)]:text-brand [&_p:nth-child(2)]:no-underline [&_p:last-child]:mt-1 [&_p:last-child]:text-sm [&_p:last-child]:text-muted-foreground"
                 />
-                <div className="mt-5 h-px w-full max-w-md bg-border" aria-hidden="true" />
               </div>
             );
           })}
@@ -125,6 +128,8 @@ export function WhyChooseUsSection() {
           </ul>
         </div>
       </div>
+
+      <CredibilityStrip className="mt-10 sm:mt-12" />
 
       <div className="flex justify-center px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
         <Link

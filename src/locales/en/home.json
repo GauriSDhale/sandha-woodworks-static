@@ -86,6 +86,25 @@
         "suffix": "",
         "label": "Sectors Served",
         "description": "Commercial, institutional, healthcare and more"
+      },
+      "founded": {
+        "value": 2014,
+        "suffix": "",
+        "label": "Founded",
+        "description": "Over a decade of architectural millwork"
+      },
+      "projects": {
+        "value": 500,
+        "suffix": "+",
+        "label": "Projects Delivered",
+        "description": "Commercial · Institutional · Healthcare"
+      },
+      "awmac": {
+        "value": null,
+        "display": "AWMAC",
+        "suffix": "",
+        "label": "Member",
+        "description": "Architectural Woodwork Manufacturers Association of Canada"
       }
     },
     "reasons": [

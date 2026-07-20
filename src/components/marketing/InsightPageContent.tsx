@@ -21,7 +21,7 @@ export function InsightPageContent() {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-[#111111] pt-32 pb-10 text-cream sm:pt-40 sm:pb-14">
+      <section className="relative overflow-hidden bg-[#111111] pt-24 pb-10 text-cream sm:pt-28 sm:pb-14">
         <div className="pointer-events-none absolute inset-0 opacity-30 [background:radial-gradient(circle_at_20%_20%,#0A66C2_0%,transparent_45%),radial-gradient(circle_at_80%_60%,#0A66C2_0%,transparent_55%)]" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.4em] text-[#4DA3E8]">

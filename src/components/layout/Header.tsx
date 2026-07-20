@@ -17,7 +17,7 @@ import frCommon from "@/locales/fr/common.json";
 import { cn } from "@/lib/utils";
 
 const navLinkBase =
-  "relative inline-flex items-center gap-1 rounded-full px-3 py-2 text-base font-semibold tracking-wide transition-colors duration-200 ease-out hover:bg-brand/10 active:scale-[0.98] active:bg-brand/25";
+  "relative inline-flex items-center gap-1 rounded-full px-2 py-2 text-sm font-semibold tracking-wide transition-colors duration-200 ease-out hover:bg-brand/10 active:scale-[0.98] active:bg-brand/25 min-[1700px]:px-3 min-[1700px]:text-base";
 
 function navLinkClasses(lightOnDark: boolean, active: boolean) {
   return cn(
@@ -92,17 +92,21 @@ export function Header() {
           : "border-b border-border/40 bg-white text-foreground shadow-sm",
       )}
     >
-      <div className="flex h-16 w-full items-center justify-between gap-4 px-4 sm:h-[4.5rem] sm:px-5 lg:px-6">
-        <Link href="/" className="group shrink-0" aria-label={`${siteConfig.name} — home`}>
-          <img
-            src={brandMedia.logo}
-            alt={siteConfig.name}
-            className="h-10 w-auto sm:h-11"
-          />
-        </Link>
+      <div className="w-full px-4 sm:px-6 lg:px-8">
+        <div className="flex h-[4.5rem] items-center justify-between gap-4 sm:h-20">
+          <Link href="/" className="group shrink-0" aria-label={`${siteConfig.name} — home`}>
+            <img
+              src={brandMedia.logo}
+              alt={siteConfig.name}
+              className="h-12 w-auto sm:h-14"
+            />
+          </Link>
 
-        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
-          <nav className="hidden items-center gap-2 xl:flex" aria-label="Main navigation">
+          <div className="flex shrink-0 items-center gap-2 sm:gap-3">
+          <nav
+            className="hidden min-w-0 items-center gap-1 2xl:flex min-[1700px]:gap-2"
+            aria-label="Main navigation"
+          >
             {navLinks.map((link) => {
               const active = pathname === link.href || pathname.startsWith(`${link.href}/`);
               const isSectors = link.href === "/sectors";
@@ -147,7 +151,7 @@ export function Header() {
             })}
           </nav>
 
-          <div className="hidden items-center gap-3 xl:flex">
+          <div className="hidden shrink-0 items-center gap-2 2xl:flex min-[1700px]:gap-3">
             <button
               type="button"
               onClick={openSearch}
@@ -165,24 +169,25 @@ export function Header() {
             </Link>
           </div>
 
-          <div className="flex items-center gap-1 xl:hidden">
-            <button
-              type="button"
-              onClick={openSearch}
-              className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full text-current"
-              aria-label="Search the site"
-            >
-              <Search className="h-5 w-5" />
-            </button>
-            <button
-              type="button"
-              className="inline-flex size-10 items-center justify-center rounded-full text-current"
-              onClick={() => setMobileOpen((open) => !open)}
-              aria-expanded={mobileOpen}
-              aria-label={mobileOpen ? "Close menu" : "Open menu"}
-            >
-              {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
+            <div className="flex items-center gap-1 2xl:hidden">
+              <button
+                type="button"
+                onClick={openSearch}
+                className="inline-flex size-10 cursor-pointer items-center justify-center rounded-full text-current"
+                aria-label="Search the site"
+              >
+                <Search className="h-5 w-5" />
+              </button>
+              <button
+                type="button"
+                className="inline-flex size-10 items-center justify-center rounded-full text-current"
+                onClick={() => setMobileOpen((open) => !open)}
+                aria-expanded={mobileOpen}
+                aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              >
+                {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -190,7 +195,7 @@ export function Header() {
       {mobileOpen ? (
         <div
           className={cn(
-            "border-t px-4 py-6 xl:hidden",
+            "border-t px-4 py-6 2xl:hidden",
             lightOnDark
               ? "border-white/20 bg-black/80 text-cream backdrop-blur-md"
               : "border-black/10 bg-white text-foreground",

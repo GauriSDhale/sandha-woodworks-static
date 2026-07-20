@@ -4,13 +4,13 @@
 :root {
   --radius: 9999px;
 
-  /* Primary accent — Arch Mill blue CTAs */
+  /* Primary accent — site-wide bluish CTAs and titles */
   --brand: #2f6fed;
   --brand-foreground: #ffffff;
   --brand-light: #5b8ff5;
   --brand-dark: #1d4ed8;
 
-  /* Secondary accent — orange rule under hero branding */
+  /* Secondary accent — emphasis rules */
   --accent: #ff6a00;
   --accent-foreground: #ffffff;
 
@@ -29,6 +29,10 @@
   --muted: #f3f5f8;
   --muted-foreground: #5b6577;
   --border: #e2e6ee;
+
+  /* Warm gold — Capabilities & Certifications band only */
+  --credibility-gold: #c9a96a;
+  --credibility-gold-light: #d4b87a;
 
   /* Backward-compatible aliases used elsewhere in the app */
   --surface-dark: var(--warm-black);
@@ -95,6 +99,61 @@ h6 {
   color: var(--brand);
   font-weight: 700;
   letter-spacing: -0.02em;
+}
+
+/* Shared dark wood atmosphere — portfolio hero/CTA, footer, ink panels */
+.bg-ink-atmosphere {
+  background-color: var(--warm-black);
+  background-image:
+    radial-gradient(
+      circle at top right,
+      rgba(201, 162, 39, 0.2),
+      transparent 52%
+    ),
+    linear-gradient(
+      145deg,
+      color-mix(in oklab, var(--walnut) 88%, black) 0%,
+      var(--warm-black) 48%,
+      var(--wood-dark) 100%
+    );
+}
+
+/* Capabilities & Certifications — warm gold accents (not site brand blue) */
+.credibility-band {
+  background-color: var(--warm-black);
+  background-image:
+    radial-gradient(
+      ellipse at 15% 0%,
+      rgba(201, 162, 39, 0.28),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 90% 100%,
+      rgba(255, 255, 255, 0.06),
+      transparent 45%
+    ),
+    linear-gradient(
+      145deg,
+      color-mix(in oklab, var(--walnut) 88%, black) 0%,
+      var(--warm-black) 48%,
+      var(--wood-dark) 100%
+    );
+}
+
+.credibility-band-accent {
+  color: var(--credibility-gold);
+}
+
+.credibility-band-rule {
+  background-color: var(--credibility-gold);
+}
+
+.credibility-band-pill:hover {
+  border-color: color-mix(in oklab, var(--credibility-gold) 45%, transparent);
+}
+
+.credibility-band-dot {
+  background-color: var(--credibility-gold);
 }
 
 /* ─── Layout utilities ─── */
