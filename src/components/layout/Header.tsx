@@ -103,7 +103,7 @@ export function Header() {
           </Link>
 
           <div className="flex shrink-0 items-center gap-2 sm:gap-3">
-          <nav className="hidden items-center gap-2 xl:flex" aria-label="Main navigation">
+          <nav className="hidden items-center xl:flex" aria-label="Main navigation">
             {navLinks.map((link) => {
               const active = pathname === link.href || pathname.startsWith(`${link.href}/`);
               const isSectors = link.href === "/sectors";
